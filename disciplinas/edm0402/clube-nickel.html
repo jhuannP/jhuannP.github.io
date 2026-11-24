@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>Guia do Trabalho Nickel</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Mesma família das notas de EDM0402 (tema rosa das disciplinas de ensino).
+   Layout: guia de trabalho em ordem de leitura — pedido, grupo, estado do Doc, opções, recomendação, trechos, ideias. */
+:root {
+  color-scheme: light;
+  --bg: #fdf7f8; --surface: #fffdfd; --surface-2: #fbedf1; --ink: #2b1720; --ink-2: #5a3a46; --muted: #876572;
+  --line: #f0d9e0; --accent: #c23b68; --accent-ink: #a12a55; --accent-soft: #fbe3eb; --on-accent: #ffffff;
+  --warm: #a95a14; --warm-soft: #fdf1e4; --ok: #2c7a5f; --ok-soft: #e4f4ec; --bad: #b3261e; --bad-soft: #fbe9e7;
+  --hero-a: #fbe6ec; --hero-b: #f5cdd9; --rule: rgba(160, 60, 95, .14);
+  --serif: "Newsreader", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "IBM Plex Sans", "Gill Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1a1014; --surface: #22151a; --surface-2: #2c1a21; --ink: #f7e9ee; --ink-2: #dcc0ca; --muted: #a88994;
+    --line: #3c262e; --accent: #ef8aab; --accent-ink: #f6b0c6; --accent-soft: #3c1e29; --on-accent: #2b1720;
+    --warm: #f0a663; --warm-soft: #2e1f12; --ok: #6fd0a8; --ok-soft: #12281f; --bad: #f2a49c; --bad-soft: #351817;
+    --hero-a: #2a141c; --hero-b: #431b2a; --rule: rgba(239, 138, 171, .12); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1a1014; --surface: #22151a; --surface-2: #2c1a21; --ink: #f7e9ee; --ink-2: #dcc0ca; --muted: #a88994;
+  --line: #3c262e; --accent: #ef8aab; --accent-ink: #f6b0c6; --accent-soft: #3c1e29; --on-accent: #2b1720;
+  --warm: #f0a663; --warm-soft: #2e1f12; --ok: #6fd0a8; --ok-soft: #12281f; --bad: #f2a49c; --bad-soft: #351817;
+  --hero-a: #2a141c; --hero-b: #431b2a; --rule: rgba(239, 138, 171, .12); color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 70px; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.6 var(--serif); overflow-x: hidden; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--bg); }
+a { color: var(--accent-ink); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+strong { font-weight: 600; }
+.gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; display: flex; align-items: center; gap: 14px; padding-block: 10px;
+  font-family: var(--sans); background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.brand { font-weight: 600; font-size: 15px; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.brand em { font-style: normal; font-weight: 400; color: var(--muted); }
+.secnav { display: flex; gap: 2px; margin-left: auto; overflow-x: auto; scrollbar-width: none; min-width: 0; }
+.secnav::-webkit-scrollbar { display: none; }
+.secnav a { padding: 6px 9px; border-radius: 7px; font-size: 13.5px; font-weight: 500; color: var(--ink-2); text-decoration: none; white-space: nowrap; }
+.secnav a:hover { background: var(--surface-2); }
+.theme-toggle { flex: none; width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); cursor: pointer; display: grid; place-items: center; }
+.theme-toggle span { width: 13px; height: 13px; border-radius: 50%; background: linear-gradient(90deg, var(--ink) 50%, transparent 50%); box-shadow: inset 0 0 0 1.5px var(--ink); }
+
+.hero { position: relative; overflow: hidden; margin-top: calc(-1 * env(safe-area-inset-top, 0px)); padding-top: env(safe-area-inset-top, 0px);
+  background: repeating-linear-gradient(180deg, transparent 0 35px, var(--rule) 35px 36px), linear-gradient(160deg, var(--hero-a), var(--hero-b)); }
+.hero::before { content: ""; position: absolute; top: 0; bottom: 0; left: clamp(22px, 5vw, 60px); width: 2px; background: var(--accent); opacity: .55; }
+.hero-in { position: relative; max-width: 980px; margin: 0 auto; padding-block: clamp(32px, 6vw, 64px) clamp(26px, 4vw, 44px); }
+.hero-text { padding-left: clamp(22px, 5vw, 60px); }
+.eyebrow { font: 600 12px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); margin: 0; }
+.hero h1 { font: 600 clamp(36px, 6.5vw, 64px)/1.04 var(--serif); letter-spacing: -.015em; margin: 10px 0 12px; text-wrap: balance; }
+.hero .lede { font-size: clamp(17px, 2vw, 20px); color: var(--ink-2); max-width: 38em; margin: 0; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin: 22px 0 0; padding: 0; list-style: none; }
+.facts li { background: color-mix(in srgb, var(--surface) 80%, transparent); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; font: 14px/1.4 var(--sans); color: var(--ink-2); min-width: 0; }
+.facts b { display: block; font: 600 11px/1.3 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 3px; }
+.facts .big { font: 600 19px/1.2 var(--serif); color: var(--ink); }
+
+.content { max-width: 980px; margin: 0 auto; padding-block: 28px 24px; }
+.content p { margin: 0 0 .85em; }
+.content ul, .content ol { padding-left: 1.3em; margin: 0 0 1em; }
+.content li { margin: .3em 0; }
+.content li::marker { color: var(--accent); }
+.step { margin: 0 0 52px; }
+.step-h { display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 18px; }
+.step-n { font: 600 13px/1 var(--mono); color: var(--accent-ink); flex: none; }
+.step-h h2 { font: 600 clamp(24px, 3.2vw, 32px)/1.15 var(--serif); margin: 0; text-wrap: balance; }
+.ref { font: 14px/1.5 var(--sans); color: var(--muted); }
+h3 { font: 600 20px/1.3 var(--serif); margin: 22px 0 8px; }
+
+.quote-box { border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 var(--radius) var(--radius) 0; padding: 14px 18px; margin: 12px 0 16px; }
+.quote-box p, .quote-box li { font-size: 17px; }
+.quote-box .src { font: 13px/1.4 var(--sans); color: var(--muted); margin: 6px 0 0; }
+
+.table-wrap { overflow-x: auto; margin: 12px 0 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font: 15px/1.45 var(--sans); }
+th, td { padding: 9px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+th { background: var(--surface-2); font-weight: 600; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td.pg { font: 13.5px var(--mono); white-space: nowrap; color: var(--accent-ink); }
+.st { display: inline-block; font: 600 11.5px/1 var(--sans); padding: 5px 8px; border-radius: 999px; white-space: nowrap; }
+.st-ok { background: var(--ok-soft); color: var(--ok); }
+.st-mid { background: var(--warm-soft); color: var(--warm); }
+.st-no { background: var(--bad-soft); color: var(--bad); }
+
+.options { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; }
+.opt { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); padding: 16px 18px 10px; min-width: 0; display: flex; flex-direction: column; }
+.opt.rec { border: 2px solid var(--accent); }
+.opt-k { font: 600 12px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); }
+.opt h3 { margin: 8px 0 8px; }
+.opt p, .opt li { font-size: 16px; }
+.opt dl { margin: 0 0 10px; font: 14.5px/1.45 var(--sans); }
+.opt dt { font-weight: 600; color: var(--ink); margin-top: 6px; }
+.opt dd { margin: 2px 0 0; color: var(--ink-2); }
+.tag-rec { align-self: flex-start; font: 600 11px/1 var(--sans); background: var(--accent); color: var(--on-accent); padding: 5px 8px; border-radius: 999px; margin-bottom: 8px; }
+
+.who { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+.who-card { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); padding: 16px 18px 8px; min-width: 0; }
+.who-card h3 { margin-top: 0; }
+.who-card ol { font-size: 16.5px; }
+.timeline { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 0; }
+.timeline li { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 14px; padding: 9px 0; border-top: 1px solid var(--line); margin: 0; font-size: 16.5px; }
+.timeline li:first-child { border-top: 0; }
+.timeline b { font: 600 14px/1.5 var(--mono); color: var(--accent-ink); }
+
+.ideas { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 14px; }
+.idea { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); padding: 16px 18px 8px; min-width: 0; }
+.idea h3 { margin: 0 0 6px; font-size: 19px; }
+.idea .meta { font: 500 12.5px/1.4 var(--sans); color: var(--accent-ink); margin: 0 0 8px; }
+.idea p, .idea li { font-size: 16px; }
+
+.box { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px 6px; margin: 16px 0; background: var(--surface); }
+.box-warn { border-color: color-mix(in srgb, var(--warm) 40%, var(--line)); background: var(--warm-soft); }
+.box-h { font: 600 13px/1.3 var(--sans); text-transform: uppercase; letter-spacing: .08em; color: var(--accent-ink); margin-bottom: 8px; }
+.box-warn .box-h { color: var(--warm); }
+.box p, .box li { font-size: 16.5px; }
+.msg { font: 15.5px/1.55 var(--sans); background: var(--surface-2); border-radius: 12px; padding: 14px 16px; margin: 10px 0; white-space: pre-wrap; }
+.copy { font: 500 13.5px var(--sans); padding: 7px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.copy:hover { border-color: var(--accent); }
+.checks { list-style: none; padding: 0 !important; }
+.checks li { display: flex; gap: 10px; align-items: flex-start; font-size: 16.5px; }
+.checks input { margin-top: 6px; accent-color: var(--accent); }
+details.spoiler { border: 1px solid color-mix(in srgb, var(--warm) 40%, var(--line)); background: var(--warm-soft); border-radius: var(--radius); padding: 10px 16px; margin: 12px 0; }
+details.spoiler summary { cursor: pointer; font: 600 14px var(--sans); color: var(--warm); }
+details.spoiler[open] summary { margin-bottom: 8px; }
+.footer { border-top: 1px solid var(--line); margin: 36px auto 0; padding-block: 24px 36px; font: 14px/1.6 var(--sans); color: var(--muted); max-width: 980px; }
+@media (max-width: 560px) {
+  body { font-size: 17px; }
+  .brand em { display: none; }
+  .timeline li { grid-template-columns: 1fr; gap: 2px; }
+}
+</style>
+</head>
+<body>
+
+
+<header class="topbar gutter">
+  <a class="brand" href="#topo">Clube Nickel <em>· guia do trabalho</em></a>
+  <nav class="secnav" aria-label="Seções">
+    <a href="#pedido">Pedido</a><a href="#grupo">Grupo</a><a href="#doc">Doc</a><a href="#opcoes">Opções</a><a href="#recomendacao">Recomendação</a><a href="#trechos">Trechos</a><a href="#ideias">Ideias</a><a href="#envio">Envio</a>
+  </nav>
+  <button class="theme-toggle" type="button" id="tema" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<section class="hero" id="topo">
+  <div class="hero-in gutter"><div class="hero-text">
+    <p class="eyebrow">EDM0402 Didática · Clube de Leitura</p>
+    <h1>O trabalho sobre O Reformatório Nickel</h1>
+    <p class="lede">O que a professora pediu, como o grupo se organizou, o que já está no Doc e o que Jhuann e Bruna podem fazer para fechar e enriquecer o texto até sexta.</p>
+    <ul class="facts">
+      <li><b>Envio no Moodle</b><span class="big">27/11, 23h59</span></li>
+      <li><b>Formato</b>texto único do grupo (até 6 pessoas), com todos os nomes</li>
+      <li><b>Aula de 25/11</b>sem encontro; reservada para finalizar o texto</li>
+      <li><b>Discussão em sala</b>Aula 15, 02/12</li>
+    </ul>
+  </div></div>
+</section>
+
+<main class="content gutter">
+
+<!-- 1. PEDIDO -->
+<section class="step" id="pedido">
+  <div class="step-h"><span class="step-n">01</span><h2>O que a professora pediu</h2></div>
+  <p>As orientações estão em três lugares: a mensagem do fórum de 19/10 sobre o Clube, o aviso de 22/11 sobre o trabalho escrito e a atividade de envio no Moodle. Juntas, dizem o seguinte.</p>
+
+  <h3>Os quatro eixos</h3>
+  <div class="quote-box">
+    <ol>
+      <li><strong>Apresentação do livro:</strong> resumos da história, descrições sobre a linguagem e o estilo de escrita do autor; informações sobre edições, editoras e traduções; dados sobre o autor, sua biografia e outros livros que escreveu.</li>
+      <li><strong>Quem são os professores retratados?</strong> Quais professores aparecem no livro, quem são, o que se descreve deles.</li>
+      <li><strong>Qual é a cultura escolar vivida?</strong> Os modos de funcionamento do Reformatório Nickel: espaços, tempos, quem trabalha lá, como os alunos são organizados, como são tratados, regras de convivência e outros aspectos que o grupo queira sublinhar.</li>
+      <li><strong>O que faz desse livro um livro marcante para quem quer ser professor?</strong> Cada membro do grupo escreve suas impressões.</li>
+    </ol>
+    <p class="src">Enunciado da professora, copiado no topo do Google Doc do grupo; o mesmo texto está no fórum (19/10).</p>
+  </div>
+
+  <h3>Como deve ser o texto final</h3>
+  <ul>
+    <li><strong>Um texto único</strong> que reúna e articule as contribuições, e não quatro blocos soltos.</li>
+    <li><strong>Ideias e argumentos explícitos</strong>, que possam dialogar com as <strong>referências da disciplina</strong>.</li>
+    <li><strong>Trechos do romance</strong> podem ser transcritos, desde que sirvam à análise e estejam organizados com clareza. Vale indicar a página.</li>
+    <li><strong>Bibliografia</strong> e <strong>identificação de todos os integrantes</strong>.</li>
+    <li>Envio no Moodle (até cinco arquivos), até <strong>27/11 às 23h59</strong>. A sugestão da professora foi organizar o trabalho por WhatsApp e Google Docs.</li>
+  </ul>
+  <p class="ref">Fontes: mapa auditado do Moodle de 24/11 (fórum e atividade de envio); cronograma da disciplina, Aulas 13–15.</p>
+</section>
+
+<!-- 2. GRUPO -->
+<section class="step" id="grupo">
+  <div class="step-h"><span class="step-n">02</span><h2>Como o grupo está organizado</h2></div>
+  <ul>
+    <li><strong>Integrantes:</strong> Beatriz, Bruna, Marcelo e Jhuann.</li>
+    <li><strong>Canais:</strong> grupo de WhatsApp “Clube de Leitura” e um Google Doc criado pela Beatriz, com os quatro eixos no topo.</li>
+    <li><strong>Estratégia combinada:</strong> cada um, ao terminar o livro, deixa anotações e sínteses no Doc; depois o grupo junta tudo num texto só (proposta da Beatriz).</li>
+    <li><strong>Onde cada um está:</strong> a Beatriz já escreveu nos eixos 1, 2 e 4; os demais ainda vão escrever.</li>
+  </ul>
+  <div class="box box-warn"><div class="box-h">Sobre a data fixada no grupo</div><p>A mensagem fixada diz “25/11: organização, finalização e entrega”. Na prática, 25/11 é a Aula 14, sem encontro, que a professora reservou para terminar o texto. O <strong>envio no Moodle vai até 27/11 às 23h59</strong>.</p></div>
+</section>
+
+<!-- 3. DOC -->
+<section class="step" id="doc">
+  <div class="step-h"><span class="step-n">03</span><h2>O que já está no Doc do grupo</h2></div>
+  <p>Comparação entre o que a professora pede e o que está escrito na versão baixada em 24/11.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Item pedido</th><th>Situação</th><th>O que tem / o que falta</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Eixo 1</strong> · autor e biografia</td><td><span class="st st-mid">parcial</span></td><td>Um parágrafo: romancista norte-americano, Pulitzer por <em>The Underground Railroad</em> e pelo Nickel, temática do racismo estrutural.</td></tr>
+      <tr><td>Eixo 1 · resumo da história</td><td><span class="st st-no">falta</span></td><td>Nenhum resumo do enredo.</td></tr>
+      <tr><td>Eixo 1 · linguagem e estilo</td><td><span class="st st-no">falta</span></td><td>Nada sobre narrador, tom, estrutura.</td></tr>
+      <tr><td>Eixo 1 · edição, editora, tradução, outras obras</td><td><span class="st st-no">falta</span></td><td>Sem HarperCollins, tradutor, ano, título original; só uma outra obra citada.</td></tr>
+      <tr><td><strong>Eixo 2</strong> · professores</td><td><span class="st st-ok">bom</span></td><td>Prof. Carmine, sr. Hill (bem descrito), professora de biologia, amigo do sr. Hill na Melvin Griggs, sr. Goodall e srta. Baker.</td></tr>
+      <tr><td>Eixo 2 · trechos e análise</td><td><span class="st st-mid">parcial</span></td><td>Só uma página citada (p. 42). Falta o que esses retratos dizem sobre ser professor, e a srta. Baker quase não é descrita.</td></tr>
+      <tr><td><strong>Eixo 3</strong> · cultura escolar</td><td><span class="st st-no">vazio</span></td><td>Nenhum texto. É o eixo mais longo do enunciado.</td></tr>
+      <tr><td><strong>Eixo 4</strong> · impressões</td><td><span class="st st-mid">1 de 4</span></td><td>Uma impressão, sem nome (pelo grupo, da Beatriz). Faltam Bruna, Marcelo e Jhuann.</td></tr>
+      <tr><td>Texto único e articulado</td><td><span class="st st-no">falta</span></td><td>O Doc ainda é rascunho por eixos; os enunciados aparecem duas vezes no topo.</td></tr>
+      <tr><td>Diálogo com a disciplina</td><td><span class="st st-no">falta</span></td><td>Nenhum autor da disciplina citado.</td></tr>
+      <tr><td>Bibliografia e nomes</td><td><span class="st st-no">falta</span></td><td>Sem referências e sem lista de integrantes.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- 4. OPÇÕES -->
+<section class="step" id="opcoes">
+  <div class="step-h"><span class="step-n">04</span><h2>Opções para dividir o que falta</h2></div>
+  <p>Todas partem do mesmo princípio: cada pessoa escreve a própria impressão no eixo 4, porque isso a professora pede de cada integrante. O que muda é quem pega o resto.</p>
+  <div class="options">
+    <div class="opt">
+      <span class="opt-k">Opção A</span><h3>Por eixo</h3>
+      <dl><dt>Jhuann</dt><dd>eixo 3 inteiro</dd><dt>Bruna</dt><dd>completa o eixo 1</dd><dt>Beatriz</dt><dd>costura final</dd><dt>Marcelo</dt><dd>impressão + revisão</dd></dl>
+      <p><strong>Prós:</strong> simples, cada um sabe o seu bloco.<br><strong>Contras:</strong> ninguém cuida do diálogo com a disciplina nem da bibliografia, que estão no pedido.</p>
+    </div>
+    <div class="opt rec">
+      <span class="tag-rec">Recomendada</span>
+      <span class="opt-k">Opção B</span><h3>Por eixo + uma tarefa transversal cada</h3>
+      <dl><dt>Jhuann</dt><dd>eixo 3 + diálogo com as referências da disciplina</dd><dt>Bruna</dt><dd>eixo 1 completo + trechos e análise no eixo 2 + bibliografia</dd><dt>Beatriz</dt><dd>costura final (ela conhece o texto todo)</dd><dt>Marcelo</dt><dd>impressão + revisão de português e páginas</dd></dl>
+      <p><strong>Prós:</strong> cobre tudo o que a professora pediu.<br><strong>Contras:</strong> exige a Beatriz livre na quinta.</p>
+    </div>
+    <div class="opt">
+      <span class="opt-k">Opção C</span><h3>Por tema que atravessa os eixos</h3>
+      <dl><dt>Jhuann</dt><dd>“a escola que não ensina”: eixo 3 + Goodall/Baker</dd><dt>Bruna</dt><dd>“contexto e memória”: eixo 1 + Dozier School + artigo da professora</dd><dt>Beatriz</dt><dd>integra tudo</dd></dl>
+      <p><strong>Prós:</strong> texto mais autoral e argumentativo.<br><strong>Contras:</strong> mais coordenação, arriscado com três dias.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. RECOMENDAÇÃO -->
+<section class="step" id="recomendacao">
+  <div class="step-h"><span class="step-n">05</span><h2>Recomendação para Jhuann e Bruna</h2></div>
+  <p>Seguir a <strong>Opção B</strong>. O texto da Beatriz já é bom no eixo 2; o que mais pesa agora é o eixo 3 vazio e a falta de diálogo com a disciplina, que a professora pede explicitamente.</p>
+  <div class="who">
+    <div class="who-card">
+      <h3>Jhuann</h3>
+      <ol>
+        <li><strong>Eixo 3, cultura escolar.</strong> Seis partes curtas, na ordem do enunciado: espaços, tempos, quem trabalha lá, organização dos alunos, tratamento e regras, e uma síntese. Usar os trechos da seção 06. Há um rascunho pronto no arquivo do trabalho para reescrever com a sua voz.</li>
+        <li><strong>Diálogo com a disciplina.</strong> Um parágrafo no fim do eixo 3 e frases pontuais nos eixos 2 e 4, a partir do artigo de Catani, Amparo, Cândido e Silva (2026) e de Noblit. Ver as ideias 1 e 2 na seção 07.</li>
+        <li><strong>Sua impressão</strong> no eixo 4, com o seu nome. Um caminho: a cena que te marcou, o que ela diz sobre ser professor, e uma ponte com o seu estágio no 4º ano.</li>
+      </ol>
+    </div>
+    <div class="who-card">
+      <h3>Bruna</h3>
+      <ol>
+        <li><strong>Completar o eixo 1</strong>, depois do parágrafo da Beatriz: resumo da história sem o final; linguagem e estilo (narrador, tom contido, antecipações, discursos de King); edição brasileira e tradução; inspiração na Dozier School; outras obras do autor.</li>
+        <li><strong>Trechos no eixo 2:</strong> acrescentar página e uma frase de análise ao sr. Hill (p. 35–37), ao sr. Goodall (p. 69–70, 98) e à srta. Baker (p. 133–135).</li>
+        <li><strong>Bibliografia e lista de integrantes</strong> no fim do Doc.</li>
+        <li><strong>Sua impressão</strong> no eixo 4, com o seu nome.</li>
+      </ol>
+    </div>
+  </div>
+  <h3>Cronograma até sexta</h3>
+  <ol class="timeline">
+    <li><b>ter 24/11</b><span>Propor a divisão no grupo e pedir o aval da Beatriz para acrescentar no eixo 1 dela.</span></li>
+    <li><b>qua 25/11</b><span>Dia sem aula: Jhuann escreve o eixo 3; Bruna completa o eixo 1 e o 2.</span></li>
+    <li><b>qui 26/11</b><span>Todos deixam a impressão no eixo 4. Beatriz começa a costura em texto único.</span></li>
+    <li><b>sex 27/11</b><span>Revisão final de manhã; exportar em PDF e enviar no Moodle até o fim da tarde, sem esperar as 23h59.</span></li>
+  </ol>
+</section>
+
+<!-- 6. TRECHOS -->
+<section class="step" id="trechos">
+  <div class="step-h"><span class="step-n">06</span><h2>Trechos do livro recomendados</h2></div>
+  <p>Páginas da edição HarperCollins Brasil, 2024. O texto foi conferido por reconhecimento de texto do PDF: <strong>confiram a citação no livro antes de transcrever</strong>.</p>
+
+  <h3>Eixo 1 · apresentação</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Página</th><th>Trecho</th><th>Para mostrar</th></tr></thead>
+    <tbody>
+      <tr><td class="pg">7–12</td><td>Prólogo: a descoberta do cemitério secreto no terreno do Nickel, já fechado</td><td>a estrutura: o livro começa no presente e volta aos anos 1960</td></tr>
+      <tr><td class="pg">15–16</td><td>O disco <em>Martin Luther King at Zion Hill</em> e o parque Fun Town, proibido para negros</td><td>o contexto da segregação e a formação de Elwood</td></tr>
+      <tr><td class="pg">22</td><td>“Jamais chegou a uma conclusão antes do Nickel”</td><td>o recurso das antecipações</td></tr>
+      <tr><td class="pg">81</td><td>A primeira surra termina com Elwood desmaiado, sem descrição detalhada</td><td>o estilo contido diante da violência</td></tr>
+      <tr><td class="pg">237–238</td><td>Agradecimentos: a Dozier School for Boys e as reportagens de 2014</td><td>a base real da ficção</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Eixo 2 · professores</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Página</th><th>Trecho</th><th>Para mostrar</th></tr></thead>
+    <tbody>
+      <tr><td class="pg">35–36</td><td>O sr. Hill distribui canetas para riscar os xingamentos racistas dos livros de segunda mão</td><td>um professor que transforma o material em ato pedagógico</td></tr>
+      <tr><td class="pg">57</td><td>Spencer recebe os novatos: aquilo é uma escola, e eles são os professores</td><td>quem se diz professor no Nickel; abre o eixo 3</td></tr>
+      <tr><td class="pg">69–70</td><td>Na sala do sr. Goodall ninguém presta atenção, e ele não corrige a leitura</td><td>o professor ausente</td></tr>
+      <tr><td class="pg">98</td><td>Goodall promete aulas avançadas a Elwood e depois não o reconhece</td><td>o abandono, que o Doc já menciona sem página</td></tr>
+      <tr><td class="pg">133–135</td><td>A srta. Baker e a resistência da instituição; os professores jovens não duram</td><td>a professora que tenta e esbarra no lugar</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Eixo 3 · cultura escolar</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Página</th><th>Trecho</th><th>Dimensão do enunciado</th></tr></thead>
+    <tbody>
+      <tr><td class="pg">55–56</td><td>O campus sem muro nem cerca parece uma escola de verdade</td><td>espaços</td></tr>
+      <tr><td class="pg">59, 71</td><td>Brancos colina abaixo, negros colina acima; ginásio e capela em horários separados</td><td>espaços, segregação</td></tr>
+      <tr><td class="pg">79</td><td>A Casa Branca como o muro que os mantém do lado de dentro</td><td>espaços, punição</td></tr>
+      <tr><td class="pg">64–65</td><td>Alvorada, banho gelado de dois minutos, fila dupla, refeitório hierarquizado</td><td>tempos</td></tr>
+      <tr><td class="pg">60</td><td>Aula em dias alternados com dias de trabalho</td><td>tempos, trabalho</td></tr>
+      <tr><td class="pg">57</td><td>As quatro patentes, de Desbravador a Ás</td><td>organização dos alunos</td></tr>
+      <tr><td class="pg">68</td><td>“Os professores não faziam chamada nem davam notas.”</td><td>organização: o mérito mede docilidade</td></tr>
+      <tr><td class="pg">89</td><td>O folheto oficial e o comentário de Elwood: os infratores violentos eram os funcionários</td><td>promessa e prática</td></tr>
+      <tr><td class="pg">104–106</td><td>Suprimentos dos alunos negros vendidos na cidade</td><td>quem trabalha lá, corrupção</td></tr>
+      <tr><td class="pg">61, 200–201</td><td>Dizer “Sim, senhor”; só falar com um branco se ele começar</td><td>regras de convivência</td></tr>
+      <tr><td class="pg">136</td><td>O manual de conduta que todos invocam e ninguém viu</td><td>regras</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Eixo 4 · impressões</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Página</th><th>Trecho</th><th>Para pensar</th></tr></thead>
+    <tbody>
+      <tr><td class="pg">36</td><td>O sr. Hill e a frase sobre os alunos “tentando se educar”</td><td>o professor como quem confirma o aluno</td></tr>
+      <tr><td class="pg">95</td><td>Elwood: fazer vista grossa o tornaria tão culpado quanto os outros</td><td>a ética de quem vê e se cala</td></tr>
+      <tr><td class="pg">186</td><td>O reformatório não acaba quando se sai de lá</td><td>a escola deixa marcas para a vida</td></tr>
+      <tr><td class="pg">33, 96</td><td>A dignidade de Elwood e o ceticismo de Turner</td><td>o que se espera, ou não, de cada aluno</td></tr>
+    </tbody>
+  </table></div>
+  <details class="spoiler"><summary>Trechos do final (contêm spoiler: usar só se o grupo quiser falar do desfecho)</summary>
+    <p>A carta de denúncia entregue ao inspetor (p. 205–206); a revelação de quem é o “Elwood” adulto (p. 227–228); o epílogo e o depoimento sobre o cemitério (p. 229–235). A revelação muda a leitura do livro inteiro e pode render uma frase forte na impressão pessoal, mas parte da turma pode não ter terminado.</p>
+  </details>
+</section>
+
+<!-- 7. IDEIAS -->
+<section class="step" id="ideias">
+  <div class="step-h"><span class="step-n">07</span><h2>Ideias para enriquecer o trabalho</h2></div>
+  <p>Em ordem de prioridade. As duas primeiras respondem diretamente ao pedido de “dialogar com as referências da disciplina”.</p>
+  <div class="ideas">
+    <div class="idea">
+      <h3>1 · Dialogar com o artigo da própria professora</h3>
+      <p class="meta">Jhuann · eixo 3 · alto impacto</p>
+      <p>CATANI, Denice B.; AMPARO, Patrícia A.; CÂNDIDO, Renata M.; SILVA, Vivian B. Entre história e literatura: o mal vai à escola n’O Reformatório Nickel. <em>Educação &amp; Sociedade</em>, v. 47, e310194, 2026. Vivian é coautora, e o texto nasceu do Ciclo de Palestras de 2025.</p>
+      <ul>
+        <li>Instituição total (Goffman, citado na p. 3): dormir, trabalhar e estudar no mesmo lugar, sob a mesma autoridade.</li>
+        <li>Violência <em>na</em>, <em>à</em> e <em>da</em> escola (Charlot, citado nas p. 11–12): o Nickel é o caso extremo da violência <em>da</em> escola.</li>
+      </ul>
+      <p>O PDF está na pasta de apoio do Clube.</p>
+    </div>
+    <div class="idea">
+      <h3>2 · Três modos de autoridade</h3>
+      <p class="meta">Jhuann ou Bruna · eixo 2 ou 4</p>
+      <p>Um quadro curto com o sr. Hill, o sr. Goodall e Spencer. Com Noblit (<em>Poder e desvelo na sala de aula</em>): o poder que confirma o aluno, o que o abandona e o que o nega.</p>
+    </div>
+    <div class="idea">
+      <h3>3 · Promessa e prática</h3>
+      <p class="meta">Jhuann · fecho do eixo 3</p>
+      <p>Duas colunas: o que o folheto oficial promete (p. 89) e o que acontece. É a forma mais clara de mostrar uma escola que conserva a forma e esvazia a relação pedagógica.</p>
+    </div>
+    <div class="idea">
+      <h3>4 · O mérito que mede obediência</h3>
+      <p class="meta">eixo 3 ou impressão · liga com a Aula 9</p>
+      <p>O sistema de patentes não avalia aprendizagem (p. 57, 68). Liga com a oficina de instrumentos de avaliação e com Meirieu: o que um sistema de notas está, de fato, medindo?</p>
+    </div>
+    <div class="idea">
+      <h3>5 · A Dozier School real</h3>
+      <p class="meta">Bruna · eixo 1</p>
+      <p>Um parágrafo de contexto a partir dos agradecimentos (p. 237–238) e do artigo de Catani et al.: a ficção como memória de algo que não deve se repetir.</p>
+    </div>
+    <div class="idea">
+      <h3>6 · Ponte com escolas brasileiras</h3>
+      <p class="meta">impressões individuais</p>
+      <p>Racismo institucional, expectativas desiguais e o adulto que finge não ver. Quem faz estágio pode trazer uma pergunta da própria observação, sem identificar ninguém.</p>
+    </div>
+    <div class="idea">
+      <h3>7 · Perguntas para a aula de 02/12</h3>
+      <p class="meta">fecho do texto</p>
+      <p>Duas ou três perguntas para a discussão em sala, por exemplo: o que separa uma escola de uma instituição que “arremeda” escola? Quanto da cultura do Nickel aparece, em escala menor, nas escolas que conhecemos?</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8. ENVIO -->
+<section class="step" id="envio">
+  <div class="step-h"><span class="step-n">08</span><h2>Antes de enviar</h2></div>
+  <ul class="checks">
+    <li><input type="checkbox" id="c1"><label for="c1">Título e nomes completos dos quatro integrantes</label></li>
+    <li><input type="checkbox" id="c2"><label for="c2">Eixo 1 com resumo, estilo, edição/tradução e autor</label></li>
+    <li><input type="checkbox" id="c3"><label for="c3">Eixo 2 com páginas e análise</label></li>
+    <li><input type="checkbox" id="c4"><label for="c4">Eixo 3 com espaços, tempos, profissionais, alunos e regras</label></li>
+    <li><input type="checkbox" id="c5"><label for="c5">Quatro impressões, cada uma com nome</label></li>
+    <li><input type="checkbox" id="c6"><label for="c6">Pelo menos um diálogo com autor da disciplina</label></li>
+    <li><input type="checkbox" id="c7"><label for="c7">Citações conferidas no livro, com página</label></li>
+    <li><input type="checkbox" id="c8"><label for="c8">Texto costurado, sem os enunciados repetidos no topo</label></li>
+    <li><input type="checkbox" id="c9"><label for="c9">Bibliografia em ABNT</label></li>
+    <li><input type="checkbox" id="c10"><label for="c10">PDF enviado no Moodle e confirmação conferida</label></li>
+  </ul>
+
+  <h3>Bibliografia básica</h3>
+  <ul>
+    <li>WHITEHEAD, Colson. <em>O reformatório Nickel</em>. Tradução de Rogério W. Galindo. Rio de Janeiro: HarperCollins Brasil, 2024.</li>
+    <li>CATANI, Denice Barbara; AMPARO, Patrícia Aparecida do; CÂNDIDO, Renata Marcílio; SILVA, Vivian Batista da. Entre história e literatura: o mal vai à escola n’O Reformatório Nickel. <em>Educação &amp; Sociedade</em>, Campinas, v. 47, e310194, 2026.</li>
+    <li>NOBLIT, George W. Poder e desvelo na sala de aula. <em>Revista da Faculdade de Educação</em>, São Paulo, v. 21, n. 2, p. 119–137, 1995.</li>
+  </ul>
+
+  <h3>Mensagem para o grupo</h3>
+  <p class="msg" id="msg">Gente, li as orientações e o Doc. O envio é no Moodle até sexta (27) às 23h59; amanhã (25) não tem aula e é o dia de escrever. Hoje o Doc tem o eixo 2 bom, o 1 só com o autor, o 3 vazio e uma impressão no 4. Proposta:
+• eu escrevo o eixo 3 (cultura escolar) e um parágrafo ligando com o artigo da Vivian sobre o Nickel (Educação &amp; Sociedade, 2026);
+• a Bruna completa o eixo 1 (resumo, estilo, edição e tradução), põe páginas no eixo 2 e faz a bibliografia;
+• Bia, você topa fazer a costura final na quinta? Tudo bem a gente acrescentar no seu eixo 1?
+• cada um deixa a própria impressão no 4, com o nome.
+A ideia é enviar na sexta à tarde, com folga.</p>
+  <button class="copy" type="button" id="copiar">Copiar mensagem</button> <span class="ref" id="copiado" role="status"></span>
+</section>
+
+</main>
+
+<footer class="footer gutter">
+  <p>Guia preparado para Jhuann e Bruna a partir das orientações do Moodle (auditoria de 24/11), do Google Doc do grupo (versão de 24/11) e da leitura integral do livro. Interpretações e ligações com a disciplina são sugestões, não exigências da professora.</p>
+  <p><a href="/disciplinas/">Disciplinas</a> · <a href="/">portfólio</a></p>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  try { var t = localStorage.getItem('edm-tema'); if (t) root.dataset.theme = t; } catch (e) {}
+  document.getElementById('tema').addEventListener('click', function () {
+    var dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('edm-tema', root.dataset.theme); } catch (e) {}
+  });
+  var checks = document.querySelectorAll('.checks input');
+  checks.forEach(function (c) {
+    try { c.checked = localStorage.getItem('nickel-' + c.id) === '1'; } catch (e) {}
+    c.addEventListener('change', function () { try { localStorage.setItem('nickel-' + c.id, c.checked ? '1' : '0'); } catch (e) {} });
+  });
+  var out = document.getElementById('copiado');
+  document.getElementById('copiar').addEventListener('click', function () {
+    var txt = document.getElementById('msg').innerText;
+    var sel = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById('msg')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); out.textContent = 'Texto selecionado: use Copiar do sistema.'; };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(function () { out.textContent = 'Copiada.'; }, sel);
+    } else { sel(); }
+  });
+})();
+</script>
+
+</body>
+</html>
