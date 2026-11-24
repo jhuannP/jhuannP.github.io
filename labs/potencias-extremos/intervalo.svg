@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="540" viewBox="0 0 440 540" role="img" aria-labelledby="t d"><title id="t">Raio um, dois extremos diferentes</title><desc id="d">A série soma x elevado a n dividido por n converge absolutamente no intervalo aberto menos um a um, condicionalmente em menos um e diverge em um. No subintervalo módulo de x menor ou igual a um meio, a cota do erro é um sobre dois elevado a N vezes N mais um. Com três termos a cota é um trinta e dois avos; com sete, um mil e vinte e quatro avos.</desc>
+<rect width="440" height="540" fill="#f6f8fb"/><g font-family="sans-serif" fill="#172b43">
+<text x="24" y="36" font-size="21" font-weight="bold">O raio não resolve os extremos</text>
+<text x="24" y="67" font-size="17">Série: Σ xⁿ/n, começando em n=1</text>
+<path d="M34 139H405" stroke="#94a3b8"/><path d="M80 139H360" stroke="#255fbc" stroke-width="4"/>
+<circle cx="80" cy="139" r="7" fill="#255fbc"/><circle cx="360" cy="139" r="7" fill="#f6f8fb" stroke="#255fbc" stroke-width="3"/>
+<text x="68" y="171" font-size="17">−1</text><text x="215" y="171" font-size="17">0</text><text x="356" y="171" font-size="17">1</text>
+<text x="24" y="211" font-size="16">Dentro: convergência absoluta.</text>
+<text x="24" y="241" font-size="16">Em −1: converge, mas não absolutamente.</text>
+<text x="24" y="271" font-size="16">Em 1: harmônica, divergente.</text>
+<path d="M24 299H416" stroke="#cbd5e1"/>
+<text x="24" y="335" font-size="18" font-weight="bold">Controlar o erro em |x| ≤ 1/2</text>
+<text x="24" y="368" font-size="17">|Rₙ(x)| ≤ 1 / [2ᴺ(N+1)]</text>
+<text x="24" y="407" font-size="16">N=3: cota 1/32</text>
+<text x="24" y="441" font-size="16">N=7: cota 1/1024 &lt; 1/1000</text>
+<text x="24" y="483" font-size="15">Cota garantida; não é o erro exato.</text>
+<text x="24" y="518" font-size="13">Figura original; x adimensional e N número de termos.</text>
+</g></svg>

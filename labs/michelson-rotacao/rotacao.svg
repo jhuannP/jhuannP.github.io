@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 510" width="760" height="510" role="img" aria-labelledby="title desc">
+<title id="title">Girar os braços troca as previsões</title><desc id="desc">Modelo histórico sem contração, exemplo adimensional c igual a um, beta três quintos, braços três e dois. Antes, tempos 75 oitavos e cinco; depois, 15 meios e 25 quartos. A diferença entre braços muda de 35 oitavos para cinco quartos: variação menos 25 oitavos. Em relatividade os tempos próprios seis e quatro não mudam com orientação. Esquema não representa dados históricos.</desc>
+<rect width="760" height="510" rx="18" fill="#f4f0e5"/>
+<g font-family="Arial,sans-serif" fill="#203b39">
+<text x="34" y="42" font-size="24" font-weight="bold">Girar muda a comparação</text>
+<text x="34" y="72" font-size="16">Entradas prescritas: c = 1 · β = 3/5 · L₁ = 3 · L₂ = 2</text>
+<rect x="26" y="96" width="344" height="242" rx="12" fill="#e4e9e1"/><rect x="390" y="96" width="344" height="242" rx="12" fill="#e4e9e1"/>
+<text x="46" y="128" font-size="19" font-weight="bold">Antes</text><text x="410" y="128" font-size="19" font-weight="bold">Depois de 90°</text>
+<g fill="none" stroke-width="5"><path d="M80 250 H295 M80 250 V164" stroke="#ae563c"/><path d="M446 270 H570 M446 270 V160" stroke="#ae563c"/></g>
+<text x="144" y="234" font-size="17">braço 1 ∥ v</text><text x="96" y="171" font-size="17">2 ⊥ v</text><text x="462" y="167" font-size="17">1 ⊥ v</text><text x="490" y="253" font-size="17">2 ∥ v</text>
+<text x="46" y="295" font-size="17">t₁ = 75/8 · t₂ = 5</text><text x="46" y="320" font-size="17">t₁ − t₂ = 35/8</text>
+<text x="410" y="295" font-size="17">t₁ = 15/2 · t₂ = 25/4</text><text x="410" y="320" font-size="17">t₁ − t₂ = 5/4</text>
+<text x="34" y="373" font-size="21" font-weight="bold">Modelo histórico: variação = −25/8</text>
+<text x="34" y="404" font-size="17">Para λ = 1/2, módulo do sinal: 25/4 = 6,25 franjas.</text>
+<path d="M34 424 H726" stroke="#b7c5b9"/>
+<text x="34" y="451" font-size="18" font-weight="bold">Relatividade: tempos próprios 6 e 4 nas duas orientações.</text>
+<text x="34" y="480" font-size="15">Comparação ideal de modelos · giro transitório e instrumento não simulados</text>
+</g></svg>

@@ -1,0 +1,5 @@
+from math import sin,exp,pi
+u=lambda x,t:sin(pi*x)*exp(-pi*pi*t)+.5*sin(2*pi*x)*exp(-4*pi*pi*t)
+assert abs(u(0,.1))<1e-12 and abs(u(1,.1))<1e-12
+assert abs(u(.25,0)-(sin(pi*.25)+.5))<1e-12
+print(u(.25,.1))

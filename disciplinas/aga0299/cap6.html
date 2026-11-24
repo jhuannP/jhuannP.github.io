@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VI · Núcleos ativos — AGA0299</title>
+<meta name="description" content="Buracos negros supermassivos, raio de influência, acreção e o modelo unificado.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('aga-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body><!-- portfolio:voltar --><a href="/disciplinas/" style="position:fixed;left:14px;bottom:14px;z-index:999;font:600 13px/1 system-ui,sans-serif;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.92);color:#1b1b2a;text-decoration:none;border:1px solid rgba(0,0,0,.12);box-shadow:0 4px 16px rgba(0,0,0,.12)">&larr; Portfólio</a>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>AGA0299 <em>notas de aula</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="fundamentos.html" title="Fundamentos de observação">0</a><a href="cap1.html" title="Perspectiva histórica">I</a><a href="cap2.html" title="A Via Láctea">II</a><a href="cap3.html" title="Propriedades integradas">III</a><a href="cap4.html" title="Espirais e lenticulares">IV</a><a href="cap5.html" title="Galáxias elípticas">V</a><a href="cap6.html" class="on" title="Núcleos ativos">VI</a><a href="cap7.html" title="Galáxias no Universo">VII</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<div class="chapter-hero" data-num="VI">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo VI </p>
+    <h1>Núcleos ativos</h1>
+    <p class="lede">Buracos negros supermassivos, raio de influência, acreção e o modelo unificado.</p>
+  </div>
+</div>
+<div class="layout">
+  <aside class="toc" aria-label="Módulos deste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol><li><a href="#smbh"><span class="toc-num">35</span>Buracos negros supermassivos e núcleos ativos</a></li></ol>
+  </aside>
+  <main id="conteudo" class="content">
+<article class="modulo" id="smbh">
+<header class="modulo-h"><span class="modulo-num">Módulo 35</span><h2>Buracos negros supermassivos e núcleos ativos</h2></header>
+<details class="cobertura"><summary>Fontes e cobertura deste módulo</summary><p><strong>Cap6, pp. 1–67: completo</strong> (23/11/2026). Não há AulaCap6; a ordem segue as notas expandidas: 6.1 Buracos negros supermassivos (pp. 4–23); 6.2 Modelo unificado (24–32); 6.3 Propriedades dos AGNs (33–47); 6.4 Seyfert (48–51); 6.5 Quasares (52–56); 6.6 Radiogaláxias (57–61); 6.7 Blazares (62–64); 6.8 Problemas (65–67).
+
+
+<strong>Provas:</strong> a família mais frequente das P3. Massa central de NGC 3115 por dispersão (10 provas); escalas do buraco negro (P3/2010, 2013, 2015, 2016, 2019, 2023); captura de estrela (P3/2012, 2017, 2018, 2021); curva de rotação central (P3/2011 Q2); AGN descritivo (P3/2010 Q2–3, P3/2014 Q2).</p></details>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Que problema este capítulo resolve?</h3>
+<p>Muitas galáxias têm no centro um <strong>buraco negro supermassivo</strong> (SMBH), de \(10^6\) a \(10^{10}\,M_\odot\). Algumas têm também um <strong>núcleo ativo</strong> (AGN), que emite mais que a galáxia inteira a partir de uma região menor que o Sistema Solar. O capítulo responde: como <em>detectar</em> e <em>pesar</em> o buraco negro; como ele produz tanta energia (acreção e limite de Eddington); e por que os AGNs aparecem com caras tão diferentes (Seyfert 1 e 2, quasares, radiogaláxias, blazares). A resposta será um único modelo visto de ângulos diferentes.</p>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 2–4 (linha do tempo: Seyfert 1943, 3C 273, limite de Eddington, modelos unificados, relação \(M_{\rm BH}\times\)bojo).</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Detectar pela curva de rotação central</h3>
+<p>Modelo simples: um buraco negro pontual \(M_{\rm BH}\) no centro de uma distribuição estelar de densidade \(\rho\) aproximadamente constante. A massa encerrada e a velocidade circular são</p>
+<span class="eq-anchor" id="eq-35-1"></span><div class="math-display">\[\tag{35.1}
+M(r)\simeq M_{\rm BH}+\frac43\pi\rho r^3,\qquad V^2(r)=\frac{GM(r)}{r}\simeq\frac{GM_{\rm BH}}{r}+\frac{4\pi G\rho}{3}r^2.\]</div>
+<p>O primeiro termo faz \(V\) <strong>crescer para o centro</strong> (kepleriano); longe, domina o termo estelar (\(V\propto r\), corpo rígido). Curvas de rotação de galáxias próximas mostram essa subida central (Sofue e Rubin, 2001). O problema é a <strong>resolução</strong>: \(L(\mathrm{pc})=d(\mathrm{kpc})\,\theta('')/206{,}3\). No centro da Via Láctea (\(d\approx8\)–10 kpc), \(1''\approx0{,}05\) pc; numa galáxia a 10 Mpc, \(1''\approx50\) pc.</p>
+<p><strong>Onde o buraco negro domina</strong> (problema 1 do Cap6): o termo do BH supera o estelar quando \(M_{\rm BH}&gt;M_*(r)\); na fronteira em que ele produz o dobro da massa estelar, \(M_{\rm BH}=2M_*(r)=\frac83\pi\rho r^3\), e \(r=(3M_{\rm BH}/8\pi\rho)^{1/3}\). Para a Galáxia, com \(\rho\sim10^6\,M_\odot/\mathrm{pc}^3\): \(r\approx0{,}5\) pc com \(M_{\rm BH}=10^6\,M_\odot\) e \(\approx0{,}8\) pc com \(4\times10^6\,M_\odot\).</p>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 4–6. Aplicação: P3/2011 Q2 (massa do BH da Galáxia pelos pontos mais internos da curva, \(M=V^2r/G\); método limitado às galáxias próximas pela resolução).</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Método de Kormendy: dispersão de velocidades</h3>
+<p>Perto do núcleo, as estrelas não estão só girando: têm grande dispersão \(\sigma\). A equação de Jeans (hidrodinâmica de um sistema não colisional; Binney e Tremaine), com \(\sigma_r,\sigma_\theta,\sigma_\phi\) as dispersões nas três direções e \(\rho_*\) a densidade estelar, dá a massa encerrada:</p>
+<span class="eq-anchor" id="eq-35-2"></span><div class="math-display">\[\tag{35.2}
+M(r)=\frac{V^2r}{G}+\frac{\sigma_r^2\,r}{G}\left[-\frac{d\ln\rho_*}{d\ln r}-\frac{d\ln\sigma_r^2}{d\ln r}-\left(1-\frac{\sigma_\theta^2}{\sigma_r^2}\right)-\left(1-\frac{\sigma_\phi^2}{\sigma_r^2}\right)\right].\]</div>
+<p><strong>Caso pedido nas provas:</strong> sem rotação (\(V=0\)), densidade aproximadamente constante (\(d\ln\rho_*/d\ln r=0\)) e dispersão isotrópica (os dois últimos termos se anulam). Sobra</p>
+<span class="eq-anchor" id="eq-35-3"></span><div class="math-display">\[\tag{35.3}
+M(r)=-\frac{\sigma^2r}{G}\,\frac{d\ln\sigma^2}{d\ln r}=-\frac{\sigma^2r}{G}\cdot\frac{r}{\sigma^2}\cdot2\sigma\frac{d\sigma}{dr}=-\frac{2r^2\sigma}{G}\,\frac{d\sigma}{dr},\]</div>
+<p>usando \(d\ln\sigma^2/d\ln r=(r/\sigma^2)\,d\sigma^2/dr=(2r/\sigma)\,d\sigma/dr\). Como \(\sigma\) <em>cai</em> para fora (\(d\sigma/dr&lt;0\)), \(M&gt;0\). Uma queda íngreme de \(\sigma\) perto do centro denuncia massa concentrada.</p>
+<p><strong>NGC 3115</strong> (Kormendy et al.): rotação de \(165\pm4\) km/s a \(2''\); dispersão típica do bojo \(\approx182\) km/s a \(7''\), que sobe a \(295\pm9\) km/s dentro de \(2''\); o núcleo compacto (cuspy), isolado do disco nuclear, tem \(\sigma\approx600\) km/s. Aglomerados estelares densos têm só 10–20 km/s. Massa inferida: \(\sim10^9\,M_\odot\).</p>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 7–8 (Kormendy 1992, 1995; Kormendy et al. 1996). O Cap6 escreve o resultado como \(M\simeq r^2/G\ d\sigma^2/dr\), que é a mesma expressão a menos do sinal.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> NGC 3115 (P3/2012, 2017, 2018, 2019, 2021, 2023; P3/2013, 2015, 2016)</div><p>Enunciados abertos. Figura: \(\sigma\) (km/s) contra \(r\) (\(''\)) ao longo do eixo maior, de 0 a \(30''\). Distância de 10 Mpc (P3/2017) ou 10,172 Mpc (P3/2013).</p>
+<p><strong>A. Leitura do gradiente</strong> (aproximada, na figura do Cap6, p. 66; meça na prova): de \(\sigma\approx290\) km/s em \(r\approx0{,}3''\) a \(\sigma\approx200\) km/s em \(r\approx2{,}5''\):</p>
+<span class="eq-anchor" id="eq-35-4"></span><div class="math-display">\[\tag{35.4}
+\frac{d\sigma}{dr}\approx\frac{200-290}{2{,}5-0{,}3}\approx-40\ \mathrm{km\,s^{-1}}/''.\]</div>
+<p><strong>B.</strong> É a dedução acima.</p>
+<p><strong>C. Massa em \(r\approx1''\)</strong> (P3/2013), com \(d=10{,}172\) Mpc: \(1''=10{,}172\times10^6/206\,265=49{,}3\) pc, então \(d\sigma/dr\approx-40/49{,}3=-0{,}81\) km/s/pc. Com \(\sigma(1'')\approx255\) km/s e \(G=4{,}301\times10^{-3}\) pc (km/s)\(^2/M_\odot\):</p>
+<span class="eq-anchor" id="eq-35-5"></span><div class="math-display">\[\tag{35.5}
+M(1'')\approx\frac{2\times(49{,}3)^2\times255\times0{,}81}{4{,}301\times10^{-3}}\approx2{,}3\times10^8\,M_\odot.\]</div>
+<p><strong>Sensibilidade:</strong> \(M\propto r^2\). No “primeiro ponto observado” (\(r\approx0{,}3''\)), a mesma conta dá \(\sim2\times10^7\,M_\odot\). Declare qual \(r\), \(\sigma\) e gradiente você leu. A ordem de grandeza (\(10^8\)–\(10^9\)) é o que importa.</p>
+<p><strong>Luminosidade e \(M/L\) (P3/2013 C–D).</strong> Na abertura \(2R=14{,}8''\), \(V=11{,}18\). Com \(\mu=5\log(1{,}0172\times10^7)-5=30{,}04\): \(M_V=-18{,}86\) e \(L=10^{-0{,}4(-18{,}86-4{,}83)}=3{,}0\times10^9\,L_\odot\). Para estimar a luz dentro de \(1''\) é preciso uma hipótese; com brilho uniforme no disco de raio \(7{,}4''\), \(L(&lt;1'')\approx L/7{,}4^2=5{,}4\times10^7\,L_\odot\), e \(M/L\approx2{,}3\times10^8/5{,}4\times10^7\approx4\). Como o brilho real é concentrado no centro, isso superestima \(L(&lt;1'')\) e subestima \(M/L\): o valor verdadeiro é maior, um sinal de massa escura compacta.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Raio de Schwarzschild e raio de influência</h3>
+<p><strong>Raio de Schwarzschild</strong> (horizonte de eventos):</p>
+<span class="eq-anchor" id="eq-35-6"></span><div class="math-display">\[\tag{35.6}
+r_s=\frac{2GM}{c^2}\simeq2{,}95\ \mathrm{km}\times\frac{M}{M_\odot}.\]</div>
+<p>Para \(10^9\,M_\odot\): \(r_s\approx3\times10^9\) km \(\approx20\) UA \(\approx10^{-4}\) pc. Impossível de resolver em outras galáxias.</p>
+<p><strong>Raio de influência</strong>: a região onde a gravidade do buraco negro domina o movimento das estrelas, que têm dispersão \(\sigma\):</p>
+<span class="eq-anchor" id="eq-35-7"></span><div class="math-display">\[\tag{35.7}
+R_{\rm infl}\simeq\frac{GM_{\rm BH}}{\sigma^2}\simeq45\ \mathrm{pc}\left(\frac{M_{\rm BH}}{10^8\,M_\odot}\right)\left(\frac{\sigma}{100\ \mathrm{km/s}}\right)^{-2}.\]</div>
+<p>As detecções diretas mais confiáveis exigem resolver \(R_{\rm infl}\).</p>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 9 e 20.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Escalas de um SMBH (P3/2010 Q1, P3/2019 Q2, P3/2023 Q2)</div><p>Dados: \(M_{\rm BH}=10^9\,M_\odot\), \(\sigma=300\) km/s, \(d=10\) Mpc.</p>
+<span class="eq-anchor" id="eq-35-8"></span><div class="math-display">\[\tag{35.8}
+\begin{aligned}
+r_s&amp;=2{,}95\times10^9\ \mathrm{km}=19{,}7\ \mathrm{UA}=9{,}6\times10^{-5}\ \mathrm{pc},\\
+R_{\rm infl}&amp;=\frac{4{,}301\times10^{-3}\times10^9}{300^2}=47{,}8\ \mathrm{pc},\\
+\theta&amp;=\frac{47{,}8}{10^7}\times206\,265=0{,}99''.
+\end{aligned}\]</div>
+<p><strong>Distância máxima</strong> com resolução de \(0{,}1''\): \(d_{\max}=R_{\rm infl}/\theta_{\min}=47{,}8\ \mathrm{pc}/(0{,}1/206\,265)\approx99\) Mpc. Só galáxias a menos de \(\sim100\) Mpc permitem esse método.</p>
+<p><strong>Eddington e acreção:</strong> \(L_E=1{,}26\times10^{38}\times10^9=1{,}26\times10^{47}\) erg/s. Com a eficiência \(\varepsilon=0{,}0625\) deduzida abaixo,</p>
+<span class="eq-anchor" id="eq-35-9"></span><div class="math-display">\[\tag{35.9}
+\dot M=\frac{L_E}{\varepsilon c^2}=\frac{1{,}26\times10^{47}}{0{,}0625\times(3\times10^{10})^2}=2{,}2\times10^{24}\ \mathrm{g/s}\approx36\,M_\odot/\mathrm{ano}.\]</div>
+<p>Com \(\varepsilon=0{,}1\), valor comum na literatura, \(\approx22\,M_\odot\)/ano. Diga qual eficiência usou.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Outros exemplos de SMBHs</h3>
+<ul><li><strong>NGC 4594 (Sombrero):</strong> \(\sim10^9\,M_\odot\); removido o bojo nos espectros do HST, as linhas do centro ficam mais largas; o espectro central é de um mini-quasar.</li><li><strong>M31:</strong> \(\sim3\times10^7\,M_\odot\); núcleo duplo (P1 e P2), provavelmente um disco excêntrico de estrelas em torno do BH.</li><li><strong>Perseus A (NGC 1275):</strong> ondas acústicas no gás quente (Chandra), produzidas por acreção violenta.</li><li><strong>Centaurus A:</strong> dois jatos relativísticos cortando a faixa de poeira.</li><li><strong>Sgr A*</strong> (Via Láctea, 7,94 kpc): espiral de três braços de gás ionizado e um anel de gás frio que não cai, porque tem momento angular.</li></ul>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 10–18.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>O buraco negro cresce junto com o bojo</h3>
+<p>A massa do SMBH correlaciona-se com a dispersão do bojo e com sua luminosidade:</p>
+<span class="eq-anchor" id="eq-35-10"></span><div class="math-display">\[\tag{35.10}
+\begin{gathered}
+\log\frac{M_{\rm BH}}{M_\odot}\simeq8{,}12+4{,}24\log\frac{\sigma}{200\ \mathrm{km/s}}\quad(\text{desvio }0{,}44),\\
+\log\frac{M_{\rm BH}}{M_\odot}\simeq8{,}95+1{,}11\log\frac{L_V}{10^{11}\,L_{V,\odot}}\quad(\text{desvio }0{,}38).
+\end{gathered}\]</div>
+<p>O surpreendente é a diferença de escalas: o bojo tem 3–5 kpc e \(R_{\rm infl}\), dezenas de pc. As duas evoluções devem estar ligadas. Combinando com Faber–Jackson (\(L\propto\sigma^4\)), \(M_{\rm BH}\propto\sigma^{4{,}24}\propto L^{1{,}06}\): a massa do BH é aproximadamente uma fração fixa da massa do bojo.</p>
+<p><strong>Exemplo (problema 6 do Cap6):</strong> para \(\omega\) Centauri, \(\sigma\approx17\) km/s; pela primeira relação, \(\log M=8{,}12+4{,}24\log(0{,}085)=3{,}58\), isto é \(M\approx4\times10^3\,M_\odot\), um BH de massa intermediária.</p>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 19–20 (Gültekin et al. 2009). O Cap6 escreve a segunda relação com \(L_V/L_{V,\odot}\), o que daria massas absurdas; a normalização por \(10^{11}L_{V,\odot}\) é a de Gültekin et al. Conferir com o professor.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Como formar um SMBH tão cedo?</h3>
+<p>Acretando no limite de Eddington, a massa dobra a cada \(t_E\sim10^7\) anos: \(M_{\rm BH}=2M_0\,e^{t/t_E}\) (problema 7: se \(dM=kM\,dt\), então \(M\propto e^{kt}\)). Partindo de uma semente estelar, leva-se \(\sim700\) milhões de anos para chegar a um SMBH. Mas há quasares em \(z\approx7{,}1\), quando o Universo tinha \(\sim760\) milhões de anos. Saídas propostas: (1) <strong>fusões hierárquicas</strong> de BHs menores, com fricção dinâmica levando-os ao centro; (2) <strong>sementes primordiais</strong>; (3) em espirais, <strong>barras</strong> que canalizam gás ao centro, formando pseudobojos e alimentando o BH.</p>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 21–23.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Modelo unificado: disco de acreção, toro e jatos</h3>
+<p>O motor de um AGN é um SMBH capturando gás (Urry e Padovani, 1995). Para conservar momento angular, o gás forma um <strong>disco de acreção</strong>. A radiação sai preferencialmente pelos polos; no plano equatorial fica um <strong>toro</strong> de gás e poeira mais frio. Conforme o ângulo de visada, o mesmo objeto parece diferente:</p>
+<ul><li><strong>de cima</strong> (visada pelo cone de ionização): vemos o disco e as nuvens rápidas próximas, com linhas largas: <strong>Seyfert 1</strong> ou quasar;</li><li><strong>de lado</strong> (através do toro): o toro esconde o centro, e só vemos as nuvens lentas e distantes, com linhas estreitas: <strong>Seyfert 2</strong>;</li><li><strong>ao longo do jato</strong>: emissão relativística amplificada, muito variável e polarizada: <strong>blazar</strong>.</li></ul>
+<p>Escalas: disco de acreção de no máximo frações de parsec; toro de 10 a 100 pc. Modelo de Elvis (2000): um vento sai do disco e explica as linhas de absorção largas (BAL) e estreitas (NAL).</p>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 24 e 29–32. Aplicação: P3/2010 Q2 (associar a figura de Elvis aos três tipos de AGN).</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Última órbita estável e eficiência de 6%</h3>
+<p>O potencial pseudo-newtoniano \(U=-GM/(R-R_s)\) imita a relatividade. Com momento angular \(L\) por unidade de massa, o potencial efetivo é</p>
+<span class="eq-anchor" id="eq-35-11"></span><div class="math-display">\[\tag{35.11}
+U_{\rm ef}=\frac{L^2}{2R^2}-\frac{GM}{R-R_s}.\]</div>
+<p>Órbitas circulares estão no mínimo de \(U_{\rm ef}\). Em Newton, sempre há mínimo; aqui, abaixo de um raio crítico, a órbita fica instável. Impondo \(\partial U_{\rm ef}/\partial R=0\) e \(\partial^2U_{\rm ef}/\partial R^2=0\), obtém-se \(R=3R_s\): a <strong>última órbita estável</strong>. Nela, a energia total por unidade de massa é \(E=-c^2/16\). Tudo o que a matéria perde até chegar ali, \(c^2/16\) por unidade de massa, sai como radiação:</p>
+<span class="eq-anchor" id="eq-35-12"></span><div class="math-display">\[\tag{35.12}
+L=\varepsilon\,\dot M\,c^2,\qquad\varepsilon=\frac1{16}=0{,}0625\ (\approx6\%).\]</div>
+<p>A fusão de hidrogênio em hélio libera só \(\sim0{,}7\%\) da massa de repouso. O Cap6 escreve 0,01%; <strong>precisa verificar</strong> a que processo o número se refere. Essa eficiência enorme é o argumento clássico para SMBHs como motores dos AGNs.</p>
+<p><strong>Exemplo (Cap6, p. 26):</strong> para emitir 100 vezes a luminosidade da Via Láctea (\(\sim2\times10^{12}\,L_\odot=7{,}7\times10^{45}\) erg/s): \(\dot M=L/(\varepsilon c^2)\approx2\,M_\odot\)/ano; em \(10^{10}\) anos, \(2\times10^{10}\,M_\odot\) acretadas.</p>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 25–26.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Limite de Eddington</h3>
+<p>Fótons carregam momento: a pressão de radiação a uma distância \(r\) de uma fonte de luminosidade \(L\) é \(P=L/(4\pi r^2c)\). Sobre um elétron (seção eficaz de Thomson \(\sigma_e\)), a força é \(\sigma_eL/(4\pi r^2c)\). Para o gás continuar caindo, a gravidade sobre o par próton–elétron precisa vencer:</p>
+<span class="eq-anchor" id="eq-35-13"></span><div class="math-display">\[\tag{35.13}
+\frac{\sigma_eL}{4\pi r^2c}&lt;\frac{GMm_p}{r^2}\quad\Longrightarrow\quad L&lt;L_E=\frac{4\pi Gcm_p}{\sigma_e}M=1{,}26\times10^{38}\ \frac{M}{M_\odot}\ \mathrm{erg/s}.\]</div>
+<p>Como \(r\) cancela, o limite vale em qualquer raio. Acima de \(L_E\), a radiação expulsa o próprio combustível.</p>
+<p><strong>Momento angular, o outro obstáculo:</strong> no círculo solar, \(L/m\sim220\times10=2200\) km/s\(\cdot\)kpc. No raio de influência, \(L/m\sim GM/\sigma\), cinco ordens de grandeza menor; na última órbita estável, ainda menos. Por isso o gás não cai radialmente: forma um disco de acreção que perde momento angular por viscosidade e turbulência. Barras e perturbações não axissimétricas ajudam no transporte em grande escala.</p>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 27–28.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Captura de uma estrela por um SMBH (P3/2012, 2017, 2018, 2021, Q3)</div><p>Dados: \(M_{\rm BH}=10^{10}\,M_\odot\), \(n=100\) estrelas/pc\(^3\), \(\sigma=200\) km/s. As interpretações abaixo são as mais simples coerentes com o Cap6; declare-as na prova.</p>
+<p><strong>A. Separação média:</strong> \(s=n^{-1/3}=0{,}22\) pc.</p>
+<p><strong>B. Tempo para a captura:</strong> uma estrela vizinha em rota de colisão percorre \(\sim s\) com velocidade \(\sim\sigma\): \(t\approx s/\sigma=0{,}22\times3{,}09\times10^{13}/200=3{,}3\times10^{10}\) s \(\approx10^3\) anos.</p>
+<p><strong>C. Energia irradiada:</strong> até a última órbita estável, uma massa \(m\) libera \(mc^2/16\); para \(m=1\,M_\odot\), \(1{,}99\times10^{33}\times9\times10^{20}/16=1{,}1\times10^{53}\) erg.</p>
+<p><strong>D. Duração final e luminosidade:</strong> \(r_s=2{,}95\times10^{10}\) km; de \(3r_s\) a \(r_s\) a matéria percorre \(2r_s\) a uma velocidade próxima de \(c\): \(\Delta t\approx2r_s/c=2\times10^5\) s \(\approx2\) dias. Então \(L\approx E/\Delta t\approx6\times10^{47}\) erg/s, comparável a um quasar luminoso, por poucos dias.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Propriedades que identificam um AGN</h3>
+<p>Seyfert (1943) notou linhas de emissão alargadas por velocidades de até 8000 km/s. Hoje um AGN é reconhecido por um conjunto de propriedades:</p>
+<ol><li><strong>Fonte quase pontual.</strong> Em NGC 1068 (12,25 Mpc), \(1''\approx60\) pc, e nem o HST resolve o disco de acreção.</li><li><strong>Luminosidade enorme:</strong> \(10^{42}\)–\(10^{48}\) erg/s, contra \(\sim10^{44}\) de uma galáxia típica. 3C 273 (\(m\approx12{,}8\), \(z=0{,}158\), \(d\approx650\) Mpc) tem \(M\approx-26{,}7\), cerca de 100 vezes a Via Láctea; a galáxia hospedeira só aparece retirando o AGN.</li><li><strong>Espectro não térmico.</strong> A SED de M101 é soma de corpos negros estelares (pico no óptico; pela lei de Wien, \(T\sim\) alguns milhares de K). A de 3C 273 é uma lei de potência até o rádio: emissão síncrotron de elétrons relativísticos num campo magnético. O pico no óptico–UV (“big blue bump”) vem do disco de acreção.</li><li><strong>Linhas de emissão fortes</strong>, permitidas e proibidas, de átomos muito ionizados. Linhas proibidas ([O&thinsp;III], [N&thinsp;II]) só aparecem em gás rarefeito (\(n&lt;10^9\) cm\(^{-3}\)), onde a desexcitação por colisão é rara.</li><li><strong>Variabilidade</strong> de semanas a anos (PKS 2155-304: dias). Uma região só varia coerentemente se a luz a atravessa no tempo da variação: \(L\lesssim c\,t\approx0{,}3\) pc \(\times(t/1\ \text{ano})\). Variações rápidas vêm das vizinhanças do disco; o toro (10–100 pc) só pode variar em décadas a séculos.</li><li><strong>Polarização</strong> de 0,5–2%, às vezes 10%. Em IRAS 11058-1131, a luz polarizada tem espectro tipo 1 num objeto tipo 2: é luz do centro espalhada para nós, o que confirma o modelo disco + toro.</li><li><strong>Emissão rádio</strong>, às vezes em lobos muito além da galáxia (Cygnus A).</li></ol>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 33–47.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Por que o disco de acreção é mais quente perto do centro</h3>
+<p>Pelo virial (\(2K+U=0\)), quando o gás desce de uma camada a outra, metade da energia potencial liberada vira energia cinética e a outra metade é irradiada. Numa camada de largura \(\Delta R\), com taxa de acreção \(\dot M\), a luminosidade por área é</p>
+<span class="eq-anchor" id="eq-35-14"></span><div class="math-display">\[\tag{35.14}
+\frac{L}{A}=\frac{1}{2}\frac{GM}{R^2}\,\Delta R\,\dot M\cdot\frac{1}{\pi R\,\Delta R}\propto R^{-3}.\]</div>
+<p>Se cada anel emite como corpo negro (\(L/A\propto T^4\)), \(T\propto R^{-3/4}\): o centro é mais quente e emite no UV e em raios X; as bordas, no óptico e infravermelho. A SED do disco é a soma dos corpos negros de todos os anéis.</p>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 39–40.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Lobos de Cygnus A (P3/2010 Q3, Cap6 p. 47)</div><p>A barra da imagem vale \(138''\) a \(d=234\) Mpc: \(138/206\,265\times234\,000=157\) kpc. As dimensões dos lobos saem medindo-os em unidades da barra. <strong>Variabilidade:</strong> uma estrutura de tamanho \(D\) só varia coerentemente em \(t\gtrsim D/c\). Para lobos de dezenas de kpc, isso dá dezenas de milhares de anos (1 kpc \(/\,c\approx3300\) anos): os lobos não variam em escala humana; variações rápidas vêm do núcleo.</p>
+<p><strong>Atenção:</strong> a P3/2010 escreve “distância de \(234''\)”; é um erro de digitação para 234 Mpc (Cap6, p. 47).</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Seyfert, quasares, radiogaláxias e blazares</h3>
+<ul><li><strong>Seyfert</strong> (AGNs de baixa luminosidade, \(M_B&gt;-21{,}5\), hospedeira visível, em geral espiral). <em>Tipo 1:</em> linhas estreitas (gás rarefeito, \(n_e\sim10^3\)–\(10^6\) cm\(^{-3}\), centenas de km/s) <strong>mais</strong> linhas permitidas largas (milhares de km/s, gás denso perto do centro). <em>Tipo 2:</em> só linhas estreitas. Tipos intermediários: 1,5, 1,8, 1,9. Diagramas de razões de linhas (\([\mathrm{O\,III}]/\mathrm{H}\beta\) contra \([\mathrm{N\,II}]/\mathrm{H}\alpha\), \([\mathrm{S\,II}]/\mathrm{H}\alpha\), \([\mathrm{O\,I}]/\mathrm{H}\alpha\)) separam AGNs (Seyfert e LINERs) de regiões H&thinsp;II (Ho, 2008).</li><li><strong>Quasares</strong> (os mais luminosos, \(M_B&lt;-21{,}5\)): parecem estrelas; imagens profundas revelam hospedeiras, muitas vezes em interação. Um quasar é uma <em>fase</em> da evolução de galáxias. Sistemas triplos (QQQ 1429-008) surpreendem porque quasares são raros. 3C 273 tem linhas largas de milhares de km/s, variabilidade em vários comprimentos de onda e hospedeira provavelmente E4.</li><li><strong>Radiogaláxias:</strong> AGNs com forte emissão rádio, em geral em elípticas, com jatos relativísticos colimados e lobos até \(\sim150\) kpc (3C 296/NGC 5532; Centaurus A, com raios X onde o jato colide com o gás).</li><li><strong>Blazares</strong> (protótipo BL Lac, em \(z=0{,}07\)): contínuo muito variável e polarizado, quase sem linhas. Vemos o jato de frente; a forma do jato muda em poucos anos (VLBA).</li></ul>
+<p class="fonte"><span>Fonte</span> Cap6, pp. 48–64.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Um quasar perto de nós (P3/2014 Q2)</div><p>Enunciado aberto. <strong>a.</strong> 3C 273: \(V=12{,}83\), \(d=650\) Mpc, \(\mu=5\log(6{,}5\times10^8)-5=39{,}06\), então \(M_V=-26{,}23\). Para brilhar como o Sol (\(m_V=-26{,}74\)): \(d=10^{(-26{,}74+26{,}23+5)/5}=10^{0{,}90}\approx7{,}9\) pc.</p>
+<p><strong>b.</strong> Um quasar com \(M_V=-30{,}5\) no centro da Galáxia (8 kpc), <em>sem</em> extinção: \(m_V=-30{,}5+5\log8000-5=-16{,}0\). (Na realidade, \(A_V\approx30\) mag nessa direção o apagaria no visível.)</p>
+<p><strong>c.</strong> Em U: quasar \(U=V-0{,}90=-16{,}9\); Sol \(U=-26{,}74+0{,}85=-25{,}9\). O Sol continua 9 mag mais brilhante em U, ou seja \(10^{0{,}4\times9}\approx4000\) vezes.</p>
+<p><strong>d.</strong> Com \(n=10^{-7}\) Mpc\(^{-3}\): separação típica \(n^{-1/3}\approx215\) Mpc.</p></div>
+</div></section>
+<section class="note note-exam"><div class="cue"><span>NA PROVA</span></div><div class="note-body"><h3>Roteiro para buracos negros e AGNs</h3>
+<ol><li>Ângulo e tamanho: \(L(\mathrm{pc})=\theta('')\,d(\mathrm{pc})/206\,265\); resolução mínima \(\theta=R/d\); distância máxima \(d=R/\theta\).</li><li>\(r_s=2{,}95\) km \(\times M/M_\odot\); \(R_{\rm infl}=GM/\sigma^2\) com \(G=4{,}301\times10^{-3}\) pc (km/s)\(^2/M_\odot\).</li><li>Kormendy: \(M=-2r^2\sigma\,(d\sigma/dr)/G\); leia \(\sigma\) e a inclinação no gráfico, converta \(''\) em pc nas duas.</li><li>Eddington: \(L_E=1{,}26\times10^{38}\,M/M_\odot\) erg/s; acreção \(\dot M=L/(\varepsilon c^2)\); \(1\,M_\odot/\mathrm{ano}=6{,}3\times10^{25}\) g/s.</li><li>Última órbita estável \(=3r_s\); energia liberada \(=mc^2/16\).</li><li>Variabilidade: tamanho \(\lesssim c\,t\).</li></ol>
+<p class="fonte"><span>Fonte</span> Problemas do Cap6, pp. 65–67. Fim do Capítulo 6.</p>
+</div></section><figure class="widget-wrap"><div class="widget" data-widget="smbh-influencia"></div></figure>
+</article>
+<nav class="pager"><a class="prev" href="cap5.html"><span>← Anterior</span>V · Galáxias elípticas</a><a class="next" href="cap7.html"><span>Próximo →</span>VII · Galáxias no Universo</a></nav>
+  </main>
+</div>
+<footer class="footer">
+  <p><strong>AGA0299 · Astrofísica Galáctica e Extragaláctica</strong> · IAG/USP · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir das aulas e notas expandidas de Prof. Ronaldo E. de Souza (IAG/USP) e de Binney &amp; Merrifield, <em>Galactic Astronomy</em> (1998). Texto, figuras interativas e erros são das notas; não é material oficial da disciplina.</p>
+  <p class="small">Gerado a partir do caderno LaTeX por <code>scripts/gerar_site_aga.py</code>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/widgets/smbh-influencia.js" defer></script>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

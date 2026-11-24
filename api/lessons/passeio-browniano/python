@@ -1,0 +1,12 @@
+import random
+from math import sqrt
+
+rng = random.Random(42)
+dt = 0.01
+w = 0.0
+valores = [w]
+for _ in range(100):
+    w += sqrt(dt)*rng.gauss(0.0, 1.0)
+    valores.append(w)
+print("Valor final de uma trajetória:", valores[-1])
+print("Variância teórica no tempo 1:", 1.0)

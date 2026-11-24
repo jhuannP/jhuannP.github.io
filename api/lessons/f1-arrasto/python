@@ -1,0 +1,6 @@
+from math import exp
+m,b,g=2.,4.,10.
+tau=m/b;vt=g*tau
+v=lambda t:vt*(1-exp(-t/tau))
+assert v(0)==0 and vt==5
+print(vt,v(tau))

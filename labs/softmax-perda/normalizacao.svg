@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 560" role="img" aria-labelledby="title desc">
+<title id="title">Do logit ao gradiente</title><desc id="desc">Logits log de dois, zero, zero dão pesos dois, um, um e probabilidades um meio, um quarto, um quarto. Com alvo zero a perda é log de dois e o gradiente é menos um meio, um quarto, um quarto.</desc><rect width="440" height="560" fill="#f5f4ef"/>
+<g font-family="sans-serif" fill="#172b45"><text x="28" y="43" font-size="24">Três classes, um alvo</text><text x="28" y="74" font-size="16">z = [ln 2, 0, 0] • alvo k = 0</text><text x="28" y="120" font-size="17">Pesos: [2, 1, 1] → soma 4</text>
+<text x="28" y="162" font-size="16">Classe 0 • p = 1/2</text><rect x="28" y="176" width="340" height="30" rx="3" fill="#386b9b"/>
+<text x="28" y="243" font-size="16">Classe 1 • p = 1/4</text><rect x="28" y="257" width="170" height="30" rx="3" fill="#386b9b"/>
+<text x="28" y="324" font-size="16">Classe 2 • p = 1/4</text><rect x="28" y="338" width="170" height="30" rx="3" fill="#386b9b"/>
+<text x="28" y="415" font-size="20">Perda = −ln(1/2) = ln 2</text><text x="28" y="454" font-size="18">Gradiente = [−1/2, 1/4, 1/4]</text><text x="28" y="488" font-size="16">Sua soma é zero.</text><text x="28" y="530" font-size="14">Escala comum; probabilidades do modelo.</text></g></svg>

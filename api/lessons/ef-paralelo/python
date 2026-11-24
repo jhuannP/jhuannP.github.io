@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+vs=Q(12);r0=Q(2);r1=Q(6);r2=Q(3)
+rp=1/(1/r1+1/r2)
+i=vs/(r0+rp);vb=i*rp
+i1,i2=vb/r1,vb/r2
+assert i1+i2==i
+assert i*i*r0+vb*i1+vb*i2==vs*i
+print(rp,i,vb,i1,i2)

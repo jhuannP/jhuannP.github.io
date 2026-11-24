@@ -1,0 +1,6 @@
+from random import Random
+def draws(seed):
+    rng=Random(seed)
+    return [rng.random() for _ in range(5)]
+assert draws(42)==draws(42)
+print(draws(42))

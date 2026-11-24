@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="370" viewBox="0 0 520 370" role="img" aria-labelledby="title desc">
+<title id="title">Sequência e contagem</title><desc id="desc">VVA, VAV e AVV são disjuntos e têm a mesma evidência dois quinze avos. Sua união tem evidência dois quintos. Para as duas hipóteses de composição do exemplo, a posterior de K igual a quatro é três quartos em ambos os casos.</desc>
+<rect width="520" height="370" fill="#f6f3eb"/>
+<g font-family="sans-serif" fill="#172845">
+<text x="20" y="40" font-size="28" font-weight="bold">Uma ordem ou todas as ordens?</text>
+<text x="20" y="96" font-size="27">VVA</text><text x="190" y="96" font-size="27">VAV</text><text x="360" y="96" font-size="27">AVV</text>
+<text x="20" y="135" font-size="26">2/15</text><text x="190" y="135" font-size="26">2/15</text><text x="360" y="135" font-size="26">2/15</text>
+<path d="M20 159 H480" stroke="#264bb5" stroke-width="3"/>
+<text x="20" y="208" font-size="27" fill="#264bb5">Contagem X=2: soma = 2/5</text>
+<text x="20" y="267" font-size="26">Posterior de K=4: sempre 3/4</text>
+<text x="20" y="321" font-size="23">N=6; K=2 ou 4; prévias de 1/2</text>
+</g></svg>

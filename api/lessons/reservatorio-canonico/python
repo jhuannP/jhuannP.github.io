@@ -1,0 +1,6 @@
+from math import comb
+from fractions import Fraction
+w0,w1=comb(10,3),comb(10,2)
+p=Fraction(w1,w0+w1)
+assert p==Fraction(3,11)
+print(w0,w1,p)

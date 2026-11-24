@@ -1,0 +1,21 @@
+from math import exp,expm1,isfinite,sqrt,log
+from random import Random
+
+def _finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def ou_moments(theta,sigma,x0,t):
+    theta=_finite(theta);sigma=_finite(sigma);x0=_finite(x0);t=_finite(t)
+    if theta<=0 or sigma<0 or t<0:raise ValueError('theta>0, sigma>=0 e t>=0 necessários')
+    a=exp(-theta*t)
+    return _finite(a*x0),_finite(sigma*sigma*(-expm1(-2*theta*t))/(2*theta))
+
+theta,sigma,x0,t=1,1,2,1
+mean,var=ou_moments(theta,sigma,x0,t)
+rho=lambda x:exp(-(x-mean)**2/(2*var))/sqrt(2*3.141592653589793*var)
+assert rho(mean)>0 and abs(rho(mean-1)-rho(mean+1))<1e-12
+print(mean,var,rho(mean))

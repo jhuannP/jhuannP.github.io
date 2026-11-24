@@ -1,0 +1,9 @@
+from fractions import Fraction as Q
+# mmol: limite de inventário, não previsão de fluxo.
+g6p,nadp=Q(6),Q(9)
+extent=min(g6p,nadp/2)
+assert extent==Q(9,2)
+assert g6p-extent==Q(3,2)
+assert 2*extent==9
+assert 3*6==2*6+3+3
+print(extent,"mmol máximos de G6P no balanço reduzido")

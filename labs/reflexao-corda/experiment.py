@@ -1,0 +1,38 @@
+"""Pulso compacto C2 refletido em x=0; domínio físico x<=0.
+Modelo analítico de imagens, não discretização temporal da EDP.
+"""
+from math import isfinite
+A=.02 # m
+WIDTH=.5 # m, meia largura do suporte
+MU=.1 # kg/m
+
+def pulse(s):
+    if not isfinite(s):raise ValueError('Coordenada finita')
+    z=s/WIDTH
+    return A*(1-z*z)**3 if abs(z)<1 else 0.
+
+def pulse_prime(s):
+    if not isfinite(s):raise ValueError('Coordenada finita')
+    z=s/WIDTH
+    return -6*A*s/WIDTH**2*(1-z*z)**2 if abs(z)<1 else 0.
+
+def evaluate(end,x,t,c=1.):
+    if end not in (0,1) or not all(isfinite(v) for v in (x,t,c)) or x>0 or t<0 or c<=0:
+        raise ValueError('Extremidade 0/1, x<=0, t>=0, c>0 e valores finitos')
+    R=-1 if end==0 else 1
+    u=x-c*t+2;v=x+c*t-2
+    incident=pulse(u);reflected=R*pulse(v)
+    slope=pulse_prime(u)+R*pulse_prime(v)
+    velocity=-c*pulse_prime(u)+R*c*pulse_prime(v)
+    tension=MU*c*c
+    return dict(incident=incident,reflected=reflected,total=incident+reflected,
+                slope=slope,velocity=velocity,
+                density=.5*MU*velocity**2+.5*tension*slope**2,
+                power=-tension*slope*velocity)
+
+def total_energy(c=1.):
+    if not isfinite(c) or c<=0:raise ValueError('c positivo e finito')
+    return 1024*(MU*c*c)*A*A/(385*WIDTH)
+
+if __name__=='__main__':
+    for end in (0,1):print(end,evaluate(end,0,2),total_energy())

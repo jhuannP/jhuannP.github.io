@@ -1,0 +1,8 @@
+from math import sqrt
+b=1e-9
+naive=1/(1-b*b)-1/sqrt(1-b*b)
+stable=b*b/((1-b*b)*(1+sqrt(1-b*b)))
+print(naive,stable)
+assert stable>0
+L,w,b=4,500e-9,1e-4
+print("aproximação em franjas:",2*L*b*b/w)

@@ -1,0 +1,7 @@
+from math import sin, pi
+
+def sinal(x, a1=1.0, a2=0.5, a3=0.0):
+    return a1*sin(2*pi*x)+a2*sin(4*pi*x)+a3*sin(6*pi*x)
+
+for x in (0.0, 0.125, 0.25, 0.5):
+    print(x, sinal(x))

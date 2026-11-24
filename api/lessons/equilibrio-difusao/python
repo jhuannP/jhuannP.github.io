@@ -1,0 +1,5 @@
+from math import exp,sqrt,pi
+k,T=4,1;var=T/k
+rho=lambda x:exp(-x*x/(2*var))/sqrt(2*pi*var)
+assert var==.25
+print(rho(0),var)

@@ -1,0 +1,9 @@
+from fractions import Fraction as Q
+v=(Q(4),Q(0),Q(0))
+a=(Q(4),Q(8),Q(0))
+speed2=sum(x*x for x in v)
+va=sum(x*y for x,y in zip(v,a))
+aa=sum(x*x for x in a)
+kappa2=(speed2*aa-va*va)/speed2**3
+assert kappa2==Q(1,4)
+print("kappa squared:",kappa2,"kappa:",Q(1,2))

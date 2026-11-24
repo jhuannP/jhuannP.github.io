@@ -1,0 +1,9 @@
+from fractions import Fraction as F
+h=F(1,10)
+s=1+3*h+h*h
+t,z,w=F(1),1+h,h
+assert z*z+w-s==0 and z-w-t==0
+linear=(s-1)/3
+assert linear==F(31,300)
+assert h-linear==F(-1,300)
+print(s,linear,h-linear)

@@ -1,0 +1,9 @@
+from fractions import Fraction as Q
+prior = Q(1,2)
+for mode, yes, no in (
+    ("independente", Q(9,16), Q(1,16)),
+    ("copia", Q(3,4), Q(1,4)),
+    ("misto", Q(21,32), Q(5,32)),
+):
+    evidence = prior*yes + (1-prior)*no
+    print(mode, evidence, prior*yes/evidence)

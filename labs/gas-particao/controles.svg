@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="450" viewBox="0 0 760 450" role="img" aria-labelledby="title desc">
+<title id="title">Mesmo gás, dois controles diferentes</title><desc id="desc">Referência N igual a três. Dobrar volume a temperatura fixa multiplica Z por oito, pressão por um meio e energia por um. Quadruplicar temperatura e dividir lambda ao cubo por oito multiplica Z por quinhentos e doze, pressão e energia por quatro.</desc>
+<rect width="760" height="450" rx="18" fill="#f4f0e7"/><g font-family="sans-serif" fill="#202d36">
+<text x="40" y="53" font-size="25" font-weight="700">O que muda depende do controle</text><text x="40" y="83" font-size="16">N = 3 · razões em relação ao mesmo estado de referência</text>
+<path d="M40 112H720M40 185H720M40 265H720M40 345H720" stroke="#bdc5bf"/>
+<g font-size="18" font-weight="700"><text x="40" y="151">Razão</text><text x="280" y="143">V × 2</text><text x="510" y="143">θ × 4</text></g>
+<g font-size="15"><text x="280" y="168">θ e λ³ fixos</text><text x="510" y="168">λ³ dividido por 8</text></g>
+<g font-size="22"><text x="40" y="232">Partição Z</text><text x="300" y="232">8</text><text x="540" y="232">512</text><text x="40" y="312">Pressão P</text><text x="300" y="312">1/2</text><text x="540" y="312">4</text><text x="40" y="389">Energia U</text><text x="300" y="389">1</text><text x="540" y="389">4</text></g>
+<text x="40" y="428" font-size="14">Modelo ideal monoatômico 3D · figura original · sem dados medidos</text></g></svg>

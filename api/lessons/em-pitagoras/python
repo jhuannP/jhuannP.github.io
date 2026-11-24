@@ -1,0 +1,6 @@
+from math import isqrt
+a,b=6,8
+c2=a*a+b*b
+c=isqrt(c2)
+assert c*c==c2
+print("diagonal:",c,"m")

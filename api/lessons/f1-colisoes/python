@@ -1,0 +1,5 @@
+m1=m2=1.;u1,u2=4.,0.
+v=(m1*u1+m2*u2)/(m1+m2)
+assert v==2
+assert (m1+m2)*v*v/2==4
+print(v)

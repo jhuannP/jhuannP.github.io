@@ -1,0 +1,6 @@
+from fractions import Fraction as Q
+a=lambda n: Q(1,(2 if n%2==0 else 3)**n)
+S7=sum((a(n) for n in range(1,8)),Q(0))
+R7=Q(17,24)-S7
+assert 0<R7<=Q(1,128)<Q(1,100)
+print(S7,R7)

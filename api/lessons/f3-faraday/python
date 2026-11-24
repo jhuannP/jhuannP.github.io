@@ -1,0 +1,4 @@
+phi0,phi1,dt=1.,7.,3.
+fem=-(phi1-phi0)/dt
+assert fem==-2
+print(fem)

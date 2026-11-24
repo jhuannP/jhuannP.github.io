@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="480" viewBox="0 0 420 480" role="img" aria-labelledby="title desc">
+<title id="title">Carbono e custos na formação de uma glicose a partir de dois piruvatos</title>
+<desc id="desc">Dois piruvatos contêm seis carbonos. A carboxilação usa dois ATP e acrescenta dois carbonos temporários, formando dois oxaloacetatos com oito carbonos. A formação de dois PEP usa dois GTP e libera dois CO2, restando seis carbonos. Outras etapas usam mais dois ATP e dois NADH para chegar a uma glicose com seis carbonos. É inventário reduzido, não reação integral.</desc>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#2348db"/></marker></defs>
+<rect width="420" height="480" fill="#f4f3eb"/>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#20221e">
+<text x="210" y="34" font-size="22">De dois piruvatos a uma glicose</text>
+<text x="210" y="78" font-size="24">2 piruvatos · 6 C</text>
+<text x="210" y="109" font-size="18">Usa 2 ATP; incorpora 2 C temporários</text>
+<path d="M210 121V146" stroke="#2348db" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="210" y="173" font-size="24">2 oxaloacetatos · 8 C</text>
+<text x="210" y="204" font-size="18">Usa 2 GTP; libera 2 CO₂</text>
+<path d="M210 216V241" stroke="#2348db" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="210" y="268" font-size="24">2 PEP · 6 C</text>
+<text x="210" y="299" font-size="18">Outras etapas usam 2 ATP + 2 NADH</text>
+<path d="M210 311V336" stroke="#2348db" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="210" y="363" font-size="24">1 glicose · 6 C</text>
+<path d="M35 388H385" stroke="#d3d7c9"/>
+<text x="210" y="421" font-size="21" fill="#2348db">Total: 4 ATP + 2 GTP + 2 NADH</text>
+<text x="210" y="450" font-size="17">Contagem por glicose a partir de piruvato.</text>
+<text x="210" y="474" font-size="14">Inventário reduzido; não é balanço de átomos e carga.</text>
+</g></svg>

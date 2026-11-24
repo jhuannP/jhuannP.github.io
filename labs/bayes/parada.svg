@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 430" role="img" aria-labelledby="t d">
+<title id="t">O registro muda a posterior</title><desc id="d">Com prévias iguais e taxas três quartos e um quarto, observar primeiro sucesso na terceira dá posterior um quarto. Saber apenas que ocorreu até a terceira dá sessenta e três centésimos.</desc>
+<rect width="420" height="430" fill="#f6f3e9"/>
+<g font-family="system-ui,sans-serif" fill="#183c36">
+<text x="22" y="38" font-size="20" font-weight="700">O que foi informado?</text>
+<text x="22" y="67" font-size="14">Prévias iguais · taxas 3/4 e 1/4</text>
+<path d="M22 86H398 M22 242H398" stroke="#b9c6bd"/>
+<text x="22" y="117" font-size="18" font-weight="650">Primeiro sucesso na terceira</text>
+<text x="22" y="147" font-size="16">Registro exato: 0 → 0 → 1</text>
+<text x="22" y="177" font-size="15">P(registro | H) = 3/64</text>
+<text x="22" y="201" font-size="15">P(registro | Hᶜ) = 9/64</text>
+<text x="22" y="228" font-size="18" font-weight="700">P(H | registro) = 1/4</text>
+<text x="22" y="275" font-size="18" font-weight="650">Sucesso até a terceira</text>
+<text x="22" y="305" font-size="16">Reúne: 1 ou 01 ou 001</text>
+<text x="22" y="335" font-size="15">P(registro | H) = 63/64</text>
+<text x="22" y="359" font-size="15">P(registro | Hᶜ) = 37/64</text>
+<text x="22" y="388" font-size="18" font-weight="700">P(H | registro) = 63/100</text>
+<text x="22" y="416" font-size="12">Exemplo sintético · sem estimação de taxas</text>
+</g></svg>

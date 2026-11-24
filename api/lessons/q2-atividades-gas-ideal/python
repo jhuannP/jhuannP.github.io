@@ -1,0 +1,10 @@
+from fractions import Fraction as Q
+x=Q(1,2);r=Q(1)
+nA=1-x;nB=2*x;total=nA+nB
+aA=r*nA/total;aB=r*nB/total
+quotient=aB*aB/aA
+assert quotient==Q(4,3) and 2*nA+nB==2
+K=Q(4,3)
+assert K/(K+4*r)==x*x
+assert K/(K+4*4)==Q(1,13)
+print("Atividades:",aA,aB,"Q:",quotient)

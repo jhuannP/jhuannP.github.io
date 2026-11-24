@@ -1,0 +1,9 @@
+from fractions import Fraction as Q
+# Fatores de π, sem arredondar as contas racionais.
+R=Q(3,2);r=Q(1,2)
+assert R*R-r*r==2
+for n in [4,8,16]:
+    lower=2-Q(2,n)
+    upper=2+Q(2,n)
+    assert lower<=2<=upper
+    print(n,lower,upper)

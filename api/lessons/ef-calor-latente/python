@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+# Apoio opcional: modelo ideal com g, °C e J.
+q_water=200*Q(42,10)*40
+q_warm=100*Q(21,10)*10
+melt=(q_water-q_warm)/334
+assert melt<100
+assert 100-melt==Q(950,167)
+print("Tfinal=0°C; gelo restante (g):",100-melt)

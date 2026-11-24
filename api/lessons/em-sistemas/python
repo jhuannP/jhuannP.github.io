@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+# Apoio opcional: solução e conferência do exemplo.
+a=Q(3*94-2*86,3*3-2*2)
+e=(94-3*a)/2
+assert (a,e)==(22,14)
+assert 3*a+2*e==94 and 2*a+3*e==86
+print(a,e)

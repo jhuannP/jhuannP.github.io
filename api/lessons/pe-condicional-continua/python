@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+x=Q(1,2)
+p_point=(x*x/2+Q(3,8))/(x*x+Q(1,2))
+h=Q(1,4)
+p_band=(Q(1,2)+h*h/6)/(Q(3,4)+h*h/3)
+assert p_point==Q(2,3)
+assert p_band==Q(49,74)
+print(p_point,p_band)

@@ -1,0 +1,7 @@
+from fractions import Fraction as F
+z1,z2=map(F,(2,6))
+r=(z1-z2)/(z1+z2);tau=2*z1/(z1+z2)
+R=r*r;trans=z2/z1*tau*tau
+assert 1+r==tau and z1*(1-r)==z2*tau
+assert R+trans==1
+print(r,tau,R,trans)

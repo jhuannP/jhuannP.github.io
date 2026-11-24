@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="760" height="520" role="img" aria-labelledby="title desc">
+<title id="title">Rastrear, repetir e validar são verificações diferentes</title>
+<desc id="desc">Configuração e código conhecido produzem o resultado Euler 81 sobre 256. Um manifesto registra hashes e ambiente. Integridade e repetição passam, mas a referência analítica e elevado a menos um difere do resultado por aproximadamente menos 0,05147 unidades.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#526e69"/></marker></defs>
+<rect width="760" height="520" fill="#f7f7f0"/>
+<g font-family="Arial,sans-serif" fill="#233638">
+<text x="26" y="35" font-size="23" font-weight="bold">Um cálculo pode ser rastreável e ainda ter erro.</text>
+<text x="26" y="64" font-size="17">Exemplo sintético: y′ = −y, y(0) = 1 U, T = 1 s, quatro passos de Euler.</text>
+<rect x="30" y="110" width="200" height="122" rx="7" fill="#e4e8dc"/><text x="44" y="137" font-size="18" font-weight="bold">config.json</text><text x="44" y="165" font-size="17">rate = 1 s⁻¹</text><text x="44" y="191" font-size="17">T = 1 s · N = 4</text><text x="44" y="217" font-size="17">y₀ = 1 U</text>
+<path d="M233 172H292" stroke="#526e69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="300" y="110" width="180" height="122" rx="7" fill="#dceae4"/><text x="317" y="137" font-size="18" font-weight="bold">Executar Euler</text><text x="317" y="170" font-size="17">model.py</text><text x="317" y="196" font-size="17">record.py</text><text x="317" y="220" font-size="15">código local conhecido</text>
+<path d="M483 172H522" stroke="#526e69" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="530" y="110" width="200" height="122" rx="7" fill="#e4e8dc"/><text x="545" y="137" font-size="18" font-weight="bold">result.json</text><text x="545" y="177" font-size="27" font-weight="bold">81/256 U</text><text x="545" y="211" font-size="17">= 0,31640625 U</text>
+<rect x="30" y="263" width="700" height="76" rx="7" fill="#ece9dc"/><text x="45" y="290" font-size="18" font-weight="bold">manifest.json</text><text x="45" y="320" font-size="16">SHA-256 dos arquivos · método · unidades · ambiente · revisão pendente</text>
+<text x="30" y="382" font-size="19" font-weight="bold">1. Integridade</text><text x="30" y="411" font-size="17">Hashes conferem.</text><text x="30" y="438" font-size="16">Registro coerente.</text>
+<text x="280" y="382" font-size="19" font-weight="bold">2. Reexecução</text><text x="280" y="411" font-size="17">81/256 novamente.</text><text x="280" y="438" font-size="16">Método repetido.</text>
+<text x="530" y="382" font-size="19" font-weight="bold">3. Referência</text><text x="530" y="411" font-size="17">e⁻¹ ≈ 0,367879 U</text><text x="530" y="438" font-size="16">Erro ≈ −0,05147 U.</text>
+<text x="26" y="488" font-size="17">A validade científica também exige modelo, dados, contexto e revisão pessoal.</text>
+</g></svg>

@@ -1,0 +1,23 @@
+from math import exp,log,sqrt,hypot,sin,cos,isfinite
+from random import Random
+
+def real(x):
+    if isinstance(x,bool):raise ValueError('Real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Real finito necessário') from None
+    if not isfinite(y):raise ValueError('Real finito necessário')
+    return y
+
+def adam_step(theta,g,state,eta=.01,beta1=.9,beta2=.999,eps=1e-8):
+    theta=real(theta);g=real(g);eta=real(eta);beta1=real(beta1);beta2=real(beta2);eps=real(eps)
+    t=state['t']
+    if isinstance(t,bool) or not isinstance(t,int) or t<0 or eta<=0 or eps<=0 or not 0<=beta1<1 or not 0<=beta2<1:raise ValueError('Estado ou parâmetros de Adam inválidos')
+    m=real(beta1*real(state['m'])+(1-beta1)*g);v=real(beta2*real(state['v'])+(1-beta2)*g*g)
+    if v<0:raise ValueError('Segundo momento inválido')
+    t+=1;mh=m/(1-beta1**t);vh=v/(1-beta2**t)
+    value=real(theta-eta*mh/(sqrt(vh)+eps))
+    return value,dict(m=m,v=v,t=t)
+
+theta,state=adam_step(1,2,dict(m=0,v=0,t=0),eta=.1)
+assert abs(theta-.9)<1e-8 and state["t"]==1
+print(theta,state)

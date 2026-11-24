@@ -1,0 +1,15 @@
+# Dilatação livre: geometria e primeiro contato
+
+28/10/2026. Material original com apoio de IA para revisão pessoal. Lei física clássica atribuída. Sem experimento,material identificado,propriedade medida ou aula ministrada presumidos. Python opcional; nível de ensino médio.
+
+Fixamos a referência T0,L0 e a lei linear L=L0(1+αΔT). α é coeficiente efetivo no intervalo,em K⁻¹;ΔT em K,L em m. É modelo aproximado de dilatação livre,uniforme e isotrópica,não lei universal. Não confundimos essa expressão finita com resolver dL/dT=αL para α diferencial constante. Usar referências intermediárias com o mesmo coeficiente não é automaticamente o mesmo modelo. Para α positivo,resfriamento contrai. Diferenças de1°C e1K têm igual tamanho,sem igualar temperaturas absolutas.
+
+Exemplo sintético:L01m,α1/10000K⁻¹,ΔT50K,ε=.005. ΔL=.005m=5mm,L=1.005m. Quadrado inicial1m de lado:A=1.010025m²,primeira ordem1.01m²,resto.000025m²=25mm². A0(1+ε)² é igualdade geométrica dentro da lei escolhida,sem reivindicar exatidão física. O termo de área desprezado é A0ε². Conversão1m²=10⁶mm²,distinta do fator1000 de comprimento.
+
+Montagem escolhida:duas barras alinhadas,pontas externas fixas e internas livres até contato,mesma ΔT. g=g0−(α1L1+α2L2)ΔT enquanto há folga. L1=1m,L2=.5m,mesmoα,g0=.006m,coeficiente total.00015m/K. ΔT20K:g3mm;ΔT40K:4mm+2mm fecha6mm. Extrapolar livremente a50K dá−1.5mm hipotéticos,sinal de quebra da hipótese,sem sobreposição física. Depois do contato seriam necessárias elasticidade e condições de apoio;não calculadas. Não é projeto de engenharia ou recomendação de dimensões reais.
+
+`expansion.py` recebe listagem de parâmetros em int/Fraction,sem bool/float;L0>0,α>=0 e |αΔT|<=5% como contrato didático,não certificado de validade. A saída free_gap pode ser negativa como extrapolação e vem acompanhada de aviso de contato. first_contact_deltaT é candidato pela lei linear a partir da referência,que pode exigir extrapolação além da faixa;antes de usar em outro caso é necessário conferir o domínio. Para folga inicial zero retorna0;para coeficientes zero e folga positiva,None. Não modela dilatação anômala,anisotropia,volume,buracos,tensões ou gradientes.
+
+Fonte complementar pública: OpenStax College Physics2e,§13.2,https://openstax.org/books/college-physics-2e/pages/13-2-thermal-expansion-of-solids-and-liquids ,consulta parcial em28/10/2026 às definições,lei linear,unidades e primeira ordem da área. Tabela,exemplos de ponte/tanque,figuras e exercícios não reproduzidos;coeficiente,números,geometria de contato,diagrama e Python próprios. Não certifica currículo brasileiro completo nem programa de disciplina USP. Fontes anteriores preservadas;nenhum livro privado relido ou disponibilizado neste bloco.
+
+Verificações:`python3 -m unittest discover -s labs/dilatacao-folga -t .` e `python3 labs/dilatacao-folga/expansion.py`. Quatro testes:numéricos/unidades;27combinações L/α/ΔT,escala,sinal e resto de área;limites de contato e coeficiente zero;contratos. Resultados racionais exatos do modelo,não medições. Revisão conceitual,pessoal e uso com alunos pendentes.

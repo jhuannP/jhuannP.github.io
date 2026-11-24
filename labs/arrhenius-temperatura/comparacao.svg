@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="560" viewBox="0 0 480 560" role="img" aria-labelledby="title desc">
+<title id="title">Temperatura altera k e a meia-vida</title><desc id="desc">Modelo sintético de primeira ordem, com Ea sobre R igual a seis mil kelvin. A trezentos kelvin, k é 0,002 por segundo e a meia-vida 346,57 segundos. A trezentos e trinta kelvin, k é 0,0123213 por segundo e a meia-vida 56,26 segundos. A razão das constantes é exp de vinte onze avos, aproximadamente 6,16065. Temperaturas são absolutas; o diagrama não representa dados experimentais.</desc>
+<rect width="480" height="560" fill="#f7f4ec"/><g font-family="Georgia,serif" fill="#202b29">
+<text x="28" y="44" font-size="25">Mesma lei. Outra temperatura.</text><text x="28" y="79" font-size="18">Ea/R = 6000 K · modelo sintético</text><path d="M28 104H452 M28 258H452 M28 412H452" stroke="#89938b"/>
+<text x="28" y="147" font-size="28" fill="#265e50">300 K</text><text x="28" y="190" font-size="22">k₁ = 0,002 s⁻¹</text><text x="28" y="230" font-size="21">Meia-vida: 346,57 s</text>
+<text x="28" y="301" font-size="28" fill="#265e50">330 K</text><text x="28" y="344" font-size="22">k₂ ≈ 0,0123213 s⁻¹</text><text x="28" y="384" font-size="21">Meia-vida: 56,26 s</text>
+<text x="28" y="458" font-size="24">k₂/k₁ = exp(20/11) ≈ 6,16065</text><text x="28" y="499" font-size="18">k aumenta; a meia-vida diminui.</text><text x="28" y="534" font-size="16">Comparação dentro do mesmo regime e modelo.</text></g></svg>

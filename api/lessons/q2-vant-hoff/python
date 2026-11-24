@@ -1,0 +1,9 @@
+from math import exp,log
+T0,T=300.,400.
+log_ratio=1200*(1/T0-1/T)
+assert abs(log_ratio-1)<1e-14
+K=2*exp(log_ratio)
+print('K sintético:',K)
+correction=4*(log(T/T0)+T0/T-1)
+assert correction>0
+print('correção em ln K:',correction)

@@ -1,0 +1,4 @@
+V,R1,R2=12.,2.,4.
+I=V/(R1+R2)
+assert I==2 and V-I*R1-I*R2==0
+print(I)

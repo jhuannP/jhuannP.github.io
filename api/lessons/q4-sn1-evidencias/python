@@ -1,0 +1,6 @@
+from fractions import Fraction as Q
+r=Q(3,5)
+ret=r/2
+inv=r/2+(1-r)
+assert (inv,ret)==(Q(7,10),Q(3,10))
+print('inversão,retenção,excesso:',inv,ret,abs(inv-ret))

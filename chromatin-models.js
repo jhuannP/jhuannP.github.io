@@ -1,0 +1,19 @@
+/* Mapa linear ideal: N cernes, N-1 linkers, nenhuma cauda externa. */
+window.ChromatinModels=(()=>{
+ function model(cores=4,linker=40,selected=2){
+  if(![cores,linker,selected].every(Number.isInteger)||cores<1||cores>8||linker<0||linker>80||selected<1||selected>8)throw new RangeError('Parâmetros fora do domínio');
+  selected=Math.min(selected,cores);const segments=[];let cursor=0;
+  for(let i=0;i<cores;i++){segments.push({kind:'core',index:i+1,start:cursor,stop:cursor+147});cursor+=147;if(i<cores-1){segments.push({kind:'linker',index:i+1,start:cursor,stop:cursor+linker});cursor+=linker}}
+  const wrapped=147*cores,link_bp=linker*(cores-1);
+  return{cores,linker,selected,segments,wrapped,link_bp,total_bp:cursor,nucleotides:2*cursor,histones:8*cores,each_histone:2*cores,contour_nm:.34*cursor,wrapped_fraction:wrapped/cursor,internal_repeat:cores>1?147+linker:null};
+ }
+ function createModels({fmt}){return{chromatinArray:{label:'Conte DNA e histonas numa cadeia finita',controls:[['cores','Número de cernes N',1,8,1,4],['linker','Cada espaçador interno: pares de bases',0,80,10,40],['selected','Cerne destacado',1,8,1,2]],render:({cores,linker,selected})=>{
+  const s=model(cores,linker,selected),X=b=>48+544*b/s.total_bp,chosen=s.segments.find(t=>t.kind==='core'&&t.index===s.selected);
+  const marks=s.segments.map(t=>t.kind==='core'?'<rect x="'+X(t.start)+'" y="85" width="'+(X(t.stop)-X(t.start))+'" height="45" fill="var(--blue)" opacity="'+(t.index===s.selected?1:.45)+'"/><text x="'+((X(t.start)+X(t.stop))/2)+'" y="157" text-anchor="middle">'+t.index+'</text>':'<line x1="'+X(t.start)+'" y1="107" x2="'+X(t.stop)+'" y2="107" stroke="currentColor" stroke-width="3" stroke-dasharray="5 4"/>').join('');
+  const graph='<svg class="chromatin-scene" viewBox="0 0 640 260" role="img" aria-label="Mapa linear da sequência: cernes azuis e linkers tracejados, sem forma espacial"><text x="48" y="42">0 pb</text><text x="592" y="42" text-anchor="end">'+s.total_bp+' pb</text>'+marks+'<path d="M '+X(chosen.start)+' 182 v 8 H '+X(chosen.stop)+' v -8" fill="none" stroke="currentColor" stroke-width="2"/><text x="320" y="234" text-anchor="middle">Cerne '+s.selected+': intervalo ['+chosen.start+', '+chosen.stop+') pb</text></svg>';
+  return{controlRanges:{selected:{max:cores,value:s.selected}},graph:'<p><strong>Mapa linear da sequência.</strong> Azul: 147 pb de cada cerne; traço: DNA de ligação. Larguras proporcionais aos pares de bases. Índices identificam os cernes. É uma contagem de sequência, não o formato espacial da cromatina.</p>'+graph+'<table class="truth-table"><caption>DNA de fita dupla: pb não são nucleotídeos individuais</caption><thead><tr><th>Nos cernes</th><th>Nos linkers</th><th>Total</th></tr></thead><tbody><tr><td>'+s.wrapped+' pb</td><td>'+s.link_bp+' pb</td><td>'+s.total_bp+' pb</td></tr></tbody></table>',
+  report:cores+(cores===1?' cerne e ':' cernes e ')+(cores-1)+' espaçadores internos. '+s.histones+' histonas do cerne: '+s.each_histone+' de cada tipo H2A, H2B, H3 e H4. Total '+s.nucleotides+' nucleotídeos nas duas fitas. Comprimento aproximado de DNA B estendido: '+fmt(s.contour_nm)+' nm. Fração do DNA nos cernes: '+fmt(100*s.wrapped_fraction)+'%. '+(cores>1?'Distância entre inícios consecutivos: '+s.internal_repeat+' pb.':'Um único cerne: não há espaçador interno ou repetição para medir.'),
+  note:'Cadeia finita com extremos nos limites dos cernes: N cernes e N−1 linkers, sem DNA externo. 147 pb por cerne e 0,34 nm/pb são referências idealizadas; todos os linkers têm o mesmo tamanho. Linker zero é limite de contagem, não demonstra montagem estável. Não calcula comprimento espacial da cromatina, compactação, energia, acessibilidade ou expressão gênica. H1 e outras proteínas não são contadas no octâmero. Intervalos [início,fim) têm origem zero e fim exclusivo, sem posições cromossômicas medidas. Material original em rascunho.'};
+ }}}}
+ return{model,createModels};
+})();

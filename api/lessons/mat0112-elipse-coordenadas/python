@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+def polynomial(x,y):
+    return 36*x*x-24*x*y+29*y*y-120*x+140*y+20
+assert polynomial(1,-2)==-180
+x,y=Q(14,5),Q(2,5)
+assert polynomial(x,y)==0
+print(x,y)

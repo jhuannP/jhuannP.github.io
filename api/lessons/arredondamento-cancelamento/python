@@ -1,0 +1,12 @@
+from math import fsum,ulp
+
+def soma_ingenua(valores):
+    total=0.0
+    for valor in valores:
+        total+=valor
+    return total
+
+valores=[1e16,1.0,-1e16]
+assert soma_ingenua(valores)==0 and fsum(valores)==1
+print("Ingênua:",soma_ingenua(valores),"fsum:",fsum(valores),"sum neste Python:",sum(valores))
+print("Espaçamento na escala 1e16:",ulp(1e16))

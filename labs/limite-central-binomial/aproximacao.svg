@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 530" width="760" height="530" role="img" aria-labelledby="title desc">
+<title id="title">Probabilidade binomial exata e aproximação por áreas normais</title>
+<desc id="desc">Para K binomial com n dezesseis e p um meio, barras são probabilidades exatas. A linha liga áreas da normal de média oito e desvio dois nas células de cada inteiro. Evento de seis a dez tem probabilidade exata 0,789886; aproximação corrigida 0,788700 e sem correção 0,682689. Caso raro de n cem e p 0,01 mantém erro maior.</desc>
+<rect width="760" height="530" fill="#f7f7f0"/>
+<g font-family="Arial,sans-serif" fill="#233638">
+<text x="26" y="35" font-size="23" font-weight="bold">A curva aproxima áreas; a contagem continua discreta.</text>
+<text x="26" y="64" font-size="17">K ~ Binomial(16, 1/2) · média 8 · desvio 2 · evento 6 ≤ K ≤ 10</text>
+<text x="26" y="94" font-size="16">Barras: P(K = k). Linha: área normal da célula [k−0,5; k+0,5].</text>
+<rect x="270" y="115" width="180" height="215" fill="#e8eddd"/>
+<path d="M53 120V330H685" stroke="#8b9992" fill="none"/>
+<text x="16" y="135" font-size="14">0,2</text><text x="16" y="235" font-size="14">0,1</text><text x="28" y="334" font-size="14">0</text>
+<rect x="59.5" y="329.9847" width="25" height="0.0153" fill="#b5c0b4"/>
+<rect x="95.5" y="329.7559" width="25" height="0.2441" fill="#b5c0b4"/>
+<rect x="131.5" y="328.1689" width="25" height="1.8311" fill="#b5c0b4"/>
+<rect x="167.5" y="321.4551" width="25" height="8.5449" fill="#b5c0b4"/>
+<rect x="203.5" y="302.2290" width="25" height="27.7710" fill="#b5c0b4"/>
+<rect x="239.5" y="263.3496" width="25" height="66.6504" fill="#b5c0b4"/>
+<rect x="275.5" y="207.8076" width="25" height="122.1924" fill="#3c786c"/>
+<rect x="311.5" y="155.4395" width="25" height="174.5605" fill="#3c786c"/>
+<rect x="347.5" y="133.6194" width="25" height="196.3806" fill="#3c786c"/>
+<rect x="383.5" y="155.4395" width="25" height="174.5605" fill="#3c786c"/>
+<rect x="419.5" y="207.8076" width="25" height="122.1924" fill="#3c786c"/>
+<rect x="455.5" y="263.3496" width="25" height="66.6504" fill="#b5c0b4"/>
+<rect x="491.5" y="302.2290" width="25" height="27.7710" fill="#b5c0b4"/>
+<rect x="527.5" y="321.4551" width="25" height="8.5449" fill="#b5c0b4"/>
+<rect x="563.5" y="328.1689" width="25" height="1.8311" fill="#b5c0b4"/>
+<rect x="599.5" y="329.7559" width="25" height="0.2441" fill="#b5c0b4"/>
+<rect x="635.5" y="329.9847" width="25" height="0.0153" fill="#b5c0b4"/>
+<polyline points="72,329.9223 108,329.5114 144,327.5973 180,320.7553 216,302.1653 252,264.4094 288,209.0224 324,155.3337 360,132.5873 396,155.3337 432,209.0224 468,264.4094 504,302.1653 540,320.7553 576,327.5973 612,329.5114 648,329.9223" fill="none" stroke="#a4582b" stroke-width="2.5"/>
+<text x="68" y="353" font-size="15">0</text>
+<text x="212" y="353" font-size="15">4</text>
+<text x="356" y="353" font-size="15">8</text>
+<text x="500" y="353" font-size="15">12</text>
+<text x="644" y="353" font-size="15">16</text>
+<text x="700" y="352" font-size="16">k</text>
+<text x="26" y="391" font-size="20" font-weight="bold">Exata: 25883/32768 ≈ 0,789886.</text>
+<text x="26" y="424" font-size="18">Normal com correção: 0,788700 · erro absoluto ≈ 0,001186.</text>
+<text x="26" y="455" font-size="18">Normal sem correção: 0,682689 · erro absoluto ≈ 0,107197.</text>
+<text x="26" y="491" font-size="15">Raro: n=100, p=0,01. P(K=0): exata 0,366032; normal corrigida 0,307651.</text>
+<text x="26" y="517" font-size="15">Leis e eventos prescritos, sem amostra simulada ou limiar universal de precisão.</text>
+</g></svg>

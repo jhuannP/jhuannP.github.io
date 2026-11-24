@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 450" role="img" aria-labelledby="t d">
+<title id="t">Duas inversões preservam o fluxo</title><desc id="d">Quando E inverte de mais x para menos x e B de mais y para menos y, o produto vetorial continua em mais z. Nos nós ele é zero.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#285e58"/></marker></defs>
+<rect width="420" height="450" fill="#f6f3e9"/>
+<g font-family="system-ui,sans-serif" fill="#183c36">
+<text x="22" y="34" font-size="21" font-weight="700">Duas inversões, mesmo fluxo</text>
+<text x="22" y="63" font-size="14">Onda propagando em +z</text>
+<path d="M22 81H398 M22 232H398" stroke="#b2c6b9"/>
+<text x="22" y="110" font-size="16">Fase com cosθ &gt; 0</text>
+<path d="M100 192V133" stroke="#285e58" stroke-width="3" marker-end="url(#a)"/>
+<text x="42" y="159" font-size="15">E: +x</text>
+<circle cx="100" cy="192" r="11" fill="none" stroke="#285e58" stroke-width="2"/><circle cx="100" cy="192" r="3" fill="#285e58"/>
+<text x="124" y="211" font-size="14">B: +y, sai</text>
+<path d="M120 180H320" stroke="#285e58" stroke-width="3" marker-end="url(#a)"/>
+<text x="238" y="165" font-size="16">S: +z</text>
+<text x="22" y="262" font-size="16">Fase com cosθ &lt; 0</text>
+<path d="M100 294V356" stroke="#285e58" stroke-width="3" marker-end="url(#a)"/>
+<text x="42" y="323" font-size="15">E: −x</text>
+<circle cx="100" cy="294" r="11" fill="none" stroke="#285e58" stroke-width="2"/>
+<path d="M94 288L106 300M94 300L106 288" stroke="#285e58" stroke-width="2"/>
+<text x="124" y="361" font-size="14">B: −y, entra</text>
+<path d="M120 308H320" stroke="#285e58" stroke-width="3" marker-end="url(#a)"/>
+<text x="238" y="293" font-size="16">S: +z</text>
+<text x="22" y="405" font-size="17" font-weight="700">(−E) × (−B) = E × B</text>
+<text x="22" y="433" font-size="13">Nos nós: E = B = S = 0 · desenho sem escala</text>
+</g></svg>

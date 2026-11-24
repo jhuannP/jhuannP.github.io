@@ -1,0 +1,12 @@
+class Registrador:
+    def __init__(self): self.q=0
+    def pulso(self,d,en):
+        if d not in (0,1) or en not in (0,1): raise ValueError('Entradas binárias')
+        if en: self.q=d
+        return self.q
+r=Registrador()
+assert r.q==0
+assert r.pulso(1,1)==1
+assert r.pulso(0,0)==1
+assert r.pulso(0,1)==0
+print(r.q)

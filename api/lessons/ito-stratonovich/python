@@ -1,0 +1,4 @@
+sigma=2
+coefficient=sigma*sigma/2
+assert coefficient==2
+print(coefficient)

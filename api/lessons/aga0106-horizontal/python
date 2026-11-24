@@ -1,0 +1,6 @@
+from math import asin,cos,degrees,radians,sin
+phi,delta,H=map(radians,(-30,0,0))
+up=sin(phi)*sin(delta)+cos(phi)*cos(delta)*cos(H)
+h=degrees(asin(up))
+assert abs(h-60)<1e-12
+print(h)

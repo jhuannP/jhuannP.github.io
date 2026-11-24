@@ -1,0 +1,5 @@
+from math import sqrt,pi
+T,m=1,1
+mode=sqrt(2*T/m);mean=sqrt(8*T/(pi*m));rms=sqrt(3*T/m)
+assert mode<mean<rms
+print(mode,mean,rms)

@@ -1,0 +1,7 @@
+from fractions import Fraction as F
+alpha,beta,s=F(-1),F(-2,5),F(1,5)
+e_plus=(alpha+beta)/(1+s)
+e_minus=(alpha-beta)/(1-s)
+assert e_plus==F(-7,6) and e_minus==F(-3,4)
+assert e_minus-e_plus==F(5,12)
+print(e_plus,e_minus)

@@ -1,0 +1,4 @@
+m=(1,1);r=(2,2)
+I=sum(a*b*b for a,b in zip(m,r))
+assert I==8
+print(I)

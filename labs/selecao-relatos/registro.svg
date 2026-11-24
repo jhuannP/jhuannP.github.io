@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="600" viewBox="0 0 480 600" role="img" aria-labelledby="title desc">
+<title id="title">O registro também faz parte da informação</title><desc id="desc">Nos dois protocolos a chance de H antes do relato é um meio e após um positivo isolado é três quartos. No protocolo A o registro depende apenas do sinal: entre os registrados a chance de H é cinco doze avos, e após positivo registrado três quartos. No B o registro depende do estado: as probabilidades são dois quintos e dois terços.</desc>
+<rect width="480" height="600" fill="#f7f4ec"/>
+<g font-family="Georgia,serif" fill="#202b29"><text x="28" y="42" font-size="25">Um positivo. Dois protocolos.</text><text x="28" y="78" font-size="18">Mesma origem: P(H)=1/2</text><text x="28" y="108" font-size="18">Sem selecionar: P(H|+)=3/4</text>
+<path d="M28 132H452 M28 338H452 M28 542H452" stroke="#89938b"/>
+<text x="28" y="173" font-size="22">A · Registro depende do sinal</text><text x="28" y="206" font-size="17">Guardar +: 1/2 · guardar −: 1</text><text x="28" y="249" font-size="20">Só sabemos que foi registrado:</text><text x="28" y="278" font-size="25" fill="#265e50">P(H|S)=5/12</text><text x="28" y="314" font-size="20">Positivo registrado: P(H|+∩S)=3/4</text>
+<text x="28" y="379" font-size="22">B · Registro depende do estado</text><text x="28" y="412" font-size="17">Guardar se H: 1/2 · se Hᶜ: 3/4</text><text x="28" y="455" font-size="20">Só sabemos que foi registrado:</text><text x="28" y="484" font-size="25" fill="#265e50">P(H|S)=2/5</text><text x="28" y="520" font-size="20">Positivo registrado: P(H|+∩S)=2/3</text>
+<text x="28" y="576" font-size="16">Modelo sintético · taxas conhecidas por hipótese</text></g></svg>

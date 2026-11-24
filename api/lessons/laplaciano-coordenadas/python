@@ -1,0 +1,6 @@
+def lap_radial(fp,fpp,r,d):
+    if r<=0:raise ValueError('Conta clássica restrita a r>0')
+    return fpp+(d-1)*fp/r
+assert lap_radial(4,2,2,3)==6
+assert lap_radial(-1/4,2/8,2,3)==0
+print(lap_radial(4,2,2,3))

@@ -1,0 +1,4 @@
+rho,g,h=1000.,10.,2.
+dp=rho*g*h
+assert dp==20000
+print(dp)

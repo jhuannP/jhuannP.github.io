@@ -1,0 +1,9 @@
+from fractions import Fraction as Q
+mean=Q(3,8)
+variance=Q(1,5)-mean**2
+noise=Q(1,20)
+coarse=Q(1,8)*Q(19,1280)+Q(7,8)*Q(3763,62720)
+assert variance==Q(19,320)
+assert coarse==Q(487,8960)
+assert noise<coarse<variance
+print(variance,coarse,noise)

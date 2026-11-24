@@ -1,0 +1,8 @@
+from math import prod
+qs=[40,40,40,40,10,10]
+ps=[10**(-q/10) for q in qs]
+expected=sum(ps)
+any_independent=1-prod(1-p for p in ps)
+assert abs(expected-.2004)<1e-12
+print("Erros esperados:",expected)
+print("P(algum erro), se independentes:",any_independent)

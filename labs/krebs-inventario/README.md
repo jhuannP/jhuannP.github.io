@@ -1,0 +1,20 @@
+# Ciclo de Krebs — fontes e limites
+
+Aula original em rascunho, primeiro recorte do item12 do mapa curricular CCM0111 já consultado. Histórico e versão ministrada não foram reabertos. Não comprova experiência experimental ou domínio de Jhuann. Sequência clássica, inventário sem desvios e variante produtora de GTP; dados hipotéticos.
+
+Referência: Nelson/Cox, Princípios de Bioquímica de Lehninger,6ª ed.,Artmed2014,original2013, exemplar autorizado do acervo. Consulta textual parcial em27/10/2026: §16.2 pp.638–639/PDF668–669 (abertura e esquema para localização), recortes das etapas pp.640–647/PDF670–677, resumo p.653/PDF683. Cabeçalhos impressos/PDF conferidos na extração paginada. A extração emitiu avisos de sintaxe/compactação em outros fluxos; não foi tratada como leitura integral nem como inspeção visual. A nota sobre identidade dos carbonos e a contagem de cofatores foram reconferidas no recorte da p.647/PDF677. Livro privado não distribuído.
+
+Figura é esquema original linear de esqueletos, sem copiar layout, mecanismos ou figura16-7. Roteiro manual organiza inventário, fronteiras, regeneração e interpretação de produtos. Sem código numérico nesta aula: o objetivo é explicar a sequência e o significado bioquímico, que uma multiplicação automática não demonstra. Respiração/fosforilação oxidativa continuam lacuna própria; variantes, mecanismos, regulação, fluxos reais e anaplerose quantitativa pendentes.
+
+Próxima revisão20min: reconstruir os esqueletos, localizar os três NADH e distinguir CO₂ líquido de marcação isotópica. Conferir a tabela e explicar o exemplo3 mmol sem confundir quantidade, concentração e velocidade.
+
+
+## 27/10/2026 — ciclo de Krebs: primeiro inventário
+
+Nova aula `b1-krebs-inventario`,12 seções/12 exercícios, após os recortes de glicólise/piruvato/pentoses. Item12 do mapa curricular mudou de Lacuna para Parcial: sequência clássica, regeneração de oxaloacetato, esqueletos de carbono, cofatores e limites de fronteira. Roteiro manual e figura originais, sem simulação celular. GTP é variante declarada; FADH₂ é abreviação de equivalente redutor via FAD enzimático ligado. Carbono líquido não identifica origem isotópica; CO₂ da primeira volta não é o acetil recém-incorporado. Não soma formação de acetil-CoA, cadeia ou ATP total ao ciclo. Regulação, mecanismos completos, variantes e integração permanecem pendentes.
+
+Lehninger6,Artmed2014/original2013: leitura textual parcial em27/10/2026,§16.2 pp.638–639/PDF668–669, recortes de etapas pp.640–647/PDF670–677 e resumo p.653/PDF683. Cabeçalhos impressos/PDF conferidos na extração paginada; nota da identidade dos carbonos e cofatores reconferida p.647/PDF677. Extração emitiu avisos em outros fluxos; sem leitura integral/nova inspeção visual ou distribuição do exemplar privado. Não copiada figura16-7. Histórico/programa oficial não reabertos nesta continuação; versão histórica permanece incerta como já registrado.
+
+Verificação:14 testes do catálogo aprovados,821 estruturas MathML do catálogo conferidas (sem nova fórmula estrutural nesta aula). Revisão de inventário manual: 2C+4C→6C, duas perdas6→5→4, quatro oxidações, três NADH e um equivalente FADH₂ por volta, um GTP; exemplo3 mmol dá6/9/3/3 mmol de CO₂/NADH/equivalente FADH₂/GTP. Não é equação química completa nem quantidade por tempo/volume. No navegador390px, exercício5 rejeitou3 e aceitou9 pelo Enter; figura inspecionada em `krebs-inventario-mobile.jpg`, documento390/390px e console sem erros observados. Sem teste de Windows/leitor de tela real e sem experimento. Revisão pessoal pendente.
+
+BiologiaI:13 aulas/149 exercícios;12 itens parciais e7 lacunas entre19 itens, nenhum completo. Roteiro e vínculo curricular atualizados, preservando fontes e registros históricos. Global51 trilhas,551 aulas/4487 exercícios,189 introduções curtas. Contagem não comprova curso completo ou domínio pessoal. Próxima revisão20min: reconstruir os esqueletos e distinguir os cofatores/limites do inventário. Próxima elaboração global: consultar cobertura e acervo de QuímicaIII antes de escolher lacuna parcial. Saldo semanal78%; parada65% preservada.

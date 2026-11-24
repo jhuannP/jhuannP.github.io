@@ -1,0 +1,4 @@
+from statistics import mean,median
+data=[1,2,3,4,10]
+assert mean(data)==4 and median(data)==3
+print(mean(data),median(data))

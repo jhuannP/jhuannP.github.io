@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+weights=[Q(25,64),Q(20,64),Q(14,64),Q(4,64),Q(1,64)]
+assert sum(weights)==1
+mean=sum(s*w for s,w in enumerate(weights))
+variance=sum((s-mean)**2*w for s,w in enumerate(weights))
+assert (mean,variance)==(1,1)
+print("P(S2=0):",weights[0],"media:",mean,"variancia:",variance)

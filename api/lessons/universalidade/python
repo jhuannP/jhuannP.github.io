@@ -1,0 +1,9 @@
+def interpretar(programa,acc=0):
+    for op,valor in programa:
+        if op=='ADD': acc+=valor
+        elif op=='MUL': acc*=valor
+        else: raise ValueError('Operação desconhecida')
+    return acc
+assert interpretar([('ADD',3),('MUL',2)])==6
+assert interpretar([])==0
+print(interpretar([('ADD',3),('MUL',2)]))

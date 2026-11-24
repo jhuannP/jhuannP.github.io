@@ -1,0 +1,4 @@
+from math import exp
+y=lambda t,y0:y0*exp(2*t)
+assert y(1,0)==0 and y(0,3)==3
+print(y(1,0))

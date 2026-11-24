@@ -1,0 +1,8 @@
+from math import sqrt,comb
+mu,sigma,n,observed=2,3,100,2.6
+z=(observed-mu)/(sigma/sqrt(n))
+assert abs(z-2)<1e-12
+# Binomial pequena: suporte ainda discreto.
+pmf=[comb(10,k)/2**10 for k in range(11)]
+assert abs(sum(pmf)-1)<1e-12
+print(z,pmf)

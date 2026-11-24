@@ -1,0 +1,5 @@
+r = 0.5
+N = 4
+soma = sum(r ** k for k in range(N))
+limite = 1 / (1 - r)
+print(soma, limite, limite - soma)

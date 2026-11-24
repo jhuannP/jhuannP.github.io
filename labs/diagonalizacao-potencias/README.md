@@ -1,0 +1,18 @@
+# Diagonalização e potências — exemplos exatos
+
+Lima, Álgebra Linear, exemplar2014 localizado,§12 pp.146–149/PDF157–160 e§17.E p.211/PDF222,consulta textual parcial em27/10/2026: autovetores/independência/corolário e representação matricial. Sem nova inspeção visual, leitura integral ou distribuição do PDF. Programa de MatemáticaIII não foi reaberto; mapeamento anterior preservado, versão ministrada pendente.
+
+Exemplo anterior preservado: A=[[2,1],[1,2]],P=[[1,1],[1,−1]],D=diag(3,1),P⁻¹=P/2. J=[[1,1],[0,1]] tem dimensão própria1 e Jⁿ=[[1,n],[0,1]]. Vetores-coluna, bases ordenadas, expoentes inteiros não negativos. Texto, figura, exemplos e exercícios preparados de forma própria; não reproduzem problemas do livro. A identidade e J mostram que repetição de autovalor não decide diagonalização.
+
+`python3 labs/diagonalizacao-potencias/powers.py` compara iteração com fórmula/decomposição exatas usando Fraction, incluindo caso n0. Não é solver geral de autovalores, análise de arredondamento ou simulação física. O comentário sobre rotação em C não é implementado. Revisão pessoal, Jordan geral, condicionamento da base e verificação com leitor de tela/Windows real pendentes.
+
+
+## 27/10/2026 — diagonalização: base, potências e contraexemplos
+
+`al-diagonalizacao` ampliada de3 seções/2 exercícios para12/12, preservando IDs antigos, exemplo A=[[2,1],[1,2]], Python e desafio de iteração. P=[[1,1],[1,−1]],D=diag(3,1),P⁻¹=P/2; AP=PD, sequência de coordenadas e prova das potências por cancelamento. A²(1,0)=(5,4),A³(1,0)=(14,13). Separadas ortogonalidade das colunas e normalização. Prova de independência para dois autovalores distintos e extensão por indução indicada; identidade mostra que distinção não é necessária. J=[[1,1],[0,1]] tem um único autoespaço unidimensional, Jⁿ=[[1,n],[0,1]], crescimento sem autovalor de módulo maior que1. Corpo real/complexo explícito e limite de(A/3)ⁿv separado do crescimento de Aⁿv. Sem solver geral, medição física ou prova geral de estabilidade.
+
+Fonte privada complementar: Lima,Álgebra Linear,exemplar2014,§12 pp.146–149/PDF157–160 e§17.E p.211/PDF222, consulta textual parcial em27/10/2026. Autovetores, independência/corolário e versões matriciais. Sem nova inspeção visual, leitura integral ou reprodução de problemas/figuras; deduções, diagrama e atividade próprios. Programa de MatemáticaIII não reaberto; mapa anterior e limitação da versão ministrada preservados.
+
+Verificações:14 testes do catálogo aprovados;835 estruturas MathML conferidas. `labs/diagonalizacao-potencias/powers.py` compara637 pares vetor/expoente (49 vetores racionais×13 expoentes) por fórmula/decomposição e iteração para A, e fórmula linear/iteração para J. Também P⁻¹P/PP⁻¹,AP=PD, normalização em13 expoentes e contratos. Não são637 testes unitários novos; são casos no verificador do exemplo. No navegador390px, entrada(1,1) de P⁻¹ rejeitou1 e aceitou1/2 pelo Enter; largura390/390px, console sem erros observados. Diagrama inspecionado em `diagonalizacao-potencias-mobile.jpg`. Windows real, leitor de tela, bases numericamente sensíveis e revisão pessoal pendentes.
+
+ÁlgebraLinear:18 aulas próprias/189 exercícios, uma introdução curta (`al-combinacoes`), nove grupos de MatemáticaIII ainda parciais. Global51 trilhas,558 aulas/4649 exercícios,181 introduções curtas. Contagens não certificam cobertura integral ou domínio pessoal. Próxima ação20min: reconstruir P⁻¹ e AP=PD e explicar por que I diagonaliza e J não. Próxima elaboração global: limites por caminhos de Cálculo3, caso a fonte e o conteúdo atual confirmem a introdução curta. Saldo semanal77%; parada operacional65% mantida.

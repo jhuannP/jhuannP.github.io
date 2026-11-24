@@ -1,0 +1,4 @@
+from math import sqrt
+gap=4.;kappa=sqrt(gap)
+assert kappa==2
+print(kappa)

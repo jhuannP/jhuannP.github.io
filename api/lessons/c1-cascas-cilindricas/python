@@ -1,0 +1,6 @@
+from fractions import Fraction as Q
+# Coeficientes de pi, para o exemplo adimensional.
+shell=2*Q(1,4)
+washer=1-Q(1,2)
+assert shell==washer==Q(1,2)
+print("V/pi =",shell)

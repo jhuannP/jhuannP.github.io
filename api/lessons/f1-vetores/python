@@ -1,0 +1,5 @@
+from math import hypot
+F=(2,-1);dr=(3,4)
+W=sum(a*b for a,b in zip(F,dr))
+assert W==2 and hypot(*dr)==5
+print(W)

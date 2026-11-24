@@ -1,0 +1,6 @@
+from fractions import Fraction as F
+for d in (-1,0,1):
+    c=F(3);t1=F(1);p1=F(1,10);p2=F(1,20)
+    t2=t1+F(d)*(p1-p2)/c
+    assert c*t1+d*p1==c*t2+d*p2
+    print("Modelo d=",d,"tau2=",t2,"sem unidades de K/bar")

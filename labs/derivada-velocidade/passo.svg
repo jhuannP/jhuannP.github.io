@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="440" viewBox="0 0 420 440" role="img" aria-labelledby="title desc">
+<title id="title">Dois instantes, dois erros e uma velocidade</title>
+<desc id="desc">A diferença central usa posições em t menos h e t mais h, separadas por dois h. Dividir a diferença de posições por dois h dá uma estimativa de velocidade. O truncamento cai como h ao quadrado, enquanto o limite de perturbação cresce como delta dividido por h.</desc>
+<rect width="420" height="440" fill="#f4f3eb"/>
+<g font-family="Arial,sans-serif" fill="#20221e" text-anchor="middle">
+<text x="210" y="36" font-size="22">Duas posições, uma taxa</text>
+<path d="M45 85H375" stroke="#20221e" stroke-width="2"/>
+<g fill="#2348db"><circle cx="65" cy="85" r="6"/><circle cx="355" cy="85" r="6"/></g>
+<path d="M210 75V95" stroke="#20221e" stroke-width="2"/>
+<text x="65" y="120" font-size="21">t − h</text><text x="210" y="120" font-size="21">t</text><text x="355" y="120" font-size="21">t + h</text>
+<text x="210" y="156" font-size="20">Intervalo de tempo: 2h</text>
+<path d="M65 180H355" stroke="#d3d7c9"/>
+<text x="210" y="215" font-size="20">Diferença das posições / 2h</text>
+<text x="210" y="249" fill="#2348db" font-size="22">Estimativa da velocidade</text>
+<path d="M65 275H355" stroke="#d3d7c9"/>
+<text x="210" y="311" font-size="20">Ao diminuir h:</text>
+<text x="210" y="346" font-size="20">truncamento: M₃h²/6 ↓</text>
+<text x="210" y="382" font-size="20">limite de perturbação: δ/h ↑</text>
+<text x="210" y="422" font-size="15">Esquema conceitual; não são dados medidos.</text>
+</g></svg>

@@ -1,0 +1,5 @@
+text='ababababa'; pattern='ababa'
+# Oráculo simples para conferir o exemplo; não é o algoritmo KMP.
+positions=tuple(i for i in range(len(text)-len(pattern)+1) if text[i:i+len(pattern)]==pattern)
+assert positions==(0,2,4)
+print(positions)

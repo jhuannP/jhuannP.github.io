@@ -1,0 +1,4 @@
+initial,final=100.,110.
+percent=100*(final-initial)/initial
+assert percent==10
+print(percent)

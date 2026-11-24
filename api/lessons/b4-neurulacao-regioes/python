@@ -1,0 +1,8 @@
+origem={"cerebelo":("rombencefalo","metencefalo"),
+        "bulbo":("rombencefalo","mielencefalo"),
+        "bulbo_olfatorio":("prosencefalo","telencefalo")}
+assert origem["bulbo"]!=origem["bulbo_olfatorio"]
+espacos={"metencefalo":"quarto_ventriculo",
+         "mielencefalo":"quarto_ventriculo"}
+assert len(set(espacos.values()))==1
+print(origem["cerebelo"],set(espacos.values()))

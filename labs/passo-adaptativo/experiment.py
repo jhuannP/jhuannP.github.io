@@ -1,0 +1,80 @@
+from math import isfinite,sqrt,exp,sin,cos,pi,log,comb
+
+def finite(x):
+    if isinstance(x,bool): raise ValueError('Número real finito necessário')
+    try: y=float(x)
+    except (TypeError,ValueError,OverflowError): raise ValueError('Número real finito necessário') from None
+    if not isfinite(y): raise ValueError('Número real finito necessário')
+    return y
+
+def vector(x):
+    y=[finite(v) for v in x]
+    if not y: raise ValueError('Vetor vazio')
+    return y
+
+def budget(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<=0:
+        raise ValueError('Quantidade inteira positiva necessária')
+    return n
+
+def slope(f,t,y):
+    dy=vector(f(t,list(y)))
+    if len(dy)!=len(y): raise ValueError('Dimensão da derivada incompatível')
+    return dy
+
+def step(f,t,y,h,method='rk4'):
+    t=finite(t);h=finite(h);y=vector(y)
+    if h<=0 or t+h==t: raise ValueError('Passo positivo e resolvido em float necessário')
+    k1=slope(f,t,y)
+    if method=='euler': return [finite(a+h*b) for a,b in zip(y,k1)]
+    if method=='heun':
+        k2=slope(f,t+h,[a+h*b for a,b in zip(y,k1)])
+        return [finite(a+h*(b+c)/2) for a,b,c in zip(y,k1,k2)]
+    if method!='rk4': raise ValueError('Método desconhecido')
+    k2=slope(f,t+h/2,[a+h*b/2 for a,b in zip(y,k1)])
+    k3=slope(f,t+h/2,[a+h*b/2 for a,b in zip(y,k2)])
+    k4=slope(f,t+h,[a+h*b for a,b in zip(y,k3)])
+    return [finite(a+h*(b+2*c+2*d+e)/6) for a,b,c,d,e in zip(y,k1,k2,k3,k4)]
+
+def adaptive_rk4(f,t0,t1,y0,h0=.1,atol=1e-7,rtol=1e-7,max_trials=10000,record_attempts=False):
+    """Duplicação RK4; aceita dois meios passos, sem extrapolação.
+
+    record_attempts=True adiciona diagnósticos de todas as tentativas.
+    O retorno padrão preserva trace/accepted/rejected.
+    """
+    t=finite(t0);end=finite(t1);y=vector(y0);h=finite(h0)
+    atol=finite(atol);rtol=finite(rtol);budget(max_trials)
+    if type(record_attempts) is not bool: raise ValueError('Indicador booleano necessário')
+    if end<=t or h<=0 or atol<=0 or rtol<0: raise ValueError('Parâmetros de adaptação inválidos')
+    trace=[(t,list(y))];accepted=0;rejected=0;attempts=[]
+    for _ in range(max_trials):
+        h=min(h,end-t)
+        if h<=0 or t+h==t or t+h/2==t: raise ArithmeticError('Passo sem resolução temporal')
+        whole=step(f,t,y,h);half=step(f,t,y,h/2);twice=step(f,t+h/2,half,h/2)
+        estimates=[finite(abs(a-b)/15) for a,b in zip(whole,twice)]
+        scales=[finite(atol+rtol*max(abs(c),abs(b))) for b,c in zip(twice,y)]
+        error=finite(max(e/s for e,s in zip(estimates,scales)))
+        factor=2 if error==0 else max(.2,min(2,.9*error**(-.2)))
+        accept=error<=1
+        if record_attempts:
+            attempts.append(dict(t=t,h=h,before=list(y),whole=whole,twice=twice,
+                                 estimate=estimates,scale=scales,ratio=error,
+                                 accepted=accept,factor=factor))
+        if accept:
+            t=end if h==end-t else t+h;y=twice;trace.append((t,list(y)));accepted+=1
+            if t>=end:
+                result={'trace':trace,'accepted':accepted,'rejected':rejected}
+                if record_attempts: result['attempts']=attempts
+                return result
+        else: rejected+=1
+        h*=factor
+    raise RuntimeError('Orçamento de tentativas atingido')
+
+if __name__=='__main__':
+    result=adaptive_rk4(lambda t,y:[-y[0]],0,3,[1],h0=1,atol=1e-6,rtol=0,record_attempts=True)
+    print('t inicial | h tentado | razão | decisão | fator para próxima tentativa')
+    for a in result['attempts']:
+        print(f"{a['t']:.6f} | {a['h']:.6f} | {a['ratio']:.6g} | {'aceito' if a['accepted'] else 'rejeitado'} | {a['factor']:.6f}")
+    t,y=result['trace'][-1]
+    print('Erro global observado no teste conhecido:',abs(y[0]-exp(-t)))
+    print('Aceitos/rejeitados:',result['accepted'],result['rejected'])

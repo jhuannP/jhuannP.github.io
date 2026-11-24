@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+# Uma cópia exata não acrescenta informação à conjunta empírica.
+empirical=Q(4,5)
+scores=[Q(1,2)*Q(4,5)**2,Q(1,2)*Q(1,5)**2]
+naive=scores[0]/sum(scores)
+smooth=Q(5,7)**2/(Q(5,7)**2+Q(2,7)**2)
+assert empirical==Q(4,5) and naive==Q(16,17) and smooth==Q(25,29)
+print("Conjunta empírica:",empirical,"NB:",naive,"NB alpha=1:",smooth)

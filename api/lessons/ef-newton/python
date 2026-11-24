@@ -1,0 +1,4 @@
+m=3;F=12-6
+a=F/m
+assert a==2
+print(a)

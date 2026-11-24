@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="420" viewBox="0 0 520 420" role="img" aria-labelledby="title desc">
+<title id="title">O mesmo vetor, duas bases</title><desc id="desc">Dois vetores apontam para cima e para a direita. Na base original x aponta à direita e y para cima, com componentes três e quatro. Na base girada mais noventa graus x linha aponta para cima e y linha para esquerda. As novas componentes são quatro e menos três, conservando módulo cinco.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#264bb5"/></marker><marker id="axis" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#172845"/></marker></defs>
+<rect width="520" height="420" fill="#f6f3eb"/>
+<g font-family="sans-serif" fill="#172845" font-size="25">
+<text x="20" y="38" font-size="28" font-weight="bold">O vetor permanece; a base gira</text>
+<text x="35" y="85">Base original</text><text x="285" y="85">Eixos +90°</text>
+<g stroke="#172845" stroke-width="2" fill="none" marker-end="url(#axis)"><path d="M65 275 H218"/><path d="M65 275 V105"/><path d="M345 275 H275"/><path d="M345 275 V105"/></g>
+<text x="222" y="283">x</text><text x="38" y="115">y</text><text x="252" y="283">y′</text><text x="354" y="115">x′</text>
+<g stroke="#264bb5" stroke-width="4" marker-end="url(#arrow)"><path d="M65 275 L155 155"/><path d="M345 275 L435 155"/></g>
+<text x="30" y="325">(3,4) m</text><text x="300" y="325">(4,−3) m</text>
+<text x="20" y="385" fill="#264bb5">Módulo: 5 m em ambas as bases</text>
+</g></svg>

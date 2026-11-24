@@ -1,0 +1,7 @@
+from math import cos,pi
+I=1.
+for difference in (0.,pi/4,pi/4):
+    I*=cos(difference)**2
+assert abs(I-.25)<1e-14
+print('Entrada linear,saída:',I)
+print('Entrada não polarizada,saída:',I/2)

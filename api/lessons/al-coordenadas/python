@@ -1,0 +1,4 @@
+B=[[1,1],[0,1]];coords=(1,2)
+v=tuple(sum(a*b for a,b in zip(row,coords)) for row in B)
+assert v==(3,2)
+print(coords)

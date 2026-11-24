@@ -1,0 +1,4 @@
+R,V=2.,6.
+I=V/R;P=V*I
+assert I==3 and P==18
+print(P)

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 390" role="img" aria-labelledby="title desc">
+<title id="title">Comparação de fator constante com acréscimo constante</title>
+<desc id="desc">Etapas zero, um, dois e três. Ao multiplicar por um vírgula cinco: oitenta, cento e vinte, cento e oitenta e duzentos e setenta. Ao somar quarenta: oitenta, cento e vinte, cento e sessenta e duzentos. As regras coincidem apenas nas duas primeiras etapas da tabela.</desc>
+<rect width="440" height="390" rx="16" fill="#f4f3e9"/>
+<g font-family="sans-serif" fill="#24352d">
+<text x="22" y="32" font-size="18" font-weight="bold">Mesmo início, regras diferentes</text>
+<text x="22" y="62" font-size="15">Exemplo hipotético · quantidade em mg</text>
+<rect x="18" y="85" width="404" height="43" rx="6" fill="#e3e8df"/>
+<text x="30" y="113" font-size="16">Etapa n</text>
+<text x="155" y="113" font-size="16">× 1,5</text><text x="303" y="113" font-size="16">+ 40 mg</text>
+<path d="M18 175H422 M18 222H422 M18 269H422 M18 316H422" stroke="#b3beb5" fill="none"/>
+<g font-size="20">
+<text x="55" y="160">0</text><text x="165" y="160">80</text><text x="325" y="160">80</text>
+<text x="55" y="207">1</text><text x="158" y="207">120</text><text x="318" y="207">120</text>
+<text x="55" y="254">2</text><text x="158" y="254" fill="#2456c2">180</text><text x="318" y="254">160</text>
+<text x="55" y="301">3</text><text x="158" y="301" fill="#2456c2">270</text><text x="318" y="301">200</text></g>
+<text x="22" y="350" font-size="15">No modelo multiplicativo, aumentos:</text>
+<text x="22" y="374" font-size="16">40 mg → 60 mg → 90 mg</text>
+</g></svg>

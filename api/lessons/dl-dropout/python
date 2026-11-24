@@ -1,0 +1,21 @@
+from math import exp,log,sqrt,hypot,sin,cos,isfinite
+from random import Random
+
+def real(x):
+    if isinstance(x,bool):raise ValueError('Real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Real finito necessário') from None
+    if not isfinite(y):raise ValueError('Real finito necessário')
+    return y
+
+def dropout(values,p=.5,seed=42,training=True):
+    x=[real(v) for v in values];p=real(p)
+    if not 0<=p<1 or not isinstance(training,bool):raise ValueError('Probabilidade ou modo inválido')
+    if not training:return list(x)
+    rng=Random(seed)
+    return [v/(1-p) if rng.random()>=p else 0 for v in x]
+
+x=[1,2,3]
+assert dropout(x,.5,training=False)==x
+assert dropout(x,0,training=True)==x
+print(dropout(x,.5,42))

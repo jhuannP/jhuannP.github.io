@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 510" role="img" aria-labelledby="title desc">
+<title id="title">O conjunto de pontos pode esconder um erro</title><desc id="desc">Para a função prescrita, resíduo teórico zero nos cinco pontos j/4. Nos quatro pontos deslocados por um oitavo, erro alterna mais e menos um oitavo e resíduo alterna mais e menos dois pi ao quadrado.</desc>
+<rect width="720" height="510" rx="22" fill="#f4efe4"/>
+<g font-family="sans-serif" fill="#173d39">
+<text x="26" y="39" font-size="27" font-weight="700">Entre os pontos, o erro pode aparecer.</text>
+<text x="26" y="78" font-size="21">Função prescrita • A=1/8 • sin(4πx)</text>
+<text x="26" y="124" font-size="23" font-weight="700">Pontos j/4: resíduo teórico zero</text>
+<rect x="26" y="150" width="120" height="89" rx="12" fill="#e0e6dc"/>
+<text x="86" y="184" text-anchor="middle" font-size="23">x=0</text>
+<text x="86" y="217" text-anchor="middle" font-size="23">r=0</text>
+<rect x="163" y="150" width="120" height="89" rx="12" fill="#e0e6dc"/>
+<text x="223" y="184" text-anchor="middle" font-size="23">x=1/4</text>
+<text x="223" y="217" text-anchor="middle" font-size="23">r=0</text>
+<rect x="300" y="150" width="120" height="89" rx="12" fill="#e0e6dc"/>
+<text x="360" y="184" text-anchor="middle" font-size="23">x=1/2</text>
+<text x="360" y="217" text-anchor="middle" font-size="23">r=0</text>
+<rect x="437" y="150" width="120" height="89" rx="12" fill="#e0e6dc"/>
+<text x="497" y="184" text-anchor="middle" font-size="23">x=3/4</text>
+<text x="497" y="217" text-anchor="middle" font-size="23">r=0</text>
+<rect x="574" y="150" width="120" height="89" rx="12" fill="#e0e6dc"/>
+<text x="634" y="184" text-anchor="middle" font-size="23">x=1</text>
+<text x="634" y="217" text-anchor="middle" font-size="23">r=0</text>
+<text x="26" y="285" font-size="23" font-weight="700">Pontos deslocados: erro da solução</text>
+<rect x="26" y="310" width="152" height="98" rx="12" fill="#e9ddcd"/>
+<text x="102" y="346" text-anchor="middle" font-size="23">x=1/8</text>
+<text x="102" y="383" text-anchor="middle" font-size="25" font-weight="700">e=+1/8</text>
+<rect x="199" y="310" width="152" height="98" rx="12" fill="#e9ddcd"/>
+<text x="275" y="346" text-anchor="middle" font-size="23">x=3/8</text>
+<text x="275" y="383" text-anchor="middle" font-size="25" font-weight="700">e=−1/8</text>
+<rect x="372" y="310" width="152" height="98" rx="12" fill="#e9ddcd"/>
+<text x="448" y="346" text-anchor="middle" font-size="23">x=5/8</text>
+<text x="448" y="383" text-anchor="middle" font-size="25" font-weight="700">e=+1/8</text>
+<rect x="545" y="310" width="152" height="98" rx="12" fill="#e9ddcd"/>
+<text x="621" y="346" text-anchor="middle" font-size="23">x=7/8</text>
+<text x="621" y="383" text-anchor="middle" font-size="25" font-weight="700">e=−1/8</text>
+<text x="26" y="448" font-size="21">Nesses pontos: r alterna +2π² e −2π².</text>
+<text x="26" y="483" font-size="18">Esquema analítico • não é resultado de treino ou dado físico</text>
+</g></svg>

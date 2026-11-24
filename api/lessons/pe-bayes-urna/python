@@ -1,0 +1,9 @@
+from fractions import Fraction as Q
+prior = (Q(1,2), Q(1,2))
+joint = [prior[0]*Q(1,3), prior[1]*Q(2,3)]
+evidence = sum(joint)
+posterior = [p/evidence for p in joint]
+predictive = posterior[0]*0 + posterior[1]*Q(1,2)
+assert posterior == [Q(1,3), Q(2,3)]
+assert predictive == Q(1,3)
+print(predictive)

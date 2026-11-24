@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="620" viewBox="0 0 480 620" role="img" aria-labelledby="title desc"><title id="title">Quadro de sinais com domínio preservado</title><desc id="desc">Para (x-1)/(x+2) maior ou igual a zero: em x menor que menos dois, ambos os fatores são negativos e a fração é positiva. Entre menos dois e um, a fração é negativa. Acima de um, é positiva. A solução contém a semirreta à esquerda de menos dois com extremo aberto, e a partir de um com extremo fechado.</desc>
+<rect width="480" height="620" fill="#f7f8fa"/>
+<g font-family="Arial, sans-serif" fill="#172334">
+<text x="26" y="37" font-size="23" font-weight="700">O sinal depende do intervalo</text>
+<text x="26" y="70" font-size="19">(x − 1)/(x + 2) ≥ 0</text>
+<text x="26" y="104" font-size="17">Domínio: x ≠ −2.</text>
+<path d="M26 125H454" stroke="#bec7d2"/>
+<text x="126" y="158" font-size="17">x &lt; −2</text><text x="234" y="158" font-size="17">−2 &lt; x &lt; 1</text><text x="374" y="158" font-size="17">x &gt; 1</text>
+<text x="26" y="202" font-size="18">x − 1</text><text x="150" y="202" font-size="23">−</text><text x="270" y="202" font-size="23">−</text><text x="394" y="202" font-size="23">+</text>
+<text x="26" y="246" font-size="18">x + 2</text><text x="150" y="246" font-size="23">−</text><text x="270" y="246" font-size="23">+</text><text x="394" y="246" font-size="23">+</text>
+<path d="M26 267H454" stroke="#bec7d2"/>
+<text x="26" y="305" font-size="18" font-weight="700">Fração</text><text x="150" y="305" font-size="23" fill="#174c91">+</text><text x="270" y="305" font-size="23">−</text><text x="394" y="305" font-size="23" fill="#174c91">+</text>
+<text x="26" y="359" font-size="20" font-weight="700">Incluir ou excluir a fronteira?</text>
+<path d="M42 409H438" stroke="#738194" stroke-width="2"/>
+<path d="M42 409H158M302 409H438" stroke="#174c91" stroke-width="5"/>
+<path d="M50 400L40 409L50 418M430 400L440 409L430 418" stroke="#174c91" stroke-width="3" fill="none"/>
+<circle cx="158" cy="409" r="8" stroke="#174c91" stroke-width="3" fill="#f7f8fa"/><circle cx="302" cy="409" r="8" fill="#174c91"/>
+<text x="145" y="444" font-size="20">−2</text><text x="296" y="444" font-size="20">1</text>
+<text x="26" y="489" font-size="18">−2: denominador zero → excluir.</text>
+<text x="26" y="521" font-size="18">1: fração zero → incluir no caso ≥.</text>
+<text x="26" y="562" font-size="21" font-weight="700" fill="#174c91">(−∞, −2) ∪ [1, ∞)</text>
+<text x="26" y="601" font-size="15">Esquema original; reta sem escala métrica.</text>
+</g></svg>

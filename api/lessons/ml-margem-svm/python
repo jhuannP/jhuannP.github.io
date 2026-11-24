@@ -1,0 +1,3 @@
+hinge=lambda margin:max(0,1-margin)
+assert hinge(.25)==.75 and hinge(2)==0
+print(hinge(.25))

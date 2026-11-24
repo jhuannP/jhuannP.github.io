@@ -1,0 +1,4 @@
+L,I=2.,3.
+U=L*I*I/2
+assert U==9
+print(U)

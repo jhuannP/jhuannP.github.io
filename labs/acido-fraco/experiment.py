@@ -1,0 +1,30 @@
+"""Ácido HA monoprótico ideal em água, sem outros íons.
+Concentrações normalizadas por c°=1 mol/L; pH aproximado por -log10(h).
+Kw=1e-14 é o valor arredondado adotado para 25 °C neste modelo.
+"""
+from math import sqrt,log10,isfinite
+KW=1e-14
+
+def solve(C,Ka,Kw=KW):
+    if not all(isfinite(v) for v in (C,Ka,Kw)) or C<0 or Ka<=0 or Kw<=0:
+        raise ValueError('C>=0, Ka/Kw positivos e finitos')
+    s=sqrt(Kw)
+    def charge(h):return h-Kw/h-C*Ka/(Ka+h)
+    if C==0:h=s
+    else:
+        lo,hi=log10(s),log10(C+s)
+        for _ in range(90):
+            mid=(lo+hi)/2
+            if charge(10**mid)>0:hi=mid
+            else:lo=mid
+        h=10**((lo+hi)/2)
+    anion=C*Ka/(Ka+h);acid=C*h/(Ka+h);oh=Kw/h
+    q=2*Ka*C/(Ka+sqrt(Ka*Ka+4*Ka*C)) if C else 0.
+    root=sqrt(Ka*C)
+    return dict(h=h,anion=anion,acid=acid,oh=oh,pH=-log10(h),
+                alpha=anion/C if C else None,charge=h-anion-oh,mass=acid+anion-C,
+                quadratic=q,square_root=root,pH_quadratic=-log10(q) if q else None,
+                pH_square_root=-log10(root) if root else None)
+
+if __name__=='__main__':
+    for C in (.01,1e-7,1e-10,0):print(C,solve(C,1e-5))

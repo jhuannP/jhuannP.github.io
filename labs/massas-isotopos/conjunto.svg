@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="610" viewBox="0 0 480 610" role="img" aria-labelledby="title desc"><title id="title">Combinações isotópicas e duas normalizações</title><desc id="desc">Modelo ideal: dois sítios independentes com probabilidade de pesado um quarto. LL tem peso nove dezesseis avos; LP e PL somam seis dezesseis avos; PP tem um dezesseis avos. As probabilidades somam um, enquanto intensidades relativas ao máximo são cem, duzentos terços e cem nonos. Carga dupla divide as posições nominais por dois.</desc>
+<rect width="480" height="610" fill="#f7f8fa"/>
+<g font-family="Arial, sans-serif" fill="#172334">
+<text x="26" y="36" font-size="22" font-weight="700">Contar primeiro, agrupar depois</text>
+<text x="26" y="67" font-size="16">Dois sítios: leve 3/4, pesado 1/4.</text>
+<text x="26" y="96" font-size="16">Massa nominal leve: 100 u; pesado soma 2 u.</text>
+<path d="M26 117H454" stroke="#bec7d2"/>
+<text x="26" y="149" font-size="17" font-weight="700">Combinações</text><text x="260" y="149" font-size="17" font-weight="700">Peso agrupado</text>
+<text x="26" y="190" font-size="20">LL</text><text x="260" y="190" font-size="20">9/16</text>
+<text x="26" y="231" font-size="20">LP + PL</text><text x="260" y="231" font-size="20">6/16</text>
+<text x="26" y="272" font-size="20">PP</text><text x="260" y="272" font-size="20">1/16</text>
+<text x="26" y="310" font-size="17" fill="#174c91">Probabilidades: soma = 1.</text>
+<path d="M26 333H454" stroke="#bec7d2"/>
+<text x="26" y="367" font-size="20" font-weight="700">Pico mais intenso recebe 100</text>
+<text x="26" y="400" font-size="19">100 ; 200/3 ; 100/9</text>
+<text x="26" y="429" font-size="16">Essa soma não precisa ser 100.</text>
+<path d="M26 450H454" stroke="#bec7d2"/>
+<text x="26" y="482" font-size="20" font-weight="700">Mesmas massas, outra carga</text>
+<text x="26" y="516" font-size="19">z = 1 → m/z: 100, 102, 104</text>
+<text x="26" y="550" font-size="19">z = 2 → m/z: 50, 51, 52</text>
+<text x="26" y="588" font-size="15">Modelo sintético; não é espectro medido.</text>
+</g></svg>

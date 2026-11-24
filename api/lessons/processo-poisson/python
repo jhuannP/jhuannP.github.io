@@ -1,0 +1,27 @@
+from math import exp,expm1,isfinite,sqrt,log
+from random import Random
+
+def _finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def poisson_arrivals(rate,horizon,seed=42):
+    rate=_finite(rate);horizon=_finite(horizon)
+    if rate<=0 or horizon<0:raise ValueError('Taxa positiva e horizonte não negativo necessários')
+    rng=Random(seed);t=0;events=[]
+    # Proteção de orçamento, sem afirmar que uma sequência longa é impossível.
+    for _ in range(100000):
+        gap=-log(1-rng.random())/rate
+        if t+gap==t:raise ArithmeticError('Intervalo sem resolução')
+        t+=gap
+        if t>horizon:return events
+        events.append(t)
+    raise RuntimeError('Orçamento de chegadas atingido')
+
+events=poisson_arrivals(2,3,42)
+assert all(0<t<=3 for t in events)
+assert all(a<b for a,b in zip(events,events[1:]))
+print(events,'contagem:',len(events),'esperança:',6)

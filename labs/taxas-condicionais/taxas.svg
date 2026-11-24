@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="620" viewBox="0 0 520 620" role="img" aria-labelledby="title desc">
+<title id="title">Taxas dentro dos grupos e no total</title>
+<desc id="desc">Dados sintéticos. Grupo fácil: A 90%, B 80%. Difícil: A 60%, B 50%. Total observado: A 67,5%, B 72,5%. Com pesos iguais para os dois grupos: A 75%, B 65%. A supera B nos grupos e na mistura comum, mas fica abaixo no total observado.</desc>
+<rect width="520" height="620" fill="#faf9f5"/>
+<g font-family="Arial,sans-serif" fill="#202b28">
+<text x="24" y="35" font-size="25">O peso dos grupos muda o total</text>
+<text x="24" y="65" font-size="18">Dados sintéticos · mesma escala de 0 a 100%</text>
+<text x="24" y="100" font-size="20">Grupo fácil</text>
+<text x="24" y="134" font-size="19">A</text>
+<rect x="56" y="115" width="360" height="24" fill="#e3e5df"/>
+<rect x="56" y="115" width="324.0" height="24" fill="#246555"/>
+<text x="431" y="134" font-size="19">90%</text>
+<text x="24" y="167" font-size="19">B</text>
+<rect x="56" y="148" width="360" height="24" fill="#e3e5df"/>
+<rect x="56" y="148" width="288.0" height="24" fill="#555b59"/>
+<text x="431" y="167" font-size="19">80%</text>
+<text x="24" y="220" font-size="20">Grupo difícil</text>
+<text x="24" y="254" font-size="19">A</text>
+<rect x="56" y="235" width="360" height="24" fill="#e3e5df"/>
+<rect x="56" y="235" width="216.0" height="24" fill="#246555"/>
+<text x="431" y="254" font-size="19">60%</text>
+<text x="24" y="287" font-size="19">B</text>
+<rect x="56" y="268" width="360" height="24" fill="#e3e5df"/>
+<rect x="56" y="268" width="180.0" height="24" fill="#555b59"/>
+<text x="431" y="287" font-size="19">50%</text>
+<text x="24" y="340" font-size="20">Total observado</text>
+<text x="24" y="374" font-size="19">A</text>
+<rect x="56" y="355" width="360" height="24" fill="#e3e5df"/>
+<rect x="56" y="355" width="243.0" height="24" fill="#246555"/>
+<text x="431" y="374" font-size="19">67,5%</text>
+<text x="24" y="407" font-size="19">B</text>
+<rect x="56" y="388" width="360" height="24" fill="#e3e5df"/>
+<rect x="56" y="388" width="261.0" height="24" fill="#555b59"/>
+<text x="431" y="407" font-size="19">72,5%</text>
+<text x="24" y="460" font-size="20">Pesos comuns: 50% / 50%</text>
+<text x="24" y="494" font-size="19">A</text>
+<rect x="56" y="475" width="360" height="24" fill="#e3e5df"/>
+<rect x="56" y="475" width="270.0" height="24" fill="#246555"/>
+<text x="431" y="494" font-size="19">75%</text>
+<text x="24" y="527" font-size="19">B</text>
+<rect x="56" y="508" width="360" height="24" fill="#e3e5df"/>
+<rect x="56" y="508" width="234.0" height="24" fill="#555b59"/>
+<text x="431" y="527" font-size="19">65%</text>
+<text x="56" y="590" font-size="17">0%</text><text x="375" y="590" font-size="17">100%</text>
+</g></svg>

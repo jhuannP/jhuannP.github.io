@@ -1,0 +1,4 @@
+from fractions import Fraction as Q
+r=Q(1,3)+Q(1,4)
+assert r==Q(7,12)
+print(r)

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Disciplinas — Jhuann</title>
+<meta name="description" content="Páginas de estudo das disciplinas de 2026/2: notas de aula interativas e cadernos de ensino.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050a1c;--card:#0d1630;--ink:#e7edfb;--muted:#9aa6c6;--line:#1f2c50;
+--azul:#8fb6ff;--azul-soft:#14244d;--rosa:#f5a3bd;--rosa-soft:#3a1a29;
+--serif:"Newsreader",Georgia,serif;--sans:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(1100px 600px at 75% -10%,#14244d,transparent 60%),var(--bg);background-attachment:fixed;color:var(--ink);font:17px/1.6 var(--sans)}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:14px}
+header a{text-decoration:none;font-weight:600}
+.hero{padding:56px 0 40px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font:600 clamp(40px,6vw,72px)/1.02 var(--serif);letter-spacing:-.02em;margin:14px 0 16px}
+h1 em{font-style:italic;color:var(--azul)}
+.lede{font-size:19px;color:var(--muted);max-width:640px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px;padding:12px 0 56px}
+.card{position:relative;display:flex;flex-direction:column;gap:10px;padding:26px 24px 22px;border-radius:16px;background:linear-gradient(180deg,var(--card),#091126);border:1px solid var(--line);text-decoration:none;transition:transform .2s,box-shadow .2s}
+a.card:hover{transform:translateY(-3px);border-color:#5b95ff;box-shadow:0 0 0 1px #5b95ff,0 0 44px rgba(91,149,255,.25)}
+.card:before{content:"";position:absolute;inset:0 0 auto;height:5px;border-radius:16px 16px 0 0;background:var(--c)}
+.card .code{font:500 12px var(--mono);letter-spacing:.08em;color:var(--c)}
+.card h2{font:600 26px/1.15 var(--serif);margin:0}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:10px}
+.card .tags span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--soft);color:var(--c)}
+.azul{--c:var(--azul);--soft:var(--azul-soft)}.rosa{--c:var(--rosa);--soft:var(--rosa-soft)}
+.card.off{opacity:.7}
+.note{display:grid;grid-template-columns:170px 1fr;border-top:1px solid var(--line);padding:22px 0 60px;gap:24px;font-size:15px;color:var(--muted)}
+.note b{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+@media(max-width:640px){.note{grid-template-columns:1fr;gap:8px}}
+:focus-visible{outline:3px solid #5fd4ff;outline-offset:3px;border-radius:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a href="/">&larr; jhuann · portfólio</a><span class="kicker">2026/2</span></header>
+<section class="hero">
+  <p class="kicker">Disciplinas · cadernos de estudo</p>
+  <h1>O que estou <em>estudando</em> agora</h1>
+  <p class="lede">Cada disciplina ganha uma página própria: notas com as contas abertas, simulações para mexer e leituras organizadas. Azul para astronomia, rosa para ensino.</p>
+</section>
+<div class="grid">
+  <a class="card azul" href="aga0299/">
+    <span class="code">AGA0299 · IAG/USP</span>
+    <h2>Astrofísica Galáctica e Extragaláctica</h2>
+    <p>Da Via Láctea às galáxias distantes: magnitudes, rotação, matéria escura, elípticas e núcleos ativos.</p>
+    <div class="tags"><span>8 capítulos</span><span>12 simulações</span><span>notas Cornell</span></div>
+  </a>
+  <a class="card rosa" href="4300356/">
+    <span class="code">4300356 · IF/USP</span>
+    <h2>Elementos e Estratégia para o Ensino de Física e Ciências</h2>
+    <p>Como a ciência conhece, da ciência a quem aprende, e como escolher estratégias por uma finalidade.</p>
+    <div class="tags"><span>Licenciatura</span><span>cronograma</span><span>glossário</span></div>
+  </a>
+  <div class="card rosa off" aria-disabled="true">
+    <span class="code">EDM0402 · FE/USP</span>
+    <h2>Didática</h2>
+    <p>Página em preparo neste portfólio.</p>
+    <div class="tags"><span>Licenciatura</span><span>em breve</span></div>
+  </div>
+</div>
+<div class="note"><b>Sobre estas páginas</b><p>São notas de estudo, não material oficial das disciplinas. Foram escritas com apoio de IA a partir das aulas e das referências citadas em cada página; isso não comprova revisão completa nem domínio do conteúdo.</p></div>
+</div>
+</body>
+</html>

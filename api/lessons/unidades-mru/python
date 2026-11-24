@@ -1,0 +1,14 @@
+from fractions import Fraction as Q
+
+def position(x0, velocity, t, t0=0):
+    return Q(str(x0))+Q(str(velocity))*(Q(str(t))-Q(str(t0)))
+
+velocity=Q('-7.2')*Q(5,18)
+x0,t0,t=30,4,9
+x=position(x0,velocity,t,t0)
+dx=x-x0
+distance=abs(velocity)*(t-t0)
+assert (x,dx,distance)==(20,-10,10)
+# Trocar a origem do relógio mantém a previsão.
+assert position(x0,velocity,t-4,t0-4)==x
+print('posição, deslocamento e distância (m):',float(x),float(dx),float(distance))

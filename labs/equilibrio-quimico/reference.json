@@ -1,0 +1,327 @@
+[
+  {
+    "K": 0.25,
+    "p0": 0.0,
+    "result": {
+      "A": 0.8,
+      "B": 0.2,
+      "extent": 0.2,
+      "K": 0.25,
+      "Qinitial": 0.0,
+      "fraction_B": 0.2,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 0.25,
+    "p0": 0.25,
+    "result": {
+      "A": 0.8,
+      "B": 0.2,
+      "extent": -0.05,
+      "K": 0.25,
+      "Qinitial": 0.3333333333333333,
+      "fraction_B": 0.2,
+      "direction": "inversa"
+    }
+  },
+  {
+    "K": 0.25,
+    "p0": 0.5,
+    "result": {
+      "A": 0.8,
+      "B": 0.2,
+      "extent": -0.3,
+      "K": 0.25,
+      "Qinitial": 1.0,
+      "fraction_B": 0.2,
+      "direction": "inversa"
+    }
+  },
+  {
+    "K": 0.25,
+    "p0": 0.75,
+    "result": {
+      "A": 0.8,
+      "B": 0.2,
+      "extent": -0.55,
+      "K": 0.25,
+      "Qinitial": 3.0,
+      "fraction_B": 0.2,
+      "direction": "inversa"
+    }
+  },
+  {
+    "K": 0.25,
+    "p0": 1.0,
+    "result": {
+      "A": 0.8,
+      "B": 0.2,
+      "extent": -0.8,
+      "K": 0.25,
+      "Qinitial": null,
+      "fraction_B": 0.2,
+      "direction": "inversa"
+    }
+  },
+  {
+    "K": 0.5,
+    "p0": 0.0,
+    "result": {
+      "A": 0.6666666666666666,
+      "B": 0.3333333333333333,
+      "extent": 0.3333333333333333,
+      "K": 0.5,
+      "Qinitial": 0.0,
+      "fraction_B": 0.3333333333333333,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 0.5,
+    "p0": 0.25,
+    "result": {
+      "A": 0.6666666666666666,
+      "B": 0.3333333333333333,
+      "extent": 0.08333333333333333,
+      "K": 0.5,
+      "Qinitial": 0.3333333333333333,
+      "fraction_B": 0.3333333333333333,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 0.5,
+    "p0": 0.5,
+    "result": {
+      "A": 0.6666666666666666,
+      "B": 0.3333333333333333,
+      "extent": -0.16666666666666666,
+      "K": 0.5,
+      "Qinitial": 1.0,
+      "fraction_B": 0.3333333333333333,
+      "direction": "inversa"
+    }
+  },
+  {
+    "K": 0.5,
+    "p0": 0.75,
+    "result": {
+      "A": 0.6666666666666666,
+      "B": 0.3333333333333333,
+      "extent": -0.4166666666666667,
+      "K": 0.5,
+      "Qinitial": 3.0,
+      "fraction_B": 0.3333333333333333,
+      "direction": "inversa"
+    }
+  },
+  {
+    "K": 0.5,
+    "p0": 1.0,
+    "result": {
+      "A": 0.6666666666666666,
+      "B": 0.3333333333333333,
+      "extent": -0.6666666666666666,
+      "K": 0.5,
+      "Qinitial": null,
+      "fraction_B": 0.3333333333333333,
+      "direction": "inversa"
+    }
+  },
+  {
+    "K": 1.0,
+    "p0": 0.0,
+    "result": {
+      "A": 0.5,
+      "B": 0.5,
+      "extent": 0.5,
+      "K": 1.0,
+      "Qinitial": 0.0,
+      "fraction_B": 0.5,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 1.0,
+    "p0": 0.25,
+    "result": {
+      "A": 0.5,
+      "B": 0.5,
+      "extent": 0.25,
+      "K": 1.0,
+      "Qinitial": 0.3333333333333333,
+      "fraction_B": 0.5,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 1.0,
+    "p0": 0.5,
+    "result": {
+      "A": 0.5,
+      "B": 0.5,
+      "extent": 0.0,
+      "K": 1.0,
+      "Qinitial": 1.0,
+      "fraction_B": 0.5,
+      "direction": "já em equilíbrio"
+    }
+  },
+  {
+    "K": 1.0,
+    "p0": 0.75,
+    "result": {
+      "A": 0.5,
+      "B": 0.5,
+      "extent": -0.25,
+      "K": 1.0,
+      "Qinitial": 3.0,
+      "fraction_B": 0.5,
+      "direction": "inversa"
+    }
+  },
+  {
+    "K": 1.0,
+    "p0": 1.0,
+    "result": {
+      "A": 0.5,
+      "B": 0.5,
+      "extent": -0.5,
+      "K": 1.0,
+      "Qinitial": null,
+      "fraction_B": 0.5,
+      "direction": "inversa"
+    }
+  },
+  {
+    "K": 2.0,
+    "p0": 0.0,
+    "result": {
+      "A": 0.3333333333333333,
+      "B": 0.6666666666666666,
+      "extent": 0.6666666666666666,
+      "K": 2.0,
+      "Qinitial": 0.0,
+      "fraction_B": 0.6666666666666666,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 2.0,
+    "p0": 0.25,
+    "result": {
+      "A": 0.3333333333333333,
+      "B": 0.6666666666666666,
+      "extent": 0.4166666666666667,
+      "K": 2.0,
+      "Qinitial": 0.3333333333333333,
+      "fraction_B": 0.6666666666666666,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 2.0,
+    "p0": 0.5,
+    "result": {
+      "A": 0.3333333333333333,
+      "B": 0.6666666666666666,
+      "extent": 0.16666666666666666,
+      "K": 2.0,
+      "Qinitial": 1.0,
+      "fraction_B": 0.6666666666666666,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 2.0,
+    "p0": 0.75,
+    "result": {
+      "A": 0.3333333333333333,
+      "B": 0.6666666666666666,
+      "extent": -0.08333333333333333,
+      "K": 2.0,
+      "Qinitial": 3.0,
+      "fraction_B": 0.6666666666666666,
+      "direction": "inversa"
+    }
+  },
+  {
+    "K": 2.0,
+    "p0": 1.0,
+    "result": {
+      "A": 0.3333333333333333,
+      "B": 0.6666666666666666,
+      "extent": -0.3333333333333333,
+      "K": 2.0,
+      "Qinitial": null,
+      "fraction_B": 0.6666666666666666,
+      "direction": "inversa"
+    }
+  },
+  {
+    "K": 4.0,
+    "p0": 0.0,
+    "result": {
+      "A": 0.2,
+      "B": 0.8,
+      "extent": 0.8,
+      "K": 4.0,
+      "Qinitial": 0.0,
+      "fraction_B": 0.8,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 4.0,
+    "p0": 0.25,
+    "result": {
+      "A": 0.2,
+      "B": 0.8,
+      "extent": 0.55,
+      "K": 4.0,
+      "Qinitial": 0.3333333333333333,
+      "fraction_B": 0.8,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 4.0,
+    "p0": 0.5,
+    "result": {
+      "A": 0.2,
+      "B": 0.8,
+      "extent": 0.3,
+      "K": 4.0,
+      "Qinitial": 1.0,
+      "fraction_B": 0.8,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 4.0,
+    "p0": 0.75,
+    "result": {
+      "A": 0.2,
+      "B": 0.8,
+      "extent": 0.05,
+      "K": 4.0,
+      "Qinitial": 3.0,
+      "fraction_B": 0.8,
+      "direction": "direta"
+    }
+  },
+  {
+    "K": 4.0,
+    "p0": 1.0,
+    "result": {
+      "A": 0.2,
+      "B": 0.8,
+      "extent": -0.2,
+      "K": 4.0,
+      "Qinitial": null,
+      "fraction_B": 0.8,
+      "direction": "inversa"
+    }
+  }
+]

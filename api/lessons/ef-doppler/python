@@ -1,0 +1,6 @@
+from fractions import Fraction as Q
+c=300; f=20; us=60; uo=-30
+wavelength=Q(c-us,f)
+received=Q(c-uo)/wavelength
+assert wavelength==12 and received==Q(55,2)
+print(received, 'Hz; período', 1/received, 's')

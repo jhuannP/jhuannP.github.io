@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+alpha=Q(1,500)
+def sm(T):
+    return alpha*T**3/3
+assert sm(10)==Q(2,3)
+assert sm(20)==8*sm(10)
+print(sm(10),sm(20))

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 410" role="img" aria-labelledby="title desc">
+<title id="title">Um vetor reconstruído em uma base oblíqua</title>
+<desc id="desc">Em eixos cartesianos, o vetor termina em três e dois. A base tem b um igual a um e zero e b dois igual a um e um. Duas vezes b dois seguidas de uma vez b um alcançam o mesmo ponto. As coordenadas na base oblíqua são um e dois.</desc>
+<rect width="440" height="410" rx="16" fill="#f4f3e9"/>
+<g font-family="sans-serif" fill="#24352d">
+<text x="22" y="31" font-size="18" font-weight="bold">Mesmo vetor, coeficientes diferentes</text>
+<path d="M58 300H370 M85 328V83" stroke="#9aa99f" fill="none"/>
+<path d="M85 300L265 180 M252 182L265 180L260 193" stroke="#2456c2" stroke-width="3" fill="none"/>
+<path d="M85 300L205 180L265 180" stroke="#586f5e" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+<path d="M85 300H145 M137 296L145 300L137 304 M85 300L145 240 M136 243L145 240L142 249" stroke="#586f5e" stroke-width="2" fill="none"/>
+<text x="273" y="174" font-size="16">v=(3,2)</text>
+<text x="109" y="189" font-size="16">2b₂</text>
+<text x="219" y="170" font-size="16">b₁</text>
+<text x="113" y="325" font-size="15">b₁=(1,0)</text>
+<text x="151" y="249" font-size="15">b₂=(1,1)</text>
+<text x="374" y="305" font-size="15">x</text><text x="94" y="83" font-size="15">y</text>
+<text x="63" y="319" font-size="14">0</text>
+<text x="22" y="365" font-size="18">v = 1b₁ + 2b₂ · [v]B = (1,2)</text>
+<text x="22" y="393" font-size="14">Eixos e escala do desenho são cartesianos.</text>
+</g></svg>

@@ -1,0 +1,7 @@
+from random import Random
+from math import log
+rng=Random(42);lam=2
+values=[-log(1-rng.random())/lam for _ in range(10000)]
+mean=sum(values)/len(values)
+assert abs(mean-.5)<.03
+print(mean)

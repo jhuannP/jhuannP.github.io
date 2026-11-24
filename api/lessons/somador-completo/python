@@ -1,0 +1,18 @@
+from itertools import product
+
+def somador(a,b,cin):
+    s=a^b^cin
+    cout=(a&b)|((a^b)&cin)
+    return s,cout
+for a,b,c in product((0,1),repeat=3):
+    s,cout=somador(a,b,c)
+    assert a+b+c==s+2*cout
+
+def somar4(a,b):
+    resultado=0; c=0
+    for i in range(4):
+        s,c=somador((a>>i)&1,(b>>i)&1,c)
+        resultado|=s<<i
+    return resultado,c
+assert somar4(15,1)==(0,1)
+print(somar4(15,1))

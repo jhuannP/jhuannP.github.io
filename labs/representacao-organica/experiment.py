@@ -1,0 +1,38 @@
+"""Grafos CHO neutros simples: contagem formal, não estabilidade ou identidade estereoquímica."""
+from pathlib import Path
+from itertools import permutations
+import json
+MOLECULES=json.loads(Path(__file__).with_name('molecules.json').read_text())
+
+def analyze(atoms,bonds):
+    n=len(atoms)
+    if not n or any(a not in ('C','O') for a in atoms):raise ValueError('Somente átomos pesados C/O neste recorte.')
+    used=[0]*n;edges=set();adj=[set() for _ in atoms]
+    for i,j,order in bonds:
+        if not all(isinstance(x,int) for x in (i,j,order)) or not 0<=i<n or not 0<=j<n or i==j or order not in (1,2,3):raise ValueError('Ligação inválida.')
+        edge=tuple(sorted((i,j)))
+        if edge in edges:raise ValueError('Ligação duplicada.')
+        edges.add(edge);used[i]+=order;used[j]+=order;adj[i].add(j);adj[j].add(i)
+    seen={0};stack=[0]
+    while stack:
+        for j in adj[stack.pop()]-seen:seen.add(j);stack.append(j)
+    if len(seen)!=n:raise ValueError('Grafo desconectado.')
+    H=[(4 if a=='C' else 2)-u for a,u in zip(atoms,used)]
+    if min(H)<0:raise ValueError('Valência excedida.')
+    C=atoms.count('C');O=atoms.count('O');total=sum(H)
+    formula=('C'+(str(C) if C!=1 else '') if C else '')+('H'+(str(total) if total!=1 else '') if total else '')+('O'+(str(O) if O!=1 else '') if O else '')
+    return dict(hydrogens=H,C=C,H=total,O=O,formula=formula,dbe=(2*C+2-total)/2)
+
+def isomorphic(a,b):
+    """Elementos e ordens de ligação; não inclui coordenadas ou estereoquímica."""
+    if sorted(a['atoms'])!=sorted(b['atoms']):return False
+    n=len(a['atoms']);edges_b={tuple(sorted((i,j))):o for i,j,o in b['bonds']}
+    for p in permutations(range(n)):
+        if any(a['atoms'][i]!=b['atoms'][p[i]] for i in range(n)):continue
+        mapped={tuple(sorted((p[i],p[j]))):o for i,j,o in a['bonds']}
+        if mapped==edges_b:return True
+    return False
+
+if __name__=='__main__':
+    for m in MOLECULES:print(m['name'],analyze(m['atoms'],m['bonds']))
+    for i in range(0,6,2):print('Mesmo grafo no par?',isomorphic(MOLECULES[i],MOLECULES[i+1]))

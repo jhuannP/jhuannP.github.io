@@ -1,0 +1,6 @@
+from fractions import Fraction as F
+q_intact=F(220-20,100)
+q_deleted=F(70-20,50)
+assert (q_intact,q_deleted)==(2,1)
+assert q_intact/q_deleted==2
+print(q_intact,q_deleted)

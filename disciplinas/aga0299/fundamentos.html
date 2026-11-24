@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0 · Fundamentos de observação — AGA0299</title>
+<meta name="description" content="Magnitudes, fluxo, distância e tamanho: as ferramentas que todos os capítulos usam.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('aga-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body><!-- portfolio:voltar --><a href="/disciplinas/" style="position:fixed;left:14px;bottom:14px;z-index:999;font:600 13px/1 system-ui,sans-serif;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.92);color:#1b1b2a;text-decoration:none;border:1px solid rgba(0,0,0,.12);box-shadow:0 4px 16px rgba(0,0,0,.12)">&larr; Portfólio</a>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>AGA0299 <em>notas de aula</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="fundamentos.html" class="on" title="Fundamentos de observação">0</a><a href="cap1.html" title="Perspectiva histórica">I</a><a href="cap2.html" title="A Via Láctea">II</a><a href="cap3.html" title="Propriedades integradas">III</a><a href="cap4.html" title="Espirais e lenticulares">IV</a><a href="cap5.html" title="Galáxias elípticas">V</a><a href="cap6.html" title="Núcleos ativos">VI</a><a href="cap7.html" title="Galáxias no Universo">VII</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<div class="chapter-hero" data-num="0">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo 0 </p>
+    <h1>Fundamentos de observação</h1>
+    <p class="lede">Magnitudes, fluxo, distância e tamanho: as ferramentas que todos os capítulos usam.</p>
+  </div>
+</div>
+<div class="layout">
+  <aside class="toc" aria-label="Módulos deste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol><li><a href="#mag"><span class="toc-num">1</span>O que realmente medimos?</a></li><li><a href="#dist"><span class="toc-num">2</span>Magnitude \(\rightarrow\) distância \(\rightarrow\) luminosidade</a></li><li><a href="#dim"><span class="toc-num">4</span>Da régua no papel ao tamanho da galáxia</a></li><li><a href="#check"><span class="toc-num">20</span>Pré-requisitos e conferência final</a></li></ol>
+  </aside>
+  <main id="conteudo" class="content">
+<article class="modulo" id="mag">
+<header class="modulo-h"><span class="modulo-num">Módulo 1</span><h2>O que realmente medimos?</h2></header>
+<section class="note note-concept"><div class="cue"><span>CONTEXTO</span></div><div class="note-body"><h3>Da luz que chega à luz que a galáxia emite</h3>
+<p>Ao observar uma galáxia, queremos descobrir propriedades como sua luminosidade: quanta energia ela emite na forma de luz a cada segundo. O telescópio, porém, recebe apenas uma pequena parte dessa luz. A partir do sinal do detector e de sua calibração, estimamos o <strong>fluxo recebido</strong>: a energia que chega por segundo a cada unidade de área coletora.</p>
+<p>Uma galáxia pode fornecer pouco fluxo porque emite pouca luz, porque está distante ou porque há poeira retirando luz do feixe que chega até nós. A tarefa da fotometria — a medição quantitativa da luz — é nos ajudar a separar essas possibilidades. Neste capítulo, começamos por escolher <em>que parte da luz</em> medimos; depois isolamos o efeito da distância sobre o fluxo recebido.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>O que são as bandas B e V, e por que escolher uma delas?</h3>
+<p>A luz de uma galáxia contém muitos comprimentos de onda. O comprimento de onda, indicado por \(\lambda\), é a distância entre duas cristas sucessivas de uma onda; no visível, diferentes comprimentos de onda correspondem a diferentes cores. Usamos frequentemente o nanômetro: \(1\un{nm}=10^{-9}\un{m}\).</p>
+<p>Uma <strong>banda fotométrica</strong> é uma faixa de comprimentos de onda selecionada por um filtro e pela resposta do instrumento. O detector soma a contribuição da luz que atravessa essa faixa. Portanto, medir numa banda não significa medir uma única cor exata, nem recolher toda a energia emitida pela galáxia.</p>
+<div class="table-wrap"><table><tr><td>Banda</td><td>Região selecionada</td><td>Referência aproximada (sistema Johnson)</td></tr><tr><td>B</td><td>Azul (<em>blue</em>)</td><td>Comprimento efetivo próximo de 440 nm.</td></tr><tr><td>V</td><td>Visual, região verde-amarela</td><td>Comprimento efetivo próximo de 550 nm.</td></tr></table></div>
+<p>Os filtros têm uma curva de transmissão, não bordas perfeitamente abruptas. Os valores arredondados acima orientam a leitura; não definem limites exatos da banda. V não abrange todo o visível.</p>
+<p><strong>Para que medir uma banda de cada vez?</strong> Isso fixa a faixa de luz que estamos comparando. Podemos acompanhar uma estrela ao longo do tempo, comparar duas galáxias ou aplicar uma calibração definida para aquela banda. Se misturarmos uma medida em B com uma calibração em V, a diferença poderá vir da distribuição de luz entre as cores, e não da distância. Ao medir <em>ambas</em> as bandas, obtemos também uma comparação de cores, \(B-V\), útil para estudar populações estelares e poeira.</p>
+<p class="fonte"><span>Fonte</span> Bandas: AAVSO, <a href="https://archive.aavso.org/index.php/filters">Filters</a>, comprimentos efetivos aproximados. Fundamentação: Binney e Merrifield, Galactic Astronomy, §2.3; Figura e exemplo numérico de fluxo: construção didática, não questão de prova.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Por que uma fonte mais distante fornece menos fluxo?</h3>
+<p>Imagine a mesma galáxia observada a duas distâncias. Para estudar somente o efeito da distância, suponha que sua luminosidade não muda, que não há absorção nem espalhamento retirando luz do caminho e que a emissão é <strong>isotrópica</strong>: igual em todas as direções. Tratamos a fonte como pequena diante da distância e usamos a geometria usual, adequada a este modelo; efeitos cosmológicos serão discutidos depois.</p>
+<p>Envolva mentalmente a fonte com uma esfera de raio \(d\). Essa esfera é uma superfície imaginária, não uma parede que absorve luz. Como não há perdas, a energia emitida por segundo atravessa toda a superfície da esfera: a potência total continua sendo \(L\). A emissão isotrópica distribui essa potência igualmente pela superfície, cuja área é \(S=4\pi d^2\). Dividir a potência pela área fornece a potência recebida por metro quadrado:</p>
+<span class="eq-anchor" id="eq-1-1"></span><div class="math-display">\[\tag{1.1}
+F=\frac{L}{4\pi d^2}.\]</div>
+<p>A unidade confirma a interpretação: \(\un{W}/\un{m^2}=\un{W\,m^{-2}}\). Para uma pequena área coletora perpendicular à luz, a potência que a alcança é o fluxo multiplicado por essa área; as perdas do instrumento precisam ser calibradas.</p>
+<div class="center"></div>
+<p><strong>Figura 1.1.</strong> Duas representações da mesma fonte, no centro, envolvida por superfícies imaginárias de raios diferentes. A conta usa a <em>superfície inteira</em> da esfera, \(4\pi r^2\). A circunferência de seu equador mede \(2\pi r\); a área do círculo projetado mede \(\pi r^2\). Comprimento, área projetada e área da esfera são grandezas diferentes.</p>
+<p><strong>Se dobrarmos a distância, por que a área quadruplica?</strong> Porque \((2d)^2=(2d)(2d)=4d^2\). Logo, \(S_2=4\pi\times4d^2=4S_1\). A potência é a mesma, portanto \(F_2=L/S_2=L/(4S_1)=F_1/4\). Por exemplo, se chegavam \(8\un{W\,m^{-2}}\) no modelo, passariam a chegar \(2\un{W\,m^{-2}}\).</p>
+<p><strong>O que mudou fisicamente?</strong> O fluxo recebido diminuiu; a luminosidade da fonte permaneceu igual. Não houve perda de energia pelo caminho: a energia se distribuiu sobre uma área maior. A poeira produz outro efeito, a extinção do feixe observado, acrescentado no capítulo 3 destas notas.</p>
+<p><strong>Legenda para consulta.</strong> \(L\): potência emitida, em W ou em luminosidades solares. \(F\): potência recebida por área, em W m\(^{-2}\). \(d\): distância fonte–observador, em metros nesta conta. \(S\): área da superfície esférica, em m\(^2\). A esfera do desenho representa a propagação da luz, não a forma da galáxia.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Como expressamos o fluxo recebido em magnitudes?</h3>
+<p>A magnitude aparente \(m\) é uma maneira logarítmica de expressar o fluxo recebido. A convenção astronômica associa <strong>mais luz a um número menor de magnitude</strong>. O logaritmo transforma uma razão entre fluxos em uma diferença entre magnitudes. Para duas medidas na mesma banda e no mesmo sistema de calibração:</p>
+<span class="eq-anchor" id="eq-1-2"></span><div class="math-display">\[\tag{1.2}
+m_2-m_1=-2{,}5\log_{10}\left(\frac{F_2}{F_1}\right).\]</div>
+<p>Os índices 1 e 2 identificam as duas medidas: \(F_1\) corresponde a \(m_1\), e \(F_2\) a \(m_2\). Podem representar duas fontes ou a mesma fonte em duas situações. A razão \(F_2/F_1\) não tem unidade, pois dividimos fluxos expressos na mesma unidade. O coeficiente \(2{,}5\) pertence à definição da escala: uma razão de 100 em fluxo corresponde a 5 magnitudes.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Uma fonte fornece cem vezes menos fluxo</div><p><strong>Identificar.</strong> Temos \(F_2=F_1/100\) e queremos a diferença \(m_2-m_1\). Primeiro dividimos por \(F_1\): \(F_2/F_1=1/100\).</p>
+<p><strong>Calcular.</strong> Como \(100=10^2\), seu inverso é \(1/100=10^{-2}\). O logaritmo de base dez pergunta qual expoente produz esse número; portanto \(\log_{10}(10^{-2})=-2\). Substituindo:</p>
+<span class="eq-anchor" id="eq-1-3"></span><div class="math-display">\[\tag{1.3}
+m_2-m_1=-2{,}5\log_{10}(1/100)=-2{,}5\times(-2)=+5.\]</div>
+<p><strong>Interpretar.</strong> A segunda fonte tem magnitude cinco unidades maior e fornece menos fluxo. Se \(m_1=3\), então \(m_2=3+5=8\). O sinal negativo na definição não indica energia negativa: implementa a convenção invertida da escala.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>CONECTAR</span></div><div class="note-body"><h3>A magnitude aparente ainda contém o efeito da distância</h3>
+<p>Duas galáxias com a mesma luminosidade podem ter magnitudes aparentes diferentes se estiverem a distâncias diferentes. Para comparar a emissão das fontes, definimos a <strong>magnitude absoluta \(M\)</strong>: a magnitude que a mesma fonte teria se estivesse a 10 parsecs, sem extinção. É uma comparação a uma distância padronizada; não estamos deslocando a galáxia fisicamente. O próximo capítulo mostra como calcular essa correção.</p>
+</div></section>
+<section class="note note-key"><div class="cue"><span>NA QUESTÃO</span></div><div class="note-body"><h3>Identifique a banda e leia cada símbolo</h3>
+<p>Se o enunciado dá \(B=11{,}2\), geralmente abrevia \(m_B=11{,}2\): magnitude <em>aparente</em> na banda azul. Se dá \(M_B=-20\), refere-se à magnitude <em>absoluta</em> nessa banda. <strong>Não confunda magnitude absoluta com massa</strong>: nestas notas de aula, massa aparece como \(\mathcal M\) ou com subscrito explícito.</p>
+<p>Quando trabalhamos numa banda \(X\) (por exemplo, B ou V), a luminosidade e o fluxo devem corresponder a essa <em>mesma</em> faixa. No modelo sem perdas adotado acima:</p>
+<span class="eq-anchor" id="eq-1-4"></span><div class="math-display">\[\tag{1.4}
+\underbrace{F_X}_{\text{fluxo recebido na banda}}=
+\frac{\overbrace{L_X}^{\text{luminosidade emitida na banda}}}
+{\underbrace{4\pi d^2}_{\text{área da esfera}}}.\]</div>
+<p>\(X\) é um índice que identifica a banda, não uma multiplicação. Para luminosidades solares, compare também na mesma banda: \(M_{B,\odot}\) e \(M_{V,\odot}\) não são intercambiáveis. Se \(L\) representar emissão somada em todos os comprimentos de onda, \(F\) também deverá representar o fluxo total correspondente.</p>
+</div></section>
+</article>
+<article class="modulo" id="dist">
+<header class="modulo-h"><span class="modulo-num">Módulo 2</span><h2>Magnitude \(\rightarrow\) distância \(\rightarrow\) luminosidade</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Reconheça a questão</h3>
+<p>Aparecem magnitude aparente, magnitude absoluta ou uma relação que permite obtê-la. Queremos a distância \(d\). \(A\) é a extinção em magnitudes na <strong>mesma banda</strong>; sem poeira, \(A=0\).</p>
+<span class="eq-anchor" id="eq-2-1"></span><div class="math-display">\[\tag{2.1}
+\underbrace{m-M-A}_{\mu_0}=5\log\left(\frac{d}{10\un{pc}}\right).\]</div>
+<p>\(\mu_0\) é o módulo de distância corrigido. Dividimos por 5 e desfazemos o logaritmo:</p>
+<span class="eq-anchor" id="eq-2-2"></span><div class="math-display">\[\tag{2.2}
+\begin{aligned}\frac{\mu_0}{5}&amp;=\log\left(\frac{d}{10\un{pc}}\right),\\
+10^{\mu_0/5}&amp;=\frac{d}{10\un{pc}},\\
+\boxed{d=10\un{pc}\,10^{\mu_0/5}}&amp;\quad\text{ou}\quad\boxed{d=10^{(\mu_0+5)/5}\un{pc}}.\end{aligned}\]</div>
+<p>A relação <a href="#eq-2-2">(2.2)</a> abre o módulo de distância. A passagem usa a definição: \(\log x=y\) significa \(x=10^y\).</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Exemplo didático: \(m=20\), \(M=-5\), \(A=0\)</div><span class="eq-anchor" id="eq-2-3"></span><div class="math-display">\[\tag{2.3}
+\begin{aligned}\mu_0&amp;=20-(-5)-0=25,\\
+25/5&amp;=\log(d/10\un{pc})=5,\\
+d/(10\un{pc})&amp;=10^5=100000,\\
+d&amp;=10\times100000\un{pc}=10^6\un{pc}=1\un{Mpc}.\end{aligned}\]</div>
+<p>Confira: a 10 pc, \(m=M\). A uma distância muito maior, \(m\) precisa ser maior que \(M\) se não houver outros efeitos.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Se a distância já é dada, obtenha \(M\)</h3>
+<p>Basta isolar: \(M=m-A-5\log(d/10\un{pc})\). Com \(m_B=12\), \(d=10\) Mpc e \(A_B=0\), temos \(d/10\un{pc}=10^6\), logo \(M_B=12-5\times6=-18\).</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Agora converta magnitude absoluta em luminosidade</h3>
+<p>\(L_B\) é a luminosidade na banda B; \(L_{B,\odot}\) é a do Sol nessa banda. Adotando, neste exemplo, \(M_{B,\odot}=5{,}48\):</p>
+<span class="eq-anchor" id="eq-2-4"></span><div class="math-display">\[\tag{2.4}
+\begin{aligned}\frac{L_B}{L_{B,\odot}}&amp;=10^{0{,}4(M_{B,\odot}-M_B)}\\
+&amp;=10^{0{,}4[5{,}48-(-18)]}=10^{9{,}392}\simeq2{,}47\times10^9.\end{aligned}\]</div>
+<p>A galáxia emite cerca de 2,47 bilhões de vezes a luminosidade solar <strong>nessa banda</strong>. Se a prova fornecer outro valor solar, use o fornecido e registre a convenção.</p>
+</div></section><figure class="widget-wrap"><div class="widget" data-widget="modulo-distancia"></div></figure>
+</article>
+<article class="modulo" id="dim">
+<header class="modulo-h"><span class="modulo-num">Módulo 4</span><h2>Da régua no papel ao tamanho da galáxia</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>O que é cada tamanho?</h3>
+<p>\(\ell\): comprimento medido na figura, em cm ou mm. \(\theta\): tamanho angular no céu, em graus, minutos ou segundos de arco. \(d\): distância até a galáxia. \(D\): diâmetro físico. \(R=D/2\): raio físico. Medir centímetros no papel não fornece diretamente quilômetros.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Passo 1: use a barra de escala</div><p>Objeto e barra precisam ser medidos <strong>na mesma imagem e na mesma unidade</strong>:</p>
+<span class="eq-anchor" id="eq-4-1"></span><div class="math-display">\[\tag{4.1}
+\theta_{\rm obj}=\frac{\ell_{\rm obj}}{\ell_{\rm barra}}\theta_{\rm barra}.\]</div>
+<p>Exemplo didático: barra de \(5'\) mede 4 cm; galáxia mede 6,4 cm ao longo do eixo maior. Então \(\theta=(6{,}4/4)\times5'=1{,}6\times5'=8'\).</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Passo 2: transforme o ângulo em radianos</div><span class="eq-anchor" id="eq-4-2"></span><div class="math-display">\[\tag{4.2}
+1^\circ=60'=3600'',\qquad180^\circ=\pi\un{rad}.\]</div>
+<p>Os símbolos \('\) e \(''\) são ângulos, não minutos e segundos de tempo.</p>
+<span class="eq-anchor" id="eq-4-3"></span><div class="math-display">\[\tag{4.3}
+\begin{aligned}8'&amp;=\frac{8}{60}\text{ grau},\\
+\theta_{\rm rad}&amp;=\frac{8}{60}\frac{\pi}{180}=\frac{8\pi}{10800}\simeq0{,}0023271.\end{aligned}\]</div>
+<p>Atalhos: \(\theta_{\rm rad}=\theta_{(')}/3437{,}75=\theta_{('')}/206265\).</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Passo 3: converta em tamanho físico</div><p>Para um objeto transversal e ângulo pequeno, \(D=2d\tan(\theta/2)\simeq d\theta\). Se \(d=10\) Mpc, converta primeiro: \(10\) Mpc \(=10000\) kpc.</p>
+<span class="eq-anchor" id="eq-4-4"></span><div class="math-display">\[\tag{4.4}
+D\simeq10000\un{kpc}\times0{,}0023271=23{,}27\un{kpc},\quad R=11{,}64\un{kpc}.\]</div>
+<p>A distância e o tamanho precisam ter a mesma unidade nessa fórmula. Atalho equivalente:</p>
+<span class="eq-anchor" id="eq-4-5"></span><div class="math-display">\[\tag{4.5}
+\boxed{D(\un{kpc})=0{,}29089\,d(\un{Mpc})\,\theta(\un{arcmin})}.\]</div>
+<p>Se o tamanho físico for <strong>suposto</strong>, inverta: \(d=D/\theta_{\rm rad}\). Isso não é uma distância independente da suposição sobre \(D\).</p></div>
+</div></section>
+<section class="note note-warn"><div class="cue"><span>ATENÇÃO</span></div><div class="note-body"><h3>Cuidados na imagem</h3>
+<p>Meça o eixo maior completo, mesmo que esteja inclinado no papel. Use uma borda ou isofota consistente. Se pedir raio, divida por dois. Uma espessura visível não é automaticamente a escala exponencial vertical do disco. Em grandes redshifts, a distância geométrica aqui é \(D_A\), não \(D_L\) (p.).</p>
+<p class="fonte"><span>Fonte</span> Aplicação direta na P2/2025 Q2C; barra de \(5{,}0'\).</p>
+</div></section>
+</article>
+<article class="modulo" id="check">
+<header class="modulo-h"><span class="modulo-num">Módulo 20</span><h2>Pré-requisitos e conferência final</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Cefeidas: se a distância vier de uma curva de luz</h3>
+<p>\(P\): intervalo entre fases equivalentes, na unidade da calibração. Uma relação \(M_X=a\log(P/P_0)+b\) fornece magnitude absoluta na banda X. Meça \(P\), calcule \(M_X\), obtenha magnitude aparente média na mesma banda e aplique o módulo de distância corrigido. \(a,b,P_0\) vêm do enunciado; não há uma calibração universal para qualquer banda/população.</p>
+<span class="eq-anchor" id="eq-20-2"></span><div class="math-display">\[\tag{20.2}
+M_X=a\log(P/P_0)+b.\]</div>
+<p>Para uma média aproximada em magnitude, amostre um ciclo em \(N\) fases uniformes: \(\bar m=\sum m_j/N\). A média em fluxo produz \(m_{\rm int}=-2{,}5\log[\sum10^{-0{,}4m_j}/N]\) e é diferente. Siga a convenção da calibração; não suponha que a média seja sempre metade entre os extremos.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Várias estimativas de distância: o que significa o erro?</h3>
+<p>\(N\): número de estimativas; \(d_j\): cada distância; \(\bar d\): sua média.</p>
+<span class="eq-anchor" id="eq-20-1"></span><div class="math-display">\[\tag{20.1}
+\bar d=\frac{\sum d_j}{N},\quad s_d=\sqrt{\frac{\sum(d_j-\bar d)^2}{N-1}},\quad
+\sigma_{\bar d}=\frac{s_d}{\sqrt N}.\]</div>
+<p>Exemplo didático: 10, 12 e 14 Mpc. Média 12; desvios \(-2,0,2\); quadrados \(4,0,4\); soma 8; \(s_d=\sqrt{8/2}=2\) Mpc; erro-padrão \(2/\sqrt3=1{,}15\) Mpc. Não são diferenças entre pares de estrelas. Erro-padrão pressupõe estimativas independentes e não incorpora automaticamente erro sistemático comum da calibração.</p>
+</div></section>
+<section class="note note-key"><div class="cue"><span>LEGENDA / REFERÊNCIA</span></div><div class="note-body"><h3>Conversões e propagação aproximada</h3>
+<p>\(1\) kpc \(=10^3\) pc; \(1\) Mpc \(=10^6\) pc; \(1\) pc \(=3{,}0857\times10^{16}\) m; \(1\) Gyr \(=10^9\) anos. Para módulo de distância com incerteza pequena \(\sigma_\mu\), \(\sigma_d/d\simeq(\ln10/5)\sigma_\mu\simeq0{,}4605\sigma_\mu\). Para erros independentes, \(\sigma_{B-V}=\sqrt{\sigma_B^2+\sigma_V^2}\). Correlações podem mudar a expressão.</p>
+</div></section>
+<section class="note note-warn"><div class="cue"><span>ATENÇÃO</span></div><div class="note-body"><h3>Checklist antes de entregar</h3>
+<ol><li>Escrevi o significado e a unidade dos dados e da incógnita?</li><li>Usei \(\log\) ou \(\ln\) corretamente? Ângulo em graus na trigonometria e radianos em \(D=d\theta\)?</li><li>A banda da magnitude coincide com a da calibração e do Sol?</li><li>Diferenciei largura \(W\), recessão e rotação? Corrigi \(\sin i\)?</li><li>Usei raio na massa e diâmetro na dimensão quando apropriado?</li><li>Declarei aproximações gráficas, extinção ignorada e modelos adotados?</li><li>A fração de gás tem a massa correta no denominador?</li><li>Meu resultado tem interpretação e precisão compatível com os dados?</li></ol>
+</div></section>
+</article>
+<nav class="pager"><span></span><a class="next" href="cap1.html"><span>Próximo →</span>I · Perspectiva histórica</a></nav>
+  </main>
+</div>
+<footer class="footer">
+  <p><strong>AGA0299 · Astrofísica Galáctica e Extragaláctica</strong> · IAG/USP · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir das aulas e notas expandidas de Prof. Ronaldo E. de Souza (IAG/USP) e de Binney &amp; Merrifield, <em>Galactic Astronomy</em> (1998). Texto, figuras interativas e erros são das notas; não é material oficial da disciplina.</p>
+  <p class="small">Gerado a partir do caderno LaTeX por <code>scripts/gerar_site_aga.py</code>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/widgets/modulo-distancia.js" defer></script>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

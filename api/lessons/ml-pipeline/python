@@ -1,0 +1,38 @@
+from math import exp,log1p,sqrt,hypot,atan2,cos,sin,isfinite
+from random import Random
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def scale_fit(x):
+    x=[finite(v) for v in x]
+    if not x:raise ValueError('Treino vazio')
+    mean=sum(x)/len(x);std=sqrt(sum((v-mean)**2 for v in x)/len(x))
+    return dict(mean=mean,scale=std if std>0 else 1.0)
+
+def scale_transform(x,state):
+    return [(finite(v)-state['mean'])/state['scale'] for v in x]
+
+def paired(x,y):
+    a=[finite(v) for v in x];b=[finite(v) for v in y]
+    if not a or len(a)!=len(b):raise ValueError('Dados não vazios de mesmo tamanho necessários')
+    return a,b
+
+def linear_ridge(x,y,lam=0):
+    x,y=paired(x,y);lam=finite(lam)
+    if lam<0:raise ValueError('Penalidade não negativa necessária')
+    mx=sum(x)/len(x);my=sum(y)/len(y)
+    den=sum((v-mx)**2 for v in x)+lam
+    if den==0:raise ArithmeticError('Inclinação não identificável sem regularização')
+    w=sum((a-mx)*(b-my) for a,b in zip(x,y))/den
+    return dict(w=w,b=my-w*mx)
+
+x,y=[0,2],[1,5];state=scale_fit(x)
+r=linear_ridge(scale_transform(x,state),y)
+z=scale_transform([4],state)[0];pred=r["w"]*z+r["b"]
+assert pred==9
+print(pred)

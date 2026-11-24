@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiment": "iid-site-percolation",
+  "config": {
+    "size": 8,
+    "samples": 100,
+    "occupation_p": 0.6,
+    "seed": 42,
+    "generator": "random.Random",
+    "neighbors": "quatro, sem diagonais",
+    "crossing": "borda superior até inferior"
+  },
+  "software": {
+    "python": "3.14.5",
+    "code_sha256": "0709cf38beb784a6192528f7b7d5125252fcb91ef8d91eeb82bb632147b7033a"
+  },
+  "result": {
+    "successes": 54,
+    "samples": 100,
+    "estimate": 0.54,
+    "wilson_nominal_95": [
+      0.44264860323368227,
+      0.6343919169097589
+    ],
+    "exact_if_2x2": null
+  },
+  "interpretation": "Frequência estima probabilidade de travessia desta grade finita; não é p nem limiar crítico. Wilson é intervalo nominal aproximado."
+}

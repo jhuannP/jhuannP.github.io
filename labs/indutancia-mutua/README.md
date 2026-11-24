@@ -1,0 +1,13 @@
+# Indutância mútua e energia de duas portas
+
+Modelo original de duas bobinas lineares recíprocas,geometria fixa,coeficientes constantes,sem resistências,perdas,movimento,histerese ou offsets de fluxo. Portas em convenção passiva: corrente entra no terminal de tensão positiva;v=dλ/dt. λ é fluxo ligado total,em Wb (espiras são contagem adimensional),não o fluxo de uma única espira. Orientações escolhidas definem o sinal deM. Força eletromotriz induzida no contorno orientado é−dλ/dt,distinta da queda de tensão passiva.
+
+Fontes primárias: OpenStax UniversityPhysicsII§14.1,Eqs.14.1–14.5,consulta textual parcial29/10/2026 de fluxo ligado,mútua,reciprocidade e Faraday; https://openstax.org/books/university-physics-volume-2/pages/14-1-mutual-inductance . §14.3,Eqs.14.20–14.22,mesma data,energia de autoindutância e integração de potência; https://openstax.org/books/university-physics-volume-2/pages/14-3-energy-in-a-magnetic-field . Extensão energética a duas portas,quadrado completo,limite deM,exemplo,figura,código e exercícios desenvolvidos localmente;sem copiar figuras/exemplos da fonte ou alegar leitura integral.
+
+λ1=L1*i1+M*i2,λ2=M*i1+L2*i2. U=(L1*i1²+L2*i2²)/2+M*i1*i2. Ao integrar potência,manter uma corrente constante não elimina a potência da respectiva porta: o fluxo ligado pode variar pela outra corrente. Completar quadrado dá U=L1/2*(i1+M*i2/L1)²+(L2−M²/L1)*i2²/2. Exigir U>=0 para todas as correntes implica M²<=L1*L2. Igualdade é limite ideal semidefinido;nenhuma inversão da matriz singular ou solução dinâmica geral executada. Não inferimos que todo conjunto admissível define uma geometria de bobinas realizável.
+
+Exemplo hipotético L1=4H,L2=9H,M=3H,i=(2,−1)A: autoenergias8J e4,5J,parcela cruzada−6J,total6,5J. |k|=|M|/sqrt(L1L2)=1/2. i2=0 e di1/dt=2A/s dão tensão passiva v2=+6V e fem orientada−6V;porta aberta não carrega corrente,mas pode ter tensão. Não se prevê aqui carga conectada/transformador real. Reverter orientação da porta2 exige i2,λ2,v2,M trocarem sinal;energia física não muda.
+
+Código padrão,int/Fraction;L1,L2 em[.001,1000]H,M²<=L1L2,|i|<=100A,|di/dt|<=1000A/s. Unidades SI consistentes assumidas,não detectadas. Soma/diferenças racionais exatas,sem resolver campos ou extrair M de geometria. Execute da raiz: `python3 -m unittest discover -s labs/indutancia-mutua -t .`; `python3 labs/indutancia-mutua/coupled.py`.
+
+Quatro testes:exemplo/porta aberta;343 combinações com quadrado completo,orientação e escala,incluindo limite perfeito;25 estados com trabalho em três caminhos e gradiente energético exato;contratos. Não é experimento realizado,resultado da IC ou evidência de domínio pessoal. Leitura privada de Nussenzveig/Griffiths não ampliada neste bloco.

@@ -1,0 +1,5 @@
+from math import hypot
+v2=(1,1);q1=(1,0)
+c=sum(a*b for a,b in zip(v2,q1));w=tuple(a-c*b for a,b in zip(v2,q1))
+assert w==(0,1) and hypot(*w)==1
+print(w)

@@ -1,0 +1,8 @@
+Z,q=8,0
+N=Z-q
+occupations={"1s":2,"2s":2,"2p":4}
+assert sum(occupations.values())==N
+boxes=((1,1),(1,0),(1,0))
+assert sum(up+down for up,down in boxes)==4
+assert sum(up+down==1 for up,down in boxes)==2
+print(occupations,"2 desemparelhados")

@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>II · A Via Láctea — AGA0299</title>
+<meta name="description" content="Nossa galáxia em vários comprimentos de onda, a poeira que a esconde, sua estrutura, cinemática e rotação.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('aga-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body><!-- portfolio:voltar --><a href="/disciplinas/" style="position:fixed;left:14px;bottom:14px;z-index:999;font:600 13px/1 system-ui,sans-serif;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.92);color:#1b1b2a;text-decoration:none;border:1px solid rgba(0,0,0,.12);box-shadow:0 4px 16px rgba(0,0,0,.12)">&larr; Portfólio</a>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>AGA0299 <em>notas de aula</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="fundamentos.html" title="Fundamentos de observação">0</a><a href="cap1.html" title="Perspectiva histórica">I</a><a href="cap2.html" class="on" title="A Via Láctea">II</a><a href="cap3.html" title="Propriedades integradas">III</a><a href="cap4.html" title="Espirais e lenticulares">IV</a><a href="cap5.html" title="Galáxias elípticas">V</a><a href="cap6.html" title="Núcleos ativos">VI</a><a href="cap7.html" title="Galáxias no Universo">VII</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<div class="chapter-hero" data-num="II">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo II </p>
+    <h1>A Via Láctea</h1>
+    <p class="lede">Nossa galáxia em vários comprimentos de onda, a poeira que a esconde, sua estrutura, cinemática e rotação.</p>
+  </div>
+</div>
+<div class="layout">
+  <aside class="toc" aria-label="Módulos deste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol><li><a href="#cap2a"><span class="toc-num">24</span>Capítulo 2 (I): a Via Láctea em muitos comprimentos de onda</a></li><li><a href="#cap2b"><span class="toc-num">25</span>Capítulo 2 (II): meio interestelar e absorção</a></li><li><a href="#poeira"><span class="toc-num">3</span>Poeira: o que cada letra significa</a></li><li><a href="#cap2c"><span class="toc-num">26</span>Capítulo 2 (III): estrutura do disco, do halo e o diagrama HR</a></li><li><a href="#cap2d"><span class="toc-num">27</span>Capítulo 2 (IV): movimentos das estrelas próximas</a></li><li><a href="#cap2e"><span class="toc-num">28</span>Capítulo 2 (V): aglomerados, halo e a formação da Galáxia</a></li><li><a href="#cap2f"><span class="toc-num">29</span>Capítulo 2 (VI): dinâmica do disco, bojo e núcleo</a></li><li><a href="#cap2g"><span class="toc-num">30</span>Capítulo 2 (VII): rotação galáctica e constantes de Oort</a></li></ol>
+  </aside>
+  <main id="conteudo" class="content">
+<article class="modulo" id="cap2a">
+<header class="modulo-h"><span class="modulo-num">Módulo 24</span><h2>Capítulo 2 (I): a Via Láctea em muitos comprimentos de onda</h2></header>
+<details class="cobertura"><summary>Fontes e cobertura deste módulo</summary><p><strong>AulaCap2, slides 1–16: completo</strong> (16/11/2026). Apoio: Cap2. Vídeos no Moodle: <code>OurGalaxy21cm</code>, <code>FaixEspecObs</code>, <code>GaiaMilkWay2</code>.
+
+
+<strong>Por que o Cap. 2 importa no curso inteiro:</strong> a Via Láctea é a única galáxia que vemos estrela por estrela. Cada ferramenta usada depois em outras galáxias (perfis exponenciais, populações, curvas de rotação, matéria escura) foi primeiro calibrada aqui.</p></details>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>O problema: estamos dentro do objeto</h3>
+<p>O slide de abertura avisa que a quantidade de informação sobre a Via Láctea é enorme e difícil de compatibilizar. A dificuldade de fundo: vemos a Galáxia <strong>de dentro</strong>, através da sua própria poeira, e cada linha de visada mistura componentes a distâncias diferentes.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Kapteyn: contagens estelares e elipsoides</h3>
+<p>Kapteyn (1851–1922) retomou o programa de Herschel com estatística: contagens de estrelas por magnitude e direção. Para estrelas de magnitude absoluta \(M_i\) conhecida (ou média), a distância sai de cada magnitude aparente:</p>
+<span class="eq-anchor" id="eq-24-1"></span><div class="math-display">\[\tag{24.1}
+\begin{gathered}
+m_i-M_i=5\log r-5\\
+\Longrightarrow\quad r=10^{(m_i-M_i+5)/5}=k\,10^{0{,}2\,m_i},\qquad k=10^{(5-M_i)/5}.
+\end{gathered}\]</div>
+<p>Pergunta do slide: por que tratar a Galáxia como <strong>elipsoides oblatos achatados</strong> de igual densidade? Porque, com simetria em torno do eixo de rotação, basta descrever a densidade em função de duas coordenadas (distância ao eixo e altura ao plano), e as contagens em várias direções determinam os achatamentos. O modelo de Kapteyn resultou pequeno e centrado perto do Sol, de novo por ignorar a absorção. A versão moderna desse programa é o mapeamento do Gaia (ESA).</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 2–4.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Por que observar em muitos comprimentos de onda?</h3>
+<p>Cada faixa do espectro é emitida por um processo físico diferente e atravessa a poeira de modo diferente. Uma mesma direção do céu mostra componentes diferentes conforme a faixa.</p>
+<div class="center"><div class="table-wrap"><table><tr><th>Faixa</th><th>O que se vê e por quê</th></tr><tr><td>Rádio 408 MHz</td><td>Elétrons relativísticos (acelerados em supernovas) girando no campo magnético: emissão síncrotron.</td></tr><tr><td>21 cm (H&thinsp;I)</td><td>Densidade de coluna de hidrogênio neutro; linha da transição de spin do elétron.</td></tr><tr><td>Contínuo rádio 2,7 GHz</td><td>Gás quente ionizado e elétrons de alta energia no meio interestelar.</td></tr><tr><td>CO (rádio milimétrico)</td><td>Traçador de H\(_2\): regiões mais frias e densas, as nuvens moleculares.</td></tr><tr><td>IV médio e distante (IRAS 12, 60, 100 \(\mu\)m)</td><td>Emissão térmica de grãos de poeira aquecidos por estrelas próximas.</td></tr><tr><td>IV 6–10 \(\mu\)m (MSX)</td><td>Hidrocarbonetos aromáticos policíclicos das nuvens interestelares.</td></tr><tr><td>IV próximo (COBE 1,25–3,5 \(\mu\)m)</td><td>Estrelas gigantes K do disco e do bojo; a poeira quase não atrapalha. É a melhor visão da distribuição estelar.</td></tr><tr><td>Visível</td><td>Fortemente limitado pela absorção interestelar no plano.</td></tr><tr><td>Raios X (ROSAT 0,25–1,5 keV)</td><td>Gás muito quente aquecido por ondas de choque.</td></tr><tr><td>Raios \(\gamma\) (\(&gt;300\) MeV, EGRET)</td><td>Raios cósmicos colidindo com prótons do gás interestelar; fontes pontuais como Geminga (estrela de nêutrons).</td></tr></table></div></div>
+<p><strong>Unidades:</strong> os slides 5 e 7 escrevem “mHz”; o correto é MHz (408 MHz) e GHz (2,7 GHz). Os mapas citados são o levantamento de Haslam a 408 MHz e o de 2,7 GHz.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 5–14.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>A forma da Galáxia (Gaia)</h3>
+<p>A Galáxia é uma distribuição de estrelas, gás, poeira e matéria escura com:</p>
+<ul><li><strong>disco estelar</strong>, achatado, com braços e uma distorção (torção) na borda;</li><li><strong>bojo</strong> central (com barra);</li><li><strong>halo estelar</strong> com aglomerados globulares;</li><li>satélites como as Nuvens de Magalhães (SMC, LMC), visíveis no mapa de 1,7 bilhão de estrelas do Gaia.</li></ul>
+<p>Ordens de grandeza do slide 15: raio do disco \(R_d\sim15\) kpc, bojo \(R_b\sim3\)–5 kpc, espessura \(h\sim100\) pc.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 15–16.</p>
+</div></section>
+<section class="note note-warn"><div class="cue"><span>ATENÇÃO</span></div><div class="note-body"><h3>Três “tamanhos” que não se confundem</h3>
+<ul><li>\(R_d\sim15\) kpc no slide 15 é a <strong>extensão</strong> (raio) do disco visível.</li><li>\(R_d\simeq2{,}9\)–3,9 kpc no slide 31 é a <strong>escala exponencial</strong>: o raio em que a densidade cai por um fator \(e\).</li><li>\(h\sim100\) pc (slide 15) e \(H_f\simeq251\) pc (slide 29) são escalas de altura de tipos de estrelas diferentes: populações jovens e gás formam uma camada mais fina que a das estrelas velhas.</li></ul>
+<p>Na prova, leia qual grandeza o enunciado chama de “raio” ou “escala”.</p>
+</div></section>
+</article>
+<article class="modulo" id="cap2b">
+<header class="modulo-h"><span class="modulo-num">Módulo 25</span><h2>Capítulo 2 (II): meio interestelar e absorção</h2></header>
+<details class="cobertura"><summary>Fontes e cobertura deste módulo</summary><p><strong>AulaCap2, slides 17–27: completo</strong> (16/11/2026). Complementa o módulo 3 (definições de \(A\), \(E(B-V)\), \(R_V\), profundidade óptica e exemplo de distância corrigida), sem repeti-lo.
+
+
+<strong>Provas:</strong> a família mais frequente das P1. P1/2011 Q1, 2012 Q1, 2016 Q2, 2018 Q1–2, 2019 Q2, 2021 Q1–2, 2022 Q1, 2024 Q3, 2025 Q2.</p></details>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Trumpler: a prova de que existe absorção</h3>
+<p>Trumpler comparou, para aglomerados abertos, duas distâncias:</p>
+<ul><li><strong>geométrica</strong>, supondo diâmetro médio \(\langle D\rangle\) e medindo o tamanho angular: \(d=\langle D\rangle/\theta\);</li><li><strong>fotométrica</strong>, supondo magnitude absoluta média e <em>sem</em> corrigir poeira: \(m=\langle M\rangle+5\log d-5\).</li></ul>
+<p>Se o espaço fosse transparente, os pontos cairiam numa reta de inclinação 1. Para aglomerados distantes, a distância fotométrica sai <strong>maior</strong> que a geométrica: a poeira enfraquece a luz e o aglomerado parece mais longe do que está. A diferença horizontal no gráfico mede \(A\):</p>
+<span class="eq-anchor" id="eq-25-1"></span><div class="math-display">\[\tag{25.1}
+m=M+5\log d-5+A.\]</div>
+<p class="fonte"><span>Fonte</span> AulaCap2, slide 17.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>As três fases do meio interestelar</h3>
+<p>O gás interestelar está aproximadamente em <strong>equilíbrio de pressão</strong>: \(P=nkT\) semelhante em todas as fases, com \(P\sim(1\)–\(4)\times10^{-14}\) Pa (o slide escreve a unidade como kg/m\(^3\cdot\)(m/s)\(^2\), que é o mesmo que Pa). Se \(P\) é igual, uma fase mais quente precisa ser mais rarefeita: \(n\propto1/T\).</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Densidades das fases para a mesma pressão</div><p>\(P/k=P/(1{,}38\times10^{-23}\ \mathrm{J/K})\). Com \(P=4\times10^{-14}\) Pa: \(P/k\approx2{,}9\times10^9\ \mathrm{K\,m^{-3}}\approx3000\ \mathrm{K\,cm^{-3}}\). Então \(n=3000/T\) (cm\(^{-3}\)):</p>
+<span class="eq-anchor" id="eq-25-2"></span><div class="math-display">\[\tag{25.2}
+\begin{aligned}
+\text{nuvens frias } (T\sim30\ \mathrm{K})&amp;:\quad n\sim100\ \mathrm{cm^{-3}},\\
+\text{meio difuso morno } (T\sim8000\ \mathrm{K})&amp;:\quad n\sim0{,}4\ \mathrm{cm^{-3}},\\
+\text{gás coronal quente } (T\sim10^6\ \mathrm{K})&amp;:\quad n\sim0{,}003\ \mathrm{cm^{-3}}.
+\end{aligned}\]</div>
+<p>Seis ordens de grandeza em densidade, com a mesma pressão.</p></div>
+<p><strong>Exemplos do slide 19:</strong> Barnard 68, nuvem molecular fria no limite do colapso gravitacional; Cabeça de Cavalo, nuvem fria iluminada por estrelas jovens; Caranguejo, resto da supernova de 1054, em expansão a \(\sim1500\) km/s; Tarântula (30 Doradus), região de formação estelar intensa na LMC, com cerca de \(4{,}5\times10^5\,M_\odot\).</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Idade do Caranguejo pela expansão</div><p>Se o tamanho indicado no slide, 3,4 pc, for o <em>diâmetro</em>, o raio é 1,7 pc. Com expansão constante a 1500 km/s:</p>
+<span class="eq-anchor" id="eq-25-3"></span><div class="math-display">\[\tag{25.3}
+t=\frac{R}{v}=\frac{1{,}7\times3{,}086\times10^{13}\ \mathrm{km}}{1500\ \mathrm{km/s}}=3{,}5\times10^{10}\ \mathrm{s}\approx1100\ \text{anos},\]</div>
+<p>compatível com a explosão de 1054 (972 anos antes de 2026). O resto ainda não desacelerou muito. <strong>Confira</strong> na figura se 3,4 pc é raio ou diâmetro.</p></div>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 18–19.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Da profundidade óptica à absorção em magnitudes</h3>
+<p>Num trecho \(dx\) com \(n(x)\) absorvedores de seção eficaz \(k_\lambda\), a intensidade perde uma fração proporcional a ela mesma:</p>
+<span class="eq-anchor" id="eq-25-4"></span><div class="math-display">\[\tag{25.4}
+\begin{gathered}
+dI_\lambda=-I_\lambda\,n(x)\,k_\lambda\,dx\equiv-I_\lambda\,d\tau_\lambda\\
+\Longrightarrow\quad I_\lambda=I_{0\lambda}\,e^{-\tau_\lambda},\qquad \tau_\lambda=k_\lambda\int n\,dx.
+\end{gathered}\]</div>
+<p>Em magnitudes, \(m_\lambda=m_{0\lambda}+A_\lambda\) com \(A_\lambda=1{,}086\,\tau_\lambda\) (módulo 3). Para densidade uniforme numa coluna de comprimento \(L\): \(A_\lambda=c\,k_\lambda L\), com \(c\) constante. A absorção é proporcional à quantidade de poeira atravessada.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slide 20.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Por que a poeira avermelha: tamanho dos grãos</h3>
+<p>A dependência com \(\lambda\) revela o tamanho \(d\) dos grãos:</p>
+<ul><li>grãos muito menores que \(\lambda\): espalhamento Rayleigh, \(A_\lambda=a+b/\lambda^4\), forte demais para explicar a observação;</li><li>grãos muito maiores que \(\lambda\): espalhamento “cinza”, \(A_\lambda\) constante, sem avermelhamento;</li><li>observado: aproximadamente \(A_\lambda=a+b/\lambda\) no visível, o que indica \(d\sim10^{-5}\) cm \(=0{,}1\ \mu\)m, comparável a \(\lambda\).</li></ul>
+<p>Como o azul é mais absorvido que o vermelho, a luz que chega fica <strong>avermelhada</strong>. Avermelhar não é desviar para o vermelho como no efeito Doppler: as linhas não mudam de lugar.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slide 21.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Por que \(R\) não depende da quantidade de poeira</h3>
+<p>Com \(A_V=c\,k(\lambda_V)L\) e \(A_B=c\,k(\lambda_B)L\):</p>
+<span class="eq-anchor" id="eq-25-5"></span><div class="math-display">\[\tag{25.5}
+\begin{gathered}
+E(B-V)=A_B-A_V=c\,[k(\lambda_B)-k(\lambda_V)]\,L\\
+\Longrightarrow\quad R=\frac{A_V}{E(B-V)}=\frac{k(\lambda_V)}{k(\lambda_B)-k(\lambda_V)}\simeq3{,}1.
+\end{gathered}\]</div>
+<p>\(c\) e \(L\) cancelam: \(R\) depende só da <strong>composição e do tamanho dos grãos</strong>, não da espessura da camada. Supor o mesmo \(R\) em outras galáxias é uma hipótese, e o slide marca isso com interrogação.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 22–23.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Mapas de extinção e exemplos</h3>
+<p><strong>Schlegel, Finkbeiner e Davis (1998)</strong> usaram a emissão de poeira medida por COBE/DIRBE e IRAS para mapear \(E(B-V)\) em todo o céu. É assim que se obtém a correção de extinção galáctica para galáxias externas.</p>
+<p><strong>NGC 3115:</strong> \(A_V=0{,}145\) mag na sua direção; com \(V=10{,}01\), a magnitude corrigida é \(V_0=10{,}01-0{,}145=9{,}865\).</p>
+<p><strong>Centro galáctico:</strong> \(A_V\approx310\) mag na direção do núcleo. A luz visível é reduzida por \(10^{-0{,}4\times310}=10^{-124}\): só o infravermelho e o rádio atravessam (ver módulo 29, região nuclear).</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 24–25 e 27.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Curva de extinção \(A_\lambda=a+b/\lambda\) (P1/2011 Q1, slide 26)</div><p>A questão pede \(a\), \(b\) e \(R\) lidos num gráfico de \(A_\lambda/A_V\), e depois \(A_\lambda\) em U, B, R, I e K para \(A_V\approx4\) mag. <strong>Sem o gráfico</strong>, adoto \(R=3{,}1\) e o modelo linear em \(1/\lambda\) (com \(\lambda\) em \(\mu\)m). Refaça com os valores lidos na figura da prova.</p>
+<span class="eq-anchor" id="eq-25-6"></span><div class="math-display">\[\tag{25.6}
+\begin{aligned}
+E(B-V)&amp;=A_V/R=4/3{,}1=1{,}29\ \text{mag},\\
+A_B-A_V&amp;=b\left(\frac{1}{0{,}44}-\frac{1}{0{,}55}\right)=0{,}4545\,b=1{,}29\\
+&amp;\Rightarrow\ b=2{,}84\ \mu\mathrm{m\cdot mag},\\
+a&amp;=A_V-\frac{b}{0{,}55}=4-5{,}16=-1{,}16\ \text{mag}.
+\end{aligned}\]</div>
+<p>Então \(A_U=a+b/0{,}30=8{,}3\); \(A_B=5{,}3\); \(A_R=a+b/0{,}71=2{,}8\); \(A_I=1{,}8\); \(A_K=a+b/2{,}2=0{,}13\) mag.</p>
+<p><strong>Interpretação:</strong> do U ao K a extinção cai de 8 para 0,1 mag. Por isso o centro da Galáxia é estudado no infravermelho. A lei \(a+b/\lambda\) só vale no óptico; o valor em K é uma extrapolação grosseira.</p></div>
+</div></section>
+<section class="note note-exam"><div class="cue"><span>NA PROVA</span></div><div class="note-body"><h3>Roteiro para absorção</h3>
+<ol><li>Cor observada e cor intrínseca dão \(E(B-V)\); num diagrama cor–cor, o deslocamento ao longo da linha de avermelhamento dá \(E(B-V)\) e \(E(U-B)\).</li><li>\(A_V=R\,E(B-V)\), com o \(R\) do enunciado (3,1 se nada for dito).</li><li>\(V_0=V-A_V\); módulo corrigido \(\mu_0=V_0-M_V\); \(d=10^{(\mu_0+5)/5}\) pc.</li><li>Sem corrigir, a distância sai maior por um fator \(10^{A_V/5}\).</li><li>Curva de extinção: duas bandas determinam \(a\) e \(b\); o resto é interpolação.</li></ol>
+<p class="fonte"><span>Fonte</span> Fim do trecho 2.2 de AulaCap2. Exemplo numérico com distância: módulo 3.</p>
+</div></section><figure class="widget-wrap"><div class="widget" data-widget="extincao-latitude"></div></figure>
+</article>
+<article class="modulo" id="poeira">
+<header class="modulo-h"><span class="modulo-num">Módulo 3</span><h2>Poeira: o que cada letra significa</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>A pergunta física</h3>
+<p>Quanto do enfraquecimento vem de distância e quanto vem de poeira? Em geral, a poeira retira mais luz azul que visual; a fonte parece mais vermelha.</p>
+<p>\(B\) e \(V\): magnitudes aparentes observadas. \(B_0\) e \(V_0\): magnitudes aparentes que observaríamos <strong>na distância real</strong>, sem poeira. \(A_B\) e \(A_V\): aumentos da magnitude causados pela extinção em cada banda. \(M_V\): magnitude absoluta visual, definida a 10 pc; <strong>não é \(V_0\)</strong>.</p>
+<span class="eq-anchor" id="eq-3-1"></span><div class="math-display">\[\tag{3.1}
+B=B_0+A_B,\qquad V=V_0+A_V.\]</div>
+<p>Subtraindo as equações:</p>
+<span class="eq-anchor" id="eq-3-2"></span><div class="math-display">\[\tag{3.2}
+\begin{aligned}B-V&amp;=(B_0-V_0)+(A_B-A_V),\\
+E(B-V)&amp;\equiv(B-V)-(B-V)_0=A_B-A_V.\end{aligned}\]</div>
+<p>\(B-V\) é um índice de cor, uma subtração. \(E(B-V)\) é o excesso de cor devido à poeira. Define-se \(R_V=A_V/E(B-V)\), portanto \(A_V=R_V E(B-V)\).</p>
+<span class="eq-anchor" id="eq-3-4"></span><div class="math-display">\[\tag{3.4}
+A_V=R_V E(B-V),\qquad V_0=V-A_V.\]</div>
+<p>Valor usual de referência: 3,1, <strong>quando apropriado ou adotado no exercício</strong>, não uma constante universal.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Roteiro e exemplo didático, sem saltos</div><p><strong>Identificar.</strong> Queremos a distância, separando enfraquecimento por poeira e por distância. Dados: \(V=15\), \(M_V=-2\), \((B-V)=0{,}80\), \((B-V)_0=0{,}30\); adote \(R_V=3{,}1\).</p>
+<ol><li><strong>Modelar e calcular:</strong> cor que a poeira acrescentou: \(E=0{,}80-0{,}30=0{,}50\) mag.</li><li>Extinção visual: \(A_V=3{,}1\times0{,}50=1{,}55\) mag.</li><li>Magnitude sem poeira: \(V_0=15-1{,}55=13{,}45\).</li><li>Módulo corrigido: \(\mu_0=V_0-M_V=13{,}45-(-2)=15{,}45\).</li><li>Distância: \(d=10^{(15{,}45+5)/5}\un{pc}=10^{4{,}09}\un{pc}\simeq12303\un{pc}=12{,}3\un{kpc}\).</li></ol>
+<p><strong>Interpretar e conferir.</strong> Ignorando poeira, \(\mu=17\) e \(d=10^{4{,}4}\) pc \(=25{,}1\) kpc. A razão é \(10^{A_V/5}=10^{0{,}31}=2{,}04\): superestimação de aproximadamente \(104\%\), não \(204\%\).</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Se o enunciado falar em profundidade óptica</h3>
+<p>\(\tau\) mede a atenuação acumulada: \(F/F_0=e^{-\tau}\). Então</p>
+<span class="eq-anchor" id="eq-3-3"></span><div class="math-display">\[\tag{3.3}
+A=-2{,}5\log(F/F_0)=2{,}5\tau\log e\simeq1{,}086\tau.\]</div>
+<p>Aqui \(\tau\) é adimensional. Nos modelos de formação estelar, a mesma letra será usada para um <strong>tempo</strong>; confira sempre o contexto.</p>
+</div></section>
+</article>
+<article class="modulo" id="cap2c">
+<header class="modulo-h"><span class="modulo-num">Módulo 26</span><h2>Capítulo 2 (III): estrutura do disco, do halo e o diagrama HR</h2></header>
+<details class="cobertura"><summary>Fontes e cobertura deste módulo</summary><p><strong>AulaCap2, slides 28–35: completo</strong> (16/11/2026).
+
+
+<strong>Provas:</strong> perfil de densidade do disco: P1/2012 Q2 e P1/2019 Q3 (ler eixos, ajustar exponencial, integrar).</p></details>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Disco fino, disco espesso e halo: perfis verticais</h3>
+<p>Contando estrelas em função da altura \(z\) ao plano, a densidade cai exponencialmente, mas com <em>duas</em> escalas:</p>
+<span class="eq-anchor" id="eq-26-1"></span><div class="math-display">\[\tag{26.1}
+\begin{gathered}
+\rho_d(z)=\rho_{0}\,e^{-|z|/H_f}\quad (H_f\simeq251\ \mathrm{pc},\ \text{disco fino}),\\
+\rho_e(z)\propto e^{-|z|/H_e}\quad (H_e\simeq647\ \mathrm{pc},\ \text{disco espesso}).
+\end{gathered}\]</div>
+<p>Num gráfico de \(\log\rho\) contra \(z\), cada exponencial é uma reta. A mudança de inclinação perto de \(z\sim1\) kpc revela o disco espesso. Mais acima domina o <strong>halo</strong>, que não é exponencial:</p>
+<span class="eq-anchor" id="eq-26-2"></span><div class="math-display">\[\tag{26.2}
+\rho_H=\frac{\rho_{H0}}{\left[(R/R_0)^2+(z/z_0)^2\right]^{\alpha}},\qquad \alpha\simeq2{,}77,\quad z_0/R_0\simeq0{,}64.\]</div>
+<p>Superfícies de densidade constante do halo são elipsoides achatados (razão 0,64). Para \(z=0\), \(\rho_H\propto R^{-2\alpha}=R^{-5{,}5}\): o halo <em>estelar</em> cai muito mais rápido que o halo de matéria escura (\(\propto R^{-2}\), módulo 32).</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 28–30.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Perfil radial do disco</h3>
+<p>Na direção radial, o disco também é exponencial:</p>
+<span class="eq-anchor" id="eq-26-3"></span><div class="math-display">\[\tag{26.3}
+\rho_d(R)=\rho_{0d}\,e^{-R/R_d},\qquad R_d\simeq2{,}9\text{--}3{,}9\ \mathrm{kpc}.\]</div>
+<p>O mesmo perfil vale para discos de outras galáxias (módulos 7 e 31): a Via Láctea é o caso de calibração.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Quanto do disco está dentro de um raio? (exemplo didático)</div><p>Para um disco fino com densidade superficial \(\Sigma(R)=\Sigma_0e^{-R/R_d}\), a massa dentro de \(R\) é</p>
+<span class="eq-anchor" id="eq-26-4"></span><div class="math-display">\[\tag{26.4}
+\begin{aligned}
+M(&lt;R)&amp;=\int_0^R2\pi R'\,\Sigma_0e^{-R'/R_d}\,dR'\\
+&amp;=2\pi\Sigma_0R_d^2\left[1-\left(1+\frac{R}{R_d}\right)e^{-R/R_d}\right].
+\end{aligned}\]</div>
+<p>O total (\(R\to\infty\)) é \(2\pi\Sigma_0R_d^2\). Com \(R_d=3{,}5\) kpc, na posição do Sol (\(R=8{,}5\) kpc, \(x=2{,}43\)): \(1-(3{,}43)e^{-2{,}43}=1-3{,}43\times0{,}088=0{,}70\). Cerca de 70% do disco está dentro da órbita solar. É o tipo de integração pedido nas questões de “número de estrelas” do disco.</p></div>
+<p class="fonte"><span>Fonte</span> AulaCap2, slide 31. Integral por partes: \(\int xe^{-x}dx=-(1+x)e^{-x}\).</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Um modelo de massa e o teste pela dinâmica</h3>
+<p>Somando os potenciais das componentes,</p>
+<span class="eq-anchor" id="eq-26-5"></span><div class="math-display">\[\tag{26.5}
+U=U_{\rm bojo}+U_{\rm disco\ fino}+U_{\rm disco\ espesso}+U_{\rm halo},\qquad \ddot{\vec r}=-\nabla U,\]</div>
+<p>calcula-se a aceleração de qualquer estrela, prevê-se o campo de velocidades e compara-se com o observado. É assim que modelos da Galáxia (como o de Bahcall–Soneira, módulo 33) são testados.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slide 32.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>O diagrama HR da vizinhança solar</h3>
+<p><strong>Hipparcos</strong> (1989–1993) mediu paralaxes de \(\sim\)15&thinsp;000 estrelas a menos de 100 pc, permitindo um diagrama HR com magnitudes absolutas confiáveis. O slide separa:</p>
+<ul><li>estrelas jovens, na sequência principal superior;</li><li>estrelas tardias, das quais cerca de 80% têm idades acima de 10 Gyr e 20% em torno de 2–4 Gyr;</li><li>subgigantes;</li><li>um <strong>corte amostral</strong>: estrelas fracas faltam porque estão abaixo da sensibilidade do satélite, e não porque não existem. O diagrama observado não é a população real.</li></ul>
+<p>O <strong>Gaia</strong> estendeu o diagrama para \(\sim\)2 bilhões de estrelas. Amostras do SDSS e do Hipparcos mostram como diferentes levantamentos selecionam partes diferentes do disco.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 33–35.</p>
+</div></section>
+</article>
+<article class="modulo" id="cap2d">
+<header class="modulo-h"><span class="modulo-num">Módulo 27</span><h2>Capítulo 2 (IV): movimentos das estrelas próximas</h2></header>
+<details class="cobertura"><summary>Fontes e cobertura deste módulo</summary><p><strong>AulaCap2, slides 36–43: completo</strong> (16/11/2026).
+
+
+<strong>Provas:</strong> coordenadas e velocidade de \(\omega\) Centauri (P1/2014 Q2); rotação do halo (P1/2017 Q3, P1/2024 Q2); populações e cinemática (P1/2011 Q2, P1/2019 Q1).</p></details>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Medir a velocidade de uma estrela</h3>
+<p>Duas medidas independentes:</p>
+<ul><li><strong>velocidade radial</strong> \(v_r\), ao longo da linha de visada, pelo efeito Doppler;</li><li><strong>movimento próprio</strong> \(\mu\), o deslocamento angular no céu por ano. Só vira velocidade se a distância for conhecida (pela paralaxe \(p\)).</li></ul>
+<span class="eq-anchor" id="eq-27-1"></span><div class="math-display">\[\tag{27.1}
+v_t=4{,}7405\,\frac{\mu\ ('' /\text{ano})}{p\ ('')}\ \ \mathrm{km/s},\qquad v=\sqrt{v_r^2+v_t^2}.\]</div>
+<p><strong>De onde vem 4,7405:</strong> \(v_t=\mu d\). Com \(d=1/p\) pc e \(\mu\) em \(''\)/ano, \(v_t=(\mu/p)\) UA/ano, e 1 UA/ano \(=1{,}496\times10^8\) km \(/\,3{,}156\times10^7\) s \(=4{,}74\) km/s.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slide 36.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Velocidade espacial (exemplo didático)</div><p>\(\mu=0{,}50''\)/ano, \(p=0{,}050''\) (\(d=20\) pc), \(v_r=+30\) km/s.</p>
+<span class="eq-anchor" id="eq-27-2"></span><div class="math-display">\[\tag{27.2}
+\begin{gathered}
+v_t=4{,}7405\times\frac{0{,}50}{0{,}050}=47{,}4\ \mathrm{km/s},\\
+v=\sqrt{30^2+47{,}4^2}=56{,}1\ \mathrm{km/s}.
+\end{gathered}\]</div></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Sistema de referência e LSR</h3>
+<p>Coordenadas galácticas: \(\ell\) (longitude, medida no plano a partir da direção do centro) e \(b\) (latitude). Componentes de velocidade: \(U\) (radial, para o centro), \(V\) (no sentido da rotação), \(W\) (perpendicular ao plano, para o polo norte galáctico).</p>
+<p>O <strong>padrão local de repouso</strong> (LSR) é o referencial que gira em órbita circular na posição do Sol. Na prática, é a <em>média</em> dos movimentos das estrelas próximas: movimentos aleatórios se cancelam. O Sol move-se em relação ao LSR com</p>
+<span class="eq-anchor" id="eq-27-3"></span><div class="math-display">\[\tag{27.3}
+(u_\odot,v_\odot,w_\odot)=(10{,}0\pm0{,}4;\ 5{,}2\pm0{,}6;\ 7{,}2\pm0{,}4)\ \mathrm{km/s},\]</div>
+<p>cerca de 13 km/s ao todo. O Sol não está exatamente em órbita circular: oscila radial e verticalmente (módulos 29 e 33).</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 37–39.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>O “fluido” de estrelas é anisotrópico</h3>
+<p>Num gás ideal, a dispersão de velocidades é a mesma em todas as direções. Na Galáxia não: as dispersões em \(U\), \(V\) e \(W\) são diferentes (\(\sigma_U&gt;\sigma_V&gt;\sigma_W\) no disco). As estrelas quase não colidem (módulo 29), então nada iguala as três direções. A distribuição de velocidades é um <strong>elipsoide</strong>, não uma esfera.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slide 40.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Cada componente gira de um jeito</h3>
+<p>O slide 41 mostra histogramas de \(v_\phi\) (velocidade de rotação) a alturas crescentes sobre o plano, decompostos em três populações:</p>
+<ul><li><strong>disco fino</strong>: pico em rotação rápida, distribuição estreita;</li><li><strong>disco espesso</strong>: rotação um pouco menor e distribuição mais larga;</li><li><strong>halo</strong>: rotação média próxima de zero e distribuição muito larga.</li></ul>
+<p>Perto do plano dominam os discos; longe, o halo. Disco, bojo e halo têm rotações diferentes.</p>
+<p><strong>Metalicidade e idade.</strong> \([\mathrm{Fe/H}]=\log(N_{\rm Fe}/N_{\rm H})-\log(N_{\rm Fe}/N_{\rm H})_\odot\). Zero significa abundância solar; \(-1\), dez vezes menos ferro. Como cada geração de estrelas enriquece o gás, \([\mathrm{Fe/H}]\) funciona como relógio aproximado. As estrelas jovens, ricas em metais, giram mais rápido que as velhas, pobres em metais: a Galáxia <em>evoluiu</em>, e o gás que formou as estrelas recentes já estava num disco em rotação.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 41–43.</p>
+</div></section>
+</article>
+<article class="modulo" id="cap2e">
+<header class="modulo-h"><span class="modulo-num">Módulo 28</span><h2>Capítulo 2 (V): aglomerados, halo e a formação da Galáxia</h2></header>
+<details class="cobertura"><summary>Fontes e cobertura deste módulo</summary><p><strong>AulaCap2, slides 44–51: completo</strong> (16/11/2026).
+
+
+<strong>Provas:</strong> família “halo, energia e formação”, a segunda mais frequente das P1: P1/2012 Q3, 2013 (primeiro problema), 2015 Q1, 2016 Q1, 2017 Q1, 2019 Q1, 2020 Q2, 2024 Q1, 2025 Q1.</p></details>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Aglomerados globulares e estrelas do halo</h3>
+<ul><li>Os <strong>aglomerados globulares</strong> distribuem-se de forma aproximadamente <em>esférica</em> em torno do centro, diferente do disco e do bojo. Foi a partir deles que Shapley localizou o centro da Galáxia longe do Sol.</li><li>Os globulares <strong>mais jovens</strong>, relativamente ricos em metais, ficam mais perto do centro; os <strong>mais velhos</strong> espalham-se pelo halo.</li><li>As <strong>estrelas do halo</strong> são pobres em metais e ficam em geral longe do disco, que é rico em estrelas jovens e metálicas.</li></ul>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 44–46.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Um cenário simplificado de formação</h3>
+<p>A ordem sugerida pelas idades e metalicidades:</p>
+<ol><li>uma nuvem protogaláctica grande e pobre em metais colapsa; formam-se os primeiros globulares, pobres em metais, num halo extenso;</li><li>o gás enriquecido continua caindo; formam-se globulares mais ricos em metais, mais concentrados;</li><li>o gás que restou, com momento angular, assenta num <strong>disco</strong> em rotação; forma-se também o <strong>bojo</strong>.</li></ol>
+<p>Isso explica por que as populações jovens giram mais (módulo 27) e por que o halo é velho, pobre em metais e quase sem rotação.</p>
+<p><strong>Mas não foi só colapso.</strong> Com dados do Gaia, Helmi et al. (2018) identificaram, entre as estrelas do halo próximas do Sol, uma grande estrutura com movimento ligeiramente <em>retrógrado</em>: os restos de uma galáxia capturada no passado (chamada Gaia–Encélado; complemento, nome não está no slide). Parte do halo foi <strong>acrescentada</strong> por fusões.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 47–48 (Helmi et al. 2018, <em>Nature</em>).</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Colapso de uma esfera homogênea: movimento harmônico</h3>
+<p>Questão-modelo das P1 (por exemplo, P1/2025 Q1): uma pequena massa \(m\) dentro de uma esfera homogênea de densidade \(\rho\). Pelo teorema das cascas, só a massa interna \(M(R)=\frac43\pi\rho R^3\) a atrai:</p>
+<span class="eq-anchor" id="eq-28-1"></span><div class="math-display">\[\tag{28.1}
+\begin{gathered}
+m\ddot R=-\frac{G\,m\,M(R)}{R^2}=-\frac{4\pi G\rho}{3}\,m\,R\\
+\Longrightarrow\quad\ddot R+K R=0,\qquad K=\frac{4\pi G\rho}{3}=\frac{GM_0}{R_0^3}.
+\end{gathered}\]</div>
+<p>É um <strong>movimento harmônico simples</strong>. Partindo do repouso em \(R_0\): \(R=R_0\cos(\sqrt K\,t)\). Chega ao centro em um quarto de período:</p>
+<span class="eq-anchor" id="eq-28-2"></span><div class="math-display">\[\tag{28.2}
+T_{\rm cr}=\frac{\pi}{2\sqrt K}=\sqrt{\frac{3\pi}{16\,G\rho}},\qquad v_{\rm centro}=\sqrt K\,R_0.\]</div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Protogaláxia de raio 70 kpc</div><p>Massa total adotada \(M_0=8\times10^{11}\,M_\odot\) (valor da P1/2017 Q1; <strong>confira</strong> o dado do enunciado que você estiver resolvendo). Com \(G=4{,}301\times10^{-6}\) kpc (km/s)\(^2/M_\odot\):</p>
+<span class="eq-anchor" id="eq-28-3"></span><div class="math-display">\[\tag{28.3}
+\sqrt{\frac{R_0^3}{GM_0}}=\sqrt{\frac{70^3}{4{,}301\times10^{-6}\times8\times10^{11}}}=0{,}316\ \frac{\mathrm{kpc}}{\mathrm{km/s}}=0{,}309\ \mathrm{Gyr}\]</div>
+<p>(1 kpc/(km/s) \(=0{,}978\) Gyr). Então \(T_{\rm cr}=\frac{\pi}{2}\times0{,}309=0{,}49\) Gyr e \(v_{\rm centro}=70/0{,}316=222\) km/s.</p>
+<p><strong>Interpretação:</strong> o tempo de cruzamento é a escala de tempo dinâmica da formação, cerca de meio bilhão de anos, curta comparada à idade da Galáxia. A velocidade é da ordem da rotação atual do disco: a gravidade de uma massa assim produz velocidades de centenas de km/s.</p>
+<p><strong>Não confunda:</strong> se a esfera <em>inteira</em> colapsa (todas as cascas caem juntas, e a densidade aumenta), o tempo é o de queda livre \(t_{\rm ff}=\sqrt{3\pi/(32G\rho)}\), menor por um fator \(\sqrt2\): 0,34 Gyr aqui. O MHS vale para uma partícula de teste dentro de uma esfera que <em>não</em> muda.</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Densidade da nebulosa pré-galáctica (P1/2017 Q1a)</div><p>Bárions \(=16\%\) de \(8\times10^{11}\,M_\odot\), isto é \(1{,}28\times10^{11}\,M_\odot=2{,}55\times10^{44}\) g, numa esfera de 70 kpc \(=2{,}16\times10^{23}\) cm:</p>
+<span class="eq-anchor" id="eq-28-4"></span><div class="math-display">\[\tag{28.4}
+\begin{gathered}
+\rho=\frac{2{,}55\times10^{44}}{\frac43\pi(2{,}16\times10^{23})^3}=6{,}0\times10^{-27}\ \mathrm{g\,cm^{-3}},\\
+n=\frac{\rho}{m_{\rm H}}=\frac{6{,}0\times10^{-27}}{1{,}67\times10^{-24}}=3{,}6\times10^{-3}\ \mathrm{cm^{-3}}.
+\end{gathered}\]</div>
+<p>Comparação: o meio difuso atual tem \(\sim0{,}4\) cm\(^{-3}\) e as nuvens frias \(\sim100\) (módulo 25). A nebulosa primordial era tão rarefeita quanto o gás coronal quente de hoje.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Colapso cosmológico em versão newtoniana</h3>
+<p>Para tratar o Universo com mecânica newtoniana, considere uma esfera de raio \(R(t)\) e massa \(M\) constante, com energia total nula (Universo plano, modelo de Einstein–de Sitter):</p>
+<span class="eq-anchor" id="eq-28-5"></span><div class="math-display">\[\tag{28.5}
+\frac12\dot R^2-\frac{GM}{R}=0
+\quad\Longrightarrow\quad
+R(t)=\left(\frac{9GM}{2}\right)^{1/3}t^{2/3},\qquad H=\frac{\dot R}{R}=\frac{2}{3t}.\]</div>
+<p>Logo, a idade é \(t_0=2/(3H_0)\). Como o fator de escala se relaciona ao redshift por \(R_0/R=1+z\):</p>
+<span class="eq-anchor" id="eq-28-6"></span><div class="math-display">\[\tag{28.6}
+\frac{t}{t_0}=(1+z)^{-3/2}.\]</div>
+<p>Com \(t_0=13{,}6\) Gyr: \(z=1\) dá \(t/t_0=0{,}35\) (\(t\approx4{,}8\) Gyr); \(z=10\) dá \(0{,}027\) (0,37 Gyr); \(z=20\) dá \(0{,}010\) (140 Myr).</p>
+<p><strong>Atenção:</strong> com \(H_0=70\) km/s/Mpc, \(t_0=2/(3H_0)=9{,}3\) Gyr, e não 13,6. O slide usa a idade do modelo \(\Lambda\)CDM (\(\approx13{,}6\) Gyr) junto da lei \(t^{2/3}\) de Einstein–de Sitter. As razões \(t/t_0\) são do modelo simples; os anos absolutos dependem dessa escolha.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 49–50.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>O que o JWST vê</h3>
+<p>O JWST detecta candidatos a galáxias em \(z\sim15\)–20, a poucas centenas de milhões de anos do início, na época em que a nossa Galáxia começava a colapsar. Perguntas abertas no slide: quando terminou a <strong>era das trevas</strong>, antes das primeiras estrelas, e a <strong>reionização</strong>? O \(\Lambda\)CDM explica objetos tão massivos tão cedo?</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slide 51.</p>
+</div></section>
+</article>
+<article class="modulo" id="cap2f">
+<header class="modulo-h"><span class="modulo-num">Módulo 29</span><h2>Capítulo 2 (VI): dinâmica do disco, bojo e núcleo</h2></header>
+<details class="cobertura"><summary>Fontes e cobertura deste módulo</summary><p><strong>AulaCap2, slides 52–68: completo</strong> (16/11/2026).
+
+
+<strong>Provas:</strong> movimento vertical (P1/2014 Q3, 2015 Q2, 2025 Q3); massa central por órbitas (P1/2011 Q3, 2017 Q2, 2018 Q3, 2020 Q1, 2021 Q3); encontros (P1/2010 Q2).</p></details>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Por que a Galáxia é um sistema não colisional</h3>
+<p>Quando duas estrelas passam a uma distância \(p\) (parâmetro de impacto) com velocidade relativa \(v_0\), a órbita relativa é uma hipérbole e o desvio angular é dado por</p>
+<span class="eq-anchor" id="eq-29-1"></span><div class="math-display">\[\tag{29.1}
+\tan\phi=\frac{G(m_1+m_2)}{p\,v_0^2}.\]</div>
+<p><strong>Vizinhança solar:</strong> \(n\simeq0{,}1\) estrela/pc\(^3\), então separação típica \(s=n^{-1/3}\simeq2{,}2\) pc \(\simeq4{,}5\times10^5\) UA; velocidade relativa típica \(v_0\simeq\sigma_v\simeq20\) km/s.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Desvio num encontro típico (slide 53)</div><p>Com \(m_1=m_2=1\,M_\odot\), \(p=2{,}2\) pc e \(G=4{,}301\times10^{-3}\) pc (km/s)\(^2/M_\odot\):</p>
+<span class="eq-anchor" id="eq-29-2"></span><div class="math-display">\[\tag{29.2}
+\tan\phi=\frac{4{,}301\times10^{-3}\times2}{2{,}2\times20^2}=9{,}8\times10^{-6}\ \mathrm{rad}\approx2''.\]</div>
+<p>Um desvio de dois segundos de arco: os encontros típicos são <strong>fracos</strong>.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Quanto tempo até um encontro forte?</h3>
+<p>Um encontro é <em>forte</em> quando desvia a estrela de \(\sim90^\circ\), ou seja, \(\tan\phi\sim1\): \(p_{90}=G(m_1+m_2)/v_0^2\). O livre caminho médio para esses encontros e o tempo entre eles:</p>
+<span class="eq-anchor" id="eq-29-3"></span><div class="math-display">\[\tag{29.3}
+\lambda=\frac{1}{\pi p_{90}^2\,n},\qquad t=\frac{\lambda}{\sigma_v}.\]</div>
+<p>Com os mesmos números: \(p_{90}=2\times4{,}301\times10^{-3}/400=2{,}2\times10^{-5}\) pc, \(\lambda\approx7\times10^9\) pc, e \(t\approx3\times10^{14}\) anos, muito maior que a idade do Universo (\(\sim10^{10}\) anos). Cada estrela move-se no potencial <em>suave</em> da Galáxia inteira, não de encontro em encontro.</p>
+<p><strong>Consequência</strong> (slide 55): num gás colisional, a estrutura interna se reorganiza rapidamente; num sistema não colisional, ela se mantém por muito tempo. Por isso a Galáxia “lembra” sua formação: a anisotropia de velocidades, as órbitas do halo e as populações em camadas sobrevivem.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 52–55. O slide escreve \(\lambda=1/\pi p^2n\); aqui \(p\) é o parâmetro de encontro forte, não a separação média.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Estrelas típicas do disco e razão massa/luz</h3>
+<p><strong>Perguntas do slide 56:</strong> como se formou o disco exponencial, \(n(r)=n_0e^{-r/r_d}\) com \(r_d\simeq3{,}5\) kpc, e como entender os braços (resposta no módulo 33)?</p>
+<p><strong>Relação massa–luminosidade</strong> das estrelas: \(L_*/L_\odot=(M_*/M_\odot)^\alpha\), com \(\alpha\simeq4\) acima de \(0{,}5\,M_\odot\) e \(\alpha\simeq2{,}3\) abaixo. Como a luminosidade cresce muito mais rápido que a massa, a razão massa/luz de uma estrela é \(M/L=M^{1-\alpha}\) (em unidades solares): estrelas pequenas têm \(M/L\) alto.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> \(M/L\) do disco e massa estelar média (slide 58)</div><p>Disco: \(L_B\simeq(2{,}5\pm1)\times10^{10}\,L_\odot\), \(M_d\simeq(4{,}5\pm0{,}5)\times10^{10}\,M_\odot\).</p>
+<span class="eq-anchor" id="eq-29-4"></span><div class="math-display">\[\tag{29.4}
+\begin{gathered}
+f=\left(\frac{M}{L}\right)_d=\frac{4{,}5}{2{,}5}=1{,}8;\\
+\text{extremos: }\frac{4{,}0}{3{,}5}=1{,}1\ \text{e}\ \frac{5{,}0}{1{,}5}=3{,}3\ M_\odot/L_\odot.
+\end{gathered}\]</div>
+<p>Se o disco fosse feito de estrelas iguais, \(f=M_*^{1-\alpha}\), então \(M_*=f^{1/(1-\alpha)}\). Com \(\alpha=4\): \(M_*=1{,}1^{-1/3}=0{,}97\) e \(3{,}3^{-1/3}=0{,}67\ M_\odot\). A estrela “típica” do disco tem entre 0,7 e 1,0 massa solar, ordem do Sol.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Equilíbrio vertical do disco</h3>
+<p>Uma população \(i\) com dispersão vertical \(\sigma_{zi}\) e escala de altura \(h_i\) sobe até onde a gravidade a segura. Em ordem de grandeza, \(\sigma_{zi}^2\simeq g_z h_i\): populações mais “agitadas” formam camadas mais grossas. Em forma diferencial, é a equação de Jeans vertical (equilíbrio hidrostático do “gás” de estrelas):</p>
+<span class="eq-anchor" id="eq-29-5"></span><div class="math-display">\[\tag{29.5}
+\frac{1}{\rho_i}\frac{d}{dz}\left(\rho_i\,\overline{v_{zi}^2}\right)=-\frac{d\Phi}{dz}.\]</div>
+<p>Num disco fino, na equação de Poisson domina a derivada vertical: \(d^2\Phi/dz^2\simeq4\pi G\rho\). Combinando:</p>
+<span class="eq-anchor" id="eq-29-6"></span><div class="math-display">\[\tag{29.6}
+\frac{d}{dz}\left[\frac{1}{\rho_i}\frac{d}{dz}\left(\rho_i\,\overline{v_{zi}^2}\right)\right]=-4\pi G\rho.\]</div>
+<p>Medindo como densidade e dispersão de uma população variam com \(z\), obtém-se a <strong>densidade total</strong> \(\rho\) no plano, incluindo a massa que não se vê.</p>
+<p><strong>Inventário local</strong> (slide 61, em \(M_\odot\)/pc\(^3\)): estrelas visíveis 0,044; remanescentes estelares 0,028; gás 0,042; outros 0,066; total 0,180. A diferença entre a densidade dinâmica e a soma do que se observa mede a matéria escura <em>no disco</em>, que é pequena na vizinhança solar.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 56–61.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Oscilação vertical: um MHS (P1/2014 Q3, P1/2025 Q3)</h3>
+<p>Perto do plano, a aceleração vertical é aproximadamente proporcional à altura: \(K_z=-\gamma z\). Com \(z=z_0\sin[2\pi(t-t_0)/T]\):</p>
+<span class="eq-anchor" id="eq-29-7"></span><div class="math-display">\[\tag{29.7}
+\ddot z=-\left(\frac{2\pi}{T}\right)^2z\quad\Longrightarrow\quad\gamma=\left(\frac{2\pi}{T}\right)^2,\qquad v_{z,\rm plano}=\frac{2\pi}{T}\,z_0.\]</div>
+<p>Pela equação de Poisson, numa camada uniforme \(\gamma=4\pi G\rho_0\): medir \(\gamma\) é medir a densidade no plano.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Período, altura e número de oscilações</div><p>Dado: \(\gamma=1{,}7\times10^{-11}\) cm s\(^{-2}\) por pc de altura. Converter para s\(^{-2}\): dividir por 1 pc \(=3{,}086\times10^{18}\) cm.</p>
+<span class="eq-anchor" id="eq-29-8"></span><div class="math-display">\[\tag{29.8}
+\begin{aligned}
+\gamma&amp;=\frac{1{,}7\times10^{-11}}{3{,}086\times10^{18}}=5{,}5\times10^{-30}\ \mathrm{s^{-2}},\quad \omega=\sqrt\gamma=2{,}35\times10^{-15}\ \mathrm{s^{-1}},\\
+T&amp;=\frac{2\pi}{\omega}=2{,}68\times10^{15}\ \mathrm{s}=85\ \mathrm{Myr}.
+\end{aligned}\]</div>
+<p><strong>Altura máxima:</strong> \(z_0=v_z/\omega\). Para \(v_z=13\) km/s (P1/2025, estrela de tipo solar): \(z_0=1{,}3\times10^6/2{,}35\times10^{-15}=5{,}5\times10^{20}\) cm \(=180\) pc. Para \(7{,}16\) km/s (P1/2014, estrelas A0–A5): \(z_0=99\) pc. Estrelas jovens oscilam menos: camada mais fina.</p>
+<p><strong>Oscilações por volta:</strong> período orbital no Sol \(T_{\rm rot}=2\pi/\Omega_0\), e com \(\Omega_0=26{,}4\) km/s/kpc (módulo 30), \(T_{\rm rot}=6{,}14/26{,}4=0{,}233\) Gyr. Logo, \(233/85\approx2{,}7\) oscilações verticais por volta.</p>
+<p><strong>Conferência pela densidade:</strong> \(\rho_0=\gamma/4\pi G=5{,}5\times10^{-30}/(4\pi\times6{,}674\times10^{-8})=6{,}6\times10^{-24}\) g/cm\(^3\approx0{,}10\,M_\odot\)/pc\(^3\), mesma ordem do inventário de 0,18.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>O bojo: janelas de Baade</h3>
+<p>A poeira esconde o centro, mas há direções com extinção menor, as <strong>janelas de Baade</strong>, por onde se veem estrelas do bojo. As órbitas das estrelas do bojo diferem das do disco: mais aleatórias e menos circulares. No diagrama cor–magnitude do bojo aparecem a sequência principal, os ramos horizontais e o ponto de turn-off, indicando população velha (módulo 31: idade \(\sim12\) Gyr). Há mistura com estrelas do disco na mesma direção, então só parte das estrelas observadas pertence de fato ao bojo.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 62–66.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>A região nuclear e a massa central</h3>
+<p>O núcleo só é visível no <strong>infravermelho</strong> (\(A_V\approx310\) mag no visível; módulo 25). Ali está uma concentração de massa de ordem \(10^6\,M_\odot\) (o slide a chama de “berço do minotauro”): o buraco negro central, Sgr A*. Valor moderno: cerca de \(4\times10^6\,M_\odot\).</p>
+<p><strong>Como se mede:</strong> órbitas de estrelas (como S2) em torno do centro. Para uma órbita elíptica de semieixo maior \(a\) e período \(P\), a terceira lei de Kepler, com \(a\) em UA, \(P\) em anos e massa em \(M_\odot\), fica</p>
+<span class="eq-anchor" id="eq-29-9"></span><div class="math-display">\[\tag{29.9}
+M=\frac{a^3}{P^2}.\]</div>
+<p>O semieixo vem do tamanho angular: \(a\ (\mathrm{UA})=\theta\,('')\times d\ (\mathrm{pc})\).</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Ordem de grandeza (exemplo didático)</div><p>Uma órbita com \(a\approx1000\) UA (\(\approx0{,}12''\) a 8 kpc) e \(P\approx16\) anos dá \(M=10^9/256\approx3{,}9\times10^6\,M_\odot\). Na P1/2017 Q2, \(a\), \(b\) e \(P\) são lidos na figura; o enunciado manda usar órbita circular de raio \(R=\sqrt{ab}\).</p></div>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 67–68. Massa central em outras galáxias: módulo 35 (Cap. 6).</p>
+</div></section>
+</article>
+<article class="modulo" id="cap2g">
+<header class="modulo-h"><span class="modulo-num">Módulo 30</span><h2>Capítulo 2 (VII): rotação galáctica e constantes de Oort</h2></header>
+<details class="cobertura"><summary>Fontes e cobertura deste módulo</summary><p><strong>AulaCap2, slides 69–82: completo</strong> (16/11/2026; fim do Capítulo 2). Continuação natural: curvas de rotação de outras galáxias (módulo 32).
+
+
+<strong>Provas:</strong> rotação e momento angular (P1/2017 Q1 e Q3, 2020 Q2, 2024 Q2).</p></details>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>O problema: medir a rotação estando dentro do disco</h3>
+<p>Estamos girando junto com o disco, então só medimos <em>diferenças</em> de velocidade entre nós e as outras estrelas. A pergunta é: como extrair, dessas diferenças, a velocidade de rotação \(\Theta(R)\) a cada raio?</p>
+<p><strong>Símbolos.</strong> \(R_0\): distância do Sol ao centro. \(\Theta_0\): velocidade de rotação no Sol. \(\Omega=\Theta/R\): velocidade angular. Estrela a distância \(d\) do Sol, na longitude \(\ell\), a um raio \(R\) do centro. \(\alpha\): ângulo entre a velocidade da estrela e a linha de visada (definido na figura).</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Velocidades relativas em órbitas circulares</h3>
+<p>Projetando as duas velocidades (da estrela e do Sol) na linha de visada e na direção transversal:</p>
+<span class="eq-anchor" id="eq-30-1"></span><div class="math-display">\[\tag{30.1}
+V_r=\Theta(R)\cos\alpha-\Theta_0\sin\ell,\qquad V_t=\Theta(R)\sin\alpha-\Theta_0\cos\ell.\]</div>
+<p>Pela geometria do triângulo Sol–estrela–centro, \(R\cos\alpha=R_0\sin\ell\) e \(R\sin\alpha=R_0\cos\ell-d\). Com \(\Theta=\Omega R\):</p>
+<span class="eq-anchor" id="eq-30-2"></span><div class="math-display">\[\tag{30.2}
+V_r=(\Omega-\Omega_0)\,R_0\sin\ell,\qquad V_t=(\Omega-\Omega_0)\,R_0\cos\ell-\Omega\,d.\]</div>
+<p>Se a Galáxia girasse como corpo rígido (\(\Omega=\Omega_0\)), não haveria velocidade radial relativa. As velocidades medidas existem porque a rotação é <strong>diferencial</strong>.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 69–72.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Aproximação de Oort para estrelas próximas</h3>
+<p>Para \(d\ll R_0\), expanda \(\Omega\) em torno de \(R_0\):</p>
+<span class="eq-anchor" id="eq-30-3"></span><div class="math-display">\[\tag{30.3}
+\Omega(R)\simeq\Omega_0+\left(\frac{d\Omega}{dR}\right)_0(R-R_0),\qquad
+\left(\frac{d\Omega}{dR}\right)_0=\frac{1}{R_0}\left[\left(\frac{d\Theta}{dR}\right)_0-\frac{\Theta_0}{R_0}\right],\]</div>
+<p>porque \(\Omega=\Theta/R\). Com \(R_0-R\simeq d\cos\ell\) (estrela próxima) e as identidades \(2\sin\ell\cos\ell=\sin2\ell\) e \(2\cos^2\ell=1+\cos2\ell\), chega-se a</p>
+<span class="eq-anchor" id="eq-30-4"></span><div class="math-display">\[\tag{30.4}
+v_r\simeq A\,d\,\sin2\ell,\qquad v_t\simeq A\,d\,\cos2\ell+B\,d,\]</div>
+<p>com as <strong>constantes de Oort</strong></p>
+<span class="eq-anchor" id="eq-30-5"></span><div class="math-display">\[\tag{30.5}
+A=-\frac12\left[\left(\frac{d\Theta}{dR}\right)_0-\frac{\Theta_0}{R_0}\right],\qquad
+B=-\frac12\left[\left(\frac{d\Theta}{dR}\right)_0+\frac{\Theta_0}{R_0}\right].\]</div>
+<p>Subtraindo e somando:</p>
+<span class="eq-anchor" id="eq-30-6"></span><div class="math-display">\[\tag{30.6}
+\Omega_0=\frac{\Theta_0}{R_0}=A-B,\qquad\left(\frac{d\Theta}{dR}\right)_0=-(A+B).\]</div>
+<p><strong>Leitura física.</strong> \(A\) mede o <em>cisalhamento</em>, a rotação diferencial: as velocidades radiais seguem uma onda dupla \(\sin2\ell\) ao longo da longitude. \(B\) mede a <em>vorticidade</em> local. Ambos se obtêm de estatísticas de estrelas próximas, sem conhecer \(R_0\).</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 73–76.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Rotação no Sol a partir de \(A\) e \(B\) (slide 77)</div><p>\(A=14{,}4\pm1{,}2\) e \(B=-12{,}0\pm2{,}8\) km/s/kpc.</p>
+<span class="eq-anchor" id="eq-30-7"></span><div class="math-display">\[\tag{30.7}
+\begin{gathered}
+\Omega_0=A-B=14{,}4+12{,}0=26{,}4\ \mathrm{km\,s^{-1}\,kpc^{-1}},\\
+\left(\frac{d\Theta}{dR}\right)_0=-(A+B)=-2{,}4\ \mathrm{km\,s^{-1}\,kpc^{-1}}.
+\end{gathered}\]</div>
+<p>Com \(R_0=8{,}5\pm1{,}1\) kpc: \(\Theta_0=\Omega_0R_0=26{,}4\times8{,}5=224\) km/s. A derivada pequena, quase zero, indica <strong>curva de rotação quase plana</strong> na vizinhança solar. Período orbital: \(T=6{,}14/26{,}4=0{,}23\) Gyr.</p>
+<p><strong>Conferência com Lindblad</strong> (módulo 33): curva plana dá \(\kappa=\sqrt2\,\Omega_0=37\) km/s/kpc. Em termos de Oort, vale em geral \(\kappa^2=-4B(A-B)=-4\times(-12)\times26{,}4\), então \(\kappa=35{,}6\); mesma ordem de grandeza.</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> O que se mede numa estrela a 1 kpc (exemplo didático)</div><p>Estrela em \(\ell=45^\circ\), \(d=1\) kpc: \(v_r=A\,d\sin90^\circ=14{,}4\) km/s; \(v_t=A\,d\cos90^\circ+B\,d=-12{,}0\) km/s. Em movimento próprio: \(\mu=v_t/(4{,}74\,d)=-12/(4{,}74\times1000)=-2{,}5\times10^{-3}\ ''\)/ano, ou 2,5 milissegundos de arco por ano. Por isso as medidas de \(B\) exigem astrometria precisa, como a do Hipparcos e do Gaia.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>A curva de rotação da Galáxia e a massa do halo</h3>
+<p>Longe do Sol, a aproximação de Oort não vale. Usa-se o mapa de H&thinsp;I em 21 cm: dentro da órbita solar, cada linha de visada tem um <strong>ponto tangente</strong>, onde a velocidade observada é máxima e a órbita é tangente à linha de visada. Ali, \(R=R_0\sin\ell\) e \(V_{r,\max}=\Theta(R)-\Theta_0\sin\ell\) (complemento de método; os slides 78–80 mostram o mapa e a curva resultante). A curva da Galáxia fica aproximadamente <strong>plana</strong>.</p>
+<p>Massa a partir da curva (partícula de teste em órbita circular):</p>
+<span class="eq-anchor" id="eq-30-8"></span><div class="math-display">\[\tag{30.8}
+\frac{m_*V^2}{R}\simeq\frac{G\,m_*\,M_{\rm halo}}{R^2}\quad\Longrightarrow\quad M_{\rm halo}\simeq\frac{V^2R}{G}.\]</div>
+<p>Com curva plana, a massa cresce <strong>proporcionalmente ao raio</strong>. Com \(V=220\) km/s, \(M=10^{11}\,M_\odot\) é atingida em \(R=10^{11}\times4{,}301\times10^{-6}/220^2=8{,}9\) kpc, perto do Sol. Se a curva continuar plana até 50 kpc, \(M\simeq5{,}6\times10^{11}\,M_\odot\). A ideia, a matéria escura e os limites dessa extrapolação são desenvolvidos para outras galáxias no módulo 32.</p>
+<p class="fonte"><span>Fonte</span> AulaCap2, slides 78–82. Fim do Capítulo 2.</p>
+</div></section>
+<section class="note note-exam"><div class="cue"><span>NA PROVA</span></div><div class="note-body"><h3>Roteiro para rotação galáctica</h3>
+<ol><li>Dados \(A\) e \(B\): \(\Omega_0=A-B\), \(d\Theta/dR=-(A+B)\), \(\Theta_0=\Omega_0R_0\).</li><li>Período: \(T(\mathrm{Gyr})\simeq6{,}14/\Omega\) (km/s/kpc); número de voltas \(=\) idade\(/T\).</li><li>Velocidade de uma estrela próxima: \(v_r=Ad\sin2\ell\), \(v_t=Ad\cos2\ell+Bd\); \(\mu=v_t/(4{,}74\,d)\).</li><li>Massa encerrada: \(M=V^2R/G\) (esférica), com \(G=4{,}301\times10^{-6}\) kpc (km/s)\(^2/M_\odot\).</li><li>Momento angular de uma esfera uniforme em rotação rígida: \(L=\frac25MR^2\Omega\) (P1/2017 Q1b).</li></ol>
+</div></section>
+</article>
+<nav class="pager"><a class="prev" href="cap1.html"><span>← Anterior</span>I · Perspectiva histórica</a><a class="next" href="cap3.html"><span>Próximo →</span>III · Propriedades integradas</a></nav>
+  </main>
+</div>
+<footer class="footer">
+  <p><strong>AGA0299 · Astrofísica Galáctica e Extragaláctica</strong> · IAG/USP · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir das aulas e notas expandidas de Prof. Ronaldo E. de Souza (IAG/USP) e de Binney &amp; Merrifield, <em>Galactic Astronomy</em> (1998). Texto, figuras interativas e erros são das notas; não é material oficial da disciplina.</p>
+  <p class="small">Gerado a partir do caderno LaTeX por <code>scripts/gerar_site_aga.py</code>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/widgets/extincao-latitude.js" defer></script>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+from fractions import Fraction as Q
+cell,signal,inside,triple=12,5,2,1
+voxel=Q(1,2)*Q(1,2)*2
+assert voxel==Q(1,2)
+assert cell*voxel==6 and inside*voxel==1
+assert Q(inside,cell)==Q(1,6)
+assert Q(inside,signal)==Q(2,5)
+assert Q(triple,inside)==Q(1,2)
+print("occupancy, internal fraction, lysosomal fraction:",Q(1,6),Q(2,5),Q(1,2))

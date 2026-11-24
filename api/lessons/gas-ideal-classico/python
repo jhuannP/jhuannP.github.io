@@ -1,0 +1,4 @@
+N,T,V=4,2,8
+p=N*T/V;U=1.5*N*T
+assert p==1 and U==12
+print(p,U)

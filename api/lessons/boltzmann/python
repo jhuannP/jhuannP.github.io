@@ -1,0 +1,9 @@
+from math import exp
+
+def probabilidade_excitado(theta):
+    if theta <= 0:
+        raise ValueError("A temperatura adimensional deve ser positiva")
+    peso = exp(-1/theta)
+    return peso/(1+peso)
+
+print(probabilidade_excitado(1.0))

@@ -1,0 +1,5 @@
+from math import log
+nRT,ratio=1.,2.
+W=nRT*log(ratio)
+assert W/log(2)==1
+print(W)

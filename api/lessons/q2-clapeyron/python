@@ -1,0 +1,5 @@
+from fractions import Fraction as Q
+L=Q(30000); T=Q(300); delta_V=Q(2,1000)
+slope=L/(T*delta_V)
+assert slope==50000
+print(slope)

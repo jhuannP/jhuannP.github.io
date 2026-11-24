@@ -1,0 +1,11 @@
+def classificar_contador(inicial,incremento):
+    if inicial not in range(4) or incremento not in range(4):
+        raise ValueError('Estados e incrementos de 0 a 3')
+    vistos=set(); x=inicial
+    while x!=0:
+        if x in vistos: return 'ciclo'
+        vistos.add(x); x=(x+incremento)%4
+    return 'parada'
+assert classificar_contador(1,1)=='parada'
+assert classificar_contador(1,0)=='ciclo'
+print(classificar_contador(1,1),classificar_contador(1,0))

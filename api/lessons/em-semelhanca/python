@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+k=Q(9,15)
+AE,DE=k*20,k*25
+area=Q(15*20,2)*k*k
+assert (AE,DE,area)==(12,15,54)
+assert Q(9,6)==Q(12,8)==Q(3,2)
+print(k,AE,DE,area)

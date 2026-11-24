@@ -1,0 +1,5 @@
+from fractions import Fraction as F
+mu1, mu2 = F(1, 2), F(1)
+fraction = F(3, 4)*(mu2-mu1) - (mu2**3-mu1**3)/4
+assert fraction == F(5, 32)
+print(fraction, 32*fraction)  # 5/32 e 5 W para 32 W totais

@@ -1,0 +1,4 @@
+A=((2,1),(1,2));v=(1,1)
+w=tuple(sum(a*b for a,b in zip(row,v)) for row in A)
+assert w==tuple(3*x for x in v)
+print(3)

@@ -1,0 +1,6 @@
+from math import log
+chemical=log(8)
+psi=-log(16)
+for z in (1,-1):
+    print(z,(chemical+z*psi)/log(2))
+assert abs((chemical+psi)/log(2)+1)<1e-12

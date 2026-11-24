@@ -1,0 +1,5 @@
+from math import comb
+from itertools import product
+states=list(product([0,1],repeat=4))
+assert len(states)==16 and sum(sum(s)==2 for s in states)==comb(4,2)==6
+print(6,16)

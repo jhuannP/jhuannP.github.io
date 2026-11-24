@@ -1,0 +1,4 @@
+Q,W=10.,3.
+dU=Q-W
+assert dU==7
+print(dU)

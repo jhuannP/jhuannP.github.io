@@ -1,0 +1,4 @@
+from math import sqrt
+c=1/sqrt(2)
+assert abs(c*c-.5)<1e-12 and abs(2*c*c-1)<1e-12
+print(c*c)

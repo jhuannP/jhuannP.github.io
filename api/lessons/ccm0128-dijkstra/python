@@ -1,0 +1,14 @@
+from heapq import heappush,heappop
+from itertools import count
+G={"A":[("B",4),("C",1),("D",10)],"B":[("D",1)],"C":[("B",2),("D",5)],"D":[],"E":[]}
+d={v:None for v in G};d["A"]=0
+serial=count();heap=[(0,next(serial),"A")]
+while heap:
+    du,_,u=heappop(heap)
+    if du!=d[u]:continue
+    for v,w in G[u]:
+        alt=du+w
+        if d[v] is None or alt<d[v]:
+            d[v]=alt;heappush(heap,(alt,next(serial),v))
+assert d==dict(A=0,B=3,C=1,D=4,E=None)
+print(d)

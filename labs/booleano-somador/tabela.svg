@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 430" role="img" aria-labelledby="t d">
+<title id="t">O transporte tem peso dois</title><desc id="d">Tabela completa de quatro entradas do meio somador, com saída na ordem binária C S. Para um mais um, C um e S zero.</desc>
+<rect width="420" height="430" fill="#f6f3e9"/>
+<g font-family="system-ui,sans-serif" fill="#183c36">
+<text x="22" y="34" font-size="21" font-weight="700">O transporte tem peso dois</text>
+<text x="22" y="63" font-size="15">Meio somador · A + B = 2C + S</text>
+<path d="M22 90H398M22 152H398M22 198H398M22 244H398M22 290H398M22 336H398" stroke="#b4c8b9"/>
+<g font-size="17" font-weight="650"><text x="37" y="122">A B</text><text x="130" y="122">C S</text><text x="231" y="122">Valor inteiro</text></g>
+<g font-size="21"><text x="37" y="183">0 0</text><text x="130" y="183">0 0</text><text x="275" y="183">0</text>
+<text x="37" y="229">0 1</text><text x="130" y="229">0 1</text><text x="275" y="229">1</text>
+<text x="37" y="275">1 0</text><text x="130" y="275">0 1</text><text x="275" y="275">1</text>
+<text x="37" y="321">1 1</text><text x="130" y="321">1 0</text><text x="275" y="321">2</text></g>
+<text x="22" y="372" font-size="16" font-weight="650">C: peso 2 · S: peso 1</text>
+<text x="22" y="401" font-size="15">Código retorna (S,C); palavra binária é CS.</text>
+<text x="22" y="425" font-size="12">Modelo lógico; sem atrasos ou memória física.</text>
+</g></svg>

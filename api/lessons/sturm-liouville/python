@@ -1,0 +1,5 @@
+from math import sin,pi
+L,n=2,2;lam=(n*pi/L)**2
+assert abs(lam/pi**2-1)<1e-12
+assert abs(sin(n*pi))<1e-12
+print(lam)

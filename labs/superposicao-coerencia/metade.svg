@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 430" role="img" aria-labelledby="t d">
+<title id="t">Mesmos pesos, probabilidades diferentes</title><desc id="d">Probabilidade da metade esquerda: superposição coerente varia de zero vírgula novecentos e vinte e quatro a zero vírgula zero setenta e seis; mistura permanece um meio.</desc>
+<rect width="420" height="430" fill="#f6f3e9"/>
+<g font-family="system-ui,sans-serif" fill="#183c36">
+<text x="22" y="34" font-size="20" font-weight="700">Probabilidade da metade esquerda</text>
+<text x="22" y="62" font-size="14">Integração em 0 ≤ x ≤ L/2 · pesos iguais</text>
+<text x="22" y="103" font-size="17" font-weight="650">Superposição coerente</text>
+<text x="22" y="134" font-size="15">τ = 0</text><rect x="22" y="146" width="340" height="28" fill="#dce8df"/><rect x="22" y="146" width="314.3" height="28" fill="#285e58"/>
+<text x="22" y="198" font-size="15">P ≈ 0,924</text>
+<text x="22" y="231" font-size="15">τ = π/3</text><rect x="22" y="243" width="340" height="28" fill="#dce8df"/><rect x="22" y="243" width="25.7" height="28" fill="#285e58"/>
+<text x="22" y="295" font-size="15">P ≈ 0,076</text>
+<text x="22" y="335" font-size="17" font-weight="650">Mistura: qualquer τ</text>
+<rect x="22" y="348" width="340" height="28" fill="#dce8df"/><rect x="22" y="348" width="170" height="28" fill="#285e58"/>
+<text x="22" y="401" font-size="15">P = 0,5</text>
+<text x="22" y="423" font-size="12">Barras com escala comum de 0 a 1.</text>
+</g></svg>

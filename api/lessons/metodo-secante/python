@@ -1,0 +1,37 @@
+from math import isfinite, sqrt, pi, cos, sin, exp, e, fsum
+
+def _real(value):
+    try:
+        if isinstance(value,bool): raise ValueError
+        result=float(value)
+    except (TypeError,ValueError,OverflowError):
+        raise ValueError('Valor real finito necessário') from None
+    if not isfinite(result): raise ValueError('Valor real finito necessário')
+    return result
+
+def _params(tol,max_iter):
+    tol=_real(tol)
+    if tol<=0 or isinstance(max_iter,bool) or not isinstance(max_iter,int) or max_iter<=0:
+        raise ValueError('Tolerância positiva e orçamento inteiro positivo necessários')
+    return tol
+
+def _eval(f,x):
+    return _real(f(x))
+
+def secante(f,x0,x1,xtol=1e-10,ftol=1e-10,max_iter=50):
+    xtol=_params(xtol,max_iter);ftol=_real(ftol)
+    if ftol<=0:raise ValueError('Tolerância de resíduo deve ser positiva')
+    a,b=_real(x0),_real(x1);fa,fb=_eval(f,a),_eval(f,b)
+    if fa==0:return a
+    if fb==0:return b
+    for _ in range(max_iter):
+        denominador=fb-fa
+        if denominador==0:raise ArithmeticError('Valores de função iguais: secante indefinida')
+        novo=_real(b-fb*(b-a)/denominador);fn=_eval(f,novo)
+        if fn==0 or (abs(novo-b)<=xtol*(1+abs(novo)) and abs(fn)<=ftol):return novo
+        a,fa,b,fb=b,fb,novo,fn
+    raise RuntimeError('Orçamento atingido sem cumprir passo e resíduo')
+
+raiz=secante(lambda x:x*x-2,1,2)
+assert abs(raiz-sqrt(2))<1e-10
+print(raiz)

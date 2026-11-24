@@ -1,0 +1,34 @@
+from math import isfinite,sqrt,exp,sin,cos,pi,log,comb
+
+def budget(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<=0:
+        raise ValueError('Quantidade inteira positiva necessária')
+    return n
+
+def finite(x):
+    if isinstance(x,bool): raise ValueError('Número real finito necessário')
+    try: y=float(x)
+    except (TypeError,ValueError,OverflowError): raise ValueError('Número real finito necessário') from None
+    if not isfinite(y): raise ValueError('Número real finito necessário')
+    return y
+
+def wave_explicit(n,dt,steps,c=1):
+    """Onda: modo seno, velocidade inicial zero e Dirichlet homogêneo."""
+    from math import sin,pi
+    budget(n);budget(steps);dt=finite(dt);c=finite(c)
+    if n<2 or dt<=0 or c<=0:raise ValueError('Parâmetros de onda inválidos')
+    ratio=c*dt*n
+    if ratio>1:raise ValueError('CFL exige c*dt/dx<=1 neste modelo')
+    r2=ratio*ratio;prev=[sin(pi*j/n) for j in range(n+1)];prev[0]=prev[-1]=0
+    curr=[0]+[prev[j]+r2/2*(prev[j-1]-2*prev[j]+prev[j+1]) for j in range(1,n)]+[0]
+    trace=[list(prev),list(curr)]
+    for _ in range(1,steps):
+        nxt=[0]+[2*curr[j]-prev[j]+r2*(curr[j-1]-2*curr[j]+curr[j+1]) for j in range(1,n)]+[0]
+        prev,curr=curr,nxt;trace.append(list(curr))
+    return trace
+
+n=20;dt=.025;steps=20
+u=wave_explicit(n,dt,steps)[-1];t=dt*steps
+error=max(abs(v-cos(pi*t)*sin(pi*j/n)) for j,v in enumerate(u))
+assert error<.005
+print(t,error)

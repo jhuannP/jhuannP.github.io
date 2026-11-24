@@ -1,0 +1,3442 @@
+[
+  {
+    "word": 0,
+    "step": 0,
+    "text": "0000",
+    "prefix": "",
+    "suffix": "0000",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 0,
+    "step": 1,
+    "text": "0000",
+    "prefix": "0",
+    "suffix": "000",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 0,
+    "step": 2,
+    "text": "0000",
+    "prefix": "00",
+    "suffix": "00",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 0,
+    "step": 3,
+    "text": "0000",
+    "prefix": "000",
+    "suffix": "0",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 0,
+    "step": 4,
+    "text": "0000",
+    "prefix": "0000",
+    "suffix": "",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": true,
+    "accepted": true
+  },
+  {
+    "word": 1,
+    "step": 0,
+    "text": "0001",
+    "prefix": "",
+    "suffix": "0001",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 1,
+    "step": 1,
+    "text": "0001",
+    "prefix": "0",
+    "suffix": "001",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 1,
+    "step": 2,
+    "text": "0001",
+    "prefix": "00",
+    "suffix": "01",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 1,
+    "step": 3,
+    "text": "0001",
+    "prefix": "000",
+    "suffix": "1",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 1,
+    "step": 4,
+    "text": "0001",
+    "prefix": "0001",
+    "suffix": "",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": true,
+    "accepted": false
+  },
+  {
+    "word": 2,
+    "step": 0,
+    "text": "0010",
+    "prefix": "",
+    "suffix": "0010",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 2,
+    "step": 1,
+    "text": "0010",
+    "prefix": "0",
+    "suffix": "010",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 2,
+    "step": 2,
+    "text": "0010",
+    "prefix": "00",
+    "suffix": "10",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 2,
+    "step": 3,
+    "text": "0010",
+    "prefix": "001",
+    "suffix": "0",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 2,
+    "step": 4,
+    "text": "0010",
+    "prefix": "0010",
+    "suffix": "",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": true,
+    "accepted": false
+  },
+  {
+    "word": 3,
+    "step": 0,
+    "text": "0011",
+    "prefix": "",
+    "suffix": "0011",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 3,
+    "step": 1,
+    "text": "0011",
+    "prefix": "0",
+    "suffix": "011",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 3,
+    "step": 2,
+    "text": "0011",
+    "prefix": "00",
+    "suffix": "11",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 3,
+    "step": 3,
+    "text": "0011",
+    "prefix": "001",
+    "suffix": "1",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 3,
+    "step": 4,
+    "text": "0011",
+    "prefix": "0011",
+    "suffix": "",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": true,
+    "accepted": true
+  },
+  {
+    "word": 4,
+    "step": 0,
+    "text": "0100",
+    "prefix": "",
+    "suffix": "0100",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 4,
+    "step": 1,
+    "text": "0100",
+    "prefix": "0",
+    "suffix": "100",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 4,
+    "step": 2,
+    "text": "0100",
+    "prefix": "01",
+    "suffix": "00",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 4,
+    "step": 3,
+    "text": "0100",
+    "prefix": "010",
+    "suffix": "0",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 4,
+    "step": 4,
+    "text": "0100",
+    "prefix": "0100",
+    "suffix": "",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": true,
+    "accepted": false
+  },
+  {
+    "word": 5,
+    "step": 0,
+    "text": "0101",
+    "prefix": "",
+    "suffix": "0101",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 5,
+    "step": 1,
+    "text": "0101",
+    "prefix": "0",
+    "suffix": "101",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 5,
+    "step": 2,
+    "text": "0101",
+    "prefix": "01",
+    "suffix": "01",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 5,
+    "step": 3,
+    "text": "0101",
+    "prefix": "010",
+    "suffix": "1",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 5,
+    "step": 4,
+    "text": "0101",
+    "prefix": "0101",
+    "suffix": "",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": true,
+    "accepted": true
+  },
+  {
+    "word": 6,
+    "step": 0,
+    "text": "0110",
+    "prefix": "",
+    "suffix": "0110",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 6,
+    "step": 1,
+    "text": "0110",
+    "prefix": "0",
+    "suffix": "110",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 6,
+    "step": 2,
+    "text": "0110",
+    "prefix": "01",
+    "suffix": "10",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 6,
+    "step": 3,
+    "text": "0110",
+    "prefix": "011",
+    "suffix": "0",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 6,
+    "step": 4,
+    "text": "0110",
+    "prefix": "0110",
+    "suffix": "",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": true,
+    "accepted": true
+  },
+  {
+    "word": 7,
+    "step": 0,
+    "text": "0111",
+    "prefix": "",
+    "suffix": "0111",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 7,
+    "step": 1,
+    "text": "0111",
+    "prefix": "0",
+    "suffix": "111",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 7,
+    "step": 2,
+    "text": "0111",
+    "prefix": "01",
+    "suffix": "11",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 7,
+    "step": 3,
+    "text": "0111",
+    "prefix": "011",
+    "suffix": "1",
+    "state": 0,
+    "states": [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 7,
+    "step": 4,
+    "text": "0111",
+    "prefix": "0111",
+    "suffix": "",
+    "state": 1,
+    "states": [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": true,
+    "accepted": false
+  },
+  {
+    "word": 8,
+    "step": 0,
+    "text": "1000",
+    "prefix": "",
+    "suffix": "1000",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 8,
+    "step": 1,
+    "text": "1000",
+    "prefix": "1",
+    "suffix": "000",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 8,
+    "step": 2,
+    "text": "1000",
+    "prefix": "10",
+    "suffix": "00",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 8,
+    "step": 3,
+    "text": "1000",
+    "prefix": "100",
+    "suffix": "0",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 8,
+    "step": 4,
+    "text": "1000",
+    "prefix": "1000",
+    "suffix": "",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": true,
+    "accepted": false
+  },
+  {
+    "word": 9,
+    "step": 0,
+    "text": "1001",
+    "prefix": "",
+    "suffix": "1001",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 9,
+    "step": 1,
+    "text": "1001",
+    "prefix": "1",
+    "suffix": "001",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 9,
+    "step": 2,
+    "text": "1001",
+    "prefix": "10",
+    "suffix": "01",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 9,
+    "step": 3,
+    "text": "1001",
+    "prefix": "100",
+    "suffix": "1",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 9,
+    "step": 4,
+    "text": "1001",
+    "prefix": "1001",
+    "suffix": "",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": true,
+    "accepted": true
+  },
+  {
+    "word": 10,
+    "step": 0,
+    "text": "1010",
+    "prefix": "",
+    "suffix": "1010",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 10,
+    "step": 1,
+    "text": "1010",
+    "prefix": "1",
+    "suffix": "010",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 10,
+    "step": 2,
+    "text": "1010",
+    "prefix": "10",
+    "suffix": "10",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 10,
+    "step": 3,
+    "text": "1010",
+    "prefix": "101",
+    "suffix": "0",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 10,
+    "step": 4,
+    "text": "1010",
+    "prefix": "1010",
+    "suffix": "",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": true,
+    "accepted": true
+  },
+  {
+    "word": 11,
+    "step": 0,
+    "text": "1011",
+    "prefix": "",
+    "suffix": "1011",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 11,
+    "step": 1,
+    "text": "1011",
+    "prefix": "1",
+    "suffix": "011",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 11,
+    "step": 2,
+    "text": "1011",
+    "prefix": "10",
+    "suffix": "11",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 11,
+    "step": 3,
+    "text": "1011",
+    "prefix": "101",
+    "suffix": "1",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 11,
+    "step": 4,
+    "text": "1011",
+    "prefix": "1011",
+    "suffix": "",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": true,
+    "accepted": false
+  },
+  {
+    "word": 12,
+    "step": 0,
+    "text": "1100",
+    "prefix": "",
+    "suffix": "1100",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 12,
+    "step": 1,
+    "text": "1100",
+    "prefix": "1",
+    "suffix": "100",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 12,
+    "step": 2,
+    "text": "1100",
+    "prefix": "11",
+    "suffix": "00",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 12,
+    "step": 3,
+    "text": "1100",
+    "prefix": "110",
+    "suffix": "0",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 12,
+    "step": 4,
+    "text": "1100",
+    "prefix": "1100",
+    "suffix": "",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      }
+    ],
+    "complete": true,
+    "accepted": true
+  },
+  {
+    "word": 13,
+    "step": 0,
+    "text": "1101",
+    "prefix": "",
+    "suffix": "1101",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 13,
+    "step": 1,
+    "text": "1101",
+    "prefix": "1",
+    "suffix": "101",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 13,
+    "step": 2,
+    "text": "1101",
+    "prefix": "11",
+    "suffix": "01",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 13,
+    "step": 3,
+    "text": "1101",
+    "prefix": "110",
+    "suffix": "1",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 13,
+    "step": 4,
+    "text": "1101",
+    "prefix": "1101",
+    "suffix": "",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "0",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      }
+    ],
+    "complete": true,
+    "accepted": false
+  },
+  {
+    "word": 14,
+    "step": 0,
+    "text": "1110",
+    "prefix": "",
+    "suffix": "1110",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 14,
+    "step": 1,
+    "text": "1110",
+    "prefix": "1",
+    "suffix": "110",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 14,
+    "step": 2,
+    "text": "1110",
+    "prefix": "11",
+    "suffix": "10",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 14,
+    "step": 3,
+    "text": "1110",
+    "prefix": "111",
+    "suffix": "0",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": false,
+    "accepted": false
+  },
+  {
+    "word": 14,
+    "step": 4,
+    "text": "1110",
+    "prefix": "1110",
+    "suffix": "",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "0",
+        "before": 1,
+        "after": 1
+      }
+    ],
+    "complete": true,
+    "accepted": false
+  },
+  {
+    "word": 15,
+    "step": 0,
+    "text": "1111",
+    "prefix": "",
+    "suffix": "1111",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 15,
+    "step": 1,
+    "text": "1111",
+    "prefix": "1",
+    "suffix": "111",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 15,
+    "step": 2,
+    "text": "1111",
+    "prefix": "11",
+    "suffix": "11",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 15,
+    "step": 3,
+    "text": "1111",
+    "prefix": "111",
+    "suffix": "1",
+    "state": 1,
+    "states": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": false,
+    "accepted": true
+  },
+  {
+    "word": 15,
+    "step": 4,
+    "text": "1111",
+    "prefix": "1111",
+    "suffix": "",
+    "state": 0,
+    "states": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 2,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "index": 3,
+        "symbol": "1",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "index": 4,
+        "symbol": "1",
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "complete": true,
+    "accepted": true
+  }
+]

@@ -1,0 +1,4 @@
+from math import sin,pi,sqrt
+n=3;L=1.;psi=lambda x:sqrt(2/L)*sin(n*pi*x/L)
+assert abs(psi(0))<1e-12 and abs(psi(L))<1e-12
+print(n*n)

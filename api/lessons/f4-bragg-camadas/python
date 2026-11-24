@@ -1,0 +1,6 @@
+from fractions import Fraction as F
+n=5
+for b in (F(1),F(1,2),F(0)):
+    normalized=[(1+b*(-1)**m)**2 for m in range(1,5)]
+    print(b,normalized)
+assert (1-F(1,2))**2==F(1,4)

@@ -1,0 +1,6 @@
+from math import exp
+def euler(N):return (1-1/N)**N
+assert euler(2)==.25
+errors=[abs(euler(N)-exp(-1)) for N in (10,20,40)]
+assert errors[0]>errors[1]>errors[2]
+print(errors)

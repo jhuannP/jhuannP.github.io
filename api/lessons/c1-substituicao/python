@@ -1,0 +1,3 @@
+primitive=lambda x:x*x+x**4/2
+assert primitive(1)-primitive(0)==1.5
+print(primitive(1)-primitive(0))

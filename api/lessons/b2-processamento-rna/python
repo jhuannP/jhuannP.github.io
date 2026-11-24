@@ -1,0 +1,8 @@
+rna="AUGGUAGGAAGUAGUAG"
+a=((0,3),(7,10),(14,17))
+b=((0,3),(14,17))
+joined_a=''.join(rna[start:end] for start,end in a)
+joined_b=''.join(rna[start:end] for start,end in b)
+assert joined_a=="AUGGAAUAG" and len(joined_a)==9
+assert joined_b=="AUGUAG" and len(joined_b)==6
+print(joined_a,joined_b)

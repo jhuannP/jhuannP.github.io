@@ -1,0 +1,20 @@
+from math import exp,log1p,sqrt,tanh,isfinite
+from copy import deepcopy
+
+def initialize(hidden=4,seed=42):
+    if isinstance(hidden,bool) or not isinstance(hidden,int) or not 1<=hidden<=16:raise ValueError('1<=H<=16 necessário')
+    if isinstance(seed,bool) or not isinstance(seed,int) or not 0<=seed<2**32:raise ValueError('Semente uint32 necessária')
+    state=seed
+    def uniform():
+        nonlocal state
+        state=(1664525*state+1013904223)%2**32
+        return (state+.5)/2**32
+    a=sqrt(6/(2+hidden));b=sqrt(6/(hidden+1))
+    W=[[(2*uniform()-1)*a for _ in range(2)] for _ in range(hidden)]
+    v=[(2*uniform()-1)*b for _ in range(hidden)]
+    return dict(W=W,b=[0.0]*hidden,v=v,c=0.0)
+
+a=initialize(4,42);b=initialize(4,42)
+assert a==b
+assert all(abs(v)<=1 for row in a["W"] for v in row)
+print(a["W"])

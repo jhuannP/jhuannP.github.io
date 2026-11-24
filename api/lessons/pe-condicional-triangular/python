@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+x=Q(1,2)
+p=(x-Q(1,4))/x
+reverse=(1-Q(3,4)**2)/(1-Q(1,2)**2)
+assert p==Q(1,2)
+assert reverse==Q(7,12)
+print(p,reverse)

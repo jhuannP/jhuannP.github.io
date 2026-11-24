@@ -1,0 +1,6 @@
+from fractions import Fraction as Q
+a=Q(3,4); b=Q(-5,4)
+assert a-b==2
+arg_z=Q(3,4); arg_w=Q(3,4); arg_product=Q(-1,2)
+assert (arg_z+arg_w-arg_product)/2==1
+print('Diferença entre integrais: 2*pi*i')

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 440" role="img" aria-labelledby="t d">
+<title id="t">A desigualdade estrita exclui a fronteira</title><desc id="d">Pontos discretos para o erro um sobre n mais um: índice nove tem erro um décimo, na fronteira; índice dez tem erro um onze avos, abaixo dela.</desc>
+<rect width="420" height="440" fill="#f6f3e9"/>
+<g font-family="system-ui,sans-serif" fill="#183c36">
+<text x="22" y="34" font-size="20" font-weight="700">Menor que não inclui igualdade</text>
+<text x="22" y="64" font-size="15">Erro exato: 1/(n+1) · ε = 1/10</text>
+<rect x="60" y="200" width="325" height="130" fill="#dce8df"/>
+<path d="M60 100V330H385" fill="none" stroke="#285e58"/>
+<path d="M60 200H385" stroke="#285e58" stroke-dasharray="6 5"/>
+<text x="15" y="196" font-size="13">0,1</text>
+<text x="18" y="116" font-size="13">erro</text>
+<text x="370" y="355" font-size="15">n</text>
+<circle cx="110" cy="145" r="5" fill="#285e58"/>
+<circle cx="180" cy="175" r="5" fill="#285e58"/>
+<circle cx="250" cy="200" r="7" fill="#f6f3e9" stroke="#285e58" stroke-width="2"/>
+<circle cx="320" cy="220" r="6" fill="#285e58"/>
+<text x="105" y="353" font-size="14">7</text><text x="175" y="353" font-size="14">8</text><text x="245" y="353" font-size="14">9</text><text x="312" y="353" font-size="14">10</text>
+<text x="80" y="282" font-size="15">Região de erro &lt; ε</text>
+<text x="22" y="388" font-size="16">n=9: erro=1/10 → falha para &lt;</text>
+<text x="22" y="416" font-size="16">n=10: erro=1/11 → satisfaz &lt;</text>
+</g></svg>

@@ -1,0 +1,5 @@
+from cmath import exp
+phi=1+2j;E,t,hbar=3.,.7,1.
+psi=phi*exp(-1j*E*t/hbar)
+assert abs(abs(psi)**2-abs(phi)**2)<1e-12
+print(1)

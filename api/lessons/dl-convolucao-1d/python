@@ -1,0 +1,32 @@
+from math import exp,log,sqrt,hypot,sin,cos,isfinite
+from random import Random
+
+def real(x):
+    if isinstance(x,bool):raise ValueError('Real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Real finito necessário') from None
+    if not isfinite(y):raise ValueError('Real finito necessário')
+    return y
+
+def correlation_1d(x,kernel,stride=1,padding=0):
+    x=[real(v) for v in x];k=[real(v) for v in kernel]
+    if not x or not k or isinstance(stride,bool) or not isinstance(stride,int) or stride<1 or isinstance(padding,bool) or not isinstance(padding,int) or padding<0:raise ValueError('Sinal, kernel, stride ou padding inválidos')
+    padded=[0.0]*padding+x+[0.0]*padding
+    if len(padded)<len(k):raise ValueError('Kernel maior que a entrada preenchida')
+    return [real(sum(padded[i+j]*v for j,v in enumerate(k))) for i in range(0,len(padded)-len(k)+1,stride)]
+
+def correlation_grad(x,kernel,upstream,stride=1,padding=0):
+    x=[real(v) for v in x];k=[real(v) for v in kernel];g=[real(v) for v in upstream]
+    y=correlation_1d(x,k,stride,padding)
+    if len(g)!=len(y):raise ValueError('Gradiente de saída com tamanho incompatível')
+    dx=[0.0]*len(x);dk=[0.0]*len(k)
+    for i,grad in enumerate(g):
+        for j,w in enumerate(k):
+            pos=i*stride+j-padding
+            if 0<=pos<len(x):dx[pos]+=grad*w;dk[j]+=grad*x[pos]
+    return dx,dk
+
+assert correlation_1d([1,2,3,4],[1,0,-1])==[-2,-2]
+dx,dk=correlation_grad([1,2,3],[1,-1],[1,1])
+assert dx==[1,0,-1] and dk==[3,5]
+print(dx,dk)

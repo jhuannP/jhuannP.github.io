@@ -1,0 +1,1 @@
+{"ea1":{"type":"numeric","answer":0.2,"tolerance":1e-06,"solution":"2/(Ndt)=2/10.","hint":"Use a expressão e as hipóteses do exemplo."},"ea2":{"type":"choice","answer":1,"options":["Sim","Não"],"solution":"Os dados originais continuam limitados por amostragem e duração.","hint":"Separe trajetória, distribuição e estimativa."}}

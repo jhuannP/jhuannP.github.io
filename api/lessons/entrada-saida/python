@@ -1,0 +1,8 @@
+import csv
+import io
+import math
+texto = "tempo_s,posicao_m\n0,1.0\n1,3.0\n2,5.0\n"
+linhas = csv.DictReader(io.StringIO(texto))
+posicoes = [float(linha["posicao_m"]) for linha in linhas]
+assert all(math.isfinite(x) for x in posicoes)
+print("Média das posições:", sum(posicoes) / len(posicoes), "m")

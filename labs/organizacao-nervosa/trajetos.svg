@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="650" viewBox="0 0 480 650" role="img" aria-labelledby="title desc">
+<title id="title">Entrada sensorial e saída motora espinhais</title>
+<desc id="desc">Esquema funcional original. A entrada sensorial segue da pele pelo nervo espinhal e raiz dorsal até a medula, com corpo celular no gânglio periférico, desenhado fora da linha do axônio. A saída motora tem corpo celular na medula e segue pela raiz ventral e pelo mesmo feixe periférico até músculo esquelético. Não são desenhadas sinapses entre as duas rotas.</desc>
+<defs><marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#174c91"/></marker><marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#4b5664"/></marker></defs>
+<rect width="480" height="650" fill="#f7f8fa"/>
+<g font-family="Arial, sans-serif" fill="#172334">
+<text x="24" y="37" font-size="22" font-weight="700">Duas rotas, um nervo misto</text>
+<text x="24" y="65" font-size="16">Referência das direções: SNC.</text>
+<text x="24" y="103" font-size="19" font-weight="700">SNP</text>
+<rect x="357" y="91" width="102" height="348" fill="#dce8f6"/>
+<text x="371" y="119" font-size="19" font-weight="700">SNC</text>
+<text x="371" y="145" font-size="17">Medula</text>
+<path d="M348 91V439" stroke="#718198" stroke-dasharray="5 5"/>
+<rect x="132" y="193" width="78" height="224" rx="14" fill="#e4e6e9" stroke="#9aa6b5"/>
+<text x="24" y="153" font-size="17" fill="#174c91" font-weight="700">Entrada aferente →</text>
+<path d="M46 240H402" fill="none" stroke="#174c91" stroke-width="4" marker-end="url(#arrowBlue)"/>
+<circle cx="46" cy="240" r="7" fill="#174c91"/>
+<text x="24" y="269" font-size="16">Pele</text>
+<path d="M277 184V240" stroke="#174c91" stroke-width="3"/>
+<circle cx="277" cy="175" r="11" fill="white" stroke="#174c91" stroke-width="3"/>
+<text x="224" y="126" font-size="16">Gânglio sensorial</text>
+<text x="236" y="149" font-size="16">corpo celular</text>
+<text x="250" y="275" font-size="16">Raiz dorsal</text>
+<text x="24" y="321" font-size="17" font-weight="700" fill="#4b5664">← Saída eferente</text>
+<path d="M399 370H46" fill="none" stroke="#4b5664" stroke-width="4" marker-end="url(#arrowGray)"/>
+<circle cx="399" cy="370" r="11" fill="white" stroke="#4b5664" stroke-width="3"/>
+<text x="250" y="347" font-size="16">Raiz ventral</text>
+<text x="366" y="402" font-size="15">Corpo motor</text>
+<text x="24" y="401" font-size="16">Músculo</text>
+<text x="24" y="424" font-size="16">esquelético</text>
+<text x="130" y="451" font-size="16">Nervo espinhal</text>
+<text x="130" y="474" font-size="16">axônios de ambas as rotas</text>
+<path d="M24 497H456" stroke="#bec7d2"/>
+<text x="24" y="529" font-size="17" font-weight="700">Leia cada seta separadamente.</text>
+<text x="24" y="558" font-size="16">O gânglio sensorial não é desenhado</text>
+<text x="24" y="582" font-size="16">como uma troca obrigatória de neurônio.</text>
+<text x="24" y="617" font-size="15">Sem escala; não é um corte anatômico.</text>
+</g></svg>

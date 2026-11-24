@@ -1,0 +1,4 @@
+incident=30
+reflected=incident
+assert reflected==30
+print(reflected)

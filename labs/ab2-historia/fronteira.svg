@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="575" viewBox="0 0 440 575" role="img" aria-labelledby="t d"><title id="t">Na fronteira, limitado não é o mesmo que decair</title><desc id="d">AB2 na equação de teste y linha igual a lambda y, com z igual a h lambda igual a menos um. As raízes da recorrência são um meio e menos um. Com estados iniciais um e zero, os valores seguintes são um meio, menos um quarto, três oitavos, menos cinco dezesseis avos e onze trinta e dois avos. Uma componente alternada não decai.</desc>
+<rect width="440" height="575" fill="#f6f8fb"/><g fill="#172b43" font-family="sans-serif">
+<text x="24" y="35" font-size="21" font-weight="bold">Uma raiz parasita não decai</text>
+<text x="24" y="65" font-size="16">AB2: z = hλ = −1; y₀ = 1; y₁ = 0</text>
+<text x="24" y="103" font-size="17">Raízes da recorrência: 1/2 e −1</text>
+<text x="24" y="140" font-size="16">yₙ = (2/3)(1/2)ⁿ + (1/3)(−1)ⁿ</text>
+<path d="M24 165H416" stroke="#cbd5e1"/>
+<text x="40" y="201" font-size="16" font-weight="bold">n</text><text x="210" y="201" font-size="16" font-weight="bold">yₙ</text>
+<text x="40" y="237" font-size="16">0</text><text x="210" y="237" font-size="16">1</text>
+<text x="40" y="272" font-size="16">1</text><text x="210" y="272" font-size="16">0</text>
+<text x="40" y="307" font-size="16">2</text><text x="210" y="307" font-size="16">1/2</text>
+<text x="40" y="342" font-size="16">3</text><text x="210" y="342" font-size="16">−1/4</text>
+<text x="40" y="377" font-size="16">4</text><text x="210" y="377" font-size="16">3/8</text>
+<text x="40" y="412" font-size="16">5</text><text x="210" y="412" font-size="16">−5/16</text>
+<text x="40" y="447" font-size="16">6</text><text x="210" y="447" font-size="16">11/32</text>
+<path d="M24 471H416" stroke="#cbd5e1"/>
+<text x="24" y="506" font-size="16">Para λ &lt; 0, a solução exata decai.</text>
+<text x="24" y="533" font-size="16">Esta sequência permanece alternada.</text>
+<text x="24" y="561" font-size="13">Figura original. Início escolhido para expor a componente.</text>
+</g></svg>

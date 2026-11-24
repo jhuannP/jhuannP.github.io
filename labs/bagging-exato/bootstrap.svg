@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="570" viewBox="0 0 760 570" role="img" aria-labelledby="title desc">
+<title id="title">Vinte e sete reamostras do mesmo treino</title><desc id="desc">Treino sintético de três pares zero,zero;um,dois;dois,zero. Todas as vinte e sete sequências bootstrap treinam stumps de regressão. No ponto x igual a um,previsões zero,um,dois ocorrem oito,seis,treze vezes. Média trinta e dois sobre vinte e sete,sem alegação de desempenho fora da amostra. Previsões out-of-bag nos três pontos são sete quartos,zero,sete quartos,usando oito modelos elegíveis em cada.</desc>
+<rect width="760" height="570" rx="18" fill="#f4f0e5"/>
+<g font-family="Arial,sans-serif" fill="#203b39">
+<text x="32" y="42" font-size="24" font-weight="bold">Mais modelos. O mesmo treino.</text>
+<text x="32" y="73" font-size="17">Três pares prescritos: (0, 0), (1, 2), (2, 0) · stumps de regressão</text>
+<rect x="26" y="96" width="708" height="295" rx="12" fill="#e4e9e1"/>
+<text x="46" y="125" font-size="18" font-weight="bold">Previsões em x = 1, nas 27 reamostras ordenadas</text>
+<path d="M100 335 H666" stroke="#9baaa0" stroke-width="1"/>
+<rect x="150" y="239" width="80" height="96" fill="#ae563c"/><rect x="340" y="263" width="80" height="72" fill="#ae563c"/><rect x="530" y="179" width="80" height="156" fill="#ae563c"/>
+<text x="182" y="226" font-size="20">8</text><text x="372" y="250" font-size="20">6</text><text x="558" y="166" font-size="20">13</text>
+<text x="162" y="361" font-size="17">valor 0</text><text x="352" y="361" font-size="17">valor 1</text><text x="542" y="361" font-size="17">valor 2</text>
+<text x="32" y="426" font-size="21" font-weight="bold">Média exata: 32/27 ≈ 1,1852</text>
+<text x="32" y="457" font-size="17">Reamostrar não cria observações novas; a média muda o procedimento.</text>
+<path d="M32 477 H728" stroke="#b7c5b9"/>
+<text x="32" y="505" font-size="18" font-weight="bold">OOB: só modelos que não viram o índice avaliado.</text>
+<text x="32" y="535" font-size="16">Em x = 0, 1, 2: médias 7/4, 0, 7/4 · oito modelos elegíveis por ponto</text>
+</g></svg>

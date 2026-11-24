@@ -1,0 +1,6 @@
+from fractions import Fraction as F
+C,N,A=map(F,(9,18,18))
+q=min(C/3,N/6,A/9)
+left=(C-3*q,N-6*q,A-9*q)
+assert q==2 and left==(3,6,0)
+print('triose e sobras (mol):',q,left)

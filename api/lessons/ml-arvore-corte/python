@@ -1,0 +1,41 @@
+from math import exp,log1p,sqrt,hypot,atan2,cos,sin,isfinite
+from random import Random
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def paired(x,y):
+    a=[finite(v) for v in x];b=[finite(v) for v in y]
+    if not a or len(a)!=len(b):raise ValueError('Dados não vazios de mesmo tamanho necessários')
+    return a,b
+
+def stump_fit(x,y,classification=False):
+    x,y=paired(x,y)
+    if classification and any(v not in [0,1] for v in y):raise ValueError('Classes binárias necessárias')
+    def leaf(values):return int(sum(values)>len(values)/2) if classification else sum(values)/len(values)
+    def cost(values):
+        if classification:
+            p=sum(values)/len(values);return len(values)*2*p*(1-p)
+        mean=sum(values)/len(values);return sum((v-mean)**2 for v in values)
+    # Modelo constante é candidato; melhora deve ser estrita.
+    value=leaf(y);best=dict(threshold=None,left=value,right=value,cost=cost(y))
+    unique=sorted(set(x))
+    for a,b in zip(unique,unique[1:]):
+        threshold=a/2+b/2;left=[v for z,v in zip(x,y) if z<=threshold];right=[v for z,v in zip(x,y) if z>threshold]
+        if not left or not right:continue
+        score=cost(left)+cost(right)
+        if score<best['cost']:best=dict(threshold=threshold,left=leaf(left),right=leaf(right),cost=score)
+    return best
+
+def stump_predict(model,x):
+    x=finite(x)
+    return model['left'] if model['threshold'] is None or x<=model['threshold'] else model['right']
+
+r=stump_fit([0,1,2,3],[0,0,1,1],True)
+assert r["threshold"]==1.5 and r["cost"]==0
+assert stump_predict(r,2)==1
+print(r)

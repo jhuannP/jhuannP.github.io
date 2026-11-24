@@ -1,0 +1,22 @@
+from math import isfinite
+def finite_real(value, name):
+    if type(value) not in (int,float):
+        raise ValueError(name+": use int ou float, sem bool")
+    try:
+        result=float(value)
+    except OverflowError:
+        raise ValueError(name+": entrada não representável como float finito") from None
+    if not isfinite(result):
+        raise ValueError(name+": entrada deve ser finita")
+    return result
+
+
+def mass(x):
+    result=finite_real(x,"massa")
+    if result<0:raise ValueError("Massa não negativa")
+    return result
+assert mass(2)==2
+for x in (-1,True,float("nan"),10**400):
+    try:mass(x)
+    except ValueError:pass
+    else:raise AssertionError("Contrato não respeitado")

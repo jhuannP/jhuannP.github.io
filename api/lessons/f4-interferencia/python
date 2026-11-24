@@ -1,0 +1,4 @@
+from math import cos,pi
+relative=cos(pi/4)**2
+assert abs(relative-.5)<1e-12
+print(relative)

@@ -1,0 +1,4 @@
+y=[1,3,5]
+baseline=sum(y)/len(y)
+assert baseline==3
+print(baseline)

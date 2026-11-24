@@ -1,0 +1,9 @@
+from math import sqrt,pi
+NA=6.02214076e23
+N,M,a_pm=4,60.,400.
+r_pm=a_pm/(2*sqrt(2))
+rho=N*M/(NA*(a_pm*1e-10)**3)
+phi=pi/(3*sqrt(2))
+assert abs(r_pm-141.4213562373095)<1e-10
+assert .74<phi<.741
+print(r_pm,rho,phi)

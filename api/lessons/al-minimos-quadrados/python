@@ -1,0 +1,4 @@
+y=(1,2,6);c=sum(y)/len(y)
+r=tuple(c-v for v in y)
+assert c==3 and sum(r)==0
+print(c,r)

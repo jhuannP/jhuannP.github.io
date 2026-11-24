@@ -1,0 +1,21 @@
+# Métricas de classificação — notas de aula
+
+Aula existente aprofundada. ExemploTP=3,FP=1,FN=2, Python/desafio de95 negativos e5 positivos e painel preservados. Novo conjunto sintético com oito rótulos/scores explicitamente descritos na aula. Rascunho; revisão pessoal pendente.
+
+Fontes: Bishop, PRML2006,§1.5.2 pp.41–42/PDF60–61, consulta textual parcial em27/10/2026 sobre perda esperada e decisão. Correspondência impresso/PDF conferida nos cabeçalhos extraídos; sem nova inspeção visual. Não reproduzido exemplo clínico do livro. Documentação oficial scikit-learn, Metrics and scoring§3.4.4.9, recorte parcial de definições binárias/F1/denominador zero em27/10; página exibida1.9.1, sem instalar biblioteca. https://scikit-learn.org/stable/modules/model_evaluation.html#precision-recall-f-measure-metrics
+
+Contagens em linhas reais/colunas previstas; classe positiva1. Precisão=TP/(TP+FP), recall=TP/(TP+FN), F1=2TP/(2TP+FP+FN). Zero no denominador retornaNone, convenção própria explícita; F1 pode ser zero mesmo com precisão indefinida quando há positivos reais perdidos. Predição usa score≥limiar, empates juntos. Scores sintéticos em[0,1] não são probabilidades calibradas. Contas de prevalência e custo derivadas nas notas, com hipóteses próprias.
+
+Rodar na raiz: `python3 -m unittest discover -s labs/classificacao-metricas -t .`. Biblioteca padrão; int/Fraction, classes inteiras0/1, contagens e razões exatas. Sem treino, otimização de limiar, calibração, intervalos, ROC-AUC/AP ou multiclasse. Testes não certificam desempenho de modelo real. Painel anterior usa outro conjunto; não confundir seus números com a tabela da aula.
+
+## 27/10/2026 — métricas de classificação, limiar e custo
+
+Aula `ml-metricas-classificacao` aprofundada de3 para14 seções,2 para12 exercícios. IDs mc1/mc2, exemplo TP=3/FP=1/FN=2, Python, desafio95/5 e painel preservados. Novo conjunto de oito exemplos com matriz explícita; precisão/recall/F1, especificidade, acurácia balanceada e casos indefinidos. Limiares0,7/0,5/0,4, custo FP+4FN e dedução de limiar Bayesiano1/5 para posterior adequada. Transporte da precisão sob TPR/FPR fixos separado de garantia sobre população real; seleção de limiar em validação, não no teste. Nenhum treino/calibração ou dado de cliente.
+
+Fontes: Bishop PRML2006 §1.5.2 pp.41–42/PDF60–61, consulta textual parcial. Paginação conferida por extração direta dos cabeçalhos: offset19 neste trecho; primeira inferência57–58 corrigida antes da entrega, sem transferir offset16 usado em outro capítulo. scikit-learn Metrics and scoring§3.4.4.9, definições binárias/F1/denominador zero consultadas parcialmente em27/10/2026; página1.9.1, sem instalação. https://scikit-learn.org/stable/modules/model_evaluation.html#precision-recall-f-measure-metrics . Livro privado não distribuído; dados, figura, contas e exercícios próprios.
+
+Verificação:14 testes do catálogo e cinco locais aprovados;785 estruturas MathML conferidas. Testes: exemplos/contagens,256 combinações de rótulos/previsões confrontadas por conjuntos, limiares/empates/monotonicidade, transformação crescente com limiar correspondente, prevalência por populações de1000 e contratos/casos indefinidos. O primeiro teste de catálogo identificou link externo em resources, campo reservado a /labs; link transferido às referências do curso/README, contrato preservado. Não implementados ROC-AUC/AP, multiclasse, ajuste, calibração ou incerteza.
+
+No navegador390px, precisão com prevalência1% rejeitou0,8 e aceitou0,07476635514 pelo Enter. Painel anterior respondeu aEnd/Home: em limiar1, nenhum positivo previsto e precisão explicitamente indefinida. Painel usa seis exemplos, distinto dos oito da aula, como declarado. Figura inspecionada em`classificacao-metricas-mobile.jpg`; documento390px, console sem erros. Leitor de tela, Windows real e revisão pessoal pendentes.
+
+Machine learning:25 aulas/140 exercícios,16 introduções curtas. Global51 trilhas,544 aulas/4259 exercícios e203 introduções curtas. Não representa curso completo ou domínio pessoal demonstrado. Próxima ação: reconstruir matriz e comparar custo nos dois limiares com acurácia igual em20min. Próximo bloco global: inspecionar conteúdo de FísicaIII e uma lacuna de eletromagnetismo com referência disponível. Saldo semanal81%; parada operacional65% mantida.

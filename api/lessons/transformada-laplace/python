@@ -1,0 +1,4 @@
+s=2;k=2;F=6
+Y=F/(s*(s+k));partial=(F/k)*(1/s-1/(s+k))
+assert Y==partial
+print(Y)

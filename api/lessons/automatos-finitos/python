@@ -1,0 +1,9 @@
+def paridade_par(palavra):
+    estado=0
+    for simbolo in palavra:
+        if simbolo not in '01': raise ValueError('Alfabeto inválido')
+        estado ^= int(simbolo)
+    return estado==0
+assert paridade_par('') and paridade_par('1100')
+assert not paridade_par('1011')
+print(paridade_par('1011'))

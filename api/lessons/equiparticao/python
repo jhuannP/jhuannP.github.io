@@ -1,0 +1,6 @@
+# T abaixo representa Θ=kB*T_abs nas unidades escolhidas, não kelvin isoladamente.
+k,T,m=4,2,3
+q2=T/k;p2=m*T
+assert q2==.5 and p2==6
+assert k*q2/2==T/2 and p2/(2*m)==T/2
+print(q2,p2)

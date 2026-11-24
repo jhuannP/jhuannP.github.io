@@ -1,0 +1,25 @@
+from math import isfinite,pi,sin,sqrt
+from cmath import exp
+
+def real(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def contour_midpoint(f,R=1,n=1024):
+    R=real(R)
+    if R<=0 or isinstance(n,bool) or not isinstance(n,int) or n<4:
+        raise ValueError('Raio positivo e n inteiro >=4 necessários')
+    dtheta=2*pi/n;total=0j
+    for k in range(n):
+        z=R*exp(1j*(k+.5)*dtheta);value=complex(f(z))
+        if not isfinite(value.real) or not isfinite(value.imag):raise ValueError('Integranda não finita')
+        total+=value*1j*z*dtheta
+    return total
+
+inside=contour_midpoint(lambda z:1/(z-.2),1,1024)
+outside=contour_midpoint(lambda z:1/(z-2),1,1024)
+assert abs(inside-2j*pi)<1e-10 and abs(outside)<1e-10
+print(inside,outside)

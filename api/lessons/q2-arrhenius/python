@@ -1,0 +1,8 @@
+import math
+R=8.314462618
+ea=6000*R
+t1,t2=300,330
+k1=.002
+log_ratio=(ea/R)*(1/t1-1/t2)
+k2=k1*math.exp(log_ratio)
+print(ea/1000,log_ratio,k2,math.log(2)/k2)

@@ -1,0 +1,5 @@
+from fractions import Fraction as Q
+d,a,b,c=Q(5),Q(4),Q(1),Q(1,2)
+life=1/c;net=d*(a-b)/c;path=d*(a+b)/c
+assert (life,net,path)==(2,30,50)
+print(life,net,path)

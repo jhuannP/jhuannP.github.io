@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+tc,th,qc,w=map(Q,(280,320,840,140))
+qh=qc+w
+s=qh/th-qc/tc
+wmin=qc*(th-tc)/tc
+assert qc/w==6 and qh/w==7
+assert s==Q(1,16) and w-wmin==th*s==20
+print(qh,s,wmin)

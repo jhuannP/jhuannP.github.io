@@ -1,0 +1,13 @@
+from fractions import Fraction as Q
+def horner_pair(c,x):
+    if not isinstance(c,(list,tuple)) or not c:
+        raise ValueError("Lista/tupla não vazia")
+    if any(type(z) not in (int,Q) for z in (*c,x)):
+        raise ValueError("Use int/Fraction")
+    b,d=Q(c[-1]),Q(0)
+    for a in reversed(c[:-1]):
+        d=x*d+b
+        b=x*b+a
+    return b,d
+assert horner_pair([1,-3,2],2)==(3,5)
+print(horner_pair([1,-3,2],2))

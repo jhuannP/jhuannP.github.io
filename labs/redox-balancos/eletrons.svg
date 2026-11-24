@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="430" viewBox="0 0 420 430" role="img" aria-labelledby="title desc">
+<title id="title">Igualar os elétrons antes de somar</title>
+<desc id="desc">Cinco íons ferro dois mais cedem juntos cinco elétrons ao passarem a ferro três mais. Um manganês passa de número de oxidação mais sete a mais dois, recebendo cinco elétrons formais. Ao somar as semirreações, os elétrons se cancelam. A carga total da equação iônica completa é mais dezessete em ambos os lados.</desc>
+<rect width="420" height="430" fill="#f4f3eb"/>
+<g text-anchor="middle" font-family="Arial,sans-serif" fill="#20221e">
+<text x="210" y="38" font-size="21">Oxidação · cinco íons Fe²⁺</text>
+<text x="210" y="83" fill="#2348db" font-size="28">5Fe²⁺ → 5Fe³⁺ + 5e⁻</text>
+<text x="210" y="118" font-size="19">Cada Fe cede um elétron.</text>
+<path d="M40 145H380" stroke="#d3d7c9"/>
+<text x="210" y="185" font-size="21">Redução · um Mn no MnO₄⁻</text>
+<text x="210" y="230" fill="#2348db" font-size="28">Nox: +7 → +2</text>
+<text x="210" y="265" font-size="19">Recebe cinco elétrons formais.</text>
+<path d="M40 290H380" stroke="#d3d7c9"/>
+<text x="210" y="332" font-size="22">Somar e cancelar os 5e⁻</text>
+<text x="210" y="370" font-size="21">Carga total: +17 → +17</text>
+<text x="210" y="413" font-size="15">Contabilidade formal; não descreve o mecanismo.</text>
+</g></svg>

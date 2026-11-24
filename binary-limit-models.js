@@ -1,0 +1,18 @@
+/* Limite inferior em listas pequenas. Traço didático, sem medir tempo real. */
+window.BinaryLimitModels=(()=>{
+ const datasets=[[1,3,5,7,9,11,13,15],[1,3,3,3,5,7,7,9],[],[4]];
+ function trace(a,target){const rows=[];let low=0,high=a.length;
+  while(low<high){const mid=Math.floor((low+high)/2),less=a[mid]<target,next_low=less?mid+1:low,next_high=less?high:mid;rows.push({low,high,mid,value:a[mid],less,next_low,next_high});low=next_low;high=next_high;}
+  const position=low,equality=position<a.length?1:0,found=equality&&a[position]===target?position:-1;
+  rows.push({low,high,mid:null,value:null,less:null,next_low:low,next_high:high});
+  return{position,found,rows,ordered_comparisons:rows.length-1,equality_comparisons:equality,total_key_comparisons:rows.length-1+equality};
+ }
+ function model(mode=1,target=3,step=0){if(!Number.isInteger(mode)||mode<0||mode>3||!Number.isInteger(target)||target<0||target>16||!Number.isInteger(step)||step<0||step>8)throw new RangeError('Lista0..3, alvo0..16, etapa0..8.');const a=datasets[mode],r=trace(a,target);return{...r,values:a,step:Math.min(step,r.rows.length-1)};}
+ function createModels(){return{binaryLowerBound:{label:'Uma ocorrência ou a primeira posição possível?',controls:[['mode','Lista: 0 ímpares; 1 repetidos; 2 vazia; 3 unitária',0,3,1,1],['target','Alvo inteiro',0,16,1,3],['step','Etapa do limite inferior',0,4,1,0]],render:({mode,target,step})=>{
+  const r=model(mode,target,step),row=r.rows[r.step],last=r.step===r.rows.length-1;
+  const list=r.values.length?`<ol class="binary-array" aria-label="Lista ordenada, índices a partir de zero">${r.values.map((v,i)=>`<li class="${i>=row.low&&i<row.high?'binary-active':''} ${i===row.mid?'binary-mid':''} ${last&&i===r.position?'binary-boundary':''}" aria-label="índice ${i}, valor ${v}${i>=row.low&&i<row.high?', intervalo ativo':''}${i===row.mid?', meio':''}${last&&i===r.position?', posição de inserção':''}"><span>${v}</span><small>${i}</small></li>`).join('')}</ol>`:'<p>Lista vazia: nenhum elemento para consultar.</p>';
+  const graph=`<p><strong>Intervalo de elementos [${row.low},${row.high})</strong>. Azul claro: elementos ativos; contorno preto: meio; azul forte no fim: limite inferior. Índices aparecem abaixo dos valores.</p>${list}${last&&r.position===r.values.length?'<p>Posição de inserção no fim: n. Não acessar a[n].</p>':''}<table class="truth-table"><caption>Traçado com intervalo semiaberto</caption><thead><tr><th>Etapa</th><th>[lo,hi)</th><th>m:valor</th><th>a[m]&lt;alvo?</th></tr></thead><tbody>${r.rows.map((t,i)=>`<tr class="${i===r.step?'selected':''}"><td>${i}</td><td>[${t.low},${t.high})</td><td>${t.mid===null?'—':`${t.mid}:${t.value}`}</td><td>${t.less===null?'fim':t.less?'sim':'não'}</td></tr>`).join('')}</tbody></table>`;
+  return{graph,controlRanges:{step:{max:r.rows.length-1,value:r.step}},report:last?`Limite inferior p=${r.position}; primeira ocorrência=${r.found}. Comparações ordenadas da busca=${r.ordered_comparisons}; igualdade final=${r.equality_comparisons}; total entre chave e elemento=${r.total_key_comparisons}.`:`Etapa ${r.step}: a[${row.mid}]=${row.value}; ${row.less?'menor que o alvo: lo=m+1':'maior ou igual: hi=m'}. Próximo intervalo [${row.next_low},${row.next_high}). Prefixo antes de lo tem valores < alvo; sufixo a partir de hi tem valores ≥ alvo.`,note:'Limite inferior devolve uma posição 0..n, inclusive se o alvo está ausente. Primeira ocorrência usa uma checagem de igualdade separada e devolve −1 na ausência. O intervalo semiaberto deste painel difere do inclusivo do painel anterior. Contagens excluem validação linear, condições do laço, aritmética e tempo real. Listas de demonstração já estão ordenadas.'};
+ }}};}
+ return{model,trace,createModels};
+})();

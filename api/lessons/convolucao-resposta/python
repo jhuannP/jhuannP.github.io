@@ -1,0 +1,6 @@
+from math import exp
+n=1000;h=1/n
+approx=h*sum(exp(-(1-(i+.5)*h)) for i in range(n))
+exact=1-exp(-1)
+assert abs(approx-exact)<1e-7
+print(approx,exact)

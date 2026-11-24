@@ -1,0 +1,9 @@
+from math import sqrt
+
+def lorentz(beta):
+    if abs(beta) >= 1:
+        raise ValueError("A velocidade deve ter módulo menor que c")
+    return 1/sqrt(1-beta*beta)
+
+print(lorentz(0.6))
+print(lorentz(0.6)*4)

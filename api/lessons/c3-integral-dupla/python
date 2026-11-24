@@ -1,0 +1,4 @@
+area=.5
+integral=(1+1/2)/3
+assert area==integral==.5
+print(area)

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" role="img" aria-labelledby="title desc">
+<title id="title">Nucleoplasma e citosol conectados pelo poro nuclear</title>
+<desc id="desc">Corte topológico esquemático, sem escala. Duas membranas delimitam o espaço perinuclear. No poro, elas se unem nas margens, deixando um caminho aquoso seletivo entre citosol e nucleoplasma, distinto do espaço perinuclear.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#184bc4"/></marker></defs>
+<rect width="360" height="460" fill="#f5f4eb"/>
+<g font-family="sans-serif" font-size="17" fill="#20251f">
+<text x="180" y="46" text-anchor="middle" font-size="23">Nucleoplasma</text>
+<text x="20" y="145">Membrana interna</text>
+<text x="20" y="302">Membrana externa</text>
+<path d="M20 175H120Q135 175 135 190V250Q135 265 120 265H20Z M340 175H240Q225 175 225 190V250Q225 265 240 265H340Z" fill="#dce5fa"/>
+<g fill="none" stroke="#20251f" stroke-width="2.5">
+<path d="M20 165H125Q145 165 145 185V255Q145 275 125 275H20"/>
+<path d="M20 175H120Q135 175 135 190V250Q135 265 120 265H20"/>
+<path d="M340 165H235Q215 165 215 185V255Q215 275 235 275H340"/>
+<path d="M340 175H240Q225 175 225 190V250Q225 265 240 265H340"/>
+</g>
+<text x="25" y="215">Espaço</text><text x="25" y="238">perinuclear</text>
+<text x="235" y="215">Espaço</text><text x="235" y="238">perinuclear</text>
+<path d="M180 343V98" stroke="#184bc4" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="180" y="378" text-anchor="middle" font-size="23">Citosol</text>
+<text x="180" y="414" text-anchor="middle" fill="#184bc4">Seta: caminho pelo poro</text>
+<text x="180" y="440" text-anchor="middle" font-size="14">Topologia apenas; sem escala ou cinética.</text>
+</g></svg>

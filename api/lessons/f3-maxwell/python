@@ -1,0 +1,3 @@
+drho=2.;divJ=-drho
+assert drho+divJ==0
+print(divJ)

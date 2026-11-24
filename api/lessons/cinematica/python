@@ -1,0 +1,4 @@
+def posicao(t, s0=0.0, v0=2.0, a=1.0):
+    return s0 + v0*t + 0.5*a*t*t
+
+print(posicao(3.0))

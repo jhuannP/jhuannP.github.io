@@ -1,0 +1,9602 @@
+[
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 1,
+    "permutation": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 2,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 3,
+    "permutation": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 4,
+    "permutation": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 5,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 6,
+    "permutation": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 0,
+    "pair": 0,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 11
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 1,
+    "permutation": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 2,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 3,
+    "permutation": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 4,
+    "permutation": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 5,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 6,
+    "permutation": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 0,
+    "pair": 1,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 11
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 1,
+    "permutation": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 2,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 3,
+    "permutation": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 4,
+    "permutation": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 5,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 6,
+    "permutation": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 0,
+    "pair": 2,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 11
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 1,
+    "permutation": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 2,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 3,
+    "permutation": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 4,
+    "permutation": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 5,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 6,
+    "permutation": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 0,
+    "pair": 3,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 11
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 1,
+    "permutation": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 2,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 3,
+    "permutation": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 4,
+    "permutation": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 5,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 6,
+    "permutation": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 0,
+    "pair": 4,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 2,
+    "stabilizer": 4,
+    "dot": -1,
+    "norm_squared": 1,
+    "cosine": -1.0,
+    "angle": 180.0,
+    "label": "trans",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 11
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 1,
+    "permutation": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 2,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 3,
+    "permutation": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 4,
+    "permutation": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 5,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 6,
+    "permutation": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 0,
+    "pair": 5,
+    "rotation": 7,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 8,
+    "orbit_size": 4,
+    "stabilizer": 2,
+    "dot": 0,
+    "norm_squared": 1,
+    "cosine": 0.0,
+    "angle": 90.0,
+    "label": "cis",
+    "positions": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "request_rotation": 11
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 1,
+    "permutation": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 2,
+    "permutation": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 3,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 4,
+    "permutation": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 5,
+    "permutation": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 6,
+    "permutation": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 7,
+    "permutation": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 8,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 9,
+    "permutation": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 10,
+    "permutation": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 1,
+    "pair": 0,
+    "rotation": 11,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 11
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 1,
+    "permutation": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 2,
+    "permutation": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 3,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 4,
+    "permutation": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 5,
+    "permutation": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 6,
+    "permutation": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 7,
+    "permutation": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 8,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 9,
+    "permutation": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 10,
+    "permutation": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 1,
+    "pair": 1,
+    "rotation": 11,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 11
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 1,
+    "permutation": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 2,
+    "permutation": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 3,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 4,
+    "permutation": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 5,
+    "permutation": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 6,
+    "permutation": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 7,
+    "permutation": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 8,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 9,
+    "permutation": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 10,
+    "permutation": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 1,
+    "pair": 2,
+    "rotation": 11,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 11
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 1,
+    "permutation": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 2,
+    "permutation": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 3,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 4,
+    "permutation": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 5,
+    "permutation": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 6,
+    "permutation": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 7,
+    "permutation": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 8,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 9,
+    "permutation": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 10,
+    "permutation": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 1,
+    "pair": 3,
+    "rotation": 11,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 11
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 1,
+    "permutation": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 2,
+    "permutation": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 3,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 4,
+    "permutation": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 5,
+    "permutation": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 6,
+    "permutation": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 7,
+    "permutation": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 8,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 9,
+    "permutation": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 10,
+    "permutation": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 1,
+    "pair": 4,
+    "rotation": 11,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 11
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 0,
+    "permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 0
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 1,
+    "permutation": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 1
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 2,
+    "permutation": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 2
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 3,
+    "permutation": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "moved_pair": [
+      2,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 3
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 4,
+    "permutation": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 4
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 5,
+    "permutation": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 5
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 6,
+    "permutation": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "moved_pair": [
+      1,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "request_rotation": 6
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 7,
+    "permutation": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "moved_pair": [
+      0,
+      3
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 7
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 8,
+    "permutation": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 8
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 9,
+    "permutation": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "moved_pair": [
+      1,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "request_rotation": 9
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 10,
+    "permutation": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "moved_pair": [
+      0,
+      2
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "request_rotation": 10
+  },
+  {
+    "geometry": 1,
+    "pair": 5,
+    "rotation": 11,
+    "permutation": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "moved_pair": [
+      0,
+      1
+    ],
+    "orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "group_size": 12,
+    "orbit_size": 6,
+    "stabilizer": 2,
+    "dot": -1,
+    "norm_squared": 3,
+    "cosine": -0.3333333333333333,
+    "angle": 109.47122063449069,
+    "label": "uma classe tetraédrica",
+    "positions": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "request_rotation": 11
+  }
+]

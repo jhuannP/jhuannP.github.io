@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="440" viewBox="0 0 520 440" role="img" aria-labelledby="title desc">
+<title id="title">Uma malha e três potenciais</title><desc id="desc">Fonte ideal de doze volts, resistores de dois e quatro ohms em série. Corrente convencional dois amperes, sentido horário. Potenciais A doze, B oito, C zero volts, com o terminal negativo como referência. Quedas quatro e oito volts; potências oito e dezesseis watts.</desc>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#176153"/></marker></defs>
+<rect width="520" height="440" fill="#f7f4eb"/>
+<g fill="none" stroke="#182e38" stroke-width="2"><path d="M60 182V120H140 M230 120H330 M420 120H470V320H60V238"/><rect x="140" y="105" width="90" height="30"/><rect x="330" y="105" width="90" height="30"/><circle cx="60" cy="210" r="28"/></g>
+<path d="M239 178H302" fill="none" stroke="#176153" stroke-width="2" marker-end="url(#arrow)"/>
+<g fill="#182e38"><circle cx="100" cy="120" r="4"/><circle cx="280" cy="120" r="4"/><circle cx="470" cy="120" r="4"/></g>
+<g fill="#182e38" font-family="sans-serif" font-size="21"><text x="20" y="34" font-size="26">Uma corrente, duas quedas</text><text x="25" y="82">A: 12 V</text><text x="238" y="82">B: 8 V</text><text x="398" y="82">C: 0 V</text><text x="140" y="164">R₁ = 2 Ω</text><text x="330" y="164">R₂ = 4 Ω</text><text x="230" y="215" fill="#176153">I = 2 A</text><text x="52" y="202">+</text><text x="53" y="230">−</text><text x="110" y="278">Fonte ideal: 12 V</text><text x="110" y="357">Retorno: 0 V em todo o fio ideal</text><text x="20" y="397">Malha: +12 − 4 − 8 = 0 V</text><text x="20" y="427">Potência: 8 W + 16 W = 24 W</text></g></svg>

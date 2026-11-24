@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" role="img" aria-labelledby="title desc">
+<title id="title">Três escalas, três inclinações</title>
+<desc id="desc">Dados sintéticos em três painéis: posição linear, tensão em monolog e força em dilog. Os valores dos eixos logarítmicos já estão transformados.</desc>
+<rect width="640" height="900" rx="20" fill="#f3efe4"/>
+<g font-family="sans-serif" fill="#173c39">
+<text x="30" y="40" font-size="23" font-weight="700">Linear: diferenças iguais</text>
+<text x="100" y="70" font-size="17">posição (m)</text>
+<path d="M 100 207.778 H 586" stroke="#d6d7cc"/>
+<text x="88" y="212.778" text-anchor="end" font-size="17">2</text>
+<text x="100.000" y="262" text-anchor="middle" font-size="17">0</text>
+<path d="M 100 159.444 H 586" stroke="#d6d7cc"/>
+<text x="88" y="164.444" text-anchor="end" font-size="17">5</text>
+<text x="343.000" y="262" text-anchor="middle" font-size="17">1</text>
+<path d="M 100 111.111 H 586" stroke="#d6d7cc"/>
+<text x="88" y="116.111" text-anchor="end" font-size="17">8</text>
+<text x="586.000" y="262" text-anchor="middle" font-size="17">2</text>
+<path d="M 100 84 V 240 H 586" fill="none" stroke="#173c39" stroke-width="2"/>
+<polyline points="100.000,207.778 343.000,159.444 586.000,111.111" fill="none" stroke="#14746c" stroke-width="3"/>
+<circle cx="100.000" cy="207.778" r="6" fill="#a44125"/>
+<circle cx="343.000" cy="159.444" r="6" fill="#a44125"/>
+<circle cx="586.000" cy="111.111" r="6" fill="#a44125"/>
+<text x="340" y="291" text-anchor="middle" font-size="17">t (s)</text>
+<text x="30" y="328" font-size="23" font-weight="700">Monolog: razões iguais</text>
+<text x="100" y="358" font-size="17">log₂(y / 1 mV)</text>
+<path d="M 100 403.714 H 586" stroke="#d6d7cc"/>
+<text x="88" y="408.714" text-anchor="end" font-size="17">6</text>
+<text x="100.000" y="550" text-anchor="middle" font-size="17">0</text>
+<path d="M 100 424.429 H 586" stroke="#d6d7cc"/>
+<text x="88" y="429.429" text-anchor="end" font-size="17">5</text>
+<text x="262.000" y="550" text-anchor="middle" font-size="17">2</text>
+<path d="M 100 445.143 H 586" stroke="#d6d7cc"/>
+<text x="88" y="450.143" text-anchor="end" font-size="17">4</text>
+<text x="424.000" y="550" text-anchor="middle" font-size="17">4</text>
+<path d="M 100 465.857 H 586" stroke="#d6d7cc"/>
+<text x="88" y="470.857" text-anchor="end" font-size="17">3</text>
+<text x="586.000" y="550" text-anchor="middle" font-size="17">6</text>
+<path d="M 100 372 V 528 H 586" fill="none" stroke="#173c39" stroke-width="2"/>
+<polyline points="100.000,403.714 262.000,424.429 424.000,445.143 586.000,465.857" fill="none" stroke="#14746c" stroke-width="3"/>
+<circle cx="100.000" cy="403.714" r="6" fill="#a44125"/>
+<circle cx="262.000" cy="424.429" r="6" fill="#a44125"/>
+<circle cx="424.000" cy="445.143" r="6" fill="#a44125"/>
+<circle cx="586.000" cy="465.857" r="6" fill="#a44125"/>
+<text x="340" y="579" text-anchor="middle" font-size="17">t (s)</text>
+<text x="30" y="616" font-size="23" font-weight="700">Dilog: expoente 2</text>
+<text x="100" y="646" font-size="17">log₂(y / 1 mN)</text>
+<path d="M 100 789.230 H 586" stroke="#d6d7cc"/>
+<text x="88" y="794.230" text-anchor="end" font-size="17">1.585</text>
+<text x="100.000" y="838" text-anchor="middle" font-size="17">0</text>
+<path d="M 100 755.450 H 586" stroke="#d6d7cc"/>
+<text x="88" y="760.450" text-anchor="end" font-size="17">3.585</text>
+<text x="262.000" y="838" text-anchor="middle" font-size="17">1</text>
+<path d="M 100 721.670 H 586" stroke="#d6d7cc"/>
+<text x="88" y="726.670" text-anchor="end" font-size="17">5.585</text>
+<text x="424.000" y="838" text-anchor="middle" font-size="17">2</text>
+<path d="M 100 687.890 H 586" stroke="#d6d7cc"/>
+<text x="88" y="692.890" text-anchor="end" font-size="17">7.585</text>
+<text x="586.000" y="838" text-anchor="middle" font-size="17">3</text>
+<path d="M 100 660 V 816 H 586" fill="none" stroke="#173c39" stroke-width="2"/>
+<polyline points="100.000,789.230 262.000,755.450 424.000,721.670 586.000,687.890" fill="none" stroke="#14746c" stroke-width="3"/>
+<circle cx="100.000" cy="789.230" r="6" fill="#a44125"/>
+<circle cx="262.000" cy="755.450" r="6" fill="#a44125"/>
+<circle cx="424.000" cy="721.670" r="6" fill="#a44125"/>
+<circle cx="586.000" cy="687.890" r="6" fill="#a44125"/>
+<text x="340" y="867" text-anchor="middle" font-size="17">log₂(x / 1 cm)</text>
+<text x="30" y="886" font-size="15">Exemplos prescritos • pontos não são medições</text>
+</g></svg>

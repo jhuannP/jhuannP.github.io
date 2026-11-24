@@ -1,0 +1,26 @@
+from math import isfinite,sqrt,exp,sin,cos,pi,log,comb
+
+def finite(x):
+    if isinstance(x,bool): raise ValueError('Número real finito necessário')
+    try: y=float(x)
+    except (TypeError,ValueError,OverflowError): raise ValueError('Número real finito necessário') from None
+    if not isfinite(y): raise ValueError('Número real finito necessário')
+    return y
+
+def budget(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<=0:
+        raise ValueError('Quantidade inteira positiva necessária')
+    return n
+
+def symplectic_oscillator(q0,p0,h,n,omega=1):
+    q=finite(q0);p=finite(p0);h=finite(h);omega=finite(omega);budget(n)
+    if h<=0 or omega<=0: raise ValueError('Passo e frequência positivos necessários')
+    trace=[(0,q,p)]
+    for i in range(n):
+        p=finite(p-h*omega*omega*q);q=finite(q+h*p);trace.append(((i+1)*h,q,p))
+    return trace
+
+t,q,p=symplectic_oscillator(1,0,.1,1000)[-1]
+energy=(q*q+p*p)/2
+assert .47<energy<.53
+print(t,q,p,energy)

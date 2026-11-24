@@ -1,0 +1,4 @@
+up,v=.5,.5
+u=(up+v)/(1+up*v)
+assert u==.8
+print(u)

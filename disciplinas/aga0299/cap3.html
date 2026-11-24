@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>III · Propriedades integradas — AGA0299</title>
+<meta name="description" content="Morfologia, projeção, fotometria, H I, Tully–Fisher, massa, cores, formação estelar e evolução química.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('aga-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body><!-- portfolio:voltar --><a href="/disciplinas/" style="position:fixed;left:14px;bottom:14px;z-index:999;font:600 13px/1 system-ui,sans-serif;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.92);color:#1b1b2a;text-decoration:none;border:1px solid rgba(0,0,0,.12);box-shadow:0 4px 16px rgba(0,0,0,.12)">&larr; Portfólio</a>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>AGA0299 <em>notas de aula</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="fundamentos.html" title="Fundamentos de observação">0</a><a href="cap1.html" title="Perspectiva histórica">I</a><a href="cap2.html" title="A Via Láctea">II</a><a href="cap3.html" class="on" title="Propriedades integradas">III</a><a href="cap4.html" title="Espirais e lenticulares">IV</a><a href="cap5.html" title="Galáxias elípticas">V</a><a href="cap6.html" title="Núcleos ativos">VI</a><a href="cap7.html" title="Galáxias no Universo">VII</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<div class="chapter-hero" data-num="III">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo III </p>
+    <h1>Propriedades integradas</h1>
+    <p class="lede">Morfologia, projeção, fotometria, H I, Tully–Fisher, massa, cores, formação estelar e evolução química.</p>
+  </div>
+</div>
+<div class="layout">
+  <aside class="toc" aria-label="Módulos deste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol><li><a href="#inc"><span class="toc-num">5</span>Forma aparente, morfologia e inclinação</a></li><li><a href="#foto"><span class="toc-num">6</span>Fotometria: luz por área e isofotas</a></li><li><a href="#perfil"><span class="toc-num">7</span>Perfil exponencial, bojo e raio efetivo</a></li><li><a href="#hi"><span class="toc-num">8</span>H I: transforme um espectro em velocidades</a></li><li><a href="#tf"><span class="toc-num">9</span>Tully–Fisher: rotação como indicador de distância</a></li><li><a href="#massa"><span class="toc-num">10</span>Da rotação à massa e à razão massa/luz</a></li><li><a href="#cadeia1"><span class="toc-num">11</span>Questão encadeada resolvida: primeira metade</a></li><li><a href="#cadeia2"><span class="toc-num">12</span>Questão encadeada: segunda metade</a></li><li><a href="#cores"><span class="toc-num">13</span>Cores e populações: inferir a história estelar</a></li><li><a href="#gas"><span class="toc-num">14</span>Formação estelar: por que aparece uma exponencial?</a></li><li><a href="#metal"><span class="toc-num">15</span>Evolução química: gás, metais e rendimento</a></li><li><a href="#cosmo"><span class="toc-num">19</span>Cosmologia: por que aparece numa aula de galáxias?</a></li><li><a href="#provas"><span class="toc-num">18</span>Como isso aparece nas provas recentes</a></li></ol>
+  </aside>
+  <main id="conteudo" class="content">
+<article class="modulo" id="inc">
+<header class="modulo-h"><span class="modulo-num">Módulo 5</span><h2>Forma aparente, morfologia e inclinação</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Queremos a forma da galáxia; o que a imagem nos mostra?</h3>
+<p>Uma fotografia registra a distribuição de luz <strong>projetada no plano do céu</strong>. Não podemos viajar ao redor de uma galáxia distante para fotografá-la de outro lado. Suas estrelas se movem e muitas galáxias giram, mas os tempos de rotação são enormes comparados à duração de nossas observações. Além disso, girar em torno do próprio eixo não equivale a virar esse eixo em relação a nós. Para estudar sua estrutura global, dispomos essencialmente de uma perspectiva.</p>
+<p><strong>Forma intrínseca</strong> é a estrutura tridimensional do objeto, independente do observador. <strong>Forma aparente</strong> é o contorno que essa estrutura produz na imagem. <strong>Orientação</strong> descreve como o objeto está colocado em relação à nossa linha de visão. Uma mesma forma pode produzir imagens diferentes: um disco circular parece circular de frente e elíptico quando inclinado.</p>
+<p>O caminho é: medir a imagem, escolher um modelo geométrico e perguntar quais combinações de forma e orientação explicam a medida. <strong>Uma imagem não determina sozinha uma forma tridimensional única.</strong> Uma imagem elíptica pode representar um disco inclinado ou um sistema de estrelas com forma elipsoidal.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>O ângulo de inclinação não é a diagonal no papel</h3>
+<p>O disco tem um eixo perpendicular ao seu plano. Chamamos de \(i\) o ângulo entre esse eixo e a linha que liga o observador à galáxia: \(i=0^\circ\) significa <strong>de frente</strong>; \(i=90^\circ\), <strong>de perfil</strong>. Aumentar \(i\) aproxima a vista de perfil, sem mudar a galáxia ou sua distância. A direção da imagem na folha é outro ângulo, chamado ângulo de posição.</p>
+<figure class="widget-wrap"><div class="widget" data-widget="inclinacao-disco"></div></figure></div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Quais estruturas reconhecemos e como as classificamos?</h3>
+<p><strong>Morfologia</strong> é a descrição e classificação da aparência. O <strong>disco</strong> é a componente achatada; o <strong>bojo</strong>, a concentração central mais arredondada; uma <strong>barra</strong> é uma estrutura estelar alongada que atravessa o centro; os <strong>braços</strong> são padrões espirais no disco.</p>
+<ul><li><strong>Elípticas (E):</strong> luz geralmente suave, sem braços evidentes. O subtipo \(E_n\) usa \(n\simeq10(1-b/a)\): descreve achatamento <em>aparente</em>, não determina a forma espacial.</li><li><strong>Lenticulares (S0):</strong> disco e bojo, sem braços espirais proeminentes.</li><li><strong>Espirais (Sa, Sb, Sc):</strong> em geral, de Sa a Sc o bojo fica relativamente menos dominante e os braços mais abertos e fragmentados. Barradas recebem SB, como SBa ou SBc.</li><li><strong>Irregulares:</strong> não apresentam a organização regular das famílias anteriores.</li></ul>
+<p>Inclinação, poeira e resolução escondem estruturas. Uma espiral de perfil não deve ser classificada automaticamente como S0. A sequência de Hubble organiza aparências; não é uma linha do tempo obrigatória. Elípticas podem ser oblatas, prolatas (alongadas) ou triaxiais: o modelo de disco não serve indistintamente para todas.</p>
+<p class="fonte"><span>Fonte</span> AulaCap3: classificação morfológica e projeção de esferoides. Aplicação: P2/2025, Q2.</p>
+<h3 class="sketch-title" id="mapaproj">Forma real e forma projetada</h3>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Primeira hipótese: um disco circular muito fino</h3>
+<p>Adotamos um disco circular, plano, sem deformações e de espessura desprezível. A imagem é uma projeção aproximadamente ortogonal: a galáxia está tão distante em relação ao próprio tamanho que as linhas de visão são praticamente paralelas. O contorno escolhido deve representar o disco; poeira, braços e bojo podem distorcer esse contorno.</p>
+<p><strong>Símbolos antes da conta.</strong> \(R\) é o raio real do disco. Na imagem, \(a\) e \(b\) são os <strong>semieixos</strong> maior e menor; \(2a\) e \(2b\) são as medidas de ponta a ponta. A razão \(q=b/a\) não tem unidade e pode ser obtida em centímetros no papel ou em segundos de arco, desde que as duas medidas usem a mesma unidade.</p>
+<div class="center"></div>
+</div></section>
+<section class="note note-calc"><div class="cue"><span>DE ONDE VEM</span></div><div class="note-body"><h3>Projetar um comprimento produz o cosseno</h3>
+<p>Ao inclinar o disco, a direção que permanece no plano do céu conserva seu comprimento. A direção perpendicular a ela no disco fica encurtada na imagem. Sua projeção vale o comprimento original multiplicado por \(\cos i\). Em uma mesma escala de projeção \(s\), temos \(a=sR\) e \(b=sR\cos i\); dividindo:</p>
+<span class="eq-anchor" id="eq-5-1"></span><div class="math-display">\[\tag{5.1}
+q=\frac{b}{a}=\frac{sR\cos i}{sR}=\cos i,
+\qquad \boxed{i=\arccos q}.\]</div>
+<p>A escala \(s\), que incorpora distância e ampliação da imagem, cancela. Por isso não precisamos conhecer a distância para usar esta razão. Se o comprimento inteiro é 6 cm e a largura inteira 3 cm, \(q=3/6=0{,}5\) e \(i=\arccos(0{,}5)=60^\circ\).</p>
+</div></section>
+<section class="note note-exam"><div class="cue"><span>NA PROVA</span></div><div class="note-body"><h3>O que manter fixo e o que calcular</h3>
+<p>Na Q2 B de 2025, a orientação muda, mas a galáxia permanece a mesma. Para o disco fino, \(q_{45}=\cos45^\circ\simeq0{,}707\) e \(q_{80}=\cos80^\circ\simeq0{,}174\). Quanto maior \(i\), mais estreita a projeção. Use a calculadora em graus; \(45^\circ=\pi/4\) rad, não 45 rad.</p>
+</div></section>
+<section class="note note-warn"><div class="cue"><span>MEDIR COM CUIDADO</span></div><div class="note-body"><h3>Mesmo contorno e sem misturar disco com bojo</h3>
+<p>Alinhe a régua com o eixo longo e depois com a direção perpendicular. Em um ajuste elíptico, meça ambos no mesmo contorno de brilho (isofota). Se o bojo contaminar a espessura central, estime o contorno do disco separadamente e declare a aproximação; não combine arbitrariamente a ponta mais tênue com a faixa mais estreita. A fronteira difusa gera incerteza na razão.</p>
+<h3 class="sketch-title" id="mapaoblato">Incluindo a espessura do disco</h3>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Segunda hipótese: elipsoide oblato</h3>
+<p>Uma esfera comprimida ao longo de um eixo produz uma forma semelhante a uma lentilha. Nesse modelo, dois semieixos reais são iguais a \(A\) e o perpendicular vale \(B\), com \(B\leq A\). A espessura relativa é \(\xi=B/A\). Isso é <strong>geometria intrínseca</strong>, enquanto \(q=b/a\) é a razão observada. Assumimos simetria em torno do eixo curto e contornos bem descritos por esse modelo; não modelamos separadamente bojo, barra e braços.</p>
+</div></section>
+<section class="note note-calc"><div class="cue"><span>DE ONDE VEM</span></div><div class="note-body"><h3>A projeção combina extensão no plano e espessura</h3>
+<p>Para obter a largura projetada, olhe uma seção que contém o eixo curto: ela é uma elipse de semieixos \(A\) e \(B\). Um ponto dessa borda pode ser escrito como \(x=A\cos t\), \(z=B\sin t\), onde \(t\) apenas localiza o ponto. Na direção menor da imagem, sua coordenada projetada é \(u=x\cos i+z\sin i\). Uma expressão \(C\cos t+D\sin t\) tem máximo \(\sqrt{C^2+D^2}\); logo, o semieixo projetado corresponde a essa combinação, não à soma simples das duas extensões. A escala comum cancela ao dividir pelo semieixo maior:</p>
+<span class="eq-anchor" id="eq-5-2"></span><div class="math-display">\[\tag{5.2}
+\begin{aligned}
+b&amp;=s\sqrt{A^2\cos^2 i+B^2\sin^2 i},\qquad a=sA,\\
+q^2&amp;=\frac{b^2}{a^2}=\cos^2 i+\frac{B^2}{A^2}\sin^2 i,\\
+\boxed{q}&amp;\boxed{=\sqrt{\cos^2 i+\xi^2\sin^2 i}}.
+\end{aligned}\]</div>
+<p><strong>Confira os limites:</strong> de frente (\(i=0^\circ\)), \(q=1\); de perfil (\(i=90^\circ\)), \(q=\xi\); com espessura nula (\(\xi=0\)), recuperamos \(q=\cos i\). Assim, no item A da prova, a vista de perfil permite estimar \(\xi\) pela razão medida na figura. Sem conhecer \(i\) ou \(\xi\), uma única razão \(q\) não determina os dois.</p>
+</div></section>
+<section class="note note-calc"><div class="cue"><span>ISOLAR A INCÓGNITA</span></div><div class="note-body"><h3>Se a questão pede a inclinação</h3>
+<p>Usamos \(\sin^2 i=1-\cos^2 i\) e reorganizamos:</p>
+<span class="eq-anchor" id="eq-5-3"></span><div class="math-display">\[\tag{5.3}
+\begin{aligned}
+q^2&amp;=\cos^2 i+\xi^2(1-\cos^2 i)=\xi^2+(1-\xi^2)\cos^2 i,\\
+q^2-\xi^2&amp;=(1-\xi^2)\cos^2 i,\\
+\cos^2 i&amp;=\frac{q^2-\xi^2}{1-\xi^2},\quad
+\boxed{i=\arccos\sqrt{\frac{q^2-\xi^2}{1-\xi^2}}}.
+\end{aligned}\]</div>
+<p>Para \(q=0{,}50\) e \(\xi=0{,}20\), a fração é \((0{,}25-0{,}04)/0{,}96=0{,}21875\); sua raiz é 0,4677 e \(i\simeq62{,}1^\circ\). Exigimos \(0\leq\xi&lt;1\) e \(\xi\leq q\leq1\). Uma esfera (\(\xi=1\)) não revela orientação por sua forma.</p>
+</div></section>
+<section class="note note-exam"><div class="cue"><span>APLICAR E INTERPRETAR</span></div><div class="note-body"><h3>P2/2025 Q2 B: prever a nova aparência</h3>
+<p><strong>Exemplo condicional</strong>, não medição da prova: se o item A der \(\xi=0{,}15\), então</p>
+<span class="eq-anchor" id="eq-5-4"></span><div class="math-display">\[\tag{5.4}
+\begin{gathered}
+q_{45}=\sqrt{0{,}5+0{,}0225\times0{,}5}=0{,}715,\\
+q_{80}=\sqrt{0{,}030154+0{,}0225\times0{,}969846}=0{,}228.
+\end{gathered}\]</div>
+<p>Perto de perfil, a espessura evita que a imagem vire uma linha; por isso a diferença em relação ao disco fino fica mais importante.</p>
+<p class="fonte"><span>Fonte</span> Relação de projeção: AulaCap3, slide 13. Derivação geométrica didática; aplicação ao enunciado da P2/2025 Q2.</p>
+</div></section>
+</article>
+<article class="modulo" id="foto">
+<header class="modulo-h"><span class="modulo-num">Módulo 6</span><h2>Fotometria: luz por área e isofotas</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Qual ferramenta esta parte acrescenta?</h3>
+<p>A magnitude integrada resume toda a luz. A fotometria espacial pergunta <strong>onde essa luz está</strong>: concentrada no bojo, espalhada pelo disco, distribuída de forma simétrica? Isso permite medir escalas e separar componentes.</p>
+<p>\(I\): intensidade ou brilho por área angular. \(\mu\): brilho superficial expresso em mag/arcsec\(^2\). \(m\): magnitude integrada da região. \(\Omega\): área angular dessa região, em arcsec\(^2\). Neste módulo, \(\mu\) não é módulo de distância.</p>
+<p>Para brilho médio uniforme na região, \(F=I\Omega\). Aplicando a escala logarítmica:</p>
+<span class="eq-anchor" id="eq-6-1"></span><div class="math-display">\[\tag{6.1}
+\begin{aligned}\mu&amp;=-2{,}5\log(F/\Omega)+C\\
+&amp;=-2{,}5\log F+C+2{,}5\log\Omega\\
+&amp;=\boxed{m+2{,}5\log[\Omega/(1\un{arcsec}^2)]}.\end{aligned}\]</div>
+<p>A fórmula também define a <strong>média</strong> de brilho superficial de uma região não uniforme; não fornece seu perfil local.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Exemplo didático</div><p>Uma região tem \(m=15\) e ocupa 100 arcsec\(^2\). Então \(\log100=2\) e \(\mu=15+2{,}5\times2=20\) mag/arcsec\(^2\). A mesma luz espalhada por área maior tem brilho superficial menor, isto é, \(\mu\) maior.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Como ler isofotas?</h3>
+<p>Isofotas são curvas que ligam posições de igual brilho superficial. Ajustar elipses a elas fornece centro, orientação, \(a\), \(b\) e a variação radial do brilho. Mudanças na razão axial ou na orientação podem indicar barra, transição bojo/disco ou perturbação. Isófotas não são órbitas de estrelas.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>A inclinação desaparece? Não: corrigimos com hipóteses</h3>
+<p>Num disco ideal, fino e transparente, inclinar reduz a área projetada pelo fator \(\cos i\), sem reduzir a luz total. Portanto \(I_{\rm obs}=I_{\rm face}/\cos i\) e</p>
+<span class="eq-anchor" id="eq-6-2"></span><div class="math-display">\[\tag{6.2}
+\mu_{\rm face}=\mu_{\rm obs}-2{,}5\log(\cos i).\]</div>
+<p>Exemplo: \(i=60^\circ\), \(\mu_{\rm obs}=20\). Como \(\log0{,}5=-0{,}3010\), \(\mu_{\rm face}=20+0{,}7526=20{,}75\). De frente a mesma luz está espalhada por maior área aparente.</p>
+<p>Discos reais têm espessura e poeira: a expressão não é universal nem funciona arbitrariamente perto de \(90^\circ\). Corrigir projeção não determina sozinho a estrutura tridimensional. Em contexto cosmológico, existe ainda o escurecimento superficial \((1+z)^{-4}\), antes de correções de banda e evolução.</p>
+</div></section>
+</article>
+<article class="modulo" id="perfil">
+<header class="modulo-h"><span class="modulo-num">Módulo 7</span><h2>Perfil exponencial, bojo e raio efetivo</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Disco: como a luz diminui com a distância ao centro?</h3>
+<p>\(R\) é raio no plano do disco; \(I_0\) é brilho central extrapolado; \(h\) é comprimento de escala:</p>
+<span class="eq-anchor" id="eq-7-1"></span><div class="math-display">\[\tag{7.1}
+I(R)=I_0e^{-R/h}.\]</div>
+<p>Em \(R=h\), \(I/I_0=e^{-1}=0{,}368\). \(h\) não é a borda do disco. Usando \(\mu=-2{,}5\log I+C\):</p>
+<span class="eq-anchor" id="eq-7-2"></span><div class="math-display">\[\tag{7.2}
+\begin{aligned}\mu(R)-\mu_0&amp;=-2{,}5\log[e^{-R/h}]\\
+&amp;=2{,}5\log(e)\frac{R}{h}=1{,}086\frac{R}{h}.\end{aligned}\]</div>
+<p>Por isso \(\mu\) contra \(R\) é uma reta em um trecho exponencial. Se a inclinação dessa reta é \(s\) mag/kpc, então \(h=1{,}086/s\) kpc.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Exemplo didático de ajuste por dois pontos</div><p>\(\mu(2\un{kpc})=21\) e \(\mu(6\un{kpc})=23\):</p>
+<span class="eq-anchor" id="eq-7-3"></span><div class="math-display">\[\tag{7.3}
+s=\frac{23-21}{6-2}=0{,}5\un{mag/kpc},\quad h=\frac{1{,}086}{0{,}5}=2{,}172\un{kpc}.\]</div>
+<p>O intercepto é \(\mu_0=21-s\times2=20\). Só use pontos de uma região dominada pelo disco; bojo, barra, poeira e céu residual alteram o ajuste.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Integrar o disco: o que significa luminosidade total?</h3>
+<p>Um anel de raio \(R\) e largura \(dR\) tem área \(2\pi R\,dR\). Se \(I\) estiver em luminosidade por área física:</p>
+<span class="eq-anchor" id="eq-7-4"></span><div class="math-display">\[\tag{7.4}
+L=\int_0^\infty I_0e^{-R/h}2\pi R\,dR
+=2\pi I_0h^2\int_0^\infty xe^{-x}dx=2\pi I_0h^2.\]</div>
+<p>Usamos \(x=R/h\) e a integral vale 1. Se \(I\) e \(h\) estiverem em unidades angulares, a integral dá fluxo, não luminosidade sem conversão. Para disco exponencial infinito, \(R_e\simeq1{,}678h\) contém metade da luz.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Bojo e Sérsic</h3>
+<span class="eq-anchor" id="eq-7-5"></span><div class="math-display">\[\tag{7.5}
+I(R)=I_e\exp\{-b_n[(R/R_e)^{1/n}-1]\}.\]</div>
+<p>\(R_e\): raio de meia luz; \(I_e\): intensidade nele; \(n\): forma/concentração do perfil; \(b_n\): escolhido para que \(R_e\) contenha metade da luz. \(n=1\) é exponencial; \(n=4\) é de Vaucouleurs. Somar componentes em <strong>intensidade</strong>: \(I_{\rm total}=I_{\rm disco}+I_{\rm bojo}\); não somar suas magnitudes.</p>
+<p class="fonte"><span>Fonte</span> Binney e Merrifield, pp. impressas 214–217: decomposição bojo/disco e limitações.</p>
+</div></section><figure class="widget-wrap"><div class="widget" data-widget="perfil-sersic"></div></figure>
+</article>
+<article class="modulo" id="hi">
+<header class="modulo-h"><span class="modulo-num">Módulo 8</span><h2>H I: transforme um espectro em velocidades</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Primeiro, identifique o gráfico</h3>
+<p>H I significa hidrogênio neutro; a linha de 21 cm permite observar gás. Num <strong>perfil integrado</strong>, o eixo horizontal pode estar em velocidade Doppler, km/s, e o vertical em densidade de fluxo, Jy ou mJy. Cada ponto não é uma posição no disco: mistura emissão de regiões com velocidades semelhantes. Uma curva de rotação espacial é outro gráfico, \(v\) contra raio.</p>
+<p>\(v_-\) e \(v_+\): limites do perfil no critério escolhido. \(v_{\rm sys}\): velocidade de recessão do centro. \(W\): largura total. \(v_{\rm rot}\): velocidade circular intrínseca. \(i\): inclinação conhecida pela imagem/modelo. \(c=299792\) km/s.</p>
+<span class="eq-anchor" id="eq-8-1"></span><div class="math-display">\[\tag{8.1}
+v_{\rm sys}\simeq\frac{v_++v_-}{2},\quad W=v_+-v_-,\quad
+\boxed{v_{\rm rot}\simeq\frac{W}{2\sin i}}.\]</div>
+<p>Na relação <a href="#eq-8-1">(8.1)</a>, o fator 2 aparece porque um lado se aproxima e o outro se afasta relativamente ao centro. O seno aparece porque só medimos a componente na linha de visada.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Exemplo didático, todas as etapas</div><p>Limites a 800 e 1200 km/s; \(i=60^\circ\):</p>
+<span class="eq-anchor" id="eq-8-2"></span><div class="math-display">\[\tag{8.2}
+\begin{aligned}v_{\rm sys}&amp;=(1200+800)/2=1000\un{km/s},\\
+W&amp;=1200-800=400\un{km/s},\\
+v_{\rm rot}\sin i&amp;=W/2=200\un{km/s},\\
+v_{\rm rot}&amp;=200/0{,}8660=230{,}94\un{km/s},\\
+z&amp;\simeq v_{\rm sys}/c=1000/299792=0{,}00334.\end{aligned}\]</div>
+<p>\(z\) é adimensional. Para deslocamentos pequenos, \(z=(\lambda_{\rm obs}-\lambda_0)/\lambda_0\simeq v_r/c\). A recessão do centro não é a velocidade de rotação.</p></div>
+</div></section>
+<section class="note note-warn"><div class="cue"><span>ATENÇÃO</span></div><div class="note-body"><h3>Como escolher a largura sem inventar precisão?</h3>
+<p>Siga a definição fornecida: \(W_{20}\) usa 20% do pico, \(W_{50}\) usa 50%. Use anotações numéricas do perfil quando disponíveis. Uma largura estimada pelas asas é apenas aproximação e deve ser declarada. Turbulência e resolução podem exigir correções antes de usar a calibração. Se \(i\) estiver próximo de zero, \(\sin i\) é pequeno e a correção fica muito sensível ao erro.</p>
+</div></section>
+<section class="note note-exam"><div class="cue"><span>NA PROVA</span></div><div class="note-body"><h3>Aplicação real: P2/2024 Q1C</h3>
+<p>O perfil anota velocidade 660 km/s e largura 306 km/s. Logo \(z\simeq0{,}00220\) e \(v_{\rm rot}=153/\sin i\) km/s. O \(i\) deve vir da imagem do item A; a largura sozinha não o fornece.</p>
+<h3 class="sketch-title" id="mapahi">Um espectro.  Três velocidades distintas.</h3>
+<aside class="box box-concept"><div class="box-h">Leia primeiro os eixos</div><p>O perfil integrado reúne o gás da galáxia por velocidade Doppler. O eixo horizontal é velocidade, não posição no disco. A figura abaixo é <strong>esquemática</strong>, não uma observação ou definição de \(W_{20}\).</p></aside>
+<div class="center"></div>
+<aside class="box box-exam"><div class="box-h">1 / Centro: recessão da galáxia</div><span class="eq-anchor" id="eq-8-3"></span><div class="math-display">\[\tag{8.3}
+v_{\rm sys}=\frac{800+1200}{2}=1000\un{km/s}.\]</div>
+<p>É a velocidade do sistema em relação ao referencial da observação.</p></aside>
+<aside class="box box-calc"><div class="box-h">2 / Largura: os dois lados do disco</div><span class="eq-anchor" id="eq-8-4"></span><div class="math-display">\[\tag{8.4}
+W=1200-800=400\un{km/s}.\]</div>
+<p>Cada lado contribui com aproximadamente \(v_{\rm rot}\sin i=W/2\).</p></aside>
+<aside class="box box-warn"><div class="box-h">3 / Rotação: corrigir a projeção</div><span class="eq-anchor" id="eq-8-5"></span><div class="math-display">\[\tag{8.5}
+v_{\rm rot}=\frac{W}{2\sin i}.\]</div>
+<p>Com \(i=60^\circ\), \(v_{\rm rot}=230{,}94\) km/s. Não use \(W\) nem \(v_{\rm sys}\) diretamente em uma calibração que pede \(v_{\rm rot}\).</p></aside>
+</div></section><figure class="widget-wrap"><div class="widget" data-widget="perfil-hi"></div></figure>
+</article>
+<article class="modulo" id="tf">
+<header class="modulo-h"><span class="modulo-num">Módulo 9</span><h2>Tully–Fisher: rotação como indicador de distância</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Por que uma velocidade pode dizer algo sobre luz?</h3>
+<p>Espirais apresentam uma relação empírica entre velocidade de rotação e luminosidade. A rotação responde ao potencial gravitacional; a quantidade de estrelas contribui para a massa e para a luz. Isso motiva a correlação, mas sua calibração e dispersão precisam ser medidas: não é uma identidade exata entre massa e luz.</p>
+<p>O roteiro é \(q\rightarrow i\rightarrow W\rightarrow v_{\rm rot}\rightarrow M_B\rightarrow d\). A magnitude aparente \(m_B\) entra <strong>depois</strong> de estimar \(M_B\).</p>
+</div></section>
+<section class="note note-key"><div class="cue"><span>LEGENDA / REFERÊNCIA</span></div><div class="note-body"><h3>Calibrações de trabalho usadas na consulta</h3>
+<p>Se a questão fornecer coeficientes, eles prevalecem. Nas expressões abaixo o logaritmo recebe o valor numérico de \(v_{\rm rot}\) em km/s:</p>
+<span class="eq-anchor" id="eq-9-1"></span><div class="math-display">\[\tag{9.1}
+\begin{array}{ll}
+\text{Sa:}&amp;M_B=-9{,}95\log[v_{\rm rot}/(1\un{km/s})]+3{,}15,\\
+\text{Sb:}&amp;M_B=-10{,}2\log[v_{\rm rot}/(1\un{km/s})]+2{,}71,\\
+\text{Sc:}&amp;M_B=-11\log[v_{\rm rot}/(1\un{km/s})]+3{,}31.
+\end{array}\]</div>
+<p>As calibrações <a href="#eq-9-1">(9.1)</a> dependem da variável adotada. Algumas calibrações usam largura corrigida \(W\simeq2v_{\rm rot}\), outras usam \(v_{\rm rot}\). Os coeficientes mudam; não substitua um pelo outro mantendo a mesma fórmula.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Exemplo didático</div><p>Sc, \(v_{\rm rot}=200\) km/s, \(m_B=12\), \(A_B=0\):</p>
+<span class="eq-anchor" id="eq-9-2"></span><div class="math-display">\[\tag{9.2}
+\begin{aligned}\log200&amp;=2{,}30103,\\
+M_B&amp;=-11(2{,}30103)+3{,}31=-22{,}0013,\\
+\mu_0&amp;=12-(-22{,}0013)=34{,}0013,\\
+d&amp;=10^{(34{,}0013+5)/5}\un{pc}=10^{7{,}80026}\un{pc}\\
+&amp;\simeq6{,}313\times10^7\un{pc}=63{,}13\un{Mpc}.\end{aligned}\]</div>
+<p>Interpretação: a luminosidade estimada pela rotação é grande; para chegar com \(m_B=12\), a fonte precisa estar distante, dentro das hipóteses adotadas.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Se pedir constante de Hubble</h3>
+<p>Use uma distância obtida independentemente da lei de Hubble. No regime local, \(v_{\rm sys}\simeq H_0d\), portanto \(H_0=v_{\rm sys}/d\). Se \(v_{\rm sys}=4400\) km/s e \(d=63{,}13\) Mpc, \(H_0\simeq69{,}7\) km s\(^{-1}\) Mpc\(^{-1}\).</p>
+<span class="eq-anchor" id="eq-9-3"></span><div class="math-display">\[\tag{9.3}
+H_0\simeq\frac{v_{\rm sys}}{d}\quad\text{(distância independente; regime local).}\]</div>
+<p>Velocidades peculiares tornam uma única galáxia, sobretudo próxima, uma estimativa incerta de \(H_0\).</p>
+<p class="fonte"><span>Fonte</span> P2/2024 Q1C–D; P2/2025 Q3. Livro, pp. 422–424.</p>
+</div></section>
+</article>
+<article class="modulo" id="massa">
+<header class="modulo-h"><span class="modulo-num">Módulo 10</span><h2>Da rotação à massa e à razão massa/luz</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Qual é a pergunta física?</h3>
+<p>Quanta massa gravitante é necessária para manter uma órbita de velocidade \(v\) no raio \(R\)? Em aproximação esférica, a aceleração gravitacional é \(G\mathcal M(&lt;R)/R^2\); a centrípeta é \(v^2/R\).</p>
+<span class="eq-anchor" id="eq-10-1"></span><div class="math-display">\[\tag{10.1}
+\begin{aligned}\frac{v^2}{R}&amp;=\frac{G\mathcal M(&lt;R)}{R^2},\\
+v^2R&amp;=G\mathcal M(&lt;R),\\
+\boxed{\mathcal M(&lt;R)=\frac{v^2R}{G}}.&amp;\end{aligned}\]</div>
+<p>\(\mathcal M(&lt;R)\): massa <strong>dentro</strong> do raio usado, incluindo matéria escura; \(v\): velocidade circular nesse raio, corrigida da inclinação. É estimativa esférica, não inversão exata da gravidade de um disco achatado.</p>
+</div></section>
+<section class="note note-key"><div class="cue"><span>LEGENDA / REFERÊNCIA</span></div><div class="note-body"><h3>Unidades práticas</h3>
+<span class="eq-anchor" id="eq-10-2"></span><div class="math-display">\[\tag{10.2}
+\begin{gathered}
+G=4{,}3009\times10^{-6}\un{kpc}\,(\un{km/s})^2M_\odot^{-1},\\
+\frac{\mathcal M}{M_\odot}=2{,}325\times10^5[v/(\un{km/s})]^2[R/(\un{kpc})].
+\end{gathered}\]</div>
+<p>Exemplo didático: \(v=150\) km/s e \(R=30\) kpc:</p>
+<span class="eq-anchor" id="eq-10-3"></span><div class="math-display">\[\tag{10.3}
+\begin{aligned}v^2&amp;=150^2=22500,\\
+v^2R&amp;=22500\times30=675000,\\
+\mathcal M&amp;=2{,}325\times10^5\times675000\,M_\odot\\
+&amp;=1{,}5694\times10^{11}M_\odot.\end{aligned}\]</div>
+<p>Se a medida na imagem era <strong>diâmetro</strong> de 30 kpc, seria necessário usar \(R=15\) kpc, dando metade dessa massa.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Razão massa/luminosidade</h3>
+<p>\(\Upsilon=\mathcal M/L\). Em unidades solares, divida os números de \(\mathcal M/M_\odot\) e \(L/L_\odot\). Se \(L_B=2\times10^{10}L_{B,\odot}\):</p>
+<span class="eq-anchor" id="eq-10-4"></span><div class="math-display">\[\tag{10.4}
+\Upsilon_B=\frac{1{,}5694\times10^{11}}{2\times10^{10}}=7{,}85\,M_\odot/L_{B,\odot}.\]</div>
+<p>Compare massa e luminosidade de regiões compatíveis. \(\Upsilon\) dinâmica pode incluir matéria escura; não é a mesma razão massa/luz apenas da população estelar. A banda importa, assim como idade, poeira e população.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Como verificar o resultado</h3>
+<p>Dobrar \(v\) com \(R\) fixo quadruplica a massa. Dobrar \(R\) com \(v\) fixo dobra a massa. Uma massa muito diferente após trocar km/s por m/s sugere conversão inconsistente de \(G\).</p>
+<p class="fonte"><span>Fonte</span> P2/2024 Q1F e I.</p>
+</div></section>
+</article>
+<article class="modulo" id="cadeia1">
+<header class="modulo-h"><span class="modulo-num">Módulo 11</span><h2>Questão encadeada resolvida: primeira metade</h2></header>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Exemplo didático completo, não transcrição de prova</div><p>Uma espiral Sc tem eixo maior de 6 cm e menor de 3 cm na figura. Adote disco fino. Seu perfil H I vai de 5800 a 6200 km/s. A magnitude aparente é \(m_B=12\), sem extinção. O diâmetro angular é \(2'\). Use Tully–Fisher Sc da página  e \(M_{B,\odot}=5{,}48\). Pedidos: inclinação, velocidades, redshift, distância, tamanho, luminosidade, massa e massa/luz.</p></div>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Antes da conta, veja as dependências</h3>
+<p>A imagem dá inclinação; inclinação corrige a velocidade do espectro. A velocidade alimenta Tully–Fisher e dá magnitude absoluta. A diferença entre absoluta e aparente dá distância. Só então a medida angular vira tamanho, que permite estimar massa.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> 1. Inclinação</div><span class="eq-anchor" id="eq-11-1"></span><div class="math-display">\[\tag{11.1}
+q=b/a=3/6=0{,}5,\qquad \cos i=q,\qquad i=\arccos0{,}5=60^\circ.\]</div>
+<p>O eixo menor é metade do maior porque estamos vendo um círculo projetado, sob a hipótese de disco fino.</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> 2. Velocidade do centro, largura e rotação</div><span class="eq-anchor" id="eq-11-2"></span><div class="math-display">\[\tag{11.2}
+\begin{aligned}v_{\rm sys}&amp;=(6200+5800)/2=6000\un{km/s},\\
+W&amp;=6200-5800=400\un{km/s},\\
+v_{\rm rot}&amp;=\frac{400}{2\sin60^\circ}=\frac{400}{1{,}73205}=230{,}94\un{km/s},\\
+z&amp;\simeq6000/299792=0{,}0200.\end{aligned}\]</div>
+<p>Não usar 6000 km/s como velocidade de rotação: é a recessão do sistema.</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> 3. Magnitude absoluta pela calibração</div><span class="eq-anchor" id="eq-11-3"></span><div class="math-display">\[\tag{11.3}
+\begin{aligned}\log230{,}94&amp;=2{,}36350,\\
+M_B&amp;=-11(2{,}36350)+3{,}31=-25{,}9985+3{,}31=-22{,}6885.\end{aligned}\]</div>
+<p>O sinal negativo é esperado: uma galáxia luminosa tem magnitude absoluta bastante negativa. Isso não significa luminosidade negativa.</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> 4. Distância</div><p>\(\mu_0=12-(-22{,}6885)=34{,}6885\). Logo \(d/(10\un{pc})=10^{34{,}6885/5}=10^{6{,}9377}\) e \(d=10^{7{,}9377}\) pc \(\simeq86{,}64\) Mpc. Não use ainda a lei de Hubble: a distância aqui veio de Tully–Fisher.</p></div>
+</div></section>
+</article>
+<article class="modulo" id="cadeia2">
+<header class="modulo-h"><span class="modulo-num">Módulo 12</span><h2>Questão encadeada: segunda metade</h2></header>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> 5. Diâmetro e raio</div><p>Continuando a página anterior: \(d=86{,}64\) Mpc \(=86640\) kpc e \(\theta=2'\).</p>
+<span class="eq-anchor" id="eq-12-1"></span><div class="math-display">\[\tag{12.1}
+\begin{aligned}\theta_{\rm rad}&amp;=\frac{2}{3437{,}75}=0{,}00058178,\\
+D&amp;=86640\times0{,}00058178\un{kpc}\simeq50{,}41\un{kpc},\\
+R&amp;=D/2\simeq25{,}20\un{kpc}.\end{aligned}\]</div>
+<p>Essa é a dimensão física do contorno medido; uma observação mais profunda pode detectar extensão maior.</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> 6. Luminosidade</div><span class="eq-anchor" id="eq-12-2"></span><div class="math-display">\[\tag{12.2}
+\begin{aligned}L_B/L_{B,\odot}&amp;=10^{0{,}4[5{,}48-(-22{,}6885)]}\\
+&amp;=10^{0{,}4(28{,}1685)}=10^{11{,}2674}\simeq1{,}85\times10^{11}.\end{aligned}\]</div>
+<p>É o brilho próprio na banda B; não é a massa em estrelas.</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> 7. Massa aproximada dentro do raio</div><p>Adotamos, adicionalmente, que a velocidade obtida representa a rotação no raio \(25{,}20\) kpc e usamos aproximação esférica:</p>
+<span class="eq-anchor" id="eq-12-3"></span><div class="math-display">\[\tag{12.3}
+\begin{aligned}\mathcal M/M_\odot&amp;=2{,}325\times10^5(230{,}94)^2(25{,}20)\\
+&amp;\simeq2{,}325\times10^5\times53333\times25{,}20\\
+&amp;\simeq3{,}12\times10^{11}.\end{aligned}\]</div>
+<p>Sem a hipótese sobre o raio da velocidade, combinar o máximo de rotação com qualquer raio não é automaticamente válido.</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> 8. Massa/luz e interpretação</div><span class="eq-anchor" id="eq-12-4"></span><div class="math-display">\[\tag{12.4}
+\Upsilon_B\simeq\frac{3{,}12\times10^{11}}{1{,}85\times10^{11}}
+=1{,}69\,M_\odot/L_{B,\odot}.\]</div>
+<p>O resultado sozinho não separa estrelas, gás e matéria escura. Seriam necessários modelos e observações adicionais.</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> 9. Se também pedir \(H_0\)</div><p>\(H_0=6000/86{,}64=69{,}3\) km s\(^{-1}\) Mpc\(^{-1}\). O quociente tem a unidade correta porque a velocidade está em km/s e a distância em Mpc. Este é um exemplo didático: uma determinação cosmológica confiável exige controlar calibração, velocidades peculiares e incertezas de uma amostra.</p></div>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Como aproveitar pontos se travar em um item</h3>
+<p>Deixe o item posterior em função do anterior: \(D=d\theta\), \(\mathcal M=v^2d\theta/(2G)\) se \(\theta\) for diâmetro. Mostre o método e as unidades, mesmo sem um valor confiável de \(d\). Não invente dado ausente.</p>
+</div></section>
+<section class="note note-key"><div class="cue"><span>LEGENDA / REFERÊNCIA</span></div><div class="note-body"><h3>Ponte do Capítulo 3: propriedades integradas (slides 56–64)</h3>
+<p>Os slides reúnem tendências observacionais ao longo da sequência morfológica, não leis exatas para toda galáxia. O tamanho característico indicado é \(30\)–\(40\) kpc. Para \(M_B=-20{,}5\) e \(M_{B,\odot}=5{,}48\), a luminosidade corresponde aproximadamente à luz de \(2\times10^{10}\) estrelas iguais ao Sol; isto é uma <strong>equivalência luminosa</strong>, não uma contagem real de estrelas, pois a população possui massas e luminosidades variadas.</p>
+<p>Nas espirais, o slide usa \(\mathcal M\simeq v_{\rm rot}^2R/G\) e encontra massas da ordem de \((1\)–\(3)\times10^{11}M_\odot\). A razão massa/luz típica indicada é \(\Upsilon\sim5\,M_\odot/L_\odot\). Brilho superficial médio e densidade superficial de massa ficam, respectivamente, perto de \(22{,}69\) mag arcsec\(^{-2}\) e \(100\,M_\odot\,\mathrm{pc}^{-2}\) na amostra exibida. A dispersão dos gráficos é parte do resultado: o tipo morfológico organiza tendências, mas não determina sozinho cada propriedade.</p>
+<p>O gás e a cor mudam de modo sistemático: S0/Sa têm fração \(M_{\rm HI}/M_T\) da ordem de 2%, enquanto espirais tardias chegam à ordem de 10%; E/S0 apresentam populações atuais mais vermelhas, \(B-V\simeq1{,}0\), e tipos tardios mais azuis, \(B-V\simeq0{,}6\). A sequência vermelha do SDSS é dominada por tipos precoces; a sequência azul, por espirais tardias. Isso sugere histórias de formação estelar diferentes, mas <strong>não</strong> prova uma trajetória evolutiva simples E\(\rightarrow\)S0\(\rightarrow\)Sa\(\rightarrow\cdots\).</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Dos tipos de Hubble à morfologia quantitativa (slides 65–68)</h3>
+<p>O objetivo passa de “dar um nome à aparência” para medir a distribuição de luz em grandes amostras e em alto redshift. Os slides apresentam o sistema CAS:</p>
+<ul><li><strong>Concentração:</strong> \(C=5\log(r_{80}/r_{20})\). Quanto maior a concentração, maior a parcela de luz acumulada em raios pequenos.</li><li><strong>Assimetria:</strong> compara a imagem \(I\) com a mesma imagem rotacionada em \(180^\circ\). Resíduo grande sinaliza estrutura assimétrica, interação ou irregularidade, depois de corrigir o fundo e recentrar adequadamente.</li><li><strong>Granulação ou clumpiness:</strong> compara \(I\) com uma versão suavizada \(B\); estruturas de alta frequência deixam resíduo \(I-B\). O desenho do slide mostra esse alisamento. Não confundir esta operação com a rotação usada em \(A\).</li></ul>
+<p>Esses indicadores se sobrepõem entre classes: são coordenadas estatísticas, não fronteiras perfeitas. A pergunta do slide 68 é justamente como combinar cortes em \(C\), \(A\) e \(S\) para selecionar uma população de interesse e depois validar contaminação e completude.</p>
+<aside class="box box-concept"><div class="box-h">Capítulo 3 do começo ao fim</div><p>Slides 2–36: morfologia e projeção; 37–41: brilho superficial e isofotas; 42–55: distâncias, Tully–Fisher, redshift e cosmologia; 56–64: propriedades integradas; 65–68: morfologia quantitativa; 69–74: evolução fotométrica; 75–78: evolução química e comparação espectral. O slide 79 encerra o capítulo.</p></aside>
+<p class="fonte"><span>Fonte</span> AulaCap3, slides 56–68; gráficos e valores devem ser lidos como resultados da amostra apresentada.</p>
+</div></section>
+</article>
+<article class="modulo" id="cores">
+<header class="modulo-h"><span class="modulo-num">Módulo 13</span><h2>Cores e populações: inferir a história estelar</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>O que as cores dizem e o que não dizem?</h3>
+<p>A luz integrada mistura muitas estrelas. Estrelas jovens massivas emitem muita luz azul e vivem pouco; uma população sem formação recente tende a ficar mais vermelha. Mas poeira e metalicidade também alteram as cores. Cor isolada não determina uma idade única sem modelo.</p>
+<p>\(U,B,V\): magnitudes aparentes em três filtros. \(U-B\) e \(B-V\): diferenças entre magnitudes. \(\alpha\): inclinação da função inicial de massas (IMF) na convenção da tabela. \(\tau\): tempo característico de formação/consumo de gás. \(\beta=1/\tau\): inverso desse tempo, <strong>na unidade especificada</strong>.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Roteiro: observação \(\rightarrow\) tabela \(\rightarrow\) parâmetro</h3>
+<ol><li>Calcule cores: por exemplo \(B=10{,}90\), \(V=10{,}38\) dão \(B-V=0{,}52\). Se \(U=10{,}86\), \(U-B=-0{,}04\).</li><li>Confira se cores e modelo estão corrigidos da poeira e no mesmo sistema.</li><li>Escolha a coluna da IMF pedida; não mude \(\alpha\) apenas para ajustar melhor.</li><li>Procure o valor da cor na tabela. Use linha mais próxima ou interpolação, declarando o método.</li><li>Converta \(\beta\) em \(\tau\) e só depois use um modelo de evolução temporal.</li></ol>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Interpolação aberta: exemplo com a tabela da P2/2025</div><p>Na coluna \(\alpha=2{,}45\), \(\beta=2\) corresponde a \(B-V=0{,}53\) e \(\beta=3\) a 0,63. Para uma cor 0,60:</p>
+<span class="eq-anchor" id="eq-13-1"></span><div class="math-display">\[\tag{13.1}
+\begin{aligned}\text{fração do intervalo}&amp;=\frac{0{,}60-0{,}53}{0{,}63-0{,}53}=\frac{0{,}07}{0{,}10}=0{,}7,\\
+\beta&amp;=2+0{,}7(3-2)=2{,}7.\end{aligned}\]</div>
+<p>Se \(\beta\) estiver em Gyr\(^{-1}\), \(\tau=1/2{,}7=0{,}370\) Gyr. Se for um parâmetro adimensional que multiplica uma unidade diferente, essa conversão muda; leia o cabeçalho e o enunciado.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>IMF: o que a potência representa?</h3>
+<p>Numa convenção comum, \(dN/dm=Cm^{-\alpha}\): número de estrelas por intervalo de massa. A massa total inicial é \(\int m(dN/dm)dm\), não apenas \(\int(dN/dm)dm\). Já \(dN/d\log m\) tem expoente diferente. Use a convenção do professor/tabela; a prova de 2025 pede explicitamente \(\alpha=2{,}45\).</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Interpretação física</h3>
+<p>\(\tau\) pequeno: gás consumido rapidamente, formação recente fraca no modelo. \(\tau\) grande: formação sustentada por mais tempo. Isso ajuda a explicar tendências de cor ao longo da morfologia; não demonstra que toda Sa evoluirá obrigatoriamente para outro tipo.</p>
+<p class="fonte"><span>Fonte</span> AulaCap3, slides 69–74: IMF, taxa de formação estelar, cores integradas e síntese de populações.</p>
+</div></section>
+</article>
+<article class="modulo" id="gas">
+<header class="modulo-h"><span class="modulo-num">Módulo 14</span><h2>Formação estelar: por que aparece uma exponencial?</h2></header>
+<section class="note note-key"><div class="cue"><span>LEGENDA / REFERÊNCIA</span></div><div class="note-body"><h3>Modelo simplificado e símbolos</h3>
+<p>\(M_g(t)\): massa de gás; \(M_*(t)\): massa líquida presa em estrelas e remanescentes. \(M_b=M_g+M_*\): massa bariônica conservada. \(\tau\): escala temporal constante. \(t\): tempo decorrido. \(f_g=M_g/M_b\): fração de gás. Não há entrada/saída de matéria e inicialmente \(M_g(0)=M_b\).</p>
+<p>Adotamos \(dM_g/dt=-M_g/\tau\): quanto mais gás, mais se consome por unidade de tempo. O sinal negativo indica perda de gás. Trata-se de consumo <strong>líquido</strong>; se houver retorno estelar explícito, a taxa de formação bruta precisa ser relacionada a ele.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Derivação que pode ser pedida na prova</h3>
+<span class="eq-anchor" id="eq-14-1"></span><div class="math-display">\[\tag{14.1}
+\begin{aligned}\frac{dM_g}{dt}&amp;=-\frac{M_g}{\tau},\\
+\frac{dM_g}{M_g}&amp;=-\frac{dt}{\tau},\\
+\int_{M_b}^{M_g(t)}\frac{dM'_g}{M'_g}&amp;=-\frac1\tau\int_0^t dt',\\
+\ln M_g(t)-\ln M_b&amp;=-t/\tau,\\
+\ln\left[\frac{M_g(t)}{M_b}\right]&amp;=-t/\tau,\\
+\boxed{\ln f_g=-t/\tau},\qquad &amp;\boxed{f_g=e^{-t/\tau}}.\end{aligned}\]</div>
+<p>O logaritmo aqui é <strong>natural</strong>. Como \(M_*=M_b-M_g\), segue \(M_*=M_b(1-e^{-t/\tau})\).</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Exemplo didático: \(M_b=5\times10^{10}M_\odot\), \(\tau=5\) Gyr</div><p>Aos \(t=10\) Gyr, \(t/\tau=2\) e \(f_g=e^{-2}=0{,}1353\). Assim:</p>
+<span class="eq-anchor" id="eq-14-2"></span><div class="math-display">\[\tag{14.2}
+M_g=0{,}1353(5\times10^{10})=6{,}77\times10^9M_\odot,
+\quad M_*=4{,}32\times10^{10}M_\odot.\]</div>
+<p>Nos primeiros \(t_H=10^8\) anos \(=0{,}1\) Gyr:</p>
+<span class="eq-anchor" id="eq-14-3"></span><div class="math-display">\[\tag{14.3}
+M_*(t_H)=5\times10^{10}[1-e^{-0{,}1/5}]
+=5\times10^{10}(0{,}01980)=9{,}90\times10^8M_\odot.\]</div>
+<p>Isso estima a conversão inicial segundo o modelo; não prova que todas essas estrelas pertençam ao halo observado. Para um intervalo \(t_1\) a \(t_2\), subtraia as massas: \(\Delta M_*=M_b(e^{-t_1/\tau}-e^{-t_2/\tau})\).</p>
+<p class="fonte"><span>Fonte</span> P2/2025 Q1D pede a derivação; P2/2024 Q1E usa o intervalo inicial.</p></div>
+<h3 class="sketch-title" id="mapagas">Acompanhe a matéria.  Depois, os metais.</h3>
+<aside class="box box-concept"><div class="box-h">Uma caixa fechada: gás e estrelas</div><p>Neste modelo, a massa bariônica \(M_b\) é conservada. Não há entrada nem saída de matéria. O consumo líquido de gás aumenta a massa presa em estrelas e remanescentes.</p></aside>
+<div class="center"></div>
+<aside class="box box-calc"><div class="box-h">O relógio do modelo</div><span class="eq-anchor" id="eq-14-4"></span><div class="math-display">\[\tag{14.4}
+\frac{dM_g}{dt}=-\frac{M_g}{\tau}\quad\Longrightarrow\quad f_g=\frac{M_g}{M_b}=e^{-t/\tau}.\]</div>
+<p>\(\tau\) é um tempo. A razão \(t/\tau\) não tem unidade: converta ambos para anos ou ambos para Gyr.</p></aside>
+<div class="center"></div>
+<aside class="box box-exam"><div class="box-h">A composição do gás também muda</div><span class="eq-anchor" id="eq-14-5"></span><div class="math-display">\[\tag{14.5}
+Z=-p\ln f_g.\]</div>
+<p>\(Z\): fração de metais no gás. \(p\): rendimento. Ao consumir gás e produzir metais, o modelo prevê enriquecimento do gás restante.</p></aside>
+<aside class="box box-warn"><div class="box-h">Matéria escura fica fora desse denominador</div><p>Para a caixa fechada, \(f_g=M_g/(M_g+M_*)\). Não substitua a massa bariônica pela massa dinâmica total, que inclui matéria escura.</p></aside>
+</div></section>
+</article>
+<article class="modulo" id="metal">
+<header class="modulo-h"><span class="modulo-num">Módulo 15</span><h2>Evolução química: gás, metais e rendimento</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Por que menos gás costuma significar mais metais?</h3>
+<p>Estrelas produzem elementos pesados e devolvem parte deles ao gás. No modelo fechado, o gás restante vai sendo enriquecido. Em astronomia, “metais” são elementos mais pesados que hélio.</p>
+<p>\(Z\): fração em massa de metais <strong>no gás</strong>. \(p\): rendimento efetivo de novos metais por massa líquida presa em estrelas. \(f_g\): fração de gás relativa à massa bariônica inicial/conservada. Hipóteses: caixa fechada, mistura homogênea, aproximação de reciclagem instantânea e gás inicialmente sem metais.</p>
+<span class="eq-anchor" id="eq-15-1"></span><div class="math-display">\[\tag{15.1}
+\boxed{Z=-p\ln f_g=p\ln(1/f_g)}.\]</div>
+<p>É uma relação entre composição e consumo de gás, não uma medida direta de matéria escura.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Entenda a derivação</h3>
+<p>Ao aumentar a massa presa em estrelas em \(dM_*&gt;0\), o gás perde metais já existentes \(Z\,dM_*\) e ganha metais novos \(p\,dM_*\). Como \(dM_g=-dM_*\):</p>
+<span class="eq-anchor" id="eq-15-2"></span><div class="math-display">\[\tag{15.2}
+\begin{aligned}d(M_gZ)&amp;=(p-Z)dM_*,\\
+M_g\,dZ+Z\,dM_g&amp;=-(p-Z)dM_g,\\
+M_g\,dZ&amp;=-p\,dM_g,\\
+\int_0^Z dZ'&amp;=-p\int_{M_b}^{M_g}\frac{dM'_g}{M'_g},\\
+Z&amp;=-p\ln(M_g/M_b)=-p\ln f_g.\end{aligned}\]</div>
+<p>Se a composição inicial for \(Z_0\), o resultado será \(Z=Z_0-p\ln f_g\).</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Exemplo didático</div><p>Para \(f_g=0{,}20\) e \(p=0{,}01\), \(\ln0{,}20=-1{,}6094\). Portanto \(Z=-0{,}01(-1{,}6094)=0{,}01609\): aproximadamente 1,61% da massa do gás está em metais. Não confundir 0,016 com 0,016%.</p>
+<p>Se quiser inferir gás de \(Z\), \(Z/p=-\ln f_g\) leva a \(f_g=e^{-Z/p}\). Combinando com o módulo anterior, \(f_g=e^{-t/\tau}\) implica \(Z=pt/\tau\), somente sob essas hipóteses.</p></div>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Exemplo dos slides: vizinhança solar e duas frações de gás</div><p>O slide 77 adota \(f_g\simeq0{,}12\) e \(Z\simeq Z_\odot\simeq0{,}02\). Assim,</p>
+<span class="eq-anchor" id="eq-15-3"></span><div class="math-display">\[\tag{15.3}
+p=\frac{Z}{-\ln f_g}=\frac{0{,}02}{-\ln0{,}12}\simeq0{,}0094.\]</div>
+<p>Com esse rendimento, \(f_g=0{,}50\) dá \(Z=-0{,}0094\ln0{,}50\simeq0{,}0065\simeq0{,}32Z_\odot\); já \(f_g=0{,}02\) dá \(Z\simeq0{,}0368\simeq1{,}84Z_\odot\). A tendência é a mensagem física: muito gás remanescente corresponde a pouco processamento químico; pouco gás, a maior enriquecimento no modelo fechado.</p>
+<p>Os valores de superfície citados no mesmo slide, \(\Sigma_*=44{,}6\) e \(\Sigma_g=5{,}3\,M_\odot\,\mathrm{pc}^{-2}\), dariam literalmente \(5{,}3/(44{,}6+5{,}3)\simeq0{,}106\). A diferença para 0,12 pode refletir arredondamento ou convenção adicional. Em exercício, use a fração explicitamente fornecida e registre a definição adotada.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Do modelo simples ao espectro observado (slide 78)</h3>
+<p>Modelos modernos de síntese populacional comparam simultaneamente várias linhas e índices espectrais. Cada indicador responde de forma diferente à idade e à composição; o ajuste conjunto ajuda a reduzir degenerescências, mas continua dependente do modelo estelar, da IMF, da poeira e do histórico de formação. No gráfico do slide 78, as distribuições dos resíduos normalizados mostram como o modelo reproduz diferentes índices em uma amostra de 2010 galáxias do SDSS: não se deve ler uma única linha como medição completa da metalicidade.</p>
+<p class="fonte"><span>Fonte</span> AulaCap3, slides 75–78; Binney e Merrifield, pp. impressas 306–308.</p>
+</div></section>
+<section class="note note-warn"><div class="cue"><span>ATENÇÃO</span></div><div class="note-body"><h3>Erro importante em questões que também dão massa dinâmica</h3>
+<p>\(M_g/\mathcal M_{\text{dinâmica}}\) não é em geral \(M_g/(M_g+M_*)\), pois a massa dinâmica inclui matéria escura. A P2/2024 Q1G conecta gás e enriquecimento: deixe explícita a definição de massa usada. Uma fração operacional calculada com massa dinâmica não pode ser interpretada silenciosamente como a fração da caixa fechada. H I também pode exigir correções para hélio e gás molecular antes de representar todo o gás.</p>
+<p class="fonte"><span>Fonte</span> Binney e Merrifield, pp. impressas 306–308.</p>
+</div></section>
+</article>
+<article class="modulo" id="cosmo">
+<header class="modulo-h"><span class="modulo-num">Módulo 19</span><h2>Cosmologia: por que aparece numa aula de galáxias?</h2></header>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>A ligação com o que estamos medindo</h3>
+<p>Para comparar galáxias distantes, precisamos converter ângulos, fluxos e redshifts em dimensões, luminosidades e épocas. Essas conversões dependem do modelo cosmológico: como o Universo se expande e quais componentes determinam essa expansão.</p>
+<p>\(a(t)\): fator de escala; \(H=\dot a/a\): taxa de expansão; \(H_0\): valor atual. \(\Omega_m\), \(\Omega_r\), \(\Omega_\Lambda\): densidades atuais de matéria, radiação e energia escura em unidades da densidade crítica \(\rho_c=3H_0^2/(8\pi G)\). \(\Omega_k\) parametriza curvatura, não uma substância. Matéria inclui bárions e matéria escura.</p>
+<p>Num modelo homogêneo e isotrópico com constante cosmológica:</p>
+<span class="eq-anchor" id="eq-19-1"></span><div class="math-display">\[\tag{19.1}
+H(z)^2=H_0^2[\Omega_r(1+z)^4+\Omega_m(1+z)^3+\Omega_k(1+z)^2+\Omega_\Lambda].\]</div>
+<p>A relação cosmológica \(1+z=a_0/a_{\text{emissão}}\) conecta redshift à expansão. Não é necessário integrar essa expressão em exercícios locais que autorizam \(d\simeq cz/H_0\).</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Por que há mais de uma distância?</h3>
+<ul><li>\(D_L\): distância de luminosidade, definida por \(F=L/(4\pi D_L^2)\).</li><li>\(D_A\): distância angular, definida por \(D=\theta D_A\) para dimensões transversais.</li><li>Elas se relacionam por \(D_L=(1+z)^2D_A\) nas condições usuais de propagação e conservação de fótons.</li></ul>
+<span class="eq-anchor" id="eq-19-3"></span><div class="math-display">\[\tag{19.3}
+D_L=(1+z)^2D_A.\]</div>
+<p>Em redshifts pequenos, suas diferenças são pequenas. Em \(z=1\), o fator entre elas é 4: usar \(D_L\) como \(D_A\) superestimaria o tamanho por quatro. Fotometria em banda também pode exigir correção K, porque o filtro observa comprimentos de onda diferentes no referencial da fonte.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Tempo de Hubble não é automaticamente idade do Universo</h3>
+<p>\(1/H_0\) é uma escala temporal. Com \(H_0=70\) km s\(^{-1}\) Mpc\(^{-1}\) e 1 Mpc \(=3{,}0857\times10^{19}\) km:</p>
+<span class="eq-anchor" id="eq-19-2"></span><div class="math-display">\[\tag{19.2}
+H_0=\frac{70}{3{,}0857\times10^{19}}\un{s^{-1}}=2{,}2685\times10^{-18}\un{s^{-1}},\]</div>
+<p>logo \(1/H_0=4{,}41\times10^{17}\) s \(\simeq14{,}0\) Gyr. A idade efetiva depende de toda a história de expansão.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Resposta conceitual reutilizável</h3>
+<p>“As propriedades inferidas de uma galáxia dependem das observações e das conversões adotadas. Inclinação e poeira afetam imagem e fotometria; distância transforma fluxo em luminosidade e ângulo em tamanho; dinâmica revela massa gravitante. Modelos estelares e químicos interpretam a luz e o gás, sem eliminar as degenerescências.”</p>
+</div></section>
+</article>
+<article class="modulo" id="provas">
+<header class="modulo-h"><span class="modulo-num">Módulo 18</span><h2>Como isso aparece nas provas recentes</h2></header>
+<section class="note note-exam"><div class="cue"><span>NA PROVA</span></div><div class="note-body"><h3>P2/2025 Q2: geometria de NGC 4565</h3>
+<p>A questão assume \(i=90^\circ\), fornece distância de 12,894 Mpc e mostra barra de \(5{,}0'\). Seu roteiro é:</p>
+<ol><li>Medir \(a,b\) no disco, usando contorno consistente: \(\xi=b/a\) porque está de perfil. Não usar apenas o bojo como espessura.</li><li>Se disco fino, \(q(45^\circ)=\cos45^\circ=0{,}7071\) e \(q(80^\circ)=0{,}17365\).</li><li>Se oblato, \(q=\sqrt{\cos^2i+\xi^2\sin^2i}\). Apenas como exemplo, \(\xi=0{,}15\) daria 0,7150 e 0,2280; esse \(\xi\) não é uma medição da figura.</li><li>Seja \(k=\ell_{\rm disco}/\ell_{\rm barra}\). Então \(\theta=5k\) minutos e \(D=0{,}29089\times12{,}894\times5k=18{,}754k\) kpc. Medir \(k\) completa o resultado; raio é metade.</li></ol>
+</div></section>
+<section class="note note-exam"><div class="cue"><span>NA PROVA</span></div><div class="note-body"><h3>P2/2025 Q1: cores e consumo de gás</h3>
+<p>Leituras gráficas típicas aproximadas: Sa 0,72; Sb 0,60; Sc 0,52 em \(B-V\). A tabela para \(\alpha=2{,}45\) sugere linhas \(\beta=4,3,2\) ou interpolação, como na página .</p>
+<p><strong>Ambiguidade real de unidade:</strong> o item C diz \(\tau\) em \(10^9\) anos. Literalmente, \(\tau=0{,}25;0{,}333;0{,}5\) Gyr. Com \(t_0=10\) Gyr, \(f_g=e^{-40};e^{-30};e^{-20}\). Se a convenção fosse \(10^{10}\) anos, obteríamos \(\tau=2{,}5;3{,}33;5\) Gyr e \(f_g=e^{-4};e^{-3};e^{-2}\). Essa segunda interpretação é <strong>condicional</strong>, não correção confirmada. Não troque a unidade silenciosamente para produzir resultados mais plausíveis.</p>
+</div></section>
+<section class="note note-exam"><div class="cue"><span>NA PROVA</span></div><div class="note-body"><h3>P2/2025 Q3: H I, Tully–Fisher e Hubble</h3>
+<p>Leituras aproximadas das asas: 580–950 km/s, portanto \(W\simeq370\) km/s, \(v_{\rm sys}\simeq765\) km/s, \(z\simeq0{,}00255\) e \(v_{\rm rot}\simeq185/\sin i\). Não é uma medição formal de \(W_{20}\). Obtenha \(i\) e morfologia na imagem. O \(m=11{,}2\) aparece no item C, sem banda explícita; usá-lo com calibração B exige declarar \(m=m_B\). Sem banda e inclinação, não existe distância numérica única fundamentada.</p>
+</div></section>
+<section class="note note-exam"><div class="cue"><span>NA PROVA</span></div><div class="note-body"><h3>P2/2024 Q1: encadeamento amplo</h3>
+<p>B: cores e população; C: perfil H I; D: Tully–Fisher; E: massa estelar formada no intervalo inicial; F: magnitude absoluta, massa e massa/luz; G: gás e metais; H–I: curva de rotação e halo. Os roteiros anteriores cobrem esses passos. As figuras e limites medidos ainda são parte da resolução: o texto não substitui a leitura do enunciado.</p>
+</div></section>
+</article>
+<nav class="pager"><a class="prev" href="cap2.html"><span>← Anterior</span>II · A Via Láctea</a><a class="next" href="cap4.html"><span>Próximo →</span>IV · Espirais e lenticulares</a></nav>
+  </main>
+</div>
+<footer class="footer">
+  <p><strong>AGA0299 · Astrofísica Galáctica e Extragaláctica</strong> · IAG/USP · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir das aulas e notas expandidas de Prof. Ronaldo E. de Souza (IAG/USP) e de Binney &amp; Merrifield, <em>Galactic Astronomy</em> (1998). Texto, figuras interativas e erros são das notas; não é material oficial da disciplina.</p>
+  <p class="small">Gerado a partir do caderno LaTeX por <code>scripts/gerar_site_aga.py</code>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/widgets/inclinacao-disco.js" defer></script>
+<script src="assets/widgets/perfil-hi.js" defer></script>
+<script src="assets/widgets/perfil-sersic.js" defer></script>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

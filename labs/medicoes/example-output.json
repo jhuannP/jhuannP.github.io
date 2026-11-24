@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "experiment": "linear-position-fit",
+  "config": {
+    "method": "OLS com intercepto",
+    "weights": "iguais",
+    "units": {
+      "time": "s",
+      "position": "m"
+    }
+  },
+  "input": {
+    "name": "measurements.csv",
+    "sha256": "7148b62abcc4a100079a2a2df402eece4e2938b0b8338cbea6cbe921cc934bba",
+    "source_kind": "synthetic"
+  },
+  "software": {
+    "python": "3.14.5",
+    "implementation": "CPython",
+    "code_sha256": "21a2baa63ce4430a50e059a4339e719a4f33b439b2c3bb42f4f970b9afa10f7b"
+  },
+  "result": {
+    "count": 5,
+    "intercept_m": 1.04,
+    "velocity_m_s": 1.98,
+    "SSE_m2": 0.03600000000000003,
+    "RMSE_m": 0.08485281374238575,
+    "residuals_m": [
+      -0.040000000000000036,
+      0.08000000000000007,
+      -0.09999999999999964,
+      0.1200000000000001,
+      -0.0600000000000005
+    ]
+  },
+  "interpretation": "Resumo de ajuste; não valida movimento real, erro de medição ou mecanismo científico."
+}

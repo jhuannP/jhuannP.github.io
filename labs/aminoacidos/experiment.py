@@ -1,0 +1,19 @@
+"""Três macrostados de um aminoácido sem cadeia lateral ionizável.
+pH imposto externamente, atividades aproximadas idealmente.
+"""
+from math import isfinite,log
+
+def distribution(pH,pK1=2.34,pK2=9.60):
+    if not all(isfinite(v) for v in (pH,pK1,pK2)) or pK1>=pK2 or max(abs(v) for v in (pH,pK1,pK2))>100:
+        raise ValueError('Valores finitos na faixa numérica do laboratório e pK1<pK2')
+    logs=[-2*pH,-pK1-pH,-pK1-pK2]
+    shift=max(logs);weights=[10**(v-shift) for v in logs];den=sum(weights)
+    plus,zero,minus=[v/den for v in weights]
+    charge=plus-minus
+    variance=max(0.,plus+minus-charge*charge)
+    return dict(plus=plus,zero=zero,minus=minus,charge=charge,
+                bound_protons=2*plus+zero,pI=(pK1+pK2)/2,
+                slope=-log(10)*variance)
+
+if __name__=='__main__':
+    for pH in (2.34,5.97,7,9.60):print(pH,distribution(pH))

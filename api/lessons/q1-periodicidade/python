@@ -1,0 +1,5 @@
+from fractions import Fraction as Q
+n=2; S=5
+r1=Q(n*n,8-S); r2=Q(n*n,10-S)
+print("razão de escalas, sem unidade e sem espécies atribuídas:",r2/r1)
+assert r2/r1==Q(3,5)

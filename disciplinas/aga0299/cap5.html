@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V · Galáxias elípticas — AGA0299</title>
+<meta name="description" content="Perfis de brilho, modelo de King, cinemática, Faber–Jackson e o plano fundamental.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('aga-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body><!-- portfolio:voltar --><a href="/disciplinas/" style="position:fixed;left:14px;bottom:14px;z-index:999;font:600 13px/1 system-ui,sans-serif;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.92);color:#1b1b2a;text-decoration:none;border:1px solid rgba(0,0,0,.12);box-shadow:0 4px 16px rgba(0,0,0,.12)">&larr; Portfólio</a>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>AGA0299 <em>notas de aula</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="fundamentos.html" title="Fundamentos de observação">0</a><a href="cap1.html" title="Perspectiva histórica">I</a><a href="cap2.html" title="A Via Láctea">II</a><a href="cap3.html" title="Propriedades integradas">III</a><a href="cap4.html" title="Espirais e lenticulares">IV</a><a href="cap5.html" class="on" title="Galáxias elípticas">V</a><a href="cap6.html" title="Núcleos ativos">VI</a><a href="cap7.html" title="Galáxias no Universo">VII</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<div class="chapter-hero" data-num="V">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo V </p>
+    <h1>Galáxias elípticas</h1>
+    <p class="lede">Perfis de brilho, modelo de King, cinemática, Faber–Jackson e o plano fundamental.</p>
+  </div>
+</div>
+<div class="layout">
+  <aside class="toc" aria-label="Módulos deste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol><li><a href="#elipticas"><span class="toc-num">34</span>Galáxias elípticas: perfis, caroços e cinemática</a></li></ol>
+  </aside>
+  <main id="conteudo" class="content">
+<article class="modulo" id="elipticas">
+<header class="modulo-h"><span class="modulo-num">Módulo 34</span><h2>Galáxias elípticas: perfis, caroços e cinemática</h2></header>
+<details class="cobertura"><summary>Fontes e cobertura deste módulo</summary><p><strong>AulaCap5, slides 1–27: completo</strong> (23/11/2026). Apoio: Cap5, pp. 2–43, que traz mais texto e as perguntas de estudo. Correspondência: slides 3–12 \(\leftrightarrow\) Cap5 pp. 4–15 (perfis); 13–14 \(\leftrightarrow\) 17–22 (distorções); 15–19 \(\leftrightarrow\) 23–29 (rotação); 20–23 \(\leftrightarrow\) 31–36 (dispersão); 24–26 \(\leftrightarrow\) 37–41 (Faber–Jackson, plano fundamental, Mg\(_2\)).
+
+
+<strong>Provas:</strong> perfil de King de NGC 3379 (P3/2011, 2012, 2017, 2018, 2021, 2023, Q1); caroços centrais (P3/2014 Q1, P3/2016 Q3). Já no caderno P1+P2: Sérsic e raio efetivo (módulo 7). Disco \(\times\) bojo e \(B/T\): módulo 31.</p></details>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Que problema este capítulo resolve?</h3>
+<p>Desde os anos 1920, as elípticas pareciam os objetos mais simples: luz suave, sem braços, sem disco, “como bojos sem galáxia em volta”. O capítulo mostra que essa simplicidade é aparente. As perguntas são três. <strong>Como a luz se distribui?</strong> Perfis e caroços. <strong>Como as estrelas se movem?</strong> Pouca rotação e muita dispersão. <strong>Que regularidades ligam tamanho, brilho e movimento?</strong> Faber–Jackson e plano fundamental.</p>
+<p class="fonte"><span>Fonte</span> AulaCap5, slides 1–2; Cap5, pp. 2–3 (linha do tempo e tópicos).</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Primeiros perfis: Hubble e de Vaucouleurs</h3>
+<p><strong>Hubble (1930)</strong> propôs um perfil empírico, parecido no centro com o de aglomerados globulares e com o de uma esfera isotérmica:</p>
+<span class="eq-anchor" id="eq-34-1"></span><div class="math-display">\[\tag{34.1}
+I(r)=\frac{I_0}{(1+r/r_0)^2}.\]</div>
+<p>Para \(r\gg r_0\), \(I\propto r^{-2}\), e a luz numa coroa de raio \(r\) e largura \(dr\) é \(2\pi r\,I\,dr\propto dr/r\). A luminosidade integrada cresce como \(\ln r\) e <strong>diverge</strong> (problema 2 do Cap5). O perfil não pode valer até raios arbitrários.</p>
+<p><strong>De Vaucouleurs</strong> propôs a lei \(r^{1/4}\), que ajusta muito melhor. Em NGC 3379, o ajuste vale até um brilho cerca de mil vezes abaixo do brilho do céu (de Vaucouleurs e Capaccioli, 1979). Na forma com raio efetivo \(r_e\), o raio que contém metade da luz:</p>
+<span class="eq-anchor" id="eq-34-2"></span><div class="math-display">\[\tag{34.2}
+\log\frac{I(r)}{I_e}=-3{,}3307\left[\left(\frac{r}{r_e}\right)^{1/4}-1\right].\]</div>
+<p>Como os bojos seguem o mesmo perfil, surgiu a ideia de que bojos seriam “pequenas elípticas” dentro de discos. O módulo 31 mostrou que isso só vale para os bojos clássicos.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Brilho médio dentro de \(r_e\) (problema 1 do Cap5)</div><p>A luminosidade total da lei \(r^{1/4}\) é \(L=7{,}215\,\pi I_e r_e^2\) (módulo 31). Por definição de \(r_e\), metade dela está dentro de \(r_e\). Logo</p>
+<span class="eq-anchor" id="eq-34-3"></span><div class="math-display">\[\tag{34.3}
+\langle I\rangle_{r_e}=\frac{L/2}{\pi r_e^2}=\frac{7{,}215}{2}\,I_e=3{,}607\,I_e.\]</div>
+<p>Em magnitudes: \(\langle\mu\rangle_e=\mu_e-2{,}5\log3{,}607=\mu_e-1{,}39\). O brilho médio é 1,39 mag por segundo de arco quadrado mais intenso que o brilho na borda de \(r_e\).</p></div>
+<p class="fonte"><span>Fonte</span> AulaCap5, slides 3–4; Cap5, pp. 4–5 e 42.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Por que esses perfis? Função de distribuição</h3>
+<p>O brilho que vemos é estrelas projetadas. Jeans adaptou da mecânica dos fluidos a <strong>função de distribuição</strong> \(f(\vec x,\vec v)\): quantas estrelas há em cada posição com cada velocidade. A densidade é a integral sobre as velocidades, e o brilho superficial é a densidade projetada ao longo da linha de visada, convertida em luz pela razão massa/luminosidade \(M/L\):</p>
+<span class="eq-anchor" id="eq-34-4"></span><div class="math-display">\[\tag{34.4}
+\begin{gathered}
+\rho(x,y,z)=\iiint f(x,y,z,v_x,v_y,v_z)\,dv_x\,dv_y\,dv_z,\\
+\Sigma(r,\theta)=\left(\frac{M}{L}\right)^{-1}\int\rho\,dl.
+\end{gathered}\]</div>
+<p>Teorema de Jeans: num sistema estacionário, \(f\) só pode depender das <strong>integrais de movimento</strong>, como a energia \(E=\frac12mv^2+U\) e o momento angular \(L\). A distribuição maxwelliana (\(f\propto e^{-E/\sigma^2}\)) é um caso particular e produz a esfera isotérmica, cuja massa diverge (\(\rho\propto r^{-2}\) fora; módulo 32).</p>
+<p class="fonte"><span>Fonte</span> AulaCap5, slide 5; Cap5, pp. 6–7.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Modelo de King: a esfera isotérmica rebaixada</h3>
+<p>King (1966) corrigiu a divergência com um argumento físico. Galáxias vizinhas exercem <strong>força de maré</strong> e arrancam as estrelas rápidas demais, com velocidade acima da de escape (\(E&gt;0\)). Então \(f\) é a maxwelliana <em>menos</em> a parte que escaparia. Ela vai a zero na energia de escape, e o perfil termina num raio finito, o <strong>raio de maré</strong> \(r_t\): massa e luminosidade passam a ser finitas. Se \(r_t\to\infty\), volta-se à isotérmica. O raio de núcleo \(r_c\) marca onde o brilho central começa a cair.</p>
+<p>Aproximação analítica de King (1962) para o brilho:</p>
+<span class="eq-anchor" id="eq-34-5"></span><div class="math-display">\[\tag{34.5}
+I(r)=k\left\{\frac{1}{\left(1+r^2/r_c^2\right)^{1/2}}-\frac{1}{\left(1+r_t^2/r_c^2\right)^{1/2}}\right\}^2.\]</div>
+<p><strong>Limites (problema 3 do Cap5; P3/2011 Q1).</strong> No centro, \(r=0\):</p>
+<span class="eq-anchor" id="eq-34-6"></span><div class="math-display">\[\tag{34.6}
+I_0=k\left\{1-\frac{1}{\left(1+r_t^2/r_c^2\right)^{1/2}}\right\}^2.\]</div>
+<p>Para \(r\gg r_c\): \((1+r^2/r_c^2)^{-1/2}\simeq r_c/r\) e, como \(r_t\gg r_c\), \((1+r_t^2/r_c^2)^{-1/2}\simeq r_c/r_t\). Então</p>
+<span class="eq-anchor" id="eq-34-7"></span><div class="math-display">\[\tag{34.7}
+I(r)\simeq k\,r_c^2\left(\frac1r-\frac1{r_t}\right)^2\equiv f_1\left(\frac1r-\frac1{r_t}\right)^2,\]</div>
+<p>que vai a zero exatamente em \(r=r_t\).</p>
+<p><strong>NGC 3379 (M105)</strong> é ajustada muito bem por King, com a vantagem de um modelo com base teórica. Nem todas as elípticas concordam tão bem, então não há garantia de que a interpretação valha em geral. NGC 3379 fica no centro do grupo de Leão; uma forma de testar a truncagem por maré é comparar \(r_t\) com o que a massa do grupo e a distância às vizinhas preveem.</p>
+<p class="fonte"><span>Fonte</span> AulaCap5, slides 6–7; Cap5, pp. 8–10 e 42.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> NGC 3379 pelo modelo de King (P3/2012, 2017, 2018, 2021, 2023, Q1)</div><p>Enunciado aberto (P3/2017): figura de \(\log f\) contra \(\log r\) (em \(''\)) com o ajuste de King e uma seta em \(r_t\); \(d=10{,}391\) Mpc; \(B_T=10{,}24\); \(\log f_B=0{,}81\); razão matéria escura/bariônica \(=4{,}97\).</p>
+<p><strong>Leitura da figura</strong> (aproximada; refaça com régua na prova): eixo horizontal com 0, 1 e 2 igualmente espaçados; a seta de \(r_t\) está a cerca de 0,67 de década depois do 2, ou seja \(\log r_t\approx2{,}67\) e \(r_t\approx470''\). A marca de \(r_c\) fica em \(\log r_c\approx0{,}48\), \(r_c\approx3''\).</p>
+<p><strong>A. Dimensão.</strong></p>
+<span class="eq-anchor" id="eq-34-8"></span><div class="math-display">\[\tag{34.8}
+\begin{gathered}
+r_t=\frac{470}{206\,265}\times10\,391\ \mathrm{kpc}\approx23{,}7\ \mathrm{kpc}\quad(\text{diâmetro}\approx47\ \mathrm{kpc}),\\
+r_c\approx150\ \mathrm{pc}.
+\end{gathered}\]</div>
+<p><strong>B. Massa estelar.</strong> Módulo de distância \(5\log(1{,}0391\times10^7)-5=30{,}08\), então \(M_B=10{,}24-30{,}08=-19{,}84\). Com \(M_{B,\odot}=5{,}48\) (valor do caderno P1+P2):</p>
+<span class="eq-anchor" id="eq-34-9"></span><div class="math-display">\[\tag{34.9}
+\begin{aligned}
+L_B&amp;=10^{-0{,}4\,(-19{,}84-5{,}48)}\,L_\odot=10^{10{,}13}=1{,}35\times10^{10}\,L_\odot,\\
+M_*&amp;=f_B\,L_B=10^{0{,}81}\times1{,}35\times10^{10}=8{,}7\times10^{10}\,M_\odot.
+\end{aligned}\]</div>
+<p><strong>C. Massa total</strong>, supondo a mesma proporção cósmica: escura \(=4{,}97\times\) bariônica, total \(=(1+4{,}97)\,M_*\):</p>
+<span class="eq-anchor" id="eq-34-10"></span><div class="math-display">\[\tag{34.10}
+M_{\rm tot}\approx5{,}97\times8{,}7\times10^{10}=5{,}2\times10^{11}\,M_\odot.\]</div>
+<p><strong>Conferir:</strong> usar a massa estelar como toda a matéria bariônica despreza o gás, pouco importante em elípticas. A proporção cósmica é uma hipótese, não uma medida desta galáxia.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Por que a lei \(r^{1/4}\)? Relaxação violenta</h3>
+<p>A partir dos anos 1980, simulações (van Albada, 1982) mostraram que o perfil \(r^{1/4}\) surge naturalmente do <strong>colapso</strong>. Uma nuvem inicial quase uniforme está fora de equilíbrio quando as estrelas se formam. O sistema oscila, o potencial varia rapidamente, e as órbitas se redistribuem até um estado relaxado. Se o fator de colapso é grande, o perfil final é indistinguível da lei de de Vaucouleurs. O perfil guarda as <strong>condições iniciais</strong> da formação.</p>
+<p class="fonte"><span>Fonte</span> AulaCap5, slide 8; Cap5, p. 11.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Sérsic: o perfil estatisticamente melhor</h3>
+<p>O perfil de Sérsic, com \(n=1\) para o disco e \(n=4\) para de Vaucouleurs:</p>
+<span class="eq-anchor" id="eq-34-11"></span><div class="math-display">\[\tag{34.11}
+I(r)=I_0\exp\left[-\left(\frac{r}{r_0}\right)^{1/n}\right].\]</div>
+<p>Caon et al. (1993), com elípticas de Virgem, mostraram que os resíduos do ajuste são sistematicamente menores com Sérsic: o \(n\) livre absorve diferenças reais entre galáxias. O resíduo do ajuste \(r^{1/4}\) oscila com o raio, um sinal de que o modelo não tem a forma certa. Longhetti et al. (2007) ajustaram Sérsic a elípticas em \(z=1{,}5\): o perfil já estava estabelecido cerca de 4,3 Gyr após o Big Bang. Comparado com o tempo de cruzamento \(t_{\rm cr}=R/\sigma\) (da ordem de \(10^7\)–\(10^8\) anos), isso é dezenas a centenas de cruzamentos: tempo de sobra para relaxar.</p>
+<p class="fonte"><span>Fonte</span> AulaCap5, slides 9–10; Cap5, pp. 12–13.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Caroços e cúspides: o centro não segue Sérsic</h3>
+<p>Com imagens de alta resolução (Kormendy et al., 2009):</p>
+<ul><li><strong>Elípticas brilhantes</strong> (\(M_B&lt;-21{,}66\)), como NGC 4472, seguem Sérsic fora, mas têm um <strong>caroço</strong> (core): luz a menos no centro em relação à extrapolação de Sérsic.</li><li><strong>Elípticas menos brilhantes</strong>, como NGC 4551 e NGC 4458, têm uma <strong>cúspide</strong> (cuspy): luz a mais no centro.</li></ul>
+<p>Interpretação provável: em elípticas gigantes, formadas por fusões, pares de buracos negros supermassivos ejetam estrelas do centro e escavam o caroço. Em elípticas menores, gás que cai ao centro forma estrelas e cria o excesso. Os bojos ficam na mesma sequência das elípticas <em>sem</em> caroço.</p>
+<p class="fonte"><span>Fonte</span> AulaCap5, slides 11–12; Cap5, pp. 14–16.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Roteiro para caroço e excesso central (P3/2014 Q1, P3/2016 Q3)</div><p>Enunciados abertos: NGC 4458 (2014), perfil com ajuste de Sérsic e excesso central; NGC 4472 (2016), caroço, \(d=16{,}063\) Mpc, \(M_{V,\odot}=4{,}80\), \(M_V^T=-23{,}24\), \(f\sim10\,M_\odot/L_\odot\). Os números saem das figuras impressas; aqui fica o caminho.</p>
+<ol><li><strong>Tamanho do caroço:</strong> leia o raio \(r_c\) (em \(''\)) onde o perfil se separa do ajuste; \(r_c(\mathrm{pc})=r_c('')\times d(\mathrm{pc})/206\,265\).</li><li><strong>Excesso ou falta de brilho em magnitudes:</strong> \(\Delta\mu=\mu_{\rm obs}-\mu_{\rm ajuste}\); a razão de intensidades é \(I_{\rm obs}/I_{\rm aj}=10^{-0{,}4\Delta\mu}\).</li><li><strong>Luz do caroço,</strong> supondo brilho uniforme \(I_{\rm exc}\) dentro de \(r_c\): \(\Delta l=\pi r_c^2I_{\rm exc}\), com \(r_c\) em \(''\) e \(I\) por \(''^2\). Magnitude: \(\Delta m=-2{,}5\log\Delta l\) (mesma constante do \(\mu\)).</li><li><strong>Fração da luz total:</strong> \(10^{-0{,}4(\Delta m-m_T)}\).</li><li><strong>Massa:</strong> \(L\) em unidades solares por \(M=m-5\log d+5\) e \(L/L_\odot=10^{-0{,}4(M-M_\odot)}\); depois \(M_{\rm caroço}=f\,L\).</li></ol>
+<p><strong>Cuidado:</strong> \(\mu\) é magnitude <em>por</em> segundo de arco quadrado. Para obter uma magnitude integrada, some a área: \(m=\mu-2{,}5\log(\text{área em }''^2)\) quando o brilho é uniforme.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Distorções, conchas e isofotas não elípticas</h3>
+<ul><li><strong>Núcleos múltiplos:</strong> NGC 6166, a galáxia cD central do aglomerado A2199, está engolindo duas galáxias.</li><li><strong>Halteres</strong> (dumb-bell): pares de massa parecida em fusão nos centros de grupos e aglomerados.</li><li><strong>Conchas e anéis</strong> (Malin e Carter, 1980): NGC 3923 tem pelo menos 22 conchas, de 3 a 95 kpc. São restos de satélites engolidos.</li><li><strong>Subestrutura</strong> (NGC 4382): fusão recente ainda não relaxada.</li><li><strong>Isofotas não elípticas:</strong> somando um termo de quarta ordem a uma elipse, a amplitude \(a_4\) separa isofotas <strong>tipo disco</strong> (\(a_4&gt;0\), provavelmente com um pequeno disco interno) e <strong>tipo caixa</strong> (\(a_4&lt;0\)). Elipse perfeita é \(a_4=0\); quase nenhuma elíptica é exatamente elíptica.</li></ul>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Quanto dura uma fusão? (Cap5, p. 18)</div><p>Para \(V_{\rm rot}\sim150\) km/s e \(R\sim20\) kpc, o período orbital é \(T=2\pi R/V=2\pi\times20/150=0{,}84\) kpc/(km/s) \(\times\,0{,}978=0{,}82\) Gyr. As simulações indicam que a fusão termina em poucas órbitas, ou seja de 1 a alguns Gyr.</p></div>
+<p class="fonte"><span>Fonte</span> AulaCap5, slides 13–14; Cap5, pp. 17–22.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Rotação: as elípticas não são sustentadas por rotação</h3>
+<p>Wilson (1975) construiu modelos isotrópicos autoconsistentes, mas para serem estáveis eles precisavam girar com velocidade comparável à dispersão. Bertola e Capaccioli (1975) mediram NGC 4697: \(\sigma\simeq200\) km/s e \(V_{\rm rot}\simeq60\) km/s. A rotação é pequena demais. Binney (1978) mostrou que isso é comum.</p>
+<p><strong>Como ler o diagrama \(V/\sigma\times\varepsilon\)</strong> (slide 17), com \(\varepsilon=1-a_z/a_x\) a elipticidade: a curva dos <em>elipsoides oblatos isotrópicos achatados pela rotação</em> cresce com \(\varepsilon\), porque achatar mais exige girar mais. As elípticas gigantes ficam muito <strong>abaixo</strong> dessa curva: são achatadas pela <strong>anisotropia</strong> das velocidades (por exemplo, \(\sigma_z^2\neq\sigma_x^2\)), não pela rotação. Já os <strong>bojos</strong> e as <strong>elípticas pouco luminosas</strong> caem sobre a curva: são oblatos em rotação (Davies et al., 1983).</p>
+<p>A rotação observada depende da orientação: vemos só a componente da velocidade na linha de visada, então uma elíptica vista pelo polo parece não girar. Binney considerava mais prováveis formas <strong>prolatas ou triaxiais</strong>, que reproduzem melhor a distribuição de elipticidades aparentes. Um sinal disso é a <strong>torção isofotal</strong> (NGC 5831): num triaxial, a orientação das isofotas muda com o raio.</p>
+<p class="fonte"><span>Fonte</span> AulaCap5, slides 15–19; Cap5, pp. 23–29.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Como se mede a dispersão de velocidades</h3>
+<p>Cada estrela emite um espectro \(s(\lambda)\) com linhas estreitas, deslocado pelo Doppler da sua velocidade \(v_*\). A galáxia soma todas: o espectro observado é a <strong>convolução</strong> do espectro estelar com a distribuição de velocidades \(f(v_*)\). As linhas (por exemplo, as de Mg) ficam <strong>alargadas</strong>, além de deslocadas pelo redshift:</p>
+<span class="eq-anchor" id="eq-34-12"></span><div class="math-display">\[\tag{34.12}
+\begin{gathered}
+g(\lambda)=\sum_i n_i\int s_i\!\left(\lambda-\lambda\frac{v_*}{c}\right)f_i(v_*)\,dv_*,\\
+f(v_*)=\frac{1}{\sqrt{2\pi}\,\sigma}\exp\left[-\frac{(v_*-\langle v\rangle)^2}{2\sigma^2}\right].
+\end{gathered}\]</div>
+<p><strong>Teorema da convolução:</strong> a transformada de Fourier de uma convolução é o produto das transformadas, \(G(k)=S(k)\,F(k)\). Com espectros de estrelas de comparação como \(S\), obtém-se \(F=G/S\); como a transformada de uma gaussiana é gaussiana, sua largura dá \(\sigma\) (método do quociente de Fourier; Sargent et al., 1977). O ruído torna a divisão instável, e hoje se ajusta \(G=S\times F(k;\sigma,\langle v\rangle)\) por mínimos quadrados em todas as frequências. Descrições mais completas usam momentos superiores da distribuição de velocidades (expansão de Gauss–Hermite, \(h_3\), \(h_4\)), sensíveis às classes de órbitas.</p>
+<p class="fonte"><span>Fonte</span> AulaCap5, slides 20–23; Cap5, pp. 31–36.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Faber–Jackson: luminosidade \(\propto\sigma^4\)</h3>
+<p>Faber e Jackson (1976): \(L=k\,\sigma^a\) com \(a\approx4\). Galáxias mais luminosas são mais massivas e têm poço de potencial mais fundo, medido por \(\sigma\). Por que 4? Teorema do virial, \(2K+U=0\), com \(U\simeq-\frac35GM^2/R\) (esfera uniforme) e \(K=\frac32M\sigma^2\) (dispersão em 3 direções):</p>
+<span class="eq-anchor" id="eq-34-13"></span><div class="math-display">\[\tag{34.13}
+3M\sigma^2=\frac35\frac{GM^2}{R}\quad\Longrightarrow\quad\sigma^2=\frac{GM}{5R}=\frac{f\,G\,L}{5R},\]</div>
+<p>com \(f=M/L\). Se o brilho superficial for aproximadamente igual em todas as elípticas, \(L\propto R^2\), ou seja \(R\propto L^{1/2}\), e então \(\sigma^2\propto L/L^{1/2}=L^{1/2}\), isto é, \(L\propto\sigma^4\).</p>
+<p><strong>Uso como régua de distância:</strong> meça \(\sigma\) (independe da distância), obtenha \(L\) pela relação calibrada, compare com o fluxo e calcule \(d\), como em Tully–Fisher para espirais (módulo 9).</p>
+<p class="fonte"><span>Fonte</span> AulaCap5, slide 24; Cap5, p. 37.</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Dispersão de uma esfera uniforme (problema 6 do Cap5)</div><p>Pelo resultado acima, \(\sigma=\sqrt{GM/5R}\). Para \(M=10^{11}\,M_\odot\) e \(R=10\) kpc, com \(G=4{,}301\times10^{-6}\):</p>
+<span class="eq-anchor" id="eq-34-14"></span><div class="math-display">\[\tag{34.14}
+\sigma=\sqrt{\frac{4{,}301\times10^{-6}\times10^{11}}{5\times10}}=\sqrt{8602}=93\ \mathrm{km/s}.\]</div>
+<p><strong>Gigante e anã</strong> (pergunta do Cap5, p. 41): entre \(M_B=-23\) e \(M_B=-17\) a razão de luminosidades é \(10^{0{,}4\times6}=251\). Por Faber–Jackson, \(\sigma\) (e, na mesma proporção, a velocidade de escape) é \(251^{1/4}\approx4\) vezes maior na gigante.</p></div>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Plano fundamental</h3>
+<p>Nos anos 1980, o espalhamento em torno de Faber–Jackson se mostrou maior que os erros: falta uma variável. Com o raio efetivo \(R_e\), a dispersão \(\sigma\) e o brilho superficial efetivo \(I_e\), as elípticas ocupam um <strong>plano</strong> no espaço dessas três variáveis:</p>
+<span class="eq-anchor" id="eq-34-15"></span><div class="math-display">\[\tag{34.15}
+\log R_e=\text{cte}+1{,}4\log\sigma-0{,}9\log I_e.\]</div>
+<p>Visto de perfil, o plano é estreito: o espalhamento individual (\(\sim20\%\) em \(R_e\)) é explicado pelos erros de medida, e qualquer espalhamento intrínseco é de poucos por cento. Como \(R_e\) em kpc depende da distância e \(\sigma\) e \(I_e\) não, o plano é um <strong>indicador de distância</strong>. Lynden-Bell et al. (1988) o usaram em cerca de 400 elípticas e descobriram o <strong>Grande Atrator</strong>, uma concentração de \(\sim10^{16}\,M_\odot\) que desvia o movimento das galáxias próximas.</p>
+<p>O virial prevê \(R\propto\sigma^2I^{-1}\) (se \(M/L\) for constante); a diferença dos expoentes observados (1,4 e \(-0{,}9\)) indica que \(M/L\) varia sistematicamente com a massa (“inclinação do plano”).</p>
+<div class="worked"><div class="worked-h"><span>Exemplo</span> Velocidade induzida pelo Grande Atrator (Cap5, p. 40)</div><p>\(M=10^{16}\,M_\odot\) a \(r=100\) Mpc, agindo por \(10^{10}\) anos, com aceleração constante (hipótese grosseira):</p>
+<span class="eq-anchor" id="eq-34-16"></span><div class="math-display">\[\tag{34.16}
+\begin{aligned}
+g&amp;=\frac{GM}{r^2}=\frac{6{,}674\times10^{-8}\times1{,}99\times10^{49}}{(3{,}09\times10^{26})^2}\\
+&amp;=1{,}4\times10^{-11}\ \mathrm{cm\,s^{-2}},\\
+v&amp;\simeq g\,t=1{,}4\times10^{-11}\times3{,}16\times10^{17}\\
+&amp;\approx4{,}4\times10^{6}\ \mathrm{cm/s}=44\ \mathrm{km/s}.
+\end{aligned}\]</div>
+<p>Ordem de dezenas de km/s. A estimativa ignora a expansão do Universo e a mudança de distância ao longo do tempo; serve como ordem de grandeza.</p></div>
+<p class="fonte"><span>Fonte</span> AulaCap5, slide 25; Cap5, pp. 38–40.</p>
+</div></section>
+<section class="note note-concept"><div class="cue"><span>ENTENDER</span></div><div class="note-body"><h3>Metais e profundidade do poço: Mg\(_2\times\sigma\)</h3>
+<p>Elípticas com maior \(\sigma\) são mais vermelhas e mais ricas em metais (índice Mg\(_2\); Bender et al., 1993). Interpretação: o poço de potencial mais fundo das gigantes <strong>retém</strong> o gás enriquecido pelas supernovas; nas pequenas, os ventos de supernova o expulsam antes que seja reaproveitado. É a mesma lógica da velocidade de escape: \(v_{\rm esc}\propto\sigma\).</p>
+<p class="fonte"><span>Fonte</span> AulaCap5, slide 26; Cap5, p. 41. Fim do Capítulo 5.</p>
+</div></section>
+<section class="note note-exam"><div class="cue"><span>NA PROVA</span></div><div class="note-body"><h3>Roteiro para elípticas</h3>
+<ol><li>Tamanho: \(r(\mathrm{kpc})=\theta('')\times d(\mathrm{kpc})/206\,265\); diga se é raio ou diâmetro.</li><li>Luminosidade: \(\mu=m-5\log d(\mathrm{pc})+5\); \(M=m-\mu\); \(L/L_\odot=10^{-0{,}4(M-M_\odot)}\), com o \(M_\odot\) da banda certa.</li><li>Massa: \(M_*=f\,L\) (com \(f=10^{\log f}\)); total com halo \(=(1+\text{razão escura/bariônica})\,M_*\).</li><li>Perfil de King: no centro \(I_0\), fora \(I\propto(1/r-1/r_t)^2\); \(I=0\) em \(r_t\).</li><li>Virial: \(\sigma^2=GM/5R\); Faber–Jackson: \(L\propto\sigma^4\); razão de \(\sigma\) \(=(\text{razão de }L)^{1/4}\).</li><li>Caroço e cúspide: \(\Delta\mu\to10^{-0{,}4\Delta\mu}\); \(\Delta l=\pi r_c^2I\); não misture magnitude por área com magnitude integrada.</li></ol>
+</div></section><figure class="widget-wrap"><div class="widget" data-widget="faber-jackson-plano"></div></figure><figure class="widget-wrap"><div class="widget" data-widget="perfil-sersic"></div></figure>
+</article>
+<nav class="pager"><a class="prev" href="cap4.html"><span>← Anterior</span>IV · Espirais e lenticulares</a><a class="next" href="cap6.html"><span>Próximo →</span>VI · Núcleos ativos</a></nav>
+  </main>
+</div>
+<footer class="footer">
+  <p><strong>AGA0299 · Astrofísica Galáctica e Extragaláctica</strong> · IAG/USP · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir das aulas e notas expandidas de Prof. Ronaldo E. de Souza (IAG/USP) e de Binney &amp; Merrifield, <em>Galactic Astronomy</em> (1998). Texto, figuras interativas e erros são das notas; não é material oficial da disciplina.</p>
+  <p class="small">Gerado a partir do caderno LaTeX por <code>scripts/gerar_site_aga.py</code>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/widgets/faber-jackson-plano.js" defer></script>
+<script src="assets/widgets/perfil-sersic.js" defer></script>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+from math import exp
+b,c=2,4
+K=lambda tau:b*b*exp(-c*tau)
+assert K(0)==4
+print(K(.25),1/c)

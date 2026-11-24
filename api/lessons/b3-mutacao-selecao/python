@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+weights=[Q(x,10000) for x in [2401,4116,2646,756,81]]
+values=[Q(0),Q(3,10),Q(1,2),Q(9,14),Q(3,4)]
+mean2=sum((w*f for w,f in zip(weights,values)),Q(0))
+assert mean2==Q(62091,200000)
+assert mean2<Q(9,26)
+print(mean2,float(mean2))

@@ -1,0 +1,9 @@
+from math import log,exp
+ke,ks,b,s0=.2,.8,.5,.1
+lam=(ke+ks)*b
+t=log(2)/lam
+s=s0*exp(-lam*t)
+e=ke/(ke+ks)*(s0-s)
+p=ks/(ke+ks)*(s0-s)
+assert abs(s+e+p-s0)<1e-14
+print(s,e,p)

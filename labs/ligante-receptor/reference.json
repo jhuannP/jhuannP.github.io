@@ -1,0 +1,272 @@
+[
+  {
+    "total": 0,
+    "receptors": 0.5,
+    "kd": 0.5,
+    "complex": 0.0
+  },
+  {
+    "total": 0.5,
+    "receptors": 0.5,
+    "kd": 0.5,
+    "complex": 0.19098300562505258
+  },
+  {
+    "total": 2,
+    "receptors": 0.5,
+    "kd": 0.5,
+    "complex": 0.38196601125010515
+  },
+  {
+    "total": 5,
+    "receptors": 0.5,
+    "kd": 0.5,
+    "complex": 0.4504902432036076
+  },
+  {
+    "total": 10,
+    "receptors": 0.5,
+    "kd": 0.5,
+    "complex": 0.47506218943955486
+  },
+  {
+    "total": 0,
+    "receptors": 0.5,
+    "kd": 1,
+    "complex": 0.0
+  },
+  {
+    "total": 0.5,
+    "receptors": 0.5,
+    "kd": 1,
+    "complex": 0.13397459621556135
+  },
+  {
+    "total": 2,
+    "receptors": 0.5,
+    "kd": 1,
+    "complex": 0.31385933836549285
+  },
+  {
+    "total": 5,
+    "receptors": 0.5,
+    "kd": 1,
+    "complex": 0.4105458270998632
+  },
+  {
+    "total": 10,
+    "receptors": 0.5,
+    "kd": 1,
+    "complex": 0.4525949748957273
+  },
+  {
+    "total": 0,
+    "receptors": 0.5,
+    "kd": 4,
+    "complex": 0.0
+  },
+  {
+    "total": 0.5,
+    "receptors": 0.5,
+    "kd": 4,
+    "complex": 0.050510257216821904
+  },
+  {
+    "total": 2,
+    "receptors": 0.5,
+    "kd": 4,
+    "complex": 0.1576707807867546
+  },
+  {
+    "total": 5,
+    "receptors": 0.5,
+    "kd": 4,
+    "complex": 0.2708817832077707
+  },
+  {
+    "total": 10,
+    "receptors": 0.5,
+    "kd": 4,
+    "complex": 0.35344288793313916
+  },
+  {
+    "total": 0,
+    "receptors": 2,
+    "kd": 0.5,
+    "complex": 0.0
+  },
+  {
+    "total": 0.5,
+    "receptors": 2,
+    "kd": 0.5,
+    "complex": 0.38196601125010515
+  },
+  {
+    "total": 2,
+    "receptors": 2,
+    "kd": 0.5,
+    "complex": 1.2192235935955849
+  },
+  {
+    "total": 5,
+    "receptors": 2,
+    "kd": 0.5,
+    "complex": 1.7344355629253625
+  },
+  {
+    "total": 10,
+    "receptors": 2,
+    "kd": 0.5,
+    "complex": 1.8839377008567548
+  },
+  {
+    "total": 0,
+    "receptors": 2,
+    "kd": 1,
+    "complex": 0.0
+  },
+  {
+    "total": 0.5,
+    "receptors": 2,
+    "kd": 1,
+    "complex": 0.31385933836549285
+  },
+  {
+    "total": 2,
+    "receptors": 2,
+    "kd": 1,
+    "complex": 1.0
+  },
+  {
+    "total": 5,
+    "receptors": 2,
+    "kd": 1,
+    "complex": 1.550510257216822
+  },
+  {
+    "total": 10,
+    "receptors": 2,
+    "kd": 1,
+    "complex": 1.7830094339716982
+  },
+  {
+    "total": 0,
+    "receptors": 2,
+    "kd": 4,
+    "complex": 0.0
+  },
+  {
+    "total": 0.5,
+    "receptors": 2,
+    "kd": 4,
+    "complex": 0.1576707807867546
+  },
+  {
+    "total": 2,
+    "receptors": 2,
+    "kd": 4,
+    "complex": 0.5358983848622454
+  },
+  {
+    "total": 5,
+    "receptors": 2,
+    "kd": 4,
+    "complex": 1.0
+  },
+  {
+    "total": 10,
+    "receptors": 2,
+    "kd": 4,
+    "complex": 1.3667504192892004
+  },
+  {
+    "total": 0,
+    "receptors": 5,
+    "kd": 0.5,
+    "complex": 0.0
+  },
+  {
+    "total": 0.5,
+    "receptors": 5,
+    "kd": 0.5,
+    "complex": 0.4504902432036076
+  },
+  {
+    "total": 2,
+    "receptors": 5,
+    "kd": 0.5,
+    "complex": 1.7344355629253625
+  },
+  {
+    "total": 5,
+    "receptors": 5,
+    "kd": 0.5,
+    "complex": 3.649218940641788
+  },
+  {
+    "total": 10,
+    "receptors": 5,
+    "kd": 0.5,
+    "complex": 4.5778556148876195
+  },
+  {
+    "total": 0,
+    "receptors": 5,
+    "kd": 1,
+    "complex": 0.0
+  },
+  {
+    "total": 0.5,
+    "receptors": 5,
+    "kd": 1,
+    "complex": 0.4105458270998632
+  },
+  {
+    "total": 2,
+    "receptors": 5,
+    "kd": 1,
+    "complex": 1.550510257216822
+  },
+  {
+    "total": 5,
+    "receptors": 5,
+    "kd": 1,
+    "complex": 3.20871215252208
+  },
+  {
+    "total": 10,
+    "receptors": 5,
+    "kd": 1,
+    "complex": 4.258342613226058
+  },
+  {
+    "total": 0,
+    "receptors": 5,
+    "kd": 4,
+    "complex": 0.0
+  },
+  {
+    "total": 0.5,
+    "receptors": 5,
+    "kd": 4,
+    "complex": 0.2708817832077707
+  },
+  {
+    "total": 2,
+    "receptors": 5,
+    "kd": 4,
+    "complex": 1.0
+  },
+  {
+    "total": 5,
+    "receptors": 5,
+    "kd": 4,
+    "complex": 2.101020514433644
+  },
+  {
+    "total": 10,
+    "receptors": 5,
+    "kd": 4,
+    "complex": 3.15571122977524
+  }
+]

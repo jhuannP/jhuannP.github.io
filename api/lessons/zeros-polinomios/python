@@ -1,0 +1,23 @@
+from fractions import Fraction as Q
+
+def horner(c,x):
+    p=Q(c[-1]);d=Q(0)
+    for a in reversed(c[:-1]):d,p=d*x+p,p*x+a
+    return p,d
+
+def divide(c,r):
+    q=[Q(0)]*(len(c)-1);q[-1]=Q(c[-1])
+    for j in range(len(q)-2,-1,-1):q[j]=c[j+1]+r*q[j+1]
+    return q,c[0]+r*q[0]
+
+c=[2,-3,0,1]
+assert horner(c,Q(2))==(4,9)
+assert divide(c,Q(1))==([-2,1,1],0)
+q,rem=divide([1,-2,1],Q(101,100))
+assert q==[-Q(99,100),1] and rem==Q(1,10000)
+# Erro exato do Newton usual para (x-1)^2.
+x=Q(2)
+for k in range(5):
+    assert x-1==Q(1,2**k)
+    f,df=horner([1,-2,1],x);x-=f/df
+print('quociente, resto:',q,rem)

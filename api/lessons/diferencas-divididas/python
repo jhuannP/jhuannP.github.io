@@ -1,0 +1,34 @@
+from math import isfinite, sqrt, pi, cos, sin, exp, e, fsum
+
+def _real(value):
+    try:
+        if isinstance(value,bool): raise ValueError
+        result=float(value)
+    except (TypeError,ValueError,OverflowError):
+        raise ValueError('Valor real finito necessário') from None
+    if not isfinite(result): raise ValueError('Valor real finito necessário')
+    return result
+
+def _nodes(xs,ys):
+    if len(xs)!=len(ys) or not xs:raise ValueError('Dados não vazios com tamanhos iguais')
+    xs,ys=[_real(x) for x in xs],[_real(y) for y in ys]
+    if len(set(xs))!=len(xs):raise ValueError('Nós distintos necessários')
+    return xs,ys
+
+def diferencas_divididas(xs,ys):
+    xs,coef=_nodes(xs,ys)
+    for ordem in range(1,len(xs)):
+        for i in range(len(xs)-1,ordem-1,-1):
+            coef[i]=_real((coef[i]-coef[i-1])/(xs[i]-xs[i-ordem]))
+    return coef
+
+def avaliar_newton(xs,coef,x):
+    xs,coef=_nodes(xs,coef);x=_real(x);total=coef[-1]
+    for i in range(len(coef)-2,-1,-1):total=_real(coef[i]+(x-xs[i])*total)
+    return total
+
+xs=[0,1,2];ys=[0,1,4]
+c=diferencas_divididas(xs,ys)
+assert c==[0,1,1]
+assert avaliar_newton(xs,c,1.5)==2.25
+print(c)

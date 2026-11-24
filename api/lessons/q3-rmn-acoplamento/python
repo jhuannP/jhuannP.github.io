@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+from itertools import product
+offsets=sorted(Q(6)*a+Q(2)*b for a,b in product((Q(-1,2),Q(1,2)),repeat=2))
+assert offsets==[-4,-2,2,4]
+assert sum(x*x for x in offsets)/4==10
+positions=[2+x/400 for x in offsets]
+assert positions==[Q(199,100),Q(399,200),Q(401,200),Q(201,100)]
+print(offsets,positions)

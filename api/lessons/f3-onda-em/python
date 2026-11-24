@@ -1,0 +1,4 @@
+c,B=2.,3.
+E=c*B
+assert E==6
+print(E)

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 560" role="img" aria-labelledby="title desc">
+<title id="title">Informação disponível e erro médio de previsão</title><desc id="desc">No modelo triangular, a melhor previsão sem X tem erro quadrático 0,059375; duas faixas de X dão 0,054353; X exato dá 0,05. Barras começam em zero. O erro cai em média, mas a variância na faixa alta pode aumentar.</desc>
+<rect width="440" height="560" fill="#f5f4ef"/>
+<g fill="#172b45" font-family="sans-serif"><text x="28" y="42" font-size="23">Quanto a informação ajuda?</text><text x="28" y="72" font-size="15">Erro quadrático médio • modelo conhecido</text>
+<text x="28" y="120" font-size="18">Sem observar X</text><text x="28" y="146" font-size="16">Previsão: 3/8</text><rect x="28" y="162" width="342" height="26" rx="3" fill="#386b9b"/><text x="28" y="210" font-size="16">19/320 ≈ 0,059375</text>
+<text x="28" y="255" font-size="18">Apenas X ≤ 1/2 ou X &gt; 1/2</text><text x="28" y="281" font-size="16">Previsão: 3/16 ou 45/112</text><rect x="28" y="297" width="313.071" height="26" rx="3" fill="#386b9b"/><text x="28" y="345" font-size="16">487/8960 ≈ 0,054353</text>
+<text x="28" y="390" font-size="18">X conhecido exatamente</text><text x="28" y="416" font-size="16">Previsão: X/2</text><rect x="28" y="432" width="288" height="26" rx="3" fill="#386b9b"/><text x="28" y="480" font-size="16">1/20 = 0,05</text>
+<text x="28" y="521" font-size="14">Barras com origem zero e escala comum.</text><text x="28" y="543" font-size="14">Menor erro médio não garante cada caso.</text></g></svg>

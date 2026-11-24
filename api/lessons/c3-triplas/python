@@ -1,0 +1,3 @@
+M=.5+.5+.5
+assert M==1.5
+print(M)

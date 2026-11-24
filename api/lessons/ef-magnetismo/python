@@ -1,0 +1,4 @@
+dphi,dt=6.,3.
+emf=-dphi/dt
+assert emf==-2
+print(emf)

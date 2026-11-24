@@ -1,0 +1,8 @@
+n=14
+cycles=n//2-1
+acetyl=n//2
+assert cycles==6 and acetyl==7
+from fractions import Fraction as F
+net=(cycles+3*acetyl)*F(5,2)+(cycles+acetyl)*F(3,2)+acetyl-2
+assert net==92
+print('ciclos, acetil, ATP equivalente:',cycles,acetyl,net)

@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+x=[Q(49,5),Q(10),Q(51,5)]
+mean=sum(x)/len(x)
+s2=sum((v-mean)**2 for v in x)/(len(x)-1)
+u2=s2/len(x)+Q(1,100)
+assert mean==10 and s2==Q(1,25)
+assert u2==Q(7,300)
+print(mean-Q(3,10),u2)

@@ -1,0 +1,34 @@
+from math import exp,expm1,isfinite,sqrt,log
+from random import Random
+
+def _finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def em_path(drift,diffusion,x0,dt,dw):
+    x=_finite(x0);dt=_finite(dt)
+    if dt<=0:raise ValueError('Passo positivo necessário')
+    trace=[x]
+    for k,increment in enumerate(dw):
+        t=k*dt
+        x=_finite(x+_finite(drift(t,x))*dt+_finite(diffusion(t,x))*_finite(increment));trace.append(x)
+    return trace
+
+def _count(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<1:raise ValueError('Inteiro positivo necessário')
+    return n
+
+def brownian_increments(n,dt,seed=42):
+    _count(n);dt=_finite(dt)
+    if dt<=0:raise ValueError('Passo positivo necessário')
+    rng=Random(seed)
+    return [sqrt(dt)*rng.gauss(0,1) for _ in range(n)]
+
+mu,sigma,T,n=.2,.4,1,256;dt=T/n
+dw=brownian_increments(n,dt)
+approx=em_path(lambda t,x:mu*x,lambda t,x:sigma*x,1,dt,dw)[-1]
+exact=exp((mu-sigma*sigma/2)*T+sigma*sum(dw))
+print(approx,exact,abs(approx-exact))

@@ -1,0 +1,5 @@
+from math import pi
+theta,sigma=2,2
+S=lambda omega:sigma*sigma/(theta*theta+omega*omega)
+assert S(0)==1 and S(2)==.5
+print(S(0),S(2),pi/.1)

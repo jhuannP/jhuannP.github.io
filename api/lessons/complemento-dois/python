@@ -1,0 +1,7 @@
+def com_sinal(u,w):
+    if not 0<=u<(1<<w): raise ValueError('Padrão fora da faixa')
+    return u if u<(1<<(w-1)) else u-(1<<w)
+assert com_sinal(15,4)==-1
+assert com_sinal(8,4)==-8
+assert com_sinal((7+1)&15,4)==-8
+print(com_sinal(15,4),com_sinal(8,4))

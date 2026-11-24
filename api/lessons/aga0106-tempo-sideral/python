@@ -1,0 +1,5 @@
+from fractions import Fraction as Q
+TSL,alpha=Q(0),Q(47,2)
+H=(TSL-alpha+12)%24-12
+assert H==Q(1,2) and 15*H==Q(15,2)
+print(H,"hora angular;",15*H,"graus")

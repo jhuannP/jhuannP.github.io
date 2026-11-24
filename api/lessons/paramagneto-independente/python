@@ -1,0 +1,4 @@
+from math import tanh
+N,T=4,2
+assert N/T==2 and tanh(0)==0
+print(N*tanh(1/T),N/T)

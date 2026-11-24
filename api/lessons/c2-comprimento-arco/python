@@ -1,0 +1,6 @@
+from fractions import Fraction as F
+t=F(1,2)
+s=3*t+t**3
+assert s==F(13,8)
+assert (3-3*t*t)**2+(6*t)**2==(3*(1+t*t))**2
+print('comprimento até metade:',s,'total:',4)

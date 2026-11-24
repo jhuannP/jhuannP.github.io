@@ -1,0 +1,13 @@
+OPCODES={'HALT':0,'LDI':1,'LDA':2,'STA':3,'ADD':4,'SUB':5,'JMP':6,'JZ':7,'OUT':8}
+NAMES={v:k for k,v in OPCODES.items()}
+def codificar(nome,operando=0):
+    if nome not in OPCODES or not isinstance(operando,int) or isinstance(operando,bool) or not 0<=operando<16:
+        raise ValueError('Instrução inválida')
+    return (OPCODES[nome]<<4)|operando
+def decodificar(palavra):
+    if not isinstance(palavra,int) or isinstance(palavra,bool) or not 0<=palavra<256 or palavra>>4 not in NAMES:
+        raise ValueError('Palavra inválida')
+    return NAMES[palavra>>4],palavra&15
+assert codificar('STA',14)==0x3E
+assert decodificar(0x4E)==('ADD',14)
+print(decodificar(0x3E))

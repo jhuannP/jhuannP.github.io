@@ -1,0 +1,6 @@
+from math import sqrt,exp,cos,sin
+m,b,k,A=1.,2.,4.,1.
+gamma=b/(2*m);w0=sqrt(k/m);wd=sqrt(w0*w0-gamma*gamma)
+x=lambda t:A*exp(-gamma*t)*(cos(wd*t)+gamma/wd*sin(wd*t))
+assert gamma==1 and x(0)==A
+print(gamma,wd)

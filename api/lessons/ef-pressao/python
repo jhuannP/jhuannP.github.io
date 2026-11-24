@@ -1,0 +1,4 @@
+F,A=100.,.5
+p=F/A
+assert p==200
+print(p)

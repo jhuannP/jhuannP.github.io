@@ -1,0 +1,9 @@
+from math import comb
+from fractions import Fraction as F
+N=8
+p=[F(comb(N,k),2**N) for k in range(N+1)]
+mean=sum(k*q for k,q in enumerate(p))
+variance=sum((k-mean)**2*q for k,q in enumerate(p))
+assert sum(p)==1 and p[4]==F(35,128)
+assert mean==4 and variance==2
+print('média e variância:',mean,variance)

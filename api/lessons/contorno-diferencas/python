@@ -1,0 +1,55 @@
+from math import isfinite,sqrt,exp,sin,cos,pi,log,comb
+
+def budget(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<=0:
+        raise ValueError('Quantidade inteira positiva necessária')
+    return n
+
+def finite(x):
+    if isinstance(x,bool): raise ValueError('Número real finito necessário')
+    try: y=float(x)
+    except (TypeError,ValueError,OverflowError): raise ValueError('Número real finito necessário') from None
+    if not isfinite(y): raise ValueError('Número real finito necessário')
+    return y
+
+def _real(value):
+    try:
+        if isinstance(value,bool): raise ValueError
+        result=float(value)
+    except (TypeError,ValueError,OverflowError):
+        raise ValueError('Valor real finito necessário') from None
+    if not isfinite(result): raise ValueError('Valor real finito necessário')
+    return result
+
+def _system(A,b):
+    n=len(A)
+    if n==0 or len(b)!=n or any(len(row)!=n for row in A):raise ValueError('Sistema quadrado não vazio necessário')
+    return [[_real(x) for x in row] for row in A],[_real(x) for x in b]
+
+def gauss_pivoteamento(A,b):
+    A,b=_system(A,b);n=len(b)
+    for k in range(n):
+        p=max(range(k,n),key=lambda i:abs(A[i][k]))
+        if A[p][k]==0:raise ArithmeticError('Pivô zero: sistema não resolvido por esta fatoração')
+        A[k],A[p]=A[p],A[k];b[k],b[p]=b[p],b[k]
+        for i in range(k+1,n):
+            fator=A[i][k]/A[k][k];A[i][k]=0.0
+            for j in range(k+1,n):A[i][j]=_real(A[i][j]-fator*A[k][j])
+            b[i]=_real(b[i]-fator*b[k])
+    x=[0.0]*n
+    for i in range(n-1,-1,-1):x[i]=_real((b[i]-sum(A[i][j]*x[j] for j in range(i+1,n)))/A[i][i])
+    return x
+
+def dirichlet_1d(g,n,left=0,right=0):
+    """-u''=g em [0,1], n subintervalos e Dirichlet nos extremos."""
+    budget(n)
+    if n<2: raise ValueError('Malha precisa de ponto interior')
+    h=1/n;size=n-1
+    A=[[2 if i==j else -1 if abs(i-j)==1 else 0 for j in range(size)] for i in range(size)]
+    b=[h*h*finite(g((i+1)*h)) for i in range(size)]
+    b[0]+=finite(left);b[-1]+=finite(right)
+    return [finite(left)]+gauss_pivoteamento(A,b)+[finite(right)]
+
+n=8;u=dirichlet_1d(lambda x:2,n)
+assert max(abs(v-(i/n)*(1-i/n)) for i,v in enumerate(u))<1e-12
+print(u)

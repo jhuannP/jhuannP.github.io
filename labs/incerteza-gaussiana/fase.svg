@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 430" role="img" aria-labelledby="t d">
+<title id="t">Mesma posição, momento diferente</title><desc id="d">Com hbar um e s dois, fase quadrática kappa zero dá produto um meio; kappa um dá raiz de dois sobre dois, mantendo a mesma distribuição de posição.</desc>
+<rect width="420" height="430" fill="#f6f3e9"/>
+<g font-family="system-ui,sans-serif" fill="#183c36">
+<text x="22" y="34" font-size="20" font-weight="700">Mesma posição, momento diferente</text>
+<text x="22" y="63" font-size="14">ℏ = 1 · s = Δx = 2 · p₀ = 0</text>
+<path d="M22 84H398M22 245H398" stroke="#b6c8b9"/>
+<text x="22" y="118" font-size="17" font-weight="650">κ = 0 · sem fase quadrática</text>
+<text x="22" y="153" font-size="16">Δp = 1/4</text>
+<text x="22" y="184" font-size="16">ΔxΔp = 1/2</text>
+<text x="22" y="218" font-size="15">Estado mínimo desta família</text>
+<text x="22" y="281" font-size="17" font-weight="650">κ = 1 · com fase quadrática</text>
+<text x="22" y="316" font-size="16">Δp = √2/4</text>
+<text x="22" y="347" font-size="16">ΔxΔp = √2/2 &gt; 1/2</text>
+<text x="22" y="381" font-size="15">Mesma |ψ(x)|², outra fase espacial</text>
+<text x="22" y="415" font-size="12">Um gaussiano geral não precisa minimizar ΔxΔp.</text>
+</g></svg>

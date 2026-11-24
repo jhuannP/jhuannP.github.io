@@ -1,0 +1,5 @@
+from math import isclose
+assert isclose(100,100.01,rel_tol=.001)
+assert not isclose(0,1e-8,rel_tol=.001)
+assert isclose(0,1e-8,abs_tol=1e-7)
+print(.1)

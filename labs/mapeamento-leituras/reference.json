@@ -1,0 +1,9094 @@
+[
+  {
+    "genome": 0,
+    "length": 4,
+    "read": 1,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "TACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "CGAT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 12,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 1,
+      "query": "ATGC",
+      "origin": 0,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 0,
+          "end": 4,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 4,
+    "ambiguous_count": 1,
+    "mean_truth": 0.8333333333333334,
+    "mean_retained": 0.6666666666666666
+  },
+  {
+    "genome": 0,
+    "length": 4,
+    "read": 2,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "TACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "CGAT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 12,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 2,
+      "query": "TACG",
+      "origin": 4,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 4,
+          "end": 8,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 4,
+    "ambiguous_count": 1,
+    "mean_truth": 0.8333333333333334,
+    "mean_retained": 0.6666666666666666
+  },
+  {
+    "genome": 0,
+    "length": 4,
+    "read": 3,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "TACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "CGAT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 12,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 3,
+      "query": "CGAT",
+      "origin": 8,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 8,
+          "end": 12,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 4,
+    "ambiguous_count": 1,
+    "mean_truth": 0.8333333333333334,
+    "mean_retained": 0.6666666666666666
+  },
+  {
+    "genome": 0,
+    "length": 4,
+    "read": 4,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "TACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "CGAT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 12,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 4,
+      "query": "CTGA",
+      "origin": 12,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 12,
+          "end": 16,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 4,
+    "ambiguous_count": 1,
+    "mean_truth": 0.8333333333333334,
+    "mean_retained": 0.6666666666666666
+  },
+  {
+    "genome": 0,
+    "length": 4,
+    "read": 5,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "TACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "CGAT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 12,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 5,
+      "query": "GCTA",
+      "origin": 16,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 16,
+          "end": 20,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 4,
+    "ambiguous_count": 1,
+    "mean_truth": 0.8333333333333334,
+    "mean_retained": 0.6666666666666666
+  },
+  {
+    "genome": 0,
+    "length": 5,
+    "read": 1,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "GTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 5,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "CGATT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 13,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 1,
+      "query": "ATGCC",
+      "origin": 0,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 0,
+          "end": 5,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 4,
+    "ambiguous_count": 1,
+    "mean_truth": 1.0416666666666667,
+    "mean_retained": 0.8333333333333334
+  },
+  {
+    "genome": 0,
+    "length": 5,
+    "read": 2,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "GTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 5,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "CGATT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 13,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 2,
+      "query": "GTACG",
+      "origin": 4,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 4,
+          "end": 9,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 5,
+          "end": 10,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 4,
+    "ambiguous_count": 1,
+    "mean_truth": 1.0416666666666667,
+    "mean_retained": 0.8333333333333334
+  },
+  {
+    "genome": 0,
+    "length": 5,
+    "read": 3,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "GTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 5,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "CGATT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 13,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 3,
+      "query": "CGATT",
+      "origin": 8,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 8,
+          "end": 13,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 4,
+    "ambiguous_count": 1,
+    "mean_truth": 1.0416666666666667,
+    "mean_retained": 0.8333333333333334
+  },
+  {
+    "genome": 0,
+    "length": 5,
+    "read": 4,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "GTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 5,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "CGATT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 13,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 4,
+      "query": "CCTGA",
+      "origin": 12,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 12,
+          "end": 17,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 4,
+    "ambiguous_count": 1,
+    "mean_truth": 1.0416666666666667,
+    "mean_retained": 0.8333333333333334
+  },
+  {
+    "genome": 0,
+    "length": 5,
+    "read": 5,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "GTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 5,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "CGATT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 13,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 5,
+      "query": "GCTAA",
+      "origin": 16,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 16,
+          "end": 21,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 4,
+    "ambiguous_count": 1,
+    "mean_truth": 1.0416666666666667,
+    "mean_retained": 0.8333333333333334
+  },
+  {
+    "genome": 0,
+    "length": 6,
+    "read": 1,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCG",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "CGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTC",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 14,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "GCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAAC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 1,
+      "query": "ATGCCG",
+      "origin": 0,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 0,
+          "end": 6,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.25,
+    "mean_retained": 1.25
+  },
+  {
+    "genome": 0,
+    "length": 6,
+    "read": 2,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCG",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "CGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTC",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 14,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "GCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAAC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 2,
+      "query": "CGTACG",
+      "origin": 4,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 4,
+          "end": 10,
+          "strands": [
+            "+",
+            "-"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.25,
+    "mean_retained": 1.25
+  },
+  {
+    "genome": 0,
+    "length": 6,
+    "read": 3,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCG",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "CGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTC",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 14,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "GCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAAC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 3,
+      "query": "CGATTC",
+      "origin": 8,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 8,
+          "end": 14,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.25,
+    "mean_retained": 1.25
+  },
+  {
+    "genome": 0,
+    "length": 6,
+    "read": 4,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCG",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "CGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTC",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 14,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "GCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAAC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 4,
+      "query": "GCCTGA",
+      "origin": 12,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 12,
+          "end": 18,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.25,
+    "mean_retained": 1.25
+  },
+  {
+    "genome": 0,
+    "length": 6,
+    "read": 5,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCG",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "CGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTC",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 14,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "GCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAAC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 5,
+      "query": "GCTAAC",
+      "origin": 16,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 16,
+          "end": 22,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.25,
+    "mean_retained": 1.25
+  },
+  {
+    "genome": 0,
+    "length": 7,
+    "read": 1,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCGT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "TCGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTCA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 15,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "AGCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAACG",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 1,
+      "query": "ATGCCGT",
+      "origin": 0,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 0,
+          "end": 7,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.4583333333333333,
+    "mean_retained": 1.4583333333333333
+  },
+  {
+    "genome": 0,
+    "length": 7,
+    "read": 2,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCGT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "TCGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTCA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 15,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "AGCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAACG",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 2,
+      "query": "TCGTACG",
+      "origin": 4,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 4,
+          "end": 11,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.4583333333333333,
+    "mean_retained": 1.4583333333333333
+  },
+  {
+    "genome": 0,
+    "length": 7,
+    "read": 3,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCGT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "TCGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTCA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 15,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "AGCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAACG",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 3,
+      "query": "CGATTCA",
+      "origin": 8,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 8,
+          "end": 15,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.4583333333333333,
+    "mean_retained": 1.4583333333333333
+  },
+  {
+    "genome": 0,
+    "length": 7,
+    "read": 4,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCGT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "TCGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTCA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 15,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "AGCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAACG",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 4,
+      "query": "AGCCTGA",
+      "origin": 12,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 12,
+          "end": 19,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.4583333333333333,
+    "mean_retained": 1.4583333333333333
+  },
+  {
+    "genome": 0,
+    "length": 7,
+    "read": 5,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCGT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "TCGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTCA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 15,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "AGCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAACG",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 5,
+      "query": "GCTAACG",
+      "origin": 16,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 16,
+          "end": 23,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.4583333333333333,
+    "mean_retained": 1.4583333333333333
+  },
+  {
+    "genome": 0,
+    "length": 8,
+    "read": 1,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCGTA",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "ATCGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTCAG",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "TAGCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAACGT",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 1,
+      "query": "ATGCCGTA",
+      "origin": 0,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 0,
+          "end": 8,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.6666666666666667,
+    "mean_retained": 1.6666666666666667
+  },
+  {
+    "genome": 0,
+    "length": 8,
+    "read": 2,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCGTA",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "ATCGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTCAG",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "TAGCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAACGT",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 2,
+      "query": "ATCGTACG",
+      "origin": 4,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 4,
+          "end": 12,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.6666666666666667,
+    "mean_retained": 1.6666666666666667
+  },
+  {
+    "genome": 0,
+    "length": 8,
+    "read": 3,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCGTA",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "ATCGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTCAG",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "TAGCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAACGT",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 3,
+      "query": "CGATTCAG",
+      "origin": 8,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 8,
+          "end": 16,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.6666666666666667,
+    "mean_retained": 1.6666666666666667
+  },
+  {
+    "genome": 0,
+    "length": 8,
+    "read": 4,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCGTA",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "ATCGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTCAG",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "TAGCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAACGT",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 4,
+      "query": "TAGCCTGA",
+      "origin": 12,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 12,
+          "end": 20,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.6666666666666667,
+    "mean_retained": 1.6666666666666667
+  },
+  {
+    "genome": 0,
+    "length": 8,
+    "read": 5,
+    "reference": "ATGCCGTACGATTCAGGCTAACGT",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ATGCCGTA",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 2,
+        "query": "ATCGTACG",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 3,
+        "query": "CGATTCAG",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "TAGCCTGA",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 5,
+        "query": "GCTAACGT",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      }
+    ],
+    "selected": {
+      "read": 5,
+      "query": "GCTAACGT",
+      "origin": 16,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 16,
+          "end": 24,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "retained": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "unique_count": 5,
+    "ambiguous_count": 0,
+    "mean_truth": 1.6666666666666667,
+    "mean_retained": 1.6666666666666667
+  },
+  {
+    "genome": 1,
+    "length": 4,
+    "read": 1,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "GCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 12,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 4,
+        "query": "ACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 1,
+      "query": "ACGT",
+      "origin": 0,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 0,
+          "end": 4,
+          "strands": [
+            "+",
+            "-"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "strands": [
+            "+",
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 0,
+    "ambiguous_count": 5,
+    "mean_truth": 0.8333333333333334,
+    "mean_retained": 0.0
+  },
+  {
+    "genome": 1,
+    "length": 4,
+    "read": 2,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "GCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 12,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 4,
+        "query": "ACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 2,
+      "query": "GCTA",
+      "origin": 4,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 4,
+          "end": 8,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 0,
+    "ambiguous_count": 5,
+    "mean_truth": 0.8333333333333334,
+    "mean_retained": 0.0
+  },
+  {
+    "genome": 1,
+    "length": 4,
+    "read": 3,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "GCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 12,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 4,
+        "query": "ACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 3,
+      "query": "TGCA",
+      "origin": 8,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 8,
+          "end": 12,
+          "strands": [
+            "+",
+            "-"
+          ]
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "strands": [
+            "+",
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 0,
+    "ambiguous_count": 5,
+    "mean_truth": 0.8333333333333334,
+    "mean_retained": 0.0
+  },
+  {
+    "genome": 1,
+    "length": 4,
+    "read": 4,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "GCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 12,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 4,
+        "query": "ACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 4,
+      "query": "ACGT",
+      "origin": 12,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 0,
+          "end": 4,
+          "strands": [
+            "+",
+            "-"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "strands": [
+            "+",
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 0,
+    "ambiguous_count": 5,
+    "mean_truth": 0.8333333333333334,
+    "mean_retained": 0.0
+  },
+  {
+    "genome": 1,
+    "length": 4,
+    "read": 5,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "GCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 12,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 4,
+        "query": "ACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 4,
+            "strands": [
+              "+",
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "strands": [
+              "+",
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 5,
+      "query": "TAGC",
+      "origin": 16,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 4,
+          "end": 8,
+          "strands": [
+            "+"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 0,
+    "ambiguous_count": 5,
+    "mean_truth": 0.8333333333333334,
+    "mean_retained": 0.0
+  },
+  {
+    "genome": 1,
+    "length": 5,
+    "read": 1,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "AGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 13,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "AACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCT",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 1,
+      "query": "ACGTT",
+      "origin": 0,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 0,
+          "end": 5,
+          "strands": [
+            "+"
+          ]
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.0416666666666667,
+    "mean_retained": 0.20833333333333334
+  },
+  {
+    "genome": 1,
+    "length": 5,
+    "read": 2,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "AGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 13,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "AACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCT",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 2,
+      "query": "AGCTA",
+      "origin": 4,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 4,
+          "end": 9,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.0416666666666667,
+    "mean_retained": 0.20833333333333334
+  },
+  {
+    "genome": 1,
+    "length": 5,
+    "read": 3,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "AGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 13,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "AACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCT",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 3,
+      "query": "TGCAA",
+      "origin": 8,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 8,
+          "end": 13,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.0416666666666667,
+    "mean_retained": 0.20833333333333334
+  },
+  {
+    "genome": 1,
+    "length": 5,
+    "read": 4,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "AGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 13,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "AACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCT",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 4,
+      "query": "AACGT",
+      "origin": 12,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 0,
+          "end": 5,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "strands": [
+            "+"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.0416666666666667,
+    "mean_retained": 0.20833333333333334
+  },
+  {
+    "genome": 1,
+    "length": 5,
+    "read": 5,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTT",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "AGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAA",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 13,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "AACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 5,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCT",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 9,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 5,
+      "query": "TAGCT",
+      "origin": 16,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 4,
+          "end": 9,
+          "strands": [
+            "+"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.0416666666666667,
+    "mean_retained": 0.20833333333333334
+  },
+  {
+    "genome": 1,
+    "length": 6,
+    "read": 1,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTA",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "CAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAAC",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 14,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "TAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTG",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 1,
+      "query": "ACGTTA",
+      "origin": 0,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 0,
+          "end": 6,
+          "strands": [
+            "+"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.25,
+    "mean_retained": 0.25
+  },
+  {
+    "genome": 1,
+    "length": 6,
+    "read": 2,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTA",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "CAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAAC",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 14,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "TAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTG",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 2,
+      "query": "CAGCTA",
+      "origin": 4,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 4,
+          "end": 10,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.25,
+    "mean_retained": 0.25
+  },
+  {
+    "genome": 1,
+    "length": 6,
+    "read": 3,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTA",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "CAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAAC",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 14,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "TAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTG",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 3,
+      "query": "TGCAAC",
+      "origin": 8,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 8,
+          "end": 14,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.25,
+    "mean_retained": 0.25
+  },
+  {
+    "genome": 1,
+    "length": 6,
+    "read": 4,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTA",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "CAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAAC",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 14,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "TAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTG",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 4,
+      "query": "TAACGT",
+      "origin": 12,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 0,
+          "end": 6,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.25,
+    "mean_retained": 0.25
+  },
+  {
+    "genome": 1,
+    "length": 6,
+    "read": 5,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTA",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "CAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAAC",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 14,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "TAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 6,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTG",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 10,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 5,
+      "query": "TAGCTG",
+      "origin": 16,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 4,
+          "end": 10,
+          "strands": [
+            "+"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.25,
+    "mean_retained": 0.25
+  },
+  {
+    "genome": 1,
+    "length": 7,
+    "read": 1,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTAG",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "GCAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAACG",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 15,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CTAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTGC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 1,
+      "query": "ACGTTAG",
+      "origin": 0,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 0,
+          "end": 7,
+          "strands": [
+            "+"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 19,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.4583333333333333,
+    "mean_retained": 0.2916666666666667
+  },
+  {
+    "genome": 1,
+    "length": 7,
+    "read": 2,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTAG",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "GCAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAACG",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 15,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CTAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTGC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 2,
+      "query": "GCAGCTA",
+      "origin": 4,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 4,
+          "end": 11,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.4583333333333333,
+    "mean_retained": 0.2916666666666667
+  },
+  {
+    "genome": 1,
+    "length": 7,
+    "read": 3,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTAG",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "GCAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAACG",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 15,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CTAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTGC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 3,
+      "query": "TGCAACG",
+      "origin": 8,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 8,
+          "end": 15,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.4583333333333333,
+    "mean_retained": 0.2916666666666667
+  },
+  {
+    "genome": 1,
+    "length": 7,
+    "read": 4,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTAG",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "GCAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAACG",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 15,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CTAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTGC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 4,
+      "query": "CTAACGT",
+      "origin": 12,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 0,
+          "end": 7,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 19,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.4583333333333333,
+    "mean_retained": 0.2916666666666667
+  },
+  {
+    "genome": 1,
+    "length": 7,
+    "read": 5,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTAG",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "GCAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAACG",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 15,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "CTAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 7,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTGC",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 11,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 5,
+      "query": "TAGCTGC",
+      "origin": 16,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 4,
+          "end": 11,
+          "strands": [
+            "+"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.4583333333333333,
+    "mean_retained": 0.2916666666666667
+  },
+  {
+    "genome": 1,
+    "length": 8,
+    "read": 1,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTAGC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "TGCAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAACGT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "GCTAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTGCA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 1,
+      "query": "ACGTTAGC",
+      "origin": 0,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 0,
+          "end": 8,
+          "strands": [
+            "+"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.6666666666666667,
+    "mean_retained": 0.3333333333333333
+  },
+  {
+    "genome": 1,
+    "length": 8,
+    "read": 2,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTAGC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "TGCAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAACGT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "GCTAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTGCA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 2,
+      "query": "TGCAGCTA",
+      "origin": 4,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 4,
+          "end": 12,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.6666666666666667,
+    "mean_retained": 0.3333333333333333
+  },
+  {
+    "genome": 1,
+    "length": 8,
+    "read": 3,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTAGC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "TGCAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAACGT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "GCTAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTGCA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 3,
+      "query": "TGCAACGT",
+      "origin": 8,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 8,
+          "end": 16,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": true
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.6666666666666667,
+    "mean_retained": 0.3333333333333333
+  },
+  {
+    "genome": 1,
+    "length": 8,
+    "read": 4,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTAGC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "TGCAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAACGT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "GCTAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTGCA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 4,
+      "query": "GCTAACGT",
+      "origin": 12,
+      "origin_strand": "-",
+      "hits": [
+        {
+          "start": 0,
+          "end": 8,
+          "strands": [
+            "-"
+          ]
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "strands": [
+            "-"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.6666666666666667,
+    "mean_retained": 0.3333333333333333
+  },
+  {
+    "genome": 1,
+    "length": 8,
+    "read": 5,
+    "reference": "ACGTTAGCTGCAACGTTAGCTGCA",
+    "rows": [
+      {
+        "read": 1,
+        "query": "ACGTTAGC",
+        "origin": 0,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 2,
+        "query": "TGCAGCTA",
+        "origin": 4,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 3,
+        "query": "TGCAACGT",
+        "origin": 8,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 8,
+            "end": 16,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": true
+      },
+      {
+        "read": 4,
+        "query": "GCTAACGT",
+        "origin": 12,
+        "origin_strand": "-",
+        "hits": [
+          {
+            "start": 0,
+            "end": 8,
+            "strands": [
+              "-"
+            ]
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "strands": [
+              "-"
+            ]
+          }
+        ],
+        "unique": false
+      },
+      {
+        "read": 5,
+        "query": "TAGCTGCA",
+        "origin": 16,
+        "origin_strand": "+",
+        "hits": [
+          {
+            "start": 4,
+            "end": 12,
+            "strands": [
+              "+"
+            ]
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "strands": [
+              "+"
+            ]
+          }
+        ],
+        "unique": false
+      }
+    ],
+    "selected": {
+      "read": 5,
+      "query": "TAGCTGCA",
+      "origin": 16,
+      "origin_strand": "+",
+      "hits": [
+        {
+          "start": 4,
+          "end": 12,
+          "strands": [
+            "+"
+          ]
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "strands": [
+            "+"
+          ]
+        }
+      ],
+      "unique": false
+    },
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "retained": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_count": 1,
+    "ambiguous_count": 4,
+    "mean_truth": 1.6666666666666667,
+    "mean_retained": 0.3333333333333333
+  }
+]

@@ -1,0 +1,5 @@
+from math import exp,sqrt,pi
+eps=.1;N=2000;lo,hi=-6*eps,6*eps;h=(hi-lo)/N
+area=h*sum(exp(-((lo+(i+.5)*h)/eps)**2/2)/(sqrt(2*pi)*eps) for i in range(N))
+assert abs(area-1)<1e-8
+print(area)

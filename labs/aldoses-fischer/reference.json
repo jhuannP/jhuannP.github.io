@@ -1,0 +1,241 @@
+[
+  {
+    "bits": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "series": "L",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      2,
+      4,
+      5
+    ],
+    "relation": "diastereomer"
+  },
+  {
+    "bits": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "series": "D",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      2,
+      4
+    ],
+    "relation": "diastereomer"
+  },
+  {
+    "bits": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "series": "L",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      2,
+      5
+    ],
+    "relation": "diastereomer"
+  },
+  {
+    "bits": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "series": "D",
+    "name": "D-manose",
+    "changed": [
+      2
+    ],
+    "relation": "epimer"
+  },
+  {
+    "bits": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "series": "L",
+    "name": "L-glicose",
+    "changed": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "relation": "enantiomer"
+  },
+  {
+    "bits": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "series": "D",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      2,
+      3,
+      4
+    ],
+    "relation": "diastereomer"
+  },
+  {
+    "bits": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "series": "L",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      2,
+      3,
+      5
+    ],
+    "relation": "diastereomer"
+  },
+  {
+    "bits": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "series": "D",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      2,
+      3
+    ],
+    "relation": "diastereomer"
+  },
+  {
+    "bits": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "series": "L",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      4,
+      5
+    ],
+    "relation": "diastereomer"
+  },
+  {
+    "bits": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "series": "D",
+    "name": "D-galactose",
+    "changed": [
+      4
+    ],
+    "relation": "epimer"
+  },
+  {
+    "bits": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "series": "L",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      5
+    ],
+    "relation": "epimer"
+  },
+  {
+    "bits": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "series": "D",
+    "name": "D-glicose",
+    "changed": [],
+    "relation": "identical"
+  },
+  {
+    "bits": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "series": "L",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      3,
+      4,
+      5
+    ],
+    "relation": "diastereomer"
+  },
+  {
+    "bits": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "series": "D",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      3,
+      4
+    ],
+    "relation": "diastereomer"
+  },
+  {
+    "bits": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "series": "L",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      3,
+      5
+    ],
+    "relation": "diastereomer"
+  },
+  {
+    "bits": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "series": "D",
+    "name": "Outra aldo-hexose do recorte",
+    "changed": [
+      3
+    ],
+    "relation": "epimer"
+  }
+]

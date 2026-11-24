@@ -1,0 +1,650 @@
+[
+  {
+    "system": 0,
+    "beta": 0,
+    "observer": -0.8,
+    "particles": [
+      {
+        "energy": 1.6666666666666667,
+        "momentum": 1.3333333333333335,
+        "kinetic": 0.6666666666666667,
+        "velocity": 0.8
+      }
+    ],
+    "energy": 1.6666666666666667,
+    "momentum": 1.3333333333333335,
+    "mass": 1,
+    "mass_squared": 0.9999999999999998,
+    "rest_sum": 1,
+    "bulk_kinetic": 0.6666666666666667,
+    "sum_kinetic": 0.6666666666666667,
+    "internal": 0,
+    "classical": 0.32000000000000006,
+    "relative_error": 0.5199999999999999,
+    "cm_velocity": 0.8
+  },
+  {
+    "system": 0,
+    "beta": 0,
+    "observer": 0,
+    "particles": [
+      {
+        "energy": 1.0,
+        "momentum": 0.0,
+        "kinetic": 0.0,
+        "velocity": 0.0
+      }
+    ],
+    "energy": 1.0,
+    "momentum": 0.0,
+    "mass": 1,
+    "mass_squared": 1.0,
+    "rest_sum": 1,
+    "bulk_kinetic": 0.0,
+    "sum_kinetic": 0.0,
+    "internal": 0,
+    "classical": 0.0,
+    "relative_error": null,
+    "cm_velocity": 0.0
+  },
+  {
+    "system": 0,
+    "beta": 0,
+    "observer": 0.4,
+    "particles": [
+      {
+        "energy": 1.0910894511799618,
+        "momentum": -0.4364357804719847,
+        "kinetic": 0.09108945117996188,
+        "velocity": -0.4
+      }
+    ],
+    "energy": 1.0910894511799618,
+    "momentum": -0.4364357804719847,
+    "mass": 1,
+    "mass_squared": 0.9999999999999998,
+    "rest_sum": 1,
+    "bulk_kinetic": 0.09108945117996188,
+    "sum_kinetic": 0.09108945117996188,
+    "internal": 0,
+    "classical": 0.08000000000000002,
+    "relative_error": 0.12174243050441558,
+    "cm_velocity": -0.4
+  },
+  {
+    "system": 0,
+    "beta": 0,
+    "observer": 0.8,
+    "particles": [
+      {
+        "energy": 1.6666666666666667,
+        "momentum": -1.3333333333333335,
+        "kinetic": 0.6666666666666667,
+        "velocity": -0.8
+      }
+    ],
+    "energy": 1.6666666666666667,
+    "momentum": -1.3333333333333335,
+    "mass": 1,
+    "mass_squared": 0.9999999999999998,
+    "rest_sum": 1,
+    "bulk_kinetic": 0.6666666666666667,
+    "sum_kinetic": 0.6666666666666667,
+    "internal": 0,
+    "classical": 0.32000000000000006,
+    "relative_error": 0.5199999999999999,
+    "cm_velocity": -0.8
+  },
+  {
+    "system": 0,
+    "beta": 0.6,
+    "observer": -0.8,
+    "particles": [
+      {
+        "energy": 3.0833333333333335,
+        "momentum": 2.916666666666667,
+        "kinetic": 2.0833333333333335,
+        "velocity": 0.9459459459459459
+      }
+    ],
+    "energy": 3.0833333333333335,
+    "momentum": 2.916666666666667,
+    "mass": 1,
+    "mass_squared": 0.9999999999999991,
+    "rest_sum": 1,
+    "bulk_kinetic": 2.0833333333333335,
+    "sum_kinetic": 2.0833333333333335,
+    "internal": 0,
+    "classical": 0.44740686632578525,
+    "relative_error": 0.785244704163623,
+    "cm_velocity": 0.9459459459459459
+  },
+  {
+    "system": 0,
+    "beta": 0.6,
+    "observer": 0,
+    "particles": [
+      {
+        "energy": 1.25,
+        "momentum": 0.75,
+        "kinetic": 0.25,
+        "velocity": 0.6
+      }
+    ],
+    "energy": 1.25,
+    "momentum": 0.75,
+    "mass": 1,
+    "mass_squared": 1.0,
+    "rest_sum": 1,
+    "bulk_kinetic": 0.25,
+    "sum_kinetic": 0.25,
+    "internal": 0,
+    "classical": 0.18,
+    "relative_error": 0.28,
+    "cm_velocity": 0.6
+  },
+  {
+    "system": 0,
+    "beta": 0.6,
+    "observer": 0.4,
+    "particles": [
+      {
+        "energy": 1.0365349786209637,
+        "momentum": 0.27277236279499045,
+        "kinetic": 0.03653497862096381,
+        "velocity": 0.26315789473684215
+      }
+    ],
+    "energy": 1.0365349786209637,
+    "momentum": 0.27277236279499045,
+    "mass": 1,
+    "mass_squared": 0.9999999999999997,
+    "rest_sum": 1,
+    "bulk_kinetic": 0.03653497862096381,
+    "sum_kinetic": 0.03653497862096381,
+    "internal": 0,
+    "classical": 0.034626038781163444,
+    "relative_error": 0.05224964983844317,
+    "cm_velocity": 0.26315789473684215
+  },
+  {
+    "system": 0,
+    "beta": 0.6,
+    "observer": 0.8,
+    "particles": [
+      {
+        "energy": 1.0833333333333333,
+        "momentum": -0.4166666666666667,
+        "kinetic": 0.08333333333333336,
+        "velocity": -0.38461538461538464
+      }
+    ],
+    "energy": 1.0833333333333333,
+    "momentum": -0.4166666666666667,
+    "mass": 1,
+    "mass_squared": 0.9999999999999998,
+    "rest_sum": 1,
+    "bulk_kinetic": 0.08333333333333336,
+    "sum_kinetic": 0.08333333333333336,
+    "internal": 0,
+    "classical": 0.07396449704142012,
+    "relative_error": 0.1124260355029588,
+    "cm_velocity": -0.38461538461538464
+  },
+  {
+    "system": 0,
+    "beta": 0.95,
+    "observer": -0.8,
+    "particles": [
+      {
+        "energy": 9.394185023231776,
+        "momentum": 9.340808971963414,
+        "kinetic": 8.394185023231778,
+        "velocity": 0.9943181818181819
+      }
+    ],
+    "energy": 9.394185023231776,
+    "momentum": 9.340808971963414,
+    "mass": 1,
+    "mass_squared": 0.9999999999999943,
+    "rest_sum": 1,
+    "bulk_kinetic": 8.394185023231778,
+    "sum_kinetic": 8.394185023231778,
+    "internal": 0,
+    "classical": 0.4943343233471075,
+    "relative_error": 0.9411099085880301,
+    "cm_velocity": 0.9943181818181819
+  },
+  {
+    "system": 0,
+    "beta": 0.95,
+    "observer": 0,
+    "particles": [
+      {
+        "energy": 3.2025630761017414,
+        "momentum": 3.0424349222966542,
+        "kinetic": 2.2025630761017414,
+        "velocity": 0.95
+      }
+    ],
+    "energy": 3.2025630761017414,
+    "momentum": 3.0424349222966542,
+    "mass": 1,
+    "mass_squared": 0.9999999999999998,
+    "rest_sum": 1,
+    "bulk_kinetic": 2.2025630761017414,
+    "sum_kinetic": 2.2025630761017414,
+    "internal": 0,
+    "classical": 0.45125,
+    "relative_error": 0.79512505004004,
+    "cm_velocity": 0.95
+  },
+  {
+    "system": 0,
+    "beta": 0.95,
+    "observer": 0.4,
+    "particles": [
+      {
+        "energy": 2.166455329225297,
+        "momentum": 1.9218555339901824,
+        "kinetic": 1.1664553292252968,
+        "velocity": 0.8870967741935483
+      }
+    ],
+    "energy": 2.166455329225297,
+    "momentum": 1.9218555339901824,
+    "mass": 1,
+    "mass_squared": 1.0000000000000002,
+    "rest_sum": 1,
+    "bulk_kinetic": 1.1664553292252968,
+    "sum_kinetic": 1.1664553292252968,
+    "internal": 0,
+    "classical": 0.3934703433922996,
+    "relative_error": 0.6626786011140062,
+    "cm_velocity": 0.8870967741935483
+  },
+  {
+    "system": 0,
+    "beta": 0.95,
+    "observer": 0.8,
+    "particles": [
+      {
+        "energy": 1.2810252304406964,
+        "momentum": 0.8006407690254351,
+        "kinetic": 0.28102523044069677,
+        "velocity": 0.6249999999999999
+      }
+    ],
+    "energy": 1.2810252304406964,
+    "momentum": 0.8006407690254351,
+    "mass": 1,
+    "mass_squared": 0.999999999999999,
+    "rest_sum": 1,
+    "bulk_kinetic": 0.28102523044069677,
+    "sum_kinetic": 0.28102523044069677,
+    "internal": 0,
+    "classical": 0.19531249999999992,
+    "relative_error": 0.30500012510009966,
+    "cm_velocity": 0.6249999999999999
+  },
+  {
+    "system": 1,
+    "beta": 0,
+    "observer": -0.8,
+    "particles": [
+      {
+        "energy": 1.6666666666666667,
+        "momentum": 1.3333333333333335,
+        "kinetic": 0.6666666666666667,
+        "velocity": 0.8
+      },
+      {
+        "energy": 1.6666666666666667,
+        "momentum": 1.3333333333333335,
+        "kinetic": 0.6666666666666667,
+        "velocity": 0.8
+      }
+    ],
+    "energy": 3.3333333333333335,
+    "momentum": 2.666666666666667,
+    "mass": 2.0,
+    "mass_squared": 3.999999999999999,
+    "rest_sum": 2,
+    "bulk_kinetic": 1.3333333333333335,
+    "sum_kinetic": 1.3333333333333335,
+    "internal": 0.0,
+    "classical": 0.32000000000000006,
+    "relative_error": 0.5199999999999999,
+    "cm_velocity": 0.8
+  },
+  {
+    "system": 1,
+    "beta": 0,
+    "observer": 0,
+    "particles": [
+      {
+        "energy": 1.0,
+        "momentum": 0.0,
+        "kinetic": 0.0,
+        "velocity": 0.0
+      },
+      {
+        "energy": 1.0,
+        "momentum": -0.0,
+        "kinetic": 0.0,
+        "velocity": -0.0
+      }
+    ],
+    "energy": 2.0,
+    "momentum": 0.0,
+    "mass": 2.0,
+    "mass_squared": 4.0,
+    "rest_sum": 2,
+    "bulk_kinetic": 0.0,
+    "sum_kinetic": 0.0,
+    "internal": 0.0,
+    "classical": 0.0,
+    "relative_error": null,
+    "cm_velocity": 0.0
+  },
+  {
+    "system": 1,
+    "beta": 0,
+    "observer": 0.4,
+    "particles": [
+      {
+        "energy": 1.0910894511799618,
+        "momentum": -0.4364357804719847,
+        "kinetic": 0.09108945117996188,
+        "velocity": -0.4
+      },
+      {
+        "energy": 1.0910894511799618,
+        "momentum": -0.4364357804719847,
+        "kinetic": 0.09108945117996188,
+        "velocity": -0.4
+      }
+    ],
+    "energy": 2.1821789023599236,
+    "momentum": -0.8728715609439694,
+    "mass": 2.0,
+    "mass_squared": 3.999999999999999,
+    "rest_sum": 2,
+    "bulk_kinetic": 0.18217890235992376,
+    "sum_kinetic": 0.18217890235992376,
+    "internal": 0.0,
+    "classical": 0.08000000000000002,
+    "relative_error": 0.12174243050441558,
+    "cm_velocity": -0.4
+  },
+  {
+    "system": 1,
+    "beta": 0,
+    "observer": 0.8,
+    "particles": [
+      {
+        "energy": 1.6666666666666667,
+        "momentum": -1.3333333333333335,
+        "kinetic": 0.6666666666666667,
+        "velocity": -0.8
+      },
+      {
+        "energy": 1.6666666666666667,
+        "momentum": -1.3333333333333335,
+        "kinetic": 0.6666666666666667,
+        "velocity": -0.8
+      }
+    ],
+    "energy": 3.3333333333333335,
+    "momentum": -2.666666666666667,
+    "mass": 2.0,
+    "mass_squared": 3.999999999999999,
+    "rest_sum": 2,
+    "bulk_kinetic": 1.3333333333333335,
+    "sum_kinetic": 1.3333333333333335,
+    "internal": 0.0,
+    "classical": 0.32000000000000006,
+    "relative_error": 0.5199999999999999,
+    "cm_velocity": -0.8
+  },
+  {
+    "system": 1,
+    "beta": 0.6,
+    "observer": -0.8,
+    "particles": [
+      {
+        "energy": 3.0833333333333335,
+        "momentum": 2.916666666666667,
+        "kinetic": 2.0833333333333335,
+        "velocity": 0.9459459459459459
+      },
+      {
+        "energy": 1.0833333333333333,
+        "momentum": 0.4166666666666667,
+        "kinetic": 0.08333333333333336,
+        "velocity": 0.38461538461538464
+      }
+    ],
+    "energy": 4.166666666666667,
+    "momentum": 3.3333333333333335,
+    "mass": 2.5,
+    "mass_squared": 6.250000000000001,
+    "rest_sum": 2,
+    "bulk_kinetic": 1.6666666666666667,
+    "sum_kinetic": 2.166666666666667,
+    "internal": 0.5,
+    "classical": 0.44740686632578525,
+    "relative_error": 0.785244704163623,
+    "cm_velocity": 0.7999999999999999
+  },
+  {
+    "system": 1,
+    "beta": 0.6,
+    "observer": 0,
+    "particles": [
+      {
+        "energy": 1.25,
+        "momentum": 0.75,
+        "kinetic": 0.25,
+        "velocity": 0.6
+      },
+      {
+        "energy": 1.25,
+        "momentum": -0.75,
+        "kinetic": 0.25,
+        "velocity": -0.6
+      }
+    ],
+    "energy": 2.5,
+    "momentum": 0.0,
+    "mass": 2.5,
+    "mass_squared": 6.25,
+    "rest_sum": 2,
+    "bulk_kinetic": 0.0,
+    "sum_kinetic": 0.5,
+    "internal": 0.5,
+    "classical": 0.18,
+    "relative_error": 0.28,
+    "cm_velocity": 0.0
+  },
+  {
+    "system": 1,
+    "beta": 0.6,
+    "observer": 0.4,
+    "particles": [
+      {
+        "energy": 1.0365349786209637,
+        "momentum": 0.27277236279499045,
+        "kinetic": 0.03653497862096381,
+        "velocity": 0.26315789473684215
+      },
+      {
+        "energy": 1.6911886493289408,
+        "momentum": -1.3638618139749523,
+        "kinetic": 0.691188649328941,
+        "velocity": -0.8064516129032259
+      }
+    ],
+    "energy": 2.7277236279499046,
+    "momentum": -1.0910894511799618,
+    "mass": 2.5,
+    "mass_squared": 6.25,
+    "rest_sum": 2,
+    "bulk_kinetic": 0.22772362794990472,
+    "sum_kinetic": 0.7277236279499047,
+    "internal": 0.5,
+    "classical": 0.034626038781163444,
+    "relative_error": 0.05224964983844317,
+    "cm_velocity": -0.39999999999999997
+  },
+  {
+    "system": 1,
+    "beta": 0.6,
+    "observer": 0.8,
+    "particles": [
+      {
+        "energy": 1.0833333333333333,
+        "momentum": -0.4166666666666667,
+        "kinetic": 0.08333333333333336,
+        "velocity": -0.38461538461538464
+      },
+      {
+        "energy": 3.0833333333333335,
+        "momentum": -2.916666666666667,
+        "kinetic": 2.0833333333333335,
+        "velocity": -0.9459459459459459
+      }
+    ],
+    "energy": 4.166666666666667,
+    "momentum": -3.3333333333333335,
+    "mass": 2.5,
+    "mass_squared": 6.250000000000001,
+    "rest_sum": 2,
+    "bulk_kinetic": 1.6666666666666667,
+    "sum_kinetic": 2.166666666666667,
+    "internal": 0.5,
+    "classical": 0.07396449704142012,
+    "relative_error": 0.1124260355029588,
+    "cm_velocity": -0.7999999999999999
+  },
+  {
+    "system": 1,
+    "beta": 0.95,
+    "observer": -0.8,
+    "particles": [
+      {
+        "energy": 9.394185023231776,
+        "momentum": 9.340808971963414,
+        "kinetic": 8.394185023231778,
+        "velocity": 0.9943181818181819
+      },
+      {
+        "energy": 1.2810252304406964,
+        "momentum": -0.8006407690254351,
+        "kinetic": 0.28102523044069677,
+        "velocity": -0.6249999999999999
+      }
+    ],
+    "energy": 10.675210253672471,
+    "momentum": 8.540168202937979,
+    "mass": 6.405126152203483,
+    "mass_squared": 41.025641025640965,
+    "rest_sum": 2,
+    "bulk_kinetic": 4.27008410146899,
+    "sum_kinetic": 8.675210253672475,
+    "internal": 4.405126152203483,
+    "classical": 0.4943343233471075,
+    "relative_error": 0.9411099085880301,
+    "cm_velocity": 0.8000000000000002
+  },
+  {
+    "system": 1,
+    "beta": 0.95,
+    "observer": 0,
+    "particles": [
+      {
+        "energy": 3.2025630761017414,
+        "momentum": 3.0424349222966542,
+        "kinetic": 2.2025630761017414,
+        "velocity": 0.95
+      },
+      {
+        "energy": 3.2025630761017414,
+        "momentum": -3.0424349222966542,
+        "kinetic": 2.2025630761017414,
+        "velocity": -0.95
+      }
+    ],
+    "energy": 6.405126152203483,
+    "momentum": 0.0,
+    "mass": 6.405126152203483,
+    "mass_squared": 41.025641025640994,
+    "rest_sum": 2,
+    "bulk_kinetic": 0.0,
+    "sum_kinetic": 4.405126152203483,
+    "internal": 4.405126152203483,
+    "classical": 0.45125,
+    "relative_error": 0.79512505004004,
+    "cm_velocity": 0.0
+  },
+  {
+    "system": 1,
+    "beta": 0.95,
+    "observer": 0.4,
+    "particles": [
+      {
+        "energy": 2.166455329225297,
+        "momentum": 1.9218555339901824,
+        "kinetic": 1.1664553292252968,
+        "velocity": 0.8870967741935483
+      },
+      {
+        "energy": 4.822110248920822,
+        "momentum": -4.71728176524863,
+        "kinetic": 3.822110248920821,
+        "velocity": -0.9782608695652173
+      }
+    ],
+    "energy": 6.988565578146119,
+    "momentum": -2.795426231258447,
+    "mass": 6.405126152203483,
+    "mass_squared": 41.02564102564099,
+    "rest_sum": 2,
+    "bulk_kinetic": 0.5834394259426361,
+    "sum_kinetic": 4.988565578146118,
+    "internal": 4.405126152203483,
+    "classical": 0.3934703433922996,
+    "relative_error": 0.6626786011140062,
+    "cm_velocity": -0.3999999999999999
+  },
+  {
+    "system": 1,
+    "beta": 0.95,
+    "observer": 0.8,
+    "particles": [
+      {
+        "energy": 1.2810252304406964,
+        "momentum": 0.8006407690254351,
+        "kinetic": 0.28102523044069677,
+        "velocity": 0.6249999999999999
+      },
+      {
+        "energy": 9.394185023231776,
+        "momentum": -9.340808971963414,
+        "kinetic": 8.394185023231778,
+        "velocity": -0.9943181818181819
+      }
+    ],
+    "energy": 10.675210253672471,
+    "momentum": -8.540168202937979,
+    "mass": 6.405126152203483,
+    "mass_squared": 41.025641025640965,
+    "rest_sum": 2,
+    "bulk_kinetic": 4.27008410146899,
+    "sum_kinetic": 8.675210253672475,
+    "internal": 4.405126152203483,
+    "classical": 0.19531249999999992,
+    "relative_error": 0.30500012510009966,
+    "cm_velocity": -0.8000000000000002
+  }
+]

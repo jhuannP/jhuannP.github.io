@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "experiment": "finite-markov-chain",
+  "input": {
+    "name": "transition.json",
+    "sha256": "6e32515529a6a858ad581ef15c1c225701d8b68444802a01eb4c1564ec0382ea"
+  },
+  "config": {
+    "matrix": [
+      [
+        0.8,
+        0.2
+      ],
+      [
+        0.4,
+        0.6
+      ]
+    ],
+    "convention": "linhas são origens; p_novo=pP",
+    "normalization": "linhas verificadas com atol=1e-12, depois normalizadas",
+    "initial": 0,
+    "steps": 10,
+    "samples": 1000,
+    "seed": 42,
+    "generator": "random.Random",
+    "draw_order": "tempo, depois trajetória"
+  },
+  "software": {
+    "python": "3.14.5",
+    "code_sha256": "464ce4c8da39233e80252adf2c53675076df34685eff7ca190786396277eeead"
+  },
+  "result": {
+    "distribution_trace": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.8,
+        0.2
+      ],
+      [
+        0.7200000000000002,
+        0.28
+      ],
+      [
+        0.6880000000000002,
+        0.31200000000000006
+      ],
+      [
+        0.6752000000000001,
+        0.3248000000000001
+      ],
+      [
+        0.6700800000000001,
+        0.3299200000000001
+      ],
+      [
+        0.6680320000000002,
+        0.33196800000000004
+      ],
+      [
+        0.6672128000000002,
+        0.33278720000000006
+      ],
+      [
+        0.6668851200000002,
+        0.3331148800000001
+      ],
+      [
+        0.6667540480000003,
+        0.33324595200000007
+      ],
+      [
+        0.6667016192000003,
+        0.33329838080000007
+      ]
+    ],
+    "counts": [
+      [
+        1000,
+        0
+      ],
+      [
+        788,
+        212
+      ],
+      [
+        736,
+        264
+      ],
+      [
+        692,
+        308
+      ],
+      [
+        688,
+        312
+      ],
+      [
+        696,
+        304
+      ],
+      [
+        693,
+        307
+      ],
+      [
+        664,
+        336
+      ],
+      [
+        686,
+        314
+      ],
+      [
+        672,
+        328
+      ],
+      [
+        665,
+        335
+      ]
+    ],
+    "frequencies": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.788,
+        0.212
+      ],
+      [
+        0.736,
+        0.264
+      ],
+      [
+        0.692,
+        0.308
+      ],
+      [
+        0.688,
+        0.312
+      ],
+      [
+        0.696,
+        0.304
+      ],
+      [
+        0.693,
+        0.307
+      ],
+      [
+        0.664,
+        0.336
+      ],
+      [
+        0.686,
+        0.314
+      ],
+      [
+        0.672,
+        0.328
+      ],
+      [
+        0.665,
+        0.335
+      ]
+    ],
+    "final_wilson_nominal_95": [
+      [
+        0.6351640508403955,
+        0.6935731188593715
+      ],
+      [
+        0.30642688114062866,
+        0.3648359491596046
+      ]
+    ]
+  },
+  "interpretation": "Erro amostral de trajetórias versus distribuição do modelo discreto; não é erro de discretização de EDO nem evidência experimental. Intervalos marginais nominais, não banda simultânea."
+}

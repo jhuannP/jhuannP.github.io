@@ -1,0 +1,8 @@
+from fractions import Fraction as F
+circle_blue,circle_red=24,6
+square_blue,square_red=14,56
+p_circle_given_blue=F(circle_blue,circle_blue+square_blue)
+p_blue_given_circle=F(circle_blue,circle_blue+circle_red)
+assert p_circle_given_blue==F(12,19)
+assert p_blue_given_circle==F(4,5)
+print(p_circle_given_blue,p_blue_given_circle)

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 380" role="img" aria-labelledby="title desc">
+<title id="title">Rastro da avaliação de um polinômio e sua derivada</title>
+<desc id="desc">Coeficientes crescentes um, menos três e dois; argumento dois. Ao iniciar no índice dois, o valor parcial é dois e a derivada zero. No índice um, valor um e derivada dois. No índice zero, valor três e derivada cinco. A derivada usa o valor parcial antigo em cada passo.</desc>
+<rect width="440" height="380" rx="16" fill="#f4f3e9"/>
+<g font-family="sans-serif" fill="#24352d">
+<text x="22" y="31" font-size="18" font-weight="bold">Horner: valor e derivada juntos</text>
+<text x="22" y="61" font-size="16">p(z)=1−3z+2z² · argumento x=2</text>
+<rect x="18" y="87" width="404" height="43" rx="6" fill="#e3e8df"/>
+<g font-size="16"><text x="34" y="114">índice k</text><text x="165" y="114">valor b</text><text x="288" y="114">derivada d</text></g>
+<path d="M18 181H422 M18 232H422 M18 283H422" stroke="#b3beb5"/>
+<g font-size="23"><text x="60" y="164">2</text><text x="185" y="164">2</text><text x="330" y="164">0</text>
+<text x="60" y="215">1</text><text x="185" y="215">1</text><text x="330" y="215">2</text>
+<text x="60" y="266">0</text><text x="185" y="266" fill="#2456c2">3</text><text x="330" y="266" fill="#2456c2">5</text></g>
+<text x="22" y="318" font-size="17">d novo = x·d antigo + b antigo</text>
+<text x="22" y="346" font-size="17">b novo = x·b antigo + cₖ</text>
+<text x="22" y="371" font-size="14">Atualize d antes de sobrescrever b.</text>
+</g></svg>

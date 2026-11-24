@@ -1,0 +1,12 @@
+from fractions import Fraction as Q
+CM,CL,K=Q(2),Q(3),Q(1,2)
+lo,hi=Q(0),min(CM,CL)
+for _ in range(80):
+    mid=(lo+hi)/2
+    residual=K*(CM-mid)*(CL-mid)-mid
+    if residual>0:lo=mid
+    else:hi=mid
+x=(lo+hi)/2
+assert lo<=1<=hi
+assert CM-x>=0 and CL-x>=0
+print("ML em mmol/L:",float(x),"intervalo:",float(lo),float(hi))

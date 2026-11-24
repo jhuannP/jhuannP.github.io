@@ -1,0 +1,9 @@
+from fractions import Fraction as Q
+reference_hz=400*10**6
+offset_hz=800
+shift_ppm=Q(offset_hz,reference_hz)*10**6
+assert shift_ppm==2
+areas=(Q(3),Q(2))
+relative=tuple(a/sum(areas) for a in areas)
+assert relative==(Q(3,5),Q(2,5))
+print(shift_ppm,relative)

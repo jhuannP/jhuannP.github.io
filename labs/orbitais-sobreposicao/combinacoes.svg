@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="555" viewBox="0 0 440 555" role="img" aria-labelledby="t d"><title id="t">Somar e subtrair funções com sobreposição</title><desc id="d">Duas funções phi A e phi B normalizadas têm sobreposição s. A soma tem norma ao quadrado dois vezes um mais s; a diferença, dois vezes um menos s. No exemplo de parâmetros sintéticos, alfa menos um, beta menos dois quintos, s um quinto: energia da combinação positiva menos sete sextos e da negativa menos três quartos. A diferença de energias é cinco doze avos em unidades abstratas de energia.</desc>
+<rect width="440" height="555" fill="#f6f8fb"/><g fill="#172b43" font-family="sans-serif">
+<text x="24" y="35" font-size="21" font-weight="bold">A sobreposição entra na norma</text>
+<text x="24" y="65" font-size="16">⟨φA|φA⟩ = ⟨φB|φB⟩ = 1; ⟨φA|φB⟩ = s</text>
+<text x="24" y="116" font-size="18" font-weight="bold">Combinação +</text>
+<text x="24" y="148" font-size="17">φA + φB</text><text x="24" y="180" font-size="16">Norma² = 2(1+s)</text>
+<text x="24" y="213" font-size="16">Energia: (α+β)/(1+s)</text>
+<path d="M24 242H416" stroke="#cbd5e1"/>
+<text x="24" y="281" font-size="18" font-weight="bold">Combinação −</text>
+<text x="24" y="313" font-size="17">φA − φB</text><text x="24" y="345" font-size="16">Norma² = 2(1−s)</text>
+<text x="24" y="378" font-size="16">Energia: (α−β)/(1−s)</text>
+<path d="M24 407H416" stroke="#cbd5e1"/>
+<text x="24" y="439" font-size="16">Exemplo: α=−1; β=−2/5; s=1/5</text>
+<text x="24" y="473" font-size="17" fill="#255fbc">E+ = −7/6; E− = −3/4; diferença = 5/12</text>
+<text x="24" y="508" font-size="15">Unidade de energia abstrata; não são eV.</text>
+<text x="24" y="538" font-size="13">Figura original; sem densidade ou energia total molecular.</text>
+</g></svg>

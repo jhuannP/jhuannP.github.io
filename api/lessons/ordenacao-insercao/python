@@ -1,0 +1,14 @@
+def ordenar_insercao(valores):
+    a = list(valores)
+    for i in range(1,len(a)):
+        chave = a[i]
+        j = i-1
+        while j >= 0 and a[j] > chave:
+            a[j+1] = a[j]
+            j -= 1
+        a[j+1] = chave
+    return a
+entrada = [4,1,3,2]
+assert ordenar_insercao(entrada) == [1,2,3,4]
+assert entrada == [4,1,3,2]
+print(ordenar_insercao(entrada))

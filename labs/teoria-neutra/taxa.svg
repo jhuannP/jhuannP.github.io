@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 430" role="img" aria-labelledby="t d">
+<title id="t">Mais origens, menor chance individual</title><desc id="d">Com taxa neutra um sobre cem mil por cópia, N cinquenta tem entrada zero vírgula zero zero um e chance zero vírgula zero um; N cem dobra a entrada e reduz a chance à metade. Produto igual.</desc>
+<rect width="420" height="430" fill="#f6f3e9"/>
+<g font-family="system-ui,sans-serif" fill="#183c36">
+<text x="22" y="33" font-size="20" font-weight="700">Mais origens, menor chance</text>
+<text x="22" y="63" font-size="14">μ₀ = 1/100000 por cópia/sítio/geração</text>
+<path d="M22 83H398M22 241H398" stroke="#bacabd"/>
+<text x="22" y="114" font-size="18" font-weight="650">N = 50 · M = 100 cópias</text>
+<text x="22" y="148" font-size="16">Entrada esperada: 0,001</text>
+<text x="22" y="176" font-size="16">Chance eventual: 0,01</text>
+<text x="22" y="211" font-size="18" font-weight="700">Produto = 0,00001</text>
+<text x="22" y="277" font-size="18" font-weight="650">N = 100 · M = 200 cópias</text>
+<text x="22" y="311" font-size="16">Entrada esperada: 0,002</text>
+<text x="22" y="339" font-size="16">Chance eventual: 0,005</text>
+<text x="22" y="374" font-size="18" font-weight="700">Produto = 0,00001</text>
+<text x="22" y="405" font-size="12">Não indica a geração em que a fixação se completa.</text>
+<text x="22" y="425" font-size="12">Parâmetros sintéticos · modelo estritamente neutro</text>
+</g></svg>

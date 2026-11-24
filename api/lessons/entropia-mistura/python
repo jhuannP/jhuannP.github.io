@@ -1,0 +1,5 @@
+from math import log
+N1,N2=5,5;N=N1+N2
+S=-N1*log(N1/N)-N2*log(N2/N)
+assert abs(S/log(2)-10)<1e-12
+print(S)

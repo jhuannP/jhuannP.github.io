@@ -1,0 +1,4 @@
+A1,A2,v1=4.,2.,3.
+v2=A1*v1/A2
+assert v2==6
+print(v2)

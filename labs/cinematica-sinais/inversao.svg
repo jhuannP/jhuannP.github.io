@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="430" viewBox="0 0 520 430" role="img" aria-labelledby="title desc">
+<title id="title">Área com sinal e inversão do movimento</title><desc id="desc">A reta v=6-2t cruza velocidade zero em três segundos. Triângulo positivo com área nove metros entre zero e três segundos, triângulo negativo com área menos nove entre três e seis. Deslocamento zero e distância dezoito metros.</desc>
+<rect width="520" height="430" fill="#f6f3eb"/>
+<g font-family="sans-serif" fill="#172845">
+<text x="20" y="36" font-size="27" font-weight="bold">v(t)=6−2t • velocidade em m/s</text>
+<path d="M65 205 L65 85 L260 205 Z" fill="#cbd6f5"/>
+<path d="M260 205 L455 205 L455 325 Z" fill="#e6d6bb"/>
+<g stroke="#172845" stroke-width="2" fill="none"><path d="M65 65 V340 M50 205 H475"/></g>
+<path d="M65 85 L455 325" stroke="#264bb5" stroke-width="4" fill="none"/>
+<g font-size="24"><text x="34" y="91">6</text><text x="30" y="214">0</text><text x="18" y="331">−6</text><text x="56" y="235">0</text><text x="250" y="235">3</text><text x="448" y="235">6</text><text x="443" y="183">t (s)</text><text x="94" y="178">+9 m</text><text x="360" y="245">−9 m</text></g>
+<text x="20" y="380" font-size="25" fill="#264bb5">Deslocamento: 9−9=0 m</text>
+<text x="20" y="414" font-size="25">Distância: 9+9=18 m</text>
+</g></svg>

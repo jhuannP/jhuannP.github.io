@@ -1,0 +1,5 @@
+q=lambda x,y:2*x*x+2*x*y+2*y*y
+assert q(1,-1)==2
+for x,y in ((1,0),(0,1),(1,-1)):
+    assert q(x,y)==(x+y)**2+x*x+y*y
+print(q(1,-1))

@@ -1,0 +1,5 @@
+from math import pi
+R=2
+area=2*pi*R*R/2
+assert abs(area/pi-4)<1e-12
+print(area)

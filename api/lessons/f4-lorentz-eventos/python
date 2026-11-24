@@ -1,0 +1,5 @@
+from math import sqrt
+beta=.6;g=1/sqrt(1-beta*beta);t,x=2.,0.
+tp=g*(t-beta*x);xp=g*(x-beta*t)
+assert abs(tp-2.5)<1e-12 and abs(tp*tp-xp*xp-(t*t-x*x))<1e-12
+print(tp,xp)

@@ -1,0 +1,39 @@
+from math import isfinite,sqrt,exp,sin,cos,pi,log,comb
+
+def finite(x):
+    if isinstance(x,bool): raise ValueError('Número real finito necessário')
+    try: y=float(x)
+    except (TypeError,ValueError,OverflowError): raise ValueError('Número real finito necessário') from None
+    if not isfinite(y): raise ValueError('Número real finito necessário')
+    return y
+
+def vector(x):
+    y=[finite(v) for v in x]
+    if not y: raise ValueError('Vetor vazio')
+    return y
+
+def budget(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<=0:
+        raise ValueError('Quantidade inteira positiva necessária')
+    return n
+
+def power_iteration(A,x0,tol=1e-9,max_iter=1000):
+    x=vector(x0);n=len(x);budget(max_iter);tol=finite(tol)
+    if tol<=0 or len(A)!=n or any(len(row)!=n for row in A): raise ValueError('Dimensão ou tolerância inválida')
+    A=[vector(row) for row in A]
+    def unit(v):
+        norm=sqrt(sum(a*a for a in v))
+        if norm==0 or not isfinite(norm): raise ArithmeticError('Normalização impossível')
+        return [a/norm for a in v]
+    x=unit(x)
+    for k in range(max_iter):
+        Ax=[finite(sum(a*b for a,b in zip(row,x))) for row in A];x=unit(Ax)
+        Ax=[finite(sum(a*b for a,b in zip(row,x))) for row in A]
+        lam=sum(a*b for a,b in zip(x,Ax));res=max(abs(a-lam*b) for a,b in zip(Ax,x))
+        if res<=tol:return {'value':lam,'vector':x,'residual':res,'iterations':k+1}
+    raise RuntimeError('Orçamento sem atingir resíduo')
+
+run=power_iteration([[3,0],[0,1]],[1,1])
+assert abs(run['value']-3)<1e-8
+assert run['residual']<=1e-9
+print(run)

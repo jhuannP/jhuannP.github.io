@@ -1,0 +1,6 @@
+from fractions import Fraction as Q
+L=Q(6,5);v=Q(48);n=3
+wavelength=2*L/n;frequency=v/wavelength
+nodes=[j*L/n for j in range(n+1)]
+assert wavelength==Q(4,5) and frequency==60
+print(wavelength,frequency,nodes)

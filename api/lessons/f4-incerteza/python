@@ -1,0 +1,4 @@
+hbar,dx=1.,2.
+dp=hbar/(2*dx)
+assert dp==.25 and dx*dp==.5
+print(dp)

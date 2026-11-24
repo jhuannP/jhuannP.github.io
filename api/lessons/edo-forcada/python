@@ -1,0 +1,6 @@
+from math import exp
+k,F,y0=2,6,0
+solution=lambda t:y0*exp(-k*t)+(F/k)*(1-exp(-k*t))
+assert solution(0)==0
+assert abs(solution(20)-3)<1e-12
+print(solution(1))

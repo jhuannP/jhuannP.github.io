@@ -1,0 +1,4 @@
+values=[-2,1,4]
+mean=sum(values)/len(values)
+assert mean==1
+print(mean)

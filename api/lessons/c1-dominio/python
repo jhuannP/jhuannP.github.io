@@ -1,0 +1,6 @@
+from math import sqrt,isfinite
+def f(x):
+    if isinstance(x,bool) or not isinstance(x,(int,float)) or not isfinite(x) or x<1 or x==2:raise ValueError("Fora do domínio")
+    return sqrt(x-1)/(x-2)
+assert abs(f(5)-2/3)<1e-12
+print(f(5))

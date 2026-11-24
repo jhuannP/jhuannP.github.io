@@ -1,0 +1,9 @@
+from fractions import Fraction as F
+axis=(F(2),F(0))
+left=(F(-1),F(1))
+right=(F(1),F(-1))
+cross=lambda u,v:u[0]*v[1]-u[1]*v[0]
+sL=cross(axis,left);sR=cross(axis,right)
+assert sL==2 and sR==-2
+assert sL*sR<0
+print('E: produto das áreas orientadas =',sL*sR)

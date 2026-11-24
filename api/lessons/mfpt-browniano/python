@@ -1,0 +1,5 @@
+def mfpt(x,L,D):
+    if D<=0 or L<=0 or abs(x)>L:raise ValueError('Parâmetros inválidos')
+    return (L*L-x*x)/(2*D)
+assert mfpt(0,2,1)==2 and mfpt(2,2,1)==0
+print(mfpt(0,2,1))

@@ -1,0 +1,19 @@
+from math import isfinite, sqrt, pi, cos, sin, exp, e, fsum
+
+def _real(value):
+    try:
+        if isinstance(value,bool): raise ValueError
+        result=float(value)
+    except (TypeError,ValueError,OverflowError):
+        raise ValueError('Valor real finito necessário') from None
+    if not isfinite(result): raise ValueError('Valor real finito necessário')
+    return result
+
+def aitken(x0,x1,x2):
+    x0,x1,x2=map(_real,(x0,x1,x2))
+    den=x2-2*x1+x0
+    if den==0:raise ArithmeticError('Segunda diferença zero')
+    return _real(x0-(x1-x0)**2/den)
+
+assert aitken(1,1.5,1.75)==2
+print(aitken(1,1.5,1.75))

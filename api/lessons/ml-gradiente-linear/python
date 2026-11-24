@@ -1,0 +1,21 @@
+from math import exp,log1p,sqrt,hypot,atan2,cos,sin,isfinite
+from random import Random
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def paired(x,y):
+    a=[finite(v) for v in x];b=[finite(v) for v in y]
+    if not a or len(a)!=len(b):raise ValueError('Dados não vazios de mesmo tamanho necessários')
+    return a,b
+
+def linear_gradient(x,y,w,b):
+    x,y=paired(x,y);w=finite(w);b=finite(b);e=[w*a+b-t for a,t in zip(x,y)]
+    return 2*sum(r*a for r,a in zip(e,x))/len(x),2*sum(e)/len(x)
+
+assert linear_gradient([1],[2],0,0)==(-4,-4)
+print(linear_gradient([1],[2],0,0))

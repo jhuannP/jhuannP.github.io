@@ -1,0 +1,4 @@
+# Relação externa reduzida: coeficiente multiplicativo normalizado para 1.
+B=lambda r:1/r
+assert B(2)/B(1)==.5
+print(.5)

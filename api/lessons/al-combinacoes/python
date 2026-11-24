@@ -1,0 +1,4 @@
+u=(1,0);v=(1,1);a,b=1,2
+result=tuple(a*x+b*y for x,y in zip(u,v))
+assert result==(3,2)
+print(result)

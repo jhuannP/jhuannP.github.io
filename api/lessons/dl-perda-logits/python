@@ -1,0 +1,7 @@
+from math import exp,log1p,log
+bce=lambda z,y:(max(z,0)-y*z)+log1p(exp(-abs(z)))
+assert abs(bce(0,1)-log(2))<1e-12
+assert bce(1000,0)==1000 and bce(1000,1)==0
+print(bce(0,1))
+
+assert bce(50,1)>0  # cauda representável preservada pelo agrupamento

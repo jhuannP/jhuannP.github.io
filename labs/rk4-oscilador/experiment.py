@@ -1,0 +1,34 @@
+"""RK4 por estágios em q'=v, v'=-q; referência conhecida, unidades adimensionais."""
+import math
+
+def oscillator_step(y,h):
+    f=lambda y:(y[1],-y[0])
+    add=lambda k,a:tuple(v+a*h*d for v,d in zip(y,k))
+    k1=f(y);k2=f(add(k1,.5));k3=f(add(k2,.5));k4=f(add(k3,1))
+    out=tuple(v+h*(a+2*b+2*c+d)/6 for v,a,b,c,d in zip(y,k1,k2,k3,k4))
+    return out,(k1,k2,k3,k4)
+
+def oscillator_trace(n,T):
+    if type(n) is not int or not 2<=n<=256 or not math.isfinite(T) or not 4<=T<=12:
+        raise ValueError('2..256 passos e T entre 4 e 12.')
+    y=(1.,0.);rows=[(0.,*y)];h=T/n
+    for j in range(n):
+        y,_=oscillator_step(y,h);rows.append(((j+1)*h,*y))
+    return rows
+
+def experiment(level=4,T=8.):
+    if type(level) is not int or not 1<=level<=7:raise ValueError('N=2^level, level 1..7.')
+    n=2**level;coarse=oscillator_trace(n,T);fine=oscillator_trace(2*n,T)
+    exact=(math.cos(T),-math.sin(T));yc=coarse[-1][1:];yf=fine[-1][1:]
+    error=lambda y:math.hypot(*(a-b for a,b in zip(y,exact)))
+    ec=error(yc);ef=error(yf);delta=math.hypot(*(a-b for a,b in zip(yc,yf)))
+    h=T/n;a=1-h*h/2+h**4/24;b=h-h**3/6
+    return dict(level=level,T=T,n=n,h=h,coarse=coarse,fine=fine,exact=exact,
+                error_coarse=ec,error_fine=ef,estimate_fine=delta/15,
+                order=math.log2(ec/ef),energy_ratio=sum(v*v for v in yc),
+                amplification_squared=a*a+b*b,stable=h*h<=8,
+                stages=oscillator_step((1.,0.),h)[1],evaluations=12*n)
+
+if __name__=='__main__':
+    s=experiment();print('Erros N/2N e estimativa fina:',s['error_coarse'],s['error_fine'],s['estimate_fine'])
+    print('Energia final/inicial:',s['energy_ratio'],'ordem observada:',s['order'])

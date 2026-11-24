@@ -1,0 +1,7 @@
+z = 3 + 4j
+assert abs(z) == 5
+texto = " FÍSICA "
+normalizado = texto.strip().lower()
+assert normalizado == "física"
+assert texto == " FÍSICA "
+print(z.real, z.imag, abs(z), normalizado)

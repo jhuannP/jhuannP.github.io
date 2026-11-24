@@ -1,0 +1,9 @@
+from fractions import Fraction as F
+J,kg,kp,ks,km=map(F,(12,2,1,1,1))
+a=J/(kg+kp);y=ks*a/km
+vg,vp,vs,vm=kg*a,kp*a,ks*a,km*y
+assert (a,y)==(4,4)
+assert J-vg-vp-vs+vm==vs-vm==0
+carbon_out=3*(2*vg)+5*vp+vp
+assert carbon_out==6*J==72
+print(a,y,vg,vp,carbon_out)

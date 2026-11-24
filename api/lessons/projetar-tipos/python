@@ -1,0 +1,17 @@
+from dataclasses import dataclass
+from math import hypot, isfinite
+@dataclass(frozen=True)
+class Vetor2D:
+    x: float
+    y: float
+    def __post_init__(self):
+        if not isfinite(self.x) or not isfinite(self.y):
+            raise ValueError("Componentes não finitas")
+    def somar(self, outro):
+        return Vetor2D(self.x + outro.x, self.y + outro.y)
+    def norma(self):
+        return hypot(self.x, self.y)
+u = Vetor2D(1, 2); v = Vetor2D(3, -1)
+w = u.somar(v)
+assert (w.x,w.y) == (4,1) and (u.x,u.y) == (1,2)
+print(w, w.norma())

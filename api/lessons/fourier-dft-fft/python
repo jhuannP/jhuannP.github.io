@@ -1,0 +1,25 @@
+from math import isfinite, sqrt, pi, cos, sin, exp, e, fsum
+
+def dft(valores):
+    import cmath
+    from math import pi
+    x=[complex(v) for v in valores];n=len(x)
+    if n==0 or any(not cmath.isfinite(v) for v in x):raise ValueError('Dados complexos finitos e não vazios necessários')
+    return [sum(x[j]*cmath.exp(-2j*pi*k*j/n) for j in range(n)) for k in range(n)]
+
+def fft_radix2(valores):
+    import cmath
+    from math import pi
+    x=[complex(v) for v in valores];n=len(x)
+    if n==0 or n&(n-1) or any(not cmath.isfinite(v) for v in x):raise ValueError('Quantidade potência de dois e dados finitos necessários')
+    if n==1:return x
+    pares=fft_radix2(x[::2]);impares=fft_radix2(x[1::2])
+    fatores=[cmath.exp(-2j*pi*k/n)*impares[k] for k in range(n//2)]
+    return [pares[k]+fatores[k] for k in range(n//2)]+[pares[k]-fatores[k] for k in range(n//2)]
+
+n=8;x=[cos(2*pi*j/n) for j in range(n)]
+X=fft_radix2(x);direta=dft(x)
+assert max(abs(a-b) for a,b in zip(X,direta))<1e-12
+assert abs(abs(X[1])-4)<1e-12 and abs(abs(X[7])-4)<1e-12
+assert abs(sum(abs(v)**2 for v in x)-sum(abs(v)**2 for v in X)/n)<1e-12
+print([round(abs(v),8) for v in X])

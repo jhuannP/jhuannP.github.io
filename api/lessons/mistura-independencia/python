@@ -1,0 +1,7 @@
+from fractions import Fraction as F
+w=F(1,2);p0=q0=F(1,4);p1=q1=F(3,4)
+a=(1-w)*p0+w*p1;b=(1-w)*q0+w*q1
+joint=(1-w)*p0*q0+w*p1*q1
+assert joint-a*b==F(1,16)
+assert joint/b==F(5,8)
+print(joint, a*b, joint/b)

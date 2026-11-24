@@ -1,0 +1,8 @@
+# Intervalos inclusivos de anotações fornecidas,sem predição.
+from fractions import Fraction as Q
+length=180
+covered=(60-11+1)+(160-91+1)
+assert covered==120
+assert Q(covered,length)==Q(2,3)
+print('Cobertura anotada:',Q(covered,length))
+print('Posições sem essas anotações:',length-covered)

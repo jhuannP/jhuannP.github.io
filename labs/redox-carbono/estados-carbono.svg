@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" role="img" aria-labelledby="title desc">
+<title id="title">Oxidação formal do carbono ligado ao oxigênio</title>
+<desc id="desc">Etanol, CH3 CH2 OH: o carbono ligado ao oxigênio tem número de oxidação menos um. Etanal, CH3 CHO: o mesmo carbono tem mais um. Ácido etanoico, CH3 COOH: tem mais três. Cada aumento de dois corresponde a dois equivalentes eletrônicos de oxidação. O carbono do grupo CH3 permanece menos três.</desc>
+<rect width="440" height="440" rx="16" fill="#f4f3e9"/>
+<g font-family="sans-serif" fill="#24352d">
+<text x="22" y="31" font-size="18" font-weight="bold">Acompanhe o mesmo carbono</text>
+<text x="22" y="61" font-size="15">NOX é contabilidade, não carga parcial.</text>
+<rect x="45" y="84" width="350" height="65" rx="8" fill="#dce8df"/>
+<text x="67" y="110" font-size="18">CH₃CH₂OH · etanol</text>
+<text x="67" y="134" font-size="17" fill="#2456c2">C ligado ao O: −1</text>
+<path d="M217 150V182 M210 174L217 182L224 174" fill="none" stroke="#65796b" stroke-width="2"/>
+<text x="242" y="173" font-size="15">+2 no NOX</text>
+<rect x="45" y="190" width="350" height="65" rx="8" fill="#dbe5fb"/>
+<text x="67" y="216" font-size="18">CH₃CHO · etanal</text>
+<text x="67" y="240" font-size="17" fill="#2456c2">C da carbonila: +1</text>
+<path d="M217 256V288 M210 280L217 288L224 280" fill="none" stroke="#65796b" stroke-width="2"/>
+<text x="242" y="279" font-size="15">+2 no NOX</text>
+<rect x="45" y="296" width="350" height="65" rx="8" fill="#e9dfca"/>
+<text x="67" y="322" font-size="18">CH₃COOH · ácido etanoico</text>
+<text x="67" y="346" font-size="17" fill="#2456c2">C da carboxila: +3</text>
+<text x="22" y="400" font-size="16">O carbono de CH₃ permanece em −3.</text>
+<text x="22" y="425" font-size="14">Setas comparam estados; não mostram mecanismo.</text>
+</g></svg>

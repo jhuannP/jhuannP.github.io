@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" width="520" height="360" role="img" aria-labelledby="title desc">
+<title id="title">Uma vermelha atualiza duas hipóteses</title><desc id="desc">H1 tem uma vermelha em três e H2 tem duas. Com prévias um meio, observar a primeira vermelha dá conjuntas um sexto e um terço. A evidência é um meio, e as posteriores são um terço e dois terços.</desc>
+<rect width="520" height="360" fill="#f6f3eb"/>
+<g font-family="sans-serif" fill="#172845">
+<text x="20" y="40" font-size="28" font-weight="bold">Primeira bola vermelha</text>
+<text x="20" y="78" font-size="23">Prévia × taxa = conjunta → posterior</text>
+<text x="20" y="140" font-size="28">H₁: 1/2 × 1/3 = 1/6 → 1/3</text>
+<text x="20" y="200" font-size="28">H₂: 1/2 × 2/3 = 1/3 → 2/3</text>
+<path d="M20 229 H500" stroke="#264bb5" stroke-width="2"/>
+<text x="20" y="272" font-size="26" fill="#264bb5">Evidência: 1/6 + 1/3 = 1/2</text>
+<text x="20" y="322" font-size="24">Posterior = conjunta ÷ evidência</text>
+</g></svg>

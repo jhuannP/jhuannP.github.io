@@ -1,0 +1,4 @@
+x,y=1,2
+grad=[2*x,2*y]
+assert grad==[2,4] and sum(v*v for v in grad)==20
+print(grad)

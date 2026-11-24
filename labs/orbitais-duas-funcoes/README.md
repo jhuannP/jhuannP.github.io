@@ -1,0 +1,13 @@
+# Duas funções e uma métrica de sobreposição
+
+Rascunho original29/10/2026. Referência privada autorizada: Atkins/Jones/Laverman, Princípios de Química,7ª edição portuguesa,Bookman2018, §2G.1 pp.127–128/PDF259–260 e parte conceitual de§2G.2 p.131/PDF263 para ordem formal. Consulta textual parcial com cabeçalhos conferidos; sem nova inspeção visual ou leitura integral. A extração omite algumas equações e corrompe símbolos: as fórmulas normalizadas e o modelo matricial aqui foram deduzidos independentemente, não transcritos dessas lacunas. pp.129–130/PDF261–262 apareceram na sondagem, mas seus exemplos, PES e diagramas da segunda linha não foram incorporados. Sem reprodução de exemplo/figura ou distribuição do PDF. Edição difere da3ª oficial.
+
+Programa CCM0114, https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=CCM0114 , reaberto29/10/2026,ativação15/07/2024 posterior à turma2023; versão ministrada não recuperada. OpenStax Chemistry2e§8.4, https://openstax.org/books/chemistry-2e/pages/8-4-molecular-orbital-theory , consulta parcial de LCAO,fase e ocupação. Não se adota uma superfície orbital como trajetória; densidade é |ψ|². Interpretação de fase/nó não mede cargas opostas.
+
+O modelo próprio tem H=[[α,β],[β,α]] e S=[[1,s],[s,1]], reais, |s|<1. Resolve Hc=ESc para c=(1,±1), com E±=(α±β)/(1±s). Não é solução ab initio, Hückel de molécula específica ou previsão de energia de ligação. α,β têm unidade comum de energia; s é adimensional. Exemplo racional α=−1,β=−2/5,s=1/5: E+=−7/6,E−=−3/4,gap5/12. Figura esquemática própria, sem curva em função da distância.
+
+Mudar origem exige H′=H+δS, portanto α′=α+δ eβ′=β+δs. Alterar sóα quando s≠0 muda o modelo. E+<E− equivale aβ−αs<0; o programa retorna rótulos de simetria, sem chamar todo estado+ de ligante. filling(N) é uma contagem separada que pressupõe um ligante abaixo de um antiligante,capacidade2 cada,0≤N≤4. Não recebe energias e não infere ordenação,estabilidade real ou propriedades magnéticas quantitativas. Não é aplicável diretamente a O2.
+
+Da raiz: `python3 -m unittest discover -s labs/orbitais-duas-funcoes -t .`; `python3 labs/orbitais-duas-funcoes/model.py`. Quatro testes:fixture/ocupação,125modelos com equações nas duas linhas/métrica,27casos de mudança de origem/ordenação e contratos. Rejeita float,bool e |s|≥1. Não certifica representação em ponto flutuante ou modelo molecular completo.
+
+Revisão pessoal20min: deduzir2(1±s),reconstruir−7/6 e−3/4 e explicar por que deslocar sóα muda o gap. Depois conferir0,1/2,1,1/2,0 como ordens formais para0..4elétrons. Energia total,repulsão nuclear,correlação,heteronucleares,orbitaisπ e revisão pessoal pendentes.

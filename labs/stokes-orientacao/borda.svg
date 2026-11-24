@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 450" role="img" aria-labelledby="t d">
+<title id="t">Uma superfície, duas bordas</title><desc id="d">Coroa vista de cima, normal mais z saindo da tela. Borda externa anti-horária e interna horária.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#285e58"/></marker></defs>
+<rect width="420" height="450" fill="#f6f3e9"/>
+<g fill="#183c36" font-family="system-ui,sans-serif">
+<text x="22" y="34" font-size="21" font-weight="700">Uma superfície, duas bordas</text>
+<text x="22" y="61" font-size="15">Vista de +z em direção ao plano</text>
+<path d="M210 91a134 134 0 1 0 0 268a134 134 0 1 0 0-268M210 169a56 56 0 1 1 0 112a56 56 0 1 1 0-112" fill="#dce8df" fill-rule="evenodd"/>
+<circle cx="210" cy="225" r="134" fill="none" stroke="#285e58" stroke-width="2"/>
+<circle cx="210" cy="225" r="56" fill="none" stroke="#285e58" stroke-width="2"/>
+<path d="M334 174A134 134 0 0 0 270 105" stroke="#285e58" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M210 169A56 56 0 0 1 266 225" stroke="#285e58" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<circle cx="210" cy="225" r="10" fill="none" stroke="#285e58" stroke-width="2"/><circle cx="210" cy="225" r="3" fill="#285e58"/>
+<text x="195" y="252" font-size="14">+z</text>
+<text x="22" y="389" font-size="16">Externa: anti-horária</text>
+<text x="22" y="416" font-size="16">Interna: horária</text>
+<text x="22" y="440" font-size="12">Setas de percurso; não representam o campo.</text>
+</g></svg>

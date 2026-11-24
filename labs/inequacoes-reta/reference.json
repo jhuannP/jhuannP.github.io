@@ -1,0 +1,1730 @@
+[
+  {
+    "a": -3,
+    "b": -4,
+    "c": -6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": 0.6666666666666666,
+    "boundary_exact": "2/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": -4,
+    "c": -6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": 0.6666666666666666,
+    "boundary_exact": "2/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": -4,
+    "c": -6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": 0.6666666666666666,
+    "boundary_exact": "2/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": -4,
+    "c": -6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": 0.6666666666666666,
+    "boundary_exact": "2/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": -4,
+    "c": 0,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": -1.3333333333333333,
+    "boundary_exact": "-4/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": -4,
+    "c": 0,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": -1.3333333333333333,
+    "boundary_exact": "-4/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": -4,
+    "c": 0,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": -1.3333333333333333,
+    "boundary_exact": "-4/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": -4,
+    "c": 0,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": -1.3333333333333333,
+    "boundary_exact": "-4/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": -4,
+    "c": 6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": -3.3333333333333335,
+    "boundary_exact": "-10/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": -4,
+    "c": 6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": -3.3333333333333335,
+    "boundary_exact": "-10/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": -4,
+    "c": 6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": -3.3333333333333335,
+    "boundary_exact": "-10/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": -4,
+    "c": 6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": -3.3333333333333335,
+    "boundary_exact": "-10/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": -6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": 2.0,
+    "boundary_exact": "2",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": -6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": 2.0,
+    "boundary_exact": "2",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": -6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": 2.0,
+    "boundary_exact": "2",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": -6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": 2.0,
+    "boundary_exact": "2",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": 0,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": 0.0,
+    "boundary_exact": "0",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": 0,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": 0.0,
+    "boundary_exact": "0",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": 0,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": 0.0,
+    "boundary_exact": "0",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": 0,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": 0.0,
+    "boundary_exact": "0",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": 6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": -2.0,
+    "boundary_exact": "-2",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": 6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": -2.0,
+    "boundary_exact": "-2",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": 6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": -2.0,
+    "boundary_exact": "-2",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 0,
+    "c": 6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": -2.0,
+    "boundary_exact": "-2",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": -6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": 3.3333333333333335,
+    "boundary_exact": "10/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": -6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": 3.3333333333333335,
+    "boundary_exact": "10/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": -6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": 3.3333333333333335,
+    "boundary_exact": "10/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": -6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": 3.3333333333333335,
+    "boundary_exact": "10/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": 0,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": 1.3333333333333333,
+    "boundary_exact": "4/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": 0,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": 1.3333333333333333,
+    "boundary_exact": "4/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": 0,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": 1.3333333333333333,
+    "boundary_exact": "4/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": 0,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": 1.3333333333333333,
+    "boundary_exact": "4/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": 6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": -0.6666666666666666,
+    "boundary_exact": "-2/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": 6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": -0.6666666666666666,
+    "boundary_exact": "-2/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": 6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": -0.6666666666666666,
+    "boundary_exact": "-2/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": -3,
+    "b": 4,
+    "c": 6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": -0.6666666666666666,
+    "boundary_exact": "-2/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": -6,
+    "mode": 0,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": -6,
+    "mode": 1,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": -6,
+    "mode": 2,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": -6,
+    "mode": 3,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": 0,
+    "mode": 0,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": 0,
+    "mode": 1,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": 0,
+    "mode": 2,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": 0,
+    "mode": 3,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": 6,
+    "mode": 0,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": 6,
+    "mode": 1,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": 6,
+    "mode": 2,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": -4,
+    "c": 6,
+    "mode": 3,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": -6,
+    "mode": 0,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": -6,
+    "mode": 1,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": -6,
+    "mode": 2,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": -6,
+    "mode": 3,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "mode": 0,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "mode": 1,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "mode": 2,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "mode": 3,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 6,
+    "mode": 0,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 6,
+    "mode": 1,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 6,
+    "mode": 2,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 6,
+    "mode": 3,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": -6,
+    "mode": 0,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": -6,
+    "mode": 1,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": -6,
+    "mode": 2,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": -6,
+    "mode": 3,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": 0,
+    "mode": 0,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": 0,
+    "mode": 1,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": 0,
+    "mode": 2,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": 0,
+    "mode": 3,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": 6,
+    "mode": 0,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": 6,
+    "mode": 1,
+    "kind": "all",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": 6,
+    "mode": 2,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "c": 6,
+    "mode": 3,
+    "kind": "none",
+    "boundary": null,
+    "boundary_exact": null,
+    "operator": null,
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": -6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": -0.6666666666666666,
+    "boundary_exact": "-2/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": -6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": -0.6666666666666666,
+    "boundary_exact": "-2/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": -6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": -0.6666666666666666,
+    "boundary_exact": "-2/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": -6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": -0.6666666666666666,
+    "boundary_exact": "-2/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": 0,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": 1.3333333333333333,
+    "boundary_exact": "4/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": 0,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": 1.3333333333333333,
+    "boundary_exact": "4/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": 0,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": 1.3333333333333333,
+    "boundary_exact": "4/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": 0,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": 1.3333333333333333,
+    "boundary_exact": "4/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": 6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": 3.3333333333333335,
+    "boundary_exact": "10/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": 6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": 3.3333333333333335,
+    "boundary_exact": "10/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": 6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": 3.3333333333333335,
+    "boundary_exact": "10/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": -4,
+    "c": 6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": 3.3333333333333335,
+    "boundary_exact": "10/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": -6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": -2.0,
+    "boundary_exact": "-2",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": -6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": -2.0,
+    "boundary_exact": "-2",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": -6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": -2.0,
+    "boundary_exact": "-2",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": -6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": -2.0,
+    "boundary_exact": "-2",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": 0,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": 0.0,
+    "boundary_exact": "0",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": 0,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": 0.0,
+    "boundary_exact": "0",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": 0,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": 0.0,
+    "boundary_exact": "0",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": 0,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": 0.0,
+    "boundary_exact": "0",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": 6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": 2.0,
+    "boundary_exact": "2",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": 6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": 2.0,
+    "boundary_exact": "2",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": 6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": 2.0,
+    "boundary_exact": "2",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "c": 6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": 2.0,
+    "boundary_exact": "2",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": -6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": -3.3333333333333335,
+    "boundary_exact": "-10/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": -6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": -3.3333333333333335,
+    "boundary_exact": "-10/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": -6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": -3.3333333333333335,
+    "boundary_exact": "-10/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": -6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": -3.3333333333333335,
+    "boundary_exact": "-10/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": 0,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": -1.3333333333333333,
+    "boundary_exact": "-4/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": 0,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": -1.3333333333333333,
+    "boundary_exact": "-4/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": 0,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": -1.3333333333333333,
+    "boundary_exact": "-4/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": 0,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": -1.3333333333333333,
+    "boundary_exact": "-4/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": 6,
+    "mode": 0,
+    "kind": "ray",
+    "boundary": 0.6666666666666666,
+    "boundary_exact": "2/3",
+    "operator": "<",
+    "closed": false,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": 6,
+    "mode": 1,
+    "kind": "ray",
+    "boundary": 0.6666666666666666,
+    "boundary_exact": "2/3",
+    "operator": "<=",
+    "closed": true,
+    "probes": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": 6,
+    "mode": 2,
+    "kind": "ray",
+    "boundary": 0.6666666666666666,
+    "boundary_exact": "2/3",
+    "operator": ">",
+    "closed": false,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "c": 6,
+    "mode": 3,
+    "kind": "ray",
+    "boundary": 0.6666666666666666,
+    "boundary_exact": "2/3",
+    "operator": ">=",
+    "closed": true,
+    "probes": [
+      false,
+      false,
+      true
+    ]
+  }
+]

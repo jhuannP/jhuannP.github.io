@@ -1,0 +1,21 @@
+from math import exp,log,expm1,isfinite
+from itertools import product
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def bose(z):
+    """z=(epsilon-mu)/T positivo; ocupação média de um modo bosônico ideal."""
+    z=finite(z)
+    if z<=0:raise ValueError('Modo Bose requer epsilon>mu neste caso')
+    if z>700:return 0.0
+    return 1/expm1(z)
+
+omega,T=2,1
+nbar=bose(omega/T);U=omega*(nbar+.5)
+assert U>1
+print(nbar,U)

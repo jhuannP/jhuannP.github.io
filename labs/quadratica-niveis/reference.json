@@ -1,0 +1,2036 @@
+[
+  {
+    "a": 1,
+    "b": -4,
+    "c": 3,
+    "height": -4,
+    "vertex": [
+      2.0,
+      -1.0
+    ],
+    "image": "lower",
+    "bound": -1.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        1.0,
+        3.0
+      ],
+      "discriminant": 4
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -12
+    },
+    "window": [
+      -1.0,
+      5.0
+    ]
+  },
+  {
+    "a": 1,
+    "b": -4,
+    "c": 3,
+    "height": -3,
+    "vertex": [
+      2.0,
+      -1.0
+    ],
+    "image": "lower",
+    "bound": -1.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        1.0,
+        3.0
+      ],
+      "discriminant": 4
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -8
+    },
+    "window": [
+      -1.0,
+      5.0
+    ]
+  },
+  {
+    "a": 1,
+    "b": -4,
+    "c": 3,
+    "height": -2,
+    "vertex": [
+      2.0,
+      -1.0
+    ],
+    "image": "lower",
+    "bound": -1.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        1.0,
+        3.0
+      ],
+      "discriminant": 4
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -4
+    },
+    "window": [
+      -1.0,
+      5.0
+    ]
+  },
+  {
+    "a": 1,
+    "b": -4,
+    "c": 3,
+    "height": -1,
+    "vertex": [
+      2.0,
+      -1.0
+    ],
+    "image": "lower",
+    "bound": -1.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        1.0,
+        3.0
+      ],
+      "discriminant": 4
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        2.0
+      ],
+      "discriminant": 0
+    },
+    "window": [
+      -1.0,
+      5.0
+    ]
+  },
+  {
+    "a": 1,
+    "b": -4,
+    "c": 3,
+    "height": 0,
+    "vertex": [
+      2.0,
+      -1.0
+    ],
+    "image": "lower",
+    "bound": -1.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        1.0,
+        3.0
+      ],
+      "discriminant": 4
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        1.0,
+        3.0
+      ],
+      "discriminant": 4
+    },
+    "window": [
+      -1.0,
+      5.0
+    ]
+  },
+  {
+    "a": 1,
+    "b": -4,
+    "c": 3,
+    "height": 1,
+    "vertex": [
+      2.0,
+      -1.0
+    ],
+    "image": "lower",
+    "bound": -1.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        1.0,
+        3.0
+      ],
+      "discriminant": 4
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        0.5857864376269049,
+        3.414213562373095
+      ],
+      "discriminant": 8
+    },
+    "window": [
+      -1.0,
+      5.0
+    ]
+  },
+  {
+    "a": 1,
+    "b": -4,
+    "c": 3,
+    "height": 2,
+    "vertex": [
+      2.0,
+      -1.0
+    ],
+    "image": "lower",
+    "bound": -1.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        1.0,
+        3.0
+      ],
+      "discriminant": 4
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        0.2679491924311228,
+        3.732050807568877
+      ],
+      "discriminant": 12
+    },
+    "window": [
+      -1.0,
+      5.0
+    ]
+  },
+  {
+    "a": 1,
+    "b": -4,
+    "c": 3,
+    "height": 3,
+    "vertex": [
+      2.0,
+      -1.0
+    ],
+    "image": "lower",
+    "bound": -1.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        1.0,
+        3.0
+      ],
+      "discriminant": 4
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        0.0,
+        4.0
+      ],
+      "discriminant": 16
+    },
+    "window": [
+      -1.0,
+      5.0
+    ]
+  },
+  {
+    "a": 1,
+    "b": -4,
+    "c": 3,
+    "height": 4,
+    "vertex": [
+      2.0,
+      -1.0
+    ],
+    "image": "lower",
+    "bound": -1.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        1.0,
+        3.0
+      ],
+      "discriminant": 4
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -0.2360679774997898,
+        4.23606797749979
+      ],
+      "discriminant": 20
+    },
+    "window": [
+      -1.0,
+      5.0
+    ]
+  },
+  {
+    "a": -1,
+    "b": 2,
+    "c": 3,
+    "height": -4,
+    "vertex": [
+      1.0,
+      4.0
+    ],
+    "image": "upper",
+    "bound": 4.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        3.0
+      ],
+      "discriminant": 16
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.8284271247461903,
+        3.8284271247461903
+      ],
+      "discriminant": 32
+    },
+    "window": [
+      -2.0,
+      4.0
+    ]
+  },
+  {
+    "a": -1,
+    "b": 2,
+    "c": 3,
+    "height": -3,
+    "vertex": [
+      1.0,
+      4.0
+    ],
+    "image": "upper",
+    "bound": 4.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        3.0
+      ],
+      "discriminant": 16
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.6457513110645907,
+        3.6457513110645907
+      ],
+      "discriminant": 28
+    },
+    "window": [
+      -2.0,
+      4.0
+    ]
+  },
+  {
+    "a": -1,
+    "b": 2,
+    "c": 3,
+    "height": -2,
+    "vertex": [
+      1.0,
+      4.0
+    ],
+    "image": "upper",
+    "bound": 4.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        3.0
+      ],
+      "discriminant": 16
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.4494897427831779,
+        3.449489742783178
+      ],
+      "discriminant": 24
+    },
+    "window": [
+      -2.0,
+      4.0
+    ]
+  },
+  {
+    "a": -1,
+    "b": 2,
+    "c": 3,
+    "height": -1,
+    "vertex": [
+      1.0,
+      4.0
+    ],
+    "image": "upper",
+    "bound": 4.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        3.0
+      ],
+      "discriminant": 16
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.2360679774997898,
+        3.23606797749979
+      ],
+      "discriminant": 20
+    },
+    "window": [
+      -2.0,
+      4.0
+    ]
+  },
+  {
+    "a": -1,
+    "b": 2,
+    "c": 3,
+    "height": 0,
+    "vertex": [
+      1.0,
+      4.0
+    ],
+    "image": "upper",
+    "bound": 4.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        3.0
+      ],
+      "discriminant": 16
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        3.0
+      ],
+      "discriminant": 16
+    },
+    "window": [
+      -2.0,
+      4.0
+    ]
+  },
+  {
+    "a": -1,
+    "b": 2,
+    "c": 3,
+    "height": 1,
+    "vertex": [
+      1.0,
+      4.0
+    ],
+    "image": "upper",
+    "bound": 4.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        3.0
+      ],
+      "discriminant": 16
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -0.7320508075688772,
+        2.732050807568877
+      ],
+      "discriminant": 12
+    },
+    "window": [
+      -2.0,
+      4.0
+    ]
+  },
+  {
+    "a": -1,
+    "b": 2,
+    "c": 3,
+    "height": 2,
+    "vertex": [
+      1.0,
+      4.0
+    ],
+    "image": "upper",
+    "bound": 4.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        3.0
+      ],
+      "discriminant": 16
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -0.41421356237309515,
+        2.414213562373095
+      ],
+      "discriminant": 8
+    },
+    "window": [
+      -2.0,
+      4.0
+    ]
+  },
+  {
+    "a": -1,
+    "b": 2,
+    "c": 3,
+    "height": 3,
+    "vertex": [
+      1.0,
+      4.0
+    ],
+    "image": "upper",
+    "bound": 4.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        3.0
+      ],
+      "discriminant": 16
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -0.0,
+        2.0
+      ],
+      "discriminant": 4
+    },
+    "window": [
+      -2.0,
+      4.0
+    ]
+  },
+  {
+    "a": -1,
+    "b": 2,
+    "c": 3,
+    "height": 4,
+    "vertex": [
+      1.0,
+      4.0
+    ],
+    "image": "upper",
+    "bound": 4.0,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        3.0
+      ],
+      "discriminant": 16
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        1.0
+      ],
+      "discriminant": 0
+    },
+    "window": [
+      -2.0,
+      4.0
+    ]
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "c": -3,
+    "height": -4,
+    "vertex": [
+      -0.25,
+      -3.125
+    ],
+    "image": "lower",
+    "bound": -3.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.5,
+        1.0
+      ],
+      "discriminant": 25
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -7
+    },
+    "window": [
+      -3.25,
+      2.75
+    ]
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "c": -3,
+    "height": -3,
+    "vertex": [
+      -0.25,
+      -3.125
+    ],
+    "image": "lower",
+    "bound": -3.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.5,
+        1.0
+      ],
+      "discriminant": 25
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -0.5,
+        0.0
+      ],
+      "discriminant": 1
+    },
+    "window": [
+      -3.25,
+      2.75
+    ]
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "c": -3,
+    "height": -2,
+    "vertex": [
+      -0.25,
+      -3.125
+    ],
+    "image": "lower",
+    "bound": -3.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.5,
+        1.0
+      ],
+      "discriminant": 25
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        0.5
+      ],
+      "discriminant": 9
+    },
+    "window": [
+      -3.25,
+      2.75
+    ]
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "c": -3,
+    "height": -1,
+    "vertex": [
+      -0.25,
+      -3.125
+    ],
+    "image": "lower",
+    "bound": -3.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.5,
+        1.0
+      ],
+      "discriminant": 25
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.2807764064044151,
+        0.7807764064044151
+      ],
+      "discriminant": 17
+    },
+    "window": [
+      -3.25,
+      2.75
+    ]
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "c": -3,
+    "height": 0,
+    "vertex": [
+      -0.25,
+      -3.125
+    ],
+    "image": "lower",
+    "bound": -3.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.5,
+        1.0
+      ],
+      "discriminant": 25
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.5,
+        1.0
+      ],
+      "discriminant": 25
+    },
+    "window": [
+      -3.25,
+      2.75
+    ]
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "c": -3,
+    "height": 1,
+    "vertex": [
+      -0.25,
+      -3.125
+    ],
+    "image": "lower",
+    "bound": -3.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.5,
+        1.0
+      ],
+      "discriminant": 25
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.6861406616345072,
+        1.1861406616345072
+      ],
+      "discriminant": 33
+    },
+    "window": [
+      -3.25,
+      2.75
+    ]
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "c": -3,
+    "height": 2,
+    "vertex": [
+      -0.25,
+      -3.125
+    ],
+    "image": "lower",
+    "bound": -3.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.5,
+        1.0
+      ],
+      "discriminant": 25
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.8507810593582121,
+        1.3507810593582121
+      ],
+      "discriminant": 41
+    },
+    "window": [
+      -3.25,
+      2.75
+    ]
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "c": -3,
+    "height": 3,
+    "vertex": [
+      -0.25,
+      -3.125
+    ],
+    "image": "lower",
+    "bound": -3.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.5,
+        1.0
+      ],
+      "discriminant": 25
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -2.0,
+        1.5
+      ],
+      "discriminant": 49
+    },
+    "window": [
+      -3.25,
+      2.75
+    ]
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "c": -3,
+    "height": 4,
+    "vertex": [
+      -0.25,
+      -3.125
+    ],
+    "image": "lower",
+    "bound": -3.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -1.5,
+        1.0
+      ],
+      "discriminant": 25
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -2.1374586088176875,
+        1.6374586088176875
+      ],
+      "discriminant": 57
+    },
+    "window": [
+      -3.25,
+      2.75
+    ]
+  },
+  {
+    "a": -2,
+    "b": 3,
+    "c": 1,
+    "height": -4,
+    "vertex": [
+      0.75,
+      2.125
+    ],
+    "image": "upper",
+    "bound": 2.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -0.28077640640441515,
+        1.7807764064044151
+      ],
+      "discriminant": 17
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        2.5
+      ],
+      "discriminant": 49
+    },
+    "window": [
+      -2.25,
+      3.75
+    ]
+  },
+  {
+    "a": -2,
+    "b": 3,
+    "c": 1,
+    "height": -3,
+    "vertex": [
+      0.75,
+      2.125
+    ],
+    "image": "upper",
+    "bound": 2.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -0.28077640640441515,
+        1.7807764064044151
+      ],
+      "discriminant": 17
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -0.8507810593582121,
+        2.350781059358212
+      ],
+      "discriminant": 41
+    },
+    "window": [
+      -2.25,
+      3.75
+    ]
+  },
+  {
+    "a": -2,
+    "b": 3,
+    "c": 1,
+    "height": -2,
+    "vertex": [
+      0.75,
+      2.125
+    ],
+    "image": "upper",
+    "bound": 2.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -0.28077640640441515,
+        1.7807764064044151
+      ],
+      "discriminant": 17
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -0.6861406616345072,
+        2.186140661634507
+      ],
+      "discriminant": 33
+    },
+    "window": [
+      -2.25,
+      3.75
+    ]
+  },
+  {
+    "a": -2,
+    "b": 3,
+    "c": 1,
+    "height": -1,
+    "vertex": [
+      0.75,
+      2.125
+    ],
+    "image": "upper",
+    "bound": 2.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -0.28077640640441515,
+        1.7807764064044151
+      ],
+      "discriminant": 17
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -0.5,
+        2.0
+      ],
+      "discriminant": 25
+    },
+    "window": [
+      -2.25,
+      3.75
+    ]
+  },
+  {
+    "a": -2,
+    "b": 3,
+    "c": 1,
+    "height": 0,
+    "vertex": [
+      0.75,
+      2.125
+    ],
+    "image": "upper",
+    "bound": 2.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -0.28077640640441515,
+        1.7807764064044151
+      ],
+      "discriminant": 17
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -0.28077640640441515,
+        1.7807764064044151
+      ],
+      "discriminant": 17
+    },
+    "window": [
+      -2.25,
+      3.75
+    ]
+  },
+  {
+    "a": -2,
+    "b": 3,
+    "c": 1,
+    "height": 1,
+    "vertex": [
+      0.75,
+      2.125
+    ],
+    "image": "upper",
+    "bound": 2.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -0.28077640640441515,
+        1.7807764064044151
+      ],
+      "discriminant": 17
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -0.0,
+        1.5
+      ],
+      "discriminant": 9
+    },
+    "window": [
+      -2.25,
+      3.75
+    ]
+  },
+  {
+    "a": -2,
+    "b": 3,
+    "c": 1,
+    "height": 2,
+    "vertex": [
+      0.75,
+      2.125
+    ],
+    "image": "upper",
+    "bound": 2.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -0.28077640640441515,
+        1.7807764064044151
+      ],
+      "discriminant": 17
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        0.5,
+        1.0
+      ],
+      "discriminant": 1
+    },
+    "window": [
+      -2.25,
+      3.75
+    ]
+  },
+  {
+    "a": -2,
+    "b": 3,
+    "c": 1,
+    "height": 3,
+    "vertex": [
+      0.75,
+      2.125
+    ],
+    "image": "upper",
+    "bound": 2.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -0.28077640640441515,
+        1.7807764064044151
+      ],
+      "discriminant": 17
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -7
+    },
+    "window": [
+      -2.25,
+      3.75
+    ]
+  },
+  {
+    "a": -2,
+    "b": 3,
+    "c": 1,
+    "height": 4,
+    "vertex": [
+      0.75,
+      2.125
+    ],
+    "image": "upper",
+    "bound": 2.125,
+    "zeros": {
+      "kind": "two",
+      "roots": [
+        -0.28077640640441515,
+        1.7807764064044151
+      ],
+      "discriminant": 17
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -15
+    },
+    "window": [
+      -2.25,
+      3.75
+    ]
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "c": 1,
+    "height": -4,
+    "vertex": [
+      0.0,
+      1.0
+    ],
+    "image": "lower",
+    "bound": 1.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -8
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -40
+    },
+    "window": [
+      -3.0,
+      3.0
+    ]
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "c": 1,
+    "height": -3,
+    "vertex": [
+      0.0,
+      1.0
+    ],
+    "image": "lower",
+    "bound": 1.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -8
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -32
+    },
+    "window": [
+      -3.0,
+      3.0
+    ]
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "c": 1,
+    "height": -2,
+    "vertex": [
+      0.0,
+      1.0
+    ],
+    "image": "lower",
+    "bound": 1.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -8
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -24
+    },
+    "window": [
+      -3.0,
+      3.0
+    ]
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "c": 1,
+    "height": -1,
+    "vertex": [
+      0.0,
+      1.0
+    ],
+    "image": "lower",
+    "bound": 1.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -8
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -16
+    },
+    "window": [
+      -3.0,
+      3.0
+    ]
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "c": 1,
+    "height": 0,
+    "vertex": [
+      0.0,
+      1.0
+    ],
+    "image": "lower",
+    "bound": 1.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -8
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -8
+    },
+    "window": [
+      -3.0,
+      3.0
+    ]
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "c": 1,
+    "height": 1,
+    "vertex": [
+      0.0,
+      1.0
+    ],
+    "image": "lower",
+    "bound": 1.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -8
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        0.0
+      ],
+      "discriminant": 0
+    },
+    "window": [
+      -3.0,
+      3.0
+    ]
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "c": 1,
+    "height": 2,
+    "vertex": [
+      0.0,
+      1.0
+    ],
+    "image": "lower",
+    "bound": 1.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -8
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "discriminant": 8
+    },
+    "window": [
+      -3.0,
+      3.0
+    ]
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "c": 1,
+    "height": 3,
+    "vertex": [
+      0.0,
+      1.0
+    ],
+    "image": "lower",
+    "bound": 1.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -8
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.0,
+        1.0
+      ],
+      "discriminant": 16
+    },
+    "window": [
+      -3.0,
+      3.0
+    ]
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "c": 1,
+    "height": 4,
+    "vertex": [
+      0.0,
+      1.0
+    ],
+    "image": "lower",
+    "bound": 1.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": -8
+    },
+    "level": {
+      "kind": "two",
+      "roots": [
+        -1.224744871391589,
+        1.224744871391589
+      ],
+      "discriminant": 24
+    },
+    "window": [
+      -3.0,
+      3.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "c": 1,
+    "height": -4,
+    "vertex": null,
+    "image": "all",
+    "bound": null,
+    "zeros": {
+      "kind": "one",
+      "roots": [
+        -0.5
+      ],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        -2.5
+      ],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "c": 1,
+    "height": -3,
+    "vertex": null,
+    "image": "all",
+    "bound": null,
+    "zeros": {
+      "kind": "one",
+      "roots": [
+        -0.5
+      ],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        -2.0
+      ],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "c": 1,
+    "height": -2,
+    "vertex": null,
+    "image": "all",
+    "bound": null,
+    "zeros": {
+      "kind": "one",
+      "roots": [
+        -0.5
+      ],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        -1.5
+      ],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "c": 1,
+    "height": -1,
+    "vertex": null,
+    "image": "all",
+    "bound": null,
+    "zeros": {
+      "kind": "one",
+      "roots": [
+        -0.5
+      ],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        -1.0
+      ],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "c": 1,
+    "height": 0,
+    "vertex": null,
+    "image": "all",
+    "bound": null,
+    "zeros": {
+      "kind": "one",
+      "roots": [
+        -0.5
+      ],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        -0.5
+      ],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "c": 1,
+    "height": 1,
+    "vertex": null,
+    "image": "all",
+    "bound": null,
+    "zeros": {
+      "kind": "one",
+      "roots": [
+        -0.5
+      ],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        0.0
+      ],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "c": 1,
+    "height": 2,
+    "vertex": null,
+    "image": "all",
+    "bound": null,
+    "zeros": {
+      "kind": "one",
+      "roots": [
+        -0.5
+      ],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        0.5
+      ],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "c": 1,
+    "height": 3,
+    "vertex": null,
+    "image": "all",
+    "bound": null,
+    "zeros": {
+      "kind": "one",
+      "roots": [
+        -0.5
+      ],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        1.0
+      ],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "c": 1,
+    "height": 4,
+    "vertex": null,
+    "image": "all",
+    "bound": null,
+    "zeros": {
+      "kind": "one",
+      "roots": [
+        -0.5
+      ],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "one",
+      "roots": [
+        1.5
+      ],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "height": -4,
+    "vertex": null,
+    "image": "constant",
+    "bound": 3.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "height": -3,
+    "vertex": null,
+    "image": "constant",
+    "bound": 3.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "height": -2,
+    "vertex": null,
+    "image": "constant",
+    "bound": 3.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "height": -1,
+    "vertex": null,
+    "image": "constant",
+    "bound": 3.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "height": 0,
+    "vertex": null,
+    "image": "constant",
+    "bound": 3.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "height": 1,
+    "vertex": null,
+    "image": "constant",
+    "bound": 3.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "height": 2,
+    "vertex": null,
+    "image": "constant",
+    "bound": 3.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "height": 3,
+    "vertex": null,
+    "image": "constant",
+    "bound": 3.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "all",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 3,
+    "height": 4,
+    "vertex": null,
+    "image": "constant",
+    "bound": 3.0,
+    "zeros": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "height": -4,
+    "vertex": null,
+    "image": "constant",
+    "bound": 0.0,
+    "zeros": {
+      "kind": "all",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "height": -3,
+    "vertex": null,
+    "image": "constant",
+    "bound": 0.0,
+    "zeros": {
+      "kind": "all",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "height": -2,
+    "vertex": null,
+    "image": "constant",
+    "bound": 0.0,
+    "zeros": {
+      "kind": "all",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "height": -1,
+    "vertex": null,
+    "image": "constant",
+    "bound": 0.0,
+    "zeros": {
+      "kind": "all",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "height": 0,
+    "vertex": null,
+    "image": "constant",
+    "bound": 0.0,
+    "zeros": {
+      "kind": "all",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "all",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "height": 1,
+    "vertex": null,
+    "image": "constant",
+    "bound": 0.0,
+    "zeros": {
+      "kind": "all",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "height": 2,
+    "vertex": null,
+    "image": "constant",
+    "bound": 0.0,
+    "zeros": {
+      "kind": "all",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "height": 3,
+    "vertex": null,
+    "image": "constant",
+    "bound": 0.0,
+    "zeros": {
+      "kind": "all",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  },
+  {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "height": 4,
+    "vertex": null,
+    "image": "constant",
+    "bound": 0.0,
+    "zeros": {
+      "kind": "all",
+      "roots": [],
+      "discriminant": null
+    },
+    "level": {
+      "kind": "none",
+      "roots": [],
+      "discriminant": null
+    },
+    "window": [
+      -4.0,
+      4.0
+    ]
+  }
+]

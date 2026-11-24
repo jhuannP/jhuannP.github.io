@@ -1,0 +1,9 @@
+# Ondas planas opostas; unidades SI e parâmetros sintéticos.
+from fractions import Fraction as Q
+rho,c,A,B=Q(1),Q(400),Q(2),Q(2)
+Z=rho*c
+net=(A*A-B*B)/(2*Z)
+energy_density=(A*A+B*B)/(2*rho*c*c)
+assert net==0 and energy_density==Q(1,40000)
+print('Fluxo líquido médio (W/m²):',net)
+print('Energia média (J/m³):',energy_density)

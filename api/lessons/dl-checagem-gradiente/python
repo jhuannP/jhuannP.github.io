@@ -1,0 +1,75 @@
+from math import exp,log1p,sqrt,tanh,isfinite
+from copy import deepcopy
+
+def initialize(hidden=4,seed=42):
+    if isinstance(hidden,bool) or not isinstance(hidden,int) or not 1<=hidden<=16:raise ValueError('1<=H<=16 necessário')
+    if isinstance(seed,bool) or not isinstance(seed,int) or not 0<=seed<2**32:raise ValueError('Semente uint32 necessária')
+    state=seed
+    def uniform():
+        nonlocal state
+        state=(1664525*state+1013904223)%2**32
+        return (state+.5)/2**32
+    a=sqrt(6/(2+hidden));b=sqrt(6/(hidden+1))
+    W=[[(2*uniform()-1)*a for _ in range(2)] for _ in range(hidden)]
+    v=[(2*uniform()-1)*b for _ in range(hidden)]
+    return dict(W=W,b=[0.0]*hidden,v=v,c=0.0)
+
+def real(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def data(X,y):
+    rows=[[real(v) for v in row] for row in X];targets=[real(v) for v in y]
+    if not rows or len(rows)!=len(targets) or any(len(row)!=2 for row in rows) or any(v not in [0,1] for v in targets):raise ValueError('Dados binários 2D não vazios necessários')
+    return rows,targets
+
+def validate(model):
+    H=len(model['W'])
+    if not 1<=H<=16 or len(model['b'])!=H or len(model['v'])!=H or any(len(row)!=2 for row in model['W']):raise ValueError('Dimensões da rede incompatíveis')
+    for row in model['W']:
+        for v in row:real(v)
+    for v in model['b']+model['v']+[model['c']]:real(v)
+    return H
+
+def forward(model,x):
+    validate(model);x=[real(v) for v in x]
+    if len(x)!=2:raise ValueError('Entrada precisa de duas componentes')
+    h=[tanh(real(sum(w*a for w,a in zip(row,x))+b)) for row,b in zip(model['W'],model['b'])]
+    z=real(sum(v*a for v,a in zip(model['v'],h))+model['c'])
+    if z>=0:p=1/(1+exp(-z))
+    else:e=exp(z);p=e/(1+e)
+    return dict(hidden=h,logit=z,probability=p)
+
+def loss(model,X,y,lam=0):
+    X,y=data(X,y);lam=real(lam)
+    if lam<0:raise ValueError('lambda não negativa necessária')
+    logits=[forward(model,x)['logit'] for x in X]
+    base=sum(max(z,0)+log1p(exp(-abs(z)))-t*z for z,t in zip(logits,y))/len(y)
+    weights=[v for row in model['W'] for v in row]+model['v']
+    return real(base+lam*sum(v*v for v in weights)/2)
+
+def gradients(model,X,y,lam=0):
+    H=validate(model);X,y=data(X,y);lam=real(lam)
+    if lam<0:raise ValueError('lambda não negativa necessária')
+    g=dict(W=[[0.0]*2 for _ in range(H)],b=[0.0]*H,v=[0.0]*H,c=0.0);N=len(y)
+    for x,target in zip(X,y):
+        result=forward(model,x);h=result['hidden'];delta=(result['probability']-target)/N
+        g['c']+=delta
+        for j in range(H):
+            g['v'][j]+=delta*h[j]
+            local=delta*model['v'][j]*(1-h[j]*h[j])
+            g['b'][j]+=local
+            for k in range(2):g['W'][j][k]+=local*x[k]
+    for j in range(H):
+        g['v'][j]+=lam*model['v'][j]
+        for k in range(2):g['W'][j][k]+=lam*model['W'][j][k]
+    return g
+
+m=initialize(2);X=[[0,0],[1,1]];y=[0,1];h=1e-6
+a=deepcopy(m);b=deepcopy(m);a["c"]+=h;b["c"]-=h
+fd=(loss(a,X,y)-loss(b,X,y))/(2*h)
+assert abs(fd-gradients(m,X,y)["c"])<1e-8
+print(fd)

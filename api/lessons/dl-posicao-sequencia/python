@@ -1,0 +1,12 @@
+from math import exp,log,sqrt,hypot,sin,cos,isfinite
+from random import Random
+
+def positional_encoding(position,dimension):
+    if isinstance(position,bool) or not isinstance(position,int) or position<0 or isinstance(dimension,bool) or not isinstance(dimension,int) or dimension<2 or dimension%2:raise ValueError('Posição não negativa e dimensão par necessárias')
+    out=[]
+    for j in range(0,dimension,2):
+        angle=position/10000**(j/dimension);out.extend([sin(angle),cos(angle)])
+    return out
+
+assert positional_encoding(0,4)==[0,1,0,1]
+print(positional_encoding(1,4))

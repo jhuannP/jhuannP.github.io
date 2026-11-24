@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+N,M=10,100
+block=sum((Q(1,n*n) for n in range(N+1,M+1)),Q(0))
+lower=block+Q(1,M+1)
+upper=block+Q(1,M)
+assert upper-lower==Q(1,M*(M+1))
+print(float(lower),float(upper))
+# Este intervalo enquadra a cauda infinita; block sozinho não é a cauda.

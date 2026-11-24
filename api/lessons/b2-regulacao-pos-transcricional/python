@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+def steady(alpha,delta,beta,gamma):
+    m=Q(alpha)/Q(delta)
+    return m,Q(beta)*m/Q(gamma)
+a=steady(10,2,1,Q(1,2))
+b=steady(10,2,2,1)
+assert a==b==(Q(5),Q(10))
+print(a,b)

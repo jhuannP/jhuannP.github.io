@@ -1,0 +1,4 @@
+from cmath import phase
+z=1+1j
+assert abs(abs(z)**2-2)<1e-12
+print(abs(z),phase(z))

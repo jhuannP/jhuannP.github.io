@@ -1,0 +1,62 @@
+from math import isfinite, sqrt, pi, cos, sin, exp, e, fsum
+
+def _real(value):
+    try:
+        if isinstance(value,bool): raise ValueError
+        result=float(value)
+    except (TypeError,ValueError,OverflowError):
+        raise ValueError('Valor real finito necessário') from None
+    if not isfinite(result): raise ValueError('Valor real finito necessário')
+    return result
+
+def _nodes(xs,ys):
+    if len(xs)!=len(ys) or not xs:raise ValueError('Dados não vazios com tamanhos iguais')
+    xs,ys=[_real(x) for x in xs],[_real(y) for y in ys]
+    if len(set(xs))!=len(xs):raise ValueError('Nós distintos necessários')
+    return xs,ys
+
+def _system(A,b):
+    n=len(A)
+    if n==0 or len(b)!=n or any(len(row)!=n for row in A):raise ValueError('Sistema quadrado não vazio necessário')
+    return [[_real(x) for x in row] for row in A],[_real(x) for x in b]
+
+def gauss_pivoteamento(A,b):
+    A,b=_system(A,b);n=len(b)
+    for k in range(n):
+        p=max(range(k,n),key=lambda i:abs(A[i][k]))
+        if A[p][k]==0:raise ArithmeticError('Pivô zero: sistema não resolvido por esta fatoração')
+        A[k],A[p]=A[p],A[k];b[k],b[p]=b[p],b[k]
+        for i in range(k+1,n):
+            fator=A[i][k]/A[k][k];A[i][k]=0.0
+            for j in range(k+1,n):A[i][j]=_real(A[i][j]-fator*A[k][j])
+            b[i]=_real(b[i]-fator*b[k])
+    x=[0.0]*n
+    for i in range(n-1,-1,-1):x[i]=_real((b[i]-sum(A[i][j]*x[j] for j in range(i+1,n)))/A[i][i])
+    return x
+
+def spline_natural(xs,ys):
+    xs,ys=_nodes(xs,ys);n=len(xs)
+    if n<2 or any(xs[i]>=xs[i+1] for i in range(n-1)):raise ValueError('Ao menos dois nós estritamente crescentes necessários')
+    h=[xs[i+1]-xs[i] for i in range(n-1)]
+    M=[0.0]*n
+    if n>2:
+        A=[[0.0]*(n-2) for _ in range(n-2)];b=[0.0]*(n-2)
+        for i in range(1,n-1):
+            k=i-1;A[k][k]=2*(h[i-1]+h[i])
+            if k>0:A[k][k-1]=h[i-1]
+            if k<n-3:A[k][k+1]=h[i]
+            b[k]=6*((ys[i+1]-ys[i])/h[i]-(ys[i]-ys[i-1])/h[i-1])
+        M[1:-1]=gauss_pivoteamento(A,b)
+    def avaliar(x):
+        x=_real(x)
+        if not xs[0]<=x<=xs[-1]:raise ValueError('Esta spline não extrapola')
+        i=min(next((j for j in range(n-1) if x<=xs[j+1]),n-2),n-2)
+        a=(xs[i+1]-x)/h[i];b=(x-xs[i])/h[i]
+        return _real(a*ys[i]+b*ys[i+1]+((a**3-a)*M[i]+(b**3-b)*M[i+1])*h[i]**2/6)
+    return avaliar,M
+
+avaliar,M=spline_natural([0,1,2],[0,1,0])
+assert M==[0,-3,0]
+assert abs(avaliar(.5)-11/16)<1e-12
+assert [avaliar(x) for x in [0,1,2]]==[0,1,0]
+print(M,avaliar(.5))

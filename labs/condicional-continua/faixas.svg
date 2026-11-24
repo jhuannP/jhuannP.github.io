@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="650" viewBox="0 0 480 650" role="img" aria-labelledby="title desc">
+<title id="title">Uma faixa tem massa; a linha isolada não</title>
+<desc id="desc">Quadrado unitário em X e Y. Uma faixa entre X igual a um quarto e três quartos tem largura positiva; a linha X igual a um meio tem probabilidade zero. Para Y maior que um meio, probabilidades de faixas centradas em um meio são 13/20, 49/74 e 193/290, tendendo a 2/3.</desc>
+<rect width="480" height="650" fill="#f7f8fa"/>
+<g font-family="Arial, sans-serif" fill="#172334">
+<text x="28" y="36" font-size="23" font-weight="700">Faixa ou valor?</text>
+<text x="28" y="63" font-size="16">Mesmo modelo, informações diferentes.</text>
+<rect x="78" y="108" width="300" height="230" fill="white" stroke="#687789"/>
+<rect x="153" y="108" width="150" height="230" fill="#d8e7fb"/>
+<rect x="153" y="108" width="150" height="115" fill="#a7c5ee"/>
+<path d="M78 223H378" stroke="#687789" stroke-dasharray="5 5"/>
+<path d="M228 108V338" stroke="#174c91" stroke-width="3"/>
+<path d="M78 338H397M78 338V91" stroke="#172334" stroke-width="2"/>
+<text x="53" y="344" font-size="16">0</text><text x="58" y="113" font-size="16">1</text>
+<text x="26" y="228" font-size="16">1/2</text><text x="58" y="88" font-size="17">Y</text>
+<text x="140" y="363" font-size="16">1/4</text><text x="215" y="363" font-size="16">1/2</text>
+<text x="290" y="363" font-size="16">3/4</text><text x="373" y="363" font-size="16">1</text><text x="405" y="344" font-size="17">X</text>
+<text x="166" y="150" font-size="16" fill="#103f79">Y &gt; 1/2</text>
+<text x="28" y="402" font-size="16">Linha: P(X = 1/2) = 0.</text>
+<text x="28" y="427" font-size="16">Faixa: P(1/4 ≤ X ≤ 3/4) = 37/80.</text>
+<path d="M28 449H452" stroke="#bec7d2"/>
+<text x="28" y="480" font-size="17" font-weight="700">Estreitar a faixa centrada em 1/2</text>
+<text x="28" y="510" font-size="16">Meia largura h</text><text x="260" y="510" font-size="16">P(Y &gt; 1/2 | faixa)</text>
+<text x="28" y="539" font-size="17">1/2</text><text x="260" y="539" font-size="17">13/20 ≈ 0,65000</text>
+<text x="28" y="567" font-size="17">1/4</text><text x="260" y="567" font-size="17">49/74 ≈ 0,66216</text>
+<text x="28" y="595" font-size="17">1/8</text><text x="260" y="595" font-size="17">193/290 ≈ 0,66552</text>
+<text x="28" y="628" font-size="17" font-weight="700" fill="#174c91">Limite h → 0: 2/3. A razão 0/0 não vale.</text>
+</g></svg>

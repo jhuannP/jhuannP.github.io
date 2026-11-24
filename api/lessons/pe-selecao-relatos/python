@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+positive_h = Q(1,2)*Q(3,4)*Q(1,2)
+positive_not_h = Q(1,2)*Q(1,4)*Q(3,4)
+evidence = positive_h + positive_not_h
+assert evidence == Q(9,32)
+assert positive_h/evidence == Q(2,3)
+print(positive_h/evidence)

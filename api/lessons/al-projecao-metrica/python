@@ -1,0 +1,8 @@
+from fractions import Fraction as F
+u=(1,1);b=(2,0);weights=(1,4)
+a=sum(w*x*y for w,x,y in zip(weights,u,b))/F(sum(w*x*x for w,x in zip(weights,u)))
+p=tuple(a*x for x in u)
+r=tuple(x-y for x,y in zip(b,p))
+assert p==(F(2,5),F(2,5))
+assert sum(w*x*y for w,x,y in zip(weights,u,r))==0
+print(p,r)

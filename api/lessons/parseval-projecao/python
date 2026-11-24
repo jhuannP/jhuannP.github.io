@@ -1,0 +1,5 @@
+from math import sin,pi
+N=2000;h=1/N
+energy=h*sum((2*sin(pi*(i+.5)*h)+sin(2*pi*(i+.5)*h))**2 for i in range(N))
+assert abs(energy-2.5)<1e-12
+print(energy)

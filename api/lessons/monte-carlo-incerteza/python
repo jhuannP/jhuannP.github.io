@@ -1,0 +1,7 @@
+from random import Random
+from statistics import mean,stdev
+from math import sqrt
+rng=Random(42);values=[rng.random()**2 for _ in range(10000)]
+est=mean(values);se=stdev(values)/sqrt(len(values))
+assert abs(est-1/3)<.02 and se>0
+print(est,se,1/3)

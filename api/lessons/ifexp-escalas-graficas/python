@@ -1,0 +1,7 @@
+from math import log2, log
+times=[0,2,4,6]
+y=[64,32,16,8]
+Y=[log2(v/1) for v in y]
+slopes=[(Y[i+1]-Y[i])/(times[i+1]-times[i]) for i in range(3)]
+assert slopes==[-0.5]*3
+print("Sintético:", Y, slopes, "k=", -log(2)/2, "s^-1")

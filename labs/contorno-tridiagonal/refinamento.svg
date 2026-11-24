@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+<title id="title">Resíduo zero, erro de discretização não zero</title><desc id="desc">Comparação exata das malhas4,8,16 no caso quártico. Erros nodais máximos1/64,1/256,1/1024. Resíduo algébrico zero em todas.</desc>
+<rect width="720" height="480" rx="20" fill="#f4efe3"/><g font-family="sans-serif" fill="#173d39">
+<text x="28" y="40" font-size="26" font-weight="700">Resolver a matriz não zera o erro.</text>
+<text x="28" y="81" font-size="20">Referência fabricada: u*=x²(1−x)²</text>
+<text x="40" y="134" font-size="20">Subintervalos n</text><text x="280" y="134" font-size="20">Erro nodal máximo</text><text x="535" y="134" font-size="20">Resíduo</text>
+<path d="M28 153H692 M28 227H692 M28 301H692 M28 375H692" stroke="#c3cbbc" stroke-width="2"/>
+<g font-size="29"><text x="100" y="200">4</text><text x="330" y="200">1/64</text><text x="570" y="200">0</text>
+<text x="100" y="274">8</text><text x="330" y="274">1/256</text><text x="570" y="274">0</text>
+<text x="92" y="348">16</text><text x="330" y="348">1/1024</text><text x="570" y="348">0</text></g>
+<text x="28" y="418" font-size="22">Dobrar n divide o erro por 4 neste exemplo.</text><text x="28" y="457" font-size="18">Valores exatos em frações • não são medições ou tempos de execução</text>
+</g></svg>

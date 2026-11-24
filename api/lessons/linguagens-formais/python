@@ -1,0 +1,6 @@
+import re
+def pertence(palavra):
+    return re.fullmatch(r'a*b*',palavra) is not None
+assert pertence('') and pertence('aabb') and pertence('bbb')
+assert not pertence('aba') and not pertence('c')
+print([pertence(s) for s in ['', 'aabb', 'aba', 'bbb']])

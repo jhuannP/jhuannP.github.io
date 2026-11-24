@@ -1,0 +1,7 @@
+from fractions import Fraction as F
+h=F(1,10)
+delta_u=4*h+h*h
+predicted=delta_u/4
+assert predicted==F(41,400)
+assert h-predicted==F(-1,400)
+print(predicted,h-predicted)

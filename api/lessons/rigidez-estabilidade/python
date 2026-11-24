@@ -1,0 +1,5 @@
+from math import exp
+lam=10;h=.3
+explicit=1-h*lam;implicit=1/(1+h*lam)
+assert explicit==-2 and implicit==.25
+print(exp(-h*lam),explicit,implicit)

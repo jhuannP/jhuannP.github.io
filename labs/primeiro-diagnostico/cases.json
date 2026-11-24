@@ -1,0 +1,5 @@
+{
+  "sintaxe": "print(\"Início\")\nprint(\"Sem fechar\"\n",
+  "execucao": "print(\"Início\")\nprint(altura_nao_definida)\nprint(\"Fim\")\n",
+  "unidades": "velocidade_kmh=54\ncomprimento_m=300\nprint(\"Tempo (s):\", comprimento_m/velocidade_kmh)\n"
+}

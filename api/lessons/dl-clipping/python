@@ -1,0 +1,19 @@
+from math import exp,log,sqrt,hypot,sin,cos,isfinite
+from random import Random
+
+def real(x):
+    if isinstance(x,bool):raise ValueError('Real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Real finito necessário') from None
+    if not isfinite(y):raise ValueError('Real finito necessário')
+    return y
+
+def clip_norm(values,limit):
+    x=[real(v) for v in values];limit=real(limit)
+    if not x or limit<=0:raise ValueError('Vetor não vazio e limite positivo necessários')
+    norm=hypot(*x);factor=1 if norm==0 else min(1,limit/norm)
+    return dict(values=[v*factor for v in x],before=norm,after=hypot(*(v*factor for v in x)))
+
+r=clip_norm([3,4],2.5)
+assert r["values"]==[1.5,2] and r["after"]==2.5
+print(r)

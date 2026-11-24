@@ -1,0 +1,9 @@
+T=500;T0=300;b=30
+u=T-T0
+hA=(40*u+.01*u*u)/1000
+hB=2+b*u/1000
+reaction=hB-hA
+constant=2+(b-40)*u/1000
+assert abs(reaction+.4)<1e-12
+assert constant==0
+print("Delta_r H em kJ/mol de reação:",reaction)

@@ -1,0 +1,9 @@
+# Informação de caminho num modelo de duas alternativas
+
+Estado conjunto normalizado Ψ=(|0>d0+exp(iφ)|1>d1)/sqrt2,com d0=(1,0),d1=(γ,h),γ²+h²=1,γ,h≥0. Medimos o caminho na base± e ignoramos o marcador:somamos probabilidades conjuntas dos resultados ortogonais do marcador. P±=(1±γcosφ)/2. Não é simulação de uma tela contínua: faltam difração,envelope,propagação,perdas,geometria e distribuição espacial. É um modelo reduzido da interferência entre alternativas; não mede trajetórias ou estados reais.
+
+Execute `python3 labs/caminhos-marcadores/paths.py` e `python3 -m unittest discover -s labs/caminhos-marcadores -t .`. Sem dependências. Int/Fraction,t0..1 parametriza γ=(1−t²)/(1+t²),h=2t/(1+t²);t1/3 dáγ4/5,h3/5. Fase(c,s) racional,de módulo exato1. Amplitudes complexas armazenadas como pares(real,imaginário);probabilidades são somas de quadrados. Não há amostragem de contagens;200P são médias previstas, não medições ou valores obrigatórios.
+
+Fonte complementar pública:The Feynman Lectures on Physics,volIII,cap1,https://www.feynmanlectures.caltech.edu/III_01.html,consulta parcial29/10/2026,§§1–5/1–6 para amplitudes e informação de caminho. Abertura inicial exibiu aviso de carregamento,mas busca interna retornou corpo legível dessas seções; nenhum bypass. Estado conjunto,marcadores2D,números,exercícios e código são construção didática própria,não extração de dados ou exemplos da fonte. NussenzveigIV do acervo permanece registro anterior,sem nova leitura de corpo. ProgramaCCM0222 preservado conforme consulta27/10/2026,ativação2025,sem comprovar versão ministrada.
+
+Quatro testes:fixtures;105 pares(t,fase) contra fórmula marginal,normalização e visibilidade;fase global e marcador ortogonal;contratos. Não certificam experimentos,percepção,interpretação ontológica ou domínio pessoal. Revisão pendente.

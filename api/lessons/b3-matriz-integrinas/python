@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+km,kc,delta=Q(8),Q(2),Q(2)
+f=delta/(1/km+1/kc)
+xm,xc=f/km,f/kc
+assert xm+xc==delta
+assert f==Q(16,5)
+print(f,xm,xc,f*delta/2)

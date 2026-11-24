@@ -1,0 +1,392 @@
+[
+  {
+    "q": -150,
+    "c": -10,
+    "x": -1.5,
+    "u": -1.0,
+    "e": -6,
+    "difference": -5.0,
+    "allowed": false,
+    "speed": null
+  },
+  {
+    "q": -150,
+    "c": 0,
+    "x": -1.5,
+    "u": 9.0,
+    "e": 4,
+    "difference": -5.0,
+    "allowed": false,
+    "speed": null
+  },
+  {
+    "q": -150,
+    "c": 10,
+    "x": -1.5,
+    "u": 19.0,
+    "e": 14,
+    "difference": -5.0,
+    "allowed": false,
+    "speed": null
+  },
+  {
+    "q": -125,
+    "c": -10,
+    "x": -1.25,
+    "u": -3.75,
+    "e": -6,
+    "difference": -2.25,
+    "allowed": false,
+    "speed": null
+  },
+  {
+    "q": -125,
+    "c": 0,
+    "x": -1.25,
+    "u": 6.25,
+    "e": 4,
+    "difference": -2.25,
+    "allowed": false,
+    "speed": null
+  },
+  {
+    "q": -125,
+    "c": 10,
+    "x": -1.25,
+    "u": 16.25,
+    "e": 14,
+    "difference": -2.25,
+    "allowed": false,
+    "speed": null
+  },
+  {
+    "q": -100,
+    "c": -10,
+    "x": -1.0,
+    "u": -6.0,
+    "e": -6,
+    "difference": 0.0,
+    "allowed": true,
+    "speed": 0.0
+  },
+  {
+    "q": -100,
+    "c": 0,
+    "x": -1.0,
+    "u": 4.0,
+    "e": 4,
+    "difference": 0.0,
+    "allowed": true,
+    "speed": 0.0
+  },
+  {
+    "q": -100,
+    "c": 10,
+    "x": -1.0,
+    "u": 14.0,
+    "e": 14,
+    "difference": 0.0,
+    "allowed": true,
+    "speed": 0.0
+  },
+  {
+    "q": -75,
+    "c": -10,
+    "x": -0.75,
+    "u": -7.75,
+    "e": -6,
+    "difference": 1.75,
+    "allowed": true,
+    "speed": 1.3228756555322954
+  },
+  {
+    "q": -75,
+    "c": 0,
+    "x": -0.75,
+    "u": 2.25,
+    "e": 4,
+    "difference": 1.75,
+    "allowed": true,
+    "speed": 1.3228756555322954
+  },
+  {
+    "q": -75,
+    "c": 10,
+    "x": -0.75,
+    "u": 12.25,
+    "e": 14,
+    "difference": 1.75,
+    "allowed": true,
+    "speed": 1.3228756555322954
+  },
+  {
+    "q": -50,
+    "c": -10,
+    "x": -0.5,
+    "u": -9.0,
+    "e": -6,
+    "difference": 3.0,
+    "allowed": true,
+    "speed": 1.7320508075688772
+  },
+  {
+    "q": -50,
+    "c": 0,
+    "x": -0.5,
+    "u": 1.0,
+    "e": 4,
+    "difference": 3.0,
+    "allowed": true,
+    "speed": 1.7320508075688772
+  },
+  {
+    "q": -50,
+    "c": 10,
+    "x": -0.5,
+    "u": 11.0,
+    "e": 14,
+    "difference": 3.0,
+    "allowed": true,
+    "speed": 1.7320508075688772
+  },
+  {
+    "q": -25,
+    "c": -10,
+    "x": -0.25,
+    "u": -9.75,
+    "e": -6,
+    "difference": 3.75,
+    "allowed": true,
+    "speed": 1.9364916731037085
+  },
+  {
+    "q": -25,
+    "c": 0,
+    "x": -0.25,
+    "u": 0.25,
+    "e": 4,
+    "difference": 3.75,
+    "allowed": true,
+    "speed": 1.9364916731037085
+  },
+  {
+    "q": -25,
+    "c": 10,
+    "x": -0.25,
+    "u": 10.25,
+    "e": 14,
+    "difference": 3.75,
+    "allowed": true,
+    "speed": 1.9364916731037085
+  },
+  {
+    "q": 0,
+    "c": -10,
+    "x": 0.0,
+    "u": -10.0,
+    "e": -6,
+    "difference": 4.0,
+    "allowed": true,
+    "speed": 2.0
+  },
+  {
+    "q": 0,
+    "c": 0,
+    "x": 0.0,
+    "u": 0.0,
+    "e": 4,
+    "difference": 4.0,
+    "allowed": true,
+    "speed": 2.0
+  },
+  {
+    "q": 0,
+    "c": 10,
+    "x": 0.0,
+    "u": 10.0,
+    "e": 14,
+    "difference": 4.0,
+    "allowed": true,
+    "speed": 2.0
+  },
+  {
+    "q": 25,
+    "c": -10,
+    "x": 0.25,
+    "u": -9.75,
+    "e": -6,
+    "difference": 3.75,
+    "allowed": true,
+    "speed": 1.9364916731037085
+  },
+  {
+    "q": 25,
+    "c": 0,
+    "x": 0.25,
+    "u": 0.25,
+    "e": 4,
+    "difference": 3.75,
+    "allowed": true,
+    "speed": 1.9364916731037085
+  },
+  {
+    "q": 25,
+    "c": 10,
+    "x": 0.25,
+    "u": 10.25,
+    "e": 14,
+    "difference": 3.75,
+    "allowed": true,
+    "speed": 1.9364916731037085
+  },
+  {
+    "q": 50,
+    "c": -10,
+    "x": 0.5,
+    "u": -9.0,
+    "e": -6,
+    "difference": 3.0,
+    "allowed": true,
+    "speed": 1.7320508075688772
+  },
+  {
+    "q": 50,
+    "c": 0,
+    "x": 0.5,
+    "u": 1.0,
+    "e": 4,
+    "difference": 3.0,
+    "allowed": true,
+    "speed": 1.7320508075688772
+  },
+  {
+    "q": 50,
+    "c": 10,
+    "x": 0.5,
+    "u": 11.0,
+    "e": 14,
+    "difference": 3.0,
+    "allowed": true,
+    "speed": 1.7320508075688772
+  },
+  {
+    "q": 75,
+    "c": -10,
+    "x": 0.75,
+    "u": -7.75,
+    "e": -6,
+    "difference": 1.75,
+    "allowed": true,
+    "speed": 1.3228756555322954
+  },
+  {
+    "q": 75,
+    "c": 0,
+    "x": 0.75,
+    "u": 2.25,
+    "e": 4,
+    "difference": 1.75,
+    "allowed": true,
+    "speed": 1.3228756555322954
+  },
+  {
+    "q": 75,
+    "c": 10,
+    "x": 0.75,
+    "u": 12.25,
+    "e": 14,
+    "difference": 1.75,
+    "allowed": true,
+    "speed": 1.3228756555322954
+  },
+  {
+    "q": 100,
+    "c": -10,
+    "x": 1.0,
+    "u": -6.0,
+    "e": -6,
+    "difference": 0.0,
+    "allowed": true,
+    "speed": 0.0
+  },
+  {
+    "q": 100,
+    "c": 0,
+    "x": 1.0,
+    "u": 4.0,
+    "e": 4,
+    "difference": 0.0,
+    "allowed": true,
+    "speed": 0.0
+  },
+  {
+    "q": 100,
+    "c": 10,
+    "x": 1.0,
+    "u": 14.0,
+    "e": 14,
+    "difference": 0.0,
+    "allowed": true,
+    "speed": 0.0
+  },
+  {
+    "q": 125,
+    "c": -10,
+    "x": 1.25,
+    "u": -3.75,
+    "e": -6,
+    "difference": -2.25,
+    "allowed": false,
+    "speed": null
+  },
+  {
+    "q": 125,
+    "c": 0,
+    "x": 1.25,
+    "u": 6.25,
+    "e": 4,
+    "difference": -2.25,
+    "allowed": false,
+    "speed": null
+  },
+  {
+    "q": 125,
+    "c": 10,
+    "x": 1.25,
+    "u": 16.25,
+    "e": 14,
+    "difference": -2.25,
+    "allowed": false,
+    "speed": null
+  },
+  {
+    "q": 150,
+    "c": -10,
+    "x": 1.5,
+    "u": -1.0,
+    "e": -6,
+    "difference": -5.0,
+    "allowed": false,
+    "speed": null
+  },
+  {
+    "q": 150,
+    "c": 0,
+    "x": 1.5,
+    "u": 9.0,
+    "e": 4,
+    "difference": -5.0,
+    "allowed": false,
+    "speed": null
+  },
+  {
+    "q": 150,
+    "c": 10,
+    "x": 1.5,
+    "u": 19.0,
+    "e": 14,
+    "difference": -5.0,
+    "allowed": false,
+    "speed": null
+  }
+]

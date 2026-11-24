@@ -1,0 +1,3 @@
+from math import gamma,factorial
+for n in range(1,8):assert abs(gamma(n)-factorial(n-1))<1e-10
+print(gamma(5))

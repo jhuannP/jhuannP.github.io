@@ -1,0 +1,9 @@
+from itertools import combinations
+from collections import Counter
+orbitals=[(m,s2) for m in range(-2,3) for s2 in (-1,1)]
+h=Counter((a[0]+b[0],a[1]+b[1]) for a,b in combinations(orbitals,2))
+assert sum(h.values())==45
+assert sum(v for (m,s),v in h.items() if s==2)==10
+assert h[4,2]==0 and h[4,0]==1
+print('M_S=1:',[h[m,2] for m in range(-4,5)])
+print('M_S=0:',[h[m,0] for m in range(-4,5)])

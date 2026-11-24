@@ -1,0 +1,18 @@
+from fractions import Fraction as F
+
+def solve(a,b,c,d):
+    # ax+b=cx+d; usar strings como "1/2" mantém frações exatas.
+    a,b,c,d=map(F,[a,b,c,d])
+    coefficient=a-c
+    target=d-b
+    if coefficient==0:
+        return ('todos' if target==0 else 'nenhum'), None
+    return 'unica', target/coefficient
+
+kind,x=solve(3,2,0,14)
+assert kind=='unica' and x==4
+assert 3*x+2==14
+assert solve(2,1,2,3)[0]=='nenhum'
+assert solve(3,6,3,6)[0]=='todos'
+assert solve('1/2','-1/2',0,'3/4')[1]==F(5,2)
+print(kind,x)

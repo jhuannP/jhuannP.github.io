@@ -1,0 +1,24 @@
+from math import exp,log1p,sqrt,hypot,atan2,cos,sin,isfinite
+from random import Random
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def paired(x,y):
+    a=[finite(v) for v in x];b=[finite(v) for v in y]
+    if not a or len(a)!=len(b):raise ValueError('Dados não vazios de mesmo tamanho necessários')
+    return a,b
+
+def knn_predict(x,y,query,k=3):
+    x,y=paired(x,y);query=finite(query)
+    if any(v not in [0,1] for v in y) or isinstance(k,bool) or not isinstance(k,int) or not 1<=k<=len(x):raise ValueError('k ou rótulos inválidos')
+    chosen=sorted(range(len(x)),key=lambda i:(abs(x[i]-query),i))[:k]
+    # Empate de votos escolhe 0; distâncias empatadas conservam índice original.
+    return int(sum(y[i] for i in chosen)>k/2)
+
+assert knn_predict([0,1,2],[0,0,1],1.8,1)==1
+print(knn_predict([0,1,2],[0,0,1],1.8,3))

@@ -1,0 +1,10 @@
+"""Entrada molde em 5 para 3; saída RNA em 5 para 3."""
+def transcribe_template_5to3(sequence):
+    if type(sequence) is not str or not sequence or any(b not in "ACGT" for b in sequence):
+        raise ValueError("DNA não vazio, maiúsculo, apenas ACGT")
+    pairs={"A":"U","T":"A","C":"G","G":"C"}
+    return "".join(pairs[b] for b in reversed(sequence))
+
+assert transcribe_template_5to3("GGTTACGT")=="ACGUAACC"
+assert transcribe_template_5to3("ACGTAACC")=="GGUUACGU"
+print(transcribe_template_5to3("GGTTACGT"))

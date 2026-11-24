@@ -1,0 +1,5 @@
+"""C em μF, V em V, Q em μC e U em μJ."""
+C,V=2.,3.
+Q=C*V;U=C*V*V/2
+assert Q==6 and U==9
+print(U)

@@ -1,0 +1,25 @@
+from math import exp,log1p,sqrt,hypot,atan2,cos,sin,isfinite
+from random import Random
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def paired(x,y):
+    a=[finite(v) for v in x];b=[finite(v) for v in y]
+    if not a or len(a)!=len(b):raise ValueError('Dados não vazios de mesmo tamanho necessários')
+    return a,b
+
+def binary_metrics(y,pred):
+    y,pred=paired(y,pred)
+    if any(v not in [0,1] for v in y+pred):raise ValueError('Classes 0/1 necessárias')
+    tp=sum(a==1 and b==1 for a,b in zip(y,pred));fp=sum(a==0 and b==1 for a,b in zip(y,pred))
+    fn=sum(a==1 and b==0 for a,b in zip(y,pred));tn=len(y)-tp-fp-fn
+    return dict(TP=tp,FP=fp,FN=fn,TN=tn,accuracy=(tp+tn)/len(y),precision=None if tp+fp==0 else tp/(tp+fp),recall=None if tp+fn==0 else tp/(tp+fn))
+
+r=binary_metrics([1,1,1,1,1,0],[1,1,1,0,0,1])
+assert r["precision"]==.75 and r["recall"]==.6
+print(r)

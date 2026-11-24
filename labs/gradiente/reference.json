@@ -1,0 +1,1490 @@
+[
+  {
+    "kind": 0,
+    "x": 1,
+    "y": 2,
+    "angle": 0,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      2,
+      8
+    ],
+    "norm": 8.246211251235321,
+    "base": 9,
+    "end": [
+      2.0,
+      2.0
+    ],
+    "final": 12.0,
+    "dot": 2.0,
+    "derivative": 2.0,
+    "secant": 3.0,
+    "remainder": 1.0,
+    "scaled_remainder": 1.0,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 8.246211251235321
+  },
+  {
+    "kind": 0,
+    "x": 1,
+    "y": 2,
+    "angle": 0,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      2,
+      8
+    ],
+    "norm": 8.246211251235321,
+    "base": 9,
+    "end": [
+      1.0625,
+      2.0
+    ],
+    "final": 9.12890625,
+    "dot": 2.0,
+    "derivative": 2.0,
+    "secant": 2.0625,
+    "remainder": 0.00390625,
+    "scaled_remainder": 0.0625,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 8.246211251235321
+  },
+  {
+    "kind": 0,
+    "x": 1,
+    "y": 2,
+    "angle": 45,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      2,
+      8
+    ],
+    "norm": 8.246211251235321,
+    "base": 9,
+    "end": [
+      1.7071067811865475,
+      2.7071067811865475
+    ],
+    "final": 17.571067811865476,
+    "dot": 7.071067811865475,
+    "derivative": 7.071067811865475,
+    "secant": 8.571067811865476,
+    "remainder": 1.5000000000000009,
+    "scaled_remainder": 1.5000000000000009,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 8.246211251235321
+  },
+  {
+    "kind": 0,
+    "x": 1,
+    "y": 2,
+    "angle": 45,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      2,
+      8
+    ],
+    "norm": 8.246211251235321,
+    "base": 9,
+    "end": [
+      1.0441941738241591,
+      2.044194173824159
+    ],
+    "final": 9.447801113241592,
+    "dot": 7.071067811865475,
+    "derivative": 7.071067811865475,
+    "secant": 7.1648178118654755,
+    "remainder": 0.0058593750000000555,
+    "scaled_remainder": 0.09375000000000089,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 8.246211251235321
+  },
+  {
+    "kind": 0,
+    "x": 1,
+    "y": 2,
+    "angle": 90,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      2,
+      8
+    ],
+    "norm": 8.246211251235321,
+    "base": 9,
+    "end": [
+      1.0,
+      3.0
+    ],
+    "final": 19.0,
+    "dot": 8.0,
+    "derivative": 8.0,
+    "secant": 10.0,
+    "remainder": 2.0,
+    "scaled_remainder": 2.0,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 8.246211251235321
+  },
+  {
+    "kind": 0,
+    "x": 1,
+    "y": 2,
+    "angle": 90,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      2,
+      8
+    ],
+    "norm": 8.246211251235321,
+    "base": 9,
+    "end": [
+      1.0,
+      2.0625
+    ],
+    "final": 9.5078125,
+    "dot": 8.0,
+    "derivative": 8.0,
+    "secant": 8.125,
+    "remainder": 0.0078125,
+    "scaled_remainder": 0.125,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 8.246211251235321
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0,
+    "end": [
+      1.0,
+      0.0
+    ],
+    "final": 1.0,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 1.0,
+    "remainder": 1.0,
+    "scaled_remainder": 1.0,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0,
+    "end": [
+      0.0625,
+      0.0
+    ],
+    "final": 0.00390625,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.0625,
+    "remainder": 0.00390625,
+    "scaled_remainder": 0.0625,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 0,
+    "angle": 45,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0,
+    "end": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "final": 1.5,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 1.5,
+    "remainder": 1.5,
+    "scaled_remainder": 1.5,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 0,
+    "angle": 45,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0,
+    "end": [
+      0.04419417382415922,
+      0.044194173824159216
+    ],
+    "final": 0.005859375,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.09375,
+    "remainder": 0.005859375,
+    "scaled_remainder": 0.09375,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 0,
+    "angle": 90,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0,
+    "end": [
+      0.0,
+      1.0
+    ],
+    "final": 2.0,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 2.0,
+    "remainder": 2.0,
+    "scaled_remainder": 2.0,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 0,
+    "angle": 90,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0,
+    "end": [
+      0.0,
+      0.0625
+    ],
+    "final": 0.0078125,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.125,
+    "remainder": 0.0078125,
+    "scaled_remainder": 0.125,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  },
+  {
+    "kind": 0,
+    "x": -1,
+    "y": 1,
+    "angle": 0,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      -2,
+      4
+    ],
+    "norm": 4.47213595499958,
+    "base": 3,
+    "end": [
+      0.0,
+      1.0
+    ],
+    "final": 2.0,
+    "dot": -2.0,
+    "derivative": -2.0,
+    "secant": -1.0,
+    "remainder": 1.0,
+    "scaled_remainder": 1.0,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.47213595499958
+  },
+  {
+    "kind": 0,
+    "x": -1,
+    "y": 1,
+    "angle": 0,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      -2,
+      4
+    ],
+    "norm": 4.47213595499958,
+    "base": 3,
+    "end": [
+      -0.9375,
+      1.0
+    ],
+    "final": 2.87890625,
+    "dot": -2.0,
+    "derivative": -2.0,
+    "secant": -1.9375,
+    "remainder": 0.00390625,
+    "scaled_remainder": 0.0625,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.47213595499958
+  },
+  {
+    "kind": 0,
+    "x": -1,
+    "y": 1,
+    "angle": 45,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      -2,
+      4
+    ],
+    "norm": 4.47213595499958,
+    "base": 3,
+    "end": [
+      -0.2928932188134524,
+      1.7071067811865475
+    ],
+    "final": 5.914213562373095,
+    "dot": 1.4142135623730947,
+    "derivative": 1.4142135623730947,
+    "secant": 2.914213562373095,
+    "remainder": 1.5000000000000002,
+    "scaled_remainder": 1.5000000000000002,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.47213595499958
+  },
+  {
+    "kind": 0,
+    "x": -1,
+    "y": 1,
+    "angle": 45,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      -2,
+      4
+    ],
+    "norm": 4.47213595499958,
+    "base": 3,
+    "end": [
+      -0.9558058261758408,
+      1.0441941738241591
+    ],
+    "final": 3.0942477226483183,
+    "dot": 1.4142135623730947,
+    "derivative": 1.4142135623730947,
+    "secant": 1.5079635623730923,
+    "remainder": 0.005859374999999847,
+    "scaled_remainder": 0.09374999999999756,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.47213595499958
+  },
+  {
+    "kind": 0,
+    "x": -1,
+    "y": 1,
+    "angle": 90,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      -2,
+      4
+    ],
+    "norm": 4.47213595499958,
+    "base": 3,
+    "end": [
+      -1.0,
+      2.0
+    ],
+    "final": 9.0,
+    "dot": 4.0,
+    "derivative": 4.0,
+    "secant": 6.0,
+    "remainder": 2.0,
+    "scaled_remainder": 2.0,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.47213595499958
+  },
+  {
+    "kind": 0,
+    "x": -1,
+    "y": 1,
+    "angle": 90,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      -2,
+      4
+    ],
+    "norm": 4.47213595499958,
+    "base": 3,
+    "end": [
+      -1.0,
+      1.0625
+    ],
+    "final": 3.2578125,
+    "dot": 4.0,
+    "derivative": 4.0,
+    "secant": 4.125,
+    "remainder": 0.0078125,
+    "scaled_remainder": 0.125,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.47213595499958
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 1,
+    "angle": 0,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      0,
+      4
+    ],
+    "norm": 4.0,
+    "base": 2,
+    "end": [
+      1.0,
+      1.0
+    ],
+    "final": 3.0,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 1.0,
+    "remainder": 1.0,
+    "scaled_remainder": 1.0,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.0
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 1,
+    "angle": 0,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      0,
+      4
+    ],
+    "norm": 4.0,
+    "base": 2,
+    "end": [
+      0.0625,
+      1.0
+    ],
+    "final": 2.00390625,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.0625,
+    "remainder": 0.00390625,
+    "scaled_remainder": 0.0625,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.0
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 1,
+    "angle": 45,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      0,
+      4
+    ],
+    "norm": 4.0,
+    "base": 2,
+    "end": [
+      0.7071067811865476,
+      1.7071067811865475
+    ],
+    "final": 6.32842712474619,
+    "dot": 2.82842712474619,
+    "derivative": 2.82842712474619,
+    "secant": 4.32842712474619,
+    "remainder": 1.5,
+    "scaled_remainder": 1.5,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.0
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 1,
+    "angle": 45,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      0,
+      4
+    ],
+    "norm": 4.0,
+    "base": 2,
+    "end": [
+      0.04419417382415922,
+      1.0441941738241591
+    ],
+    "final": 2.1826360702966365,
+    "dot": 2.82842712474619,
+    "derivative": 2.82842712474619,
+    "secant": 2.9221771247461845,
+    "remainder": 0.005859374999999667,
+    "scaled_remainder": 0.09374999999999467,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.0
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 1,
+    "angle": 90,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      0,
+      4
+    ],
+    "norm": 4.0,
+    "base": 2,
+    "end": [
+      0.0,
+      2.0
+    ],
+    "final": 8.0,
+    "dot": 4.0,
+    "derivative": 4.0,
+    "secant": 6.0,
+    "remainder": 2.0,
+    "scaled_remainder": 2.0,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.0
+  },
+  {
+    "kind": 0,
+    "x": 0,
+    "y": 1,
+    "angle": 90,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      0,
+      4
+    ],
+    "norm": 4.0,
+    "base": 2,
+    "end": [
+      0.0,
+      1.0625
+    ],
+    "final": 2.2578125,
+    "dot": 4.0,
+    "derivative": 4.0,
+    "secant": 4.125,
+    "remainder": 0.0078125,
+    "scaled_remainder": 0.125,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 4.0
+  },
+  {
+    "kind": 1,
+    "x": 1,
+    "y": 2,
+    "angle": 0,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      0.52,
+      -0.16
+    ],
+    "norm": 0.5440588203494178,
+    "base": 0.2,
+    "end": [
+      2.0,
+      2.0
+    ],
+    "final": 1.0,
+    "dot": 0.52,
+    "derivative": 0.52,
+    "secant": 0.8,
+    "remainder": 0.28,
+    "scaled_remainder": 0.28,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 0.5440588203494178
+  },
+  {
+    "kind": 1,
+    "x": 1,
+    "y": 2,
+    "angle": 0,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      0.52,
+      -0.16
+    ],
+    "norm": 0.5440588203494178,
+    "base": 0.2,
+    "end": [
+      1.0625,
+      2.0
+    ],
+    "final": 0.23386329017517135,
+    "dot": 0.52,
+    "derivative": 0.52,
+    "secant": 0.5418126428027414,
+    "remainder": 0.0013632901751713389,
+    "scaled_remainder": 0.021812642802741422,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 0.5440588203494178
+  },
+  {
+    "kind": 1,
+    "x": 1,
+    "y": 2,
+    "angle": 45,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      0.52,
+      -0.16
+    ],
+    "norm": 0.5440588203494178,
+    "base": 0.2,
+    "end": [
+      1.7071067811865475,
+      2.7071067811865475
+    ],
+    "final": 0.48570226039551584,
+    "dot": 0.25455844122715715,
+    "derivative": 0.25455844122715715,
+    "secant": 0.28570226039551583,
+    "remainder": 0.031143819168358677,
+    "scaled_remainder": 0.031143819168358677,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 0.5440588203494178
+  },
+  {
+    "kind": 1,
+    "x": 1,
+    "y": 2,
+    "angle": 45,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      0.52,
+      -0.16
+    ],
+    "norm": 0.5440588203494178,
+    "base": 0.2,
+    "end": [
+      1.0441941738241591,
+      2.044194173824159
+    ],
+    "final": 0.2160775874759305,
+    "dot": 0.25455844122715715,
+    "derivative": 0.25455844122715715,
+    "secant": 0.2572413996148879,
+    "remainder": 0.00016768489923317184,
+    "scaled_remainder": 0.0026829583877307495,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 0.5440588203494178
+  },
+  {
+    "kind": 1,
+    "x": 1,
+    "y": 2,
+    "angle": 90,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      0.52,
+      -0.16
+    ],
+    "norm": 0.5440588203494178,
+    "base": 0.2,
+    "end": [
+      1.0,
+      3.0
+    ],
+    "final": 0.1,
+    "dot": -0.16,
+    "derivative": -0.16,
+    "secant": -0.1,
+    "remainder": 0.06,
+    "scaled_remainder": 0.06,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 0.5440588203494178
+  },
+  {
+    "kind": 1,
+    "x": 1,
+    "y": 2,
+    "angle": 90,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      0.52,
+      -0.16
+    ],
+    "norm": 0.5440588203494178,
+    "base": 0.2,
+    "end": [
+      1.0,
+      2.0625
+    ],
+    "final": 0.19033457249070632,
+    "dot": -0.16,
+    "derivative": -0.16,
+    "secant": -0.15464684014869912,
+    "remainder": 0.00033457249070630544,
+    "scaled_remainder": 0.005353159851300887,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 0.5440588203494178
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      1,
+      0
+    ],
+    "norm": 1.0,
+    "base": 0,
+    "end": [
+      1.0,
+      0.0
+    ],
+    "final": 1.0,
+    "dot": 1.0,
+    "derivative": 1.0,
+    "secant": 1.0,
+    "remainder": 0.0,
+    "scaled_remainder": 0.0,
+    "differentiable": false,
+    "normal_available": false,
+    "max_growth": null
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 0,
+    "angle": 0,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      1,
+      0
+    ],
+    "norm": 1.0,
+    "base": 0,
+    "end": [
+      0.0625,
+      0.0
+    ],
+    "final": 0.0625,
+    "dot": 1.0,
+    "derivative": 1.0,
+    "secant": 1.0,
+    "remainder": 0.0,
+    "scaled_remainder": 0.0,
+    "differentiable": false,
+    "normal_available": false,
+    "max_growth": null
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 0,
+    "angle": 45,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      1,
+      0
+    ],
+    "norm": 1.0,
+    "base": 0,
+    "end": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "final": 0.35355339059327384,
+    "dot": 0.7071067811865476,
+    "derivative": 0.35355339059327384,
+    "secant": 0.35355339059327384,
+    "remainder": -0.35355339059327373,
+    "scaled_remainder": 0.35355339059327373,
+    "differentiable": false,
+    "normal_available": false,
+    "max_growth": null
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 0,
+    "angle": 45,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      1,
+      0
+    ],
+    "norm": 1.0,
+    "base": 0,
+    "end": [
+      0.04419417382415922,
+      0.044194173824159216
+    ],
+    "final": 0.022097086912079615,
+    "dot": 0.7071067811865476,
+    "derivative": 0.35355339059327384,
+    "secant": 0.35355339059327384,
+    "remainder": -0.022097086912079608,
+    "scaled_remainder": 0.35355339059327373,
+    "differentiable": false,
+    "normal_available": false,
+    "max_growth": null
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 0,
+    "angle": 90,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      1,
+      0
+    ],
+    "norm": 1.0,
+    "base": 0,
+    "end": [
+      0.0,
+      1.0
+    ],
+    "final": 0.0,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.0,
+    "remainder": 0.0,
+    "scaled_remainder": 0.0,
+    "differentiable": false,
+    "normal_available": false,
+    "max_growth": null
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 0,
+    "angle": 90,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      1,
+      0
+    ],
+    "norm": 1.0,
+    "base": 0,
+    "end": [
+      0.0,
+      0.0625
+    ],
+    "final": 0.0,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.0,
+    "remainder": 0.0,
+    "scaled_remainder": 0.0,
+    "differentiable": false,
+    "normal_available": false,
+    "max_growth": null
+  },
+  {
+    "kind": 1,
+    "x": -1,
+    "y": 1,
+    "angle": 0,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      1.0,
+      0.5
+    ],
+    "norm": 1.118033988749895,
+    "base": -0.5,
+    "end": [
+      0.0,
+      1.0
+    ],
+    "final": 0.0,
+    "dot": 1.0,
+    "derivative": 1.0,
+    "secant": 0.5,
+    "remainder": -0.5,
+    "scaled_remainder": 0.5,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 1.118033988749895
+  },
+  {
+    "kind": 1,
+    "x": -1,
+    "y": 1,
+    "angle": 0,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      1.0,
+      0.5
+    ],
+    "norm": 1.118033988749895,
+    "base": -0.5,
+    "end": [
+      -0.9375,
+      1.0
+    ],
+    "final": -0.438539501039501,
+    "dot": 1.0,
+    "derivative": 1.0,
+    "secant": 0.9833679833679838,
+    "remainder": -0.0010395010395010118,
+    "scaled_remainder": 0.01663201663201619,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 1.118033988749895
+  },
+  {
+    "kind": 1,
+    "x": -1,
+    "y": 1,
+    "angle": 45,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      1.0,
+      0.5
+    ],
+    "norm": 1.118033988749895,
+    "base": -0.5,
+    "end": [
+      -0.2928932188134524,
+      1.7071067811865475
+    ],
+    "final": -0.008375421949027883,
+    "dot": 1.0606601717798214,
+    "derivative": 1.0606601717798214,
+    "secant": 0.4916245780509721,
+    "remainder": -0.5690355937288494,
+    "scaled_remainder": 0.5690355937288494,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 1.118033988749895
+  },
+  {
+    "kind": 1,
+    "x": -1,
+    "y": 1,
+    "angle": 45,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      1.0,
+      0.5
+    ],
+    "norm": 1.118033988749895,
+    "base": -0.5,
+    "end": [
+      -0.9558058261758408,
+      1.0441941738241591
+    ],
+    "final": -0.43574420548953924,
+    "dot": 1.0606601717798214,
+    "derivative": 1.0606601717798214,
+    "secant": 1.0280927121673722,
+    "remainder": -0.0020354662257780765,
+    "scaled_remainder": 0.03256745961244922,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 1.118033988749895
+  },
+  {
+    "kind": 1,
+    "x": -1,
+    "y": 1,
+    "angle": 90,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      1.0,
+      0.5
+    ],
+    "norm": 1.118033988749895,
+    "base": -0.5,
+    "end": [
+      -1.0,
+      2.0
+    ],
+    "final": -0.2,
+    "dot": 0.5,
+    "derivative": 0.5,
+    "secant": 0.3,
+    "remainder": -0.2,
+    "scaled_remainder": 0.2,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 1.118033988749895
+  },
+  {
+    "kind": 1,
+    "x": -1,
+    "y": 1,
+    "angle": 90,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      1.0,
+      0.5
+    ],
+    "norm": 1.118033988749895,
+    "base": -0.5,
+    "end": [
+      -1.0,
+      1.0625
+    ],
+    "final": -0.46972477064220186,
+    "dot": 0.5,
+    "derivative": 0.5,
+    "secant": 0.4844036697247702,
+    "remainder": -0.0009747706422018609,
+    "scaled_remainder": 0.015596330275229775,
+    "differentiable": true,
+    "normal_available": true,
+    "max_growth": 1.118033988749895
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 1,
+    "angle": 0,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0.0,
+    "end": [
+      1.0,
+      1.0
+    ],
+    "final": 0.5,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.5,
+    "remainder": 0.5,
+    "scaled_remainder": 0.5,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 1,
+    "angle": 0,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      1.0,
+      0.0
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0.0,
+    "end": [
+      0.0625,
+      1.0
+    ],
+    "final": 0.00024319066147859923,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.0038910505836575876,
+    "remainder": 0.00024319066147859923,
+    "scaled_remainder": 0.0038910505836575876,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 1,
+    "angle": 45,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0.0,
+    "end": [
+      0.7071067811865476,
+      1.7071067811865475
+    ],
+    "final": 0.10355339059327379,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.10355339059327379,
+    "remainder": 0.10355339059327379,
+    "scaled_remainder": 0.10355339059327379,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 1,
+    "angle": 45,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.7071067811865476,
+      0.7071067811865475
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0.0,
+    "end": [
+      0.04419417382415922,
+      1.0441941738241591
+    ],
+    "final": 7.90233202069741e-05,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.0012643731233115856,
+    "remainder": 7.90233202069741e-05,
+    "scaled_remainder": 0.0012643731233115856,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 1,
+    "angle": 90,
+    "refinements": 0,
+    "h": 1.0,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0.0,
+    "end": [
+      0.0,
+      2.0
+    ],
+    "final": 0.0,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.0,
+    "remainder": 0.0,
+    "scaled_remainder": 0.0,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  },
+  {
+    "kind": 1,
+    "x": 0,
+    "y": 1,
+    "angle": 90,
+    "refinements": 4,
+    "h": 0.0625,
+    "u": [
+      0.0,
+      1.0
+    ],
+    "g": [
+      0,
+      0
+    ],
+    "norm": 0.0,
+    "base": 0.0,
+    "end": [
+      0.0,
+      1.0625
+    ],
+    "final": 0.0,
+    "dot": 0.0,
+    "derivative": 0.0,
+    "secant": 0.0,
+    "remainder": 0.0,
+    "scaled_remainder": 0.0,
+    "differentiable": true,
+    "normal_available": false,
+    "max_growth": 0.0
+  }
+]

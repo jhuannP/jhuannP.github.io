@@ -1,0 +1,8 @@
+from math import log,exp
+kf,kb=.3,.1
+lam=kf+kb
+ae=kb/lam
+t=log(2)/lam
+a=ae+(1-ae)*exp(-lam*t)
+print(t,a,1-a)
+assert abs(a-.625)<1e-12

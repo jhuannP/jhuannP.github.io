@@ -1,0 +1,1304 @@
+[
+  {
+    "target": 0,
+    "g": 0,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.4
+    }
+  },
+  {
+    "target": 0,
+    "g": 0,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.4
+    }
+  },
+  {
+    "target": 0,
+    "g": 1,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.4
+    }
+  },
+  {
+    "target": 0,
+    "g": 1,
+    "signal": 1,
+    "result": {
+      "final": [
+        20,
+        10,
+        20,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "total": 70,
+      "added": 20,
+      "selected_fraction": 0.5714285714285714
+    }
+  },
+  {
+    "target": 0,
+    "g": 2,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.4
+    }
+  },
+  {
+    "target": 0,
+    "g": 2,
+    "signal": 1,
+    "result": {
+      "final": [
+        40,
+        10,
+        40,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "total": 110,
+      "added": 60,
+      "selected_fraction": 0.7272727272727273
+    }
+  },
+  {
+    "target": 0,
+    "g": 3,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.4
+    }
+  },
+  {
+    "target": 0,
+    "g": 3,
+    "signal": 1,
+    "result": {
+      "final": [
+        80,
+        10,
+        80,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "total": 190,
+      "added": 140,
+      "selected_fraction": 0.8421052631578947
+    }
+  },
+  {
+    "target": 0,
+    "g": 4,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.4
+    }
+  },
+  {
+    "target": 0,
+    "g": 4,
+    "signal": 1,
+    "result": {
+      "final": [
+        160,
+        10,
+        160,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "total": 350,
+      "added": 300,
+      "selected_fraction": 0.9142857142857143
+    }
+  },
+  {
+    "target": 0,
+    "g": 5,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.4
+    }
+  },
+  {
+    "target": 0,
+    "g": 5,
+    "signal": 1,
+    "result": {
+      "final": [
+        320,
+        10,
+        320,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "total": 670,
+      "added": 620,
+      "selected_fraction": 0.9552238805970149
+    }
+  },
+  {
+    "target": 0,
+    "g": 6,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.4
+    }
+  },
+  {
+    "target": 0,
+    "g": 6,
+    "signal": 1,
+    "result": {
+      "final": [
+        640,
+        10,
+        640,
+        10,
+        10
+      ],
+      "recognized": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "active": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "total": 1310,
+      "added": 1260,
+      "selected_fraction": 0.9770992366412213
+    }
+  },
+  {
+    "target": 1,
+    "g": 0,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 1,
+    "g": 0,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 1,
+    "g": 1,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 1,
+    "g": 1,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        20,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "total": 60,
+      "added": 10,
+      "selected_fraction": 0.3333333333333333
+    }
+  },
+  {
+    "target": 1,
+    "g": 2,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 1,
+    "g": 2,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        40,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "total": 80,
+      "added": 30,
+      "selected_fraction": 0.5
+    }
+  },
+  {
+    "target": 1,
+    "g": 3,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 1,
+    "g": 3,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        80,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "total": 120,
+      "added": 70,
+      "selected_fraction": 0.6666666666666666
+    }
+  },
+  {
+    "target": 1,
+    "g": 4,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 1,
+    "g": 4,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        160,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "total": 200,
+      "added": 150,
+      "selected_fraction": 0.8
+    }
+  },
+  {
+    "target": 1,
+    "g": 5,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 1,
+    "g": 5,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        320,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "total": 360,
+      "added": 310,
+      "selected_fraction": 0.8888888888888888
+    }
+  },
+  {
+    "target": 1,
+    "g": 6,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 1,
+    "g": 6,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        640,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "active": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "total": 680,
+      "added": 630,
+      "selected_fraction": 0.9411764705882353
+    }
+  },
+  {
+    "target": 2,
+    "g": 0,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 2,
+    "g": 0,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 2,
+    "g": 1,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 2,
+    "g": 1,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        20
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "total": 60,
+      "added": 10,
+      "selected_fraction": 0.3333333333333333
+    }
+  },
+  {
+    "target": 2,
+    "g": 2,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 2,
+    "g": 2,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        40
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "total": 80,
+      "added": 30,
+      "selected_fraction": 0.5
+    }
+  },
+  {
+    "target": 2,
+    "g": 3,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 2,
+    "g": 3,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        80
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "total": 120,
+      "added": 70,
+      "selected_fraction": 0.6666666666666666
+    }
+  },
+  {
+    "target": 2,
+    "g": 4,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 2,
+    "g": 4,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        160
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "total": 200,
+      "added": 150,
+      "selected_fraction": 0.8
+    }
+  },
+  {
+    "target": 2,
+    "g": 5,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 2,
+    "g": 5,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        320
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "total": 360,
+      "added": 310,
+      "selected_fraction": 0.8888888888888888
+    }
+  },
+  {
+    "target": 2,
+    "g": 6,
+    "signal": 0,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "total": 50,
+      "added": 0,
+      "selected_fraction": 0.2
+    }
+  },
+  {
+    "target": 2,
+    "g": 6,
+    "signal": 1,
+    "result": {
+      "final": [
+        10,
+        10,
+        10,
+        10,
+        640
+      ],
+      "recognized": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "active": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "total": 680,
+      "added": 630,
+      "selected_fraction": 0.9411764705882353
+    }
+  }
+]

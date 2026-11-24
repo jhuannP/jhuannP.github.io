@@ -1,0 +1,6 @@
+medidas = [2, 4, 6]
+assert sum(medidas) / len(medidas) == 4
+matriz = [[0] * 3 for _ in range(2)]
+matriz[0][1] = 7
+assert matriz[1][1] == 0
+print(matriz)

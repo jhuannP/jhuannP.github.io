@@ -1,0 +1,5 @@
+from math import sqrt
+alpha=beta=1/sqrt(2)
+P=alpha*alpha
+assert abs(P-.5)<1e-12
+print(P)

@@ -1,0 +1,8 @@
+from math import sqrt,cos
+A=.1
+ws,wa=2,2*sqrt(3)
+for t in [0,.5,1]:
+    x1=A/2*(cos(ws*t)+cos(wa*t))
+    x2=A/2*(cos(ws*t)-cos(wa*t))
+    print(t,x1,x2)
+assert abs(A/2*(1+1)-A)<1e-14

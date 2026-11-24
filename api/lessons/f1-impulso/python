@@ -1,0 +1,4 @@
+F,dt,m=6.,.5,2.
+J=F*dt;dv=J/m
+assert J==3 and dv==1.5
+print(dv)

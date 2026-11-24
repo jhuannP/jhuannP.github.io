@@ -1,0 +1,4 @@
+Q,W=10,3
+change=Q-W
+assert change==7
+print(change)

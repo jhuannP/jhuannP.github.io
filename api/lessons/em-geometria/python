@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+a,b,c=Q(2),Q(3),Q(4)
+volume=a*b*c
+surface=2*(a*b+a*c+b*c)
+assert volume==24 and surface==52
+assert (2*a)*(2*b)*(2*c)==8*volume
+print(volume,surface)

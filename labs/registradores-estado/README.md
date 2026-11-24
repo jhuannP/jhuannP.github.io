@@ -1,0 +1,11 @@
+# Registradores: ler estado anterior e confirmar o próximo
+
+Rascunho original29/10/2026. Sedgewick/Wayne,Computer Science:An Interdisciplinary Approach,exemplar copyright2017,§7.4 pp.1051–1052/PDF1072–1073 e p.1058/PDF1079,consulta textual parcial nesta data,cabeçalhos conferidos. Registrador de um bit,palavra e clock. Fonte descreve escrita por pulso breve com hipóteses próprias de atraso;não é apresentada como especificação de flip-flop físico acionado por borda. O modelo discreto por evento desta aula é adaptação didática explícita. Sem nova inspeção visual/leitura integral,cópia de circuito ou distribuição de PDF. Nome2016 do arquivo não substitui copyright2017.
+
+Percurso complementar teoria/arquitetura,distinto da disciplina cursada CCM0128. Nenhum programaJúpiter/histórico atualizado neste bloco. M8 e painel de um bit existentes preservados;novo labnão integrado automaticamente a eles. Snapshot e reset síncrono de dois estágios são exemplos próprios,não circuito do livro.
+
+Estado(A,B),entradaD,habilitações(ea,eb),resetativo alto. Somente em um evento:se reset1,o próximo é(0,0);senãoA′=D se ea1 eAcaso contrário;B′=Aantigo se eb1 eBcaso contrário. Todos os bits devem ser inteiros0/1;boolrejeitado. Não há fase combinacional com atraso,resetassíncrono,metastabilidade,setup/hold ou fios reais. Invariante de retenção vale para componente desabilitado somente se reset0. Emhardware,a prioridade precisa ser implementada e temporização respeitada.
+
+Da raiz: `python3 -m unittest discover -s labs/registradores-estado -t .`; `python3 labs/registradores-estado/clocked.py`. Quatro testes:traçado/contraexemplo de atribuição sequencial,64combinações de estado/entrada/habilitação/reset,64sequências de seis entradas com propriedade de atraso,contratos. Não certifica sincronização física ou simuladorM8. Script e desafio anteriores executados separadamente;aceitação antiga de boolno snippetnão foi silenciosamente alterada pelo contrato estrito do laboratório novo.
+
+Revisão pessoal20min:traceD1,0,1 com ambos habilitados,explique10/01/10 e o erro de produzir11 na primeira borda. Depois façaEN_B0 e reset1 para testar retenção e prioridade. Clockreal,resetassíncrono,projeto de processador e revisão pessoal pendentes.

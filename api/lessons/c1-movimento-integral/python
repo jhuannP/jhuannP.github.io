@@ -1,0 +1,5 @@
+F=lambda t:t*t-2*t
+displacement=F(2)-F(0)
+distance=-(F(1)-F(0))+(F(2)-F(1))
+assert displacement==0 and distance==2
+print(displacement,distance)

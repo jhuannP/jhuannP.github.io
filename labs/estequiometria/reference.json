@@ -1,0 +1,605 @@
+[
+  {
+    "h2": 0,
+    "o2": 0,
+    "result": {
+      "extent": 0.0,
+      "initial": {
+        "H2": 0.0,
+        "O2": 0.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 0.0,
+        "H2O": 0.0
+      },
+      "exhausted": [
+        "H2",
+        "O2"
+      ],
+      "H_atoms_initial": 0.0,
+      "O_atoms_initial": 0.0,
+      "H_atoms_final": 0.0,
+      "O_atoms_final": 0.0
+    }
+  },
+  {
+    "h2": 0,
+    "o2": 1,
+    "result": {
+      "extent": 0.0,
+      "initial": {
+        "H2": 0.0,
+        "O2": 1.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 1.0,
+        "H2O": 0.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 0.0,
+      "O_atoms_initial": 2.0,
+      "H_atoms_final": 0.0,
+      "O_atoms_final": 2.0
+    }
+  },
+  {
+    "h2": 0,
+    "o2": 2,
+    "result": {
+      "extent": 0.0,
+      "initial": {
+        "H2": 0.0,
+        "O2": 2.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 2.0,
+        "H2O": 0.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 0.0,
+      "O_atoms_initial": 4.0,
+      "H_atoms_final": 0.0,
+      "O_atoms_final": 4.0
+    }
+  },
+  {
+    "h2": 0,
+    "o2": 3,
+    "result": {
+      "extent": 0.0,
+      "initial": {
+        "H2": 0.0,
+        "O2": 3.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 3.0,
+        "H2O": 0.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 0.0,
+      "O_atoms_initial": 6.0,
+      "H_atoms_final": 0.0,
+      "O_atoms_final": 6.0
+    }
+  },
+  {
+    "h2": 0,
+    "o2": 4,
+    "result": {
+      "extent": 0.0,
+      "initial": {
+        "H2": 0.0,
+        "O2": 4.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 4.0,
+        "H2O": 0.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 0.0,
+      "O_atoms_initial": 8.0,
+      "H_atoms_final": 0.0,
+      "O_atoms_final": 8.0
+    }
+  },
+  {
+    "h2": 1,
+    "o2": 0,
+    "result": {
+      "extent": 0.0,
+      "initial": {
+        "H2": 1.0,
+        "O2": 0.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 1.0,
+        "O2": 0.0,
+        "H2O": 0.0
+      },
+      "exhausted": [
+        "O2"
+      ],
+      "H_atoms_initial": 2.0,
+      "O_atoms_initial": 0.0,
+      "H_atoms_final": 2.0,
+      "O_atoms_final": 0.0
+    }
+  },
+  {
+    "h2": 1,
+    "o2": 1,
+    "result": {
+      "extent": 0.5,
+      "initial": {
+        "H2": 1.0,
+        "O2": 1.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 0.5,
+        "H2O": 1.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 2.0,
+      "O_atoms_initial": 2.0,
+      "H_atoms_final": 2.0,
+      "O_atoms_final": 2.0
+    }
+  },
+  {
+    "h2": 1,
+    "o2": 2,
+    "result": {
+      "extent": 0.5,
+      "initial": {
+        "H2": 1.0,
+        "O2": 2.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 1.5,
+        "H2O": 1.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 2.0,
+      "O_atoms_initial": 4.0,
+      "H_atoms_final": 2.0,
+      "O_atoms_final": 4.0
+    }
+  },
+  {
+    "h2": 1,
+    "o2": 3,
+    "result": {
+      "extent": 0.5,
+      "initial": {
+        "H2": 1.0,
+        "O2": 3.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 2.5,
+        "H2O": 1.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 2.0,
+      "O_atoms_initial": 6.0,
+      "H_atoms_final": 2.0,
+      "O_atoms_final": 6.0
+    }
+  },
+  {
+    "h2": 1,
+    "o2": 4,
+    "result": {
+      "extent": 0.5,
+      "initial": {
+        "H2": 1.0,
+        "O2": 4.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 3.5,
+        "H2O": 1.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 2.0,
+      "O_atoms_initial": 8.0,
+      "H_atoms_final": 2.0,
+      "O_atoms_final": 8.0
+    }
+  },
+  {
+    "h2": 3,
+    "o2": 0,
+    "result": {
+      "extent": 0.0,
+      "initial": {
+        "H2": 3.0,
+        "O2": 0.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 3.0,
+        "O2": 0.0,
+        "H2O": 0.0
+      },
+      "exhausted": [
+        "O2"
+      ],
+      "H_atoms_initial": 6.0,
+      "O_atoms_initial": 0.0,
+      "H_atoms_final": 6.0,
+      "O_atoms_final": 0.0
+    }
+  },
+  {
+    "h2": 3,
+    "o2": 1,
+    "result": {
+      "extent": 1.0,
+      "initial": {
+        "H2": 3.0,
+        "O2": 1.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 1.0,
+        "O2": 0.0,
+        "H2O": 2.0
+      },
+      "exhausted": [
+        "O2"
+      ],
+      "H_atoms_initial": 6.0,
+      "O_atoms_initial": 2.0,
+      "H_atoms_final": 6.0,
+      "O_atoms_final": 2.0
+    }
+  },
+  {
+    "h2": 3,
+    "o2": 2,
+    "result": {
+      "extent": 1.5,
+      "initial": {
+        "H2": 3.0,
+        "O2": 2.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 0.5,
+        "H2O": 3.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 6.0,
+      "O_atoms_initial": 4.0,
+      "H_atoms_final": 6.0,
+      "O_atoms_final": 4.0
+    }
+  },
+  {
+    "h2": 3,
+    "o2": 3,
+    "result": {
+      "extent": 1.5,
+      "initial": {
+        "H2": 3.0,
+        "O2": 3.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 1.5,
+        "H2O": 3.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 6.0,
+      "O_atoms_initial": 6.0,
+      "H_atoms_final": 6.0,
+      "O_atoms_final": 6.0
+    }
+  },
+  {
+    "h2": 3,
+    "o2": 4,
+    "result": {
+      "extent": 1.5,
+      "initial": {
+        "H2": 3.0,
+        "O2": 4.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 2.5,
+        "H2O": 3.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 6.0,
+      "O_atoms_initial": 8.0,
+      "H_atoms_final": 6.0,
+      "O_atoms_final": 8.0
+    }
+  },
+  {
+    "h2": 4,
+    "o2": 0,
+    "result": {
+      "extent": 0.0,
+      "initial": {
+        "H2": 4.0,
+        "O2": 0.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 4.0,
+        "O2": 0.0,
+        "H2O": 0.0
+      },
+      "exhausted": [
+        "O2"
+      ],
+      "H_atoms_initial": 8.0,
+      "O_atoms_initial": 0.0,
+      "H_atoms_final": 8.0,
+      "O_atoms_final": 0.0
+    }
+  },
+  {
+    "h2": 4,
+    "o2": 1,
+    "result": {
+      "extent": 1.0,
+      "initial": {
+        "H2": 4.0,
+        "O2": 1.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 2.0,
+        "O2": 0.0,
+        "H2O": 2.0
+      },
+      "exhausted": [
+        "O2"
+      ],
+      "H_atoms_initial": 8.0,
+      "O_atoms_initial": 2.0,
+      "H_atoms_final": 8.0,
+      "O_atoms_final": 2.0
+    }
+  },
+  {
+    "h2": 4,
+    "o2": 2,
+    "result": {
+      "extent": 2.0,
+      "initial": {
+        "H2": 4.0,
+        "O2": 2.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 0.0,
+        "H2O": 4.0
+      },
+      "exhausted": [
+        "H2",
+        "O2"
+      ],
+      "H_atoms_initial": 8.0,
+      "O_atoms_initial": 4.0,
+      "H_atoms_final": 8.0,
+      "O_atoms_final": 4.0
+    }
+  },
+  {
+    "h2": 4,
+    "o2": 3,
+    "result": {
+      "extent": 2.0,
+      "initial": {
+        "H2": 4.0,
+        "O2": 3.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 1.0,
+        "H2O": 4.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 8.0,
+      "O_atoms_initial": 6.0,
+      "H_atoms_final": 8.0,
+      "O_atoms_final": 6.0
+    }
+  },
+  {
+    "h2": 4,
+    "o2": 4,
+    "result": {
+      "extent": 2.0,
+      "initial": {
+        "H2": 4.0,
+        "O2": 4.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 2.0,
+        "H2O": 4.0
+      },
+      "exhausted": [
+        "H2"
+      ],
+      "H_atoms_initial": 8.0,
+      "O_atoms_initial": 8.0,
+      "H_atoms_final": 8.0,
+      "O_atoms_final": 8.0
+    }
+  },
+  {
+    "h2": 8,
+    "o2": 0,
+    "result": {
+      "extent": 0.0,
+      "initial": {
+        "H2": 8.0,
+        "O2": 0.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 8.0,
+        "O2": 0.0,
+        "H2O": 0.0
+      },
+      "exhausted": [
+        "O2"
+      ],
+      "H_atoms_initial": 16.0,
+      "O_atoms_initial": 0.0,
+      "H_atoms_final": 16.0,
+      "O_atoms_final": 0.0
+    }
+  },
+  {
+    "h2": 8,
+    "o2": 1,
+    "result": {
+      "extent": 1.0,
+      "initial": {
+        "H2": 8.0,
+        "O2": 1.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 6.0,
+        "O2": 0.0,
+        "H2O": 2.0
+      },
+      "exhausted": [
+        "O2"
+      ],
+      "H_atoms_initial": 16.0,
+      "O_atoms_initial": 2.0,
+      "H_atoms_final": 16.0,
+      "O_atoms_final": 2.0
+    }
+  },
+  {
+    "h2": 8,
+    "o2": 2,
+    "result": {
+      "extent": 2.0,
+      "initial": {
+        "H2": 8.0,
+        "O2": 2.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 4.0,
+        "O2": 0.0,
+        "H2O": 4.0
+      },
+      "exhausted": [
+        "O2"
+      ],
+      "H_atoms_initial": 16.0,
+      "O_atoms_initial": 4.0,
+      "H_atoms_final": 16.0,
+      "O_atoms_final": 4.0
+    }
+  },
+  {
+    "h2": 8,
+    "o2": 3,
+    "result": {
+      "extent": 3.0,
+      "initial": {
+        "H2": 8.0,
+        "O2": 3.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 2.0,
+        "O2": 0.0,
+        "H2O": 6.0
+      },
+      "exhausted": [
+        "O2"
+      ],
+      "H_atoms_initial": 16.0,
+      "O_atoms_initial": 6.0,
+      "H_atoms_final": 16.0,
+      "O_atoms_final": 6.0
+    }
+  },
+  {
+    "h2": 8,
+    "o2": 4,
+    "result": {
+      "extent": 4.0,
+      "initial": {
+        "H2": 8.0,
+        "O2": 4.0,
+        "H2O": 0.0
+      },
+      "final": {
+        "H2": 0.0,
+        "O2": 0.0,
+        "H2O": 8.0
+      },
+      "exhausted": [
+        "H2",
+        "O2"
+      ],
+      "H_atoms_initial": 16.0,
+      "O_atoms_initial": 8.0,
+      "H_atoms_final": 16.0,
+      "O_atoms_final": 8.0
+    }
+  }
+]

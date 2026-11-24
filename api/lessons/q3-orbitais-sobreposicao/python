@@ -1,0 +1,6 @@
+from fractions import Fraction as Q
+a=Q(-1); b=Q(-2,5); s=Q(1,5)
+e_plus=(a+b)/(1+s)
+e_minus=(a-b)/(1-s)
+print(e_plus,e_minus,e_minus-e_plus)
+assert e_minus-e_plus==Q(5,12)

@@ -1,0 +1,194 @@
+[
+  {
+    "heap": [],
+    "removed": [],
+    "action": "Estado vazio"
+  },
+  {
+    "heap": [
+      [
+        3,
+        0,
+        "A"
+      ]
+    ],
+    "removed": [],
+    "action": "Inserir A com prioridade 3"
+  },
+  {
+    "heap": [
+      [
+        1,
+        1,
+        "B"
+      ],
+      [
+        3,
+        0,
+        "A"
+      ]
+    ],
+    "removed": [],
+    "action": "Inserir B com prioridade 1"
+  },
+  {
+    "heap": [
+      [
+        1,
+        1,
+        "B"
+      ],
+      [
+        3,
+        0,
+        "A"
+      ],
+      [
+        1,
+        2,
+        "C"
+      ]
+    ],
+    "removed": [],
+    "action": "Inserir C com prioridade 1"
+  },
+  {
+    "heap": [
+      [
+        1,
+        1,
+        "B"
+      ],
+      [
+        2,
+        3,
+        "D"
+      ],
+      [
+        1,
+        2,
+        "C"
+      ],
+      [
+        3,
+        0,
+        "A"
+      ]
+    ],
+    "removed": [],
+    "action": "Inserir D com prioridade 2"
+  },
+  {
+    "heap": [
+      [
+        1,
+        2,
+        "C"
+      ],
+      [
+        2,
+        3,
+        "D"
+      ],
+      [
+        3,
+        0,
+        "A"
+      ]
+    ],
+    "removed": [
+      "B"
+    ],
+    "action": "Retirar B"
+  },
+  {
+    "heap": [
+      [
+        2,
+        3,
+        "D"
+      ],
+      [
+        3,
+        0,
+        "A"
+      ]
+    ],
+    "removed": [
+      "B",
+      "C"
+    ],
+    "action": "Retirar C"
+  },
+  {
+    "heap": [
+      [
+        0,
+        4,
+        "E"
+      ],
+      [
+        3,
+        0,
+        "A"
+      ],
+      [
+        2,
+        3,
+        "D"
+      ]
+    ],
+    "removed": [
+      "B",
+      "C"
+    ],
+    "action": "Inserir E com prioridade 0"
+  },
+  {
+    "heap": [
+      [
+        2,
+        3,
+        "D"
+      ],
+      [
+        3,
+        0,
+        "A"
+      ]
+    ],
+    "removed": [
+      "B",
+      "C",
+      "E"
+    ],
+    "action": "Retirar E"
+  },
+  {
+    "heap": [
+      [
+        3,
+        0,
+        "A"
+      ]
+    ],
+    "removed": [
+      "B",
+      "C",
+      "E",
+      "D"
+    ],
+    "action": "Retirar D"
+  },
+  {
+    "heap": [],
+    "removed": [
+      "B",
+      "C",
+      "E",
+      "D",
+      "A"
+    ],
+    "action": "Retirar A"
+  }
+]

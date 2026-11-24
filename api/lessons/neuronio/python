@@ -1,0 +1,10 @@
+from math import exp
+
+def sigmoide(z):
+    if z >= 0:
+        return 1/(1+exp(-z))
+    e = exp(z)
+    return e/(1+e)
+
+x, w, b = 2.0, 1.0, -2.0
+print(sigmoide(w*x+b))

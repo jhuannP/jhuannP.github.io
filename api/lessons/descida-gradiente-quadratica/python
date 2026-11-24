@@ -1,0 +1,4 @@
+eta=.25;x,y=1.,1.
+for _ in range(40):x,y=x-eta*x,y-eta*4*y
+assert abs(x)<2e-5 and y==0
+print(x,y,(x*x+4*y*y)/2)

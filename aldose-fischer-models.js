@@ -1,0 +1,17 @@
+/* Fischer aberta, C1 aldeído no topo; não simula anéis ou rotação óptica. */
+window.AldoseFischerModels=(()=>{
+ const reference=[1,0,1,1];
+ function model(c2=1,c3=0,c4=1,c5=1){
+  const bits=[c2,c3,c4,c5];if(bits.some(x=>!Number.isInteger(x)||x<0||x>1))throw new RangeError('Cada posição é0/1.');
+  const changed=bits.flatMap((x,i)=>x===reference[i]?[]:[i+2]),n=changed.length,names={'1011':'D-glicose','0011':'D-manose','1001':'D-galactose','0100':'L-glicose'};
+  return{bits,changed,series:c5?'D':'L',name:names[bits.join('')]||'Outra aldo-hexose do recorte',relation:n===0?'identical':n===1?'epimer':n===4?'enantiomer':'diastereomer'};
+ }
+ function createModels(){return{aldoseFischer:{label:'Qual configuração mudou em relação à D-glicose?',controls:[['c2','OH em C2: 0 esquerda; 1 direita',0,1,1,1],['c3','OH em C3: 0 esquerda; 1 direita',0,1,1,0],['c4','OH em C4: 0 esquerda; 1 direita',0,1,1,1],['c5','OH em C5: 0 esquerda; 1 direita',0,1,1,1]],render:({c2,c3,c4,c5})=>{
+  const z=model(c2,c3,c4,c5),labels={identical:'mesma configuração',epimer:'epímero (diastereoisômero)',enantiomer:'enantiômero',diastereomer:'diastereoisômero, sem ser epímero'};
+  let drawing='<line x1="160" y1="55" x2="160" y2="350" stroke="currentColor" stroke-width="2"/><text x="160" y="40" text-anchor="middle">CHO</text><text x="160" y="385" text-anchor="middle">CH₂OH</text>';
+  z.bits.forEach((bit,i)=>{const y=100+70*i;if(z.changed.includes(i+2))drawing+=`<rect x="35" y="${y-29}" width="265" height="58" fill="currentColor" opacity=".07"/>`;drawing+=`<line x1="115" y1="${y}" x2="205" y2="${y}" stroke="currentColor" stroke-width="2"/><text x="77" y="${y+7}" text-anchor="middle">${bit?'H':'HO'}</text><text x="240" y="${y+7}" text-anchor="middle">${bit?'OH':'H'}</text><text x="292" y="${y+7}" text-anchor="middle" class="fischer-site">C${i+2}</text>`;});
+  const graph=`<div class="aldose-fischer-panel"><p><strong>${z.name}</strong> — série ${z.series}.</p><svg class="fischer-diagram" viewBox="0 0 320 415" role="img" aria-label="Projeção de Fischer do candidato, com posições de OH descritas na tabela">${drawing}</svg><p class="caption">C1 no topo e C6 na base. Horizontais apontam para o leitor; verticais para trás. Cada cruz representa um carbono. Faixas suaves destacam os centros alterados, também listados na tabela. As distâncias no desenho não representam comprimentos de ligação.</p><table class="truth-table"><caption>Posição do OH: referência fixa e candidato</caption><thead><tr><th>Centro</th><th>D-glicose</th><th>Candidato</th><th>Mudou?</th></tr></thead><tbody>${z.bits.map((b,i)=>`<tr><th>C${i+2}</th><td>${reference[i]?'direita':'esquerda'}</td><td>${b?'direita':'esquerda'}</td><td>${b===reference[i]?'não':'sim'}</td></tr>`).join('')}</tbody></table></div>`;
+  return{graph,report:`Comparação com D-glicose: ${labels[z.relation]}. Centros diferentes: ${z.changed.length?z.changed.map(i=>'C'+i).join(', '):'nenhum'}. A série ${z.series} depende de C5 nesta orientação; não identifica os demais centros nem o sinal da rotação óptica.`,note:'Quatro configurações independentes geram16 padrões neste recorte aberto, oitoD e oitoL. Os controles escolhem representações, sem simular conversão química. O classificador nomeia só glicose, manose e galactose nos padrões documentados; outros nomes não foram implementados. Não calcula abundância, energia, anômeros, ligação glicosídica ou função biológica.'};
+ }}};}
+ return{model,createModels};
+})();

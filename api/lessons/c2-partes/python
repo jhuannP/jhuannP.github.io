@@ -1,0 +1,4 @@
+from math import exp
+F=lambda x:(x-1)*exp(x)
+assert F(1)-F(0)==1
+print(F(1)-F(0))

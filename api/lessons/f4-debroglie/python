@@ -1,0 +1,4 @@
+h,p=1.,4.
+L=h/abs(p)
+assert L==.25
+print(L)

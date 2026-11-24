@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="555" viewBox="0 0 440 555" role="img" aria-labelledby="t d"><title id="t">Marginais iguais não garantem independência</title><desc id="d">Um total de onze sítios com três excitações, dois sítios observados e nove no complemento. Padrões zero zero, zero um, um zero e um um têm contagens oitenta e quatro, trinta e seis, trinta e seis e nove, sobre cento e sessenta e cinco estados globais. A comparação independente usa p igual a três onze avos em cada sítio, mas prevê probabilidade nove cento e vinte e um avos para um um em vez de três cinquenta e cinco avos.</desc>
+<rect width="440" height="555" fill="#f6f8fb"/><g fill="#172b43" font-family="sans-serif">
+<text x="24" y="35" font-size="21" font-weight="bold">O complemento finito correlaciona</text>
+<text x="24" y="65" font-size="16">L=11; q=3; dois sítios observados</text>
+<text x="24" y="96" font-size="16">Nove sítios restantes; 165 estados globais</text>
+<path d="M24 122H416" stroke="#cbd5e1"/>
+<text x="24" y="158" font-size="16" font-weight="bold">Padrão</text><text x="190" y="158" font-size="16" font-weight="bold">Peso exato</text>
+<text x="24" y="201" font-size="18">00</text><text x="190" y="201" font-size="18">84 / 165</text>
+<text x="24" y="244" font-size="18">01</text><text x="190" y="244" font-size="18">36 / 165</text>
+<text x="24" y="287" font-size="18">10</text><text x="190" y="287" font-size="18">36 / 165</text>
+<text x="24" y="330" font-size="18">11</text><text x="190" y="330" font-size="18">9 / 165 = 3 / 55</text>
+<path d="M24 359H416" stroke="#cbd5e1"/>
+<text x="24" y="394" font-size="16">Cada sítio: P(1)=3/11.</text>
+<text x="24" y="429" font-size="16">Se fossem independentes:</text>
+<text x="24" y="460" font-size="17" fill="#255fbc">P(11)=(3/11)²=9/121 ≠ 3/55</text>
+<text x="24" y="497" font-size="15">A energia total fixa é uma restrição conjunta.</text>
+<text x="24" y="535" font-size="13">Figura original. Contagem de ensemble, sem trajetória.</text>
+</g></svg>

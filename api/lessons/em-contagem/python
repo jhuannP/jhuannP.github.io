@@ -1,0 +1,7 @@
+from itertools import permutations,product
+ordered=list(permutations(range(5),3))
+groups={tuple(sorted(x)) for x in ordered}
+repeated=list(product(range(5),repeat=3))
+multisets={tuple(sorted(x)) for x in repeated}
+assert (len(ordered),len(groups),len(repeated),len(multisets))==(60,10,125,35)
+print(60,10,125,35)

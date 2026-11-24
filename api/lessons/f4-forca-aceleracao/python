@@ -1,0 +1,9 @@
+from math import hypot
+for q in (0,3/4,4/3):
+    gamma=hypot(1,q)
+    beta=q/gamma
+    X=q*q/(gamma+1)
+    A=1/gamma**3
+    print("q, beta, gamma, X, A:", q,beta,gamma,X,A)
+    assert beta<1 and X>=0
+print("Dados do modelo: q=Ft/(mc), X=Fx/(mc²), A=ma/F.")

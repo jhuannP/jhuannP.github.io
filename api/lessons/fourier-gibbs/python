@@ -1,0 +1,20 @@
+from math import isfinite,pi,sin,sqrt
+from cmath import exp
+
+def real(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def square_fourier(x,terms):
+    x=real(x)
+    if isinstance(terms,bool) or not isinstance(terms,int) or not 1<=terms<=200:
+        raise ValueError('Entre 1 e 200 termos necessários')
+    return 4/pi*sum(sin((2*k+1)*x)/(2*k+1) for k in range(terms))
+
+assert square_fourier(0,20)==0
+near=[square_fourier(i*.001,20) for i in range(1,200)]
+assert max(near)>1.1
+print(max(near))

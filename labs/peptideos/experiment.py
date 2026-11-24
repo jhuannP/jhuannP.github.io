@@ -1,0 +1,33 @@
+"""Peptídeos lineares GAS, sem bloqueios, ciclos ou pontes laterais.
+Fórmulas covalentes de referência, sem estados extras de protonação.
+"""
+AA={'G':{'C':2,'H':5,'N':1,'O':2},'A':{'C':3,'H':7,'N':1,'O':2},'S':{'C':3,'H':7,'N':1,'O':3}}
+
+def sequence_ok(seq):
+    if not isinstance(seq,str) or not seq or any(c not in AA for c in seq):
+        raise ValueError('Sequência não vazia com letras G, A e S em maiúsculas')
+    return seq
+
+def formula(seq):
+    sequence_ok(seq)
+    total={e:sum(AA[c][e] for c in seq) for e in ('C','H','N','O')}
+    total['H']-=2*(len(seq)-1);total['O']-=len(seq)-1
+    return total
+
+def formula_text(atoms):
+    return ''.join(e+(str(atoms[e]) if atoms[e]!=1 else '') for e in ('C','H','N','O') if atoms[e])
+
+def cleave(seq,cuts=()):
+    sequence_ok(seq);n=len(seq)
+    cuts=list(cuts)
+    if any(isinstance(k,bool) or not isinstance(k,int) or not 1<=k<n for k in cuts):
+        raise ValueError('Corte após resíduo de índice 1 a n-1')
+    cuts=sorted(set(cuts));bounds=[0]+cuts+[n]
+    fragments=[seq[a:b] for a,b in zip(bounds,bounds[1:])]
+    aggregate={e:sum(formula(f)[e] for f in fragments) for e in ('C','H','N','O')}
+    return dict(sequence=seq,cuts=cuts,fragments=fragments,formulas=[formula(f) for f in fragments],
+                intact=formula(seq),aggregate=aggregate,bonds=n-1-len(cuts),
+                waters=len(cuts),n_termini=len(fragments),c_termini=len(fragments))
+
+if __name__=='__main__':
+    for cuts in ([],[2],[2,4],[1,2,3,4,5]):print(cleave('GASGAS',cuts))

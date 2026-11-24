@@ -1,0 +1,6 @@
+from math import comb
+from fractions import Fraction
+n,s=3,3
+p=Fraction(sum(comb(n,k) for k in range(s,n+1)),2**n)
+assert p==Fraction(1,8)
+print(p,float(p))

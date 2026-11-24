@@ -1,0 +1,4 @@
+base=[1,2];head=[3];before=list(base)
+head=[v-.1 for v in head]
+assert base==before and head==[2.9]
+print(base,head)

@@ -1,0 +1,91 @@
+"""Matriz de transição finita: distribuição e trajetórias sintéticas."""
+from math import isfinite,isclose,fsum,sqrt
+from random import Random
+from pathlib import Path
+import argparse,hashlib,json,platform,sys
+Z=1.959963984540054
+
+def integer(x,name,low,high):
+    if isinstance(x,bool) or not isinstance(x,int) or not low<=x<=high:
+        raise ValueError(f'{name} deve ser inteiro entre {low} e {high}')
+    return x
+
+def matrix(P):
+    rows=tuple(tuple(row) for row in P)
+    n=len(rows)
+    if not 1<=n<=10 or any(len(row)!=n for row in rows):raise ValueError('Matriz quadrada de 1 a 10 estados')
+    output=[]
+    for row in rows:
+        if any(isinstance(x,bool) or not isinstance(x,(int,float)) or not isfinite(x) or not 0<=x<=1 for x in row):
+            raise ValueError('Entradas finitas entre zero e um')
+        total=fsum(row)
+        if not isclose(total,1,rel_tol=0,abs_tol=1e-12):raise ValueError('Cada linha deve somar 1')
+        # Corrige somente discrepância de arredondamento já validada, explicitamente.
+        output.append(tuple(x/total for x in row))
+    return tuple(output)
+
+def distributions(P,initial,steps):
+    P=matrix(P);n=len(P);integer(initial,'initial',0,n-1);integer(steps,'steps',0,50)
+    p=[float(i==initial) for i in range(n)];trace=[list(p)]
+    for _ in range(steps):
+        p=[fsum(p[i]*P[i][j] for i in range(n)) for j in range(n)]
+        trace.append(list(p))
+    return trace
+
+def draw_state(row,u):
+    cumulative=0.
+    for j,p in enumerate(row[:-1]):
+        cumulative+=p
+        if u<cumulative:return j
+    return len(row)-1
+
+def wilson(k,M):
+    q=k/M;den=1+Z*Z/M;c=(q+Z*Z/(2*M))/den
+    r=Z/den*sqrt(q*(1-q)/M+Z*Z/(4*M*M))
+    return [0. if k==0 else max(0.,c-r),1. if k==M else min(1.,c+r)]
+
+def simulate(P,initial,steps,samples,seed):
+    P=matrix(P);n=len(P);integer(initial,'initial',0,n-1);integer(steps,'steps',0,50)
+    integer(samples,'samples',1,10000);integer(seed,'seed',0,2**32-1)
+    rng=Random(seed);states=[initial]*samples
+    def count():return [states.count(j) for j in range(n)]
+    counts=[count()]
+    for _ in range(steps):
+        states=[draw_state(P[state],rng.random()) for state in states]
+        counts.append(count())
+    return {'counts':counts,'frequencies':[[k/samples for k in row] for row in counts]}
+
+def make_report(P,initial,steps,samples,seed,raw,name):
+    normalized=matrix(P);exact=distributions(normalized,initial,steps);mc=simulate(normalized,initial,steps,samples,seed)
+    selected=mc['counts'][-1]
+    intervals=[[float(j==initial)]*2 for j in range(len(normalized))] if steps==0 else [wilson(k,samples) for k in selected]
+    return dict(schema_version=1,experiment='finite-markov-chain',
+                input={'name':Path(name).name,'sha256':hashlib.sha256(raw).hexdigest()},
+                config={'matrix':normalized,'convention':'linhas são origens; p_novo=pP',
+                        'normalization':'linhas verificadas com atol=1e-12, depois normalizadas',
+                        'initial':initial,'steps':steps,'samples':samples,'seed':seed,'generator':'random.Random',
+                        'draw_order':'tempo, depois trajetória'},
+                software={'python':platform.python_version(),'code_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()},
+                result={'distribution_trace':exact,**mc,'final_wilson_nominal_95':intervals},
+                interpretation='Erro amostral de trajetórias versus distribuição do modelo discreto; não é erro de discretização de EDO nem evidência experimental. Intervalos marginais nominais, não banda simultânea.')
+
+def main(argv=None):
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--matrix',type=Path,required=True)
+    parser.add_argument('--initial',type=int,default=0)
+    parser.add_argument('--steps',type=int,default=10)
+    parser.add_argument('--samples',type=int,default=1000)
+    parser.add_argument('--seed',type=int,default=42)
+    parser.add_argument('--output',type=Path,help='Novo JSON; não substitui existente')
+    args=parser.parse_args(argv)
+    try:
+        raw=args.matrix.read_bytes();P=json.loads(raw.decode('utf-8-sig'))
+        text=json.dumps(make_report(P,args.initial,args.steps,args.samples,args.seed,raw,args.matrix.name),ensure_ascii=False,allow_nan=False,indent=2)+'\n'
+        if args.output:
+            with args.output.open('x',encoding='utf-8') as stream:stream.write(text)
+        else:print(text,end='')
+    except (OSError,UnicodeError,ValueError,TypeError) as error:
+        print(f'Erro: {error}',file=sys.stderr);return 2
+    return 0
+
+if __name__=='__main__':raise SystemExit(main())

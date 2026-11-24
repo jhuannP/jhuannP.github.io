@@ -1,0 +1,19 @@
+# Spin1/2 — notas de aula
+
+Aula existente aprofundada; exemplo+x medido emz, Python/desafio e IDs anteriores preservados. Rascunho original; revisão pessoal pendente. Grau de liberdade de spin isolado, sem posição/aparelho/dinâmica.
+
+Fontes: Nussenzveig4,2ª ed./Blucher2014,§10.6 pp.316–317/PDF317–318, consulta textual parcial em27/10/2026: spin intrínseco, dois valores da projeção e representação por duas componentes. Sem usar narrativa histórica como prova nem distribuir PDF privado. Feynman LecturesIII §§6–1/6–2, consulta parcial para transformação de amplitudes/fases e analisadores: https://www.feynmanlectures.caltech.edu/III_06.html . Sem leitura integral, cópia de figuras/problemas ou modelo de dispositivo. Matrizes, exemplo complexo, figura e procedimentos projetivos assumidos/explicitados nas notas.
+
+ψ=(√3/2,i/2) dáP(+z)=3/4,P(+x)=1/2,P(+y)=(2+√3)/4. Média não é resultado individual. Fase global não altera probabilidade; relativa pode alterar outra base. Preparar+z, selecionar+x e medir+z tem chance conjunta1/4; medirx sem selecionar dá+z depois com1/2. Soma coerente de fases iguais de+x/−x é outro estado, dando+z com1. Não calcularam matriz densidade geral.
+
+Rodar na raiz: `python3 -m unittest discover -s labs/spin-bases -t .`. Biblioteca padrão, complex float, norma conferida com tolerância1e−12; não normaliza automaticamente entradas inválidas. Ramo de probabilidade calculada0 retornaNone. Valores extremos podem perder resolução; não há precisão arbitrária ou instrumento real. Sem rotações gerais, decoerência, estado composto ou previsão experimental. Revisão pessoal pendente.
+
+## 27/10/2026 — spin1/2, bases e medição ideal
+
+Aula `f4-spin` aprofundada de3 para14 seções e2 para12 exercícios. IDs, exemplo+x emz, Python e desafio anteriores preservados. Produto interno complexo, basesx/y/z, operadores declarados, fase global/relativa e exemploψ=(√3/2,i/2). Médias/dispersões separadas de resultados individuais. Born/atualização projetiva ideais assumidas; seleção, não seleção e soma coerente distinguidas. Não calcula um aparelho real, dinâmica espacial, decoerência ou rotações gerais.
+
+Fontes: Nussenzveig4,2ª ed./Blucher2014,§10.6 pp.316–317/PDF317–318, consulta textual parcial em27/10/2026; spin intrínseco e representação por duas componentes. FeynmanIII §§6–1/6–2, edição oficial online: https://www.feynmanlectures.caltech.edu/III_06.html , consulta parcial sobre bases, amplitudes/fases e analisadores. Sem leitura integral, nova inspeção visual, cópia de figuras ou distribuição do livro privado. Matrizes, postulado ideal e cálculos explicitados; exemplo complexo e figura próprios. Júpiter não reaberto nesta sessão.
+
+Verificação:14 testes do catálogo e cinco locais aprovados;797 estruturas MathML conferidas. Laboratório verifica referências complexas, ortonormalidade e transformação inversa,27pares de estado/eixo com médias confrontadas por matrizes de Pauli, fase global, seleção/não seleção/soma coerente, repetição e ramo zero. Contratos incluem norma inválida, NaN/inf e overflow de magnitude; complex float com tolerância absoluta1e−12, sem precisão arbitrária. No navegador390px, chance conjunta rejeitou0,5 e aceitou0,25 pelo Enter; mistura diferente de superposição aceita. Figura inspecionada em`spin-bases-mobile.jpg`, documento390px e console sem erros. Sem experimento pessoal, leitor de tela, Windows real ou revisão pessoal.
+
+FísicaIV18 aulas/133 exercícios, oito introduções curtas;18 grupos parciais/oito lacunas. Global51 trilhas,546 aulas/4323 exercícios e199 introduções curtas. Nenhum curso completo ou domínio pessoal comprovado. Próxima ação: derivar as três probabilidades do estado complexo e explicar1/4 versus1/2 em20min. Próximo bloco global: inspecionar introdução de CálculoI e referência disponível. Saldo semanal80%; parada operacional65% mantida.

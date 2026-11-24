@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 450" role="img" aria-labelledby="t d">
+<title id="t">A borda é a mesma; as parcelas mudam</title><desc id="d">Esquema dos termos de Ampère-Maxwell no limite ideal: superfície no fio destaca condução, superfície pelo vão destaca deslocamento; compare as somas.</desc>
+<rect width="420" height="450" fill="#f6f3e9"/>
+<g fill="#183c36" font-family="system-ui,sans-serif">
+<text x="22" y="34" font-size="20" font-weight="700">Mesma borda orientada</text>
+<text x="22" y="62" font-size="14">Compare I_S + I_D nas duas superfícies</text>
+<path d="M22 82H398 M22 239H398" stroke="#acbeb5"/>
+<text x="22" y="115" font-size="17" font-weight="650">Superfície que corta o fio</text>
+<path d="M210 133V207" stroke="#285e58" stroke-width="5"/>
+<ellipse cx="210" cy="174" rx="84" ry="19" fill="#dce8df" fill-opacity=".65" stroke="#285e58" stroke-width="2"/>
+<path d="M210 144V162M204 155L210 163L216 155" fill="none" stroke="#285e58" stroke-width="2"/>
+<text x="310" y="176" font-size="16">I</text>
+<text x="22" y="226" font-size="15">Condução dominante: total ≈ I</text>
+<text x="22" y="270" font-size="17" font-weight="650">Superfície pelo vão</text>
+<path d="M130 294H290M130 359H290" stroke="#285e58" stroke-width="6"/>
+<ellipse cx="210" cy="328" rx="84" ry="17" fill="#dce8df" fill-opacity=".65" stroke="#285e58" stroke-width="2"/>
+<path d="M172 305V347M166 339L172 348L178 339M248 305V347M242 339L248 348L254 339" fill="none" stroke="#285e58" stroke-width="2"/>
+<text x="311" y="330" font-size="16">I_D</text>
+<text x="22" y="389" font-size="15">Deslocamento dominante: total ≈ I_D</text>
+<text x="22" y="416" font-size="16" font-weight="700">No modelo ideal: I_D = dQ/dt = I</text>
+<text x="22" y="440" font-size="11">Esquema dos termos, sem campos de borda ou propagação.</text>
+</g></svg>

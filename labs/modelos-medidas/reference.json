@@ -1,0 +1,1190 @@
+[
+  {
+    "accel": 0,
+    "bias_cm": -10,
+    "bound_cm": 0,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.4,
+        "predicted": 0.5,
+        "residual": -0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 0.92,
+        "predicted": 0.75,
+        "residual": 0.17,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.88,
+        "predicted": 1.0,
+        "residual": 0.88,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.42,
+        "predicted": 1.25,
+        "residual": 2.17,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.38,
+        "predicted": 1.5,
+        "residual": 3.88,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 3.88
+  },
+  {
+    "accel": 0,
+    "bias_cm": -10,
+    "bound_cm": 4,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.4,
+        "predicted": 0.5,
+        "residual": -0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 0.92,
+        "predicted": 0.75,
+        "residual": 0.17,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.88,
+        "predicted": 1.0,
+        "residual": 0.88,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.42,
+        "predicted": 1.25,
+        "residual": 2.17,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.38,
+        "predicted": 1.5,
+        "residual": 3.88,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 3.88
+  },
+  {
+    "accel": 0,
+    "bias_cm": -10,
+    "bound_cm": 20,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.4,
+        "predicted": 0.5,
+        "residual": -0.1,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 0.92,
+        "predicted": 0.75,
+        "residual": 0.17,
+        "within": true
+      },
+      {
+        "time": 1.0,
+        "observed": 1.88,
+        "predicted": 1.0,
+        "residual": 0.88,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.42,
+        "predicted": 1.25,
+        "residual": 2.17,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.38,
+        "predicted": 1.5,
+        "residual": 3.88,
+        "within": false
+      }
+    ],
+    "inside": 2,
+    "max_abs": 3.88
+  },
+  {
+    "accel": 0,
+    "bias_cm": 0,
+    "bound_cm": 0,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.5,
+        "predicted": 0.5,
+        "residual": 0.0,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.02,
+        "predicted": 0.75,
+        "residual": 0.27,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.98,
+        "predicted": 1.0,
+        "residual": 0.98,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.52,
+        "predicted": 1.25,
+        "residual": 2.27,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.48,
+        "predicted": 1.5,
+        "residual": 3.98,
+        "within": false
+      }
+    ],
+    "inside": 1,
+    "max_abs": 3.98
+  },
+  {
+    "accel": 0,
+    "bias_cm": 0,
+    "bound_cm": 4,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.5,
+        "predicted": 0.5,
+        "residual": 0.0,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.02,
+        "predicted": 0.75,
+        "residual": 0.27,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.98,
+        "predicted": 1.0,
+        "residual": 0.98,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.52,
+        "predicted": 1.25,
+        "residual": 2.27,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.48,
+        "predicted": 1.5,
+        "residual": 3.98,
+        "within": false
+      }
+    ],
+    "inside": 1,
+    "max_abs": 3.98
+  },
+  {
+    "accel": 0,
+    "bias_cm": 0,
+    "bound_cm": 20,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.5,
+        "predicted": 0.5,
+        "residual": 0.0,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.02,
+        "predicted": 0.75,
+        "residual": 0.27,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.98,
+        "predicted": 1.0,
+        "residual": 0.98,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.52,
+        "predicted": 1.25,
+        "residual": 2.27,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.48,
+        "predicted": 1.5,
+        "residual": 3.98,
+        "within": false
+      }
+    ],
+    "inside": 1,
+    "max_abs": 3.98
+  },
+  {
+    "accel": 0,
+    "bias_cm": 10,
+    "bound_cm": 0,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.6,
+        "predicted": 0.5,
+        "residual": 0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 1.12,
+        "predicted": 0.75,
+        "residual": 0.37,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 2.08,
+        "predicted": 1.0,
+        "residual": 1.08,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.62,
+        "predicted": 1.25,
+        "residual": 2.37,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.58,
+        "predicted": 1.5,
+        "residual": 4.08,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 4.08
+  },
+  {
+    "accel": 0,
+    "bias_cm": 10,
+    "bound_cm": 4,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.6,
+        "predicted": 0.5,
+        "residual": 0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 1.12,
+        "predicted": 0.75,
+        "residual": 0.37,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 2.08,
+        "predicted": 1.0,
+        "residual": 1.08,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.62,
+        "predicted": 1.25,
+        "residual": 2.37,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.58,
+        "predicted": 1.5,
+        "residual": 4.08,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 4.08
+  },
+  {
+    "accel": 0,
+    "bias_cm": 10,
+    "bound_cm": 20,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.6,
+        "predicted": 0.5,
+        "residual": 0.1,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.12,
+        "predicted": 0.75,
+        "residual": 0.37,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 2.08,
+        "predicted": 1.0,
+        "residual": 1.08,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.62,
+        "predicted": 1.25,
+        "residual": 2.37,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.58,
+        "predicted": 1.5,
+        "residual": 4.08,
+        "within": false
+      }
+    ],
+    "inside": 1,
+    "max_abs": 4.08
+  },
+  {
+    "accel": 2,
+    "bias_cm": -10,
+    "bound_cm": 0,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.4,
+        "predicted": 0.5,
+        "residual": -0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 0.92,
+        "predicted": 1.0,
+        "residual": -0.08,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.88,
+        "predicted": 2.0,
+        "residual": -0.12,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.42,
+        "predicted": 3.5,
+        "residual": -0.08,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.38,
+        "predicted": 5.5,
+        "residual": -0.12,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 0.12
+  },
+  {
+    "accel": 2,
+    "bias_cm": -10,
+    "bound_cm": 4,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.4,
+        "predicted": 0.5,
+        "residual": -0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 0.92,
+        "predicted": 1.0,
+        "residual": -0.08,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.88,
+        "predicted": 2.0,
+        "residual": -0.12,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.42,
+        "predicted": 3.5,
+        "residual": -0.08,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.38,
+        "predicted": 5.5,
+        "residual": -0.12,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 0.12
+  },
+  {
+    "accel": 2,
+    "bias_cm": -10,
+    "bound_cm": 20,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.4,
+        "predicted": 0.5,
+        "residual": -0.1,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 0.92,
+        "predicted": 1.0,
+        "residual": -0.08,
+        "within": true
+      },
+      {
+        "time": 1.0,
+        "observed": 1.88,
+        "predicted": 2.0,
+        "residual": -0.12,
+        "within": true
+      },
+      {
+        "time": 1.5,
+        "observed": 3.42,
+        "predicted": 3.5,
+        "residual": -0.08,
+        "within": true
+      },
+      {
+        "time": 2.0,
+        "observed": 5.38,
+        "predicted": 5.5,
+        "residual": -0.12,
+        "within": true
+      }
+    ],
+    "inside": 5,
+    "max_abs": 0.12
+  },
+  {
+    "accel": 2,
+    "bias_cm": 0,
+    "bound_cm": 0,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.5,
+        "predicted": 0.5,
+        "residual": 0.0,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.02,
+        "predicted": 1.0,
+        "residual": 0.02,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.98,
+        "predicted": 2.0,
+        "residual": -0.02,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.52,
+        "predicted": 3.5,
+        "residual": 0.02,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.48,
+        "predicted": 5.5,
+        "residual": -0.02,
+        "within": false
+      }
+    ],
+    "inside": 1,
+    "max_abs": 0.02
+  },
+  {
+    "accel": 2,
+    "bias_cm": 0,
+    "bound_cm": 4,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.5,
+        "predicted": 0.5,
+        "residual": 0.0,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.02,
+        "predicted": 1.0,
+        "residual": 0.02,
+        "within": true
+      },
+      {
+        "time": 1.0,
+        "observed": 1.98,
+        "predicted": 2.0,
+        "residual": -0.02,
+        "within": true
+      },
+      {
+        "time": 1.5,
+        "observed": 3.52,
+        "predicted": 3.5,
+        "residual": 0.02,
+        "within": true
+      },
+      {
+        "time": 2.0,
+        "observed": 5.48,
+        "predicted": 5.5,
+        "residual": -0.02,
+        "within": true
+      }
+    ],
+    "inside": 5,
+    "max_abs": 0.02
+  },
+  {
+    "accel": 2,
+    "bias_cm": 0,
+    "bound_cm": 20,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.5,
+        "predicted": 0.5,
+        "residual": 0.0,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.02,
+        "predicted": 1.0,
+        "residual": 0.02,
+        "within": true
+      },
+      {
+        "time": 1.0,
+        "observed": 1.98,
+        "predicted": 2.0,
+        "residual": -0.02,
+        "within": true
+      },
+      {
+        "time": 1.5,
+        "observed": 3.52,
+        "predicted": 3.5,
+        "residual": 0.02,
+        "within": true
+      },
+      {
+        "time": 2.0,
+        "observed": 5.48,
+        "predicted": 5.5,
+        "residual": -0.02,
+        "within": true
+      }
+    ],
+    "inside": 5,
+    "max_abs": 0.02
+  },
+  {
+    "accel": 2,
+    "bias_cm": 10,
+    "bound_cm": 0,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.6,
+        "predicted": 0.5,
+        "residual": 0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 1.12,
+        "predicted": 1.0,
+        "residual": 0.12,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 2.08,
+        "predicted": 2.0,
+        "residual": 0.08,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.62,
+        "predicted": 3.5,
+        "residual": 0.12,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.58,
+        "predicted": 5.5,
+        "residual": 0.08,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 0.12
+  },
+  {
+    "accel": 2,
+    "bias_cm": 10,
+    "bound_cm": 4,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.6,
+        "predicted": 0.5,
+        "residual": 0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 1.12,
+        "predicted": 1.0,
+        "residual": 0.12,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 2.08,
+        "predicted": 2.0,
+        "residual": 0.08,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.62,
+        "predicted": 3.5,
+        "residual": 0.12,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.58,
+        "predicted": 5.5,
+        "residual": 0.08,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 0.12
+  },
+  {
+    "accel": 2,
+    "bias_cm": 10,
+    "bound_cm": 20,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.6,
+        "predicted": 0.5,
+        "residual": 0.1,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.12,
+        "predicted": 1.0,
+        "residual": 0.12,
+        "within": true
+      },
+      {
+        "time": 1.0,
+        "observed": 2.08,
+        "predicted": 2.0,
+        "residual": 0.08,
+        "within": true
+      },
+      {
+        "time": 1.5,
+        "observed": 3.62,
+        "predicted": 3.5,
+        "residual": 0.12,
+        "within": true
+      },
+      {
+        "time": 2.0,
+        "observed": 5.58,
+        "predicted": 5.5,
+        "residual": 0.08,
+        "within": true
+      }
+    ],
+    "inside": 5,
+    "max_abs": 0.12
+  },
+  {
+    "accel": 4,
+    "bias_cm": -10,
+    "bound_cm": 0,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.4,
+        "predicted": 0.5,
+        "residual": -0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 0.92,
+        "predicted": 1.25,
+        "residual": -0.33,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.88,
+        "predicted": 3.0,
+        "residual": -1.12,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.42,
+        "predicted": 5.75,
+        "residual": -2.33,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.38,
+        "predicted": 9.5,
+        "residual": -4.12,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 4.12
+  },
+  {
+    "accel": 4,
+    "bias_cm": -10,
+    "bound_cm": 4,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.4,
+        "predicted": 0.5,
+        "residual": -0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 0.92,
+        "predicted": 1.25,
+        "residual": -0.33,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.88,
+        "predicted": 3.0,
+        "residual": -1.12,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.42,
+        "predicted": 5.75,
+        "residual": -2.33,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.38,
+        "predicted": 9.5,
+        "residual": -4.12,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 4.12
+  },
+  {
+    "accel": 4,
+    "bias_cm": -10,
+    "bound_cm": 20,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.4,
+        "predicted": 0.5,
+        "residual": -0.1,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 0.92,
+        "predicted": 1.25,
+        "residual": -0.33,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.88,
+        "predicted": 3.0,
+        "residual": -1.12,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.42,
+        "predicted": 5.75,
+        "residual": -2.33,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.38,
+        "predicted": 9.5,
+        "residual": -4.12,
+        "within": false
+      }
+    ],
+    "inside": 1,
+    "max_abs": 4.12
+  },
+  {
+    "accel": 4,
+    "bias_cm": 0,
+    "bound_cm": 0,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.5,
+        "predicted": 0.5,
+        "residual": 0.0,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.02,
+        "predicted": 1.25,
+        "residual": -0.23,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.98,
+        "predicted": 3.0,
+        "residual": -1.02,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.52,
+        "predicted": 5.75,
+        "residual": -2.23,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.48,
+        "predicted": 9.5,
+        "residual": -4.02,
+        "within": false
+      }
+    ],
+    "inside": 1,
+    "max_abs": 4.02
+  },
+  {
+    "accel": 4,
+    "bias_cm": 0,
+    "bound_cm": 4,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.5,
+        "predicted": 0.5,
+        "residual": 0.0,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.02,
+        "predicted": 1.25,
+        "residual": -0.23,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.98,
+        "predicted": 3.0,
+        "residual": -1.02,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.52,
+        "predicted": 5.75,
+        "residual": -2.23,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.48,
+        "predicted": 9.5,
+        "residual": -4.02,
+        "within": false
+      }
+    ],
+    "inside": 1,
+    "max_abs": 4.02
+  },
+  {
+    "accel": 4,
+    "bias_cm": 0,
+    "bound_cm": 20,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.5,
+        "predicted": 0.5,
+        "residual": 0.0,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.02,
+        "predicted": 1.25,
+        "residual": -0.23,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 1.98,
+        "predicted": 3.0,
+        "residual": -1.02,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.52,
+        "predicted": 5.75,
+        "residual": -2.23,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.48,
+        "predicted": 9.5,
+        "residual": -4.02,
+        "within": false
+      }
+    ],
+    "inside": 1,
+    "max_abs": 4.02
+  },
+  {
+    "accel": 4,
+    "bias_cm": 10,
+    "bound_cm": 0,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.6,
+        "predicted": 0.5,
+        "residual": 0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 1.12,
+        "predicted": 1.25,
+        "residual": -0.13,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 2.08,
+        "predicted": 3.0,
+        "residual": -0.92,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.62,
+        "predicted": 5.75,
+        "residual": -2.13,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.58,
+        "predicted": 9.5,
+        "residual": -3.92,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 3.92
+  },
+  {
+    "accel": 4,
+    "bias_cm": 10,
+    "bound_cm": 4,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.6,
+        "predicted": 0.5,
+        "residual": 0.1,
+        "within": false
+      },
+      {
+        "time": 0.5,
+        "observed": 1.12,
+        "predicted": 1.25,
+        "residual": -0.13,
+        "within": false
+      },
+      {
+        "time": 1.0,
+        "observed": 2.08,
+        "predicted": 3.0,
+        "residual": -0.92,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.62,
+        "predicted": 5.75,
+        "residual": -2.13,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.58,
+        "predicted": 9.5,
+        "residual": -3.92,
+        "within": false
+      }
+    ],
+    "inside": 0,
+    "max_abs": 3.92
+  },
+  {
+    "accel": 4,
+    "bias_cm": 10,
+    "bound_cm": 20,
+    "rows": [
+      {
+        "time": 0.0,
+        "observed": 0.6,
+        "predicted": 0.5,
+        "residual": 0.1,
+        "within": true
+      },
+      {
+        "time": 0.5,
+        "observed": 1.12,
+        "predicted": 1.25,
+        "residual": -0.13,
+        "within": true
+      },
+      {
+        "time": 1.0,
+        "observed": 2.08,
+        "predicted": 3.0,
+        "residual": -0.92,
+        "within": false
+      },
+      {
+        "time": 1.5,
+        "observed": 3.62,
+        "predicted": 5.75,
+        "residual": -2.13,
+        "within": false
+      },
+      {
+        "time": 2.0,
+        "observed": 5.58,
+        "predicted": 9.5,
+        "residual": -3.92,
+        "within": false
+      }
+    ],
+    "inside": 2,
+    "max_abs": 3.92
+  }
+]

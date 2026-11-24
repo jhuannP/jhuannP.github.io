@@ -1,0 +1,11 @@
+from math import sqrt
+beta=.6;L0=2
+gamma=1/sqrt(1-beta*beta)
+L=L0/gamma
+ct_lab_pair1=gamma*beta*L0
+x_lab_pair1=gamma*L0
+assert abs(L-1.6)<1e-12
+assert abs(ct_lab_pair1-1.5)<1e-12
+assert abs(x_lab_pair1-2.5)<1e-12
+print("Comprimento medido em S:",L)
+print("Separação de outro par, não simultâneo em S:",x_lab_pair1)

@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+a = (Q(9,10), Q(18,30))
+b = (Q(24,30), Q(5,10))
+raw_a = a[0]*Q(1,4) + a[1]*Q(3,4)
+raw_b = b[0]*Q(3,4) + b[1]*Q(1,4)
+assert raw_a == Q(27,40) < raw_b == Q(29,40)
+assert sum(a)/2 == Q(3,4) > sum(b)/2 == Q(13,20)
+print(raw_a, raw_b, sum(a)/2, sum(b)/2)

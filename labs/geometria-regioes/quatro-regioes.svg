@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="450" viewBox="0 0 420 450" role="img" aria-labelledby="title desc">
+<title id="title">Quatro regiões eletrônicas, três formas moleculares</title>
+<desc id="desc">Metano tem quatro regiões de ligação e nenhum par isolado no carbono: forma tetraédrica. Amônia tem três regiões de ligação e um par isolado no nitrogênio: forma piramidal trigonal. Água tem duas regiões de ligação e dois pares isolados no oxigênio: forma angular. Nos três casos o arranjo eletrônico básico é tetraédrico.</desc>
+<rect width="420" height="450" fill="#f4f3eb"/>
+<g font-family="Arial,sans-serif" fill="#20221e" text-anchor="middle">
+<text x="210" y="34" font-size="22">Quatro regiões, três formas</text>
+<text x="210" y="68" font-size="18">Arranjo eletrônico: tetraédrico</text>
+<path d="M30 91H390" stroke="#d3d7c9"/>
+<text x="57" y="132" font-size="25">CH₄</text>
+<text x="247" y="123" font-size="18">4 ligações + 0 pares isolados</text>
+<text x="247" y="157" fill="#2348db" font-size="22">Tetraédrica</text>
+<path d="M30 185H390" stroke="#d3d7c9"/>
+<text x="57" y="228" font-size="25">NH₃</text>
+<text x="247" y="219" font-size="18">3 ligações + 1 par isolado</text>
+<text x="247" y="253" fill="#2348db" font-size="22">Piramidal trigonal</text>
+<path d="M30 281H390" stroke="#d3d7c9"/>
+<text x="57" y="324" font-size="25">H₂O</text>
+<text x="247" y="315" font-size="18">2 ligações + 2 pares isolados</text>
+<text x="247" y="349" fill="#2348db" font-size="22">Angular</text>
+<path d="M30 377H390" stroke="#d3d7c9"/>
+<text x="210" y="408" font-size="18">A forma molecular considera os átomos.</text>
+<text x="210" y="437" font-size="15">Esquema de contagem, sem ângulos medidos.</text>
+</g></svg>

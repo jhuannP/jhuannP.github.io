@@ -1,0 +1,6 @@
+import argparse
+p=argparse.ArgumentParser();p.add_argument("--steps",type=int,default=10)
+args=p.parse_args(["--steps","20"])
+if args.steps<=0:raise ValueError("Passos positivos")
+assert args.steps==20
+print(args.steps)

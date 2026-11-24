@@ -1,0 +1,5 @@
+from math import log2
+E_h=.04;E_meio=.01
+p=log2(E_h/E_meio)
+assert p==2
+print('Ordem observada:',p)

@@ -1,0 +1,6 @@
+# Oráculo de prioridades para os átomos diretamente ligados.
+ligands=[('F',9),('H',1),('Br',35),('Cl',17)]
+order=tuple(name for name,z in sorted(ligands,key=lambda item:item[1],reverse=True))
+assert order==('Br','Cl','F','H')
+print(order)
+# O sinal do determinante só vira R/S após calibrar eixos e prioridades.

@@ -1,0 +1,50 @@
+from math import isfinite,sqrt,exp,sin,cos,pi,log,comb
+
+def budget(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<=0:
+        raise ValueError('Quantidade inteira positiva necessária')
+    return n
+
+def finite(x):
+    if isinstance(x,bool): raise ValueError('Número real finito necessário')
+    try: y=float(x)
+    except (TypeError,ValueError,OverflowError): raise ValueError('Número real finito necessário') from None
+    if not isfinite(y): raise ValueError('Número real finito necessário')
+    return y
+
+def vector(x):
+    y=[finite(v) for v in x]
+    if not y: raise ValueError('Vetor vazio')
+    return y
+
+def slope(f,t,y):
+    dy=vector(f(t,list(y)))
+    if len(dy)!=len(y): raise ValueError('Dimensão da derivada incompatível')
+    return dy
+
+def step(f,t,y,h,method='rk4'):
+    t=finite(t);h=finite(h);y=vector(y)
+    if h<=0 or t+h==t: raise ValueError('Passo positivo e resolvido em float necessário')
+    k1=slope(f,t,y)
+    if method=='euler': return [finite(a+h*b) for a,b in zip(y,k1)]
+    if method=='heun':
+        k2=slope(f,t+h,[a+h*b for a,b in zip(y,k1)])
+        return [finite(a+h*(b+c)/2) for a,b,c in zip(y,k1,k2)]
+    if method!='rk4': raise ValueError('Método desconhecido')
+    k2=slope(f,t+h/2,[a+h*b/2 for a,b in zip(y,k1)])
+    k3=slope(f,t+h/2,[a+h*b/2 for a,b in zip(y,k2)])
+    k4=slope(f,t+h,[a+h*b for a,b in zip(y,k3)])
+    return [finite(a+h*(b+2*c+2*d+e)/6) for a,b,c,d,e in zip(y,k1,k2,k3,k4)]
+
+def integrate(f,t0,t1,y0,n,method='rk4'):
+    n=budget(n);t0=finite(t0);t1=finite(t1);y=vector(y0)
+    if t1<=t0: raise ValueError('Intervalo deve crescer')
+    h=(t1-t0)/n;trace=[(t0,list(y))]
+    for i in range(n):
+        t=t0+i*h;y=step(f,t,y,h,method);trace.append((t0+(i+1)*h,list(y)))
+    return trace
+
+from math import log2
+for method in ['euler','heun','rk4']:
+    e=[abs(integrate(lambda t,y:[-y[0]],0,1,[1],n,method)[-1][1][0]-exp(-1)) for n in [20,40]]
+    print(method,e,log2(e[0]/e[1]))

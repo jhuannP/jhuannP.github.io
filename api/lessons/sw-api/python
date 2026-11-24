@@ -1,0 +1,12 @@
+def respond(body):
+    m=body.get("mass") if isinstance(body,dict) else None
+    if isinstance(m,bool) or not isinstance(m,(int,float)) or m<0:return 400,{"error":"Massa inválida"}
+    from math import isfinite
+    try:
+        if not isfinite(m):return 400,{"error":"Massa inválida"}
+    except OverflowError:
+        return 400,{"error":"Massa inválida"}
+    return 200,{"mass":m}
+assert respond({"mass":-1})[0]==400
+assert respond({"mass":2})[0]==200
+print(respond({"mass":2}))

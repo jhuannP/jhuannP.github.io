@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620" role="img" aria-labelledby="title desc">
+<title id="title">Sobrepor em duas dimensões perde a profundidade</title><desc id="desc">Máscara fictícia da célula ocupa x,y zero e um,z zero a dois. Cinco pontos de sinal:A zero,zero,um;B um,um,dois;C zero,um,quatro;D um,zero,cinco;E dois,dois,um. Quatro posições se sobrepõem à projeçãoxy da célula,mas sóA eB estão dentro em3D. Um dos dois pontos internos coincide com máscara lisossomal. As razões têm denominadores diferentes:dois sobre doze,dois sobre cinco,um sobre dois.</desc>
+<rect width="760" height="620" rx="18" fill="#f4f0e5"/>
+<g font-family="Arial,sans-serif" fill="#203b39">
+<text x="32" y="42" font-size="24" font-weight="bold">Perto na projeção não é dentro em 3D.</text>
+<text x="32" y="73" font-size="17">Cinco pontos fictícios · máscara celular com 12 voxels · sem imagem biológica</text>
+<rect x="26" y="96" width="343" height="312" rx="12" fill="#e4e9e1"/><rect x="391" y="96" width="343" height="312" rx="12" fill="#e4e9e1"/>
+<text x="45" y="127" font-size="19" font-weight="bold">Projeção xy</text><rect x="76" y="200" width="152" height="152" fill="#b7c5b9"/>
+<path d="M76 276 H228 M152 200 V352" stroke="#f4f0e5" stroke-width="2"/>
+<g fill="#ae563c"><circle cx="114" cy="314" r="10"/><circle cx="190" cy="238" r="10"/><circle cx="114" cy="238" r="10"/><circle cx="190" cy="314" r="10"/><circle cx="266" cy="162" r="10"/></g>
+<text x="91" y="337" font-size="17">A</text><text x="202" y="228" font-size="17">B</text><text x="91" y="227" font-size="17">C</text><text x="204" y="337" font-size="17">D</text><text x="281" y="168" font-size="17">E</text>
+<text x="45" y="388" font-size="17">4 sobreposições de 5 posições</text>
+<text x="410" y="127" font-size="19" font-weight="bold">Coordenada z preservada</text>
+<text x="410" y="163" font-size="17">Célula: x,y ∈ {0,1}, z ∈ {0,1,2}</text>
+<text x="410" y="208" font-size="18">A: z = 1 → dentro</text><text x="410" y="243" font-size="18">B: z = 2 → dentro</text><text x="410" y="278" font-size="18">C: z = 4 → fora</text><text x="410" y="313" font-size="18">D: z = 5 → fora</text><text x="410" y="348" font-size="18">E: xy fora da célula</text>
+<text x="32" y="450" font-size="21" font-weight="bold">Três razões, três perguntas</text>
+<text x="32" y="488" font-size="18">Sinal interno / célula = 2/12 = 1/6</text><text x="32" y="520" font-size="18">Sinal interno / todo sinal = 2/5</text><text x="32" y="552" font-size="18">Sinal interno lisossomal / sinal interno = 1/2</text>
+<text x="32" y="594" font-size="15">Contabilidade de máscaras escolhidas · não demonstra engolfamento ou poda real</text>
+</g></svg>

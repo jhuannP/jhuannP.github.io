@@ -1,0 +1,44 @@
+from math import exp,log1p,sqrt,tanh,isfinite
+from copy import deepcopy
+
+def initialize(hidden=4,seed=42):
+    if isinstance(hidden,bool) or not isinstance(hidden,int) or not 1<=hidden<=16:raise ValueError('1<=H<=16 necessário')
+    if isinstance(seed,bool) or not isinstance(seed,int) or not 0<=seed<2**32:raise ValueError('Semente uint32 necessária')
+    state=seed
+    def uniform():
+        nonlocal state
+        state=(1664525*state+1013904223)%2**32
+        return (state+.5)/2**32
+    a=sqrt(6/(2+hidden));b=sqrt(6/(hidden+1))
+    W=[[(2*uniform()-1)*a for _ in range(2)] for _ in range(hidden)]
+    v=[(2*uniform()-1)*b for _ in range(hidden)]
+    return dict(W=W,b=[0.0]*hidden,v=v,c=0.0)
+
+def real(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def validate(model):
+    H=len(model['W'])
+    if not 1<=H<=16 or len(model['b'])!=H or len(model['v'])!=H or any(len(row)!=2 for row in model['W']):raise ValueError('Dimensões da rede incompatíveis')
+    for row in model['W']:
+        for v in row:real(v)
+    for v in model['b']+model['v']+[model['c']]:real(v)
+    return H
+
+def forward(model,x):
+    validate(model);x=[real(v) for v in x]
+    if len(x)!=2:raise ValueError('Entrada precisa de duas componentes')
+    h=[tanh(real(sum(w*a for w,a in zip(row,x))+b)) for row,b in zip(model['W'],model['b'])]
+    z=real(sum(v*a for v,a in zip(model['v'],h))+model['c'])
+    if z>=0:p=1/(1+exp(-z))
+    else:e=exp(z);p=e/(1+e)
+    return dict(hidden=h,logit=z,probability=p)
+
+m=initialize(2);m["W"]=[[0,0],[0,0]];m["v"]=[0,0]
+r=forward(m,[1,1])
+assert r["logit"]==0 and r["probability"]==.5
+print(r)

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="640" viewBox="0 0 440 640" role="img" aria-labelledby="t d"><title id="t">Duas direções de entrada, duas escalas de saída</title><desc id="d">Para eta igual a um, o círculo unitário de entrada em R dois é mapeado numa elipse no plano u um e u dois de R três. As direções v um, três quintos e quatro quintos, e v dois, menos quatro quintos e três quintos, são ortonormais. Suas imagens têm comprimentos três e um; a terceira componente da saída é zero.</desc>
+<rect width="440" height="640" fill="#f6f8fb"/><g font-family="sans-serif" fill="#172b43">
+<text x="24" y="35" font-size="21" font-weight="bold">Um círculo vira uma elipse</text>
+<text x="24" y="66" font-size="16">Exemplo rotacionado com η=1</text>
+<text x="24" y="105" font-size="17" font-weight="bold">Entrada: círculo unitário em R²</text>
+<circle cx="220" cy="185" r="60" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<path d="M220 185L256 137 M248 141L256 137L254 146" stroke="#255fbc" stroke-width="3" fill="none"/>
+<path d="M220 185L172 149 M177 157L172 149L181 151" stroke="#172b43" stroke-width="3" fill="none"/>
+<text x="265" y="140" font-size="16">v₁</text><text x="140" y="150" font-size="16">v₂</text>
+<text x="24" y="277" font-size="16">v₁=(3/5,4/5); v₂=(−4/5,3/5)</text>
+<path d="M24 304H416" stroke="#cbd5e1"/>
+<text x="24" y="340" font-size="17" font-weight="bold">Saída: plano (u₁,u₂) dentro de R³</text>
+<ellipse cx="220" cy="420" rx="135" ry="45" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<path d="M220 420H355 M347 414L355 420L347 426" stroke="#255fbc" stroke-width="3" fill="none"/>
+<path d="M220 420V375 M214 383L220 375L226 383" stroke="#172b43" stroke-width="3" fill="none"/>
+<text x="294" y="447" font-size="16">3u₁</text><text x="231" y="385" font-size="16">u₂</text>
+<text x="24" y="510" font-size="16">A v₁=3u₁; A v₂=u₂.</text>
+<text x="24" y="544" font-size="16">Terceira componente da saída: zero.</text>
+<text x="24" y="578" font-size="15">Entrada e saída têm dimensões diferentes.</text>
+<text x="24" y="618" font-size="13">Figura original. Coordenadas e parâmetros adimensionais.</text>
+</g></svg>

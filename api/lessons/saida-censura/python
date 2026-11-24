@@ -1,0 +1,47 @@
+from math import exp,expm1,isfinite,sqrt,log
+from random import Random
+
+def _finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def exit_grid(dw,dt,boundary=1,D=.5,x0=0):
+    """Primeira saída OBSERVADA em nós da malha; não detecta cruzamento entre nós."""
+    dt=_finite(dt);boundary=_finite(boundary);D=_finite(D);x=_finite(x0)
+    if dt<=0 or boundary<=0 or D<=0 or abs(x)>=boundary:raise ValueError('Parâmetros ou posição inicial inválidos')
+    increments=[_finite(v) for v in dw]
+    if not increments:raise ValueError('Malha vazia')
+    for i,increment in enumerate(increments):
+        x=_finite(x+_finite(sqrt(2*D))*increment)
+        if abs(x)>=boundary:return {'time':(i+1)*dt,'event':True,'position':x,'horizon':len(increments)*dt}
+    return {'time':len(increments)*dt,'event':False,'position':x,'horizon':len(increments)*dt}
+
+def _count(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<1:raise ValueError('Inteiro positivo necessário')
+    return n
+
+def brownian_increments(n,dt,seed=42):
+    _count(n);dt=_finite(dt)
+    if dt<=0:raise ValueError('Passo positivo necessário')
+    rng=Random(seed)
+    return [sqrt(dt)*rng.gauss(0,1) for _ in range(n)]
+
+def restricted_exit_mean(records):
+    if not records:raise ValueError('Conjunto vazio')
+    horizon=_finite(records[0]['horizon'])
+    if horizon<=0:raise ValueError('Horizonte positivo necessário')
+    for r in records:
+        t=_finite(r['time'])
+        if _finite(r['horizon'])!=horizon or not isinstance(r['event'],bool) or t<0 or t>horizon:
+            raise ValueError('Registros incompatíveis')
+        if not r['event'] and t!=horizon:raise ValueError('Censura administrativa precisa ocorrer no horizonte')
+    # min(tau_observada,H) inclui censurados em H; não é MFPT irrestrito.
+    return sum(r['time'] for r in records)/len(records)
+
+records=[exit_grid(brownian_increments(200,.01,seed),.01) for seed in range(100)]
+rm=restricted_exit_mean(records)
+assert 0<rm<=2
+print('horizonte:',2,'eventos:',sum(r['event'] for r in records),'média restrita:',rm)

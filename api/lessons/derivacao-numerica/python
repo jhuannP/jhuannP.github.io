@@ -1,0 +1,36 @@
+from math import isfinite
+
+def _real(value):
+    if type(value) not in (int, float):
+        raise ValueError('Use int ou float finito, sem booleanos.')
+    try:
+        result = float(value)
+    except OverflowError:
+        raise ValueError('Valor fora da representação float.') from None
+    if not isfinite(result):
+        raise ValueError('Valor finito necessário.')
+    return result
+
+
+def derivada_central(f, x, h):
+    """Diferença derivada_central em float; não estima nem certifica o erro."""
+    x, h = _real(x), _real(h)
+    if h <= 0:
+        raise ValueError('Passo positivo necessário.')
+    left, right, width = x - h, x + h, 2 * h
+    if not all(isfinite(v) for v in (left, right, width)):
+        raise ArithmeticError('Pontos ou denominador fora de escala.')
+    if left == x or right == x:
+        raise ArithmeticError('Passo não resolvido na representação de x.')
+    numerator = _real(f(right)) - _real(f(left))
+    if not isfinite(numerator):
+        raise ArithmeticError('Diferença de valores fora de escala.')
+    result = numerator / width
+    if not isfinite(result):
+        raise ArithmeticError('Resultado fora de escala.')
+    return result
+
+
+valor=derivada_central(lambda x:x**3,1,.5)
+assert valor==3.25
+print(valor,'referência: 3')

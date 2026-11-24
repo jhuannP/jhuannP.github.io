@@ -1,0 +1,8 @@
+from math import sqrt
+from random import Random
+rng=Random(42);q,p=1.,0.;omega,gamma,T,dt=2,1,1,.001
+for _ in range(1000):
+    old_q,old_p=q,p
+    q=old_q+dt*old_p
+    p=old_p-dt*(omega*omega*old_q+gamma*old_p)+sqrt(2*gamma*T*dt)*rng.gauss(0,1)
+print(q,p,'variâncias de referência:',T/omega**2,T)

@@ -1,0 +1,5 @@
+from math import pi
+R=1.;integrand=R*R/2
+value=integrand*2*pi
+assert abs(value-pi)<1e-12
+print(value)

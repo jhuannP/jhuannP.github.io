@@ -1,0 +1,6 @@
+valor=46
+bits=format(valor,'08b')
+assert bits=='00101110'
+assert int(bits,2)==46
+assert (300 & 255)==44
+print(bits,hex(valor))

@@ -1,0 +1,59 @@
+from math import exp,log1p,sqrt,hypot,atan2,cos,sin,isfinite
+from random import Random
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def paired(x,y):
+    a=[finite(v) for v in x];b=[finite(v) for v in y]
+    if not a or len(a)!=len(b):raise ValueError('Dados não vazios de mesmo tamanho necessários')
+    return a,b
+
+def stump_fit(x,y,classification=False):
+    x,y=paired(x,y)
+    if classification and any(v not in [0,1] for v in y):raise ValueError('Classes binárias necessárias')
+    def leaf(values):return int(sum(values)>len(values)/2) if classification else sum(values)/len(values)
+    def cost(values):
+        if classification:
+            p=sum(values)/len(values);return len(values)*2*p*(1-p)
+        mean=sum(values)/len(values);return sum((v-mean)**2 for v in values)
+    # Modelo constante é candidato; melhora deve ser estrita.
+    value=leaf(y);best=dict(threshold=None,left=value,right=value,cost=cost(y))
+    unique=sorted(set(x))
+    for a,b in zip(unique,unique[1:]):
+        threshold=a/2+b/2;left=[v for z,v in zip(x,y) if z<=threshold];right=[v for z,v in zip(x,y) if z>threshold]
+        if not left or not right:continue
+        score=cost(left)+cost(right)
+        if score<best['cost']:best=dict(threshold=threshold,left=leaf(left),right=leaf(right),cost=score)
+    return best
+
+def stump_predict(model,x):
+    x=finite(x)
+    return model['left'] if model['threshold'] is None or x<=model['threshold'] else model['right']
+
+def boost_fit(x,y,rounds=5,eta=.5):
+    x,y=paired(x,y);eta=finite(eta)
+    if isinstance(rounds,bool) or not isinstance(rounds,int) or rounds<0 or not 0<eta<=1:raise ValueError('Rodadas ou eta inválidos')
+    base=sum(y)/len(y);pred=[base]*len(y);models=[]
+    for _ in range(rounds):
+        tree=stump_fit(x,[v-p for v,p in zip(y,pred)]);models.append(tree)
+        pred=[p+eta*stump_predict(tree,v) for p,v in zip(pred,x)]
+    return dict(base=base,eta=eta,models=models)
+
+def boost_predict(model,x):
+    return model['base']+model['eta']*sum(stump_predict(t,x) for t in model['models'])
+
+def regression_metrics(y,pred):
+    y,pred=paired(y,pred);errors=[a-b for a,b in zip(pred,y)]
+    mse=sum(e*e for e in errors)/len(y);mae=sum(abs(e) for e in errors)/len(y)
+    mean=sum(y)/len(y);total=sum((v-mean)**2 for v in y)
+    return dict(MSE=mse,MAE=mae,RMSE=sqrt(mse),R2=None if total==0 else 1-sum(e*e for e in errors)/total)
+
+x=[0,1,2,3];y=[0,0,2,2];r=boost_fit(x,y,5,.5)
+p=[boost_predict(r,v) for v in x]
+assert regression_metrics(y,p)["MSE"]<1
+print(p)

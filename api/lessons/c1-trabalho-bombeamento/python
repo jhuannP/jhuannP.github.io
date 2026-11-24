@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+h,outlet=Q(4),Q(6)
+volume_pi=Q(1,4)*h**3/3
+first_pi=Q(1,4)*h**4/4
+work_pi=10000*(outlet*volume_pi-first_pi)
+assert work_pi==160000
+print("W =",work_pi,"* pi J")

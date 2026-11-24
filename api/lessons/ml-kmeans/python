@@ -1,0 +1,28 @@
+from math import exp,log1p,sqrt,hypot,atan2,cos,sin,isfinite
+from random import Random
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def kmeans_1d(x,initial,tol=1e-9,max_iter=100):
+    x=[finite(v) for v in x];centers=[finite(v) for v in initial];tol=finite(tol)
+    if not x or not centers or tol<=0 or isinstance(max_iter,bool) or not isinstance(max_iter,int) or max_iter<1:raise ValueError('Parâmetros de k-means inválidos')
+    for _ in range(max_iter):
+        labels=[min(range(len(centers)),key=lambda j:abs(v-centers[j])) for v in x]
+        new=[]
+        for j,c in enumerate(centers):
+            group=[v for v,k in zip(x,labels) if k==j]
+            new.append(sum(group)/len(group) if group else c)
+        if max(abs(a-b) for a,b in zip(new,centers))<=tol:
+            labels=[min(range(len(new)),key=lambda j:abs(v-new[j])) for v in x]
+            return dict(centers=new,labels=labels,inertia=sum((v-new[k])**2 for v,k in zip(x,labels)))
+        centers=new
+    raise RuntimeError('Orçamento de k-means atingido')
+
+r=kmeans_1d([0,1,9,10],[0,10])
+assert r["centers"]==[.5,9.5] and r["inertia"]==1
+print(r)

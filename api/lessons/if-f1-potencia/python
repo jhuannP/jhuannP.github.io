@@ -1,0 +1,10 @@
+from fractions import Fraction as F
+m,v0,drive,resistance,t=map(F,(2,1,6,2,2))
+a=(drive-resistance)/m
+v=v0+a*t
+x=v0*t+a*t*t/2
+work=(drive-resistance)*x
+delta_k=m*(v*v-v0*v0)/2
+assert work==delta_k==24
+assert drive*v==30 and -resistance*v==-10
+print(work,delta_k,work/t)

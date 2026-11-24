@@ -1,0 +1,74 @@
+"""Grades iid, travessia top→bottom sem diagonais e intervalo Wilson nominal."""
+from collections import deque
+from math import isfinite,sqrt
+from random import Random
+from pathlib import Path
+import argparse
+import hashlib
+import json
+import platform
+import sys
+
+CRITICAL=1.959963984540054
+
+def integer(value,name,low,high):
+    if isinstance(value,bool) or not isinstance(value,int) or not low<=value<=high:
+        raise ValueError(f'{name} deve ser inteiro entre {low} e {high}')
+    return value
+
+def probability(value):
+    if isinstance(value,bool) or not isinstance(value,(int,float)) or not isfinite(value) or not 0<=value<=1:
+        raise ValueError('p deve ser real finito entre 0 e 1')
+    return float(value)
+
+def crosses(grid):
+    rows=tuple(tuple(row) for row in grid)
+    if not rows or not rows[0] or any(len(row)!=len(rows[0]) for row in rows):
+        raise ValueError('Grade retangular não vazia necessária')
+    if any(not (isinstance(x,bool) or isinstance(x,int) and x in (0,1)) for row in rows for x in row):
+        raise ValueError('Use sítios booleanos ou inteiros 0/1')
+    height,width=len(rows),len(rows[0])
+    pending=deque((0,j) for j in range(width) if rows[0][j]);seen=set(pending)
+    while pending:
+        i,j=pending.popleft()
+        if i==height-1:return True
+        for a,b in ((i-1,j),(i+1,j),(i,j-1),(i,j+1)):
+            if 0<=a<height and 0<=b<width and rows[a][b] and (a,b) not in seen:
+                seen.add((a,b));pending.append((a,b))
+    return False
+
+def wilson(successes,samples,z=CRITICAL):
+    integer(samples,'samples',1,5000);integer(successes,'successes',0,samples)
+    if isinstance(z,bool) or not isinstance(z,(int,float)) or not isfinite(z) or z<=0:
+        raise ValueError('Quantil positivo finito necessário')
+    q=successes/samples;den=1+z*z/samples
+    center=(q+z*z/(2*samples))/den
+    radius=z/den*sqrt(q*(1-q)/samples+z*z/(4*samples*samples))
+    return [0. if successes==0 else max(0.,center-radius),
+            1. if successes==samples else min(1.,center+radius)]
+
+def ensemble(size,samples,p,seed):
+    integer(size,'size',1,40);integer(samples,'samples',1,5000);p=probability(p)
+    integer(seed,'seed',0,2**32-1)
+    rng=Random(seed);successes=0
+    for _ in range(samples):
+        grid=[[rng.random()<p for _ in range(size)] for _ in range(size)]
+        successes+=crosses(grid)
+    return dict(successes=successes,samples=samples,estimate=successes/samples,
+                wilson_nominal_95=wilson(successes,samples),
+                exact_if_2x2=2*p*p-p**4 if size==2 else None)
+
+def report(size,samples,p,seed):
+    result=ensemble(size,samples,p,seed)
+    return dict(schema_version=1,experiment='iid-site-percolation',
+                config={'size':size,'samples':samples,'occupation_p':p,'seed':seed,
+                        'generator':'random.Random','neighbors':'quatro, sem diagonais',
+                        'crossing':'borda superior até inferior'},
+                software={'python':platform.python_version(),
+                          'code_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()},
+                result=result,
+                interpretation='Frequência estima probabilidade de travessia desta grade finita; não é p nem limiar crítico. Wilson é intervalo nominal aproximado.')
+
+r=ensemble(2,20,.5,42)
+assert r["exact_if_2x2"]==.4375
+print(r)

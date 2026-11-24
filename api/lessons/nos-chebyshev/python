@@ -1,0 +1,38 @@
+from math import isfinite, sqrt, pi, cos, sin, exp, e, fsum
+
+def _real(value):
+    try:
+        if isinstance(value,bool): raise ValueError
+        result=float(value)
+    except (TypeError,ValueError,OverflowError):
+        raise ValueError('Valor real finito necessário') from None
+    if not isfinite(result): raise ValueError('Valor real finito necessário')
+    return result
+
+def _nodes(xs,ys):
+    if len(xs)!=len(ys) or not xs:raise ValueError('Dados não vazios com tamanhos iguais')
+    xs,ys=[_real(x) for x in xs],[_real(y) for y in ys]
+    if len(set(xs))!=len(xs):raise ValueError('Nós distintos necessários')
+    return xs,ys
+
+def lagrange(xs,ys,x):
+    xs,ys=_nodes(xs,ys);x=_real(x)
+    if x in xs:return ys[xs.index(x)]
+    total=0.0
+    for i,yi in enumerate(ys):
+        base=1.0
+        for j,xj in enumerate(xs):
+            if i!=j:base*=(x-xj)/(xs[i]-xj)
+        total+=yi*base
+    return _real(total)
+
+n=9;f=lambda x:1/(1+25*x*x)
+uniformes=[-1+2*k/(n-1) for k in range(n)]
+cheb=[cos(k*pi/(n-1)) for k in range(n)]
+malha=[-1+2*j/200 for j in range(201)]
+erros=[]
+for xs in [uniformes,cheb]:
+    ys=[f(x) for x in xs]
+    erros.append(max(abs(lagrange(xs,ys,x)-f(x)) for x in malha))
+assert erros[1]<erros[0]
+print('Maiores erros observados:',erros)

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="430" viewBox="0 0 440 430" role="img" aria-labelledby="title desc">
+<title id="title">Onde a transformação perde a primeira coordenada</title><desc id="desc">Para t igual a dois, as entradas um dois e três dois geram saídas quatro dois e oito dois. Para t igual a zero, ambas geram a mesma saída dois dois, impedindo recuperar a entrada de forma única.</desc>
+<rect width="440" height="430" fill="#f2f5ff"/>
+<g font-family="Arial,sans-serif" fill="#192a43">
+<text x="24" y="34" font-size="20" font-weight="bold">Entradas distintas, saída única?</text>
+<text x="24" y="64" font-size="16">Aₜ(x,y) = (tx + y, y)</text>
+<text x="24" y="105" font-size="17" font-weight="bold">t = 2: é possível desfazer</text>
+<text x="30" y="145" font-size="18">(1, 2)</text><text x="275" y="145" font-size="18">(4, 2)</text>
+<text x="30" y="190" font-size="18">(3, 2)</text><text x="275" y="190" font-size="18">(8, 2)</text>
+<path d="M120 140 H250 M120 185 H250" stroke="#294dbc" stroke-width="3"/><text x="181" y="137" font-size="18" fill="#294dbc">→</text><text x="181" y="182" font-size="18" fill="#294dbc">→</text>
+<path d="M24 215 H416" stroke="#ccd3e4"/>
+<text x="24" y="250" font-size="17" font-weight="bold">t = 0: a informação de x desaparece</text>
+<text x="30" y="292" font-size="18">(1, 2)</text><text x="30" y="342" font-size="18">(3, 2)</text><text x="275" y="318" font-size="18">(2, 2)</text>
+<path d="M120 287 L250 310 M120 337 L250 310" stroke="#294dbc" stroke-width="3"/><text x="246" y="316" font-size="18" fill="#294dbc">→</text>
+<text x="24" y="390" font-size="15">A saída (2, 2) não identifica um único x.</text>
+<text x="24" y="414" font-size="12">Figura original • comparação exata de dois casos</text>
+</g></svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+<title id="title">Refrigerar transporta calor e requer trabalho</title><desc id="desc">Dois reservatórios ideais a280 e320 kelvin. Um ciclo retira840 joules da fonte fria,recebe140 joules de trabalho e entrega980 joules àfonte quente. COP de refrigeração6 e de aquecimento7;limites reversíveis7 e8. Geração de entropia um sobre dezesseis joule por kelvin,excesso de trabalho20joules. Proposta alternativa de80joules fecha energia mas tem geração negativa menos um oitavo.</desc>
+<rect width="760" height="560" rx="18" fill="#f4f0e5"/>
+<g font-family="Arial,sans-serif" fill="#203b39">
+<text x="32" y="42" font-size="24" font-weight="bold">O calor entregue inclui o trabalho recebido.</text>
+<text x="32" y="73" font-size="17">Exemplo prescrito · energias por ciclo · reservatórios ideais</text>
+<rect x="229" y="99" width="302" height="55" rx="10" fill="#e6cbbc"/><text x="256" y="133" font-size="20">Fonte quente: 320 K</text>
+<rect x="250" y="218" width="260" height="73" rx="12" fill="#e4e9e1"/><text x="279" y="249" font-size="20" font-weight="bold">Ciclo refrigerador</text><text x="290" y="275" font-size="17">ΔU = 0 por ciclo</text>
+<rect x="229" y="359" width="302" height="55" rx="10" fill="#cbdedb"/><text x="259" y="393" font-size="20">Fonte fria: 280 K</text>
+<path d="M380 216 V160 M372 174 L380 160 L388 174 M380 357 V298 M372 312 L380 298 L388 312 M640 254 H517 M531 246 L517 254 L531 262" stroke="#ae563c" stroke-width="4" fill="none"/>
+<text x="401" y="191" font-size="18">QH = 980 J</text><text x="401" y="329" font-size="18">QC = 840 J</text><text x="547" y="238" font-size="18">W = 140 J</text>
+<text x="32" y="450" font-size="19" font-weight="bold">COPR = 6 · COPH = 7 · Sgerada = 1/16 J/K</text>
+<text x="32" y="485" font-size="17">Limite reversível: Wmín = 120 J. Excesso de trabalho: 20 J.</text>
+<text x="32" y="526" font-size="16">Propor W = 80 J conserva energia, mas viola a segunda lei neste modelo.</text>
+</g></svg>

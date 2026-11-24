@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 570" role="img" aria-labelledby="title desc">
+<title id="title">Alterações de um trecho codificante sintético</title><desc id="desc">Referência ATG GAA TTT TAA dá MEF e parada. GAA para GAG mantém E; GAA para GTA muda para V; GAA para TAA antecipa a parada. Apagar a quarta base produz ATG AAT TTT AA, sem parada completa no trecho. Todos escritos de cinco linha para três linha, quadro inicial fornecido.</desc>
+<rect width="440" height="570" rx="12" fill="#f7f7ef"/>
+<g font-family="Arial,sans-serif" fill="#172b35">
+<text x="24" y="34" font-size="20" font-weight="700">Uma sequência, quatro alterações</text>
+<text x="24" y="60" font-size="15">DNA codificante 5′→3′ · quadro inicial dado</text>
+<g font-size="15"><text x="24" y="100">REFERÊNCIA · 12 bases</text><text x="24" y="187">1. SUBSTITUIÇÃO SINÔNIMA · posição 6</text><text x="24" y="274">2. TROCA DE RESÍDUO · posição 5</text><text x="24" y="361">3. PARADA ANTECIPADA · posição 4</text><text x="24" y="448">4. DELEÇÃO · remove a posição 4</text></g>
+<g font-family="monospace" font-size="21"><text x="24" y="129">ATG GAA TTT TAA</text><text x="24" y="216">ATG GAG TTT TAA</text><text x="24" y="303">ATG GTA TTT TAA</text><text x="24" y="390">ATG TAA TTT TAA</text><text x="24" y="477">ATG AAT TTT AA</text></g>
+<g font-size="16" fill="#243faa"><text x="24" y="154">M · E · F → parada</text><text x="24" y="241">M · E · F → parada</text><text x="24" y="328">M · V · F → parada</text><text x="24" y="415">M → parada (restante não lido)</text><text x="24" y="502">M · N · F · sobram 2 bases</text></g>
+<path d="M24 169H416 M24 256H416 M24 343H416 M24 430H416 M24 517H416" stroke="#c7cfcf"/>
+<text x="24" y="542" font-size="14">Comparação de leitura; não prediz função ou fenótipo.</text>
+</g></svg>

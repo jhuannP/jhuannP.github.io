@@ -1,0 +1,10 @@
+def carbon_nox(h,oxygen_order,carbon_order):
+    if any(type(x) is not int or x<0 for x in (h,oxygen_order,carbon_order)):
+        raise ValueError("Inteiros não negativos")
+    if h+oxygen_order+carbon_order!=4:
+        raise ValueError("Carbono neutro tetravalente")
+    return oxygen_order-h
+start=carbon_nox(2,1,1)
+end=carbon_nox(1,2,1)
+assert (start,end,end-start)==(-1,1,2)
+print("NOX inicial, final e aumento:",start,end,end-start)

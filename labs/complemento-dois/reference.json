@@ -1,0 +1,2306 @@
+[
+  {
+    "a": 0,
+    "b": 0,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 1,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 3,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "result": 4,
+    "result_signed": 4,
+    "exact": 4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 5,
+    "result": 5,
+    "result_signed": 5,
+    "exact": 5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 6,
+    "result": 6,
+    "result_signed": 6,
+    "exact": 6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 7,
+    "result": 7,
+    "result_signed": 7,
+    "exact": 7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 8,
+    "result": 8,
+    "result_signed": -8,
+    "exact": -8,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 9,
+    "result": 9,
+    "result_signed": -7,
+    "exact": -7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 10,
+    "result": 10,
+    "result_signed": -6,
+    "exact": -6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 11,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 12,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 13,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 14,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 0,
+    "b": 15,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 0,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 1,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 2,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 3,
+    "result": 4,
+    "result_signed": 4,
+    "exact": 4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 4,
+    "result": 5,
+    "result_signed": 5,
+    "exact": 5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 5,
+    "result": 6,
+    "result_signed": 6,
+    "exact": 6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 6,
+    "result": 7,
+    "result_signed": 7,
+    "exact": 7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 7,
+    "result": 8,
+    "result_signed": -8,
+    "exact": 8,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 1,
+    "b": 8,
+    "result": 9,
+    "result_signed": -7,
+    "exact": -7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 9,
+    "result": 10,
+    "result_signed": -6,
+    "exact": -6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 10,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 11,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 12,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 13,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 14,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 1,
+    "b": 15,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 2,
+    "result": 4,
+    "result_signed": 4,
+    "exact": 4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 3,
+    "result": 5,
+    "result_signed": 5,
+    "exact": 5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 4,
+    "result": 6,
+    "result_signed": 6,
+    "exact": 6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 5,
+    "result": 7,
+    "result_signed": 7,
+    "exact": 7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 6,
+    "result": 8,
+    "result_signed": -8,
+    "exact": 8,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 2,
+    "b": 7,
+    "result": 9,
+    "result_signed": -7,
+    "exact": 9,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 2,
+    "b": 8,
+    "result": 10,
+    "result_signed": -6,
+    "exact": -6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 9,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 10,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 11,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 12,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 13,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 14,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 2,
+    "b": 15,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 1,
+    "result": 4,
+    "result_signed": 4,
+    "exact": 4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 2,
+    "result": 5,
+    "result_signed": 5,
+    "exact": 5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 3,
+    "result": 6,
+    "result_signed": 6,
+    "exact": 6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 4,
+    "result": 7,
+    "result_signed": 7,
+    "exact": 7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 5,
+    "result": 8,
+    "result_signed": -8,
+    "exact": 8,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 3,
+    "b": 6,
+    "result": 9,
+    "result_signed": -7,
+    "exact": 9,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 3,
+    "b": 7,
+    "result": 10,
+    "result_signed": -6,
+    "exact": 10,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 3,
+    "b": 8,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 9,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 10,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 11,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 12,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 13,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 14,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 3,
+    "b": 15,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 0,
+    "result": 4,
+    "result_signed": 4,
+    "exact": 4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 1,
+    "result": 5,
+    "result_signed": 5,
+    "exact": 5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 2,
+    "result": 6,
+    "result_signed": 6,
+    "exact": 6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 3,
+    "result": 7,
+    "result_signed": 7,
+    "exact": 7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 4,
+    "result": 8,
+    "result_signed": -8,
+    "exact": 8,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 4,
+    "b": 5,
+    "result": 9,
+    "result_signed": -7,
+    "exact": 9,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 4,
+    "b": 6,
+    "result": 10,
+    "result_signed": -6,
+    "exact": 10,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 4,
+    "b": 7,
+    "result": 11,
+    "result_signed": -5,
+    "exact": 11,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 4,
+    "b": 8,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 9,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 10,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 11,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 12,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 13,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 14,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 4,
+    "b": 15,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 5,
+    "b": 0,
+    "result": 5,
+    "result_signed": 5,
+    "exact": 5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 5,
+    "b": 1,
+    "result": 6,
+    "result_signed": 6,
+    "exact": 6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 5,
+    "b": 2,
+    "result": 7,
+    "result_signed": 7,
+    "exact": 7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 5,
+    "b": 3,
+    "result": 8,
+    "result_signed": -8,
+    "exact": 8,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 5,
+    "b": 4,
+    "result": 9,
+    "result_signed": -7,
+    "exact": 9,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 5,
+    "b": 5,
+    "result": 10,
+    "result_signed": -6,
+    "exact": 10,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 5,
+    "b": 6,
+    "result": 11,
+    "result_signed": -5,
+    "exact": 11,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 5,
+    "b": 7,
+    "result": 12,
+    "result_signed": -4,
+    "exact": 12,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 5,
+    "b": 8,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 5,
+    "b": 9,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 5,
+    "b": 10,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 5,
+    "b": 11,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 5,
+    "b": 12,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 5,
+    "b": 13,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 5,
+    "b": 14,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 5,
+    "b": 15,
+    "result": 4,
+    "result_signed": 4,
+    "exact": 4,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 6,
+    "b": 0,
+    "result": 6,
+    "result_signed": 6,
+    "exact": 6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 6,
+    "b": 1,
+    "result": 7,
+    "result_signed": 7,
+    "exact": 7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 6,
+    "b": 2,
+    "result": 8,
+    "result_signed": -8,
+    "exact": 8,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 6,
+    "b": 3,
+    "result": 9,
+    "result_signed": -7,
+    "exact": 9,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 6,
+    "b": 4,
+    "result": 10,
+    "result_signed": -6,
+    "exact": 10,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 6,
+    "b": 5,
+    "result": 11,
+    "result_signed": -5,
+    "exact": 11,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 6,
+    "b": 6,
+    "result": 12,
+    "result_signed": -4,
+    "exact": 12,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 6,
+    "b": 7,
+    "result": 13,
+    "result_signed": -3,
+    "exact": 13,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 6,
+    "b": 8,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 6,
+    "b": 9,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 6,
+    "b": 10,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 6,
+    "b": 11,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 6,
+    "b": 12,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 6,
+    "b": 13,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 6,
+    "b": 14,
+    "result": 4,
+    "result_signed": 4,
+    "exact": 4,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 6,
+    "b": 15,
+    "result": 5,
+    "result_signed": 5,
+    "exact": 5,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 7,
+    "b": 0,
+    "result": 7,
+    "result_signed": 7,
+    "exact": 7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 7,
+    "b": 1,
+    "result": 8,
+    "result_signed": -8,
+    "exact": 8,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 7,
+    "b": 2,
+    "result": 9,
+    "result_signed": -7,
+    "exact": 9,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 7,
+    "b": 3,
+    "result": 10,
+    "result_signed": -6,
+    "exact": 10,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 7,
+    "b": 4,
+    "result": 11,
+    "result_signed": -5,
+    "exact": 11,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 7,
+    "b": 5,
+    "result": 12,
+    "result_signed": -4,
+    "exact": 12,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 7,
+    "b": 6,
+    "result": 13,
+    "result_signed": -3,
+    "exact": 13,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 7,
+    "b": 7,
+    "result": 14,
+    "result_signed": -2,
+    "exact": 14,
+    "carry": 0,
+    "overflow": true
+  },
+  {
+    "a": 7,
+    "b": 8,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 7,
+    "b": 9,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 7,
+    "b": 10,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 7,
+    "b": 11,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 7,
+    "b": 12,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 7,
+    "b": 13,
+    "result": 4,
+    "result_signed": 4,
+    "exact": 4,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 7,
+    "b": 14,
+    "result": 5,
+    "result_signed": 5,
+    "exact": 5,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 7,
+    "b": 15,
+    "result": 6,
+    "result_signed": 6,
+    "exact": 6,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 8,
+    "b": 0,
+    "result": 8,
+    "result_signed": -8,
+    "exact": -8,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 8,
+    "b": 1,
+    "result": 9,
+    "result_signed": -7,
+    "exact": -7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 8,
+    "b": 2,
+    "result": 10,
+    "result_signed": -6,
+    "exact": -6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 8,
+    "b": 3,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 8,
+    "b": 4,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 8,
+    "b": 5,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 8,
+    "b": 6,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 8,
+    "b": 7,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 8,
+    "b": 8,
+    "result": 0,
+    "result_signed": 0,
+    "exact": -16,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 8,
+    "b": 9,
+    "result": 1,
+    "result_signed": 1,
+    "exact": -15,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 8,
+    "b": 10,
+    "result": 2,
+    "result_signed": 2,
+    "exact": -14,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 8,
+    "b": 11,
+    "result": 3,
+    "result_signed": 3,
+    "exact": -13,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 8,
+    "b": 12,
+    "result": 4,
+    "result_signed": 4,
+    "exact": -12,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 8,
+    "b": 13,
+    "result": 5,
+    "result_signed": 5,
+    "exact": -11,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 8,
+    "b": 14,
+    "result": 6,
+    "result_signed": 6,
+    "exact": -10,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 8,
+    "b": 15,
+    "result": 7,
+    "result_signed": 7,
+    "exact": -9,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 9,
+    "b": 0,
+    "result": 9,
+    "result_signed": -7,
+    "exact": -7,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 9,
+    "b": 1,
+    "result": 10,
+    "result_signed": -6,
+    "exact": -6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 9,
+    "b": 2,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 9,
+    "b": 3,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 9,
+    "b": 4,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 9,
+    "b": 5,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 9,
+    "b": 6,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 9,
+    "b": 7,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 9,
+    "b": 8,
+    "result": 1,
+    "result_signed": 1,
+    "exact": -15,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 9,
+    "b": 9,
+    "result": 2,
+    "result_signed": 2,
+    "exact": -14,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 9,
+    "b": 10,
+    "result": 3,
+    "result_signed": 3,
+    "exact": -13,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 9,
+    "b": 11,
+    "result": 4,
+    "result_signed": 4,
+    "exact": -12,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 9,
+    "b": 12,
+    "result": 5,
+    "result_signed": 5,
+    "exact": -11,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 9,
+    "b": 13,
+    "result": 6,
+    "result_signed": 6,
+    "exact": -10,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 9,
+    "b": 14,
+    "result": 7,
+    "result_signed": 7,
+    "exact": -9,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 9,
+    "b": 15,
+    "result": 8,
+    "result_signed": -8,
+    "exact": -8,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 10,
+    "b": 0,
+    "result": 10,
+    "result_signed": -6,
+    "exact": -6,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 10,
+    "b": 1,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 10,
+    "b": 2,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 10,
+    "b": 3,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 10,
+    "b": 4,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 10,
+    "b": 5,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 10,
+    "b": 6,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 10,
+    "b": 7,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 10,
+    "b": 8,
+    "result": 2,
+    "result_signed": 2,
+    "exact": -14,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 10,
+    "b": 9,
+    "result": 3,
+    "result_signed": 3,
+    "exact": -13,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 10,
+    "b": 10,
+    "result": 4,
+    "result_signed": 4,
+    "exact": -12,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 10,
+    "b": 11,
+    "result": 5,
+    "result_signed": 5,
+    "exact": -11,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 10,
+    "b": 12,
+    "result": 6,
+    "result_signed": 6,
+    "exact": -10,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 10,
+    "b": 13,
+    "result": 7,
+    "result_signed": 7,
+    "exact": -9,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 10,
+    "b": 14,
+    "result": 8,
+    "result_signed": -8,
+    "exact": -8,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 10,
+    "b": 15,
+    "result": 9,
+    "result_signed": -7,
+    "exact": -7,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 11,
+    "b": 0,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 11,
+    "b": 1,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 11,
+    "b": 2,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 11,
+    "b": 3,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 11,
+    "b": 4,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 11,
+    "b": 5,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 11,
+    "b": 6,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 11,
+    "b": 7,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 11,
+    "b": 8,
+    "result": 3,
+    "result_signed": 3,
+    "exact": -13,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 11,
+    "b": 9,
+    "result": 4,
+    "result_signed": 4,
+    "exact": -12,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 11,
+    "b": 10,
+    "result": 5,
+    "result_signed": 5,
+    "exact": -11,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 11,
+    "b": 11,
+    "result": 6,
+    "result_signed": 6,
+    "exact": -10,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 11,
+    "b": 12,
+    "result": 7,
+    "result_signed": 7,
+    "exact": -9,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 11,
+    "b": 13,
+    "result": 8,
+    "result_signed": -8,
+    "exact": -8,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 11,
+    "b": 14,
+    "result": 9,
+    "result_signed": -7,
+    "exact": -7,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 11,
+    "b": 15,
+    "result": 10,
+    "result_signed": -6,
+    "exact": -6,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 0,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 1,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 2,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 3,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 4,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 5,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 6,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 7,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 8,
+    "result": 4,
+    "result_signed": 4,
+    "exact": -12,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 12,
+    "b": 9,
+    "result": 5,
+    "result_signed": 5,
+    "exact": -11,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 12,
+    "b": 10,
+    "result": 6,
+    "result_signed": 6,
+    "exact": -10,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 12,
+    "b": 11,
+    "result": 7,
+    "result_signed": 7,
+    "exact": -9,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 12,
+    "b": 12,
+    "result": 8,
+    "result_signed": -8,
+    "exact": -8,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 13,
+    "result": 9,
+    "result_signed": -7,
+    "exact": -7,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 14,
+    "result": 10,
+    "result_signed": -6,
+    "exact": -6,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 12,
+    "b": 15,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 0,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 1,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 2,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 3,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 4,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 5,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 6,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 7,
+    "result": 4,
+    "result_signed": 4,
+    "exact": 4,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 8,
+    "result": 5,
+    "result_signed": 5,
+    "exact": -11,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 13,
+    "b": 9,
+    "result": 6,
+    "result_signed": 6,
+    "exact": -10,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 13,
+    "b": 10,
+    "result": 7,
+    "result_signed": 7,
+    "exact": -9,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 13,
+    "b": 11,
+    "result": 8,
+    "result_signed": -8,
+    "exact": -8,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 12,
+    "result": 9,
+    "result_signed": -7,
+    "exact": -7,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 13,
+    "result": 10,
+    "result_signed": -6,
+    "exact": -6,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 14,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 13,
+    "b": 15,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 0,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 1,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 2,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 3,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 4,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 5,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 6,
+    "result": 4,
+    "result_signed": 4,
+    "exact": 4,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 7,
+    "result": 5,
+    "result_signed": 5,
+    "exact": 5,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 8,
+    "result": 6,
+    "result_signed": 6,
+    "exact": -10,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 14,
+    "b": 9,
+    "result": 7,
+    "result_signed": 7,
+    "exact": -9,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 14,
+    "b": 10,
+    "result": 8,
+    "result_signed": -8,
+    "exact": -8,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 11,
+    "result": 9,
+    "result_signed": -7,
+    "exact": -7,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 12,
+    "result": 10,
+    "result_signed": -6,
+    "exact": -6,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 13,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 14,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 14,
+    "b": 15,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 0,
+    "result": 15,
+    "result_signed": -1,
+    "exact": -1,
+    "carry": 0,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 1,
+    "result": 0,
+    "result_signed": 0,
+    "exact": 0,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 2,
+    "result": 1,
+    "result_signed": 1,
+    "exact": 1,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 3,
+    "result": 2,
+    "result_signed": 2,
+    "exact": 2,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 4,
+    "result": 3,
+    "result_signed": 3,
+    "exact": 3,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 5,
+    "result": 4,
+    "result_signed": 4,
+    "exact": 4,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 6,
+    "result": 5,
+    "result_signed": 5,
+    "exact": 5,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 7,
+    "result": 6,
+    "result_signed": 6,
+    "exact": 6,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 8,
+    "result": 7,
+    "result_signed": 7,
+    "exact": -9,
+    "carry": 1,
+    "overflow": true
+  },
+  {
+    "a": 15,
+    "b": 9,
+    "result": 8,
+    "result_signed": -8,
+    "exact": -8,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 10,
+    "result": 9,
+    "result_signed": -7,
+    "exact": -7,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 11,
+    "result": 10,
+    "result_signed": -6,
+    "exact": -6,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 12,
+    "result": 11,
+    "result_signed": -5,
+    "exact": -5,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 13,
+    "result": 12,
+    "result_signed": -4,
+    "exact": -4,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 14,
+    "result": 13,
+    "result_signed": -3,
+    "exact": -3,
+    "carry": 1,
+    "overflow": false
+  },
+  {
+    "a": 15,
+    "b": 15,
+    "result": 14,
+    "result_signed": -2,
+    "exact": -2,
+    "carry": 1,
+    "overflow": false
+  }
+]

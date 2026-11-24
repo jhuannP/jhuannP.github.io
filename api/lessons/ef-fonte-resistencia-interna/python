@@ -1,0 +1,7 @@
+from fractions import Fraction as F
+emf,r,R=F(12),F(2),F(6)
+I=emf/(r+R);V=I*R
+load=I*I*R;internal=I*I*r
+assert emf*I==load+internal
+assert (I,V,load,internal)==(F(3,2),F(9),F(27,2),F(9,2))
+print(I,V,load,internal)

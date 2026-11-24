@@ -1,0 +1,8 @@
+from importlib import import_module
+lab=import_module("labs.certificados.subsets")
+conferir=lab.verify
+procurar=lab.search
+assert conferir([2,5,9],11,[0,2])
+assert not conferir([2,5,9],4,[0,0])
+assert procurar([2,5,9],11)==[0,2]
+print(procurar([2,5,9],11))

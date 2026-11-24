@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" role="img" aria-labelledby="title desc">
+<title id="title">Duas retiradas sem reposição</title><desc id="desc">Urna inicial com três vermelhas V e duas azuis A. Primeiro V com chance três quintos, ou A com dois quintos. Após V, chances de V e A iguais a um meio. Após A, V tem chance três quartos e A um quarto. Caminhos VV, VA e AV têm massa três décimos cada; AA tem massa um décimo.</desc>
+<rect width="360" height="460" fill="#faf9f2"/>
+<g stroke="#55594c" stroke-width="1.5" fill="none"><path d="M180 65 L90 155 M180 65 L270 155 M90 208 L45 320 M90 208 L135 320 M270 208 L225 320 M270 208 L315 320"/></g>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#22271b">
+<text x="180" y="30" font-size="20" font-weight="bold">3 vermelhas · 2 azuis</text><text x="180" y="54" font-size="15">Cada objeto restante tem a mesma chance</text>
+<g font-size="18" font-weight="bold"><text x="86" y="110">V: 3/5</text><text x="274" y="110">A: 2/5</text></g>
+<g font-size="17"><text x="90" y="177">Saiu V</text><text x="270" y="177">Saiu A</text><text x="90" y="200">Restam 2V, 2A</text><text x="270" y="200">Restam 3V, 1A</text></g>
+<g fill="#faf9f2"><rect x="24" y="252" width="42" height="25"/><rect x="114" y="252" width="42" height="25"/><rect x="204" y="252" width="42" height="25"/><rect x="294" y="252" width="42" height="25"/></g>
+<g font-size="18"><text x="45" y="271">1/2</text><text x="135" y="271">1/2</text><text x="225" y="271">3/4</text><text x="315" y="271">1/4</text></g>
+<g font-size="20" font-weight="bold"><text x="45" y="345">VV</text><text x="135" y="345">VA</text><text x="225" y="345">AV</text><text x="315" y="345">AA</text></g>
+<g font-size="19" fill="#2447ae"><text x="45" y="379">3/10</text><text x="135" y="379">3/10</text><text x="225" y="379">3/10</text><text x="315" y="379">1/10</text></g>
+<text x="180" y="416" font-size="16">Massa de cada caminho = produto dos ramos</text><text x="180" y="442" font-size="16">As quatro massas somam 1</text></g></svg>

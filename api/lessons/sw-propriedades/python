@@ -1,0 +1,5 @@
+K=lambda m,v:m*v*v/2
+for m in (0,1,3):
+    for v in (-2,0,4):
+        assert K(m,-v)==K(m,v) and K(m,2*v)==4*K(m,v)
+print(4)

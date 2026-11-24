@@ -1,0 +1,62 @@
+[
+  {
+    "ratio": 0.5,
+    "v2": 1.5,
+    "p2": 200.0,
+    "isothermal": -207.94415416798358,
+    "pressure_first": -300.0,
+    "volume_first": -150.0,
+    "intermediate_pressure_first": 600.0,
+    "intermediate_volume_first": 150.0
+  },
+  {
+    "ratio": 1.0,
+    "v2": 3.0,
+    "p2": 100.0,
+    "isothermal": 0.0,
+    "pressure_first": 0.0,
+    "volume_first": 0.0,
+    "intermediate_pressure_first": 300.0,
+    "intermediate_volume_first": 300.0
+  },
+  {
+    "ratio": 1.5,
+    "v2": 4.5,
+    "p2": 66.66666666666667,
+    "isothermal": 121.63953243244931,
+    "pressure_first": 100.0,
+    "volume_first": 150.0,
+    "intermediate_pressure_first": 200.0,
+    "intermediate_volume_first": 450.0
+  },
+  {
+    "ratio": 2.0,
+    "v2": 6.0,
+    "p2": 50.0,
+    "isothermal": 207.94415416798358,
+    "pressure_first": 150.0,
+    "volume_first": 300.0,
+    "intermediate_pressure_first": 150.0,
+    "intermediate_volume_first": 600.0
+  },
+  {
+    "ratio": 2.5,
+    "v2": 7.5,
+    "p2": 40.0,
+    "isothermal": 274.8872195622465,
+    "pressure_first": 180.0,
+    "volume_first": 450.0,
+    "intermediate_pressure_first": 120.0,
+    "intermediate_volume_first": 750.0
+  },
+  {
+    "ratio": 3.0,
+    "v2": 9.0,
+    "p2": 33.333333333333336,
+    "isothermal": 329.5836866004329,
+    "pressure_first": 200.0,
+    "volume_first": 600.0,
+    "intermediate_pressure_first": 100.0,
+    "intermediate_volume_first": 900.0
+  }
+]

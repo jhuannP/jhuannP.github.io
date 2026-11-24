@@ -1,0 +1,5 @@
+"""Exemplo inicial: triângulo 0≤y≤x≤1, integrando x+y."""
+inner=lambda y:.5+y-1.5*y*y
+result=.5+.5-.5
+assert result==.5
+print(result)

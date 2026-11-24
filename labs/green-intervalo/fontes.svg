@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 470" role="img" aria-labelledby="title desc">
+<title id="title">Resposta pontual e resposta a uma faixa</title><desc id="desc">Esquema funcional de respostas em intervalo unitário, fonte total um e centro meio. Resposta pontual triangular com topo 1/4; faixa de semilargura 1/8 tem topo arredondado 7/32. Sem escala vertical comum.</desc>
+<rect width="680" height="470" rx="22" fill="#f4efe3"/><g font-family="sans-serif" fill="#163d39">
+<text x="26" y="38" font-size="26" font-weight="700">Mesma intensidade total. Outra fonte.</text>
+<text x="26" y="75" font-size="20">L=1 • centro a=1/2 • Q=1 • valores adimensionais</text>
+<rect x="22" y="102" width="307" height="270" rx="15" fill="#e0e8dc"/>
+<rect x="351" y="102" width="307" height="270" rx="15" fill="#e0e8dc"/>
+<text x="42" y="143" font-size="23" font-weight="700">Fonte ideal: δ</text>
+<text x="371" y="143" font-size="23" font-weight="700">Faixa: ε=1/8</text>
+<path d="M48 322 L175 192 L302 322" fill="none" stroke="#176c64" stroke-width="4"/>
+<path d="M377 322 L472 224 Q504 192 536 224 L632 322" fill="none" stroke="#176c64" stroke-width="4"/>
+<path d="M48 325 H302 M377 325 H632" stroke="#526b62" stroke-width="2"/>
+<text x="175" y="180" text-anchor="middle" font-size="22">pico: 1/4</text>
+<text x="505" y="180" text-anchor="middle" font-size="22">pico: 7/32</text>
+<text x="48" y="352" font-size="19">0</text><text x="292" y="352" font-size="19">1</text>
+<text x="377" y="352" font-size="19">0</text><text x="621" y="352" font-size="19">1</text>
+<text x="26" y="408" font-size="21">Diferença no centro: 1/32 • limite uniforme: 1/16</text>
+<text x="26" y="443" font-size="17">Esquemas das respostas, sem escala vertical comum • não são medições</text>
+</g></svg>

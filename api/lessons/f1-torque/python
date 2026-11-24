@@ -1,0 +1,4 @@
+x,y,Fx,Fy=2,0,0,3
+tau=x*Fy-y*Fx
+assert tau==6
+print(tau)

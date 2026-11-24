@@ -1,0 +1,29 @@
+from math import exp,log1p,sqrt,hypot,atan2,cos,sin,isfinite
+from random import Random
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def sigmoid(z):
+    z=finite(z)
+    if z>=0:v=exp(-z);return 1/(1+v)
+    v=exp(z);return v/(1+v)
+
+def paired(x,y):
+    a=[finite(v) for v in x];b=[finite(v) for v in y]
+    if not a or len(a)!=len(b):raise ValueError('Dados não vazios de mesmo tamanho necessários')
+    return a,b
+
+def logistic_loss(x,y,w,b):
+    x,y=paired(x,y)
+    if any(v not in [0,1] for v in y):raise ValueError('Rótulos binários necessários')
+    z=[finite(w*a+b) for a in x]
+    return sum(max(v if t==0 else -v,0)+log1p(exp(-abs(v))) for v,t in zip(z,y))/len(y)
+
+assert sigmoid(0)==.5
+assert abs(logistic_loss([1],[1],0,0)-0.6931471805599453)<1e-12
+print(sigmoid(0))

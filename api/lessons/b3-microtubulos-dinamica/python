@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+length=Q(3)
+for velocity,duration in [(Q(1,5),10),(-Q(1,2),4),(Q(1,5),5)]:
+    length+=velocity*duration
+    assert length>=0
+assert length==4
+print(length)

@@ -1,0 +1,1460 @@
+[
+  {
+    "species": 0,
+    "b1": 1,
+    "b2": 1,
+    "b3": 1,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      6,
+      6
+    ],
+    "shells": [
+      6,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      2,
+      -1,
+      -1,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 1,
+    "b2": 1,
+    "b3": 2,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      6,
+      4
+    ],
+    "shells": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      1,
+      -1,
+      -1,
+      0
+    ],
+    "octets": true
+  },
+  {
+    "species": 0,
+    "b1": 1,
+    "b2": 1,
+    "b3": 3,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      6,
+      2
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      0,
+      -1,
+      -1,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 1,
+    "b2": 2,
+    "b3": 1,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      4,
+      6
+    ],
+    "shells": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      1,
+      -1,
+      0,
+      -1
+    ],
+    "octets": true
+  },
+  {
+    "species": 0,
+    "b1": 1,
+    "b2": 2,
+    "b3": 2,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      4,
+      4
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      0,
+      -1,
+      0,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 1,
+    "b2": 2,
+    "b3": 3,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      4,
+      2
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      -1,
+      0,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 1,
+    "b2": 3,
+    "b3": 1,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      2,
+      6
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      0,
+      -1,
+      1,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 1,
+    "b2": 3,
+    "b3": 2,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      2,
+      4
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      -1,
+      1,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 1,
+    "b2": 3,
+    "b3": 3,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      2,
+      2
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      -1,
+      1,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 2,
+    "b2": 1,
+    "b3": 1,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      6,
+      6
+    ],
+    "shells": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      1,
+      0,
+      -1,
+      -1
+    ],
+    "octets": true
+  },
+  {
+    "species": 0,
+    "b1": 2,
+    "b2": 1,
+    "b3": 2,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      6,
+      4
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      0,
+      0,
+      -1,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 2,
+    "b2": 1,
+    "b3": 3,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      6,
+      2
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      0,
+      -1,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 2,
+    "b2": 2,
+    "b3": 1,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      4,
+      6
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      0,
+      0,
+      0,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 2,
+    "b2": 2,
+    "b3": 2,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      4,
+      4
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      0,
+      0,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 2,
+    "b2": 2,
+    "b3": 3,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      4,
+      2
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      0,
+      0,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 2,
+    "b2": 3,
+    "b3": 1,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      2,
+      6
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      0,
+      1,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 2,
+    "b2": 3,
+    "b3": 2,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      2,
+      4
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      0,
+      1,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 2,
+    "b2": 3,
+    "b3": 3,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      2,
+      2
+    ],
+    "shells": [
+      16,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -3,
+      0,
+      1,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 3,
+    "b2": 1,
+    "b3": 1,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      6,
+      6
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      0,
+      1,
+      -1,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 3,
+    "b2": 1,
+    "b3": 2,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      6,
+      4
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      1,
+      -1,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 3,
+    "b2": 1,
+    "b3": 3,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      6,
+      2
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      1,
+      -1,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 3,
+    "b2": 2,
+    "b3": 1,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      4,
+      6
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      1,
+      0,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 3,
+    "b2": 2,
+    "b3": 2,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      4,
+      4
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      1,
+      0,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 3,
+    "b2": 2,
+    "b3": 3,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      4,
+      2
+    ],
+    "shells": [
+      16,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -3,
+      1,
+      0,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 3,
+    "b2": 3,
+    "b3": 1,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      2,
+      6
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      1,
+      1,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 3,
+    "b2": 3,
+    "b3": 2,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      2,
+      4
+    ],
+    "shells": [
+      16,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -3,
+      1,
+      1,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 0,
+    "b1": 3,
+    "b2": 3,
+    "b3": 3,
+    "symbol": "N",
+    "charge": -1,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      2,
+      2
+    ],
+    "shells": [
+      18,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -4,
+      1,
+      1,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 1,
+    "b2": 1,
+    "b3": 1,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      6,
+      6
+    ],
+    "shells": [
+      6,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 1,
+    "b2": 1,
+    "b3": 2,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      6,
+      4
+    ],
+    "shells": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      0,
+      -1,
+      -1,
+      0
+    ],
+    "octets": true
+  },
+  {
+    "species": 1,
+    "b1": 1,
+    "b2": 1,
+    "b3": 3,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      6,
+      2
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      -1,
+      -1,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 1,
+    "b2": 2,
+    "b3": 1,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      4,
+      6
+    ],
+    "shells": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      0,
+      -1,
+      0,
+      -1
+    ],
+    "octets": true
+  },
+  {
+    "species": 1,
+    "b1": 1,
+    "b2": 2,
+    "b3": 2,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      4,
+      4
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      -1,
+      0,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 1,
+    "b2": 2,
+    "b3": 3,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      4,
+      2
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      -1,
+      0,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 1,
+    "b2": 3,
+    "b3": 1,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      2,
+      6
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      -1,
+      1,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 1,
+    "b2": 3,
+    "b3": 2,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      2,
+      4
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      -1,
+      1,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 1,
+    "b2": 3,
+    "b3": 3,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      6,
+      2,
+      2
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -3,
+      -1,
+      1,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 2,
+    "b2": 1,
+    "b3": 1,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      6,
+      6
+    ],
+    "shells": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      0,
+      0,
+      -1,
+      -1
+    ],
+    "octets": true
+  },
+  {
+    "species": 1,
+    "b1": 2,
+    "b2": 1,
+    "b3": 2,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      6,
+      4
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      0,
+      -1,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 2,
+    "b2": 1,
+    "b3": 3,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      6,
+      2
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      0,
+      -1,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 2,
+    "b2": 2,
+    "b3": 1,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      4,
+      6
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      0,
+      0,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 2,
+    "b2": 2,
+    "b3": 2,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      4,
+      4
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      0,
+      0,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 2,
+    "b2": 2,
+    "b3": 3,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      4,
+      2
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -3,
+      0,
+      0,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 2,
+    "b2": 3,
+    "b3": 1,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      2,
+      6
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      0,
+      1,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 2,
+    "b2": 3,
+    "b3": 2,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      2,
+      4
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -3,
+      0,
+      1,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 2,
+    "b2": 3,
+    "b3": 3,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      4,
+      2,
+      2
+    ],
+    "shells": [
+      16,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -4,
+      0,
+      1,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 3,
+    "b2": 1,
+    "b3": 1,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      6,
+      6
+    ],
+    "shells": [
+      10,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -1,
+      1,
+      -1,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 3,
+    "b2": 1,
+    "b3": 2,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      6,
+      4
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      1,
+      -1,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 3,
+    "b2": 1,
+    "b3": 3,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      6,
+      2
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -3,
+      1,
+      -1,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 3,
+    "b2": 2,
+    "b3": 1,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      4,
+      6
+    ],
+    "shells": [
+      12,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -2,
+      1,
+      0,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 3,
+    "b2": 2,
+    "b3": 2,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      4,
+      4
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -3,
+      1,
+      0,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 3,
+    "b2": 2,
+    "b3": 3,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      4,
+      2
+    ],
+    "shells": [
+      16,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -4,
+      1,
+      0,
+      1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 3,
+    "b2": 3,
+    "b3": 1,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      2,
+      6
+    ],
+    "shells": [
+      14,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -3,
+      1,
+      1,
+      -1
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 3,
+    "b2": 3,
+    "b3": 2,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      2,
+      4
+    ],
+    "shells": [
+      16,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -4,
+      1,
+      1,
+      0
+    ],
+    "octets": false
+  },
+  {
+    "species": 1,
+    "b1": 3,
+    "b2": 3,
+    "b3": 3,
+    "symbol": "C",
+    "charge": -2,
+    "total_electrons": 24,
+    "lone": [
+      2,
+      2,
+      2
+    ],
+    "shells": [
+      18,
+      8,
+      8,
+      8
+    ],
+    "formal": [
+      -5,
+      1,
+      1,
+      1
+    ],
+    "octets": false
+  }
+]

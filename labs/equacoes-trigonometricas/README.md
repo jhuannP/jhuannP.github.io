@@ -1,0 +1,15 @@
+# Equações trigonométricas: famílias e intervalo
+
+28/10/2026. Extensão original com apoio de IA,para revisão de Jhuann. Python opcional e ensino médio;sem certificação de currículo completo ou aula ministrada.
+
+Círculo e periodicidade fornecem sinθ=1/2:θ=π/6+2kπ ou5π/6+2kπ,k inteiro. São famílias clássicas,não descoberta pessoal. No exemplo próprio sin(2x−π/6)=1/2,isolamos x:π/6+kπ ouπ/2+kπ. Em0≤x<2π resultamπ/6,π/2,7π/6,3π/2. Verificação por substituição e filtragem justifica as quatro raízes;um gráfico amostrado não prova ausência de outras.
+
+Para cosx=1,[0,2π) contém somente0;[0,2π] contém0 e2π. Mesmo ponto final no círculo não torna iguais números diferentes do domínio. Seno/cosseno em[−1,1] e domínio da tangente precisam ser respeitados. tanθ=1 temπ/4+kπ;não incluir pontosπ/2+kπ. Em argumento constante,a0,uma equação pode valer em todo o intervalo ou em nenhum ponto;dividir por zero é incorreto.
+
+`roots.py` não chama sin nem deduz identidades ou famílias. Recebe argumentos/famílias em múltiplos racionais deπ. u=x/π;argumento/π=a·u+b;raízes base r e período P fornecidos. Resolve u=(r+kP−b)/a para cada família. Calcula o intervalo transformado,inclusive a negativo,determina k por ceil/floor racionais e confere domínio original. Isso fundamenta completude relativa às famílias fornecidas. O conjunto remove duplicatas. Saída1/6 significaπ/6 rad,não1/6 rad. Caso a0 retorna intervalo inteiro ou lista vazia.
+
+Contrato:int/Fraction estritos,sem bool/float;1–8 bases canônicas0≤r<P,P>0,lo<hi,extremo esquerdo incluído e direito configurável. Mais de10000candidatos por família é rejeitado. Sem intervalos infinitos,solução numérica para alvos arbitrários,incerteza de medidas ou validação de que a família corresponde à equação original. Referência e função trigonométrica devem ser demonstradas antes. `cruzamentos.svg` é gráfico ilustrativo próprio em float,com raízes racionais marcadas.
+
+Fonte primária complementar: OpenStax Algebra and Trigonometry2e,§9.5,https://openstax.org/books/algebra-and-trigonometry-2e/pages/9-5-solving-trigonometric-equations ,consulta parcial em28/10/2026 à introdução,famílias gerais de seno/cosseno e período/domínio da tangente. Tentativa inicial com seção7.5 indisponível;sumário/resultado oficial localizou9.5,que foi aberta. Sem leitura integral,vídeo ou cópia de exercícios/soluções;argumento transformado,derivação didática,figura,código e testes próprios. Referências anteriores preservadas e nenhum livro privado relido. Sem equivalência administrativa USP ou currículo brasileiro completo presumidos.
+
+Quatro testes:exemplo/famílias;18 transformações a/b contra enumeração independente limitada,com congruência exata;a negativo,extremos,duplicatas e constantes;contratos. Executar `python3 -m unittest discover -s labs/equacoes-trigonometricas -t .` e `python3 labs/equacoes-trigonometricas/roots.py`. Código,simulação,exemplo,desafio e exercícios anteriores da aula preservados. Revisão conceitual/pessoal,Windows real,leitor de tela e uso com aluno pendentes.

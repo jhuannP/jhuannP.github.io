@@ -1,0 +1,3 @@
+record={"x":{"name":"tempo","unit":"s"},"y":{"name":"posição","unit":"m"}}
+assert all(record[k]["name"] and record[k]["unit"] for k in ("x","y"))
+print(record)

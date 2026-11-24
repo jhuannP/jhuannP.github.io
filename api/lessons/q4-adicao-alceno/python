@@ -1,0 +1,8 @@
+# Teto estequiométrico de uma transformação única 1:1; dados fictícios.
+from fractions import Fraction as Q
+alkene, hcl = Q(3,100), Q(2,100)
+extent = min(alkene,hcl)
+assert extent == Q(1,50)
+assert alkene-extent == Q(1,100)
+print('Teto de produto (mol):',extent)
+print('Alceno restante nesse teto (mol):',alkene-extent)

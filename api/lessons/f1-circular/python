@@ -1,0 +1,4 @@
+v,R=4.,2.
+a=v*v/R
+assert a==8
+print(a)

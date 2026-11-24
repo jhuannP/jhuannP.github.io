@@ -1,0 +1,4 @@
+C1=C2=1.;T1,T2=20.,60.
+Tf=(C1*T1+C2*T2)/(C1+C2)
+assert Tf==40
+print(Tf)

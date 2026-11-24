@@ -1,0 +1,3 @@
+train={1,2,3};test={3,4}
+assert train&test=={3}
+print(train&test)

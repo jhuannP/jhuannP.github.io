@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+def f(x):
+    x=Q(x)
+    return None if x==-2 else (x-1)/(x+2)
+assert f(-3)==4 and f(0)==Q(-1,2) and f(2)==Q(1,4)
+assert f(-2) is None and f(1)==0
+print('Domínio e valores conferidos')

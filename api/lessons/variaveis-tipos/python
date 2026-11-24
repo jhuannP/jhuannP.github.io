@@ -1,0 +1,5 @@
+velocidade_m_s = 4.0
+tempo_s = 7.0
+deslocamento_m = velocidade_m_s * tempo_s
+print(f"Deslocamento: {deslocamento_m:.1f} m")
+print(type(deslocamento_m).__name__)

@@ -1,0 +1,4 @@
+source_integral=1
+boundary_derivative_jump=0
+assert source_integral!=-boundary_derivative_jump
+print('Dados incompatíveis para Neumann homogêneo')

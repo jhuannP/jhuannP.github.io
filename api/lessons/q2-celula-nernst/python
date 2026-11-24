@@ -1,0 +1,8 @@
+import math
+R=8.314462618; F=96485.33212
+T=300.; n=2; e0=.60
+ln_q=math.log(.10)-math.log(.001)
+e=e0-R*T/(n*F)*ln_q
+dg=-n*F*e
+assert 0 < e < e0
+print("E (V):",e,"Delta_r_G (kJ/mol):",dg/1000)

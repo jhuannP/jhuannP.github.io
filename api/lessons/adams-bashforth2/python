@@ -1,0 +1,56 @@
+from math import isfinite,sqrt,exp,sin,cos,pi,log,comb
+
+def budget(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<=0:
+        raise ValueError('Quantidade inteira positiva necessária')
+    return n
+
+def finite(x):
+    if isinstance(x,bool): raise ValueError('Número real finito necessário')
+    try: y=float(x)
+    except (TypeError,ValueError,OverflowError): raise ValueError('Número real finito necessário') from None
+    if not isfinite(y): raise ValueError('Número real finito necessário')
+    return y
+
+def vector(x):
+    y=[finite(v) for v in x]
+    if not y: raise ValueError('Vetor vazio')
+    return y
+
+def slope(f,t,y):
+    dy=vector(f(t,list(y)))
+    if len(dy)!=len(y): raise ValueError('Dimensão da derivada incompatível')
+    return dy
+
+def step(f,t,y,h,method='rk4'):
+    t=finite(t);h=finite(h);y=vector(y)
+    if h<=0 or t+h==t: raise ValueError('Passo positivo e resolvido em float necessário')
+    k1=slope(f,t,y)
+    if method=='euler': return [finite(a+h*b) for a,b in zip(y,k1)]
+    if method=='heun':
+        k2=slope(f,t+h,[a+h*b for a,b in zip(y,k1)])
+        return [finite(a+h*(b+c)/2) for a,b,c in zip(y,k1,k2)]
+    if method!='rk4': raise ValueError('Método desconhecido')
+    k2=slope(f,t+h/2,[a+h*b/2 for a,b in zip(y,k1)])
+    k3=slope(f,t+h/2,[a+h*b/2 for a,b in zip(y,k2)])
+    k4=slope(f,t+h,[a+h*b for a,b in zip(y,k3)])
+    return [finite(a+h*(b+2*c+2*d+e)/6) for a,b,c,d,e in zip(y,k1,k2,k3,k4)]
+
+def adams_bashforth2(f,t0,t1,y0,n):
+    n=budget(n)
+    if n<2: raise ValueError('AB2 precisa de ao menos dois passos')
+    t0=finite(t0);t1=finite(t1)
+    if t1<=t0: raise ValueError('Intervalo deve crescer')
+    h=(t1-t0)/n;prev=vector(y0);current=step(f,t0,prev,h)
+    trace=[(t0,list(prev)),(t0+h,list(current))]
+    old=slope(f,t0,prev)
+    for i in range(1,n):
+        now=slope(f,t0+i*h,current)
+        nxt=[finite(a+h*(3*b-c)/2) for a,b,c in zip(current,now,old)]
+        prev,current=current,nxt;trace.append((t0+(i+1)*h,list(current)))
+        old=now
+    return trace
+
+v=adams_bashforth2(lambda t,y:[-y[0]],0,1,[1],40)[-1][1][0]
+assert abs(v-exp(-1))<.001
+print(v)

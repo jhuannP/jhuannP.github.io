@@ -1,0 +1,114 @@
+/* Tema "Observatório noturno" (remake 03), aplicado sobre style.css.
+   Escuro por padrão, Newsreader + IBM Plex. Simulações ficam em lâminas claras para preservar a leitura dos gráficos. */
+:root{
+  --paper:#050a1c;--ink:#e7edfb;--muted:#9aa6c6;--line:#1f2c50;--blue:#7aa8ff;--pale:#14244d;
+  --sky-2:#0a1229;--sky-3:#0d1630;--azul:#1662F5;--glow:rgba(91,149,255,.35);--rosa:#f5a3bd;--ciano:#5fd4ff;
+  --display:"Newsreader",Georgia,serif;--text:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+  color-scheme:dark}
+body{background:radial-gradient(1100px 600px at 75% -10%,#14244d 0%,transparent 60%),var(--paper);background-attachment:fixed}
+::selection{background:var(--azul);color:#fff}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline-color:var(--ciano)}
+
+/* cabeçalho */
+.header{position:sticky;top:0;background:rgba(5,10,28,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.logo{font:italic 600 34px var(--display);letter-spacing:-.02em}.logo span{color:var(--ciano)}
+.header nav a{color:#b8c4e0}.header nav a:hover,.header nav a[aria-current=page]{color:var(--ink)}.header nav a:after{background:var(--ciano)}
+@media(max-width:720px){.header nav{background:rgba(5,10,28,.97)}}
+
+/* tipografia: Newsreader pede menos aperto que Space Grotesk */
+.section h2,.page-title,.blue-band h2,.path-row h3,.detail-row h3,.subjects h3,.quote,.timeline-item h3,.lesson-intro h1,.lesson-body h2,.lesson-body h3,.course-row h2,.module-heading h3,.course-program>h2,.academic-map h2,.study-guide>h2,.fact-row h3,.footer-name,.hero h2{letter-spacing:-.01em;font-weight:500}
+.section h2 em,.page-title em{color:var(--blue)}
+.eyebrow,.section-label,.row-number,.detail-row .stamp,.module-heading span,.timeline-item span{font-family:var(--mono);letter-spacing:.12em}
+.page-intro .eyebrow,.lesson-intro>.eyebrow{color:var(--ciano)}
+
+/* botões e links */
+.button{background:var(--azul);color:#fff;border-radius:999px;box-shadow:0 0 28px var(--glow)}
+.button:hover{background:#3b7bff;box-shadow:0 0 40px rgba(91,149,255,.55)}
+.text-link{border-bottom-color:var(--blue)}
+.path-row:hover{color:var(--blue)}
+
+/* faixas e seções */
+.soft-section{background:linear-gradient(180deg,var(--sky-2),var(--paper));border-block:1px solid var(--line)}
+.blue-band{background:radial-gradient(700px 300px at 85% 0%,rgba(95,212,255,.18),transparent 60%),linear-gradient(135deg,#0B2B6F,#071334);border-block:1px solid #24407e}
+.blue-band p{color:#c6d4f5}.blue-band .button{background:var(--ink);color:#071334;box-shadow:none}.blue-band .button:hover{background:#fff}
+
+/* formulários */
+input,textarea,select{border-color:#2a3a66;background:var(--sky-2);color:var(--ink);border-radius:8px}
+select option{background:var(--sky-3);color:var(--ink)}
+.field-error{color:#ff9b91}.exercise-feedback.correct{color:#4fd1a5}.exercise-feedback.retry{color:#ffb36b}
+
+/* leitura das aulas */
+.lesson-body p,.lesson-body li{color:#c3cce3}
+.equation{color:var(--blue)}
+.python-section pre,.coding-practice pre,.coding-help pre{background:#020615;color:#e8eefc;border:1px solid var(--line);border-radius:10px}
+.course-row:hover h2,.lesson-row:hover strong,.breadcrumbs a:hover{color:var(--blue)}
+.learning-aside{border-left-color:var(--line)}
+
+/* lâminas claras: simulações, figuras e tabelas de simulação mantêm a paleta original */
+.simulation-section{--paper:#f4f3eb;--ink:#20221e;--muted:#60665a;--line:#d3d7c9;--blue:#2348db;--pale:#e3e7f7;
+  background:var(--paper);color:var(--ink);border-radius:14px;padding:22px 22px 18px!important;margin:22px 0;border:1px solid #24407e;
+  box-shadow:0 0 0 4px rgba(91,149,255,.08),0 24px 60px rgba(0,0,0,.45)}
+.simulation-section p,.simulation-section li{color:var(--muted)}
+.simulation-section h2,.simulation-section h3,.simulation-section .simulation-report{color:var(--ink)}
+.simulation-section input,.simulation-section select,.simulation-section textarea{background:transparent;color:var(--ink);border-color:#b4baaa}
+.simulation-section .button{box-shadow:none}
+
+/* rodapé */
+footer{border-top-color:var(--line)}.footer-name{font:italic 600 40px var(--display)}.footer-name span{color:var(--ciano)}
+
+/* ===== home: céu ===== */
+.sky{position:relative;min-height:calc(100svh - var(--header));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 6vw 40px;overflow:hidden}
+.sky canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.sky-in{position:relative;z-index:1;max-width:880px;display:flex;flex-direction:column;align-items:center}
+.sky .eyebrow{color:#b8c4e0;margin-bottom:22px}
+.sky h1{font:400 clamp(44px,7vw,92px)/1.02 var(--display);letter-spacing:-.015em;margin:0 0 24px}.sky h1 em{color:#8fb6ff}
+.sky .intro{font-size:18px;color:#b8c4e0;max-width:580px;margin:0}
+.sky .actions{justify-content:center;margin-top:30px}
+.sky .perspective{margin-top:46px;max-width:520px}.sky .perspective>p{max-width:none;margin:10px auto 14px;font:italic 19px/1.5 var(--display);color:var(--ink);min-height:3em}
+.sky .perspective-controls{justify-content:center;border-top-color:var(--line)}.sky .perspective-controls button:first-child{padding-left:12px}
+.sky .perspective-controls button[aria-pressed=true]{color:var(--ciano);border-bottom-color:var(--ciano)}
+.sky-loc{position:absolute;right:5vw;bottom:20px;font:12px var(--mono);color:var(--muted);z-index:1}
+@media(max-width:720px){.sky{padding:44px 6vw 60px}.sky .perspective{display:block;margin-top:34px}.sky-loc{right:auto;left:6vw}}
+
+/* ===== painéis (disciplinas na home) ===== */
+.panes{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.pane{display:flex;flex-direction:column;gap:8px;padding:24px;border-radius:16px;background:linear-gradient(180deg,var(--sky-3),#091126);border:1px solid var(--line);transition:box-shadow .25s,border-color .25s,transform .25s}
+a.pane:hover{border-color:#5b95ff;box-shadow:0 0 0 1px #5b95ff,0 0 44px rgba(91,149,255,.25);transform:translateY(-3px)}
+.pane .code{font:12px var(--mono);letter-spacing:.06em;color:var(--ciano)}.pane.rosa .code{color:var(--rosa)}
+.pane b{font:500 23px/1.2 var(--display)}.pane span.d{color:var(--muted);font-size:14px}
+.pane .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}.pane .tags i{font-style:normal;font-size:12px;padding:3px 10px;border-radius:999px;background:var(--pale);color:#8fb6ff}.pane.rosa .tags i{background:#3a1a29;color:var(--rosa)}
+.pane.off{opacity:.6}
+.section .panes-note{font-size:12px;margin-top:18px}
+@media(prefers-reduced-motion:reduce){a.pane:hover{transform:none}}
+
+/* ===== páginas profissionais (perfil.js) ===== */
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chips i{font:500 12px var(--mono);font-style:normal;padding:4px 10px;border-radius:999px;background:var(--pale);color:#b8cdf5;border:1px solid #22356a}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px;margin-bottom:24px}
+.proj-grid.compact{grid-template-columns:repeat(auto-fill,minmax(280px,1fr));margin-bottom:28px}
+.proj{display:flex;flex-direction:column;gap:14px;padding:26px;border-radius:18px;background:linear-gradient(180deg,var(--sky-3),#091126);border:1px solid var(--line);transition:border-color .25s,box-shadow .25s}
+.proj:hover{border-color:#34508f;box-shadow:0 0 40px rgba(91,149,255,.12)}
+.proj-kind{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ciano)}
+.proj h3{font:500 27px/1.15 var(--display);margin:8px 0 0}
+.proj-lead{font-size:15px;color:#c3cce3;margin:0}
+.section .proj p.proj-lead{max-width:none;color:#c3cce3}
+.proj-built{margin:0;padding-left:18px;font-size:14px;color:var(--muted);line-height:1.7}
+.proj-stat{display:flex;gap:22px;border-block:1px solid var(--line);padding:10px 0}.proj-stat span{font-size:12px;color:var(--muted)}.proj-stat b{display:block;font:500 28px/1.1 var(--display);color:var(--ink)}
+.proj footer{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:auto;padding:4px 0 0;border:0}
+.proj footer a{font-size:13px;font-weight:600;color:var(--blue);border-bottom:1px solid transparent}.proj footer a:hover{border-bottom-color:var(--blue)}
+.proj footer small{flex-basis:100%;font-size:12px;color:var(--muted)}
+.skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}.skill-grid h3{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ciano);margin:0 0 10px}
+.degree-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.degree{padding:26px;border-radius:18px;background:linear-gradient(180deg,var(--sky-3),#091126);border:1px solid var(--line);border-top:3px solid #5b95ff}
+.degree.rosa{border-top-color:var(--rosa)}.degree.rosa .proj-kind{color:var(--rosa)}.degree.past{opacity:.8;border-top-color:var(--muted)}.degree.past .proj-kind{color:var(--muted)}
+.degree h3{font:500 28px/1.15 var(--display);margin:10px 0}.section .degree p{font-size:15px;color:#c3cce3;margin:0}
+.area-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.area{display:flex;flex-direction:column;gap:6px;padding:20px;border-radius:14px;border:1px solid var(--line);background:rgba(13,22,48,.6);transition:border-color .2s,transform .2s}
+.area:hover{border-color:#5b95ff;transform:translateY(-2px)}.area b{font:500 22px var(--display)}.area span{font-size:13px;color:var(--muted)}.area i{font:12px var(--mono);font-style:normal;color:var(--blue);margin-top:auto;padding-top:6px}
+.well{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center}
+.well h2{margin-bottom:16px}.well .eq{font:15px var(--mono);color:var(--ciano);white-space:nowrap}
+.well label{display:flex;justify-content:space-between;font:12px var(--mono);color:var(--muted);margin:18px 0 6px}.well output{color:var(--ciano)}
+.well input[type=range]{padding:0;border:0;min-height:30px;background:transparent;accent-color:#5b95ff;margin-bottom:8px}
+.well canvas{width:100%;height:300px;border-radius:16px;background:#040917;border:1px solid var(--line)}
+.blue-band + footer,.section + footer{margin-top:0}
+@media(max-width:1000px){.area-grid{grid-template-columns:repeat(3,1fr)}.degree-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.proj-grid,.proj-grid.compact{grid-template-columns:1fr}.skill-grid,.degree-grid,.well{grid-template-columns:1fr}.area-grid{grid-template-columns:1fr 1fr}.well canvas{height:220px}.proj{padding:22px}}

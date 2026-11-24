@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="600" viewBox="0 0 480 600" role="img" aria-labelledby="title desc"><title id="title">Passo, erro e limites da checagem</title><desc id="desc">No polinômio J(a,b)=a à quarta dividido por quatro mais ab mais b ao quadrado dividido por dois, em (1,2), a derivada em a é três. A diferença central exata é três mais h ao quadrado. Três passos ilustram redução do erro. Uma direção isolada pode esconder erro: gradientes (3,3) e (4,2) têm produto seis com (1,1).</desc>
+<rect width="480" height="600" fill="#f7f8fa"/>
+<g font-family="Arial, sans-serif" fill="#172334">
+<text x="26" y="37" font-size="23" font-weight="700">Compare mais de um passo</text>
+<text x="26" y="69" font-size="17">J(a,b) = a⁴/4 + ab + b²/2</text>
+<text x="26" y="101" font-size="17">Em (1,2): ∂J/∂a = 3</text>
+<text x="26" y="139" font-size="20" fill="#174c91" font-weight="700">Diferença central exata: 3 + h²</text>
+<path d="M26 165H454" stroke="#bec7d2"/>
+<text x="26" y="198" font-size="17" font-weight="700">h</text><text x="147" y="198" font-size="17" font-weight="700">Estimativa</text><text x="320" y="198" font-size="17" font-weight="700">Erro</text>
+<text x="26" y="238" font-size="19">0,1</text><text x="147" y="238" font-size="19">3,01</text><text x="320" y="238" font-size="19">0,01</text>
+<text x="26" y="278" font-size="19">0,01</text><text x="147" y="278" font-size="19">3,0001</text><text x="320" y="278" font-size="19">0,0001</text>
+<text x="26" y="318" font-size="19">0,001</text><text x="147" y="318" font-size="19">3,000001</text><text x="320" y="318" font-size="19">0,000001</text>
+<path d="M26 343H454" stroke="#bec7d2"/>
+<text x="26" y="375" font-size="17">Em float, o arredondamento também conta.</text>
+<text x="26" y="402" font-size="17">Passo menor não é garantia de erro menor.</text>
+<text x="26" y="448" font-size="21" font-weight="700">Uma direção pode esconder erro</text>
+<text x="26" y="480" font-size="18">(3,3) · (1,1) = 6</text>
+<text x="26" y="511" font-size="18">(4,2) · (1,1) = 6</text>
+<text x="26" y="548" font-size="17" fill="#174c91">Mesma projeção, gradientes diferentes.</text>
+<text x="26" y="578" font-size="15">Exemplo analítico original; não é benchmark.</text>
+</g></svg>

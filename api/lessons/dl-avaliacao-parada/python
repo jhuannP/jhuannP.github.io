@@ -1,0 +1,4 @@
+validation=[.8,.5,.6]
+best=min(range(len(validation)),key=validation.__getitem__)
+assert best==1
+print(best)

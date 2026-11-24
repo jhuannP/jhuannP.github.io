@@ -1,0 +1,32 @@
+from math import exp,expm1,isfinite,sqrt,log
+from random import Random
+
+def _finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def ou_moments(theta,sigma,x0,t):
+    theta=_finite(theta);sigma=_finite(sigma);x0=_finite(x0);t=_finite(t)
+    if theta<=0 or sigma<0 or t<0:raise ValueError('theta>0, sigma>=0 e t>=0 necessários')
+    a=exp(-theta*t)
+    return _finite(a*x0),_finite(sigma*sigma*(-expm1(-2*theta*t))/(2*theta))
+
+def ou_transition(x,theta,sigma,dt,z):
+    mean,var=ou_moments(theta,sigma,x,dt)
+    if dt<=0:raise ValueError('Passo positivo necessário')
+    return _finite(mean+sqrt(var)*_finite(z))
+
+def empirical_autocov(values,lag):
+    xs=[_finite(x) for x in values];n=len(xs)
+    if isinstance(lag,bool) or not isinstance(lag,int) or lag<0 or lag>=n:raise ValueError('Lag incompatível')
+    mean=sum(xs)/n
+    # Denominador n-lag; média amostral única; estimador não chamado não viesado.
+    return sum((xs[i]-mean)*(xs[i+lag]-mean) for i in range(n-lag))/(n-lag)
+
+rng=Random(42);x=rng.gauss(0,1);values=[]
+for _ in range(2000):
+    x=ou_transition(x,2,2,.01,rng.gauss(0,1));values.append(x)
+print(empirical_autocov(values,0),empirical_autocov(values,50),exp(-1))

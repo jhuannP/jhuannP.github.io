@@ -1,0 +1,6 @@
+from math import sin,cos,radians,isclose
+angle=radians(30)
+assert isclose(sin(angle),.5,abs_tol=1e-12)
+assert isclose(sin(angle)**2+cos(angle)**2,1,abs_tol=1e-12)
+assert not isclose(sin(30),.5,abs_tol=1e-3)
+print(angle,sin(angle))

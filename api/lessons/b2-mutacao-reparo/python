@@ -1,0 +1,7 @@
+from importlib import import_module
+v=import_module("labs.mutacao-reparo.variants")
+ref="ATGGAATTTTAA"
+assert v.read_coding_dna(ref)["peptide"]=="MEF"
+assert v.read_coding_dna(v.substitute(ref,6,"G"))["peptide"]=="MEF"
+out=v.read_coding_dna(v.delete(ref,4))
+assert (out["peptide"],out["stop_offset"],out["suffix"])==("MNF",None,"AA")

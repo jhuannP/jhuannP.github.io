@@ -1,0 +1,6 @@
+from itertools import product
+for a,b in product((False,True),repeat=2):
+    esquerda=not (a and b)
+    direita=(not a) or (not b)
+    assert esquerda==direita
+    print(int(a),int(b),int(esquerda))

@@ -1,0 +1,7 @@
+from math import pi
+R=1
+circulation=2*pi*R*R
+assert abs(circulation/pi-2)<1e-12
+# Gauss: campo (x,y,z), esfera de raio 1.
+assert abs(3*(4*pi/3)-4*pi)<1e-12
+print(circulation)

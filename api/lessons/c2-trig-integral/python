@@ -1,0 +1,5 @@
+from math import sin,pi
+F=lambda x:x/2-sin(2*x)/4
+average=(F(pi)-F(0))/pi
+assert abs(average-.5)<1e-12
+print(average)

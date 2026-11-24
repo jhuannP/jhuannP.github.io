@@ -1,0 +1,62 @@
+from math import isfinite,sqrt,exp,sin,cos,pi,log,comb
+
+def budget(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<=0:
+        raise ValueError('Quantidade inteira positiva necessária')
+    return n
+
+def _real(value):
+    try:
+        if isinstance(value,bool): raise ValueError
+        result=float(value)
+    except (TypeError,ValueError,OverflowError):
+        raise ValueError('Valor real finito necessário') from None
+    if not isfinite(result): raise ValueError('Valor real finito necessário')
+    return result
+
+def _system(A,b):
+    n=len(A)
+    if n==0 or len(b)!=n or any(len(row)!=n for row in A):raise ValueError('Sistema quadrado não vazio necessário')
+    return [[_real(x) for x in row] for row in A],[_real(x) for x in b]
+
+def gauss_pivoteamento(A,b):
+    A,b=_system(A,b);n=len(b)
+    for k in range(n):
+        p=max(range(k,n),key=lambda i:abs(A[i][k]))
+        if A[p][k]==0:raise ArithmeticError('Pivô zero: sistema não resolvido por esta fatoração')
+        A[k],A[p]=A[p],A[k];b[k],b[p]=b[p],b[k]
+        for i in range(k+1,n):
+            fator=A[i][k]/A[k][k];A[i][k]=0.0
+            for j in range(k+1,n):A[i][j]=_real(A[i][j]-fator*A[k][j])
+            b[i]=_real(b[i]-fator*b[k])
+    x=[0.0]*n
+    for i in range(n-1,-1,-1):x[i]=_real((b[i]-sum(A[i][j]*x[j] for j in range(i+1,n)))/A[i][i])
+    return x
+
+def finite(x):
+    if isinstance(x,bool): raise ValueError('Número real finito necessário')
+    try: y=float(x)
+    except (TypeError,ValueError,OverflowError): raise ValueError('Número real finito necessário') from None
+    if not isfinite(y): raise ValueError('Número real finito necessário')
+    return y
+
+def poisson_2d(n,g):
+    """-laplaciano(u)=g no quadrado unitário, bordas zero, solver denso."""
+    budget(n)
+    if n<2 or n>12:raise ValueError('Malha didática: 2<=n<=12')
+    m=n-1;size=m*m;A=[[0.0]*size for _ in range(size)];b=[0.0]*size
+    for i in range(1,n):
+        for j in range(1,n):
+            k=(i-1)*m+j-1;A[k][k]=4;b[k]=finite(g(i/n,j/n))/n**2
+            for di,dj in [(1,0),(-1,0),(0,1),(0,-1)]:
+                ni,nj=i+di,j+dj
+                if 1<=ni<n and 1<=nj<n:A[k][(ni-1)*m+nj-1]=-1
+    values=gauss_pivoteamento(A,b);grid=[[0.0]*(n+1) for _ in range(n+1)]
+    for i in range(1,n):
+        for j in range(1,n):grid[i][j]=values[(i-1)*m+j-1]
+    return grid
+
+n=4;u=poisson_2d(n,lambda x,y:2*(x*(1-x)+y*(1-y)))
+error=max(abs(u[i][j]-(i/n)*(1-i/n)*(j/n)*(1-j/n)) for i in range(n+1) for j in range(n+1))
+assert error<1e-12
+print(error,u[2][2])

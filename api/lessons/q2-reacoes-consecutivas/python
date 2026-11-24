@@ -1,0 +1,6 @@
+from math import exp
+t=1.0
+a=exp(-t);i=t*exp(-t);p=1-a-i
+assert abs(a+i+p-1)<1e-14
+assert abs(i-1/exp(1))<1e-14
+print(a,i,p)

@@ -1,0 +1,5 @@
+apply=lambda v:(2*v[0]+v[1],v[1])
+undo=lambda v:((v[0]-v[1])/2,v[1])
+assert undo((4,2))==(1,2)
+assert apply(undo((4,2)))==(4,2)
+print(undo((4,2)))

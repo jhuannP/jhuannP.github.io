@@ -1,0 +1,31 @@
+from math import isfinite,sqrt,exp,sin,cos,pi,log,comb
+
+def budget(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<=0:
+        raise ValueError('Quantidade inteira positiva necessária')
+    return n
+
+def finite(x):
+    if isinstance(x,bool): raise ValueError('Número real finito necessário')
+    try: y=float(x)
+    except (TypeError,ValueError,OverflowError): raise ValueError('Número real finito necessário') from None
+    if not isfinite(y): raise ValueError('Número real finito necessário')
+    return y
+
+def heat_explicit(n,dt,steps,alpha=1):
+    """Calor em [0,1], u inicial=sin(pi*x), bordas nulas."""
+    from math import sin,pi
+    budget(n);budget(steps);dt=finite(dt);alpha=finite(alpha)
+    if n<2 or dt<=0 or alpha<=0:raise ValueError('Parâmetros de calor inválidos')
+    r=alpha*dt*n*n
+    if r>.5:raise ValueError('FTCS exige r<=1/2 neste modelo')
+    u=[sin(pi*j/n) for j in range(n+1)];u[0]=u[-1]=0;trace=[list(u)]
+    for _ in range(steps):
+        u=[0]+[u[j]+r*(u[j-1]-2*u[j]+u[j+1]) for j in range(1,n)]+[0];trace.append(list(u))
+    return trace
+
+n=20;dt=.001;steps=50
+u=heat_explicit(n,dt,steps)[-1];t=dt*steps
+error=max(abs(v-exp(-pi*pi*t)*sin(pi*j/n)) for j,v in enumerate(u))
+assert error<.005
+print(t,error)

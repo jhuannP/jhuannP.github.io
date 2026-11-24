@@ -1,0 +1,25 @@
+from math import exp,log1p,sqrt,hypot,atan2,cos,sin,isfinite
+from random import Random
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def pca_2d(points):
+    rows=[list(p) for p in points]
+    if not rows or any(len(p)!=2 for p in rows):raise ValueError('Pontos 2D necessários')
+    rows=[[finite(v) for v in p] for p in rows];n=len(rows)
+    mean=[sum(p[j] for p in rows)/n for j in range(2)];centered=[[p[j]-mean[j] for j in range(2)] for p in rows]
+    a=sum(p[0]**2 for p in centered)/n;b=sum(p[0]*p[1] for p in centered)/n;d=sum(p[1]**2 for p in centered)/n
+    angle=.5*atan2(2*b,a-d);direction=[cos(angle),sin(angle)]
+    delta=hypot(a-d,2*b);values=[(a+d+delta)/2,(a+d-delta)/2]
+    scores=[sum(v*w for v,w in zip(p,direction)) for p in centered]
+    return dict(mean=mean,direction=direction,eigenvalues=values,scores=scores,degenerate=delta<1e-12)
+
+r=pca_2d([[-1,-1],[0,0],[1,1]])
+assert abs(r["direction"][0]-r["direction"][1])<1e-12
+assert abs(r["eigenvalues"][1])<1e-12
+print(r)

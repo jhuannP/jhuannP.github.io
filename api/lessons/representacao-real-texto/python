@@ -1,0 +1,7 @@
+from fractions import Fraction
+from math import isclose
+texto='á'
+assert len(texto)==1 and len(texto.encode('utf-8'))==2
+assert Fraction('0.1')+Fraction('0.2')==Fraction('0.3')
+assert isclose(0.1+0.2,0.3,rel_tol=1e-12,abs_tol=1e-12)
+print(texto.encode('utf-8'),0.1+0.2,Fraction(0.1))

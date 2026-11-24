@@ -1,0 +1,25 @@
+from math import isfinite, sqrt, pi, cos, sin, exp, e, fsum
+
+def _real(value):
+    try:
+        if isinstance(value,bool): raise ValueError
+        result=float(value)
+    except (TypeError,ValueError,OverflowError):
+        raise ValueError('Valor real finito necessário') from None
+    if not isfinite(result): raise ValueError('Valor real finito necessário')
+    return result
+
+def bezier(pontos,t):
+    t=_real(t)
+    if not pontos or not 0<=t<=1:raise ValueError('Pontos e parâmetro em [0,1] necessários')
+    dimensao=len(pontos[0])
+    if dimensao==0 or any(len(p)!=dimensao for p in pontos):raise ValueError('Dimensões incompatíveis')
+    trabalho=[[_real(x) for x in p] for p in pontos]
+    while len(trabalho)>1:
+        trabalho=[[(1-t)*a+t*b for a,b in zip(trabalho[i],trabalho[i+1])] for i in range(len(trabalho)-1)]
+    return trabalho[0]
+
+p=[(0,0),(1,2),(2,2),(3,0)]
+assert bezier(p,0)==[0,0] and bezier(p,1)==[3,0]
+assert bezier(p,.5)==[1.5,1.5]
+print(bezier(p,.5))

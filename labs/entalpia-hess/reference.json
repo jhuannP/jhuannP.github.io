@@ -1,0 +1,722 @@
+[
+  {
+    "b": -40,
+    "c": -60,
+    "extent": 0.0,
+    "direction": -1,
+    "result": {
+      "first": 20.0,
+      "second": 40.0,
+      "direct": 60.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        -60.0,
+        -40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": -40,
+    "c": -60,
+    "extent": 0.0,
+    "direction": 1,
+    "result": {
+      "first": -40.0,
+      "second": -20.0,
+      "direct": -60.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        -40.0,
+        -60.0
+      ]
+    }
+  },
+  {
+    "b": -40,
+    "c": -60,
+    "extent": 0.5,
+    "direction": -1,
+    "result": {
+      "first": 20.0,
+      "second": 40.0,
+      "direct": 60.0,
+      "total": 30.0,
+      "total_first": 10.0,
+      "total_second": 20.0,
+      "cycle": 0.0,
+      "levels": [
+        -60.0,
+        -40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": -40,
+    "c": -60,
+    "extent": 0.5,
+    "direction": 1,
+    "result": {
+      "first": -40.0,
+      "second": -20.0,
+      "direct": -60.0,
+      "total": -30.0,
+      "total_first": -20.0,
+      "total_second": -10.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        -40.0,
+        -60.0
+      ]
+    }
+  },
+  {
+    "b": -40,
+    "c": -30,
+    "extent": 0.0,
+    "direction": -1,
+    "result": {
+      "first": -10.0,
+      "second": 40.0,
+      "direct": 30.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        -30.0,
+        -40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": -40,
+    "c": -30,
+    "extent": 0.0,
+    "direction": 1,
+    "result": {
+      "first": -40.0,
+      "second": 10.0,
+      "direct": -30.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        -40.0,
+        -30.0
+      ]
+    }
+  },
+  {
+    "b": -40,
+    "c": -30,
+    "extent": 0.5,
+    "direction": -1,
+    "result": {
+      "first": -10.0,
+      "second": 40.0,
+      "direct": 30.0,
+      "total": 15.0,
+      "total_first": -5.0,
+      "total_second": 20.0,
+      "cycle": 0.0,
+      "levels": [
+        -30.0,
+        -40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": -40,
+    "c": -30,
+    "extent": 0.5,
+    "direction": 1,
+    "result": {
+      "first": -40.0,
+      "second": 10.0,
+      "direct": -30.0,
+      "total": -15.0,
+      "total_first": -20.0,
+      "total_second": 5.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        -40.0,
+        -30.0
+      ]
+    }
+  },
+  {
+    "b": -40,
+    "c": 20,
+    "extent": 0.0,
+    "direction": -1,
+    "result": {
+      "first": -60.0,
+      "second": 40.0,
+      "direct": -20.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        20.0,
+        -40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": -40,
+    "c": 20,
+    "extent": 0.0,
+    "direction": 1,
+    "result": {
+      "first": -40.0,
+      "second": 60.0,
+      "direct": 20.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        -40.0,
+        20.0
+      ]
+    }
+  },
+  {
+    "b": -40,
+    "c": 20,
+    "extent": 0.5,
+    "direction": -1,
+    "result": {
+      "first": -60.0,
+      "second": 40.0,
+      "direct": -20.0,
+      "total": -10.0,
+      "total_first": -30.0,
+      "total_second": 20.0,
+      "cycle": 0.0,
+      "levels": [
+        20.0,
+        -40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": -40,
+    "c": 20,
+    "extent": 0.5,
+    "direction": 1,
+    "result": {
+      "first": -40.0,
+      "second": 60.0,
+      "direct": 20.0,
+      "total": 10.0,
+      "total_first": -20.0,
+      "total_second": 30.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        -40.0,
+        20.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": -60,
+    "extent": 0.0,
+    "direction": -1,
+    "result": {
+      "first": 80.0,
+      "second": -20.0,
+      "direct": 60.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        -60.0,
+        20.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": -60,
+    "extent": 0.0,
+    "direction": 1,
+    "result": {
+      "first": 20.0,
+      "second": -80.0,
+      "direct": -60.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        20.0,
+        -60.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": -60,
+    "extent": 0.5,
+    "direction": -1,
+    "result": {
+      "first": 80.0,
+      "second": -20.0,
+      "direct": 60.0,
+      "total": 30.0,
+      "total_first": 40.0,
+      "total_second": -10.0,
+      "cycle": 0.0,
+      "levels": [
+        -60.0,
+        20.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": -60,
+    "extent": 0.5,
+    "direction": 1,
+    "result": {
+      "first": 20.0,
+      "second": -80.0,
+      "direct": -60.0,
+      "total": -30.0,
+      "total_first": 10.0,
+      "total_second": -40.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        20.0,
+        -60.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": -30,
+    "extent": 0.0,
+    "direction": -1,
+    "result": {
+      "first": 50.0,
+      "second": -20.0,
+      "direct": 30.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        -30.0,
+        20.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": -30,
+    "extent": 0.0,
+    "direction": 1,
+    "result": {
+      "first": 20.0,
+      "second": -50.0,
+      "direct": -30.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        20.0,
+        -30.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": -30,
+    "extent": 0.5,
+    "direction": -1,
+    "result": {
+      "first": 50.0,
+      "second": -20.0,
+      "direct": 30.0,
+      "total": 15.0,
+      "total_first": 25.0,
+      "total_second": -10.0,
+      "cycle": 0.0,
+      "levels": [
+        -30.0,
+        20.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": -30,
+    "extent": 0.5,
+    "direction": 1,
+    "result": {
+      "first": 20.0,
+      "second": -50.0,
+      "direct": -30.0,
+      "total": -15.0,
+      "total_first": 10.0,
+      "total_second": -25.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        20.0,
+        -30.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": 20,
+    "extent": 0.0,
+    "direction": -1,
+    "result": {
+      "first": 0.0,
+      "second": -20.0,
+      "direct": -20.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        20.0,
+        20.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": 20,
+    "extent": 0.0,
+    "direction": 1,
+    "result": {
+      "first": 20.0,
+      "second": 0.0,
+      "direct": 20.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        20.0,
+        20.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": 20,
+    "extent": 0.5,
+    "direction": -1,
+    "result": {
+      "first": 0.0,
+      "second": -20.0,
+      "direct": -20.0,
+      "total": -10.0,
+      "total_first": 0.0,
+      "total_second": -10.0,
+      "cycle": 0.0,
+      "levels": [
+        20.0,
+        20.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 20,
+    "c": 20,
+    "extent": 0.5,
+    "direction": 1,
+    "result": {
+      "first": 20.0,
+      "second": 0.0,
+      "direct": 20.0,
+      "total": 10.0,
+      "total_first": 10.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        20.0,
+        20.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": -60,
+    "extent": 0.0,
+    "direction": -1,
+    "result": {
+      "first": 100.0,
+      "second": -40.0,
+      "direct": 60.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        -60.0,
+        40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": -60,
+    "extent": 0.0,
+    "direction": 1,
+    "result": {
+      "first": 40.0,
+      "second": -100.0,
+      "direct": -60.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        40.0,
+        -60.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": -60,
+    "extent": 0.5,
+    "direction": -1,
+    "result": {
+      "first": 100.0,
+      "second": -40.0,
+      "direct": 60.0,
+      "total": 30.0,
+      "total_first": 50.0,
+      "total_second": -20.0,
+      "cycle": 0.0,
+      "levels": [
+        -60.0,
+        40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": -60,
+    "extent": 0.5,
+    "direction": 1,
+    "result": {
+      "first": 40.0,
+      "second": -100.0,
+      "direct": -60.0,
+      "total": -30.0,
+      "total_first": 20.0,
+      "total_second": -50.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        40.0,
+        -60.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": -30,
+    "extent": 0.0,
+    "direction": -1,
+    "result": {
+      "first": 70.0,
+      "second": -40.0,
+      "direct": 30.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        -30.0,
+        40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": -30,
+    "extent": 0.0,
+    "direction": 1,
+    "result": {
+      "first": 40.0,
+      "second": -70.0,
+      "direct": -30.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        40.0,
+        -30.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": -30,
+    "extent": 0.5,
+    "direction": -1,
+    "result": {
+      "first": 70.0,
+      "second": -40.0,
+      "direct": 30.0,
+      "total": 15.0,
+      "total_first": 35.0,
+      "total_second": -20.0,
+      "cycle": 0.0,
+      "levels": [
+        -30.0,
+        40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": -30,
+    "extent": 0.5,
+    "direction": 1,
+    "result": {
+      "first": 40.0,
+      "second": -70.0,
+      "direct": -30.0,
+      "total": -15.0,
+      "total_first": 20.0,
+      "total_second": -35.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        40.0,
+        -30.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": 20,
+    "extent": 0.0,
+    "direction": -1,
+    "result": {
+      "first": 20.0,
+      "second": -40.0,
+      "direct": -20.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        20.0,
+        40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": 20,
+    "extent": 0.0,
+    "direction": 1,
+    "result": {
+      "first": 40.0,
+      "second": -20.0,
+      "direct": 20.0,
+      "total": 0.0,
+      "total_first": 0.0,
+      "total_second": 0.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        40.0,
+        20.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": 20,
+    "extent": 0.5,
+    "direction": -1,
+    "result": {
+      "first": 20.0,
+      "second": -40.0,
+      "direct": -20.0,
+      "total": -10.0,
+      "total_first": 10.0,
+      "total_second": -20.0,
+      "cycle": 0.0,
+      "levels": [
+        20.0,
+        40.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "b": 40,
+    "c": 20,
+    "extent": 0.5,
+    "direction": 1,
+    "result": {
+      "first": 40.0,
+      "second": -20.0,
+      "direct": 20.0,
+      "total": 10.0,
+      "total_first": 20.0,
+      "total_second": -10.0,
+      "cycle": 0.0,
+      "levels": [
+        0.0,
+        40.0,
+        20.0
+      ]
+    }
+  }
+]

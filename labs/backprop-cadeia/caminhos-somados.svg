@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 490" role="img" aria-labelledby="title desc">
+<title id="title">Duas contribuições para a derivada de um valor compartilhado</title>
+<desc id="desc">u igual a2 alimenta r=u ao quadrado, valor4, e s=3u, valor6. z=r+s vale10. A derivada por r contribui4 e a derivada por s contribui3, totalizando dz/du igual a7. Linhas pretas mostram dependências no forward; números azuis mostram contribuições da cadeia.</desc>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7Z" fill="#20251f"/></marker></defs>
+<rect width="360" height="490" fill="#f5f4eb"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#20251f">
+<text x="180" y="34" font-size="22">Um valor, dois caminhos</text>
+<g stroke="#20251f" stroke-width="2" marker-end="url(#head)" fill="none"><path d="M165 111L100 187"/><path d="M195 111L260 187"/><path d="M96 248L160 326"/><path d="M264 248L200 326"/></g>
+<g fill="#f5f4eb" stroke="#939889"><rect x="135" y="66" width="90" height="45" rx="4"/><rect x="24" y="190" width="142" height="57" rx="4"/><rect x="194" y="190" width="142" height="57" rx="4"/><rect x="105" y="329" width="150" height="56" rx="4"/></g>
+<text x="180" y="96" font-size="23">u = 2</text>
+<text x="95" y="225" font-size="21">r = u² = 4</text><text x="265" y="225" font-size="21">s = 3u = 6</text>
+<text x="180" y="364" font-size="21">z = r + s = 10</text>
+<g fill="#184bc4" font-size="17"><text x="79" y="148">dr/du = 4</text><text x="281" y="148">ds/du = 3</text><text x="64" y="294">dz/dr = 1</text><text x="296" y="294">dz/ds = 1</text><text x="180" y="425" font-size="23">dz/du = 4 + 3 = 7</text></g>
+<text x="180" y="458" font-size="14">Preto: dependências no forward.</text><text x="180" y="480" font-size="14">Azul: contribuições pela regra da cadeia.</text>
+</g></svg>

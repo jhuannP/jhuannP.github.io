@@ -1,0 +1,50 @@
+from math import isfinite, sqrt, pi, cos, sin, exp, e, fsum
+
+def _real(value):
+    try:
+        if isinstance(value,bool): raise ValueError
+        result=float(value)
+    except (TypeError,ValueError,OverflowError):
+        raise ValueError('Valor real finito necessário') from None
+    if not isfinite(result): raise ValueError('Valor real finito necessário')
+    return result
+
+def _params(tol,max_iter):
+    tol=_real(tol)
+    if tol<=0 or isinstance(max_iter,bool) or not isinstance(max_iter,int) or max_iter<=0:
+        raise ValueError('Tolerância positiva e orçamento inteiro positivo necessários')
+    return tol
+
+def _quadrature(a,b,n):
+    a,b=_real(a),_real(b)
+    if not a<b or isinstance(n,bool) or not isinstance(n,int) or n<=0:raise ValueError('Intervalo crescente e número positivo de subintervalos necessários')
+    return a,b,(b-a)/n
+
+def _eval(f,x):
+    return _real(f(x))
+
+def simpson_adaptativo(f,a,b,tol=1e-8,max_depth=12):
+    tol=_params(tol,1);a,b,_=_quadrature(a,b,1)
+    if isinstance(max_depth,bool) or not isinstance(max_depth,int) or not 0<=max_depth<=14:raise ValueError('Profundidade de 0 a 14 necessária')
+    cache={}
+    def valor(x):
+        if x not in cache:cache[x]=_eval(f,x)
+        return cache[x]
+    def integrar(a,b,fa,fm,fb,S,local_tol,depth):
+        meio=a/2+b/2;esq=a/2+meio/2;dir=meio/2+b/2
+        fe,fd=valor(esq),valor(dir)
+        Se=(meio-a)*(fa+4*fe+fm)/6;Sd=(b-meio)*(fm+4*fd+fb)/6
+        delta=Se+Sd-S;estimativa=abs(delta)/15
+        if estimativa<=local_tol or depth==0:
+            return Se+Sd+delta/15,estimativa,estimativa<=local_tol
+        ve,ee,ce=integrar(a,meio,fa,fe,fm,Se,local_tol/2,depth-1)
+        vd,ed,cd=integrar(meio,b,fm,fd,fb,Sd,local_tol/2,depth-1)
+        return ve+vd,ee+ed,ce and cd
+    meio=a/2+b/2;fa,fm,fb=valor(a),valor(meio),valor(b)
+    S=(b-a)*(fa+4*fm+fb)/6
+    value,error,met=integrar(a,b,fa,fm,fb,S,tol,max_depth)
+    return {'valor':_real(value),'erro_estimado':_real(error),'avaliacoes':len(cache),'atingiu_criterio':met}
+
+r=simpson_adaptativo(exp,0,1,tol=1e-9)
+assert r['atingiu_criterio'] and abs(r['valor']-(e-1))<1e-8
+print(r)

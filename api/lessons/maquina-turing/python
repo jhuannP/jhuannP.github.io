@@ -1,0 +1,14 @@
+def incrementar_unario(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<0:
+        raise ValueError('Inteiro não negativo necessário')
+    fita={i:'1' for i in range(n)}
+    cabeca=0; estado='buscar'; passos=0
+    while estado!='parada':
+        simbolo=fita.get(cabeca,'_')
+        if simbolo=='_':
+            fita[cabeca]='1'; estado='parada'
+        cabeca+=1; passos+=1
+    return ''.join(fita[i] for i in range(len(fita))),passos
+assert incrementar_unario(3)==('1111',4)
+assert incrementar_unario(0)==('1',1)
+print(incrementar_unario(3))

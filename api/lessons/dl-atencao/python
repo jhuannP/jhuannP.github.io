@@ -1,0 +1,35 @@
+from math import exp,log,sqrt,hypot,sin,cos,isfinite
+from random import Random
+
+def real(x):
+    if isinstance(x,bool):raise ValueError('Real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Real finito necessário') from None
+    if not isfinite(y):raise ValueError('Real finito necessário')
+    return y
+
+def matrix(values):
+    rows=[[real(v) for v in row] for row in values]
+    if not rows or not rows[0] or any(len(row)!=len(rows[0]) for row in rows):raise ValueError('Matriz retangular não vazia necessária')
+    return rows
+
+def softmax(logits,mask=None):
+    z=[real(v) for v in logits]
+    keep=[True]*len(z) if mask is None else list(mask)
+    if not z or len(keep)!=len(z) or any(not isinstance(v,bool) for v in keep) or not any(keep):raise ValueError('Máscara precisa permitir pelo menos um logit')
+    top=max(v for v,k in zip(z,keep) if k);w=[exp(v-top) if k else 0 for v,k in zip(z,keep)];total=sum(w)
+    return [v/total for v in w]
+
+def attention(Q,K,V,causal=False):
+    Q=matrix(Q);K=matrix(K);V=matrix(V)
+    if len(Q[0])!=len(K[0]) or len(K)!=len(V) or not isinstance(causal,bool) or causal and len(Q)!=len(K):raise ValueError('Dimensões ou máscara causal incompatíveis')
+    d=len(Q[0]);weights=[];out=[]
+    for i,q in enumerate(Q):
+        logits=[real(sum(a*b for a,b in zip(q,k))/sqrt(d)) for k in K]
+        p=softmax(logits,[j<=i for j in range(len(K))] if causal else None);weights.append(p)
+        out.append([real(sum(p[j]*V[j][k] for j in range(len(V)))) for k in range(len(V[0]))])
+    return dict(weights=weights,output=out)
+
+r=attention([[0,0]],[[1,0],[0,1]],[[2],[6]])
+assert r["weights"]==[[.5,.5]] and r["output"]==[[4]]
+print(r)

@@ -1,0 +1,6 @@
+from math import exp
+theta,sigma,t=2,2,3
+D=sigma*sigma/(2*theta*theta)
+var_position=2*D*(t-(1-exp(-theta*t))/theta)
+assert D==.5 and var_position>0
+print(D,var_position,2*D*t)

@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ensinar Física com cuidado</title>
+<meta name="description" content="Página de estudo da disciplina 4300356, Elementos e Estratégia para o Ensino de Física e Ciências (IF-USP, 2026/2): blocos, autores, conceitos, cronograma e seminários.">
+<style>
+:root{
+  --bg:#fff7f9;--bg2:#fdecf1;--card:#ffffff;--ink:#3b1a2a;--muted:#7a5566;--line:#f1d3dd;
+  --cherry:#c2325f;--rose:#e2799a;--blush:#f8d7e1;--deep:#8e1f45;--sage:#4f8a78;--gold:#c58a1e;--plum:#6b3a7a;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --shadow:0 1px 2px rgba(142,31,69,.06),0 12px 32px rgba(142,31,69,.09);--r:20px;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1c1117;--bg2:#26161f;--card:#2a1923;--ink:#f6e6ec;--muted:#cfa9b9;--line:#45283a;--cherry:#f27aa0;--rose:#f5a3bd;--blush:#4a2537;--deep:#ffb3c9;--sage:#7cc4ad;--gold:#f0c15a;--plum:#c9a0d6;--shadow:0 1px 2px rgba(0,0,0,.35),0 12px 32px rgba(0,0,0,.35);color-scheme:dark}}
+:root[data-theme=dark]{--bg:#1c1117;--bg2:#26161f;--card:#2a1923;--ink:#f6e6ec;--muted:#cfa9b9;--line:#45283a;--cherry:#f27aa0;--rose:#f5a3bd;--blush:#4a2537;--deep:#ffb3c9;--sage:#7cc4ad;--gold:#f0c15a;--plum:#c9a0d6;--shadow:0 1px 2px rgba(0,0,0,.35),0 12px 32px rgba(0,0,0,.35);color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.62 var(--sans)}
+a{color:var(--cherry);text-underline-offset:3px}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;line-height:1.12;margin:0}
+h2{font-size:clamp(32px,4.4vw,50px)}h3{font-size:24px}h4{font-size:19px}
+p{margin:0 0 .85em}ul{margin:.3em 0 .9em;padding-left:1.2em}li+li{margin-top:.35em}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.kicker{font:700 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--cherry)}
+.muted{color:var(--muted)}.small{font-size:14px}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:radial-gradient(1200px 500px at 85% -10%,var(--blush),transparent 60%),radial-gradient(900px 420px at -10% 110%,var(--bg2),transparent 60%),var(--bg)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:72px;padding-bottom:64px}
+.hero h1{font-size:clamp(44px,7vw,88px);line-height:.95;letter-spacing:-.03em;margin:18px 0 20px}
+.hero h1 em{font-style:italic;color:var(--cherry)}
+.lead{font-size:clamp(18px,2.1vw,21px);color:var(--muted);max-width:620px}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.pill{display:inline-flex;align-items:center;gap:6px;font:600 13px var(--sans);padding:8px 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--ink)}
+.hero-art{width:100%;height:auto}
+.top-actions{position:absolute;top:16px;right:16px;display:flex;gap:8px;z-index:5}
+.tbtn{font:600 13px var(--sans);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:9px 14px;cursor:pointer}
+.tbtn:hover{border-color:var(--cherry)}
+
+/* NAV */
+nav.idx{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav.idx ul{display:flex;gap:4px;list-style:none;margin:0;padding:10px 0;overflow-x:auto;scrollbar-width:none}
+nav.idx ul::-webkit-scrollbar{display:none}
+nav.idx li+li{margin:0}
+nav.idx a{display:block;white-space:nowrap;font:600 14px var(--sans);color:var(--muted);text-decoration:none;padding:10px 14px;border-radius:999px;min-height:42px}
+nav.idx a:hover{background:var(--bg2);color:var(--ink)}nav.idx a.on{background:var(--cherry);color:#fff}
+@media (max-width:820px){nav.idx ul{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}}
+
+/* SECTIONS */
+section{padding:80px 0;scroll-margin-top:60px}
+section.alt{background:var(--bg2)}
+.sec-head{max-width:820px;margin-bottom:34px}
+.sec-head p{color:var(--muted);font-size:19px;margin-top:14px}
+.bloco-tag{display:inline-flex;align-items:center;gap:10px;margin-bottom:12px}
+.bloco-tag .num{font:600 15px var(--serif);width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--cherry);color:#fff}
+.grid{display:grid;gap:18px}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:var(--shadow)}
+.card.soft{background:var(--bg2);box-shadow:none;border-color:transparent}
+section.alt .card.soft{background:var(--card)}
+.card h3{margin:6px 0 10px}.card h4{margin:4px 0 8px}
+.q-card{position:relative;padding-top:28px}
+.q-card .big{font:600 44px/1 var(--serif);color:var(--rose)}
+.tag{display:inline-block;font:700 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:var(--blush);color:var(--deep)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.chip{font:600 13px var(--sans);padding:6px 11px;border-radius:999px;background:var(--bg2);border:1px solid var(--line);color:var(--ink)}
+.quote{font:italic 600 21px/1.35 var(--serif);color:var(--deep);border-left:3px solid var(--rose);padding:4px 0 4px 16px;margin:14px 0}
+.note{border-radius:16px;padding:16px 18px;background:var(--blush);color:var(--ink);font-size:16px}
+.note b{color:var(--deep)}
+.warn{background:color-mix(in srgb,var(--gold) 16%,var(--card))}
+table{border-collapse:collapse;width:100%;font-size:15.5px}
+th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:700 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.table-wrap{overflow-x:auto;border-radius:16px;border:1px solid var(--line);background:var(--card)}
+
+/* AUTHOR CARDS */
+.autor{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
+.autor + .autor{margin-top:22px}
+.avatar{width:120px;height:120px;border-radius:50%;display:grid;place-items:center;font:600 40px var(--serif);color:#fff;background:linear-gradient(140deg,var(--cherry),var(--rose));box-shadow:var(--shadow)}
+.autor .card{padding:26px 28px}
+.autor .who{color:var(--muted);font-size:15px;margin:2px 0 12px}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 28px}
+details{border-top:1px solid var(--line);margin-top:16px;padding-top:12px}
+summary{cursor:pointer;font:700 14px var(--sans);color:var(--cherry);list-style:none;display:flex;align-items:center;gap:8px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--blush);color:var(--deep);font-size:15px}
+details[open] summary::before{content:"−"}
+details .inner{margin-top:12px}
+.mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
+.mini .card{padding:16px;box-shadow:none}
+
+/* TABS (exemplos) */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.tabs button{font:600 14px var(--sans);padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;min-height:42px}
+.tabs button[aria-selected=true]{background:var(--cherry);border-color:var(--cherry);color:#fff}
+.tabpanel{min-height:120px}
+
+/* ZONAS (perfil conceitual) */
+.zonas{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:end;margin-top:14px}
+.zona{border-radius:14px 14px 4px 4px;padding:14px;color:#fff;font-size:14px;line-height:1.35}
+.zona b{display:block;font:600 16px var(--serif);margin-bottom:4px}
+
+/* CRONOGRAMA */
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.crono{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.crono li{display:grid;grid-template-columns:62px 112px 1fr auto;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:0}
+.crono .n{font:600 20px var(--serif);color:var(--rose)}
+.crono .d{font:600 14px var(--sans);color:var(--muted)}
+.crono .t{font-size:15.5px}.crono .t b{display:block;font-weight:700}
+.crono .e{font:700 12px var(--sans);padding:6px 10px;border-radius:999px;background:var(--blush);color:var(--deep);white-space:nowrap}
+.crono li.sem{background:transparent;border-style:dashed;color:var(--muted)}
+.crono li.passado{opacity:.62}
+.crono li.prox{border:2px solid var(--cherry);box-shadow:var(--shadow)}
+.crono li.prox .e{background:var(--cherry);color:#fff}
+
+/* MAPA */
+.mapa{width:100%;height:auto;display:block}
+.mapa text{font-family:var(--sans)}
+
+/* LINHA DO TEMPO */
+.lt{position:relative;margin-top:10px}
+.lt-row{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:center;margin:8px 0}
+.lt-name{font:600 15px var(--serif);text-align:right}
+.lt-bar{position:relative;height:30px;background:var(--bg2);border-radius:999px}
+section.alt .lt-bar{background:var(--card)}
+.lt-life{position:absolute;top:6px;height:18px;border-radius:999px;background:var(--blush)}
+.lt-work{position:absolute;top:0;width:30px;height:30px;margin-left:-15px;border-radius:50%;background:var(--cherry);color:#fff;font:700 10px var(--sans);display:grid;place-items:center;box-shadow:0 0 0 3px var(--bg)}
+.lt-axis{display:grid;grid-template-columns:150px 1fr;gap:12px;font:600 12px var(--sans);color:var(--muted)}
+.lt-axis div:last-child{display:flex;justify-content:space-between}
+
+/* GLOSSARIO */
+.busca{width:100%;font:16px var(--sans);padding:14px 18px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);margin-bottom:14px}
+.glos{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.glos .card{padding:18px;box-shadow:none}
+.glos .card h4{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.glos .card h4 small{font:700 11px var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--cherry);white-space:nowrap}
+.glos .card p{font-size:15px;margin:0}
+
+/* SEMINARIOS */
+.sem-card{display:flex;flex-direction:column;gap:6px}
+.sem-card .g{font:700 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sem-card.nosso{border:2px solid var(--cherry)}
+
+footer{padding:40px 0 56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.vis{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media (max-width:960px){.hero .wrap{grid-template-columns:1fr}.hero-art{max-width:460px}.g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.zonas{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:680px){section{padding:56px 0}.g2,.g3,.g4,.cols,.mini{grid-template-columns:1fr}
+  .autor{grid-template-columns:1fr}.avatar{width:72px;height:72px;font-size:26px}
+  .crono li{grid-template-columns:44px 1fr;row-gap:4px}.crono .t{grid-column:1/-1}.crono .e{grid-column:1/-1;justify-self:start}
+  .lt-row,.lt-axis{grid-template-columns:96px 1fr}.lt-name{font-size:13px}.zonas{grid-template-columns:1fr}}
+@media print{nav.idx,.top-actions,.tabs{display:none}.reveal{opacity:1;transform:none}section{padding:24px 0}}
+</style>
+</head>
+<body><!-- portfolio:voltar --><a href="/disciplinas/" style="position:fixed;left:14px;bottom:14px;z-index:999;font:600 13px/1 system-ui,sans-serif;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.92);color:#1b1b2a;text-decoration:none;border:1px solid rgba(0,0,0,.12);box-shadow:0 4px 16px rgba(0,0,0,.12)">&larr; Portfólio</a>
+
+<header class="hero" id="topo">
+  <div class="top-actions"><button class="tbtn" id="tema" type="button" aria-label="Alternar tema claro ou escuro">◐ Tema</button></div>
+  <div class="wrap">
+    <div>
+      <div class="kicker">4300356 · IF-USP · 2026/2 · Licenciatura em Física</div>
+      <h1>Elementos e Estratégia para o <em>Ensino de Física</em> e Ciências</h1>
+      <p class="lead">Que Física ensinamos, como ela se constitui e como alguém aprende? A disciplina junta filosofia da ciência, pedagogia e psicologia para que a escolha de cada estratégia de ensino tenha razões, e não apenas técnica.</p>
+      <div class="meta-row">
+        <span class="pill">👩‍🏫 Prof. José Luís Nami Adum Ortega</span>
+        <span class="pill">📅 03/08 a 12/12/2026</span>
+        <span class="pill">⏱ 4 créditos-aula + 1 trabalho · 90 h</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 440 380" role="img" aria-label="Ilustração: três círculos entrelaçados, representando ciência, aprendizagem e estratégias de ensino">
+      <defs>
+        <radialGradient id="g1" cx="40%" cy="35%"><stop offset="0" stop-color="var(--rose)" stop-opacity=".85"/><stop offset="1" stop-color="var(--cherry)" stop-opacity=".75"/></radialGradient>
+        <radialGradient id="g2" cx="40%" cy="35%"><stop offset="0" stop-color="var(--blush)"/><stop offset="1" stop-color="var(--rose)" stop-opacity=".7"/></radialGradient>
+        <radialGradient id="g3" cx="40%" cy="35%"><stop offset="0" stop-color="var(--bg2)"/><stop offset="1" stop-color="var(--plum)" stop-opacity=".45"/></radialGradient>
+      </defs>
+      <circle cx="160" cy="140" r="110" fill="url(#g1)" opacity=".9"/>
+      <circle cx="280" cy="140" r="110" fill="url(#g2)" opacity=".9" style="mix-blend-mode:multiply"/>
+      <circle cx="220" cy="240" r="110" fill="url(#g3)" opacity=".9" style="mix-blend-mode:multiply"/>
+      <g font-family="Georgia,serif" font-size="17" font-weight="600" fill="var(--ink)" text-anchor="middle">
+        <text x="125" y="115">Ciência</text><text x="125" y="135" font-size="13" font-weight="400">Bloco I</text>
+        <text x="315" y="115">Aprendizagem</text><text x="315" y="135" font-size="13" font-weight="400">Bloco II</text>
+        <text x="220" y="300">Estratégias</text><text x="220" y="320" font-size="13" font-weight="400">Bloco III</text>
+      </g>
+      <text x="220" y="178" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="16" fill="#fff">ensinar</text>
+    </svg>
+  </div>
+</header>
+
+<nav class="idx" aria-label="Seções da página"><div class="wrap"><ul>
+  <li><a href="#disciplina">A disciplina</a></li>
+  <li><a href="#cronograma">Cronograma</a></li>
+  <li><a href="#bloco1">Bloco I · Ciência</a></li>
+  <li><a href="#bloco2">Bloco II · Aprendizagem</a></li>
+  <li><a href="#bloco3">Bloco III · Estratégias</a></li>
+  <li><a href="#mapa">Mapa de ideias</a></li>
+  <li><a href="#tempo">Linha do tempo</a></li>
+  <li><a href="#glossario">Glossário</a></li>
+  <li><a href="#leituras">Leituras</a></li>
+</ul></div></nav>
+
+<main>
+<!-- =============== A DISCIPLINA =============== -->
+<section id="disciplina"><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker">A disciplina</div><h2>Três perguntas, um percurso</h2>
+    <p>A ementa parte da construção histórica e individual do conhecimento físico, passa pela educação como formação humana e pela aprendizagem, e chega às propostas de ensino. O cronograma organiza isso em três blocos.</p></div>
+  <div class="grid g3">
+    <article class="card q-card reveal"><div class="big">I</div><span class="tag">Ciência</span><h3>Como a ciência conhece?</h3><p>Como a Física constrói, garante e transforma conhecimento, e com que consequências.</p><p class="small muted">Rubem Alves · Bunge · Heisenberg · Kuhn · Exercícios 1–4 · Avaliação I</p></article>
+    <article class="card q-card reveal"><div class="big">II</div><span class="tag">Aprendizagem</span><h3>Quem aprende, e como?</h3><p>Em que condições se aprende, com que participação, e o que acontece com as ideias que o aluno já traz.</p><p class="small muted">Freire · Davis e Oliveira · Mortimer · Exercícios 5–7 · Avaliação II</p></article>
+    <article class="card q-card reveal"><div class="big">III</div><span class="tag">Estratégias</span><h3>Como escolher uma estratégia?</h3><p>Seminários sobre experimentação, história e filosofia, divulgação, interdisciplinaridade, audiovisual, TICs, CTSA e ABP.</p><p class="small muted">Seminários em grupo · Avaliação III ou artigo</p></article>
+  </div>
+
+  <div class="grid g2" style="margin-top:22px">
+    <article class="card reveal">
+      <h3>Por que filosofia numa licenciatura?</h3>
+      <p>Todo professor de Física ensina, além de resultados, uma <b>imagem da ciência</b>. Quem apresenta leis como verdades descobertas por gênios isolados ensina uma imagem. Quem mostra modelos, hipóteses, medidas com erro, controvérsias e comunidades ensina outra.</p>
+      <p>A segunda prepara melhor o estudante para entender por que a Física funciona, por que muda e por que merece confiança, sem cair no dogmatismo nem no "tudo é opinião".</p>
+    </article>
+    <article class="card reveal">
+      <h3>O que faz uma boa resposta</h3>
+      <p>Pelos exercícios e pelos slides, uma resposta forte segue a linha <b>identificar, refletir, relacionar</b>:</p>
+      <ul><li>define o problema;</li><li>atribui a tese ao autor certo, com a página;</li><li>explica os conceitos e como o autor os sustenta;</li><li>testa a explicação com um exemplo, de preferência da Física;</li><li>em comparações, mostra onde os autores <i>discordam</i>.</li></ul>
+    </article>
+  </div>
+
+  <div class="grid g2" style="margin-top:22px">
+    <div class="table-wrap reveal"><table>
+      <thead><tr><th>Informação</th><th>Registro</th></tr></thead>
+      <tbody>
+        <tr><td>Docente</td><td>José Luís Nami Adum Ortega</td></tr>
+        <tr><td>Turma diurna (2026201)</td><td>ter 10h–12h · sex 08h–10h</td></tr>
+        <tr><td>Turma noturna (2026202)</td><td>ter 21h–23h · sex 19h–21h</td></tr>
+        <tr><td>Carga</td><td>4 créditos-aula, 1 crédito-trabalho; 90 h, sendo 30 h de práticas como componente curricular</td></tr>
+        <tr><td>Materiais</td><td>e-Disciplinas (Moodle): textos, slides e exercícios</td></tr>
+      </tbody></table></div>
+    <article class="card reveal">
+      <h3>Avaliação</h3>
+      <p>O slide de apresentação registra exercícios em todos os blocos, avaliações nos Blocos I e II e, no Bloco III, seminário e Avaliação III ou artigo. A nota final aparece como média de cinco parcelas:</p>
+      <div class="chips"><span class="chip">AI</span><span class="chip">AII</span><span class="chip">AIII / artigo</span><span class="chip">Seminário</span><span class="chip">Exercícios</span></div>
+      <p class="small muted">A regra pode ser ajustada pelo professor. Confira no Moodle antes de calcular qualquer resultado.</p>
+    </article>
+  </div>
+
+  <div class="card soft reveal" style="margin-top:22px">
+    <h3>O lugar da disciplina na licenciatura</h3>
+    <p>Na grade sugerida do diurno, ela fica no 4º semestre, entre <i>Psicologia da Educação</i> e <i>Propostas e Projetos para o Ensino de Física</i>. No percurso desenhado na Aula 1, ela examina <b>que Física ensinamos, como ela se constitui e como se relaciona à aprendizagem</b>. Depois dela, a formação segue para a produção e a avaliação de materiais e projetos. Duas referências atravessam o curso: a <b>BNCC</b>, que orienta currículos da Educação Básica, e o <b>PROFIS</b>, o espaço de apoio e pesquisa com professores de Física do IFUSP.</p>
+  </div>
+</div></section>
+
+<!-- =============== CRONOGRAMA =============== -->
+<section id="cronograma" class="alt"><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker">Percurso</div><h2>Cronograma da turma</h2>
+    <p>As 30 aulas do semestre, da planilha do professor (sujeita a alterações). A próxima aula aparece destacada.</p></div>
+  <div class="filtros tabs" role="group" aria-label="Filtrar cronograma por bloco">
+    <button type="button" data-f="todos" aria-selected="true">Todas</button>
+    <button type="button" data-f="I" aria-selected="false">Bloco I</button>
+    <button type="button" data-f="II" aria-selected="false">Bloco II</button>
+    <button type="button" data-f="III" aria-selected="false">Bloco III</button>
+    <button type="button" data-f="entrega" aria-selected="false">Entregas e avaliações</button>
+  </div>
+  <ol class="crono" id="crono"></ol>
+</div></section>
+
+<!-- =============== BLOCO I =============== -->
+<section id="bloco1"><div class="wrap">
+  <div class="sec-head reveal">
+    <div class="bloco-tag"><span class="num">I</span><span class="kicker">Bloco I · filosofia da ciência e natureza da Física</span></div>
+    <h2>Como a ciência conhece?</h2>
+    <p>O Exercício 0 pediu uma definição pessoal de Física. Para dizer o que a Física é, é preciso dizer como ela conhece. Quatro autores, quatro perguntas.</p>
+  </div>
+
+  <div class="autor reveal">
+    <div class="avatar" aria-hidden="true">RA</div>
+    <article class="card">
+      <span class="tag">O que é um fato?</span>
+      <h3 style="margin-top:10px">Rubem Alves: redes, modelos e anzóis</h3>
+      <div class="who">1933–2014 · teólogo, filósofo, educador e cronista · <i>Filosofia da ciência: introdução ao jogo e suas regras</i> (1981), p. 33–35 e 75–88</div>
+      <div class="cols">
+        <div><h4>A ideia central</h4><p>Teorias são <b>redes feitas de palavras</b>: seletivas, construídas e testadas pelo que pescam. A ciência procura uma ordem invisível por trás dos fenômenos e só a alcança por modelos, como quem imagina o mecanismo de um relógio fechado.</p>
+          <p class="quote">"A ciência não nos oferece cópias do real" (p. 34)</p></div>
+        <div><h4>Para a sala de aula</h4><p>Todo modelo escolar (o ponto material, o gás ideal, o pêndulo simples) deixa algo passar pela rede. Perguntar <i>que grandezas o modelo seleciona e o que ele não descreve</i> combate a impressão de que a fórmula é o fenômeno inteiro.</p>
+          <div class="chips"><span class="chip">senso comum</span><span class="chip">modelo</span><span class="chip">teoria como rede</span><span class="chip">anzol</span><span class="chip">metodologia</span></div></div>
+      </div>
+      <details><summary>Contexto, exemplos do texto e Exercício 1</summary><div class="inner">
+        <p><b>Contexto.</b> O livro sai no fim da ditadura, quando a ciência era vendida como caminho do "Brasil potência" e o cientista como autoridade que não se discute. Alves oferece um antídoto contra a ciência como autoridade e um convite a entender o jogo por dentro.</p>
+        <p><b>Exemplos de Alves.</b> Galileu e a rede matemática; o éter de Michelson e Morley, uma expectativa que a experiência não satisfez; Semmelweis, em que a eficácia da prática precedeu a explicação microbiológica; os métodos como anzóis preparados para certo peixe.</p>
+        <p><b>Exercício 1: teoria e experiência.</b> A teoria orienta perguntas, categorias e previsões; a experiência confronta as consequências com o mundo. A observação nunca é totalmente livre de conceitos, mas o confronto também não é arbitrário: um resultado inesperado obriga a rever hipóteses. Metodologia é justificar o caminho: problema, hipótese, instrumento, análise e limites.</p>
+        <p class="note"><b>Cuidado:</b> a advertência contra a "arrogância do pescador" não autoriza abandonar métodos. É um pedido para não confundir o que foi pescado com tudo o que existe no rio.</p>
+      </div></details>
+    </article>
+  </div>
+
+  <div class="autor reveal">
+    <div class="avatar" aria-hidden="true">MB</div>
+    <article class="card">
+      <span class="tag">O que garante o conhecimento?</span>
+      <h3 style="margin-top:10px">Mario Bunge: medir e explicar o real</h3>
+      <div class="who">1919–2020 · físico e filósofo argentino-canadense · <i>Filosofia da Física</i> (1973), cap. 1, "Filosofia: farol ou armadilha?", p. 11–20</div>
+      <div class="cols">
+        <div><h4>A ideia central</h4><p>Quem rejeita a filosofia fica preso a uma filosofia implícita. Bunge enuncia o <b>"credo do físico inocente"</b>, dez teses que muitos físicos aceitariam sem pensar, e mostra que são teses filosóficas, e falsas. O alvo é o <b>operacionismo</b>: reduzir o significado de um conceito à operação que o mede.</p>
+          <p>Sua posição é <b>realista</b>: sistemas físicos existem independentemente de nós, e a Física os conhece por teorias inventadas e controladas pela experiência.</p></div>
+        <div><h4>Para a sala de aula</h4><p>Num laboratório de eletricidade, distinguir o circuito real, o modelo de corrente e a leitura do multímetro. O número é evidência produzida sob condições de medida; ele não é o próprio campo elétrico.</p>
+          <div class="chips"><span class="chip">realismo</span><span class="chip">materialismo</span><span class="chip">operacionismo</span><span class="chip">verdade aproximada</span><span class="chip">referência</span></div></div>
+      </div>
+      <details><summary>As respostas de Bunge ao credo e o Exercício 2</summary><div class="inner">
+        <ul><li>A observação não é a fonte única do conhecimento: teorias são <b>invenções controladas</b> pela experiência.</li>
+          <li>Conceitos não observáveis, como elétron e campo, podem ter <b>referência física</b>.</li>
+          <li>A verdade em Física é <b>aproximada</b>, e isso não é contradição.</li>
+          <li>Um conceito não se define pela operação que o mede: <b>medir pressupõe teoria</b>.</li></ul>
+        <p><b>Exercício 2: a verdade aproximada é uma contradição?</b> Não. Uma teoria pode representar aspectos reais dentro de um domínio e falhar fora dele, como a mecânica clássica. "Provisório" não significa "mera opinião".</p>
+        <p class="note"><b>Por que Bunge equilibra Alves:</b> depois de aprender que a teoria seleciona, o professor precisa dizer por que a Física merece confiança. É Bunge quem dá esse vocabulário: referência, teste, verdade aproximada.</p>
+      </div></details>
+    </article>
+  </div>
+
+  <div class="autor reveal">
+    <div class="avatar" aria-hidden="true">WH</div>
+    <article class="card">
+      <span class="tag">Para que, e com que consequências?</span>
+      <h3 style="margin-top:10px">Werner Heisenberg: ciência, política e responsabilidade</h3>
+      <div class="who">1901–1976 · um dos fundadores da mecânica quântica · <i>Física e Filosofia</i> (1958), cap. 11, p. 141–154</div>
+      <div class="cols">
+        <div><h4>A ideia central</h4><p>Escrito uma década depois de Hiroshima, em plena corrida nuclear: <b>a ciência virou poder</b>. Decidir sobre ciência passou a ser decidir sobre sobrevivência. O cientista tem deveres (informar, cooperar internacionalmente, como no CERN), mas pouca autoridade política. E o próprio <b>conceito de realidade mudou</b>, do mecanicismo do século XIX à relatividade e à física atômica.</p></div>
+        <div><h4>Para a sala de aula</h4><p>Ao estudar energia nuclear, separar fenômeno, modelo físico, tecnologia, uso institucional e decisão política. Uma pergunta só técnica deixa fora valores; uma discussão só moral deixa fora a Física que permite avaliar alegações.</p>
+          <div class="chips"><span class="chip">ciência e poder</span><span class="chip">responsabilidade</span><span class="chip">cooperação</span><span class="chip">conceito de realidade</span></div></div>
+      </div>
+      <details><summary>Contexto delicado e Exercício 3</summary><div class="inner">
+        <p>Heisenberg foi o principal físico do programa nuclear da Alemanha nazista. Depois da guerra, sustentou que os físicos alemães nunca quiseram de fato fazer a bomba. Historiadores discordam: a visita a Bohr em 1941, as gravações de Farm Hall e as cartas de Bohr divulgadas em 2002 contam versões que não se encaixam.</p>
+        <p><b>Exercício 3: ciência, poder e paz.</b> O conhecimento amplia possibilidades técnicas e poder de ação. Para defender uma posição, é preciso descrever instituições, usos, consequências e responsabilidade dos agentes. A paz depende de escolhas políticas que a ciência pode informar, mas não garantir.</p>
+        <p class="note"><b>Cuidado:</b> responsabilidade científica não é controle individual absoluto. Governos, instituições, financiamento e sociedade também decidem.</p>
+      </div></details>
+    </article>
+  </div>
+
+  <div class="autor reveal">
+    <div class="avatar" aria-hidden="true">TK</div>
+    <article class="card">
+      <span class="tag">Como a ciência muda?</span>
+      <h3 style="margin-top:10px">Thomas Kuhn: ciência normal e revolução</h3>
+      <div class="who">1922–1996 · físico que virou historiador · <i>A estrutura das revoluções científicas</i> (1962), cap. 1–6, p. 29–105</div>
+      <div class="cols">
+        <div><h4>A ideia central</h4><p>Realizações exemplares, como o <i>Principia</i> de Newton, fundam tradições de pesquisa: os <b>paradigmas</b>. A maior parte do trabalho científico é <b>ciência normal</b>, que articula o paradigma resolvendo <b>quebra-cabeças</b>. Quando uma <b>anomalia</b> persiste e atinge compromissos importantes, abre-se uma <b>crise</b>, e pode vir uma revolução.</p></div>
+        <div><h4>Para a sala de aula</h4><p>Todo professor ensina por <b>exemplares</b>: a lista do plano inclinado é como se aprende a ver o mundo com os olhos da mecânica. Kuhn também explica por que um aluno não troca de ideia só por ver um experimento contrário, o que prepara o Bloco II.</p>
+          <div class="chips"><span class="chip">paradigma</span><span class="chip">ciência normal</span><span class="chip">quebra-cabeça</span><span class="chip">exemplar</span><span class="chip">anomalia</span><span class="chip">crise</span></div></div>
+      </div>
+      <details><summary>Contexto, casos históricos e Exercício 4</summary><div class="inner">
+        <p><b>Contexto.</b> Contra o positivismo lógico e o falsificacionismo de Popper, que usavam a história só como ilustração, Kuhn trata a história como evidência de como a ciência funciona. A Introdução se chama "Um papel para a história".</p>
+        <p><b>Casos do recorte:</b> o oxigênio, os raios X e a garrafa de Leyden, em que anomalias persistentes levam à crise e abrem caminho para novos paradigmas.</p>
+        <p><b>Exercício 4: por que o paradigma importa para aprender?</b> Ele orienta o que merece atenção, que problema parece legítimo e como se reconhece uma solução. Aprender Física inclui adquirir competência nessa prática coletiva.</p>
+        <p class="note"><b>Cuidado:</b> a analogia entre aluno e revolução científica deve ser usada com cautela. O aluno não revive sozinho a história de uma comunidade, e é exatamente essa crítica que Mortimer fará à "rota kuhniana".</p>
+      </div></details>
+    </article>
+  </div>
+
+  <div class="card reveal" style="margin-top:34px">
+    <span class="tag">Um exemplo atravessa o bloco</span>
+    <h3 style="margin-top:10px">O pêndulo lido por quatro autores</h3>
+    <p class="muted">Numa aula de laboratório, a turma mede o período de um pêndulo e usa T = 2π√(L/g) para estimar g. Escolha um autor:</p>
+    <div class="tabs" role="tablist" data-grupo="pendulo">
+      <button role="tab" aria-selected="true" data-p="alves">Alves</button><button role="tab" aria-selected="false" data-p="bunge">Bunge</button><button role="tab" aria-selected="false" data-p="heis">Heisenberg</button><button role="tab" aria-selected="false" data-p="kuhn">Kuhn</button>
+    </div>
+    <div class="tabpanel" data-grupo="pendulo">
+      <p data-p="alves">O modelo do pêndulo simples é uma <b>rede</b>: retém comprimento, gravidade e ângulo pequeno, e deixa escapar o atrito do ar, a massa do fio e o tamanho do corpo. É isso que torna a fórmula útil, e também limitada.</p>
+      <p data-p="bunge" hidden>O valor de g não é "o que o cronômetro marcou": refere-se a uma <b>propriedade real</b> do campo gravitacional, estimada com incerteza. "g ≈ 9,8 m/s²" é uma verdade aproximada, não uma contradição.</p>
+      <p data-p="heis" hidden>A mesma mecânica que mede g calcula trajetórias balísticas e órbitas de satélites. O conhecimento não escolhe seu uso; quem o produz e ensina <b>participa dessa escolha</b>.</p>
+      <p data-p="kuhn" hidden>O pêndulo é um <b>exemplar</b>: ao resolvê-lo, o estudante aprende o que conta como problema e solução na mecânica. Se o período medido não bater, a turma suspeita primeiro da medida, não de Newton. Isso é ciência normal.</p>
+    </div>
+  </div>
+
+  <div class="grid g2" style="margin-top:22px">
+    <div class="table-wrap reveal"><table>
+      <thead><tr><th>Autor</th><th>Pergunta</th><th>Contribuição para a resposta</th></tr></thead>
+      <tbody>
+        <tr><td><b>Alves</b></td><td>Como teoria e método selecionam o que investigamos?</td><td>Criação, recorte, confronto e limite da rede</td></tr>
+        <tr><td><b>Bunge</b></td><td>Sobre o que falam as teorias físicas?</td><td>Realidade física, construção conceitual e operação de medida</td></tr>
+        <tr><td><b>Heisenberg</b></td><td>O que o poder técnico faz na sociedade?</td><td>Consequências, usos, instituições e responsabilidade</td></tr>
+        <tr><td><b>Kuhn</b></td><td>Como uma comunidade aprende e transforma sua prática?</td><td>Paradigma, ciência normal, anomalia e crise</td></tr>
+      </tbody></table></div>
+    <div class="reveal" style="display:grid;gap:14px">
+      <div class="note warn"><b>O erro a evitar:</b> dizer que "os quatro autores mostram que a ciência é relativa". Alves diz que a teoria seleciona, não que tudo vale. Bunge é realista. Heisenberg fala de responsabilidade, não de arbitrariedade. Kuhn recusou a leitura irracionalista.</div>
+      <div class="note"><b>Pergunta de integração: "a ciência é neutra?"</b> Separe três sentidos: (a) uma afirmação física é controlada por evidências; (b) a escolha de problemas, recursos e aplicações envolve valores; (c) a comunidade tem práticas históricas. O controle empírico não elimina decisões humanas sobre pesquisa e uso.</div>
+    </div>
+  </div>
+</div></section>
+
+<!-- =============== BLOCO II =============== -->
+<section id="bloco2" class="alt"><div class="wrap">
+  <div class="sec-head reveal">
+    <div class="bloco-tag"><span class="num">II</span><span class="kicker">Bloco II · pedagogia, psicologia e aprendizagem</span></div>
+    <h2>Da ciência a quem aprende</h2>
+    <p>O Bloco I perguntou como a ciência conhece. O Bloco II muda a pergunta: como alguém aprende ciência, e em que relação com quem ensina? Cada autor do Bloco I abre uma pergunta do Bloco II.</p>
+  </div>
+
+  <div class="grid g4 reveal" style="margin-bottom:30px">
+    <div class="card soft"><b>Alves → Freire</b><p class="small" style="margin:6px 0 0">A rede é escolhida por alguém. Quem escolhe o problema na sala de aula?</p></div>
+    <div class="card soft"><b>Bunge → Davis e Oliveira</b><p class="small" style="margin:6px 0 0">A teoria pressupõe uma ideia de sujeito. Que ideia de aluno está por trás de cada aula?</p></div>
+    <div class="card soft"><b>Heisenberg → Freire</b><p class="small" style="margin:6px 0 0">Conhecer é agir no mundo. A educação também é ato político.</p></div>
+    <div class="card soft"><b>Kuhn → Mortimer</b><p class="small" style="margin:6px 0 0">Comunidades mudam de paradigma. Os alunos mudam de ideia do mesmo jeito?</p></div>
+  </div>
+
+  <div class="autor reveal">
+    <div class="avatar" aria-hidden="true">PF</div>
+    <article class="card">
+      <span class="tag">Quem participa, e como?</span>
+      <h3 style="margin-top:10px">Paulo Freire: saber e diálogo</h3>
+      <div class="who">1921–1997 · educador pernambucano, patrono da educação brasileira · <i>Pedagogia do oprimido</i> (1970), p. 65–87 e 91–115</div>
+      <div class="cols">
+        <div><h4>A ideia central</h4>
+          <p><b>Educação bancária:</b> o educador narra, deposita e prescreve; os educandos recebem, arquivam e repetem. O conhecimento vira coisa pronta, e o mundo, algo parado.</p>
+          <p><b>Educação problematizadora:</b> educador e educandos se tornam sujeitos diante de um objeto comum. Ninguém educa ninguém sozinho: <span class="quote" style="display:inline;border:0;padding:0;font-size:inherit">"os homens se educam entre si, mediatizados pelo mundo"</span>.</p></div>
+        <div><h4>Diálogo, práxis, temas geradores</h4>
+          <p>A palavra verdadeira une ação e reflexão; sem ação vira <i>verbalismo</i>, sem reflexão vira <i>ativismo</i>. O conteúdo programático nasce de uma investigação da realidade dos educandos, das suas situações-limites, feita com eles.</p>
+          <div class="chips"><span class="chip">educação bancária</span><span class="chip">problematização</span><span class="chip">diálogo</span><span class="chip">práxis</span><span class="chip">tema gerador</span></div></div>
+      </div>
+      <details><summary>Contexto e cuidados de leitura</summary><div class="inner">
+        <p><b>Contexto.</b> No início dos anos 1960, analfabetos não votavam: alfabetizar adultos era ampliar quem decide. Freire alfabetizava a partir de palavras geradoras ("tijolo", "salário") discutidas em círculos de cultura. Com o golpe de 1964 foi preso e exilado por quase dezesseis anos. No Chile, trabalhou com educação de adultos e reforma agrária, e o livro traz falas de camponeses chilenos.</p>
+        <p class="note"><b>Cuidado:</b> a crítica bancária não é contra a aula expositiva em si, e sim contra a posição atribuída aos sujeitos. O diálogo não apaga a responsabilidade do professor, que organiza e oferece conhecimento. Conversar por conversar, ou pedir que os alunos adivinhem a resposta do professor, não é diálogo.</p>
+      </div></details>
+    </article>
+  </div>
+
+  <div class="autor reveal">
+    <div class="avatar" aria-hidden="true">DO</div>
+    <article class="card">
+      <span class="tag">Como alguém aprende e se desenvolve?</span>
+      <h3 style="margin-top:10px">Davis e Oliveira: desenvolvimento e mediação</h3>
+      <div class="who">Cláudia Davis (PUC-SP) e Zilma de Oliveira (USP) · <i>Psicologia na educação</i> (1994), p. 16–34 e 36–56</div>
+      <p><b>A tese que costura o texto:</b> o que o professor pensa sobre como a criança se desenvolve decide o que ele faz em sala, quem ele considera capaz e o que espera do erro. As autoras apresentam três concepções:</p>
+      <div class="mini">
+        <div class="card soft"><span class="tag">Inatismo</span><h4 style="margin-top:8px">"Pau que nasce torto…"</h4><p class="small" style="margin:0">Capacidades viriam prontas. Risco: naturalizar a dificuldade, como em "não nasceu para Física".</p></div>
+        <div class="card soft"><span class="tag">Ambientalismo</span><h4 style="margin-top:8px">Skinner</h4><p class="small" style="margin:0">Condicionamento operante: o comportamento é selecionado pelas consequências (reforço, punição, extinção). Crítica das autoras: o aluno vira um ser reativo.</p></div>
+        <div class="card soft"><span class="tag">Interacionismo</span><h4 style="margin-top:8px">Piaget e Vigotski</h4><p class="small" style="margin:0">O desenvolvimento se constrói na atividade do sujeito com o meio físico e social.</p></div>
+      </div>
+      <div class="cols" style="margin-top:18px">
+        <div><h4>Piaget (1896–1980)</h4><p><b>Assimilação</b> (interpretar o novo com esquemas que já se tem), <b>acomodação</b> (modificar os esquemas), <b>equilibração</b> (o processo que regula as duas, disparado por um desequilíbrio) e <b>estágios</b> (sensório-motor, pré-operatório, operatório concreto e formal). A equilibração é a base psicológica da mudança conceitual.</p></div>
+        <div><h4>Vigotski (1896–1934)</h4><p>A mente vem de fora para dentro: as funções psicológicas superiores são <b>mediadas</b> por instrumentos e signos, sobretudo a linguagem. A <b>zona de desenvolvimento proximal</b> é a distância entre o que o aluno faz sozinho e o que faz com ajuda. A aprendizagem mediada pode puxar o desenvolvimento.</p></div>
+      </div>
+      <details><summary>Exemplo de Física e cuidados</summary><div class="inner">
+        <p><b>O gráfico de velocidade.</b> O aluno diz que a linha mais alta no gráfico v × t tem "mais aceleração", confundindo altura com inclinação. O professor pergunta o que a altura mostra; com a pista, ele acerta. Numa tarefa nova sem a pista, volta a errar. O registro orienta outra mediação. Um acerto com ajuda mostra uma possibilidade, não um domínio já consolidado.</p>
+        <p class="note"><b>Cuidados:</b> a leitura de Skinner como "aluno passivo" é um pouco caricata, já que para ele o comportamento é interação organismo-ambiente. O relato de Amala e Kamala, usado na abertura do livro, é historicamente contestado. E o texto diz que Piaget "trabalhou com Binet e Simon": Binet morreu em 1911, e Piaget trabalhou no laboratório de Simon.</p>
+      </div></details>
+    </article>
+  </div>
+
+  <div class="autor reveal">
+    <div class="avatar" aria-hidden="true">EM</div>
+    <article class="card">
+      <span class="tag">Que explicação o aluno usa, onde e por quê?</span>
+      <h3 style="margin-top:10px">Eduardo Mortimer: ideias prévias e perfil conceitual</h3>
+      <div class="who">químico, professor da Faculdade de Educação da UFMG · <i>Linguagem e formação de conceitos no ensino de ciências</i> (2000), cap. 1, p. 35–82</div>
+      <div class="cols">
+        <div><h4>Da mudança conceitual…</h4><p>O modelo de Posner e colaboradores (1982) tem dois componentes: as <b>condições</b> para acomodar um conceito novo (insatisfação com o antigo; o novo precisa ser <b>inteligível, plausível e frutífero</b>) e a <b>ecologia conceitual</b> do aluno (p. 37–39). As estratégias usam <b>conflito cognitivo</b>, preenchimento de <b>lacunas</b> e <b>analogias</b>.</p>
+          <p>Mas "a criação de conflitos, por si só, é insuficiente" (p. 44), e as ideias antigas voltam fora da sala. Mortimer critica a <b>"rota kuhniana"</b>: tratar o aluno como um cientista em revolução.</p></div>
+        <div><h4>… ao perfil conceitual</h4><p>Vindo do perfil epistemológico de <b>Bachelard</b> (p. 68), o perfil conceitual descreve um conceito como várias formas de pensar que <b>convivem</b> numa pessoa, cada uma adequada a certos contextos. Aprender é ganhar uma zona nova e <b>tomar consciência</b> de quando usar cada uma (p. 78–80).</p>
+          <div class="chips"><span class="chip">concepções alternativas</span><span class="chip">ecologia conceitual</span><span class="chip">conflito</span><span class="chip">lacuna</span><span class="chip">analogia</span><span class="chip">perfil conceitual</span></div></div>
+      </div>
+      <h4 style="margin-top:18px">As zonas do perfil de "massa", segundo Bachelard (p. 73–76)</h4>
+      <div class="zonas" aria-label="Gráfico das zonas do perfil epistemológico">
+        <div class="zona" style="background:#d98aa6;min-height:120px"><b>Realismo ingênuo</b>massa = o que é pesado, avaliada a olho</div>
+        <div class="zona" style="background:#c95c82;min-height:160px"><b>Empirismo</b>massa medida com a balança</div>
+        <div class="zona" style="background:#b23a64;min-height:190px"><b>Racionalismo clássico</b>massa numa rede de relações (Newton)</div>
+        <div class="zona" style="background:#8e1f45;min-height:150px"><b>Racionalismo moderno</b>massa relativística</div>
+        <div class="zona" style="background:#6b3a7a;min-height:110px"><b>Contemporâneo</b>em desenvolvimento</div>
+      </div>
+      <p class="small muted" style="margin-top:8px">Alturas ilustrativas: cada pessoa tem um perfil próprio. Mortimer brinca que o dele teria uma zona empirista grande, por causa dos anos de balança no laboratório de Química.</p>
+      <details><summary>O exemplo do casaco e o Exercício 7</summary><div class="inner">
+        <p><b>"O casaco esquenta."</b> Na conversa comum, funciona. Na Física, o casaco não fornece calor: reduz a transferência de energia do corpo para o ambiente. O aluno pode continuar dizendo a frase em casa e, num problema, usar a explicação física. Isso não é fracasso, mas as explicações não são equivalentes: para prever e justificar, a científica tem mais alcance.</p>
+        <p><b>Conflito ou lacuna? (p. 43–44).</b> Numa manhã fria, o aluno prevê que o bloco de alumínio está mais frio que o de madeira. O termômetro mostra temperaturas iguais: é um <i>conflito</i>. Um aluno que já sabe de equilíbrio térmico prevê certo, mas não explica por que o metal parece mais frio: é uma <i>lacuna</i>.</p>
+        <p><b>Os três acréscimos de Mortimer a Bachelard:</b> distinguir aspectos ontológicos e epistemológicos de cada zona; dar papel à tomada de consciência do próprio perfil; definir as zonas pré-científicas pela cultura, e não por escolas filosóficas.</p>
+      </div></details>
+    </article>
+  </div>
+
+  <div class="card reveal" style="margin-top:34px">
+    <span class="tag">Síntese do Bloco II</span>
+    <h3 style="margin-top:10px">Três planos para uma mesma aula: a flutuação</h3>
+    <p class="muted">Um aluno diz "o pesado afunda"; outro aponta um barco carregado que flutua. O que cada autor nos faz perguntar?</p>
+    <div class="tabs" role="tablist" data-grupo="flut">
+      <button role="tab" aria-selected="true" data-p="freire">Freire</button><button role="tab" aria-selected="false" data-p="davis">Davis e Oliveira</button><button role="tab" aria-selected="false" data-p="mortimer">Mortimer</button><button role="tab" aria-selected="false" data-p="fisica">A Física</button>
+    </div>
+    <div class="tabpanel" data-grupo="flut">
+      <p data-p="freire"><b>Quem participa da definição e da crítica do problema?</b> Por que a travessia importa para aquelas pessoas? Elas puderam reformular a pergunta? Usar "barco" na folha de exercícios, por si só, não resolve isso.</p>
+      <p data-p="davis" hidden><b>Que mediação permite avançar, e o que o aluno faz sozinho?</b> Ele compara massa e volume sem ajuda? Qual pista permite avançar? Consegue repetir o raciocínio numa situação nova?</p>
+      <p data-p="mortimer" hidden><b>Que explicação o aluno usa, onde e por quê?</b> O que "pesado" significa em cada fala? Em que contexto a massa total é insuficiente? Como ele justifica a relação entre densidade média e flutuação?</p>
+      <p data-p="fisica" hidden>Para corpos rígidos em água parada, comparar a densidade média ρ = m/V com a da água ajuda a prever a flutuação. Um barco real exige mais dados: forma, carga, estabilidade. O caso não é de nenhum dos três autores: é um exemplo de estudo.</p>
+    </div>
+    <div class="note" style="margin-top:14px"><b>A linha que atravessa os três:</b> todos recusam um aluno passivo. Freire recusa o aluno-depósito; Davis e Oliveira recusam o aluno que só reage ou que já nasceu pronto; Mortimer recusa a ideia de apagar o conhecimento antigo e escrever o novo por cima.</div>
+  </div>
+</div></section>
+
+<!-- =============== BLOCO III =============== -->
+<section id="bloco3"><div class="wrap">
+  <div class="sec-head reveal">
+    <div class="bloco-tag"><span class="num">III</span><span class="kicker">Bloco III · seminários</span></div>
+    <h2>Escolher estratégias por uma finalidade</h2>
+    <p>Cada grupo apresenta, em 30 a 45 minutos: (I) a definição do tema e o que o diferencia dos vizinhos; (II) como a pesquisa em ensino o trata; (III) uma aplicação em sala; (IV) uma pergunta problematizadora. Depois, 15 minutos de debate e um resumo de até 500 palavras.</p>
+  </div>
+  <div class="grid g4" id="seminarios"></div>
+  <div class="note reveal" style="margin-top:22px"><b>Critério comum às estratégias:</b> escolher um recurso só depois de explicitar o objetivo de aprendizagem, a explicação inicial dos estudantes, o tipo de atividade intelectual desejada e a evidência que permitirá avaliar o resultado. Um recurso envolvente pode cumprir uma função, mas o efeito sobre a compreensão precisa ser examinado na tarefa concreta.</div>
+</div></section>
+
+<!-- =============== MAPA =============== -->
+<section id="mapa" class="alt"><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker">Relacionar</div><h2>Mapa de ideias da disciplina</h2>
+    <p>Os autores não estão em caixas separadas. As linhas mostram as pontes discutidas no caderno: quem lê quem, quem critica quem.</p></div>
+  <div class="card reveal" style="padding:16px">
+  <svg class="mapa" viewBox="0 0 1000 560" role="img" aria-labelledby="mapa-t mapa-d">
+    <title id="mapa-t">Mapa de relações entre os autores da disciplina</title>
+    <desc id="mapa-d">Bloco I no alto: Alves, Bunge, Heisenberg e Kuhn. Bloco II embaixo: Freire, Davis e Oliveira, Piaget, Vigotski, Skinner e Mortimer. Bachelard liga-se a Mortimer pelo perfil epistemológico; Kuhn liga-se a Mortimer pela crítica à rota kuhniana; Piaget liga-se a Mortimer pela equilibração; Vigotski liga-se a Mortimer pela origem social das formas de pensar.</desc>
+    <defs><marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--rose)"/></marker></defs>
+    <rect x="20" y="20" width="960" height="170" rx="22" fill="var(--bg2)"/>
+    <rect x="20" y="300" width="960" height="240" rx="22" fill="var(--bg2)"/>
+    <text x="40" y="50" font-size="13" font-weight="700" fill="var(--cherry)" letter-spacing="2">BLOCO I · COMO A CIÊNCIA CONHECE</text>
+    <text x="40" y="330" font-size="13" font-weight="700" fill="var(--cherry)" letter-spacing="2">BLOCO II · QUEM APRENDE, E COMO</text>
+    <g stroke="var(--rose)" stroke-width="2.5" fill="none" marker-end="url(#seta)">
+      <path d="M215 115 L300 115"/><path d="M455 115 L540 115"/><path d="M700 115 L775 115"/>
+      <path d="M860 150 C 860 260, 820 330, 800 420"/>
+      <path d="M140 150 C 140 240, 150 330, 160 400"/>
+      <path d="M380 150 C 380 250, 360 330, 330 400"/>
+      <path d="M630 150 C 600 260, 250 300, 200 400" stroke-dasharray="6 6"/>
+      <path d="M445 470 L 690 470"/>
+      <path d="M560 420 C 600 400, 650 410, 690 440"/>
+      <path d="M915 250 C 920 330, 900 390, 870 430"/>
+    </g>
+    <g font-size="12" fill="var(--muted)">
+      <text x="258" y="104" text-anchor="middle">seleciona</text><text x="465" y="105">uso e poder</text><text x="705" y="105">história</text>
+      <text x="825" y="270">"rota kuhniana"</text><text x="148" y="290">quem escolhe</text><text x="148" y="306">a rede?</text>
+      <text x="368" y="290">que ideia de</text><text x="368" y="306">sujeito?</text><text x="500" y="226">ciência é política</text>
+      <text x="520" y="488">equilibração</text><text x="590" y="398">origem social</text><text x="935" y="290" text-anchor="middle">perfil</text><text x="935" y="306" text-anchor="middle">epistemológico</text>
+    </g>
+    <g font-family="Georgia,serif" font-weight="600" text-anchor="middle">
+      <g><rect x="65" y="80" width="150" height="70" rx="35" fill="var(--card)" stroke="var(--cherry)" stroke-width="2"/><text x="140" y="112" font-size="18" fill="var(--ink)">Rubem Alves</text><text x="140" y="132" font-size="12" font-family="sans-serif" font-weight="400" fill="var(--muted)">rede · modelo</text></g>
+      <g><rect x="305" y="80" width="150" height="70" rx="35" fill="var(--card)" stroke="var(--cherry)" stroke-width="2"/><text x="380" y="112" font-size="18" fill="var(--ink)">Bunge</text><text x="380" y="132" font-size="12" font-family="sans-serif" font-weight="400" fill="var(--muted)">realismo</text></g>
+      <g><rect x="545" y="80" width="155" height="70" rx="35" fill="var(--card)" stroke="var(--cherry)" stroke-width="2"/><text x="622" y="112" font-size="18" fill="var(--ink)">Heisenberg</text><text x="622" y="132" font-size="12" font-family="sans-serif" font-weight="400" fill="var(--muted)">responsabilidade</text></g>
+      <g><rect x="780" y="80" width="150" height="70" rx="35" fill="var(--card)" stroke="var(--cherry)" stroke-width="2"/><text x="855" y="112" font-size="18" fill="var(--ink)">Kuhn</text><text x="855" y="132" font-size="12" font-family="sans-serif" font-weight="400" fill="var(--muted)">paradigma</text></g>
+      <g><rect x="850" y="200" width="125" height="50" rx="25" fill="var(--blush)"/><text x="912" y="230" font-size="15" fill="var(--deep)">Bachelard</text></g>
+      <g><rect x="80" y="400" width="160" height="70" rx="35" fill="var(--cherry)"/><text x="160" y="432" font-size="18" fill="#fff">Freire</text><text x="160" y="452" font-size="12" font-family="sans-serif" font-weight="400" fill="#fff">diálogo</text></g>
+      <g><rect x="255" y="400" width="190" height="70" rx="35" fill="var(--cherry)"/><text x="350" y="432" font-size="18" fill="#fff">Davis e Oliveira</text><text x="350" y="452" font-size="12" font-family="sans-serif" font-weight="400" fill="#fff">desenvolvimento</text></g>
+      <g><rect x="290" y="485" width="80" height="40" rx="20" fill="var(--blush)"/><text x="330" y="510" font-size="14" fill="var(--deep)">Skinner</text></g>
+      <g><rect x="380" y="485" width="70" height="40" rx="20" fill="var(--blush)"/><text x="415" y="510" font-size="14" fill="var(--deep)">Piaget</text></g>
+      <g><rect x="470" y="395" width="90" height="40" rx="20" fill="var(--blush)"/><text x="515" y="420" font-size="14" fill="var(--deep)">Vigotski</text></g>
+      <g><rect x="695" y="420" width="210" height="80" rx="40" fill="var(--deep)"/><text x="800" y="455" font-size="19" fill="#fff">Mortimer</text><text x="800" y="477" font-size="12" font-family="sans-serif" font-weight="400" fill="#fff">perfil conceitual</text></g>
+    </g>
+  </svg>
+  </div>
+</div></section>
+
+<!-- =============== LINHA DO TEMPO =============== -->
+<section id="tempo"><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker">Contexto histórico</div><h2>Quando cada um escreveu</h2>
+    <p>A faixa clara é a vida do autor; o círculo marca a obra que lemos. Repare: quase todos escrevem entre a Segunda Guerra e a redemocratização brasileira.</p></div>
+  <div class="lt reveal" id="lt"></div>
+</div></section>
+
+<!-- =============== GLOSSÁRIO =============== -->
+<section id="glossario" class="alt"><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker">Identificar</div><h2>Glossário de conceitos</h2>
+    <p>Os conceitos da disciplina, com o autor a que pertencem. Digite para filtrar.</p></div>
+  <input class="busca" id="busca" type="search" placeholder="Buscar conceito ou autor: paradigma, Freire, conflito…" aria-label="Buscar no glossário">
+  <div class="glos" id="glos" aria-live="polite"></div>
+</div></section>
+
+<!-- =============== LEITURAS =============== -->
+<section id="leituras"><div class="wrap">
+  <div class="sec-head reveal"><div class="kicker">Para consultar</div><h2>Leituras da disciplina</h2></div>
+  <div class="grid g2">
+    <div class="card reveal"><h3>Bloco I</h3><ul>
+      <li>ALVES, R. <i>Filosofia da ciência: introdução ao jogo e suas regras</i>. Brasiliense, 1981, p. 33–35 e 75–88.</li>
+      <li>BUNGE, M. <i>Filosofia da Física</i>. Lisboa: Edições 70, 1973, p. 11–20.</li>
+      <li>HEISENBERG, W. <i>Física e Filosofia</i> (1958). Brasília: UnB, 1987, p. 141–154.</li>
+      <li>KUHN, T. <i>A estrutura das revoluções científicas</i> (1962). São Paulo: Perspectiva, p. 29–105.</li></ul></div>
+    <div class="card reveal"><h3>Bloco II</h3><ul>
+      <li>FREIRE, P. <i>Pedagogia do oprimido</i> (1970). Paz e Terra, p. 65–87 e 91–115.</li>
+      <li>DAVIS, C.; OLIVEIRA, Z. <i>Psicologia na educação</i>. São Paulo: Cortez, 1994, p. 16–34 e 36–56.</li>
+      <li>MORTIMER, E. F. <i>Linguagem e formação de conceitos no ensino de ciências</i>. Belo Horizonte: Ed. UFMG, 2000, p. 35–82.</li></ul></div>
+    <div class="card soft reveal"><h3>Onde encontrar</h3><ul>
+      <li><a href="https://edisciplinas.usp.br/course/view.php?id=143700">e-Disciplinas da turma</a> (requer login USP): textos, slides e exercícios.</li>
+      <li><a href="https://www.fep.if.usp.br/~profis/">PROFIS/IFUSP</a>: acervo e recursos virtuais para professores de Física.</li>
+      <li><a href="https://basenacionalcomum.mec.gov.br/">BNCC</a>: Base Nacional Comum Curricular.</li></ul></div>
+    <div class="card soft reveal"><h3>Feito pela turma</h3><ul>
+      <li><a href="https://jhuannp.github.io/desenhe-o-som/">Desenhe o som</a>: aplicação do Grupo 6 (TICs).</li>
+      <li><a href="https://jhuannp.github.io/desenhe-o-som/seminario.html">Seminário "TIC não é método"</a>.</li></ul></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Página de estudo feita por um estudante a partir do caderno de notas de aula, dos slides e dos textos da disciplina 4300356 (IF-USP, 2026/2). Não é uma página oficial da disciplina. Sínteses e exemplos são interpretações de estudo; para citar, consulte sempre os textos originais.</div></footer>
+
+<script>
+(()=>{
+'use strict';
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const st={get(k){try{return localStorage.getItem('ens4300356:'+k)}catch(e){return null}},set(k,v){try{localStorage.setItem('ens4300356:'+k,v)}catch(e){}}};
+
+/* tema */
+const t=st.get('tema');if(t)document.documentElement.dataset.theme=t;
+$('#tema').addEventListener('click',()=>{const d=document.documentElement.dataset.theme?document.documentElement.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;const n=d?'light':'dark';document.documentElement.dataset.theme=n;st.set('tema',n);});
+
+/* abas dos exemplos */
+$$('.tabs[data-grupo]').forEach(tl=>{const g=tl.dataset.grupo,bs=[...tl.querySelectorAll('button')],ps=$$('.tabpanel[data-grupo="'+g+'"] [data-p]');
+  const sel=b=>{bs.forEach(x=>x.setAttribute('aria-selected',x===b));ps.forEach(p=>p.hidden=p.dataset.p!==b.dataset.p);};
+  bs.forEach((b,i)=>{b.addEventListener('click',()=>sel(b));b.addEventListener('keydown',e=>{const k={ArrowRight:1,ArrowLeft:-1}[e.key];if(k){e.preventDefault();const n=bs[(i+k+bs.length)%bs.length];n.focus();sel(n);}});});});
+
+/* cronograma (planilha do professor) */
+const C=[
+ [1,'2026-08-04','I','Introdução ao Bloco I','Apresentação do curso e cronograma',''],
+ [2,'2026-08-07','I','Discussão inicial','Problemas do Ensino de Física: o que é Física?','Exercício 0'],
+ [3,'2026-08-11','I','Discussão introdutória','Relações entre ciência e realidade',''],
+ [4,'2026-08-14','I','Rubem Alves','Filosofia da ciência: introdução ao jogo e suas regras, p. 75–88','Exercício 1'],
+ [5,'2026-08-18','I','Discussão introdutória','A prática científica e a produção de teorias',''],
+ [6,'2026-08-21','I','Mario Bunge','Filosofia da Física, p. 11–20','Exercício 2'],
+ [7,'2026-08-25','I','Discussão introdutória','Relações entre ciência, poder e sociedade',''],
+ [8,'2026-08-28','I','Werner Heisenberg','Física e Filosofia, p. 141–154','Exercício 3'],
+ [0,'2026-09-01','-','Sem aula','EPEF: atividade em grupo no Moodle',''],
+ [0,'2026-09-04','-','Sem aula','EPEF: atividade em grupo no Moodle',''],
+ [0,'2026-09-08','-','Sem aula','Semana da Pátria',''],
+ [0,'2026-09-11','-','Sem aula','Semana da Pátria',''],
+ [9,'2026-09-15','I','Discussão introdutória','Evolução da ciência',''],
+ [10,'2026-09-18','I','Thomas Kuhn','A estrutura das revoluções científicas, p. 29–105','Exercício 4'],
+ [11,'2026-09-22','I','Fechamento do Bloco I','Síntese sobre o desenvolvimento científico e a Física',''],
+ [12,'2026-09-25','I','Avaliação I','Prova escrita individual: Bloco I','Avaliação I'],
+ [13,'2026-09-29','II','Introdução ao Bloco II','Temas do Ensino de Física',''],
+ [14,'2026-10-02','II','Paulo Freire','Pedagogia do oprimido, p. 65–87',''],
+ [15,'2026-10-06','II','Paulo Freire','Pedagogia do oprimido, p. 91–115','Exercício 5'],
+ [16,'2026-10-09','II','Davis e Oliveira','Psicologia na educação, p. 16–34',''],
+ [17,'2026-10-13','II','Davis e Oliveira','Psicologia na educação, p. 36–56','Exercício 6'],
+ [18,'2026-10-16','II','Discussão introdutória','Conhecimento prévio e processo de ensino-aprendizagem',''],
+ [0,'2026-10-20','-','Semana da Licenciatura','Revisão e esclarecimento de dúvidas',''],
+ [0,'2026-10-23','-','Semana da Licenciatura','Revisão e esclarecimento de dúvidas',''],
+ [19,'2026-10-27','III','Organização dos seminários','Atividades preparatórias',''],
+ [0,'2026-10-30','-','Recesso','Dia do Servidor Público',''],
+ [21,'2026-11-03','II','Mortimer','Linguagem e formação de conceitos, p. 35–58',''],
+ [22,'2026-11-06','II','Mortimer','Linguagem e formação de conceitos, p. 58–82','Exercício 7'],
+ [23,'2026-11-10','II','Fechamento do Bloco II','Revisão e preparação para os seminários',''],
+ [24,'2026-11-13','II','Avaliação II','Conteúdos do Bloco II','Avaliação II'],
+ [25,'2026-11-17','III','Seminários 1 e 2','Atividades experimentais · História e filosofia da ciência','Seminários'],
+ [0,'2026-11-20','-','Recesso','Dia da Consciência Negra',''],
+ [26,'2026-11-24','III','Seminários 3 e 4','Divulgação científica · Interdisciplinaridade','Seminários'],
+ [27,'2026-11-27','III','Seminários 5 e 6','O audiovisual · Tecnologias da Informação (TICs)','Seminários'],
+ [28,'2026-12-01','III','Seminários 7 e 8','CTSA · Aprendizagem baseada em problemas','Seminários'],
+ [29,'2026-12-04','III','Manutenção dos seminários','',''],
+ [30,'2026-12-08','III','Devolutivas e autoavaliação','Encerramento','']];
+const DIAS=['dom','seg','ter','qua','qui','sex','sáb'];
+const hoje=new Date();hoje.setHours(0,0,0,0);
+const prox=C.find(c=>c[0]&&new Date(c[1]+'T12:00')>=hoje);
+function crono(f){const ol=$('#crono');ol.innerHTML='';
+  C.filter(c=>f==='todos'||(f==='entrega'?c[5]:c[2]===f)).forEach(c=>{const d=new Date(c[1]+'T12:00');const li=document.createElement('li');
+    if(!c[0])li.className='sem';else if(c===prox)li.className='prox';else if(d<hoje)li.className='passado';
+    li.innerHTML='<span class="n"></span><span class="d"></span><span class="t"><b></b><span></span></span>'+(c[5]?'<span class="e"></span>':'<span></span>');
+    li.querySelector('.n').textContent=c[0]?String(c[0]).padStart(2,'0'):'·';
+    li.querySelector('.d').textContent=DIAS[d.getDay()]+', '+d.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'});
+    li.querySelector('.t b').textContent=c[3]+(c===prox?' · próxima aula':'');li.querySelector('.t span').textContent=c[4];
+    if(c[5])li.querySelector('.e').textContent=c[5];ol.appendChild(li);});}
+$$('.filtros button').forEach(b=>b.addEventListener('click',()=>{$$('.filtros button').forEach(x=>x.setAttribute('aria-selected',x===b));crono(b.dataset.f);}));
+crono('todos');
+
+/* seminários */
+const S=[
+ ['1','17/11','Atividades experimentais','Que hipótese ou relação a atividade permite examinar? O que é medido e interpretado?'],
+ ['2','17/11','História e filosofia da ciência','Que problema e que alternativas tornaram uma ideia científica inteligível?'],
+ ['3','24/11','Divulgação científica','Que linguagem amplia o acesso sem apagar condições e limites do conhecimento?'],
+ ['4','24/11','Interdisciplinaridade','Que aspectos do problema exigem outras áreas?'],
+ ['5','27/11','O audiovisual','Que recorte e que sequência o vídeo já decidiu pelo aluno?'],
+ ['6','27/11','Tecnologias da Informação (TICs)','Que variável o recurso torna manipulável e o que seu modelo deixa de fora?'],
+ ['7','01/12','Ciência, Tecnologia, Sociedade e Ambiente','Que decisões sociais o problema envolve?'],
+ ['8','01/12','Aprendizagem baseada em problemas','Que trabalho intelectual a situação exige e como será acompanhado?']];
+const sw=$('#seminarios');S.forEach(s=>{const a=document.createElement('article');a.className='card sem-card reveal'+(s[0]==='6'?' nosso':'');
+  a.innerHTML='<span class="g"></span><h4></h4><p class="small muted" style="margin:0"></p>';a.querySelector('.g').textContent='Grupo '+s[0]+' · '+s[1];a.querySelector('h4').textContent=s[2];a.querySelector('p').textContent=s[3];
+  if(s[0]==='6'){const l=document.createElement('a');l.href='https://jhuannp.github.io/desenhe-o-som/seminario.html';l.textContent='Ver o seminário →';l.className='small';a.appendChild(l);}
+  sw.appendChild(a);});
+
+/* linha do tempo */
+const L=[['Bachelard',1884,1962,1940,'A filosofia do não'],['Piaget',1896,1980,1936,'O nascimento da inteligência'],['Vigotski',1896,1934,1934,'Pensamento e linguagem'],
+ ['Heisenberg',1901,1976,1958,'Física e Filosofia'],['Skinner',1904,1990,1968,'Tecnologia do ensino'],['Bunge',1919,2020,1973,'Filosofia da Física'],['Freire',1921,1997,1970,'Pedagogia do oprimido'],
+ ['Kuhn',1922,1996,1962,'A estrutura das revoluções científicas'],['Rubem Alves',1933,2014,1981,'Filosofia da ciência'],['Davis e Oliveira',null,null,1994,'Psicologia na educação'],['Mortimer',null,null,2000,'Linguagem e formação de conceitos']];
+const A0=1880,A1=2025,pct=y=>((y-A0)/(A1-A0)*100).toFixed(2)+'%';const lt=$('#lt');
+L.forEach(l=>{const r=document.createElement('div');r.className='lt-row';r.innerHTML='<div class="lt-name"></div><div class="lt-bar"></div>';r.querySelector('.lt-name').textContent=l[0];
+  const bar=r.querySelector('.lt-bar');if(l[1]){const v=document.createElement('div');v.className='lt-life';v.style.left=pct(l[1]);v.style.width=((l[2]-l[1])/(A1-A0)*100)+'%';v.title=l[0]+': '+l[1]+'–'+l[2];bar.appendChild(v);}
+  const w=document.createElement('div');w.className='lt-work';w.style.left=pct(l[3]);w.textContent="'"+String(l[3]).slice(2);w.title=l[4]+' ('+l[3]+')';w.setAttribute('aria-label',l[0]+', '+l[4]+', '+l[3]);bar.appendChild(w);lt.appendChild(r);});
+const ax=document.createElement('div');ax.className='lt-axis';ax.innerHTML='<div></div><div><span>1880</span><span>1920</span><span>1960</span><span>2000</span><span>2025</span></div>';lt.appendChild(ax);
+
+/* glossário */
+const G=[
+ ['Modelo','Alves · Bunge','Construção que representa aspectos de um sistema e permite pensar suas consequências. Não é cópia do real: funciona em condições determinadas e pode ser revisto.'],
+ ['Teoria como rede','Alves','Teorias são redes feitas de palavras: retêm alguns aspectos do mundo e deixam outros passar. São testadas pelo que pescam.'],
+ ['Anzol (método)','Alves','Métodos são preparados para o tipo de evidência que se espera obter. São indispensáveis, mas nunca neutros.'],
+ ['Senso comum','Alves','Conhecimento cotidiano de onde a ciência parte e do qual se diferencia pelo controle e pela busca de ordem invisível.'],
+ ['Realismo','Bunge','Sistemas físicos existem independentemente de nós; a Física procura conhecê-los por teorias controladas pela experiência.'],
+ ['Operacionismo','Bunge','Redução do significado de um conceito às operações que o medem. Bunge o critica: medir pressupõe teoria.'],
+ ['Credo do físico inocente','Bunge','Dez teses que muitos físicos aceitariam sem pensar e que Bunge mostra serem filosóficas, e falsas.'],
+ ['Verdade aproximada','Bunge','Uma teoria pode representar aspectos reais dentro de um domínio e falhar fora dele. Provisório não é mera opinião.'],
+ ['Ciência e poder','Heisenberg','Com a física nuclear, decidir sobre ciência passou a ser decidir sobre sobrevivência.'],
+ ['Responsabilidade do cientista','Heisenberg','Dever de informar e cooperar quando se antevê consequências; não equivale a controle individual absoluto.'],
+ ['Paradigma','Kuhn','Realização científica reconhecida que oferece problemas e soluções exemplares a uma comunidade.'],
+ ['Ciência normal','Kuhn','Investigação que articula e aprofunda o paradigma, em vez de testá-lo.'],
+ ['Quebra-cabeça','Kuhn','Problema da ciência normal: há regras e a garantia de que uma solução existe.'],
+ ['Exemplar','Kuhn','Problema resolvido pelo qual se aprende a ver o mundo como a comunidade vê.'],
+ ['Anomalia','Kuhn','Resultado que contraria as expectativas do paradigma.'],
+ ['Crise e revolução','Kuhn','Anomalias persistentes abrem uma crise; a revolução reorganiza conceitos, instrumentos e problemas.'],
+ ['Educação bancária','Freire','O educador deposita conteúdos; os educandos recebem, arquivam e repetem.'],
+ ['Educação problematizadora','Freire','Educador e educandos se tornam sujeitos diante de um objeto comum, que investigam juntos.'],
+ ['Diálogo','Freire','Exige objeto, pergunta, escuta e possibilidade real de reformular a compreensão. Não é conversa à toa.'],
+ ['Práxis','Freire','Unidade de ação e reflexão. Sem ação, verbalismo; sem reflexão, ativismo.'],
+ ['Tema gerador','Freire','Conteúdo que nasce de uma investigação da realidade dos educandos, feita com eles.'],
+ ['Inatismo','Davis e Oliveira','Capacidades viriam prontas desde o nascimento. Risco: naturalizar a dificuldade.'],
+ ['Ambientalismo','Davis e Oliveira','O sujeito como produto das influências externas. Base do behaviorismo de Skinner.'],
+ ['Interacionismo','Davis e Oliveira','O desenvolvimento se constrói na atividade do sujeito com o meio físico e social.'],
+ ['Condicionamento operante','Skinner','O comportamento é selecionado por suas consequências: o que é reforçado tende a se repetir.'],
+ ['Assimilação e acomodação','Piaget','Interpretar o novo com os esquemas que se tem, ou modificar os esquemas quando o novo não cabe.'],
+ ['Equilibração','Piaget','Processo que regula assimilação e acomodação, disparado por perturbações (conflitos ou lacunas).'],
+ ['Mediação','Vigotski','As funções psicológicas superiores se formam por meio de instrumentos e signos, sobretudo a linguagem.'],
+ ['Zona de desenvolvimento proximal','Vigotski','Distância entre o que o aluno faz sozinho e o que consegue fazer com ajuda.'],
+ ['Concepções alternativas','Mortimer','Ideias que os estudantes trazem sobre força, calor ou matéria, parecidas entre si e resistentes ao ensino.'],
+ ['Mudança conceitual','Mortimer (Posner et al.)','Troca de uma concepção por outra: exige insatisfação, e o novo precisa ser inteligível, plausível e frutífero.'],
+ ['Ecologia conceitual','Mortimer (Posner et al.)','Conjunto de conceitos e crenças do aluno que orienta a direção da acomodação.'],
+ ['Conflito cognitivo','Mortimer · Piaget','Contradição percebida entre a previsão do aluno e o que ele observa. Sozinho, não basta.'],
+ ['Lacuna','Mortimer · Piaget','Falta de um conhecimento necessário para resolver um problema; pede introdução de conceito, não conflito.'],
+ ['Analogia','Mortimer','Comparação entre as estruturas de dois domínios. Útil para tornar ideias inteligíveis, desde que se diga onde falha.'],
+ ['Perfil epistemológico','Bachelard','Um mesmo conceito é pensado por uma pessoa em várias zonas, do realismo ingênuo ao racionalismo.'],
+ ['Perfil conceitual','Mortimer','Formas de pensar um conceito que convivem numa pessoa; aprender é ampliar o perfil e tomar consciência de qual usar.']];
+const gw=$('#glos');
+function glos(q){q=(q||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');gw.innerHTML='';let n=0;
+  G.forEach(g=>{const hay=(g.join(' ')).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');if(q&&!hay.includes(q))return;n++;
+    const c=document.createElement('article');c.className='card soft';c.innerHTML='<h4><span></span><small></small></h4><p></p>';c.querySelector('h4 span').textContent=g[0];c.querySelector('small').textContent=g[1];c.querySelector('p').textContent=g[2];gw.appendChild(c);});
+  if(!n){const p=document.createElement('p');p.className='muted';p.textContent='Nenhum conceito encontrado.';gw.appendChild(p);}}
+$('#busca').addEventListener('input',e=>glos(e.target.value));glos('');
+
+/* revelar ao rolar e seção ativa */
+const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}}),{rootMargin:'0px 0px -6% 0px'}):null;
+$$('.reveal').forEach(el=>io?io.observe(el):el.classList.add('vis'));
+const links=$$('nav.idx a');
+const so='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>{const on=a.getAttribute('href')==='#'+e.target.id;a.classList.toggle('on',on);if(on){const ul=a.closest('ul');ul.scrollTo({left:a.offsetLeft-ul.clientWidth/2+a.offsetWidth/2,behavior:'smooth'});}});}),{rootMargin:'-45% 0px -50% 0px'}):null;
+if(so)$$('main section[id]').forEach(s=>so.observe(s));
+})();
+</script>
+</body>
+</html>

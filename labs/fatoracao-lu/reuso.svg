@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="600" viewBox="0 0 480 600" role="img" aria-labelledby="title desc">
+<title id="title">Fatorar uma vez, resolver dois lados direitos</title><desc id="desc">A igual a quatro, três; seis, três. L igual a um, zero; três meios, um. U igual a quatro, três; zero, menos três meios. Os dois fatores são reutilizados: b1 sete, nove dá y1 sete, menos três meios e x1 um, um. b2 cinco, nove dá y2 cinco, três meios e x2 dois, menos um.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#174c91"/></marker></defs>
+<rect width="480" height="600" fill="#f7f8fa"/>
+<g font-family="Arial, sans-serif" fill="#172334">
+<text x="28" y="38" font-size="23" font-weight="700">A mesma matriz, dois vetores</text>
+<text x="28" y="69" font-size="17">A = [[4, 3], [6, 3]]</text>
+<text x="28" y="106" font-size="16" fill="#174c91" font-weight="700">FATORAR UMA VEZ</text>
+<text x="28" y="138" font-size="19">L = [[1, 0], [3/2, 1]]</text>
+<text x="28" y="169" font-size="19">U = [[4, 3], [0, −3/2]]</text>
+<path d="M28 192H452" stroke="#bec7d2"/>
+<text x="28" y="226" font-size="17" font-weight="700">Reutilizar L e U</text>
+<path d="M240 244H128V276" fill="none" stroke="#174c91" stroke-width="2" marker-end="url(#arrow)"/><path d="M240 244H353V276" fill="none" stroke="#174c91" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="28" y="308" font-size="20">b₁ = (7, 9)</text><text x="268" y="308" font-size="20">b₂ = (5, 9)</text>
+<text x="28" y="345" font-size="16">Progressiva: Ly = b</text><text x="268" y="345" font-size="16">Progressiva: Ly = b</text>
+<text x="28" y="374" font-size="20">y₁ = (7, −3/2)</text><text x="268" y="374" font-size="20">y₂ = (5, 3/2)</text>
+<path d="M128 389V413M353 389V413" stroke="#174c91" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="28" y="442" font-size="16">Retroativa: Ux = y</text><text x="268" y="442" font-size="16">Retroativa: Ux = y</text>
+<text x="28" y="475" font-size="22" font-weight="700" fill="#174c91">x₁ = (1, 1)</text><text x="268" y="475" font-size="22" font-weight="700" fill="#174c91">x₂ = (2, −1)</text>
+<path d="M28 504H452" stroke="#bec7d2"/>
+<text x="28" y="538" font-size="17">Confira cada resultado em Ax = b.</text>
+<text x="28" y="568" font-size="16">A precisa permanecer fixa para este reuso.</text>
+</g></svg>

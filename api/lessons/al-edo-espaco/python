@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+# y=e^(-2t)*(c1+c2*t); estado escalado, sem calcular exp.
+y0,v0=Q(3),Q(-4)
+c1,c2=y0,v0+2*y0
+t=Q(1); p=c1+c2*t
+scaled=(p,c2-2*p)
+assert (c1,c2)==(3,2) and scaled==(5,-8)
+print('Multiplique o estado por exp(-2t):',scaled)

@@ -1,0 +1,758 @@
+[
+  {
+    "case": 0,
+    "a": -2,
+    "x": -4,
+    "defined": false,
+    "value": null,
+    "candidate": null,
+    "reason": "radicando negativo"
+  },
+  {
+    "case": 0,
+    "a": -2,
+    "x": 0,
+    "defined": true,
+    "value": 1.4142135623730951,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": -2,
+    "x": 1,
+    "defined": true,
+    "value": 0.8660254037844386,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": -2,
+    "x": 2,
+    "defined": true,
+    "value": 0.6666666666666666,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": -2,
+    "x": 3,
+    "defined": true,
+    "value": 0.5590169943749475,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": -2,
+    "x": 5,
+    "defined": true,
+    "value": 0.44095855184409843,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": -2,
+    "x": 6,
+    "defined": true,
+    "value": 0.4040610178208843,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 0,
+    "x": -4,
+    "defined": false,
+    "value": null,
+    "candidate": null,
+    "reason": "radicando negativo"
+  },
+  {
+    "case": 0,
+    "a": 0,
+    "x": 0,
+    "defined": true,
+    "value": -0.0,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 0,
+    "x": 1,
+    "defined": false,
+    "value": null,
+    "candidate": null,
+    "reason": "denominador zero"
+  },
+  {
+    "case": 0,
+    "a": 0,
+    "x": 2,
+    "defined": true,
+    "value": 1.4142135623730951,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 0,
+    "x": 3,
+    "defined": true,
+    "value": 0.8660254037844386,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 0,
+    "x": 5,
+    "defined": true,
+    "value": 0.5590169943749475,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 0,
+    "x": 6,
+    "defined": true,
+    "value": 0.4898979485566356,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 1,
+    "x": -4,
+    "defined": false,
+    "value": null,
+    "candidate": null,
+    "reason": "radicando negativo"
+  },
+  {
+    "case": 0,
+    "a": 1,
+    "x": 0,
+    "defined": false,
+    "value": null,
+    "candidate": null,
+    "reason": "radicando negativo"
+  },
+  {
+    "case": 0,
+    "a": 1,
+    "x": 1,
+    "defined": true,
+    "value": -0.0,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 1,
+    "x": 2,
+    "defined": false,
+    "value": null,
+    "candidate": null,
+    "reason": "denominador zero"
+  },
+  {
+    "case": 0,
+    "a": 1,
+    "x": 3,
+    "defined": true,
+    "value": 1.4142135623730951,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 1,
+    "x": 5,
+    "defined": true,
+    "value": 0.6666666666666666,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 1,
+    "x": 6,
+    "defined": true,
+    "value": 0.5590169943749475,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 2,
+    "x": -4,
+    "defined": false,
+    "value": null,
+    "candidate": null,
+    "reason": "radicando negativo"
+  },
+  {
+    "case": 0,
+    "a": 2,
+    "x": 0,
+    "defined": false,
+    "value": null,
+    "candidate": null,
+    "reason": "radicando negativo"
+  },
+  {
+    "case": 0,
+    "a": 2,
+    "x": 1,
+    "defined": false,
+    "value": null,
+    "candidate": null,
+    "reason": "radicando negativo"
+  },
+  {
+    "case": 0,
+    "a": 2,
+    "x": 2,
+    "defined": true,
+    "value": -0.0,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 2,
+    "x": 3,
+    "defined": false,
+    "value": null,
+    "candidate": null,
+    "reason": "denominador zero"
+  },
+  {
+    "case": 0,
+    "a": 2,
+    "x": 5,
+    "defined": true,
+    "value": 0.8660254037844386,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 0,
+    "a": 2,
+    "x": 6,
+    "defined": true,
+    "value": 0.6666666666666666,
+    "candidate": null,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": -2,
+    "x": -4,
+    "defined": true,
+    "value": -6,
+    "candidate": -6,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": -2,
+    "x": 0,
+    "defined": true,
+    "value": -2,
+    "candidate": -2,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": -2,
+    "x": 1,
+    "defined": true,
+    "value": -1,
+    "candidate": -1,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": -2,
+    "x": 2,
+    "defined": true,
+    "value": 0,
+    "candidate": 0,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": -2,
+    "x": 3,
+    "defined": true,
+    "value": 1,
+    "candidate": 1,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": -2,
+    "x": 5,
+    "defined": true,
+    "value": 3,
+    "candidate": 3,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": -2,
+    "x": 6,
+    "defined": true,
+    "value": 4,
+    "candidate": 4,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 0,
+    "x": -4,
+    "defined": true,
+    "value": -4,
+    "candidate": -4,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 0,
+    "x": 0,
+    "defined": false,
+    "value": null,
+    "candidate": 0,
+    "reason": "denominador zero"
+  },
+  {
+    "case": 1,
+    "a": 0,
+    "x": 1,
+    "defined": true,
+    "value": 1,
+    "candidate": 1,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 0,
+    "x": 2,
+    "defined": true,
+    "value": 2,
+    "candidate": 2,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 0,
+    "x": 3,
+    "defined": true,
+    "value": 3,
+    "candidate": 3,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 0,
+    "x": 5,
+    "defined": true,
+    "value": 5,
+    "candidate": 5,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 0,
+    "x": 6,
+    "defined": true,
+    "value": 6,
+    "candidate": 6,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 1,
+    "x": -4,
+    "defined": true,
+    "value": -3,
+    "candidate": -3,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 1,
+    "x": 0,
+    "defined": true,
+    "value": 1,
+    "candidate": 1,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 1,
+    "x": 1,
+    "defined": false,
+    "value": null,
+    "candidate": 2,
+    "reason": "denominador zero"
+  },
+  {
+    "case": 1,
+    "a": 1,
+    "x": 2,
+    "defined": true,
+    "value": 3,
+    "candidate": 3,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 1,
+    "x": 3,
+    "defined": true,
+    "value": 4,
+    "candidate": 4,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 1,
+    "x": 5,
+    "defined": true,
+    "value": 6,
+    "candidate": 6,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 1,
+    "x": 6,
+    "defined": true,
+    "value": 7,
+    "candidate": 7,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 2,
+    "x": -4,
+    "defined": true,
+    "value": -2,
+    "candidate": -2,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 2,
+    "x": 0,
+    "defined": true,
+    "value": 2,
+    "candidate": 2,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 2,
+    "x": 1,
+    "defined": true,
+    "value": 3,
+    "candidate": 3,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 2,
+    "x": 2,
+    "defined": false,
+    "value": null,
+    "candidate": 4,
+    "reason": "denominador zero"
+  },
+  {
+    "case": 1,
+    "a": 2,
+    "x": 3,
+    "defined": true,
+    "value": 5,
+    "candidate": 5,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 2,
+    "x": 5,
+    "defined": true,
+    "value": 7,
+    "candidate": 7,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 1,
+    "a": 2,
+    "x": 6,
+    "defined": true,
+    "value": 8,
+    "candidate": 8,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": -2,
+    "x": -4,
+    "defined": true,
+    "value": 2,
+    "candidate": -2,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": -2,
+    "x": 0,
+    "defined": true,
+    "value": 2,
+    "candidate": 2,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": -2,
+    "x": 1,
+    "defined": true,
+    "value": 3,
+    "candidate": 3,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": -2,
+    "x": 2,
+    "defined": true,
+    "value": 4,
+    "candidate": 4,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": -2,
+    "x": 3,
+    "defined": true,
+    "value": 5,
+    "candidate": 5,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": -2,
+    "x": 5,
+    "defined": true,
+    "value": 7,
+    "candidate": 7,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": -2,
+    "x": 6,
+    "defined": true,
+    "value": 8,
+    "candidate": 8,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 0,
+    "x": -4,
+    "defined": true,
+    "value": 4,
+    "candidate": -4,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 0,
+    "x": 0,
+    "defined": true,
+    "value": 0,
+    "candidate": 0,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 0,
+    "x": 1,
+    "defined": true,
+    "value": 1,
+    "candidate": 1,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 0,
+    "x": 2,
+    "defined": true,
+    "value": 2,
+    "candidate": 2,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 0,
+    "x": 3,
+    "defined": true,
+    "value": 3,
+    "candidate": 3,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 0,
+    "x": 5,
+    "defined": true,
+    "value": 5,
+    "candidate": 5,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 0,
+    "x": 6,
+    "defined": true,
+    "value": 6,
+    "candidate": 6,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 1,
+    "x": -4,
+    "defined": true,
+    "value": 5,
+    "candidate": -5,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 1,
+    "x": 0,
+    "defined": true,
+    "value": 1,
+    "candidate": -1,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 1,
+    "x": 1,
+    "defined": true,
+    "value": 0,
+    "candidate": 0,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 1,
+    "x": 2,
+    "defined": true,
+    "value": 1,
+    "candidate": 1,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 1,
+    "x": 3,
+    "defined": true,
+    "value": 2,
+    "candidate": 2,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 1,
+    "x": 5,
+    "defined": true,
+    "value": 4,
+    "candidate": 4,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 1,
+    "x": 6,
+    "defined": true,
+    "value": 5,
+    "candidate": 5,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 2,
+    "x": -4,
+    "defined": true,
+    "value": 6,
+    "candidate": -6,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 2,
+    "x": 0,
+    "defined": true,
+    "value": 2,
+    "candidate": -2,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 2,
+    "x": 1,
+    "defined": true,
+    "value": 1,
+    "candidate": -1,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 2,
+    "x": 2,
+    "defined": true,
+    "value": 0,
+    "candidate": 0,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 2,
+    "x": 3,
+    "defined": true,
+    "value": 1,
+    "candidate": 1,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 2,
+    "x": 5,
+    "defined": true,
+    "value": 3,
+    "candidate": 3,
+    "reason": "v\u00e1lido"
+  },
+  {
+    "case": 2,
+    "a": 2,
+    "x": 6,
+    "defined": true,
+    "value": 4,
+    "candidate": 4,
+    "reason": "v\u00e1lido"
+  }
+]

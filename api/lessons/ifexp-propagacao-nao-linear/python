@@ -1,0 +1,6 @@
+from fractions import Fraction as Q
+m=Q(2); v=Q(0); a=Q(1,5)
+linear=m*m*v*v*a*a/3
+extra=m*m*a**4/45
+assert linear==0 and extra==Q(4,28125)
+print(linear,extra)

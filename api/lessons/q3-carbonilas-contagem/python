@@ -1,0 +1,5 @@
+from fractions import Fraction
+g,n,q=10,4,0
+d=g-q
+assert d+2*n==18
+print("contagem formal:",d+2*n,"coordenação:",n)

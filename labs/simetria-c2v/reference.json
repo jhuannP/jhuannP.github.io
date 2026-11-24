@@ -1,0 +1,290 @@
+[
+  {
+    "a": 0,
+    "b": 0,
+    "result": {
+      "op": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "probe": [
+        1,
+        2,
+        3
+      ],
+      "determinant": 1
+    }
+  },
+  {
+    "a": 0,
+    "b": 1,
+    "result": {
+      "op": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "probe": [
+        -1,
+        -2,
+        3
+      ],
+      "determinant": 1
+    }
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "result": {
+      "op": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "probe": [
+        1,
+        -2,
+        3
+      ],
+      "determinant": -1
+    }
+  },
+  {
+    "a": 0,
+    "b": 3,
+    "result": {
+      "op": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "probe": [
+        -1,
+        2,
+        3
+      ],
+      "determinant": -1
+    }
+  },
+  {
+    "a": 1,
+    "b": 0,
+    "result": {
+      "op": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "probe": [
+        -1,
+        -2,
+        3
+      ],
+      "determinant": 1
+    }
+  },
+  {
+    "a": 1,
+    "b": 1,
+    "result": {
+      "op": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "probe": [
+        1,
+        2,
+        3
+      ],
+      "determinant": 1
+    }
+  },
+  {
+    "a": 1,
+    "b": 2,
+    "result": {
+      "op": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "probe": [
+        -1,
+        2,
+        3
+      ],
+      "determinant": -1
+    }
+  },
+  {
+    "a": 1,
+    "b": 3,
+    "result": {
+      "op": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "probe": [
+        1,
+        -2,
+        3
+      ],
+      "determinant": -1
+    }
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "result": {
+      "op": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "probe": [
+        1,
+        -2,
+        3
+      ],
+      "determinant": -1
+    }
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "result": {
+      "op": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "probe": [
+        -1,
+        2,
+        3
+      ],
+      "determinant": -1
+    }
+  },
+  {
+    "a": 2,
+    "b": 2,
+    "result": {
+      "op": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "probe": [
+        1,
+        2,
+        3
+      ],
+      "determinant": 1
+    }
+  },
+  {
+    "a": 2,
+    "b": 3,
+    "result": {
+      "op": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "probe": [
+        -1,
+        -2,
+        3
+      ],
+      "determinant": 1
+    }
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "result": {
+      "op": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "probe": [
+        -1,
+        2,
+        3
+      ],
+      "determinant": -1
+    }
+  },
+  {
+    "a": 3,
+    "b": 1,
+    "result": {
+      "op": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "probe": [
+        1,
+        -2,
+        3
+      ],
+      "determinant": -1
+    }
+  },
+  {
+    "a": 3,
+    "b": 2,
+    "result": {
+      "op": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "probe": [
+        -1,
+        -2,
+        3
+      ],
+      "determinant": 1
+    }
+  },
+  {
+    "a": 3,
+    "b": 3,
+    "result": {
+      "op": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "probe": [
+        1,
+        2,
+        3
+      ],
+      "determinant": 1
+    }
+  }
+]

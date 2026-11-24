@@ -1,0 +1,19 @@
+def atravessa(grade):
+    linhas, colunas = len(grade), len(grade[0])
+    pilha = [(0, j) for j in range(colunas) if grade[0][j]]
+    vistos = set(pilha)
+    while pilha:
+        i, j = pilha.pop()
+        if i == linhas - 1:
+            return True
+        for ni, nj in [(i-1,j), (i+1,j), (i,j-1), (i,j+1)]:
+            if 0 <= ni < linhas and 0 <= nj < colunas:
+                if grade[ni][nj] and (ni,nj) not in vistos:
+                    vistos.add((ni,nj))
+                    pilha.append((ni,nj))
+    return False
+
+assert atravessa([[1,0,0], [1,1,0], [0,1,1]])
+assert not atravessa([[1,0], [0,1]])
+assert atravessa([[1]])
+print(atravessa([[1,0,0], [1,1,0], [0,1,1]]))

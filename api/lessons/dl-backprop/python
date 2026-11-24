@@ -1,0 +1,5 @@
+from math import tanh
+x,w,b,a,y=1,0,0,2,1
+h=tanh(w*x+b);gradient=(a*h-y)*a*(1-h*h)*x
+assert gradient==-2
+print(gradient)

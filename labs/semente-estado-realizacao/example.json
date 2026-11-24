@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "seed": 42,
+  "draws": 12,
+  "generator": "random.Random / Mersenne Twister",
+  "sampler": "randrange(1, 7), uma chamada por dado",
+  "schedule": "sequencial; uma instância criada antes do lote",
+  "python_implementation": "CPython",
+  "python_version": "3.14.5",
+  "platform": "darwin",
+  "source_sha256": "ac190d4d98126f82b74c7e151630a4a44e7c5258d3185da95fbf7363ce27f67d",
+  "values": [
+    6,
+    1,
+    1,
+    6,
+    3,
+    2,
+    2,
+    2,
+    6,
+    1,
+    6,
+    6
+  ],
+  "mean_fraction": "7/2",
+  "scope": "realização sintética; sem validação empírica do gerador ou do modelo"
+}

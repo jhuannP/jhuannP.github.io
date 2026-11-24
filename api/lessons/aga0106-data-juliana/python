@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+midnight=Q(4903089,2)
+six=midnight+Q(6,24)
+noon=midnight+Q(12,24)
+assert six==Q(9806179,4)
+assert noon==2451545
+print(six,noon)

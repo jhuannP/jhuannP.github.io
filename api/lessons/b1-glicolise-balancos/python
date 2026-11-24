@@ -1,0 +1,8 @@
+from fractions import Fraction as Q
+glucose=Q(1,2)  # mol, não contagem de moléculas individuais
+used=2*glucose
+made=4*glucose
+net=made-used
+pyruvate=2*glucose
+assert net==1 and 6*glucose==3*pyruvate
+print("ATP gasto, bruto e líquido em mol:",used,made,net)

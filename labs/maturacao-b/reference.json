@@ -1,0 +1,4209 @@
+[
+  {
+    "edits": 0,
+    "panel": 0,
+    "cell": 1,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 1,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 1,
+    "unresolved": 3,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.25,
+    "all_fraction": 0.16666666666666666
+  },
+  {
+    "edits": 0,
+    "panel": 0,
+    "cell": 2,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 2,
+      "heavy": true,
+      "reactivity": [
+        0,
+        1,
+        1
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": true,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 1,
+    "unresolved": 3,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.25,
+    "all_fraction": 0.16666666666666666
+  },
+  {
+    "edits": 0,
+    "panel": 0,
+    "cell": 3,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 3,
+      "heavy": true,
+      "reactivity": [
+        1,
+        0,
+        1
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 1,
+    "unresolved": 3,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.25,
+    "all_fraction": 0.16666666666666666
+  },
+  {
+    "edits": 0,
+    "panel": 0,
+    "cell": 4,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 4,
+      "heavy": true,
+      "reactivity": [
+        1,
+        1,
+        0
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 1,
+    "unresolved": 3,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.25,
+    "all_fraction": 0.16666666666666666
+  },
+  {
+    "edits": 0,
+    "panel": 0,
+    "cell": 5,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 5,
+      "heavy": true,
+      "reactivity": [
+        1,
+        1,
+        1
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 1,
+    "unresolved": 3,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.25,
+    "all_fraction": 0.16666666666666666
+  },
+  {
+    "edits": 0,
+    "panel": 0,
+    "cell": 6,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 6,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 1,
+    "unresolved": 3,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.25,
+    "all_fraction": 0.16666666666666666
+  },
+  {
+    "edits": 0,
+    "panel": 1,
+    "cell": 1,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 1,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 0,
+    "panel": 1,
+    "cell": 2,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 2,
+      "heavy": true,
+      "reactivity": [
+        1,
+        0,
+        0
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 0,
+    "panel": 1,
+    "cell": 3,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 3,
+      "heavy": true,
+      "reactivity": [
+        1,
+        1,
+        0
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 0,
+    "panel": 1,
+    "cell": 4,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 4,
+      "heavy": true,
+      "reactivity": [
+        0,
+        1,
+        1
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": true,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 0,
+    "panel": 1,
+    "cell": 5,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 5,
+      "heavy": true,
+      "reactivity": [
+        0,
+        1,
+        1
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": true,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 0,
+    "panel": 1,
+    "cell": 6,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 6,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 0,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 1,
+    "panel": 0,
+    "cell": 1,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 1,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 1,
+    "panel": 0,
+    "cell": 2,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 2,
+      "heavy": true,
+      "reactivity": [
+        0,
+        1,
+        1
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": true,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 1,
+    "panel": 0,
+    "cell": 3,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 3,
+      "heavy": true,
+      "reactivity": [
+        1,
+        0,
+        1
+      ],
+      "visited": [
+        0,
+        1
+      ],
+      "last": 1,
+      "passed": true,
+      "edits_used": 1
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 1,
+    "panel": 0,
+    "cell": 4,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 4,
+      "heavy": true,
+      "reactivity": [
+        1,
+        1,
+        0
+      ],
+      "visited": [
+        0,
+        1
+      ],
+      "last": 1,
+      "passed": false,
+      "edits_used": 1
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 1,
+    "panel": 0,
+    "cell": 5,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 5,
+      "heavy": true,
+      "reactivity": [
+        1,
+        1,
+        1
+      ],
+      "visited": [
+        0,
+        1
+      ],
+      "last": 1,
+      "passed": false,
+      "edits_used": 1
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 1,
+    "panel": 0,
+    "cell": 6,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 6,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 2,
+    "unresolved": 2,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.5,
+    "all_fraction": 0.3333333333333333
+  },
+  {
+    "edits": 1,
+    "panel": 1,
+    "cell": 1,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 1,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 1,
+    "panel": 1,
+    "cell": 2,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 2,
+      "heavy": true,
+      "reactivity": [
+        1,
+        0,
+        0
+      ],
+      "visited": [
+        0,
+        1
+      ],
+      "last": 1,
+      "passed": true,
+      "edits_used": 1
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 1,
+    "panel": 1,
+    "cell": 3,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 3,
+      "heavy": true,
+      "reactivity": [
+        1,
+        1,
+        0
+      ],
+      "visited": [
+        0,
+        1
+      ],
+      "last": 1,
+      "passed": false,
+      "edits_used": 1
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 1,
+    "panel": 1,
+    "cell": 4,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 4,
+      "heavy": true,
+      "reactivity": [
+        0,
+        1,
+        1
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": true,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 1,
+    "panel": 1,
+    "cell": 5,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 5,
+      "heavy": true,
+      "reactivity": [
+        0,
+        1,
+        1
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": true,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 1,
+    "panel": 1,
+    "cell": 6,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": false,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 6,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 1,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 2,
+    "panel": 0,
+    "cell": 1,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": false,
+        "edits_used": 2
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 1,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 2,
+    "panel": 0,
+    "cell": 2,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": false,
+        "edits_used": 2
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 2,
+      "heavy": true,
+      "reactivity": [
+        0,
+        1,
+        1
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": true,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 2,
+    "panel": 0,
+    "cell": 3,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": false,
+        "edits_used": 2
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 3,
+      "heavy": true,
+      "reactivity": [
+        1,
+        0,
+        1
+      ],
+      "visited": [
+        0,
+        1
+      ],
+      "last": 1,
+      "passed": true,
+      "edits_used": 1
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 2,
+    "panel": 0,
+    "cell": 4,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": false,
+        "edits_used": 2
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 4,
+      "heavy": true,
+      "reactivity": [
+        1,
+        1,
+        0
+      ],
+      "visited": [
+        0,
+        1,
+        2
+      ],
+      "last": 2,
+      "passed": true,
+      "edits_used": 2
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 2,
+    "panel": 0,
+    "cell": 5,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": false,
+        "edits_used": 2
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 5,
+      "heavy": true,
+      "reactivity": [
+        1,
+        1,
+        1
+      ],
+      "visited": [
+        0,
+        1,
+        2
+      ],
+      "last": 2,
+      "passed": false,
+      "edits_used": 2
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 2,
+    "panel": 0,
+    "cell": 6,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          1
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          1
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": false,
+        "edits_used": 2
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 6,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 3,
+    "unresolved": 1,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 0.75,
+    "all_fraction": 0.5
+  },
+  {
+    "edits": 2,
+    "panel": 1,
+    "cell": 1,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 1,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 4,
+    "unresolved": 0,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 1.0,
+    "all_fraction": 0.6666666666666666
+  },
+  {
+    "edits": 2,
+    "panel": 1,
+    "cell": 2,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 2,
+      "heavy": true,
+      "reactivity": [
+        1,
+        0,
+        0
+      ],
+      "visited": [
+        0,
+        1
+      ],
+      "last": 1,
+      "passed": true,
+      "edits_used": 1
+    },
+    "eligible": 4,
+    "passed": 4,
+    "unresolved": 0,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 1.0,
+    "all_fraction": 0.6666666666666666
+  },
+  {
+    "edits": 2,
+    "panel": 1,
+    "cell": 3,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 3,
+      "heavy": true,
+      "reactivity": [
+        1,
+        1,
+        0
+      ],
+      "visited": [
+        0,
+        1,
+        2
+      ],
+      "last": 2,
+      "passed": true,
+      "edits_used": 2
+    },
+    "eligible": 4,
+    "passed": 4,
+    "unresolved": 0,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 1.0,
+    "all_fraction": 0.6666666666666666
+  },
+  {
+    "edits": 2,
+    "panel": 1,
+    "cell": 4,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 4,
+      "heavy": true,
+      "reactivity": [
+        0,
+        1,
+        1
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": true,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 4,
+    "unresolved": 0,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 1.0,
+    "all_fraction": 0.6666666666666666
+  },
+  {
+    "edits": 2,
+    "panel": 1,
+    "cell": 5,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 5,
+      "heavy": true,
+      "reactivity": [
+        0,
+        1,
+        1
+      ],
+      "visited": [
+        0
+      ],
+      "last": 0,
+      "passed": true,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 4,
+    "unresolved": 0,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 1.0,
+    "all_fraction": 0.6666666666666666
+  },
+  {
+    "edits": 2,
+    "panel": 1,
+    "cell": 6,
+    "rows": [
+      {
+        "cell": 1,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      },
+      {
+        "cell": 2,
+        "heavy": true,
+        "reactivity": [
+          1,
+          0,
+          0
+        ],
+        "visited": [
+          0,
+          1
+        ],
+        "last": 1,
+        "passed": true,
+        "edits_used": 1
+      },
+      {
+        "cell": 3,
+        "heavy": true,
+        "reactivity": [
+          1,
+          1,
+          0
+        ],
+        "visited": [
+          0,
+          1,
+          2
+        ],
+        "last": 2,
+        "passed": true,
+        "edits_used": 2
+      },
+      {
+        "cell": 4,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 5,
+        "heavy": true,
+        "reactivity": [
+          0,
+          1,
+          1
+        ],
+        "visited": [
+          0
+        ],
+        "last": 0,
+        "passed": true,
+        "edits_used": 0
+      },
+      {
+        "cell": 6,
+        "heavy": false,
+        "reactivity": [
+          0,
+          0,
+          0
+        ],
+        "visited": [],
+        "last": null,
+        "passed": false,
+        "edits_used": 0
+      }
+    ],
+    "selected": {
+      "cell": 6,
+      "heavy": false,
+      "reactivity": [
+        0,
+        0,
+        0
+      ],
+      "visited": [],
+      "last": null,
+      "passed": false,
+      "edits_used": 0
+    },
+    "eligible": 4,
+    "passed": 4,
+    "unresolved": 0,
+    "excluded": 2,
+    "edited_pass": 2,
+    "fraction": 1.0,
+    "all_fraction": 0.6666666666666666
+  }
+]

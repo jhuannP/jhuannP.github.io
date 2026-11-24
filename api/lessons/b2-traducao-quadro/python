@@ -1,0 +1,9 @@
+rna="AUGGCUUUUUAAGG"
+code={"AUG":"M","GCU":"A","UUU":"F","UAA":"*"} # Só os códons deste exemplo.
+residues=[]
+for i in range(0,len(rna)-2,3):
+    amino=code[rna[i:i+3]]
+    if amino=="*":break
+    residues.append(amino)
+assert "".join(residues)=="MAF"
+print("".join(residues))

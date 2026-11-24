@@ -1,0 +1,6 @@
+from fractions import Fraction as Q
+m1,m2,k=Q(1),Q(3),Q(3)
+M=m1+m2; mu=m1*m2/M
+print("M, mu:",M,mu)
+assert mu==Q(3,4)
+print("P e energia iniciais, SI:",M*1,M*1**2/2+k*1**2/2)

@@ -1,0 +1,10 @@
+from fractions import Fraction as Q
+gap=Q(16000)
+low=-Q(2,5)*gap; high=Q(3,5)*gap
+assert 3*low+2*high==0
+assert high-low==gap
+print('lambda/nm:',10**7/gap)
+epsilon=Q(1,5)
+strength=epsilon**2/(1+epsilon**2)
+assert strength==Q(1,26)
+print('Força relativa do modelo de mistura:',strength)

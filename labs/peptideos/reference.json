@@ -1,0 +1,859 @@
+[
+  {
+    "sequence": "GASGAS",
+    "cuts": [],
+    "fragments": [
+      "GASGAS"
+    ],
+    "formulas": [
+      {
+        "C": 16,
+        "H": 28,
+        "N": 6,
+        "O": 9
+      }
+    ],
+    "intact": {
+      "C": 16,
+      "H": 28,
+      "N": 6,
+      "O": 9
+    },
+    "aggregate": {
+      "C": 16,
+      "H": 28,
+      "N": 6,
+      "O": 9
+    },
+    "bonds": 5,
+    "waters": 0,
+    "n_termini": 1,
+    "c_termini": 1
+  },
+  {
+    "sequence": "GASGAS",
+    "cuts": [
+      2
+    ],
+    "fragments": [
+      "GA",
+      "SGAS"
+    ],
+    "formulas": [
+      {
+        "C": 5,
+        "H": 10,
+        "N": 2,
+        "O": 3
+      },
+      {
+        "C": 11,
+        "H": 20,
+        "N": 4,
+        "O": 7
+      }
+    ],
+    "intact": {
+      "C": 16,
+      "H": 28,
+      "N": 6,
+      "O": 9
+    },
+    "aggregate": {
+      "C": 16,
+      "H": 30,
+      "N": 6,
+      "O": 10
+    },
+    "bonds": 4,
+    "waters": 1,
+    "n_termini": 2,
+    "c_termini": 2
+  },
+  {
+    "sequence": "GASGAS",
+    "cuts": [
+      2,
+      4
+    ],
+    "fragments": [
+      "GA",
+      "SG",
+      "AS"
+    ],
+    "formulas": [
+      {
+        "C": 5,
+        "H": 10,
+        "N": 2,
+        "O": 3
+      },
+      {
+        "C": 5,
+        "H": 10,
+        "N": 2,
+        "O": 4
+      },
+      {
+        "C": 6,
+        "H": 12,
+        "N": 2,
+        "O": 4
+      }
+    ],
+    "intact": {
+      "C": 16,
+      "H": 28,
+      "N": 6,
+      "O": 9
+    },
+    "aggregate": {
+      "C": 16,
+      "H": 32,
+      "N": 6,
+      "O": 11
+    },
+    "bonds": 3,
+    "waters": 2,
+    "n_termini": 3,
+    "c_termini": 3
+  },
+  {
+    "sequence": "GASGAS",
+    "cuts": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fragments": [
+      "G",
+      "A",
+      "S",
+      "G",
+      "A",
+      "S"
+    ],
+    "formulas": [
+      {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 3
+      },
+      {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 3
+      }
+    ],
+    "intact": {
+      "C": 16,
+      "H": 28,
+      "N": 6,
+      "O": 9
+    },
+    "aggregate": {
+      "C": 16,
+      "H": 38,
+      "N": 6,
+      "O": 14
+    },
+    "bonds": 0,
+    "waters": 5,
+    "n_termini": 6,
+    "c_termini": 6
+  },
+  {
+    "sequence": "SAGSAG",
+    "cuts": [],
+    "fragments": [
+      "SAGSAG"
+    ],
+    "formulas": [
+      {
+        "C": 16,
+        "H": 28,
+        "N": 6,
+        "O": 9
+      }
+    ],
+    "intact": {
+      "C": 16,
+      "H": 28,
+      "N": 6,
+      "O": 9
+    },
+    "aggregate": {
+      "C": 16,
+      "H": 28,
+      "N": 6,
+      "O": 9
+    },
+    "bonds": 5,
+    "waters": 0,
+    "n_termini": 1,
+    "c_termini": 1
+  },
+  {
+    "sequence": "SAGSAG",
+    "cuts": [
+      2
+    ],
+    "fragments": [
+      "SA",
+      "GSAG"
+    ],
+    "formulas": [
+      {
+        "C": 6,
+        "H": 12,
+        "N": 2,
+        "O": 4
+      },
+      {
+        "C": 10,
+        "H": 18,
+        "N": 4,
+        "O": 6
+      }
+    ],
+    "intact": {
+      "C": 16,
+      "H": 28,
+      "N": 6,
+      "O": 9
+    },
+    "aggregate": {
+      "C": 16,
+      "H": 30,
+      "N": 6,
+      "O": 10
+    },
+    "bonds": 4,
+    "waters": 1,
+    "n_termini": 2,
+    "c_termini": 2
+  },
+  {
+    "sequence": "SAGSAG",
+    "cuts": [
+      2,
+      4
+    ],
+    "fragments": [
+      "SA",
+      "GS",
+      "AG"
+    ],
+    "formulas": [
+      {
+        "C": 6,
+        "H": 12,
+        "N": 2,
+        "O": 4
+      },
+      {
+        "C": 5,
+        "H": 10,
+        "N": 2,
+        "O": 4
+      },
+      {
+        "C": 5,
+        "H": 10,
+        "N": 2,
+        "O": 3
+      }
+    ],
+    "intact": {
+      "C": 16,
+      "H": 28,
+      "N": 6,
+      "O": 9
+    },
+    "aggregate": {
+      "C": 16,
+      "H": 32,
+      "N": 6,
+      "O": 11
+    },
+    "bonds": 3,
+    "waters": 2,
+    "n_termini": 3,
+    "c_termini": 3
+  },
+  {
+    "sequence": "SAGSAG",
+    "cuts": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fragments": [
+      "S",
+      "A",
+      "G",
+      "S",
+      "A",
+      "G"
+    ],
+    "formulas": [
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 3
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 3
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      }
+    ],
+    "intact": {
+      "C": 16,
+      "H": 28,
+      "N": 6,
+      "O": 9
+    },
+    "aggregate": {
+      "C": 16,
+      "H": 38,
+      "N": 6,
+      "O": 14
+    },
+    "bonds": 0,
+    "waters": 5,
+    "n_termini": 6,
+    "c_termini": 6
+  },
+  {
+    "sequence": "GGGGGG",
+    "cuts": [],
+    "fragments": [
+      "GGGGGG"
+    ],
+    "formulas": [
+      {
+        "C": 12,
+        "H": 20,
+        "N": 6,
+        "O": 7
+      }
+    ],
+    "intact": {
+      "C": 12,
+      "H": 20,
+      "N": 6,
+      "O": 7
+    },
+    "aggregate": {
+      "C": 12,
+      "H": 20,
+      "N": 6,
+      "O": 7
+    },
+    "bonds": 5,
+    "waters": 0,
+    "n_termini": 1,
+    "c_termini": 1
+  },
+  {
+    "sequence": "GGGGGG",
+    "cuts": [
+      2
+    ],
+    "fragments": [
+      "GG",
+      "GGGG"
+    ],
+    "formulas": [
+      {
+        "C": 4,
+        "H": 8,
+        "N": 2,
+        "O": 3
+      },
+      {
+        "C": 8,
+        "H": 14,
+        "N": 4,
+        "O": 5
+      }
+    ],
+    "intact": {
+      "C": 12,
+      "H": 20,
+      "N": 6,
+      "O": 7
+    },
+    "aggregate": {
+      "C": 12,
+      "H": 22,
+      "N": 6,
+      "O": 8
+    },
+    "bonds": 4,
+    "waters": 1,
+    "n_termini": 2,
+    "c_termini": 2
+  },
+  {
+    "sequence": "GGGGGG",
+    "cuts": [
+      2,
+      4
+    ],
+    "fragments": [
+      "GG",
+      "GG",
+      "GG"
+    ],
+    "formulas": [
+      {
+        "C": 4,
+        "H": 8,
+        "N": 2,
+        "O": 3
+      },
+      {
+        "C": 4,
+        "H": 8,
+        "N": 2,
+        "O": 3
+      },
+      {
+        "C": 4,
+        "H": 8,
+        "N": 2,
+        "O": 3
+      }
+    ],
+    "intact": {
+      "C": 12,
+      "H": 20,
+      "N": 6,
+      "O": 7
+    },
+    "aggregate": {
+      "C": 12,
+      "H": 24,
+      "N": 6,
+      "O": 9
+    },
+    "bonds": 3,
+    "waters": 2,
+    "n_termini": 3,
+    "c_termini": 3
+  },
+  {
+    "sequence": "GGGGGG",
+    "cuts": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fragments": [
+      "G",
+      "G",
+      "G",
+      "G",
+      "G",
+      "G"
+    ],
+    "formulas": [
+      {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      },
+      {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      }
+    ],
+    "intact": {
+      "C": 12,
+      "H": 20,
+      "N": 6,
+      "O": 7
+    },
+    "aggregate": {
+      "C": 12,
+      "H": 30,
+      "N": 6,
+      "O": 12
+    },
+    "bonds": 0,
+    "waters": 5,
+    "n_termini": 6,
+    "c_termini": 6
+  },
+  {
+    "sequence": "SSSSSS",
+    "cuts": [],
+    "fragments": [
+      "SSSSSS"
+    ],
+    "formulas": [
+      {
+        "C": 18,
+        "H": 32,
+        "N": 6,
+        "O": 13
+      }
+    ],
+    "intact": {
+      "C": 18,
+      "H": 32,
+      "N": 6,
+      "O": 13
+    },
+    "aggregate": {
+      "C": 18,
+      "H": 32,
+      "N": 6,
+      "O": 13
+    },
+    "bonds": 5,
+    "waters": 0,
+    "n_termini": 1,
+    "c_termini": 1
+  },
+  {
+    "sequence": "SSSSSS",
+    "cuts": [
+      2
+    ],
+    "fragments": [
+      "SS",
+      "SSSS"
+    ],
+    "formulas": [
+      {
+        "C": 6,
+        "H": 12,
+        "N": 2,
+        "O": 5
+      },
+      {
+        "C": 12,
+        "H": 22,
+        "N": 4,
+        "O": 9
+      }
+    ],
+    "intact": {
+      "C": 18,
+      "H": 32,
+      "N": 6,
+      "O": 13
+    },
+    "aggregate": {
+      "C": 18,
+      "H": 34,
+      "N": 6,
+      "O": 14
+    },
+    "bonds": 4,
+    "waters": 1,
+    "n_termini": 2,
+    "c_termini": 2
+  },
+  {
+    "sequence": "SSSSSS",
+    "cuts": [
+      2,
+      4
+    ],
+    "fragments": [
+      "SS",
+      "SS",
+      "SS"
+    ],
+    "formulas": [
+      {
+        "C": 6,
+        "H": 12,
+        "N": 2,
+        "O": 5
+      },
+      {
+        "C": 6,
+        "H": 12,
+        "N": 2,
+        "O": 5
+      },
+      {
+        "C": 6,
+        "H": 12,
+        "N": 2,
+        "O": 5
+      }
+    ],
+    "intact": {
+      "C": 18,
+      "H": 32,
+      "N": 6,
+      "O": 13
+    },
+    "aggregate": {
+      "C": 18,
+      "H": 36,
+      "N": 6,
+      "O": 15
+    },
+    "bonds": 3,
+    "waters": 2,
+    "n_termini": 3,
+    "c_termini": 3
+  },
+  {
+    "sequence": "SSSSSS",
+    "cuts": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fragments": [
+      "S",
+      "S",
+      "S",
+      "S",
+      "S",
+      "S"
+    ],
+    "formulas": [
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 3
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 3
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 3
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 3
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 3
+      },
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 3
+      }
+    ],
+    "intact": {
+      "C": 18,
+      "H": 32,
+      "N": 6,
+      "O": 13
+    },
+    "aggregate": {
+      "C": 18,
+      "H": 42,
+      "N": 6,
+      "O": 18
+    },
+    "bonds": 0,
+    "waters": 5,
+    "n_termini": 6,
+    "c_termini": 6
+  },
+  {
+    "sequence": "G",
+    "cuts": [],
+    "fragments": [
+      "G"
+    ],
+    "formulas": [
+      {
+        "C": 2,
+        "H": 5,
+        "N": 1,
+        "O": 2
+      }
+    ],
+    "intact": {
+      "C": 2,
+      "H": 5,
+      "N": 1,
+      "O": 2
+    },
+    "aggregate": {
+      "C": 2,
+      "H": 5,
+      "N": 1,
+      "O": 2
+    },
+    "bonds": 0,
+    "waters": 0,
+    "n_termini": 1,
+    "c_termini": 1
+  },
+  {
+    "sequence": "A",
+    "cuts": [],
+    "fragments": [
+      "A"
+    ],
+    "formulas": [
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 2
+      }
+    ],
+    "intact": {
+      "C": 3,
+      "H": 7,
+      "N": 1,
+      "O": 2
+    },
+    "aggregate": {
+      "C": 3,
+      "H": 7,
+      "N": 1,
+      "O": 2
+    },
+    "bonds": 0,
+    "waters": 0,
+    "n_termini": 1,
+    "c_termini": 1
+  },
+  {
+    "sequence": "S",
+    "cuts": [],
+    "fragments": [
+      "S"
+    ],
+    "formulas": [
+      {
+        "C": 3,
+        "H": 7,
+        "N": 1,
+        "O": 3
+      }
+    ],
+    "intact": {
+      "C": 3,
+      "H": 7,
+      "N": 1,
+      "O": 3
+    },
+    "aggregate": {
+      "C": 3,
+      "H": 7,
+      "N": 1,
+      "O": 3
+    },
+    "bonds": 0,
+    "waters": 0,
+    "n_termini": 1,
+    "c_termini": 1
+  }
+]

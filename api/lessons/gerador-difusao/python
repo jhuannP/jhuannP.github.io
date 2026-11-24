@@ -1,0 +1,3 @@
+def L_square(x,theta,sigma):return -2*theta*x*x+sigma*sigma
+assert L_square(3,0,1)==1
+print(L_square(2,1,1))

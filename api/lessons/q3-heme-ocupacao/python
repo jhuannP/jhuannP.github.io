@@ -1,0 +1,7 @@
+from fractions import Fraction as F
+x,y=F(3),F(2)
+z=1+x+y
+free,oxygen,other=1/z,x/z,y/z
+assert (free,oxygen,other)==(F(1,6),F(1,2),F(1,3))
+assert free+oxygen+other==1
+print(free,oxygen,other)

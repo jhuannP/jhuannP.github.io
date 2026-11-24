@@ -1,0 +1,3 @@
+from math import sqrt
+for eps in (.1,.01,.0001):print(2-2*sqrt(eps))
+print("Limite exato:",2)

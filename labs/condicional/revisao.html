@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Revisão pessoal · Condicionamento e Bayes</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="revisao.css">
+  <script src="revisao.js" defer></script>
+</head>
+<body class="review-sheet">
+<a class="skip" href="#conteudo">Ir para as perguntas</a>
+<header class="review-nav"><a href="/#aula/pe-condicional">← Voltar às notas</a><span>Biblioteca de Jhuann</span></header>
+<main id="conteudo">
+  <div class="eyebrow">Revisão pessoal · 20–30 minutos</div>
+  <h1>O que mudou<br>com a informação?</h1>
+  <p class="review-intro">Reconstrua as contas, explique os denominadores e mude uma hipótese. Confira as soluções depois de tentar.</p>
+  <p class="review-meta">Roteiro preparado com apoio de IA. Sua revisão começa com os campos vazios; não há nota automática.</p>
+  <a class="review-export-jump" href="#registro">Ir ao registro e baixar minhas respostas ↓</a>
+
+  <section aria-labelledby="modelo">
+    <h2 id="modelo">O modelo que vamos investigar</h2>
+    <p>H significa “peça com defeito”; + significa “detector sinalizou”. Fixamos P(H)=1/10, P(+|H)=4/5 e P(+|Hᶜ)=1/5. A ausência de sinal é −.</p>
+    <table>
+      <caption>Massas do modelo em milésimos. Números sintéticos, sem coleta de peças.</caption>
+      <thead><tr><th scope="col">Condição</th><th scope="col">Sinal +</th><th scope="col">Sem sinal −</th><th scope="col">Total</th></tr></thead>
+      <tbody><tr><th scope="row">H</th><td>80</td><td>20</td><td>100</td></tr><tr><th scope="row">Hᶜ</th><td>180</td><td>720</td><td>900</td></tr></tbody>
+      <tfoot><tr><th scope="row">Total</th><td>260</td><td>740</td><td>1000</td></tr></tfoot>
+    </table>
+    <p>Por exemplo, a massa conjunta de H e + é (1/10)·(4/5)=80/1000. Os outros números vêm da mesma regra do produto. Não confunda essa massa com uma condicional.</p>
+  </section>
+
+  <form id="review-form">
+    <section aria-labelledby="questao-1">
+      <div class="eyebrow">01 · Escolha o universo</div>
+      <h2 id="questao-1">Quem ficou no denominador?</h2>
+      <p>Calcule P(H|+) e P(H|−). Explique por que nenhuma delas é a sensibilidade P(+|H)=4/5. Depois verifique se H e + são independentes neste modelo.</p>
+      <label for="universo">Meu raciocínio e minhas contas</label>
+      <textarea id="universo" name="universo" rows="5"></textarea>
+      <details><summary>Conferir a primeira solução</summary><div>
+        <p>Após +, restam 260 milésimos: 80 deles pertencem a H. Assim P(H|+)=80/260=4/13. Após −, restam 740 milésimos: 20 pertencem a H; P(H|−)=20/740=1/37.</p>
+        <p>A sensibilidade usa outra referência: apenas H, total 100, logo 80/100=4/5. Para independência, compare P(H∩+)=80/1000=0,08 com P(H)P(+)=(100/1000)(260/1000)=0,026. São diferentes: os eventos não são independentes neste modelo.</p>
+      </div></details>
+    </section>
+
+    <section aria-labelledby="questao-2">
+      <div class="eyebrow">02 · Modifique uma hipótese</div>
+      <h2 id="questao-2">E se a base mudar?</h2>
+      <p>Troque somente P(H) para 1/5 e mantenha P(+|H)=4/5 e P(+|Hᶜ)=1/5. Reconstrua as quatro células em milésimos e recalcule P(H|+). Diga qual hipótese permite reutilizar essas duas taxas.</p>
+      <label for="base">Minha nova tabela e interpretação</label>
+      <textarea id="base" name="base" rows="5"></textarea>
+      <details><summary>Conferir a mudança de base</summary><div>
+        <p>H passa a ocupar 200 milésimos: 160 com + e 40 com −. Hᶜ ocupa 800: 160 com + e 640 com −. O sinal soma 320, portanto P(H|+)=160/320=1/2.</p>
+        <p>A base dobrou, mas a posterior não dobrou: o denominador também mudou, de 260 para 320. Manter as taxas condicionais ao mudar a população é uma hipótese explícita deste exercício; não é garantido em uma aplicação real.</p>
+      </div></details>
+    </section>
+
+    <section aria-labelledby="questao-3">
+      <div class="eyebrow">03 · Descreva o registro</div>
+      <h2 id="questao-3">Outra informação ou uma cópia?</h2>
+      <p>Volte à base 1/10. Caso A: o mesmo sinal + aparece duas vezes porque o registro foi copiado. Caso B: fazemos duas leituras, com as mesmas taxas e independentes <em>dado H e dado Hᶜ</em>, e ambas dão +. Calcule a posterior em cada caso. Qual hipótese mudou?</p>
+      <label for="registro-sinal">Minha comparação dos dois protocolos</label>
+      <textarea id="registro-sinal" name="registro-sinal" rows="5"></textarea>
+      <details><summary>Conferir os dois protocolos</summary><div>
+        <p>No caso A, a segunda mensagem é uma cópia determinística da primeira. O evento continua sendo +, e a posterior permanece 4/13. Copiar não multiplica a verossimilhança.</p>
+        <p>No caso B, a hipótese de independência condicional permite P(++|H)=(4/5)²=16/25 e P(++|Hᶜ)=(1/5)²=1/25. As conjuntas são 16/250 e 9/250; a evidência soma 25/250. Portanto P(H|++)=16/25.</p>
+        <p>O espaço pode ser enumerado em 250 átomos equiprováveis: 25 pertencem a H, com 16 pares ++; 225 pertencem a Hᶜ, com 9 pares ++. Somando todos os pares, as contagens são ++: 25, +−: 40, −+: 40, −−: 145, total 250. A independência condicional não implica independência das leituras sem condicionar na classe.</p>
+      </div></details>
+    </section>
+
+    <section id="registro" aria-labelledby="registro-titulo">
+      <div class="eyebrow">Registro pessoal</div>
+      <h2 id="registro-titulo">O que consegui reconstruir?</h2>
+      <label for="reflexao">Expliquei o quê sem ajuda? Onde consultei as soluções? O que falta rever?</label>
+      <textarea id="reflexao" name="reflexao" rows="5"></textarea>
+      <p id="export-help" class="review-meta">As respostas ficam só nesta aba, sem envio ou sincronização. Baixe antes de sair ou recarregar. O arquivo contém apenas o que você escreveu, sem as soluções.</p>
+      <button type="button" id="exportar" aria-describedby="export-help">Baixar minhas respostas (.md) ↗</button>
+      <p id="export-status" role="status" aria-live="polite"></p>
+      <noscript><p>A exportação precisa de JavaScript. Você também pode copiar suas respostas para um arquivo.</p></noscript>
+    </section>
+  </form>
+  <footer>
+    <p>Fundamentos: Magalhães e Lima, <cite>Noções de Probabilidade e Estatística</cite>, 7ª ed., §2.2, pp.54 e 59; Magalhães, <cite>Probabilidade e Variáveis Aleatórias</cite>, 2ª ed., §1.3, pp.28–30. Consulta textual parcial em 28/10/2026. Questões e deduções próprias.</p>
+    <a href="REVISAO_PESSOAL.md">Fontes, limites e instruções</a> · <a href="/#aula/pe-bayes">Retomar a aula de Bayes →</a>
+  </footer>
+</main>
+</body>
+</html>

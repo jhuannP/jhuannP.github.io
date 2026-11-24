@@ -1,0 +1,17 @@
+# Bootstrap IID exato da média
+
+28/10/2026. Material original assistido por IA; revisão pessoal pendente. Amostras e população de verificação sintéticas, sem dados de trabalho ou evidência de aplicação profissional.
+
+A distribuição empírica atribui1/n a cada posição observada, preservando valores repetidos. [1,1,4] tem massas2/3 em1 e1/3 em4. As n retiradas bootstrap são IID condicionais à amostra. E*(média*)=média observada e Var*(média*)=vemp/n,com vemp=Σ(xi−média)²/n. Para n>1,isso equivale a(n−1)/n vezes s²/n. Não é correção universal para qualquer estatística ou intervalo.
+
+No exemplo,n3,média2,vemp2,variância bootstrap2/3,desvio≈0,816497. As27sequências de índices dão médias1,2,3,4 com contagens8,12,6,1. Contar sequências preserva o peso das posições repetidas; usar set muda o método. A derivação pode agrupar pelo número k de valores4: média1+k,contagem C(3,k)2^(3−k).
+
+Quantil Q(p)=menor valor cuja acumulada é≥p,com Q(0)=mínimo;sem interpolação. Em [1,1,4],Q(.025)=1 eQ(.975)=4,pois a acumulada em3 é26/27. O intervalo direto de percentis[1,4] não tem cobertura95% garantida. A fonte CMU descreve também intervalo centrado; não o equiparamos ao percentil direto. O código enumera o resumo condicional e não valida cobertura real.
+
+Contraexemplo próprio: população P(1)=99/100,P(100)=1/100 tem média199/100. Com n3,a chance de observar[1,1,1] é(99/100)³=970299/1000000. Nesse evento o bootstrap é degenerado,variância0 e intervalo direto[1,1],que exclui a média populacional. A cobertura desse procedimento nessa população/tamanho é,portanto,no máximo0,029701. Isso refuta uma garantia universal,sem concluir que todo bootstrap é inválido. Aumentar B não muda n nem revela valores não observados. Estatísticas de reamostras podem ter valores que não eram dados originais,embora as observações reamostradas venham do suporte observado.
+
+`exact.py` enumera nⁿ sequências para n1–6,com Fraction e entradas list/tuple de int/Fraction,bools/floats rejeitados. Guarda contagens por média,não todas as reamostras. Aumento de n torna o custo exponencial; não usar em grandes bases. É referência finita exata,sem erro de Monte Carlo; não elimina erro inferencial. Exemplo anterior [1,3],Python com Random/seed42 e desafio da variância1/2 preservados na aula. Esse Python anterior tem contrato numérico diferente;novo arquivo usa frações estritas. Sem bibliotecas instaladas ou bootstrap de pipeline inteiro.
+
+Fonte pública primária de ensino: CMU,The Bootstrap,cap.11,https://www.stat.cmu.edu/~larry/=sml/Boot.pdf ,§§11.2–11.3 pp.210–211/PDF2–3,consulta textual parcial em28/10/2026. Edição/autoria não reconfirmadas no recorte;sem leitura integral ou inspeção visual. Apoia distribuição empírica e algoritmos;numeração,intervalos e denominadores não transferidos sem comparação. Derivações de momentos,enumeração e contraexemplo desenvolvidos nestas notas,sem copiar exemplos da fonte. Tentativa de artigo de Efron no ProjectEuclid retornou somente iframe e não conta como corpo lido. Referências anteriores preservadas,livros não relidos neste bloco.
+
+Quatro testes: pesos e multiplicidades/permutação/original[1,3];120amostras até n4 com três valores possíveis,identidades de momentos e transformação afim;quantis e contraexemplo degenerado;contratos. Executar `python3 -m unittest discover -s labs/bootstrap-exato -t .` e `python3 labs/bootstrap-exato/exact.py`. Testes não provam validade para toda estatística,dependência ou população. Blocos/grupos,BCa,bootstrap-t,cobertura geral e dados reais permanecem pendentes.

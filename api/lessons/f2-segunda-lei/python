@@ -1,0 +1,4 @@
+TH,TC,QH=600.,300.,100.
+eta=1-TC/TH;QC=QH*TC/TH;W=QH-QC
+assert eta==.5 and W==50 and abs(QC/TC-QH/TH)<1e-12
+print(eta,W)

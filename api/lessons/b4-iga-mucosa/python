@@ -1,0 +1,9 @@
+from fractions import Fraction as Q
+# Dados sintéticos; massa em μg, concentração em μg/mL.
+measured, blank, volume = Q(12), Q(2), Q(1,2)
+area, hours = Q(1), Q(2)  # cm² e h
+mass = (measured-blank)*volume
+apparent_rate = mass/(area*hours)
+assert mass == 5 and apparent_rate == Q(5,2)
+print('Massa apical (μg):', mass)
+print('Taxa aparente (μg/(cm²·h)):', apparent_rate)

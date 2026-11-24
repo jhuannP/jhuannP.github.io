@@ -1,0 +1,6 @@
+from importlib import import_module
+v=import_module("labs.propriedades-organicas.vapor")
+for species in ("ethanol","dimethyl_ether"):
+    t=v.boiling_temperature(species,.9)
+    assert abs(v.vapor_pressure(species,t)-.9)<1e-10
+    print(species,t,t-273.15)

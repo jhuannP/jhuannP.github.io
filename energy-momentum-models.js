@@ -1,0 +1,22 @@
+/* Partículas livres em 1+1; E*=E/(m0*c²), p*=p/(m0*c), M*=M/m0. */
+window.EnergyMomentumModels=(()=>{
+ function gamma(beta){if(!Number.isFinite(beta)||Math.abs(beta)>=1)throw new RangeError('|beta|<1');return 1/Math.sqrt((1-beta)*(1+beta))}
+ function boost(energy,momentum,observer){if(![energy,momentum,observer].every(Number.isFinite)||energy<Math.abs(momentum))throw new RangeError('Quadrimomento futuro causal');const g=gamma(observer);return[g*(energy-observer*momentum),g*(momentum-observer*energy)]}
+ function kinetic(energy,momentum,mass=1){if(mass<=0||energy<0)throw new RangeError('Massa positiva');return momentum*momentum/(energy+mass)}
+ function model(system=1,beta=.6,observer=0){
+  if(![0,1].includes(system)||![beta,observer].every(Number.isFinite)||beta<0||beta>.95||Math.abs(observer)>.8)throw new RangeError('Sistema 0/1, beta 0...95, observador ±.8');
+  const g=gamma(beta),signs=system===0?[1]:[1,-1],particles=signs.map(sign=>{const[energy,momentum]=boost(g,sign*g*beta,observer);return{energy,momentum,kinetic:kinetic(energy,momentum),velocity:momentum/energy}});
+  const energy=particles.reduce((a,p)=>a+p.energy,0),momentum=particles.reduce((a,p)=>a+p.momentum,0),mass=system===0?1:2*g,mass_squared=(energy-momentum)*(energy+momentum),bulk_kinetic=kinetic(energy,momentum,mass),sum_kinetic=particles.reduce((a,p)=>a+p.kinetic,0),internal=system===0?0:2*kinetic(g,g*beta),classical=.5*particles[0].velocity**2,relative_error=particles[0].kinetic?(particles[0].kinetic-classical)/particles[0].kinetic:null;
+  return{system,beta,observer,particles,energy,momentum,mass,mass_squared,rest_sum:signs.length,bulk_kinetic,sum_kinetic,internal,classical,relative_error,cm_velocity:momentum/energy};
+ }
+ function createModels({plot,sample,fmt}){return{energyMomentum:{label:'Mude o observador e confira a massa invariante',controls:[['system','Objeto: 0 uma partícula · 1 par com velocidades opostas em S',0,1,1,1],['beta','Velocidade inicial |v|/c em S',0,.95,.05,.6],['observer','S′ move-se a w/c em relação a S',-.8,.8,.1,0]],render:({system,beta,observer})=>{
+  const s=model(system,beta,observer),show=x=>x!==0&&Math.abs(x)<1e-4?x.toExponential(3).replace('.',','):fmt(x);
+  const L=Math.ceil(Math.max(2,1.2*Math.abs(s.momentum),1.05*s.mass,s.energy/1.8));
+  const graph=plot([{data:sample(p=>Math.hypot(s.mass,p),-L,L)},{data:[[-L,L],[0,0],[L,L]],style:'reference'}],{xmin:-L,xmax:L,ymin:0,ymax:2*L,equalScale:true},[[s.momentum,s.energy]]).replace('<svg ','<svg class="energy-momentum-scene" ');
+  const table=`<table class="truth-table energy-momentum-table"><caption>Partículas em S′: Kᵢ*=Eᵢ*−1. A linha total não soma massas.</caption><thead><tr><th>Objeto</th><th>E*</th><th>pₓ*</th><th>Kᵢ*</th></tr></thead><tbody>${s.particles.map((p,i)=>`<tr><th>${i+1}</th><td>${show(p.energy)}</td><td>${show(p.momentum)}</td><td>${show(p.kinetic)}</td></tr>`).join('')}${system===1?`<tr><th>Total</th><td>${show(s.energy)}</td><td>${show(s.momentum)}</td><td>—</td></tr>`:''}</tbody></table>`;
+  return{graph:'<p>Horizontal: momento pₓ*. Vertical: energia E*. Azul: E*=√(M*²+pₓ*²) do objeto selecionado. Tracejado: E*=|pₓ*|, ramo sem massa. Ponto: objeto visto em S′. Os eixos usam a mesma escala por unidade; a janela se ajusta. Compare os números, não só os pixels.</p>'+graph+table,
+  report:`M*=${fmt(s.mass)}; soma das massas individuais=${s.rest_sum}. E*²−pₓ*²=${fmt(s.mass_squared)}; esperado M*²=${fmt(s.mass*s.mass)}. Kbulk*=Etotal*−M*=${show(s.bulk_kinetic)}; soma Kᵢ*=${show(s.sum_kinetic)}; energia cinética interna em CM*=${show(s.internal)}. ${system===1?'A massa do par inclui energia interna; não é apenas 1+1.':'Para uma única partícula, Kbulk coincide com sua energia cinética.'} Para a partícula 1: v′/c=${fmt(s.particles[0].velocity)}; Kclássica*=${show(s.classical)}; ${s.relative_error===null?'erro relativo indefinido quando K=0.':`subestimação relativa=${fmt(100*s.relative_error)}%.`}`,
+  note:'Unidades E*=E/(m₀c²), p*=p/(m₀c), M*=M/m₀; cada partícula tem massa invariante m₀. S′ move-se no sentido +x quando w>0: E′=γw(E−wpₓ), p′ₓ=γw(pₓ−wE), com c=1. Partículas livres sem campo ou energia de ligação; no par S é o referencial de momento total zero. M é do sistema, não massa individual dependente de velocidade. Mudar o observador não acelera o objeto. A fusão sem perda de energia é só um balanço possível, não uma dinâmica simulada. Fótons não usam γ em v=c. Nenhum dado experimental ou resultado da IC.'};
+ }}}}
+ return{gamma,boost,kinetic,model,createModels};
+})();

@@ -1,0 +1,6 @@
+from fractions import Fraction as F
+xs=[-1,0,1];ys=[x*x for x in xs]
+EX=sum(F(x,3) for x in xs);EY=sum(F(y,3) for y in ys)
+cov=sum(F(x*y,3) for x,y in zip(xs,ys))-EX*EY
+assert cov==0
+print(EX,EY,cov)

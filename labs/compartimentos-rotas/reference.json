@@ -1,0 +1,75 @@
+[
+  {
+    "case": 0,
+    "target": "nucleo",
+    "steps": [
+      [
+        "citosol",
+        "nucleo",
+        "poro"
+      ]
+    ],
+    "nodes": [
+      "citosol",
+      "nucleo"
+    ],
+    "crossings": 0,
+    "vesicles": 0
+  },
+  {
+    "case": 1,
+    "target": "exterior",
+    "steps": [
+      [
+        "citosol",
+        "re",
+        "translocacao"
+      ],
+      [
+        "re",
+        "golgi",
+        "vesicular"
+      ],
+      [
+        "golgi",
+        "exterior",
+        "vesicular"
+      ]
+    ],
+    "nodes": [
+      "citosol",
+      "re",
+      "golgi",
+      "exterior"
+    ],
+    "crossings": 1,
+    "vesicles": 2
+  },
+  {
+    "case": 2,
+    "target": "matriz",
+    "steps": [
+      [
+        "citosol",
+        "matriz",
+        "translocacao"
+      ]
+    ],
+    "nodes": [
+      "citosol",
+      "matriz"
+    ],
+    "crossings": 1,
+    "vesicles": 0
+  },
+  {
+    "case": 3,
+    "target": "citosol",
+    "steps": [],
+    "nodes": [
+      "citosol"
+    ],
+    "crossings": 0,
+    "vesicles": 0
+  }
+]

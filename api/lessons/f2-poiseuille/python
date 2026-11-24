@@ -1,0 +1,8 @@
+from math import pi
+radius,length,eta,drop=1e-3,1.,.1,1000.
+peak=drop*radius**2/(4*eta*length)
+mean=peak/2
+Q=pi*radius**2*mean
+assert abs(mean-.00125)<1e-12
+print('v média em mm/s:',mean*1000)
+print('Q em microlitros/s:',Q*1e9)

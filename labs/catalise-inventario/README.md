@@ -1,0 +1,11 @@
+# Catálise: ocupação e inventário de metal
+
+Rede original hipotética:M+L⇌ML,M+S⇌MS,MS→M+P. Formas abreviadas de um mesmo centro metálico,demais ligantes/espectadores omitidos. Constantes prescritas kL=1L mol⁻¹s⁻¹,k−L=1s⁻¹,kS=2L mol⁻¹s⁻¹,k−S=2s⁻¹,kcat=4s⁻¹. Reservatórios mantêm[L] e[S] constantes em mol/L,produto removido/reação inversa desprezada na janela. Não representa mecanismo de um metal real; etapa final pode reunir etapas elementares e não define estado de oxidação.
+
+Estado estacionário:Mtotal=M(1+L+S/3),ML=L*M,MS=S*M/3;v=4MS. Exemplo L2M,S3M,Mtotal0,001M:frações1/4,1/2,1/4,v0,001M/s,frequência aparente v/Mtotal1s⁻¹. Dados de concentração altos são sintéticos,não condições de operação sugeridas. Denominador é metal total,não sítios ativos medidos. A quantidade acumulada P/Mtotal é adimensional; sua derivada é a frequência aparente sob volume fixo. Não se usa a nomenclatura histórica TOF/turnover number sem declarar a convenção.
+
+Execute `python3 labs/catalise-inventario/cycle.py` e `python3 -m unittest discover -s labs/catalise-inventario -t .`. Int/Fraction,L/S0..12M,total10⁻⁶..1M;estado não negativo,total≤1M,h10⁻⁶..1s,com h*max(L+2S,1,6)≤1 para positividade do Euler. O passo conserva inventário exato,mas tem erro temporal; não calcula P acumulado ou certifica o transitório contínuo. Script80 passos de1/8s é só comparação numérica com estacionário exato.
+
+Fonte privada autorizada:Miessler,Fischer e Tarr,Química Inorgânica,5ªed tradução brasileira2014,cap14,recortes textuais parciais de§14.1.1 pp.532–533/PDF547–548 e§14.1.3 p.537/PDF552 em29/10/2026. Cabeçalhos conferem paginação impressa/offset15;sem nova inspeção visual ou leitura integral. Ligantes/substituição e ciclo de acoplamento usados como contexto,sem copiar mecanismo,ciclo,figura,tabela ou dados. Rede de ocupação e números próprios. Tentativas GoldBook T06534/página/PDF retornaram403 e domínio antigo timeout:corpo não lido,não usado como evidência de terminologia. ProgramaCCM0214 permanece consulta29/10/2026,ativação15/07/2024,versão ministrada desconhecida.
+
+Quatro testes:fixture;25reservatórios e balanços/escala;trajetória positiva e inventário/transitório;contratos. Não certificam mecanismo real,protocolo,produto ou domínio pessoal. Revisão pendente.

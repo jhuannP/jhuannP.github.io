@@ -1,0 +1,9 @@
+from fractions import Fraction as Q
+k,q,a=map(Q,(2,3,2))
+fz=-k*q*q/(4*a*a)
+phi_ind=-k*q/(2*a)
+u=q*phi_ind/2
+assert fz==Q(-9,8) and u==Q(-9,4)
+final=-k*q*q/(4*4)
+assert final-u==Q(9,8)
+print('Força,energia,trabalho externo:',fz,u,final-u)

@@ -1,0 +1,4 @@
+from math import factorial
+ratio=(1/factorial(4))/(1/factorial(3))
+assert ratio==.25
+print(ratio)

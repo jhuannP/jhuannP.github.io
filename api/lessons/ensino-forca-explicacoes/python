@@ -1,0 +1,8 @@
+from fractions import Fraction as F
+mass=F(2);v0=F(3)
+for force in (F(0),F(2)):
+    a=force/mass
+    rows=[(F(t),v0*t+a*t*t/2,v0+a*t) for t in range(4)]
+    print('DADOS SINTÉTICOS; força=',force,'N; t,x,v=',rows)
+assert F(3)*3==9
+print('Cálculo do modelo, não medição nem evidência de aprendizagem.')

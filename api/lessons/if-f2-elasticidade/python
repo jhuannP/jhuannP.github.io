@@ -1,0 +1,6 @@
+from fractions import Fraction as F
+force, length, area, young=F(120), F(2), F(3,10**6), F(40*10**9)
+strain=force/(area*young)
+delta=strain*length
+assert (strain, delta, force*delta/2)==(F(1,1000), F(1,500), F(3,25))
+print(strain, delta, force/delta)

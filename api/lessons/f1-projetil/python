@@ -1,0 +1,5 @@
+vx,vy,g=3.,4.,10.
+T=2*vy/g;R=vx*T
+assert abs(R-2.4)<1e-12
+assert abs(vy*T-.5*g*T*T)<1e-12
+print(R)

@@ -1,0 +1,8 @@
+from fractions import Fraction as F
+p=F(1,8)
+for weights in ((1,)*15,(1,2,4,8)):
+    mean=p*sum(weights)
+    variance=p*(1-p)*sum(w*w for w in weights)
+    print(mean,variance)
+assert p*sum((1,2,4,8))==F(15,8)
+assert p*(1-p)*85==F(595,64)

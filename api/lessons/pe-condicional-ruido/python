@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+z=Q(1,2)
+a=max(Q(0),z-1); b=min(Q(1),z)
+print("média pontual",(a+b)/2)
+print("média na faixa",z/3)
+assert (a+b)/2==Q(1,4)
+assert z/3==Q(1,6)

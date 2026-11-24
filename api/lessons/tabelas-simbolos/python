@@ -1,0 +1,6 @@
+texto = "física código física"
+frequencias = {}
+for palavra in texto.casefold().split():
+    frequencias[palavra] = frequencias.get(palavra,0)+1
+assert frequencias == {"física":2,"código":1}
+print(frequencias)

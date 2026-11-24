@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="600" viewBox="0 0 440 600" role="img" aria-labelledby="t d"><title id="t">Capturar não é o mesmo que apresentar</title><desc id="d">Na resposta dependente de T, o BCR reconhece uma estrutura E no antígeno. A célula B captura o material e o processa, apresentando um peptídeo p em MHC dois para uma célula T CD4 auxiliar competente. O BCR e o TCR reconhecem estruturas distintas que estão ligadas ao material capturado. Ajuda celular e contexto permitem expansão e diferenciação; o diagrama não prevê destino de uma célula.</desc>
+<rect width="440" height="600" fill="#f6f8fb"/><g font-family="sans-serif" fill="#172b43">
+<text x="24" y="35" font-size="21" font-weight="bold">Duas formas de reconhecer</text>
+<text x="24" y="64" font-size="15">Recorte: resposta B dependente de T</text>
+<text x="24" y="108" font-size="17" font-weight="bold">1. BCR: captura do antígeno</text>
+<text x="24" y="139" font-size="16">Reconhece a estrutura E no material.</text>
+<path d="M40 175H380" stroke="#255fbc" stroke-width="3"/>
+<circle cx="75" cy="175" r="12" fill="#255fbc"/>
+<path d="M220 162H242V188H220Z" fill="#172b43"/>
+<text x="61" y="211" font-size="15">E</text><text x="211" y="211" font-size="15">p</text>
+<text x="24" y="239" font-size="14">E e a fonte de p estão no mesmo material.</text>
+<path d="M215 255V295 M209 288L215 295L221 288" stroke="#255fbc" stroke-width="2" fill="none"/>
+<text x="24" y="328" font-size="17" font-weight="bold">2. Processamento e apresentação</text>
+<text x="24" y="358" font-size="16">Peptídeo p + MHC II na célula B</text>
+<text x="24" y="387" font-size="16">→ TCR de T CD4 auxiliar competente</text>
+<path d="M24 411H416" stroke="#cbd5e1"/>
+<text x="24" y="443" font-size="17" font-weight="bold">Ajuda: contato + citocinas + contexto</text>
+<text x="24" y="475" font-size="16">Inclui CD40 na B e CD40L na T.</text>
+<text x="24" y="507" font-size="16">Expansão e diferenciação são processos</text>
+<text x="24" y="532" font-size="16">posteriores; não uma garantia por ligação.</text>
+<text x="24" y="574" font-size="13">Esquema original. E e p são rótulos didáticos, sem dados.</text>
+</g></svg>

@@ -1,0 +1,5 @@
+residual=lambda theta:2*theta-2
+assert residual(.5)==-1 and residual(1)==0
+u=lambda x,theta:theta*x*(1-x)
+assert u(0,1)==u(1,1)==0
+print(u(.5,1))

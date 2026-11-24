@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 350" role="img" aria-labelledby="title desc">
+<title id="title">Balanços no exemplo de complexação um para um</title>
+<desc id="desc">No equilíbrio sintético, as concentrações são M livre um, L livre dois e ML um milimol por litro. O metal total é um mais um igual a dois. O ligante total é dois mais um igual a três. Cada ML contém um metal e um ligante.</desc>
+<rect width="440" height="350" rx="16" fill="#f4f3e9"/>
+<g font-family="sans-serif" fill="#24352d">
+<text x="24" y="34" font-size="19" font-weight="bold">Um complexo usa dois estoques</text>
+<text x="24" y="64" font-size="15">Concentrações sintéticas em mmol/L</text>
+<rect x="24" y="91" width="115" height="85" rx="8" fill="#dbe5fb"/>
+<rect x="163" y="91" width="115" height="85" rx="8" fill="#dce8df"/>
+<rect x="302" y="91" width="114" height="85" rx="8" fill="#e9dfca"/>
+<text x="42" y="121" font-size="17">M livre</text><text x="66" y="157" font-size="26">1</text>
+<text x="181" y="121" font-size="17">L livre</text><text x="205" y="157" font-size="26">2</text>
+<text x="337" y="121" font-size="17">ML</text><text x="344" y="157" font-size="26">1</text>
+<text x="24" y="216" font-size="18">Metal total: 1 + 1 = 2</text>
+<text x="24" y="248" font-size="18">Ligante total: 2 + 1 = 3</text>
+<text x="24" y="292" font-size="16">Kc = 1/(1 × 2) = 0,5 L/mmol</text>
+<text x="24" y="323" font-size="14">ML é uma espécie; não um metal ou espectro real.</text>
+</g></svg>

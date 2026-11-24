@@ -1,0 +1,12 @@
+memoria=[0]*4
+antes=list(memoria)
+def escrever(memoria,endereco,dado,en):
+    if not isinstance(endereco,int) or isinstance(endereco,bool) or not 0<=endereco<len(memoria): raise ValueError('Endereço inválido')
+    if not isinstance(dado,int) or isinstance(dado,bool) or not 0<=dado<256: raise ValueError('Dado inválido')
+    if en not in (0,1): raise ValueError('Habilitação inválida')
+    if en: memoria[endereco]=dado
+escrever(memoria,2,9,1)
+assert memoria==[0,0,9,0] and antes==[0,0,0,0]
+escrever(memoria,2,7,0)
+assert memoria[2]==9
+print(memoria)

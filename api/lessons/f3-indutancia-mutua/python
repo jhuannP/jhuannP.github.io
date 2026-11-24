@@ -1,0 +1,6 @@
+from fractions import Fraction as Q
+L1,L2,M=Q(4),Q(9),Q(3)
+i1,i2=Q(2),Q(-1)
+U=(L1*i1*i1+L2*i2*i2)/2+M*i1*i2
+assert M*M<=L1*L2 and U==Q(13,2)
+print(U)

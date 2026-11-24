@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" role="img" aria-labelledby="title desc">
+<title id="title">Glicólise: duas trioses explicam a contagem</title>
+<desc id="desc">Uma glicose com seis carbonos utiliza dois ATP na preparação e fornece dois gliceraldeídos três fosfato, cada um com três carbonos. A conversão dos dois a dois piruvatos produz quatro ATP e dois NADH. O saldo de ATP é quatro menos dois igual a dois. O esquema não mostra todas as enzimas ou a velocidade da via.</desc>
+<rect width="440" height="440" rx="16" fill="#f4f3e9"/>
+<g font-family="sans-serif" fill="#24352d">
+<text x="22" y="32" font-size="18" font-weight="bold">Conte por glicose e por triose</text>
+<rect x="110" y="58" width="220" height="52" rx="8" fill="#dce8df"/>
+<text x="143" y="89" font-size="18">1 glicose · 6 C</text>
+<path d="M220 110V164 M212 155L220 164L228 155" stroke="#667a6c" fill="none" stroke-width="2"/>
+<text x="242" y="143" font-size="15">gasta 2 ATP</text>
+<rect x="62" y="171" width="316" height="59" rx="8" fill="#dbe5fb"/>
+<text x="96" y="197" font-size="17">2 gliceraldeídos-3-fosfato</text>
+<text x="141" y="218" font-size="15">cada um com 3 C</text>
+<path d="M220 230V286 M212 277L220 286L228 277" stroke="#667a6c" fill="none" stroke-width="2"/>
+<text x="241" y="256" font-size="15">forma 4 ATP</text>
+<text x="241" y="279" font-size="15">e 2 NADH</text>
+<rect x="110" y="294" width="220" height="52" rx="8" fill="#e9dfca"/>
+<text x="134" y="325" font-size="18">2 piruvatos · 3 C cada</text>
+<text x="22" y="387" font-size="20">ATP líquido = 4 − 2 = 2</text>
+<text x="22" y="420" font-size="14">Balanço da via clássica; não é uma escala de tempo.</text>
+</g></svg>

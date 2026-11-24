@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-labelledby="t d">
+<title id="t">Contagens, não segundos</title><desc id="d">Tabela com n quatro, oito, dezesseis e trinta e dois; visitas simples n e visitas a pares n vezes n menos um dividido por dois.</desc>
+<rect width="420" height="420" fill="#f6f3e9"/>
+<g font-family="system-ui,sans-serif" fill="#183c36">
+<text x="22" y="36" font-size="22" font-weight="700">Contagens, não segundos</text>
+<text x="22" y="67" font-size="15">Unidade: visitas no modelo declarado</text>
+<path d="M22 90H398M22 157H398M22 206H398M22 255H398M22 304H398M22 353H398" stroke="#b5c8b9"/>
+<g font-size="15" font-weight="650"><text x="37" y="126">n</text><text x="108" y="118">Laço simples</text><text x="154" y="143">n</text><text x="280" y="118">Pares i &lt; j</text><text x="268" y="143">n(n−1)/2</text></g>
+<g font-size="20"><text x="37" y="188">4</text><text x="154" y="188">4</text><text x="306" y="188">6</text>
+<text x="37" y="237">8</text><text x="154" y="237">8</text><text x="299" y="237">28</text>
+<text x="37" y="286">16</text><text x="148" y="286">16</text><text x="292" y="286">120</text>
+<text x="37" y="335">32</text><text x="148" y="335">32</text><text x="292" y="335">496</text></g>
+<text x="22" y="389" font-size="15">Dobrar 4 → 8: pares multiplicam por 14/3</text>
+<text x="22" y="412" font-size="12">Nenhum benchmark de computador nesta figura.</text>
+</g></svg>

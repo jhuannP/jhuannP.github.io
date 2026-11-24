@@ -1,0 +1,938 @@
+[
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 0,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 30,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 60,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 90,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 120,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 150,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 180,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 210,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 240,
+    "orientation": 15.999999999999998,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 270,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 300,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 330,
+    "orientation": 15.999999999999998,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 360,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 0,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 30,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 60,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 90,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 120,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 150,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 180,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 210,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 240,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 270,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 300,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 330,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 360,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 0,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 30,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 60,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 90,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 120,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 150,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 180,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 210,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 240,
+    "orientation": -15.999999999999998,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 270,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 300,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 330,
+    "orientation": -15.999999999999998,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 360,
+    "orientation": -16.0,
+    "superposable": false,
+    "proper_count": 0
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 0,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 30,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 60,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 90,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 120,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 150,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 180,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 210,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 240,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 270,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 300,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 330,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 0,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 360,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 0,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 30,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 60,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 90,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 120,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 150,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 180,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 210,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 240,
+    "orientation": 15.999999999999998,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 270,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 300,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 330,
+    "orientation": 15.999999999999998,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 0,
+    "angle": 360,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 0,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 30,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 60,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 90,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 120,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 150,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 180,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 210,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 240,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 270,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 300,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 330,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 0,
+    "swap": 1,
+    "angle": 360,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 0,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 30,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 60,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 90,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 120,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 150,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 180,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 210,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 240,
+    "orientation": -15.999999999999998,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 270,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 300,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 330,
+    "orientation": -15.999999999999998,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 0,
+    "angle": 360,
+    "orientation": -16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 0,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 30,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 60,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 90,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 120,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 150,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 180,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 210,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 240,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 270,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 300,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 330,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  },
+  {
+    "kind": 1,
+    "mirror": 1,
+    "swap": 1,
+    "angle": 360,
+    "orientation": 16.0,
+    "superposable": true,
+    "proper_count": 1
+  }
+]

@@ -1,0 +1,20 @@
+from math import isfinite,pi,sin,sqrt
+from cmath import exp
+
+def real(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def green_dirichlet(x,s,L=1):
+    x=real(x);s=real(s);L=real(L)
+    if L<=0 or not 0<=x<=L or not 0<=s<=L:raise ValueError('Domínio de Green inválido')
+    return min(x,s)*(L-max(x,s))/L
+
+assert green_dirichlet(.5,.5)==.25
+N=2000;h=1/N;x=.3
+u=h*sum(green_dirichlet(x,(i+.5)*h) for i in range(N))
+assert abs(u-x*(1-x)/2)<1e-7
+print(u)

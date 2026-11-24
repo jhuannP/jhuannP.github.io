@@ -1,0 +1,5 @@
+from math import sin,pi,sqrt
+N=2000;h=1/N
+inner=lambda n,m:h*sum(sin(n*pi*(i+.5)*h)*sin(m*pi*(i+.5)*h) for i in range(N))
+assert abs(inner(1,2))<1e-12 and abs(inner(1,1)-.5)<1e-12
+print(inner(1,1),sqrt(2))

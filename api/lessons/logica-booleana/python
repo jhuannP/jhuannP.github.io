@@ -1,0 +1,12 @@
+def meio_somador(a, b):
+    if type(a) is not int or type(b) is not int or a not in (0, 1) or b not in (0, 1):
+        raise ValueError("As entradas precisam ser bits")
+    soma = a ^ b
+    transporte = a & b
+    return soma, transporte
+
+for a in (0, 1):
+    for b in (0, 1):
+        s, c = meio_somador(a, b)
+        print(a, b, s, c)
+        assert a + b == 2*c + s

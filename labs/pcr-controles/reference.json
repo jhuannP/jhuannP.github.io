@@ -1,0 +1,2903 @@
+[
+  {
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "observed": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      }
+    ],
+    "compatible_count": 1,
+    "target_values": [
+      0
+    ]
+  },
+  {
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "observed": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 3,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "observed": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "observed": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "observed": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "observed": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "observed": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "observed": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "observed": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 3,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "observed": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 3,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "observed": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "observed": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "observed": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    "observed": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "observed": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 0,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 0,
+        "working": 0,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 0,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 16,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "observed": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "params": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "observed": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "compatible": [
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 0,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 0
+      },
+      {
+        "target": 1,
+        "inhibited": 1,
+        "contamination": 1,
+        "working": 1,
+        "nonspecific": 1
+      }
+    ],
+    "compatible_count": 4,
+    "target_values": [
+      0,
+      1
+    ]
+  }
+]

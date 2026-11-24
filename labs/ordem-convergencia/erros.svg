@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="400" viewBox="0 0 520 400" role="img" aria-labelledby="title desc">
+<title id="title">Dois modelos exatos de erro</title><desc id="desc">Com erro inicial um meio, a sequência linear divide por dois e a quadrática eleva ao quadrado. Em n igual a três os erros são um dezesseis avos e um sobre duzentos e cinquenta e seis, respectivamente.</desc>
+<rect width="520" height="400" fill="#f6f3eb"/>
+<g font-family="sans-serif" fill="#172845">
+<text x="20" y="40" font-size="28" font-weight="bold">Mesmo erro inicial: 1/2</text>
+<g font-size="24"><text x="25" y="95">n</text><text x="100" y="95">Linear</text><text x="300" y="95">Quadrática</text><text x="100" y="130">e novo=e/2</text><text x="300" y="130">e novo=e²</text></g>
+<path d="M20 150 H500 M20 325 H500" stroke="#264bb5" stroke-width="2"/>
+<g font-size="28"><text x="25" y="190">0</text><text x="125" y="190">1/2</text><text x="340" y="190">1/2</text><text x="25" y="230">1</text><text x="125" y="230">1/4</text><text x="340" y="230">1/4</text><text x="25" y="270">2</text><text x="125" y="270">1/8</text><text x="340" y="270">1/16</text><text x="25" y="310">3</text><text x="125" y="310">1/16</text><text x="340" y="310">1/256</text></g>
+<text x="20" y="373" font-size="23" fill="#264bb5">Modelos provados • não é um benchmark</text>
+</g></svg>

@@ -1,0 +1,5 @@
+A = [[2, 1], [0, 1]]
+v = [1, 2]
+resultado = [sum(a*b for a,b in zip(linha,v)) for linha in A]
+det = A[0][0]*A[1][1] - A[0][1]*A[1][0]
+print(resultado, det)

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="530" viewBox="0 0 440 530" role="img" aria-labelledby="t d">
+<title id="t">O limiar transforma um intervalo em uma leitura zero</title><desc id="d">Para a igual a um meio, todos os valores de X entre zero e um meio produzem Y zero. Valores maiores produzem Y igual a X menos um meio. A lei de Y tem massa um meio em zero e densidade um no intervalo positivo até um meio.</desc>
+<rect width="440" height="530" fill="#f6f8fb"/><g font-family="sans-serif" fill="#172b43">
+<text x="24" y="34" font-size="20" font-weight="bold">Uma leitura, dois tipos de informação</text>
+<text x="24" y="62" font-size="16">Modelo: X uniforme [0,1]; a = 1/2</text>
+<text x="24" y="106" font-size="17" font-weight="bold">Mapa do sensor ideal</text>
+<path d="M65 270H380 M65 270V125" stroke="#64748b" fill="none"/>
+<path d="M65 270H215L365 140" stroke="#255fbc" stroke-width="4" fill="none"/>
+<path d="M215 270V282 M365 270V282" stroke="#64748b"/>
+<text x="45" y="294" font-size="15">0</text><text x="202" y="301" font-size="15">1/2</text><text x="361" y="301" font-size="15">1</text><text x="393" y="278" font-size="16">X</text><text x="43" y="133" font-size="16">Y</text>
+<text x="78" y="244" font-size="15">Todo este intervalo</text><text x="78" y="263" font-size="15">vira Y = 0</text>
+<text x="254" y="151" font-size="15">Y = X − 1/2</text>
+<path d="M24 326H416" stroke="#cbd5e1"/>
+<text x="24" y="358" font-size="17" font-weight="bold">Lei da leitura Y</text>
+<text x="24" y="391" font-size="16">Massa em zero: P(Y = 0) = 1/2</text>
+<text x="24" y="421" font-size="16">Parte contínua: densidade 1</text>
+<text x="24" y="446" font-size="16">somente em 0 &lt; y &lt; 1/2.</text>
+<text x="24" y="480" font-size="16">Total: 1/2 + ∫₀¹⁄² 1 dy = 1</text>
+<text x="24" y="512" font-size="13">Figura original; grandezas adimensionais; sem dados reais.</text>
+</g></svg>

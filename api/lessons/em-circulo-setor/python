@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+r=Q(6);turn=Q(120,360)
+arc_pi=2*r*turn;area_pi=r*r*turn
+assert arc_pi==4 and area_pi==12
+print('Arco:',arc_pi,'*pi cm')
+print('Area:',area_pi,'*pi cm²')
+print('Perimetro:',2*r,'+',arc_pi,'*pi cm')

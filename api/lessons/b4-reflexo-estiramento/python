@@ -1,0 +1,6 @@
+edges=[("Ia","alfa_hom",1),("Ia","inter",1),("inter","alfa_ant",-1)]
+direct=[e for e in edges if e[0]=="Ia" and e[1]=="alfa_hom"]
+assert len(direct)==1 and direct[0][2]==1
+print("Ramo direto:", direct, "uma conexão central")
+print("Ramo via inter: duas conexões centrais, sinal", 1*(-1))
+print("Esquema sem tempos, ganhos ou movimento calculado.")

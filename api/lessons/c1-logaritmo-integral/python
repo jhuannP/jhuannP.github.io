@@ -1,0 +1,7 @@
+from fractions import Fraction as Q
+n=4
+right=sum((Q(1,4+i) for i in range(1,5)),Q(0))
+left=sum((Q(1,4+i) for i in range(4)),Q(0))
+assert right==Q(533,840) and left==Q(319,420)
+assert left-right==Q(1,8)
+print(right,left,(left+right)/2)

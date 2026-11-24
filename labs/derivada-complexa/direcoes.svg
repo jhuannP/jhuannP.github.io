@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="535" viewBox="0 0 440 535" role="img" aria-labelledby="t d"><title id="t">Os eixos concordam, mas a diagonal discorda</title><desc id="d">Para g zero igual a zero e g z igual ao conjugado de z ao quadrado dividido por z fora da origem, o quociente g h dividido por h é um nos eixos real e imaginário, mas menos um na diagonal h igual a t vezes um mais i. A função é contínua e satisfaz Cauchy Riemann na origem, sem derivada complexa ali.</desc>
+<rect width="440" height="535" fill="#f6f8fb"/><g fill="#172b43" font-family="sans-serif">
+<text x="24" y="34" font-size="21" font-weight="bold">Dois eixos não bastam</text>
+<text x="24" y="63" font-size="16">g(0)=0; g(z)=conj(z)²/z, z ≠ 0</text>
+<path d="M60 271H390 M75 285V92" fill="none" stroke="#94a3b8"/>
+<path d="M75 271H350 M75 271V112 M75 271L242 104" fill="none" stroke="#255fbc" stroke-width="3"/>
+<circle cx="75" cy="271" r="5" fill="#172b43"/>
+<text x="55" y="299" font-size="15">0</text><text x="363" y="297" font-size="15">Re h</text><text x="32" y="99" font-size="15">Im h</text>
+<text x="270" y="252" font-size="16">h = t</text><text x="91" y="138" font-size="16">h = it</text><text x="254" y="115" font-size="16">h = t(1+i)</text>
+<path d="M24 324H416" stroke="#cbd5e1"/>
+<text x="24" y="355" font-size="17" font-weight="bold">Quociente g(h)/h, para t &gt; 0</text>
+<text x="24" y="389" font-size="16">Eixo real</text><text x="350" y="389" font-size="17">1</text>
+<text x="24" y="422" font-size="16">Eixo imaginário</text><text x="350" y="422" font-size="17">1</text>
+<text x="24" y="455" font-size="16">Diagonal</text><text x="340" y="455" font-size="17">−1</text>
+<text x="24" y="492" font-size="15">Valores exatos para qualquer t &gt; 0.</text><text x="24" y="520" font-size="13">Figura original. O teste de caminhos refuta o limite.</text></g></svg>

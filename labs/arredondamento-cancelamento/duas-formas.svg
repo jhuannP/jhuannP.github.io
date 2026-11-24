@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="390" viewBox="0 0 520 390" role="img" aria-labelledby="title desc">
+<title id="title">Duas formas matematicamente equivalentes</title><desc id="desc">Com x igual a dois elevado a menos cinquenta e quatro, a forma ingênua arredonda um mais x para um e retorna zero. A forma x vezes dois mais x retorna dois x. A referência racional é dois x mais x ao quadrado e a diferença da reformulada é x ao quadrado.</desc>
+<rect width="520" height="390" fill="#f6f3eb"/>
+<g font-family="sans-serif" fill="#172845">
+<text x="20" y="40" font-size="28" font-weight="bold">Mesmo problema, duas contas</text>
+<text x="20" y="87" font-size="26">Entrada exata: x=2⁻⁵⁴</text>
+<text x="20" y="145" font-size="25">Ingênua: fl(1+x)=1 → saída 0</text>
+<path d="M20 170 H500" stroke="#264bb5" stroke-width="2"/>
+<text x="20" y="218" font-size="25" fill="#264bb5">Reformulada: x(2+x) → saída 2x</text>
+<text x="20" y="275" font-size="26">Referência: 2x+x² &gt;0</text>
+<text x="20" y="330" font-size="24">Erro que ainda resta: x²</text>
+<text x="20" y="369" font-size="21">Formato verificado: base 2 / 53 bits</text>
+</g></svg>

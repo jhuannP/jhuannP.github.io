@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 650" role="img" aria-labelledby="title desc">
+<title id="title">Dois ramos centrais do reflexo de estiramento</title>
+<desc id="desc">Ia excita alfa homônimo diretamente. Ia também excita interneurônio inibitório, que inibe alfa antagonista. Uma e duas conexões centrais, respectivamente; junções musculares não desenhadas.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#126a64"/></marker></defs>
+<rect width="680" height="650" rx="22" fill="#f4efe4"/>
+<g font-family="sans-serif" fill="#173c39">
+<text x="30" y="39" font-size="25" font-weight="700">Siga a conexão, depois conte</text>
+<rect x="255" y="80" width="170" height="80" rx="14" fill="#d2e4da" stroke="#126a64"/>
+<text x="340" y="113" text-anchor="middle" font-size="24" font-weight="700">Aferência Ia</text><text x="340" y="142" text-anchor="middle" font-size="19">entrada sensorial</text>
+<path d="M270 160 C150 230 165 320 165 428" fill="none" stroke="#126a64" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="87" y="266" font-size="26" font-weight="700">+</text><text x="35" y="305" font-size="20">via direta</text><text x="35" y="333" font-size="20">1 sinapse</text>
+<path d="M400 160 C500 195 510 215 510 258" fill="none" stroke="#126a64" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="535" y="219" font-size="26" font-weight="700">+</text>
+<rect x="390" y="260" width="240" height="90" rx="14" fill="#eedac8" stroke="#934328"/>
+<text x="510" y="296" text-anchor="middle" font-size="23" font-weight="700">Interneurônio</text><text x="510" y="326" text-anchor="middle" font-size="23">inibitório</text>
+<path d="M510 350 V460 M486 460 H534" fill="none" stroke="#934328" stroke-width="4"/>
+<text x="540" y="405" font-size="27" font-weight="700">−</text><text x="390" y="404" font-size="19">2 sinapses</text><text x="390" y="428" font-size="17">na via completa</text>
+<rect x="30" y="430" width="270" height="90" rx="14" fill="#d2e4da" stroke="#126a64"/>
+<text x="165" y="467" text-anchor="middle" font-size="24" font-weight="700">Alfa homônimo</text><text x="165" y="497" text-anchor="middle" font-size="19">mesmo músculo</text>
+<rect x="390" y="470" width="240" height="90" rx="14" fill="#eedac8" stroke="#934328"/>
+<text x="510" y="508" text-anchor="middle" font-size="23" font-weight="700">Alfa antagonista</text><text x="510" y="538" text-anchor="middle" font-size="19">outro músculo</text>
+<text x="30" y="599" font-size="19">+ excitação • − e barra: inibição</text>
+<text x="30" y="628" font-size="17">Esquema funcional • sem junções musculares ou dinâmica</text>
+</g></svg>

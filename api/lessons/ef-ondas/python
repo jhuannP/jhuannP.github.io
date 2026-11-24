@@ -1,0 +1,4 @@
+f,L=5.,2.
+v=f*L
+assert v==10
+print(v)

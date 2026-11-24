@@ -1,0 +1,11 @@
+/* Linhas de Balmer com parâmetros arredondados, não banco espectroscópico. */
+window.HydrogenLineModels=(()=>{
+ function model(n=6){if(!Number.isInteger(n)||n<3||n>8)throw new RangeError('n inteiro3–8');const initial=-13.6/(n*n),final=-3.4,photon=initial-final;return{n,initial,final,photon,atom_change:-photon,wavelength:1240/photon};}
+ function createModels({fmt}){return{hydrogenLines:{label:'Linhas discretas, sem confundir posição e intensidade',controls:[['n','Nível inicial n (emissão para 2)',3,8,1,6]],render:({n})=>{
+  const r=model(n),x=w=>60+(w-350)*520/350;
+  const ticks=[350,400,450,500,550,600,650,700].map(w=>`<line x1="${x(w)}" x2="${x(w)}" y1="145" y2="151" stroke="currentColor"/><text x="${x(w)}" y="175" text-anchor="middle">${w}</text>`).join('');
+  const lines=Array.from({length:6},(_,i)=>model(i+3)).map(s=>`<line x1="${x(s.wavelength)}" x2="${x(s.wavelength)}" y1="55" y2="130" stroke="${s.n===n?'#3549e8':'#424642'}" stroke-width="${s.n===n?5:2}" ${s.n===n?'':'stroke-dasharray="4 4"'}/>`).join('');
+  return{graph:`<svg class="hydrogen-spectrum" viewBox="0 0 640 210" role="img" aria-label="Seis linhas de Balmer calculadas; azul é a transição selecionada"><text x="320" y="25" text-anchor="middle">Selecionada: n=${n} → 2; λ≈${fmt(r.wavelength)} nm</text>${lines}<line x1="60" x2="580" y1="145" y2="145" stroke="currentColor"/>${ticks}<text x="320" y="203" text-anchor="middle">Comprimento de onda (nm)</text></svg><p class="caption">Azul contínuo: transição escolhida; preto tracejado: outras cinco. Alturas iguais são apenas marcadores, não intensidades. As posições usam escala linear fixa de 350 a 700 nm. Não é uma imagem observada nem reprodução das cores da luz.</p>`,report:`Emissão ${n}→2: energia inicial ${fmt(r.initial)} eV; final −3,4 eV; variação do átomo ${fmt(r.atom_change)} eV; fóton ${fmt(r.photon)} eV; λ≈${fmt(r.wavelength)} nm.`,note:'Modelo aproximado para hidrogênio: Eₙ=−13,6/n² eV e hc=1240 eV nm, constantes arredondadas. Só seis transições diretas para n=2; não calcula intensidades, larguras, taxas, seleção de estados ou cascatas. Não representa órbitas nem orbitais e não se aplica diretamente a átomos multieletrônicos.'};
+ }}};}
+ return{model,createModels};
+})();

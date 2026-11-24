@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" role="img" aria-labelledby="title desc">
+<title id="title">Luz e carbono em duas etapas acopladas</title><desc id="desc">Nas membranas tilacoides, luz e água sustentam fluxo de elétrons, liberação de oxigênio e produção de ATP e NADPH. No estroma, três CO2 mais três RuBP de cinco carbonos geram seis trioses. Uma triose sai; cinco regeneram três RuBP. Custo por triose líquida: nove ATP e seis NADPH.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#315c54"/></marker></defs>
+<rect width="680" height="460" rx="18" fill="#f5f1e8"/>
+<g font-family="Arial,sans-serif" fill="#183f38"><text x="30" y="36" font-size="22" font-weight="bold">Fotossíntese: duas contas conectadas</text>
+<rect x="30" y="65" width="620" height="94" rx="12" fill="#dbe9db"/>
+<text x="48" y="91" font-size="18" font-weight="bold">Membrana tilacoide · luz + água</text><text x="48" y="119" font-size="17">PSII → transportadores → PSI → NADPH</text><text x="48" y="144" font-size="16">Gradiente de H⁺ → ATP sintase → ATP · liberação de O₂</text>
+<path d="M340 162V202" stroke="#315c54" stroke-width="3" marker-end="url(#arrow)"/><text x="360" y="189" font-size="16">ATP e NADPH</text>
+<rect x="30" y="211" width="620" height="167" rx="12" fill="#e5dfcb"/>
+<text x="48" y="239" font-size="18" font-weight="bold">Estroma · ciclo de Calvin</text><text x="48" y="269" font-size="18">3 CO₂ + 3 RuBP (C5) → 6 trioses (C3)</text><text x="48" y="301" font-size="17">5 trioses → regeneram 3 RuBP</text><text x="48" y="332" font-size="17">1 triose líquida → sínteses posteriores</text><text x="48" y="360" font-size="17">Custo: 6 ATP + 6 NADPH na redução; 3 ATP na regeneração</text>
+<text x="30" y="409" font-size="16">Carbono: 3 + 15 = 18; saída líquida = 3.</text><text x="30" y="437" font-size="15">Esquema contábil original; omite intermediários, prótons e fosfatos.</text></g></svg>

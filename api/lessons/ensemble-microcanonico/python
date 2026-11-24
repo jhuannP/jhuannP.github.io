@@ -1,0 +1,5 @@
+from math import comb,log
+N,m=4,2
+Omega=comb(N,m);S=log(Omega)
+assert Omega==6 and abs(S/log(6)-1)<1e-12
+print(S)

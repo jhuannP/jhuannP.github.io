@@ -1,0 +1,4 @@
+L=2.;a,b=0.,1.
+P=(b-a)/L
+assert P==.5
+print(P)

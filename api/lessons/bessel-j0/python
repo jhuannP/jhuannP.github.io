@@ -1,0 +1,23 @@
+from math import isfinite,pi,sin,sqrt
+from cmath import exp
+
+def real(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (ValueError,TypeError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def bessel_j0(x,tol=1e-13,max_terms=100):
+    x=real(x);tol=real(tol)
+    if abs(x)>6 or tol<=0 or isinstance(max_terms,bool) or not isinstance(max_terms,int) or max_terms<1:
+        raise ValueError('Série didática: |x|<=6, tol>0 e orçamento positivo')
+    term=total=1.
+    for k in range(1,max_terms+1):
+        term*=-(x*x/4)/(k*k);total+=term
+        if k>abs(x)/2 and abs(term)<tol:return total
+    raise RuntimeError('Orçamento da série atingido')
+
+assert bessel_j0(0)==1
+assert abs(bessel_j0(1)-.7651976865579666)<1e-12
+print(bessel_j0(1))

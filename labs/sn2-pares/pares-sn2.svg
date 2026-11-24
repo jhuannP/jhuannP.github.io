@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 450" role="img" aria-labelledby="title desc">
+<title id="title">Dois pares eletrônicos no mesmo passo de substituição</title>
+<desc id="desc">Um par livre de enxofre do HS negativo forma a ligação com o carbono de CH3Cl; o par da ligação carbono cloro vai para o cloro. Produtos CH3SH e cloreto. Setas curvas representam pares, não trajetórias dos átomos. Só os pares em mudança são destacados.</desc>
+<defs><marker id="head" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7Z" fill="#184bc4"/></marker></defs>
+<rect width="360" height="450" fill="#f5f4eb"/>
+<g fill="#20251f" font-family="sans-serif" text-anchor="middle">
+<text x="180" y="35" font-size="23">Pares, não átomos</text>
+<text x="180" y="70" font-size="15" fill="#184bc4">Um par de S forma a ligação C—S</text>
+<text x="65" y="157" font-size="27">HS⁻</text>
+<text x="104" y="151" font-size="26" fill="#184bc4">:</text>
+<text x="135" y="157" font-size="22">+</text>
+<text x="197" y="157" font-size="27">CH₃</text>
+<path d="M228 148H278" stroke="#20251f" stroke-width="2"/>
+<text x="303" y="157" font-size="27">Cl</text>
+<path d="M111 140C128 94 162 94 178 135" fill="none" stroke="#184bc4" stroke-width="2.5" marker-end="url(#head)"/>
+<path d="M252 152C250 206 298 212 302 170" fill="none" stroke="#184bc4" stroke-width="2.5" marker-end="url(#head)"/>
+<text x="180" y="243" font-size="15" fill="#184bc4">O par da ligação C—Cl fica no Cl</text>
+<path d="M25 273H335" stroke="#b9bdad"/>
+<text x="180" y="306" font-size="17">As duas mudanças são concertadas</text>
+<text x="180" y="360" font-size="27">CH₃—SH + Cl⁻</text>
+<text x="180" y="405" font-size="15">Carga total: −1 antes e depois.</text>
+<text x="180" y="430" font-size="13">Só os pares envolvidos são destacados.</text>
+</g></svg>

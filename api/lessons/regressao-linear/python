@@ -1,0 +1,7 @@
+dados = [(0,1), (1,3), (2,5)]
+
+def mse(w, b, pontos):
+    return sum((w*x+b-y)**2 for x,y in pontos)/len(pontos)
+
+print(mse(2,1,dados))
+print(mse(1,1,dados))

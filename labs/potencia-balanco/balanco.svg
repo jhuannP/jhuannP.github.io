@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" width="760" height="480" role="img" aria-labelledby="title desc">
+<title id="title">Potências e trabalhos no modelo do carrinho</title>
+<desc id="desc">Carrinho de massa 2kg, velocidade inicial 1m/s, tração 6N e resistência oposta 2N. De zero a dois segundos, potências de tração 6 a 30W, resistência menos 2 a menos 10W, resultante 4 a 20W. Trabalhos 36, menos 12 e 24J. A energia cinética cresce 24J.</desc>
+<rect width="760" height="480" fill="#f7f7f0"/>
+<g font-family="Arial,sans-serif" fill="#233638">
+<text x="28" y="36" font-size="23" font-weight="bold">Potência é taxa; a área acumula trabalho.</text>
+<text x="28" y="65" font-size="17">Modelo prescrito, no referencial da pista. v(t) = 1 + 2t m/s.</text>
+<text x="50" y="103" font-size="16">P (W)</text><text x="490" y="103" font-size="17">Trabalho de 0 a 2 s (J)</text>
+<path d="M70 276L410 180L410 300L70 300Z" fill="#dce9e1"/>
+<path d="M70 115V375M65 300H435" stroke="#7b8b8b" fill="none" stroke-width="1.5"/>
+<path d="M70 264L410 120" stroke="#327a8e" fill="none" stroke-width="4"/>
+<path d="M70 276L410 180" stroke="#303f41" fill="none" stroke-width="4"/>
+<path d="M70 312L410 360" stroke="#a4552c" fill="none" stroke-width="4"/>
+<text x="285" y="138" font-size="16" fill="#327a8e">tração</text>
+<text x="275" y="242" font-size="16">resultante</text>
+<text x="283" y="382" font-size="16" fill="#a4552c">resistência</text>
+<text x="36" y="126" font-size="14">30</text><text x="36" y="186" font-size="14">20</text><text x="46" y="305" font-size="14">0</text><text x="27" y="364" font-size="14">−10</text>
+<text x="67" y="323" font-size="14">0</text><text x="236" y="323" font-size="14">1</text><text x="407" y="323" font-size="14">2</text><text x="432" y="323" font-size="14">t (s)</text>
+<path d="M480 340H731" stroke="#7b8b8b"/>
+<rect x="505" y="196" width="45" height="144" fill="#327a8e"/>
+<rect x="590" y="340" width="45" height="48" fill="#a4552c"/>
+<rect x="675" y="244" width="45" height="96" fill="#303f41"/>
+<text x="515" y="185" font-size="19">36</text><text x="596" y="410" font-size="19">−12</text><text x="686" y="233" font-size="19">24</text>
+<text x="502" y="365" font-size="14">tração</text><text x="586" y="325" font-size="14">resist.</text><text x="673" y="365" font-size="14">result.</text>
+<text x="28" y="441" font-size="20" font-weight="bold">W resultante = 36 − 12 = 24 J = ΔK.</text>
+<text x="28" y="468" font-size="16">As forças são prescritas. Não é consumo elétrico ou eficiência de um motor real.</text>
+</g></svg>

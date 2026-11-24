@@ -1,0 +1,6 @@
+from fractions import Fraction as Q
+q=Q(1,4)
+u=4*q*(q-1);rf=24*q*(2*q-1)
+assert u==Q(-3,4) and rf==-3
+assert u+1==4*(q-Q(1,2))**2
+print(u,rf)

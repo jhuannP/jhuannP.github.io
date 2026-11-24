@@ -1,0 +1,8 @@
+values=[1,3]
+def normalize(v):
+    total=sum(v)
+    if total<=0:raise ValueError("Soma positiva")
+    return [x/total for x in v]
+out=normalize(values)
+assert values==[1,3] and out==[.25,.75]
+print(out)

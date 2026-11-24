@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 385" role="img" aria-labelledby="title desc">
+<title id="title">Três pares de eventos sob a mesma transformação de Lorentz</title>
+<desc id="desc">Beta três quintos, gamma cinco quartos. Separação temporal: ct cinco e x três passam a quatro e zero; intervalo dezesseis. Separação espacial: um e dois passam a menos um quarto e sete quartos; intervalo menos três. Separação de luz: um e um passam a um meio e um meio; intervalo zero. Os intervalos mantêm seus valores.</desc>
+<rect width="440" height="385" rx="16" fill="#f4f3e9"/>
+<g font-family="sans-serif" fill="#24352d">
+<text x="22" y="31" font-size="18" font-weight="bold">Coordenadas mudam; o intervalo fica</text>
+<text x="22" y="61" font-size="16">β = 3/5 · γ = 5/4 · s² = (Δct)²−(Δx)²</text>
+<rect x="18" y="87" width="404" height="43" rx="6" fill="#e3e8df"/>
+<g font-size="15"><text x="28" y="114">Tipo</text><text x="143" y="114">S (ct; x)</text><text x="263" y="114">S′ (ct′; x′)</text><text x="389" y="114">s²</text></g>
+<path d="M18 186H422 M18 243H422 M18 300H422" stroke="#b3beb5"/>
+<g font-size="16"><text x="28" y="166">Temporal</text><text x="151" y="166">(5; 3)</text><text x="280" y="166">(4; 0)</text><text x="385" y="166">16</text>
+<text x="28" y="223">Espacial</text><text x="151" y="223">(1; 2)</text><text x="254" y="223">(−1/4; 7/4)</text><text x="385" y="223">−3</text>
+<text x="28" y="280">Luz</text><text x="151" y="280">(1; 1)</text><text x="263" y="280">(1/2; 1/2)</text><text x="390" y="280">0</text></g>
+<text x="22" y="336" font-size="15">Cada linha usa o mesmo par nos dois referenciais.</text>
+<text x="22" y="366" font-size="15">ct e x em uma unidade comum de comprimento.</text>
+</g></svg>

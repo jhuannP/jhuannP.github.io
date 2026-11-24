@@ -1,0 +1,6 @@
+from math import sin,cos,pi
+c,L,n=2,1,1;omega=c*n*pi/L
+u=lambda x,t:sin(n*pi*x/L)*cos(omega*t)
+assert abs(u(.5,0)-1)<1e-12
+assert abs(u(.5,.5)+1)<1e-12
+print(omega)

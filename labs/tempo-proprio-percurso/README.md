@@ -1,0 +1,15 @@
+# Tempo próprio em um percurso por trechos
+
+28/10/2026. Material original assistido por IA;revisão pessoal pendente. Espaço-tempo plano1+1,relógios ideais,Terra inercial e virada instantânea como limite. Sem motor,aceleração calculada,gravitação ou experimento pessoal.
+
+Relógio de luz transversal:Δτ=2ℓ/c;Pitágoras no referencial em movimento dá(cΔt/2)²=ℓ²+(vΔt/2)² eΔt=γΔτ. Os eventos de um tique pertencem ao mesmo relógio ideal. Reciprocidade inercial exige especificar os eventos e não permite colar pares/relógios diferentes sem mudar coordenadas.
+
+SomarΔτi=Δti√(1−βi²) acumula o tempo por trechos. Exemplo próprio nas unidadesc1,anos/anos-luz:A(0,0),B(5,3),C(10,0),β±3/5. Terra10anos;viajante4+4=8anos. ReencontroC permite leitura conjunta. Para trajetória suave,a integral do mesmo fator é a expressão correspondente;não a calculamos para uma manobra física. A virada limite não exige salto do tempo local nem permite atribuir toda a diferença a um mecanismo de envelhecimento causado pela aceleração.
+
+Terra xE0 simultânea à virada(tB,xB) no referencial β:Δt'=γ[(tE−tB)−β(0−xB)]=0,logo tE=tB−βxB. Ida16/5,volta34/5,diferença18/5=3,6anos. Mudança de plano de simultaneidade distante,não relógio terrestre saltando ou sinal instantâneo. A derivação usa somente os dois referenciais inerciais e os eventos fornecidos. Não é resolução de relatividade geral.
+
+`clocks.py` recebe list/tuple de1–64trechos(delta_t,beta),int/Fraction estritos,0≤delta_t≤10⁶,|beta|<1. Eventos e intervalo quadrático racionais;raiz/tempo acumulado em float. Subfluxo que apaga intervalo positivo é rejeitado. Unidade de tempo deve corresponder a x/c;em anos e anos-luz,c1. Não misturar diretamente metros e anos. earth_simultaneous atribui tempo da Terra emx0;função não recebe mensagens de luz ou calcula o que se vê por telescópio.
+
+Fonte privada: Nussenzveig,Curso de Física Básica4,2ªedição revista e atualizada,metadados iniciais reconferidos;ano não reconfirmado neste recorte. Consulta textual parcial em28/10/2026 a§6.5(b) p.163/PDF164,dilatação/comparação de relógios,e passagem de gêmeas p.189/PDF190. Trecho de p.189 usa narrativa do referencial acelerado;as notas desenvolvem separadamente o cálculo por percurso e a troca de simultaneidade,sem adotar aceleração como causa local isolada. Não copiamos nomes,distâncias,figuras ou soluções da fonte;β3/5 eγ5/4 já estavam no exemplo anterior. Sem leitura integral ou nova inspeção visual;PDF privado não servido. Tentativa OpenStaxTimeDilation por URL não acessível,não considerada fonte lida. Programa oficial não reaberto;versão ministrada não comprovada.
+
+Quatro testes:reencontro/tempos/simultaneidade;20trechos e reversão de velocidade;225pares contra tempo próprio do trajeto inercial que liga os mesmos extremos;contratos. Testes finitos não são prova geral de maximalidade de geodésicas. Executar `python3 -m unittest discover -s labs/tempo-proprio-percurso -t .` e `python3 labs/tempo-proprio-percurso/clocks.py`. Código,exemplo4s/5s,simulação e dois exercícios anteriores da aula preservados. Revisão conceitual/pessoal,Windows real,leitor de tela e aplicação observacional pendentes.

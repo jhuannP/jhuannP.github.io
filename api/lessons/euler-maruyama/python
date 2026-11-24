@@ -1,0 +1,33 @@
+from math import exp,expm1,isfinite,sqrt,log
+from random import Random
+
+def _finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def em_path(drift,diffusion,x0,dt,dw):
+    x=_finite(x0);dt=_finite(dt)
+    if dt<=0:raise ValueError('Passo positivo necessário')
+    trace=[x]
+    for k,increment in enumerate(dw):
+        t=k*dt
+        x=_finite(x+_finite(drift(t,x))*dt+_finite(diffusion(t,x))*_finite(increment));trace.append(x)
+    return trace
+
+def _count(n):
+    if isinstance(n,bool) or not isinstance(n,int) or n<1:raise ValueError('Inteiro positivo necessário')
+    return n
+
+def brownian_increments(n,dt,seed=42):
+    _count(n);dt=_finite(dt)
+    if dt<=0:raise ValueError('Passo positivo necessário')
+    rng=Random(seed)
+    return [sqrt(dt)*rng.gauss(0,1) for _ in range(n)]
+
+dw=brownian_increments(1000,.001)
+path=em_path(lambda t,x:-x,lambda t,x:1,0,.001,dw)
+assert len(path)==1001
+print(path[-1],.5/(1-.5**2))

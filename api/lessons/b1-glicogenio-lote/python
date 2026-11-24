@@ -1,0 +1,9 @@
+p,f=4,1
+units=p+f
+gross=4*units
+pfk=units
+hexokinase=f
+net=gross-pfk-hexokinase
+assert net==14 and 2*units==10
+assert 6*units==3*(2*units)
+print('Saldo ATP do lote:',net)

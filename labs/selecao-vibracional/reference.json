@@ -1,0 +1,1262 @@
+[
+  {
+    "irrep_index": 0,
+    "channel": 0,
+    "irrep": "A1",
+    "operator": "x",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_irrep": "B1",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "z"
+    ],
+    "raman_components": [
+      "xx",
+      "yy",
+      "zz"
+    ],
+    "ab2_multiplicity": 2
+  },
+  {
+    "irrep_index": 0,
+    "channel": 1,
+    "irrep": "A1",
+    "operator": "y",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_irrep": "B2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "z"
+    ],
+    "raman_components": [
+      "xx",
+      "yy",
+      "zz"
+    ],
+    "ab2_multiplicity": 2
+  },
+  {
+    "irrep_index": 0,
+    "channel": 2,
+    "irrep": "A1",
+    "operator": "z",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_irrep": "A1",
+    "a1_multiplicity": 1,
+    "allowed": true,
+    "ir_components": [
+      "z"
+    ],
+    "raman_components": [
+      "xx",
+      "yy",
+      "zz"
+    ],
+    "ab2_multiplicity": 2
+  },
+  {
+    "irrep_index": 0,
+    "channel": 3,
+    "irrep": "A1",
+    "operator": "xx",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_irrep": "A1",
+    "a1_multiplicity": 1,
+    "allowed": true,
+    "ir_components": [
+      "z"
+    ],
+    "raman_components": [
+      "xx",
+      "yy",
+      "zz"
+    ],
+    "ab2_multiplicity": 2
+  },
+  {
+    "irrep_index": 0,
+    "channel": 4,
+    "irrep": "A1",
+    "operator": "yy",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_irrep": "A1",
+    "a1_multiplicity": 1,
+    "allowed": true,
+    "ir_components": [
+      "z"
+    ],
+    "raman_components": [
+      "xx",
+      "yy",
+      "zz"
+    ],
+    "ab2_multiplicity": 2
+  },
+  {
+    "irrep_index": 0,
+    "channel": 5,
+    "irrep": "A1",
+    "operator": "zz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_irrep": "A1",
+    "a1_multiplicity": 1,
+    "allowed": true,
+    "ir_components": [
+      "z"
+    ],
+    "raman_components": [
+      "xx",
+      "yy",
+      "zz"
+    ],
+    "ab2_multiplicity": 2
+  },
+  {
+    "irrep_index": 0,
+    "channel": 6,
+    "irrep": "A1",
+    "operator": "xy",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "operator_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_irrep": "A2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "z"
+    ],
+    "raman_components": [
+      "xx",
+      "yy",
+      "zz"
+    ],
+    "ab2_multiplicity": 2
+  },
+  {
+    "irrep_index": 0,
+    "channel": 7,
+    "irrep": "A1",
+    "operator": "xz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_irrep": "B1",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "z"
+    ],
+    "raman_components": [
+      "xx",
+      "yy",
+      "zz"
+    ],
+    "ab2_multiplicity": 2
+  },
+  {
+    "irrep_index": 0,
+    "channel": 8,
+    "irrep": "A1",
+    "operator": "yz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_irrep": "B2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "z"
+    ],
+    "raman_components": [
+      "xx",
+      "yy",
+      "zz"
+    ],
+    "ab2_multiplicity": 2
+  },
+  {
+    "irrep_index": 1,
+    "channel": 0,
+    "irrep": "A2",
+    "operator": "x",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_irrep": "B2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [],
+    "raman_components": [
+      "xy"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 1,
+    "channel": 1,
+    "irrep": "A2",
+    "operator": "y",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_irrep": "B1",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [],
+    "raman_components": [
+      "xy"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 1,
+    "channel": 2,
+    "irrep": "A2",
+    "operator": "z",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_irrep": "A2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [],
+    "raman_components": [
+      "xy"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 1,
+    "channel": 3,
+    "irrep": "A2",
+    "operator": "xx",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_irrep": "A2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [],
+    "raman_components": [
+      "xy"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 1,
+    "channel": 4,
+    "irrep": "A2",
+    "operator": "yy",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_irrep": "A2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [],
+    "raman_components": [
+      "xy"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 1,
+    "channel": 5,
+    "irrep": "A2",
+    "operator": "zz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_irrep": "A2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [],
+    "raman_components": [
+      "xy"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 1,
+    "channel": 6,
+    "irrep": "A2",
+    "operator": "xy",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_irrep": "A1",
+    "a1_multiplicity": 1,
+    "allowed": true,
+    "ir_components": [],
+    "raman_components": [
+      "xy"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 1,
+    "channel": 7,
+    "irrep": "A2",
+    "operator": "xz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_irrep": "B2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [],
+    "raman_components": [
+      "xy"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 1,
+    "channel": 8,
+    "irrep": "A2",
+    "operator": "yz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_irrep": "B1",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [],
+    "raman_components": [
+      "xy"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 2,
+    "channel": 0,
+    "irrep": "B1",
+    "operator": "x",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_irrep": "A1",
+    "a1_multiplicity": 1,
+    "allowed": true,
+    "ir_components": [
+      "x"
+    ],
+    "raman_components": [
+      "xz"
+    ],
+    "ab2_multiplicity": 1
+  },
+  {
+    "irrep_index": 2,
+    "channel": 1,
+    "irrep": "B1",
+    "operator": "y",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_irrep": "A2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "x"
+    ],
+    "raman_components": [
+      "xz"
+    ],
+    "ab2_multiplicity": 1
+  },
+  {
+    "irrep_index": 2,
+    "channel": 2,
+    "irrep": "B1",
+    "operator": "z",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_irrep": "B1",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "x"
+    ],
+    "raman_components": [
+      "xz"
+    ],
+    "ab2_multiplicity": 1
+  },
+  {
+    "irrep_index": 2,
+    "channel": 3,
+    "irrep": "B1",
+    "operator": "xx",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_irrep": "B1",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "x"
+    ],
+    "raman_components": [
+      "xz"
+    ],
+    "ab2_multiplicity": 1
+  },
+  {
+    "irrep_index": 2,
+    "channel": 4,
+    "irrep": "B1",
+    "operator": "yy",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_irrep": "B1",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "x"
+    ],
+    "raman_components": [
+      "xz"
+    ],
+    "ab2_multiplicity": 1
+  },
+  {
+    "irrep_index": 2,
+    "channel": 5,
+    "irrep": "B1",
+    "operator": "zz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_irrep": "B1",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "x"
+    ],
+    "raman_components": [
+      "xz"
+    ],
+    "ab2_multiplicity": 1
+  },
+  {
+    "irrep_index": 2,
+    "channel": 6,
+    "irrep": "B1",
+    "operator": "xy",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_irrep": "B2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "x"
+    ],
+    "raman_components": [
+      "xz"
+    ],
+    "ab2_multiplicity": 1
+  },
+  {
+    "irrep_index": 2,
+    "channel": 7,
+    "irrep": "B1",
+    "operator": "xz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_irrep": "A1",
+    "a1_multiplicity": 1,
+    "allowed": true,
+    "ir_components": [
+      "x"
+    ],
+    "raman_components": [
+      "xz"
+    ],
+    "ab2_multiplicity": 1
+  },
+  {
+    "irrep_index": 2,
+    "channel": 8,
+    "irrep": "B1",
+    "operator": "yz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_irrep": "A2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "x"
+    ],
+    "raman_components": [
+      "xz"
+    ],
+    "ab2_multiplicity": 1
+  },
+  {
+    "irrep_index": 3,
+    "channel": 0,
+    "irrep": "B2",
+    "operator": "x",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_irrep": "A2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "y"
+    ],
+    "raman_components": [
+      "yz"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 3,
+    "channel": 1,
+    "irrep": "B2",
+    "operator": "y",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_irrep": "A1",
+    "a1_multiplicity": 1,
+    "allowed": true,
+    "ir_components": [
+      "y"
+    ],
+    "raman_components": [
+      "yz"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 3,
+    "channel": 2,
+    "irrep": "B2",
+    "operator": "z",
+    "kind": "IR",
+    "mode_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_irrep": "B2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "y"
+    ],
+    "raman_components": [
+      "yz"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 3,
+    "channel": 3,
+    "irrep": "B2",
+    "operator": "xx",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_irrep": "B2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "y"
+    ],
+    "raman_components": [
+      "yz"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 3,
+    "channel": 4,
+    "irrep": "B2",
+    "operator": "yy",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_irrep": "B2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "y"
+    ],
+    "raman_components": [
+      "yz"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 3,
+    "channel": 5,
+    "irrep": "B2",
+    "operator": "zz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "operator_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_irrep": "B2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "y"
+    ],
+    "raman_components": [
+      "yz"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 3,
+    "channel": 6,
+    "irrep": "B2",
+    "operator": "xy",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "operator_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_irrep": "B1",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "y"
+    ],
+    "raman_components": [
+      "yz"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 3,
+    "channel": 7,
+    "irrep": "B2",
+    "operator": "xz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "product_character": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "product_irrep": "A2",
+    "a1_multiplicity": 0,
+    "allowed": false,
+    "ir_components": [
+      "y"
+    ],
+    "raman_components": [
+      "yz"
+    ],
+    "ab2_multiplicity": 0
+  },
+  {
+    "irrep_index": 3,
+    "channel": 8,
+    "irrep": "B2",
+    "operator": "yz",
+    "kind": "Raman",
+    "mode_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "operator_character": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "product_character": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "product_irrep": "A1",
+    "a1_multiplicity": 1,
+    "allowed": true,
+    "ir_components": [
+      "y"
+    ],
+    "raman_components": [
+      "yz"
+    ],
+    "ab2_multiplicity": 0
+  }
+]

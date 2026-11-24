@@ -1,0 +1,9 @@
+from fractions import Fraction as Q
+m=Q(4);g=Q(10);mu_s=Q(1,2);mu_k=Q(3,10)
+normal=m*g
+assert normal==40 and mu_s*normal==20
+friction=-mu_k*normal
+assert friction==-12
+assert (24+friction)/m==3
+assert (10+friction)/m==Q(-1,2)
+print('N:',normal,'atrito cinético para v>0:',friction)

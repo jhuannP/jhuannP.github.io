@@ -1,0 +1,4 @@
+import sys,platform
+record={"python":sys.version.split()[0],"implementation":platform.python_implementation(),"dependencies":"biblioteca padrão"}
+assert record["python"] and record["implementation"]
+print(record)

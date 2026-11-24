@@ -1,0 +1,5 @@
+from math import exp,sqrt,pi
+s=2
+F=lambda k:sqrt(2*pi)*s*exp(-s*s*k*k/2)
+assert abs(F(0)/sqrt(2*pi)-2)<1e-12
+print(F(0),F(1))

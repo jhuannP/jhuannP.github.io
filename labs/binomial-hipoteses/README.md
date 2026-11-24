@@ -1,0 +1,9 @@
+# Bernoulli e binomial: hipóteses verificáveis no modelo
+
+Laboratório original sem dependências: `python3 labs/binomial-hipoteses/binomial.py` e `python3 -m unittest discover -s labs/binomial-hipoteses -t .`. Int/Fraction,p0..1,n0..100. PMF de suporte0..n;momentos exatos. Casos degenerados p0/1 e n0 definidos separadamente. `independent_sum` propaga uma lista de até100 probabilidades,sob independência;não modela dependência e não a infere dos dados.
+
+Exemplo sintético n4,p1/4:pesos(81,108,54,12,1)/256,E1,Var3/4,P≥1=175/256,P≥2=67/256. Heterogeneidade independente p1/4,3/4 dá(3,10,3)/16. Dependência perfeita Xi=Y comY Bernoulli1/2 dáS2Y,PMF(1/2,0,1/2). Sem reposição de duas bolas em quatro com duas marcadas dá(1,4,1)/6. Cada exemplo é original e não dado experimental ou exercício do livro.
+
+Fontes privadas autorizadas,consulta textual parcial29/10/2026:Magalhães/Lima,Noções de Probabilidade e Estatística,7ªed,definições3.4/3.5,p.82/PDF97 e p.84/PDF99; p.83/PDF98 consultada para contexto,sem copiar árvore ou exemplo. Magalhães,Probabilidade e Variáveis Aleatórias,2ªed,definições2.7/2.8,pp.82–83 no PDF46(digitalização em páginas duplas); p.84 no PDF47 consultada para comentário sobre extremos,trivialidades geométricas não desenvolvidas. Não inferir offset simples entre os dois livros. Fórmula OCR do Noções está degradada;não tomada como conferência visual. Hipóteses textuais confrontadas e fórmula/normalização deduzidas nas notas;sem nova inspeção visual,leitura integral,cópia de tabela,figura ou exercícios. Edições do acervo mantidas conforme identificação anterior.
+
+Quatro testes:fixture/extremos;enumeração de todos os resultados para27 pares(n,p) e32 listas heterogêneas;contraexemplos,urna por6 subconjuntos;contratos. Provas e casos exatos verificam contas,mas não confirmam independência/p constante de uma amostra real. Conteúdo preparado não prova domínio pessoal;revisão pendente.

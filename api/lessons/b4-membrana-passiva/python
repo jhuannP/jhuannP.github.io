@@ -1,0 +1,10 @@
+from fractions import Fraction as Q
+from math import exp
+gk,gna,C=Q(4),Q(1),Q(100)
+EK,ENa,V0=Q(-90),Q(60),Q(-80)
+G=gk+gna;Vinf=(gk*EK+gna*ENa)/G;tau=C/G
+IK=gk*(Vinf-EK);INa=gna*(Vinf-ENa)
+assert Vinf==-60 and IK==120 and INa==-120 and tau==20
+V20=float(Vinf)+float(V0-Vinf)*exp(-1)
+print("Estado estacionário:",Vinf,"mV; correntes:",IK,INa,"pA")
+print("V(20 ms):",V20,"mV")

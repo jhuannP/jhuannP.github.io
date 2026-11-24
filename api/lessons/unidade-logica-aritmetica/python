@@ -1,0 +1,14 @@
+def alu4(a,b,op):
+    if not 0<=a<16 or not 0<=b<16: raise ValueError('Palavras de 4 bits')
+    c=v=0
+    if op=='ADD':
+        total=a+b; result=total&15; c=int(total>=16)
+        v=int(((a^result)&(b^result)&8)!=0)
+    elif op=='AND': result=a&b
+    elif op=='OR': result=a|b
+    elif op=='XOR': result=a^b
+    else: raise ValueError('Operação desconhecida')
+    return result,int(result==0),c,v
+assert alu4(7,1,'ADD')==(8,0,0,1)
+assert alu4(15,1,'ADD')==(0,1,1,0)
+print(alu4(7,1,'ADD'))

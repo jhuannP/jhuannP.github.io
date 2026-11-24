@@ -1,0 +1,36 @@
+from math import exp,log,expm1,isfinite
+from itertools import product
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def entropy(probabilities):
+    p=[finite(v) for v in probabilities]
+    if not p or min(p)<0 or abs(sum(p)-1)>1e-12:raise ValueError('Distribuição normalizada necessária')
+    return -sum(v*log(v) for v in p if v>0)
+
+def canonical(energies,T,degeneracies=None):
+    E=[finite(e) for e in energies];T=finite(T)
+    if not E or T<=0 or T*T==0:raise ValueError('Energias não vazias e T>0 resolvido em float necessários')
+    g=[1]*len(E) if degeneracies is None else list(degeneracies)
+    if len(g)!=len(E) or any(isinstance(v,bool) or not isinstance(v,int) or v<1 for v in g):
+        raise ValueError('Degenerescências inteiras positivas necessárias')
+    # log-sum-exp, usando uma origem de energia e degenerescência explícitas.
+    base=min(E);logw=[log(v)-(e-base)/T for e,v in zip(E,g)];top=max(logw)
+    weights=[exp(x-top) for x in logw];Zshift=sum(weights);p=[w/Zshift for w in weights]
+    U=finite(sum(x*e for x,e in zip(p,E)))
+    variance=finite(sum(x*(e-U)**2 for x,e in zip(p,E)))
+    logZ=finite(-base/T+top+log(Zshift));F=finite(-T*logZ)
+    # Entropia de microestados: a probabilidade do nível se divide por g.
+    S=entropy(p)+sum(x*log(v) for x,v in zip(p,g))
+    return dict(probabilities=p,U=U,variance=variance,logZ=logZ,F=F,S=S,C=finite(variance/T**2))
+
+T=1.;h=1e-5
+run=canonical([0,1,2],T)
+derivative=(canonical([0,1,2],T+h)['U']-canonical([0,1,2],T-h)['U'])/(2*h)
+assert abs(derivative-run['C'])<1e-8
+print(run['C'],derivative)

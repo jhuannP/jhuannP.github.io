@@ -1,0 +1,9 @@
+/* Família racional, resíduo exato; direções normalizadas em ponto flutuante. */
+window.GramSchmidtFamilyModels=(()=>{
+ function model(t=1){if(typeof t!=='number'||!Number.isFinite(t)||t< -2||t>2||!Number.isInteger(4*t))throw new RangeError('t em quartos de−2a2');const v2=[1+t,1-t],residual=[t,t===0?0:-t],norm_squared=2*t*t,q1=[1/Math.SQRT2,1/Math.SQRT2],q2=t===0?null:[Math.sign(t)/Math.SQRT2,-Math.sign(t)/Math.SQRT2];return{t,v2,residual,norm_squared,rank:t===0?1:2,q1,q2};}
+ function createModels({plot,fmt}){return{gramSchmidtFamily:{label:'A projeção sai; uma nova direção pode ficar',controls:[['t','Parâmetro t (passo de 0,25)',-2,2,.25,1]],render:({t})=>{
+  const r=model(t),graph='<div class="gram-schmidt-plot">'+plot([{data:[[0,0],r.v2]},{data:[[0,0],[1,1]],style:'reference'},{data:[[0,0],r.residual],style:'secondary'},{data:[[1,1],r.v2],style:'residual-shift'}],{xmin:-2.5,xmax:3.5,ymin:-2.5,ymax:3.5,equalScale:true},[r.v2,r.residual])+'</div>'+`<p class="caption">Coordenadas cartesianas adimensionais, escalas iguais e fixas. Azul: v₂=(1+t,1−t). Tracejado preto: v₁=(1,1), também a projeção de v₂. Roxo: resíduo (t,−t), na origem e pontilhado transladado da projeção até v₂. Pontos azuis marcam extremos, não amostras. Segmentos são vetores, não trajetórias.</p>`;
+  return{graph,report:`t=${fmt(t)}; v₂=(${fmt(r.v2[0])},${fmt(r.v2[1])}); resíduo=(${fmt(t)},${fmt(t===0?0:-t)}); norma²=${fmt(r.norm_squared)}; dimensão do espaço gerado=${r.rank}. ${r.q2===null?'Resíduo zero: não existe q₂ a normalizar.':'q₁=(1,1)/√2; q₂='+ (t>0?'(1,−1)':'(−1,1)')+'/√2. Duas direções ortonormais.'}`,note:'Produto interno usual em ℝ². Família sintética v₁=(1,1),v₂=(1+t,1−t); projeção=(1,1). Em t=0 há dependência exata, sem limiar numérico. O painel não mede estabilidade de um algoritmo geral nem aplica uma tolerância universal. A base ortonormal depende da ordem e dos sinais escolhidos.'};
+ }}};}
+ return{model,createModels};
+})();

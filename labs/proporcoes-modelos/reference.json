@@ -1,0 +1,288 @@
+[
+  {
+    "x": 1.0,
+    "states": {
+      "direta": {
+        "y": 4.0,
+        "doubled": 8.0,
+        "ratio": 4.0,
+        "product": 4.0,
+        "doubling": 2.0
+      },
+      "inversa": {
+        "y": 24.0,
+        "doubled": 12.0,
+        "ratio": 24.0,
+        "product": 24.0,
+        "doubling": 0.5
+      },
+      "taxa_fixa": {
+        "y": 10.0,
+        "doubled": 14.0,
+        "ratio": 10.0,
+        "product": 10.0,
+        "doubling": 1.4
+      }
+    }
+  },
+  {
+    "x": 1.5,
+    "states": {
+      "direta": {
+        "y": 6.0,
+        "doubled": 12.0,
+        "ratio": 4.0,
+        "product": 9.0,
+        "doubling": 2.0
+      },
+      "inversa": {
+        "y": 16.0,
+        "doubled": 8.0,
+        "ratio": 10.666666666666666,
+        "product": 24.0,
+        "doubling": 0.5
+      },
+      "taxa_fixa": {
+        "y": 12.0,
+        "doubled": 18.0,
+        "ratio": 8.0,
+        "product": 18.0,
+        "doubling": 1.5
+      }
+    }
+  },
+  {
+    "x": 2.0,
+    "states": {
+      "direta": {
+        "y": 8.0,
+        "doubled": 16.0,
+        "ratio": 4.0,
+        "product": 16.0,
+        "doubling": 2.0
+      },
+      "inversa": {
+        "y": 12.0,
+        "doubled": 6.0,
+        "ratio": 6.0,
+        "product": 24.0,
+        "doubling": 0.5
+      },
+      "taxa_fixa": {
+        "y": 14.0,
+        "doubled": 22.0,
+        "ratio": 7.0,
+        "product": 28.0,
+        "doubling": 1.5714285714285714
+      }
+    }
+  },
+  {
+    "x": 2.5,
+    "states": {
+      "direta": {
+        "y": 10.0,
+        "doubled": 20.0,
+        "ratio": 4.0,
+        "product": 25.0,
+        "doubling": 2.0
+      },
+      "inversa": {
+        "y": 9.6,
+        "doubled": 4.8,
+        "ratio": 3.84,
+        "product": 24.0,
+        "doubling": 0.5
+      },
+      "taxa_fixa": {
+        "y": 16.0,
+        "doubled": 26.0,
+        "ratio": 6.4,
+        "product": 40.0,
+        "doubling": 1.625
+      }
+    }
+  },
+  {
+    "x": 3.0,
+    "states": {
+      "direta": {
+        "y": 12.0,
+        "doubled": 24.0,
+        "ratio": 4.0,
+        "product": 36.0,
+        "doubling": 2.0
+      },
+      "inversa": {
+        "y": 8.0,
+        "doubled": 4.0,
+        "ratio": 2.6666666666666665,
+        "product": 24.0,
+        "doubling": 0.5
+      },
+      "taxa_fixa": {
+        "y": 18.0,
+        "doubled": 30.0,
+        "ratio": 6.0,
+        "product": 54.0,
+        "doubling": 1.6666666666666667
+      }
+    }
+  },
+  {
+    "x": 3.5,
+    "states": {
+      "direta": {
+        "y": 14.0,
+        "doubled": 28.0,
+        "ratio": 4.0,
+        "product": 49.0,
+        "doubling": 2.0
+      },
+      "inversa": {
+        "y": 6.857142857142857,
+        "doubled": 3.4285714285714284,
+        "ratio": 1.9591836734693877,
+        "product": 24.0,
+        "doubling": 0.5
+      },
+      "taxa_fixa": {
+        "y": 20.0,
+        "doubled": 34.0,
+        "ratio": 5.714285714285714,
+        "product": 70.0,
+        "doubling": 1.7
+      }
+    }
+  },
+  {
+    "x": 4.0,
+    "states": {
+      "direta": {
+        "y": 16.0,
+        "doubled": 32.0,
+        "ratio": 4.0,
+        "product": 64.0,
+        "doubling": 2.0
+      },
+      "inversa": {
+        "y": 6.0,
+        "doubled": 3.0,
+        "ratio": 1.5,
+        "product": 24.0,
+        "doubling": 0.5
+      },
+      "taxa_fixa": {
+        "y": 22.0,
+        "doubled": 38.0,
+        "ratio": 5.5,
+        "product": 88.0,
+        "doubling": 1.7272727272727273
+      }
+    }
+  },
+  {
+    "x": 4.5,
+    "states": {
+      "direta": {
+        "y": 18.0,
+        "doubled": 36.0,
+        "ratio": 4.0,
+        "product": 81.0,
+        "doubling": 2.0
+      },
+      "inversa": {
+        "y": 5.333333333333333,
+        "doubled": 2.6666666666666665,
+        "ratio": 1.1851851851851851,
+        "product": 24.0,
+        "doubling": 0.5
+      },
+      "taxa_fixa": {
+        "y": 24.0,
+        "doubled": 42.0,
+        "ratio": 5.333333333333333,
+        "product": 108.0,
+        "doubling": 1.75
+      }
+    }
+  },
+  {
+    "x": 5.0,
+    "states": {
+      "direta": {
+        "y": 20.0,
+        "doubled": 40.0,
+        "ratio": 4.0,
+        "product": 100.0,
+        "doubling": 2.0
+      },
+      "inversa": {
+        "y": 4.8,
+        "doubled": 2.4,
+        "ratio": 0.96,
+        "product": 24.0,
+        "doubling": 0.5
+      },
+      "taxa_fixa": {
+        "y": 26.0,
+        "doubled": 46.0,
+        "ratio": 5.2,
+        "product": 130.0,
+        "doubling": 1.7692307692307692
+      }
+    }
+  },
+  {
+    "x": 5.5,
+    "states": {
+      "direta": {
+        "y": 22.0,
+        "doubled": 44.0,
+        "ratio": 4.0,
+        "product": 121.0,
+        "doubling": 2.0
+      },
+      "inversa": {
+        "y": 4.363636363636363,
+        "doubled": 2.1818181818181817,
+        "ratio": 0.7933884297520661,
+        "product": 24.0,
+        "doubling": 0.5
+      },
+      "taxa_fixa": {
+        "y": 28.0,
+        "doubled": 50.0,
+        "ratio": 5.090909090909091,
+        "product": 154.0,
+        "doubling": 1.7857142857142858
+      }
+    }
+  },
+  {
+    "x": 6.0,
+    "states": {
+      "direta": {
+        "y": 24.0,
+        "doubled": 48.0,
+        "ratio": 4.0,
+        "product": 144.0,
+        "doubling": 2.0
+      },
+      "inversa": {
+        "y": 4.0,
+        "doubled": 2.0,
+        "ratio": 0.6666666666666666,
+        "product": 24.0,
+        "doubling": 0.5
+      },
+      "taxa_fixa": {
+        "y": 30.0,
+        "doubled": 54.0,
+        "ratio": 5.0,
+        "product": 180.0,
+        "doubling": 1.8
+      }
+    }
+  }
+]

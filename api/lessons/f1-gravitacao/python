@@ -1,0 +1,5 @@
+from math import sqrt
+gm,r=8.,2.
+v=sqrt(gm/r);energy=-gm/(2*r)
+assert v==2 and energy==-2
+print(v,energy)

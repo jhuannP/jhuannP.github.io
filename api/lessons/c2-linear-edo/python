@@ -1,0 +1,6 @@
+from math import exp
+y=lambda t:2-exp(-2*t)
+dy=lambda t:2*exp(-2*t)
+assert y(0)==1
+for t in (0,.5,1):assert abs(dy(t)+2*y(t)-4)<1e-12
+print(y(1))

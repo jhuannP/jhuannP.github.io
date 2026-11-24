@@ -1,0 +1,145 @@
+[
+  {
+    "beta": -0.9,
+    "result": {
+      "gamma": 2.294157338705618,
+      "ratio": 4.358898943540674,
+      "arrival_period": 0.5263157894736842,
+      "proper_period": 0.22941573387056174,
+      "wavelength_ratio": 0.22941573387056174,
+      "z": -0.7705842661294382
+    }
+  },
+  {
+    "beta": -0.75,
+    "result": {
+      "gamma": 1.5118578920369088,
+      "ratio": 2.6457513110645907,
+      "arrival_period": 0.5714285714285714,
+      "proper_period": 0.3779644730092272,
+      "wavelength_ratio": 0.3779644730092272,
+      "z": -0.6220355269907728
+    }
+  },
+  {
+    "beta": -0.6,
+    "result": {
+      "gamma": 1.25,
+      "ratio": 2.0,
+      "arrival_period": 0.625,
+      "proper_period": 0.5,
+      "wavelength_ratio": 0.5,
+      "z": -0.5
+    }
+  },
+  {
+    "beta": -0.45,
+    "result": {
+      "gamma": 1.1197850219117087,
+      "ratio": 1.6236882817719773,
+      "arrival_period": 0.6896551724137931,
+      "proper_period": 0.6158817620514397,
+      "wavelength_ratio": 0.6158817620514397,
+      "z": -0.38411823794856026
+    }
+  },
+  {
+    "beta": -0.3,
+    "result": {
+      "gamma": 1.0482848367219182,
+      "ratio": 1.362770287738494,
+      "arrival_period": 0.7692307692307692,
+      "proper_period": 0.7337993857053428,
+      "wavelength_ratio": 0.7337993857053428,
+      "z": -0.26620061429465725
+    }
+  },
+  {
+    "beta": -0.15,
+    "result": {
+      "gamma": 1.0114434748483472,
+      "ratio": 1.1631599960755992,
+      "arrival_period": 0.8695652173913044,
+      "proper_period": 0.8597269536210953,
+      "wavelength_ratio": 0.8597269536210953,
+      "z": -0.1402730463789047
+    }
+  },
+  {
+    "beta": 0.0,
+    "result": {
+      "gamma": 1.0,
+      "ratio": 1.0,
+      "arrival_period": 1.0,
+      "proper_period": 1.0,
+      "wavelength_ratio": 1.0,
+      "z": 0.0
+    }
+  },
+  {
+    "beta": 0.15,
+    "result": {
+      "gamma": 1.0114434748483472,
+      "ratio": 0.8597269536210952,
+      "arrival_period": 1.1764705882352942,
+      "proper_period": 1.1631599960755992,
+      "wavelength_ratio": 1.1631599960755992,
+      "z": 0.16315999607559917
+    }
+  },
+  {
+    "beta": 0.3,
+    "result": {
+      "gamma": 1.0482848367219182,
+      "ratio": 0.7337993857053428,
+      "arrival_period": 1.4285714285714286,
+      "proper_period": 1.362770287738494,
+      "wavelength_ratio": 1.362770287738494,
+      "z": 0.36277028773849396
+    }
+  },
+  {
+    "beta": 0.45,
+    "result": {
+      "gamma": 1.1197850219117087,
+      "ratio": 0.6158817620514397,
+      "arrival_period": 1.8181818181818181,
+      "proper_period": 1.6236882817719773,
+      "wavelength_ratio": 1.6236882817719773,
+      "z": 0.6236882817719773
+    }
+  },
+  {
+    "beta": 0.6,
+    "result": {
+      "gamma": 1.25,
+      "ratio": 0.5,
+      "arrival_period": 2.5,
+      "proper_period": 2.0,
+      "wavelength_ratio": 2.0,
+      "z": 1.0
+    }
+  },
+  {
+    "beta": 0.75,
+    "result": {
+      "gamma": 1.5118578920369088,
+      "ratio": 0.3779644730092272,
+      "arrival_period": 4.0,
+      "proper_period": 2.6457513110645907,
+      "wavelength_ratio": 2.6457513110645907,
+      "z": 1.6457513110645907
+    }
+  },
+  {
+    "beta": 0.9,
+    "result": {
+      "gamma": 2.294157338705618,
+      "ratio": 0.22941573387056174,
+      "arrival_period": 10.000000000000002,
+      "proper_period": 4.358898943540674,
+      "wavelength_ratio": 4.358898943540674,
+      "z": 3.358898943540674
+    }
+  }
+]

@@ -1,0 +1,96 @@
+"""M8: máquina didática original, com acumulador e palavras de 8 bits.
+
+Não reproduz a arquitetura TOY do livro. Programa e dados são separados;
+16 posições em cada memória. Um passo representa uma instrução inteira,
+sem simular atrasos de portas, sinais elétricos ou frequência de um chip.
+"""
+OPCODES = {'HALT':0, 'LDI':1, 'LDA':2, 'STA':3, 'ADD':4,
+           'SUB':5, 'JMP':6, 'JZ':7, 'OUT':8}
+NAMES = {value:name for name,value in OPCODES.items()}
+
+
+def word(value):
+    if isinstance(value,bool) or not isinstance(value,int) or not 0 <= value < 256:
+        raise ValueError('Palavra deve ser inteiro de 0 a 255')
+    return value
+
+
+def encode(name, operand=0):
+    if name not in OPCODES:
+        raise ValueError('Operação desconhecida')
+    if isinstance(operand,bool) or not isinstance(operand,int) or not 0 <= operand < 16:
+        raise ValueError('Operando deve ser inteiro de 0 a 15')
+    return (OPCODES[name] << 4) | operand
+
+
+def decode(instruction):
+    instruction = word(instruction)
+    opcode, operand = instruction >> 4, instruction & 15
+    if opcode not in NAMES:
+        raise ValueError('Opcode não definido na M8')
+    return NAMES[opcode], operand
+
+
+class M8:
+    def __init__(self, program, data=None):
+        if not 1 <= len(program) <= 16:
+            raise ValueError('Programa deve ter de 1 a 16 palavras')
+        self.program = [word(x) for x in program]
+        self.data = [0]*16 if data is None else [word(x) for x in data]
+        if len(self.data) != 16:
+            raise ValueError('A memória de dados tem 16 posições')
+        self.pc = 0
+        self.acc = 0
+        self.ir = None
+        self.halted = False
+        self.output = []
+        self.trace = []
+
+    def step(self):
+        if self.halted:
+            raise RuntimeError('Máquina já parada')
+        if self.pc >= len(self.program):
+            raise ValueError('PC aponta para posição sem instrução')
+        before_pc, before_acc = self.pc, self.acc
+        self.ir = self.program[self.pc]
+        operation, operand = decode(self.ir)
+        next_pc = (self.pc + 1) % 16
+        write = None
+        if operation == 'HALT': self.halted = True
+        elif operation == 'LDI': self.acc = operand
+        elif operation == 'LDA': self.acc = self.data[operand]
+        elif operation == 'STA':
+            self.data[operand] = self.acc
+            write = [operand, self.acc]
+        elif operation == 'ADD': self.acc = (self.acc+self.data[operand]) & 255
+        elif operation == 'SUB': self.acc = (self.acc-self.data[operand]) & 255
+        elif operation == 'JMP': next_pc = operand
+        elif operation == 'JZ' and self.acc == 0: next_pc = operand
+        elif operation == 'OUT': self.output.append(self.acc)
+        self.pc = next_pc
+        event = {'cycle':len(self.trace)+1, 'pc_before':before_pc,
+                 'word':self.ir, 'operation':operation, 'operand':operand,
+                 'acc_before':before_acc, 'acc_after':self.acc,
+                 'pc_after':self.pc, 'write':write, 'halted':self.halted,
+                 'output':list(self.output)}
+        self.trace.append(event)
+        return event
+
+    def run(self, budget=128):
+        if isinstance(budget,bool) or not isinstance(budget,int) or budget < 0:
+            raise ValueError('Orçamento de passos inválido')
+        for _ in range(budget):
+            if self.halted: return list(self.output)
+            self.step()
+        if self.halted: return list(self.output)
+        raise TimeoutError('Limite atingido; isto não prova que o programa nunca para')
+
+
+SOMA = [0x13,0x3E,0x15,0x4E,0x80,0x00]
+CONTAGEM = [0x13,0x3E,0x11,0x3F,0x2E,0x80,0x5F,0x3E,0x7A,0x64,0x00]
+
+machine=M8(CONTAGEM)
+assert machine.run()==[3,2,1]
+assert machine.data[14]==0
+assert len(machine.trace)==22
+print(machine.output,len(machine.trace))

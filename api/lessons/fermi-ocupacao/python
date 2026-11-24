@@ -1,0 +1,20 @@
+from math import exp,log,expm1,isfinite
+from itertools import product
+
+def finite(x):
+    if isinstance(x,bool):raise ValueError('Número real finito necessário')
+    try:y=float(x)
+    except (TypeError,ValueError,OverflowError):raise ValueError('Número real finito necessário') from None
+    if not isfinite(y):raise ValueError('Número real finito necessário')
+    return y
+
+def fermi(z):
+    """Ocupação de modo fermiônico, sem degenerescência multiplicada aqui."""
+    z=finite(z)
+    if z>=0:
+        v=exp(-z);return v/(1+v)
+    v=exp(z);return 1/(1+v)
+
+assert fermi(0)==.5
+assert fermi(-1000)==1 and fermi(1000)==0
+print(fermi(-1),fermi(1))

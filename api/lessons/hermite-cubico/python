@@ -1,0 +1,23 @@
+from math import isfinite, sqrt, pi, cos, sin, exp, e, fsum
+
+def _real(value):
+    try:
+        if isinstance(value,bool): raise ValueError
+        result=float(value)
+    except (TypeError,ValueError,OverflowError):
+        raise ValueError('Valor real finito necessário') from None
+    if not isfinite(result): raise ValueError('Valor real finito necessário')
+    return result
+
+def hermite_cubico(x0,x1,y0,y1,dy0,dy1,x):
+    x0,x1,y0,y1,dy0,dy1,x=map(_real,(x0,x1,y0,y1,dy0,dy1,x))
+    if not x0<x1:raise ValueError('Dois nós crescentes necessários')
+    h=x1-x0;t=(x-x0)/h
+    h00=2*t**3-3*t**2+1;h10=t**3-2*t**2+t
+    h01=-2*t**3+3*t**2;h11=t**3-t**2
+    return _real(h00*y0+h10*h*dy0+h01*y1+h11*h*dy1)
+
+for x in [0,.25,.5,.75,1]:
+    y=hermite_cubico(0,1,0,1,0,3,x)
+    assert abs(y-x**3)<1e-12
+print(hermite_cubico(0,1,0,1,0,3,.5))

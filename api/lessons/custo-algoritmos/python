@@ -1,0 +1,9 @@
+def contar_pares(n):
+    comparacoes = 0
+    for i in range(n):
+        for j in range(i + 1, n):
+            comparacoes += 1
+    return comparacoes
+for n in [4,8,16]:
+    assert contar_pares(n) == n*(n-1)//2
+    print(n,contar_pares(n))

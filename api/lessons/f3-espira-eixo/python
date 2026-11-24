@@ -1,0 +1,6 @@
+from math import sqrt
+u=3/4
+ratio=(1+u*u)**(-1.5)
+assert abs(ratio-64/125)<1e-14
+assert abs((1+(-u)**2)**(-1.5)-ratio)<1e-14
+print('Bz/B0:',ratio)

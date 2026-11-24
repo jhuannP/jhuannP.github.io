@@ -1,0 +1,222 @@
+[
+  {
+    "q": 0,
+    "missing_y": 0,
+    "mean_train": 1,
+    "mean_all": 0.6666666666666666,
+    "proper_prediction": 0,
+    "leaked_prediction": 0,
+    "proper_accuracy": 1.0,
+    "leaked_accuracy": 1.0
+  },
+  {
+    "q": 0,
+    "missing_y": 1,
+    "mean_train": 1,
+    "mean_all": 0.6666666666666666,
+    "proper_prediction": 0,
+    "leaked_prediction": 0,
+    "proper_accuracy": 0.5,
+    "leaked_accuracy": 0.5
+  },
+  {
+    "q": 1,
+    "missing_y": 0,
+    "mean_train": 1,
+    "mean_all": 1.0,
+    "proper_prediction": 0,
+    "leaked_prediction": 0,
+    "proper_accuracy": 1.0,
+    "leaked_accuracy": 1.0
+  },
+  {
+    "q": 1,
+    "missing_y": 1,
+    "mean_train": 1,
+    "mean_all": 1.0,
+    "proper_prediction": 0,
+    "leaked_prediction": 0,
+    "proper_accuracy": 0.5,
+    "leaked_accuracy": 0.5
+  },
+  {
+    "q": 2,
+    "missing_y": 0,
+    "mean_train": 1,
+    "mean_all": 1.3333333333333333,
+    "proper_prediction": 0,
+    "leaked_prediction": 0,
+    "proper_accuracy": 1.0,
+    "leaked_accuracy": 1.0
+  },
+  {
+    "q": 2,
+    "missing_y": 1,
+    "mean_train": 1,
+    "mean_all": 1.3333333333333333,
+    "proper_prediction": 0,
+    "leaked_prediction": 0,
+    "proper_accuracy": 0.5,
+    "leaked_accuracy": 0.5
+  },
+  {
+    "q": 3,
+    "missing_y": 0,
+    "mean_train": 1,
+    "mean_all": 1.6666666666666667,
+    "proper_prediction": 0,
+    "leaked_prediction": 0,
+    "proper_accuracy": 1.0,
+    "leaked_accuracy": 1.0
+  },
+  {
+    "q": 3,
+    "missing_y": 1,
+    "mean_train": 1,
+    "mean_all": 1.6666666666666667,
+    "proper_prediction": 0,
+    "leaked_prediction": 0,
+    "proper_accuracy": 0.5,
+    "leaked_accuracy": 0.5
+  },
+  {
+    "q": 4,
+    "missing_y": 0,
+    "mean_train": 1,
+    "mean_all": 2.0,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 1.0,
+    "leaked_accuracy": 0.5
+  },
+  {
+    "q": 4,
+    "missing_y": 1,
+    "mean_train": 1,
+    "mean_all": 2.0,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 0.5,
+    "leaked_accuracy": 1.0
+  },
+  {
+    "q": 5,
+    "missing_y": 0,
+    "mean_train": 1,
+    "mean_all": 2.3333333333333335,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 1.0,
+    "leaked_accuracy": 0.5
+  },
+  {
+    "q": 5,
+    "missing_y": 1,
+    "mean_train": 1,
+    "mean_all": 2.3333333333333335,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 0.5,
+    "leaked_accuracy": 1.0
+  },
+  {
+    "q": 6,
+    "missing_y": 0,
+    "mean_train": 1,
+    "mean_all": 2.6666666666666665,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 1.0,
+    "leaked_accuracy": 0.5
+  },
+  {
+    "q": 6,
+    "missing_y": 1,
+    "mean_train": 1,
+    "mean_all": 2.6666666666666665,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 0.5,
+    "leaked_accuracy": 1.0
+  },
+  {
+    "q": 7,
+    "missing_y": 0,
+    "mean_train": 1,
+    "mean_all": 3.0,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 1.0,
+    "leaked_accuracy": 0.5
+  },
+  {
+    "q": 7,
+    "missing_y": 1,
+    "mean_train": 1,
+    "mean_all": 3.0,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 0.5,
+    "leaked_accuracy": 1.0
+  },
+  {
+    "q": 8,
+    "missing_y": 0,
+    "mean_train": 1,
+    "mean_all": 3.3333333333333335,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 1.0,
+    "leaked_accuracy": 0.5
+  },
+  {
+    "q": 8,
+    "missing_y": 1,
+    "mean_train": 1,
+    "mean_all": 3.3333333333333335,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 0.5,
+    "leaked_accuracy": 1.0
+  },
+  {
+    "q": 9,
+    "missing_y": 0,
+    "mean_train": 1,
+    "mean_all": 3.6666666666666665,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 1.0,
+    "leaked_accuracy": 0.5
+  },
+  {
+    "q": 9,
+    "missing_y": 1,
+    "mean_train": 1,
+    "mean_all": 3.6666666666666665,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 0.5,
+    "leaked_accuracy": 1.0
+  },
+  {
+    "q": 10,
+    "missing_y": 0,
+    "mean_train": 1,
+    "mean_all": 4.0,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 1.0,
+    "leaked_accuracy": 0.5
+  },
+  {
+    "q": 10,
+    "missing_y": 1,
+    "mean_train": 1,
+    "mean_all": 4.0,
+    "proper_prediction": 0,
+    "leaked_prediction": 1,
+    "proper_accuracy": 0.5,
+    "leaked_accuracy": 1.0
+  }
+]

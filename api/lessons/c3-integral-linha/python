@@ -1,0 +1,3 @@
+work=1.;reverse=-work
+assert reverse==-1
+print(work,reverse)

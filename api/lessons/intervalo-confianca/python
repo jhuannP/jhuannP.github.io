@@ -1,0 +1,5 @@
+from math import sqrt
+mean,sigma,n=10,2,100
+margin=1.96*sigma/sqrt(n)
+assert abs(margin-.392)<1e-12
+print(mean-margin,mean+margin)
