@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>Didática EDM0402</title>
+<meta name="description" content="Notas da disciplina EDM0402 Didática (FEUSP/USP, 2026/2): leituras, aulas, Clube de Leitura e estágio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body><!-- portfolio:voltar --><a href="/disciplinas/" style="position:fixed;left:14px;bottom:14px;z-index:999;font:600 13px/1 system-ui,sans-serif;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.92);color:#1b1b2a;text-decoration:none;border:1px solid rgba(0,0,0,.12);box-shadow:0 4px 16px rgba(0,0,0,.12)">&larr; Portfólio</a>
+<style>
+/* Layout: mesma família das notas de AGA0299 (Cornell: pista à esquerda + corpo), em rosa-cereja.
+   Capa com pauta de caderno escolar e margem cereja; o diário de classe organiza as 15 aulas. */
+:root {
+  --cereja: #c23b68;
+  --bg: #fdf7f8;
+  --surface: #fffdfd;
+  --surface-2: #fbedf1;
+  --ink: #2b1720;
+  --ink-2: #5a3a46;
+  --muted: #876572;
+  --line: #f0d9e0;
+  --accent: #c23b68;
+  --accent-ink: #a12a55;
+  --accent-soft: #fbe3eb;
+  --on-accent: #ffffff;
+  --warm: #a95a14;
+  --warm-soft: #fdf1e4;
+  --ok: #2c7a5f;
+  --ok-soft: #e4f4ec;
+  --hero-a: #fbe6ec;
+  --hero-b: #f5cdd9;
+  --rule: rgba(160, 60, 95, .14);
+  --serif: "Newsreader", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "IBM Plex Sans", "Gill Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(120, 30, 60, .06), 0 8px 24px rgba(120, 30, 60, .07);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1a1014; --surface: #22151a; --surface-2: #2c1a21; --ink: #f7e9ee; --ink-2: #dcc0ca;
+    --muted: #a88994; --line: #3c262e; --accent: #ef8aab; --accent-ink: #f6b0c6; --accent-soft: #3c1e29;
+    --on-accent: #2b1720; --warm: #f0a663; --warm-soft: #2e1f12; --ok: #6fd0a8; --ok-soft: #12281f;
+    --hero-a: #2a141c; --hero-b: #431b2a; --rule: rgba(239, 138, 171, .12);
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1a1014; --surface: #22151a; --surface-2: #2c1a21; --ink: #f7e9ee; --ink-2: #dcc0ca;
+  --muted: #a88994; --line: #3c262e; --accent: #ef8aab; --accent-ink: #f6b0c6; --accent-soft: #3c1e29;
+  --on-accent: #2b1720; --warm: #f0a663; --warm-soft: #2e1f12; --ok: #6fd0a8; --ok-soft: #12281f;
+  --hero-a: #2a141c; --hero-b: #431b2a; --rule: rgba(239, 138, 171, .12);
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.62 var(--serif); font-optical-sizing: auto; overflow-x: hidden; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--bg); }
+a { color: var(--accent-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--accent); }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+strong { font-weight: 600; }
+em { font-style: italic; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: var(--on-accent); padding: 8px 12px; z-index: 100; border-radius: 6px; }
+.skip:focus { left: 8px; }
+.gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* ---------- barra superior ---------- */
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; display: flex; align-items: center; gap: 16px;
+  padding-block: 10px; font-family: var(--sans);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px);
+  border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 15px; white-space: nowrap; }
+.brand em { font-style: normal; font-weight: 400; color: var(--muted); }
+.brand-mark { width: 22px; height: 22px; flex: none; border-radius: 4px; background:
+  linear-gradient(90deg, transparent 5px, var(--accent) 5px 7px, transparent 7px),
+  repeating-linear-gradient(180deg, var(--surface) 0 4px, var(--line) 4px 5px);
+  box-shadow: 0 0 0 1px var(--line); }
+.secnav { display: flex; gap: 2px; margin-left: auto; overflow-x: auto; scrollbar-width: none; min-width: 0; }
+.secnav::-webkit-scrollbar { display: none; }
+.secnav a { padding: 6px 10px; border-radius: 7px; font-size: 14px; font-weight: 500; color: var(--ink-2); text-decoration: none; white-space: nowrap; }
+.secnav a:hover { background: var(--surface-2); color: var(--ink); }
+.secnav a.on { background: var(--accent); color: var(--on-accent); }
+.theme-toggle { flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); cursor: pointer; display: grid; place-items: center; }
+.theme-toggle span { width: 14px; height: 14px; border-radius: 50%; background: linear-gradient(90deg, var(--ink) 50%, transparent 50%); box-shadow: inset 0 0 0 1.5px var(--ink); }
+
+/* ---------- capa: página de caderno ---------- */
+.hero { position: relative; overflow: hidden; color: var(--ink);
+  margin-top: calc(-1 * env(safe-area-inset-top, 0px)); padding-top: env(safe-area-inset-top, 0px);
+  background:
+    repeating-linear-gradient(180deg, transparent 0 35px, var(--rule) 35px 36px),
+    linear-gradient(160deg, var(--hero-a), var(--hero-b)); }
+.hero::before { content: ""; position: absolute; top: 0; bottom: 0; left: clamp(26px, 6vw, 72px); width: 2px; background: var(--accent); opacity: .55; }
+.hero-in { position: relative; max-width: 1040px; margin: 0 auto; padding-block: clamp(40px, 7vw, 84px) clamp(32px, 5vw, 56px); }
+.hero-text { padding-left: clamp(26px, 6vw, 72px); }
+.hero h1 { font: 600 clamp(48px, 9vw, 96px)/1 var(--serif); letter-spacing: -.02em; margin: 12px 0 16px; text-wrap: balance; }
+.hero h1 span { display: block; font: 400 italic clamp(22px, 3vw, 30px)/1.25 var(--serif); letter-spacing: 0; color: var(--ink-2); margin-top: 10px; }
+.hero .lede { font-size: clamp(18px, 2.1vw, 21px); color: var(--ink-2); max-width: 36em; margin: 0; }
+.hero-meta { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 22px 0 0; padding: 0; list-style: none; font: 14px/1.4 var(--sans); color: var(--ink-2); }
+.hero-meta b { display: block; font: 600 11px/1.3 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--accent-ink); }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.btn { display: inline-block; padding: 11px 18px; border-radius: 999px; background: var(--accent); color: var(--on-accent); font: 500 15px var(--sans); text-decoration: none; }
+.btn:hover { background: var(--accent-ink); color: var(--on-accent); }
+.btn-ghost { background: transparent; color: var(--accent-ink); box-shadow: inset 0 0 0 1px var(--accent); }
+.btn-ghost:hover { background: var(--accent-soft); color: var(--accent-ink); }
+.hero-note { margin: 28px 0 0; font: 13px/1.45 var(--sans); color: var(--muted); }
+.eyebrow { font: 600 12px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); margin: 0; }
+
+/* ---------- conteúdo ---------- */
+.content { max-width: 1040px; margin: 0 auto; padding-block: 32px 24px; }
+.content p { margin: 0 0 .9em; }
+.content ul, .content ol { padding-left: 1.3em; margin: 0 0 1em; }
+.content li { margin: .3em 0; }
+.content li::marker { color: var(--accent); }
+.intro { max-width: 820px; }
+.intro > p:first-child { font-size: 21px; line-height: 1.55; }
+.section-h { font: 600 13px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 64px 0 22px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+
+.modulo { margin: 0 0 56px; }
+.modulo-h { border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 18px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.modulo-h h2 { font: 600 clamp(26px, 3.4vw, 34px)/1.15 var(--serif); margin: 0; letter-spacing: -.005em; text-wrap: balance; flex: 1 1 320px; }
+.modulo-num { font: 600 12px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); flex-basis: 100%; }
+.ref { font: 14px/1.5 var(--sans); color: var(--ink-2); margin: 0 0 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; padding: 0; list-style: none; }
+.chip { font: 500 12px/1 var(--sans); padding: 6px 9px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); }
+.chip-ok { background: var(--ok-soft); color: var(--ok); }
+.chip-warn { background: var(--warm-soft); color: var(--warm); }
+.chip-acc { background: var(--accent-soft); color: var(--accent-ink); }
+
+.note { display: grid; grid-template-columns: 124px minmax(0, 1fr); gap: 22px; padding: 16px 0; border-top: 1px solid var(--line); }
+.note:first-of-type { border-top: 0; }
+.cue { font: 600 11px/1.35 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); padding-top: 6px; }
+.cue span { display: block; border-left: 3px solid var(--accent); padding-left: 9px; }
+.note-warn .cue { color: var(--warm); } .note-warn .cue span { border-color: var(--warm); }
+.note-key .cue { color: var(--ok); } .note-key .cue span { border-color: var(--ok); }
+.note-body { min-width: 0; }
+.note-body h3 { font: 600 21px/1.25 var(--serif); margin: 0 0 8px; text-wrap: balance; }
+.note-body > :last-child { margin-bottom: 0; }
+@media (max-width: 640px) { .note { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+
+dl.conc { margin: 0; display: grid; gap: 10px; }
+dl.conc div { display: grid; grid-template-columns: minmax(0, 1fr); }
+dl.conc dt { font: 600 15px/1.35 var(--sans); color: var(--ink); }
+dl.conc dd { margin: 2px 0 0; font-size: 17px; color: var(--ink-2); }
+blockquote.cit { margin: 4px 0 6px; padding: 10px 16px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 8px 8px 0; font-style: italic; font-size: 19px; }
+blockquote.cit cite { display: block; font: normal 13px/1.4 var(--sans); color: var(--muted); margin-top: 4px; }
+.fonte { font: 13.5px/1.5 var(--sans); color: var(--muted); margin-top: .6em; }
+.fonte span { font-weight: 600; text-transform: uppercase; letter-spacing: .1em; font-size: 11px; color: var(--accent-ink); margin-right: 6px; }
+
+.box { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px 6px; margin: 16px 0; background: var(--surface); }
+.box-h { font: 600 13px/1.3 var(--sans); text-transform: uppercase; letter-spacing: .08em; color: var(--accent-ink); margin-bottom: 8px; }
+.box-warn { border-color: color-mix(in srgb, var(--warm) 40%, var(--line)); background: var(--warm-soft); }
+.box-warn .box-h { color: var(--warm); }
+.box-key { background: var(--accent-soft); border-color: transparent; }
+.box p, .box li { font-size: 16.5px; }
+
+.table-wrap { overflow-x: auto; margin: 14px 0 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font: 15px/1.45 var(--sans); }
+th, td { padding: 9px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+th { background: var(--surface-2); font-weight: 600; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td { font-variant-numeric: tabular-nums; }
+td.num, td.data { font-family: var(--mono); font-size: 13.5px; white-space: nowrap; color: var(--ink-2); }
+tr.hoje td { background: var(--accent-soft); }
+
+/* índice de leituras */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(232px, 1fr)); gap: 12px; }
+.card { display: flex; flex-direction: column; gap: 4px; padding: 16px 18px 15px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); text-decoration: none; color: var(--ink); transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease; }
+.card:hover { transform: translateY(-2px); border-color: var(--accent); box-shadow: var(--shadow); color: var(--ink); }
+.card-k { font: 500 12px/1.2 var(--mono); color: var(--accent-ink); }
+.card-t { font: 600 19px/1.2 var(--serif); }
+.card-d { font: 14px/1.45 var(--sans); color: var(--ink-2); flex: 1; }
+@media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
+
+/* fio da disciplina */
+.fio { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; counter-reset: fio; }
+.fio li { position: relative; padding: 0 0 22px 46px; margin: 0; }
+.fio li::before { counter-increment: fio; content: counter(fio); position: absolute; left: 0; top: 2px; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font: 600 14px var(--sans); color: var(--accent-ink); background: var(--accent-soft); }
+.fio li::after { content: ""; position: absolute; left: 14.5px; top: 36px; bottom: 4px; width: 1px; background: var(--line); }
+.fio li:last-child::after { display: none; }
+.fio h3 { font: 600 20px/1.3 var(--serif); margin: 0 0 4px; }
+.fio p { margin: 0; color: var(--ink-2); font-size: 17px; }
+.fio .quem { font: 500 13px/1.4 var(--sans); color: var(--muted); margin-top: 4px; }
+
+/* spoiler e recolhíveis */
+details.spoiler, details.fold { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 10px 16px; margin: 14px 0; }
+details.spoiler { border-color: color-mix(in srgb, var(--warm) 40%, var(--line)); background: var(--warm-soft); }
+details summary { cursor: pointer; font: 600 14px/1.4 var(--sans); color: var(--ink); }
+details.spoiler summary { color: var(--warm); }
+details[open] summary { margin-bottom: 10px; }
+details p, details li { font-size: 16.5px; }
+
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+.panel { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 16px 18px 8px; min-width: 0; }
+.panel h3 { font: 600 19px/1.3 var(--serif); margin: 0 0 8px; }
+.panel p, .panel li { font-size: 16.5px; }
+
+.gloss { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 0 28px; margin: 0; }
+.gloss div { padding: 12px 0; border-top: 1px solid var(--line); }
+.gloss dt { font: 600 16px/1.35 var(--serif); }
+.gloss dt small { font: 500 12px var(--sans); color: var(--accent-ink); margin-left: 6px; }
+.gloss dd { margin: 3px 0 0; font: 15px/1.5 var(--sans); color: var(--ink-2); }
+
+.bib { list-style: none; padding: 0; margin: 0; }
+.bib li { padding: 6px 0 6px 1.6em; text-indent: -1.6em; font: 15px/1.5 var(--sans); color: var(--ink-2); border-top: 1px solid var(--line); }
+.bib li.lida { color: var(--ink); }
+.bib li.lida::before { content: "✔ "; color: var(--accent); }
+
+.footer { border-top: 1px solid var(--line); margin: 40px auto 0; padding-block: 28px 40px; font: 14px/1.6 var(--sans); color: var(--muted); max-width: 1040px; }
+.footer strong { color: var(--ink-2); }
+
+@media (max-width: 560px) {
+  body { font-size: 17px; }
+  .brand em { display: none; }
+  .topbar { gap: 10px; }
+  .secnav a { padding: 6px 7px; font-size: 13px; }
+  .intro > p:first-child { font-size: 19px; }
+}
+</style>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar gutter">
+  <a class="brand" href="#topo"><span class="brand-mark" aria-hidden="true"></span><span>EDM0402 <em>Didática</em></span></a>
+  <nav class="secnav" aria-label="Seções">
+    <a href="#retrospectiva">Balanço</a><a href="#fio">Fio</a><a href="#aulas">Aulas</a><a href="#leituras">Leituras</a><a href="#clube">Clube</a><a href="#estagio">Estágio</a><a href="#conceitos">Conceitos</a><a href="#bibliografia">Bibliografia</a>
+  </nav>
+  <button class="theme-toggle" type="button" id="tema" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<section class="hero" id="topo">
+  <div class="hero-in gutter">
+    <div class="hero-text">
+      <p class="eyebrow">FEUSP · EDM0402 · 2026/2</p>
+      <h1>Didática<span>o que significa ensinar quando nenhuma regra garante a aprendizagem</span></h1>
+      <p class="lede">Notas da disciplina: os textos lidos, as aulas, os livros do Clube de Leitura e o estágio na Escola de Aplicação, costurados numa mesma pergunta sobre o trabalho docente.</p>
+      <ul class="hero-meta">
+        <li><b>Docente</b>Vivian Batista da Silva</li>
+        <li><b>Turma</b>2026241 · quarta, 8h30–12h</li>
+        <li><b>Carga</b>90 h, com 30 h de estágio</li>
+        <li><b>Licenciatura</b>Física · IF/FEUSP</li>
+      </ul>
+      <div class="hero-cta"><a class="btn" href="#leituras">Ir para as leituras</a><a class="btn btn-ghost" href="#clube">O Reformatório Nickel</a></div>
+      <p class="hero-note">A capa imita a pauta de um caderno escolar. A margem, que nos cadernos é vermelha, aqui é cereja.</p>
+    </div>
+  </div>
+</section>
+
+<main id="conteudo" class="content gutter">
+
+<section class="intro">
+  <p><strong>A disciplina começa com uma recusa.</strong> Azanha mostra que ensinar não é como jogar xadrez, em que conhecer as regras basta. Ensinar se parece mais com argumentar ou pensar criticamente: as regras ajudam e servem para avaliar, mas não garantem o resultado. Daí a frase que acompanha o semestre inteiro: o professor, diante da turma, é um solitário.</p>
+  <p>O resto do curso explora o que preenche esse espaço sem garantias. Primeiro, a entrada na profissão e o que um estágio pode formar (Vicentini e colegas, Larrosa). Depois, o que se decide ensinar (BNCC) e como se aprende e se avalia (Meirieu). Em seguida, a relação entre professor e alunos, com poder, cuidado e ordem (Noblit, Dubet), e os saberes que o professor mobiliza (Tardif). Por fim, a escola vista de dentro pela literatura, no Clube de Leitura, e de perto, no estágio.</p>
+  <section class="note note-key"><div class="cue"><span>Como ler estas notas</span></div><div class="note-body">
+    <p>Cada leitura tem a mesma ordem: pergunta do texto, tese, conceitos, uma citação curta com página, o que o texto ajuda a observar no estágio e perguntas para discutir. As ligações entre autores e as aplicações ao estágio são <strong>interpretação destas notas</strong>, não afirmações dos autores.</p>
+    <p class="fonte"><span>Fonte</span> Cronograma e ementa oficiais da disciplina; PDFs das leituras conferidos página a página; caderno de releitura de Jhuann; registros de aula de 07/10 e 21/10.</p>
+  </div></section>
+</section>
+
+<h2 class="section-h" id="retrospectiva">Balanço do semestre · 25/11</h2>
+<p class="ref">O que já foi feito, o que ficou para trás e o que falta entregar. As situações vêm dos registros pessoais e da auditoria do Moodle de 24/11; o envio dos Forms não aparece no Moodle, por isso está marcado “a confirmar”.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Atividade</th><th>Quando</th><th>Situação</th><th>O que fazer</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Portfólio do estágio</strong></td><td class="data">até 02/12, 0h</td><td><span class="chip chip-warn">rascunho</span></td><td>Parte I escrita; preencher visitas, materiais, entrevista. Enviar na noite de 01/12.</td></tr>
+    <tr><td><strong>Ficha de estágio</strong> (30 h)</td><td class="data">escola: 27/11</td><td><span class="chip chip-warn">30 h planejadas</span></td><td>22 h na escola, 1 h de entrevista e 7 h de estudo e portfólio (validadas pela Profa. Vivian). Até 6 h por dia. Vistos, carimbo da escola e assinaturas.</td></tr>
+    <tr><td><strong>Trabalho sobre <em>O Reformatório Nickel</em></strong></td><td class="data">até 27/11, 23h59</td><td><span class="chip chip-warn">em grupo, em andamento</span></td><td>Eixo 3 e impressão pessoal. <a href="clube-nickel.html">Guia do trabalho</a>.</td></tr>
+    <tr><td>Clube de Leitura em sala</td><td class="data">02/12</td><td><span class="chip">futuro</span></td><td>Levar perguntas para a discussão.</td></tr>
+    <tr><td>Forms da Semana da Educação + comprovante</td><td class="data">Aula 8 · 14/10</td><td><span class="chip chip-warn">ficou para trás</span></td><td>Abrir o Forms e ver se ainda aceita resposta. Se não, escrever à professora com o comprovante de participação.</td></tr>
+    <tr><td>Forms da Aula 3 (aproximação da escola)</td><td class="data">02/09</td><td><span class="chip chip-warn">a confirmar</span></td><td>Ver no Google Forms se há resposta enviada.</td></tr>
+    <tr><td>Forms da Aula 13 (registro das atividades)</td><td class="data">18/11</td><td><span class="chip chip-warn">a confirmar</span></td><td>Ver se foi enviado; ainda dá tempo, se estiver aberto.</td></tr>
+    <tr><td>Forms de boas-vindas</td><td class="data">agosto</td><td><span class="chip chip-warn">a confirmar</span></td><td>Baixa prioridade.</td></tr>
+    <tr><td>Atividade sobre Azanha</td><td class="data">26/08</td><td><span class="chip chip-ok">enviada em 27/08</span></td><td>Nada.</td></tr>
+    <tr><td>Registro on-line da ficha</td><td class="data">fim do semestre</td><td><span class="chip">futuro</span></td><td>Formulário da Seção de Estágios, depois das assinaturas.</td></tr>
+  </tbody>
+</table></div>
+<p class="fonte"><span>Leituras</span> Azanha foi lida para a atividade. As demais leituras estão sem confirmação nos registros; para o portfólio, as mais úteis são Larrosa (Parte II), Tardif (Parte IV) e Vicentini et al. (considerações finais).</p>
+
+<h2 class="section-h" id="fio">O fio da disciplina</h2>
+<ol class="fio">
+  <li><h3>O que é Didática, e o que ela não pode prometer</h3><p>Organizar o ensino para tornar a aprendizagem possível, sem método universal que garanta o êxito.</p><p class="quem">Azanha · Aula 2</p></li>
+  <li><h3>Entrar na profissão</h3><p>Medo do julgamento, isolamento, rotina e cuidado: a sensibilidade docente se aprende ao viver a solicitude durante a formação.</p><p class="quem">Vicentini, Gallego, Lugli e Silva · Aula 3</p></li>
+  <li><h3>Experiência não é informação</h3><p>Visitar uma escola e sair com mais dados não é o mesmo que algo nos ter acontecido.</p><p class="quem">Larrosa · Aula 4</p></li>
+  <li><h3>O que se ensina e como se aprende</h3><p>Currículo nacional, representações da aprendizagem e instrumentos de avaliação.</p><p class="quem">Palestra sobre a BNCC · Meirieu · oficina de avaliação · Aulas 6, 7 e 9</p></li>
+  <li><h3>A relação pedagógica</h3><p>Poder que confirma o outro (Noblit) e uma relação que precisa ser reconstruída a cada aula (Dubet).</p><p class="quem">Noblit · Dubet · Aulas 10 e 11</p></li>
+  <li><h3>Os saberes do professor</h3><p>Saberes da formação, das disciplinas, do currículo e da experiência, e a relação do professor com cada um.</p><p class="quem">Tardif, Lessard e Lahaye · Aula 12</p></li>
+  <li><h3>A escola na literatura</h3><p>Quem são os professores retratados, que cultura escolar se vive, por que o livro marca quem quer ensinar.</p><p class="quem">Clube de Leitura · Aulas 5 e 13</p></li>
+  <li><h3>O estágio</h3><p>Trinta horas acompanhando uma professora de Língua Portuguesa de 4º ano, registradas num portfólio.</p><p class="quem">Escola de Aplicação da FEUSP · Aulas 14 e 15</p></li>
+</ol>
+
+<h2 class="section-h" id="aulas">Diário de classe</h2>
+<p class="ref">As 15 aulas do cronograma oficial. Datas da turma de quarta-feira. A coluna “situação” vem dos registros pessoais, não do Moodle.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Aula</th><th>Data</th><th>Tema</th><th>Leitura ou atividade</th><th>Situação</th></tr></thead>
+  <tbody>
+    <tr><td class="num">1</td><td class="data">19/08</td><td>Apresentação</td><td>Proposta, cronograma, estágio, Clube, avaliação</td><td>realizada</td></tr>
+    <tr><td class="num">2</td><td class="data">26/08</td><td>A Didática e o ensino</td><td><a href="#azanha">Azanha</a>, três perguntas</td><td>atividade enviada em 27/08</td></tr>
+    <tr><td class="num">3</td><td class="data">02/09</td><td>Estágio: aproximações com o magistério</td><td><a href="#vicentini">Vicentini et al.</a> + Forms; escolha da escola</td><td>Forms a confirmar</td></tr>
+    <tr><td class="num">—</td><td class="data">09/09</td><td>Semana da Pátria</td><td>sem aula</td><td>—</td></tr>
+    <tr><td class="num">4</td><td class="data">16/09</td><td>Homogeneizar para ensinar: entre a lousa e os slides</td><td><a href="#larrosa">Larrosa</a>; participação da Prof.ª Thaís Vitale</td><td>leitura a confirmar</td></tr>
+    <tr><td class="num">5</td><td class="data">23/09</td><td>Clube de Leitura: o trabalho docente na escola</td><td>formação dos grupos e escolha do livro</td><td>grupo escolheu <em>O Reformatório Nickel</em></td></tr>
+    <tr><td class="num">6</td><td class="data">30/09</td><td>Como se define o que se ensina</td><td>palestra sobre a BNCC, Prof. Dr. Wagner Scopel Falcão</td><td>estudo da BNCC em aberto</td></tr>
+    <tr><td class="num">7</td><td class="data">06–07/10</td><td>Ciclo de Palestras</td><td>livros e artigo sobre <em>Diário de escola</em> (<a href="#silva-vieira">Silva e Vieira</a>)</td><td>leitura a confirmar</td></tr>
+    <tr><td class="num">8</td><td class="data">14/10</td><td>Semana de Educação</td><td>uma atividade da Semana, integrada à disciplina</td><td>atividade a confirmar</td></tr>
+    <tr><td class="num">9</td><td class="data">21/10</td><td>Docência, avaliação e aprendizagem</td><td><a href="#meirieu">Meirieu</a>; instrumentos de avaliação</td><td>leitura a confirmar</td></tr>
+    <tr><td class="num">10</td><td class="data">28/10</td><td>A relação pedagógica: poder e desvelo</td><td><a href="#noblit">Noblit</a></td><td>notas M01 prontas</td></tr>
+    <tr><td class="num">11</td><td class="data">04/11</td><td>Ensinar: agir na urgência, decidir na incerteza</td><td><a href="#dubet">Dubet</a></td><td>notas M02 prontas</td></tr>
+    <tr><td class="num">12</td><td class="data">11/11</td><td>Os professores e seus saberes</td><td><a href="#tardif">Tardif, Lessard e Lahaye</a></td><td>leitura a confirmar</td></tr>
+    <tr><td class="num">13</td><td class="data">18/11</td><td>Organização do portfólio de estágio</td><td>plantão da professora; Forms de registro da aula</td><td>Forms a confirmar</td></tr>
+    <tr class="hoje"><td class="num">14</td><td class="data">25/11</td><td>Sem aula presencial</td><td>finalizar o trabalho escrito sobre <em>O Reformatório Nickel</em> (envio até 27/11, 23h59)</td><td>em andamento</td></tr>
+    <tr><td class="num">15</td><td class="data">02/12</td><td>Encerramento e Clube de Leitura</td><td>discussão do livro; portfólio (Moodle até 02/12, 0h) e fichas assinadas</td><td>prazo</td></tr>
+  </tbody>
+</table></div>
+<p class="fonte"><span>Fonte</span> Moodle da disciplina, auditado em 24/11/2026, que prevalece sobre o cronograma em PDF do início do semestre. O título da Aula 11 é o tema da aula; o texto lido é a entrevista de Dubet.</p>
+
+<h2 class="section-h" id="leituras">Leituras</h2>
+<div class="cards">
+  <a class="card" href="#azanha"><span class="card-k">Aula 2 · 1985</span><span class="card-t">Azanha</span><span class="card-d">Uma reflexão sobre a Didática</span></a>
+  <a class="card" href="#vicentini"><span class="card-k">Aula 3 · 2021</span><span class="card-t">Vicentini, Gallego, Lugli e Silva</span><span class="card-d">Vivências iniciais no magistério</span></a>
+  <a class="card" href="#larrosa"><span class="card-k">Aula 4 · 2002</span><span class="card-t">Larrosa</span><span class="card-d">Notas sobre a experiência e o saber de experiência</span></a>
+  <a class="card" href="#meirieu"><span class="card-k">Aula 9 · 1998</span><span class="card-t">Meirieu</span><span class="card-d">O que é aprender?</span></a>
+  <a class="card" href="#noblit"><span class="card-k">Aula 10 · 1995</span><span class="card-t">Noblit</span><span class="card-d">Poder e desvelo na sala de aula</span></a>
+  <a class="card" href="#dubet"><span class="card-k">Aula 11 · 1997</span><span class="card-t">Dubet</span><span class="card-d">Quando o sociólogo quer saber o que é ser professor</span></a>
+  <a class="card" href="#tardif"><span class="card-k">Aula 12 · 1991</span><span class="card-t">Tardif, Lessard e Lahaye</span><span class="card-d">Os professores face ao saber</span></a>
+  <a class="card" href="#silva-vieira"><span class="card-k">Clube · 2021</span><span class="card-t">Silva e Vieira</span><span class="card-d">Diário de escola: heranças e metamorfoses</span></a>
+  <a class="card" href="#hamilton"><span class="card-k">Indicação · 2001</span><span class="card-t">Hamilton</span><span class="card-d">Notas de lugar nenhum</span></a>
+</div>
+
+<!-- AZANHA -->
+<article class="modulo" id="azanha" style="margin-top:48px">
+  <header class="modulo-h"><span class="modulo-num">Aula 2 · 26/08</span><h2>Azanha: uma reflexão sobre a Didática</h2></header>
+  <p class="ref">AZANHA, José Mário Pires. Uma reflexão sobre a Didática. In: <em>Educação: alguns escritos</em>. São Paulo: Companhia Editora Nacional, 1987. p. 70–77. Apresentado no 3º Seminário <em>A Didática em Questão</em>, FEUSP, 1985.</p>
+  <ul class="chips"><li class="chip chip-ok">atividade enviada em 27/08</li><li class="chip">caderno de releitura completo</li></ul>
+  <section class="note"><div class="cue"><span>Pergunta</span></div><div class="note-body"><p>É possível formular um método de ensino universal, cuja aplicação garanta o êxito, como sonhava Comênio?</p></div></section>
+  <section class="note"><div class="cue"><span>Tese</span></div><div class="note-body"><p>Ensinar se parece mais com atividades criativas, como argumentar ou pensar criticamente, do que com atividades definidas por regras (xadrez) ou aprendidas sem regras explícitas (nadar). As regras didáticas são, por isso, <strong>não exaustivas</strong>: podem facilitar, mas não garantir. Nenhum método socorre o professor de forma definitiva.</p></div></section>
+  <section class="note"><div class="cue"><span>Conceitos</span></div><div class="note-body"><dl class="conc">
+    <div><dt>Pressuposição absoluta e relativa</dt><dd>Absoluta é uma ideia cuja negação paralisaria o esforço, como a possibilidade de aperfeiçoamento humano. Relativa é um compromisso discutível e evitável (p. 71).</dd></div>
+    <div><dt>Pressuposição absoluta da Didática</dt><dd>Entre os modos de organizar o ensino, alguns são mais eficientes que outros para a aprendizagem. Sem essa crença, o campo seria vazio (p. 73).</dd></div>
+    <div><dt>Três relações entre regras e atividades</dt><dd>Xadrez: regras antes da prática (saber que). Natação: saber fazer sem regras explícitas (saber como). Atividades criativas: regras avaliam o resultado, mas não o produzem (p. 74–76).</dd></div>
+    <div><dt>Regras exaustivas e não exaustivas</dt><dd>As exaustivas garantiriam o sucesso se seguidas. As não exaustivas só aumentam a chance. As de ensinar são do segundo tipo (p. 76, a partir de Scheffler).</dd></div>
+    <div><dt>O professor como solitário</dt><dd>Não é isolamento entre colegas. É a ausência de um método que decida no lugar do professor diante da situação concreta (p. 76–77).</dd></div>
+  </dl></div></section>
+  <section class="note"><div class="cue"><span>Citação</span></div><div class="note-body"><blockquote class="cit">“o professor, na sua atividade criativa de ensinar, é um solitário”<cite>Azanha, 1987, p. 77 (página sem número impresso; a 77 pela sequência)</cite></blockquote></div></section>
+  <section class="note"><div class="cue"><span>As três perguntas da aula</span></div><div class="note-body">
+    <p><strong>Como definir Didática?</strong> Azanha não propõe definição própria. Adota a <em>Didática Magna</em> como paradigma: organizar o ensino para viabilizar a aprendizagem.</p>
+    <p><strong>O ensino pode ser regido por regras?</strong> Orientado, sim. Regido de forma exaustiva, não.</p>
+    <p><strong>Por que o professor é um solitário?</strong> Porque ensinar é atividade criativa, e nenhum método assegura o sucesso.</p>
+  </div></section>
+  <section class="note"><div class="cue"><span>No estágio</span></div><div class="note-body"><p>A pergunta deixa de ser “ela segue o método certo?” e passa a ser “como ela decide, nesta turma, o que fazer agora?”. Sequências e rotinas entram no registro como facilitadoras, não como garantia.</p></div></section>
+  <section class="note"><div class="cue"><span>Para discutir</span></div><div class="note-body"><ul><li>Se as regras são não exaustivas, o que resta à formação didática do professor?</li><li>A analogia com atividades criativas vale para tudo, ou a alfabetização e a gestão da turma se aproximam mais do xadrez ou da natação?</li></ul></div></section>
+</article>
+
+<!-- VICENTINI -->
+<article class="modulo" id="vicentini">
+  <header class="modulo-h"><span class="modulo-num">Aula 3 · 02/09</span><h2>Vivências iniciais no magistério</h2></header>
+  <p class="ref">VICENTINI, Paula Perin; GALLEGO, Rita de Cassia; LUGLI, Rosario Genta; SILVA, Vivian Batista da. Vivências iniciais no magistério e formação para a sensibilidade na sala de aula. <em>Revista Práxis Educacional</em>, Vitória da Conquista, v. 17, n. 44, p. 190–218, jan./mar. 2021.</p>
+  <ul class="chips"><li class="chip chip-warn">leitura e Forms a confirmar</li><li class="chip chip-acc">ligado ao estágio</li></ul>
+  <section class="note"><div class="cue"><span>Pergunta</span></div><div class="note-body"><p>Como professoras iniciantes juntam memória escolar, estágio e conteúdos do curso para construir um repertório e uma imagem de si como docentes, e que sentimentos marcam essa entrada?</p></div></section>
+  <section class="note"><div class="cue"><span>Tese</span></div><div class="note-body"><p>A partir de entrevistas com quatro professoras recém-formadas (duas de Pedagogia na UNIFESP, duas de Letras na USP com estágio na Escola de Aplicação), as autoras mostram que os <strong>sentimentos</strong> organizam os saberes: isolamento, medo do julgamento dos pares, as nuances da relação com os alunos. Estágios longos, acolhedores e pouco prescritivos ajudam a formar uma sensibilidade que se aprende, e não uma vocação inata.</p></div></section>
+  <section class="note"><div class="cue"><span>Conceitos</span></div><div class="note-body"><dl class="conc">
+    <div><dt>Saberes docentes</dt><dd>Das disciplinas, curriculares, da formação profissional e da experiência. Os da experiência vêm também da história pessoal e escolar (p. 198, 204, a partir de Tardif).</dd></div>
+    <div><dt>Choque com a realidade e descoberta</dt><dd>No início da carreira, o entusiasmo pode virar “sobrevivência”; com um contato mais favorável, vira “descoberta” (p. 200, a partir de Huberman).</dd></div>
+    <div><dt>Solidão e isolamento</dt><dd>A escola como “caixa de ovos”: o isolamento protege de críticas, mas corta apoio. Para quem começa, pode virar desamparo (p. 206–207).</dd></div>
+    <div><dt>Olhar dos outros</dt><dd>A imagem de si se forma nas relações com pais, funcionários e colegas; o medo de ser julgado pesa na sensação de ser capaz (p. 207–209).</dd></div>
+    <div><dt>Sensibilidade e tato</dt><dd>Atenção ao que a criança apresenta, cuidado com palavra e tom de voz, paciência (p. 212–215).</dd></div>
+  </dl></div></section>
+  <section class="note"><div class="cue"><span>Citação</span></div><div class="note-body"><blockquote class="cit">“nenhum saber serve para toda e qualquer situação ou contexto”<cite>Vicentini et al., 2021, p. 202</cite></blockquote></div></section>
+  <section class="note"><div class="cue"><span>No estágio</span></div><div class="note-body"><p>O próprio estágio é lugar de formação do olhar. Registrar o tato da professora: tom de voz, resposta às perguntas, manejo do erro, rotinas que dão segurança. O texto também recomenda evitar julgamentos duros sobre a prática observada.</p></div></section>
+  <section class="note"><div class="cue"><span>Para discutir</span></div><div class="note-body"><ul><li>Quanto da sensibilidade é traço pessoal e quanto é fruto de reflexão? Um estágio curto pode formá-la?</li><li>A solidão de Azanha e o isolamento da “caixa de ovos” são o mesmo fenômeno?</li></ul></div></section>
+</article>
+
+<!-- LARROSA -->
+<article class="modulo" id="larrosa">
+  <header class="modulo-h"><span class="modulo-num">Aula 4 · 16/09</span><h2>Larrosa: experiência e saber de experiência</h2></header>
+  <p class="ref">LARROSA BONDÍA, Jorge. Notas sobre a experiência e o saber de experiência. Tradução de João Wanderley Geraldi. <em>Revista Brasileira de Educação</em>, n. 19, p. 20–28, jan./abr. 2002.</p>
+  <ul class="chips"><li class="chip chip-warn">leitura a confirmar</li></ul>
+  <section class="note"><div class="cue"><span>Pergunta</span></div><div class="note-body"><p>O que muda se pensarmos a educação pelo par experiência e sentido, e não por ciência e técnica ou teoria e prática?</p></div></section>
+  <section class="note"><div class="cue"><span>Tese</span></div><div class="note-body"><p>Experiência é o que <em>nos</em> acontece e nos toca, não tudo o que se passa. Ela ficou rara pelo excesso de informação, de opinião, de velocidade e de trabalho, e a escola reforça esse empobrecimento. O saber de experiência é finito, singular e não se transfere.</p></div></section>
+  <section class="note"><div class="cue"><span>Conceitos</span></div><div class="note-body"><dl class="conc">
+    <div><dt>Inimigos da experiência</dt><dd>Informação, opinião, falta de tempo e excesso de trabalho. Informação e opinião juntas formam o “dispositivo periodístico” da aprendizagem escolar (p. 21–24).</dd></div>
+    <div><dt>Gesto de interrupção</dt><dd>Parar, olhar e escutar devagar, suspender o juízo e o automatismo, dar-se tempo (p. 24).</dd></div>
+    <div><dt>Sujeito da experiência</dt><dd>Território de passagem, exposto, receptivo, vulnerável. A etimologia liga experiência a travessia e perigo (p. 24–25).</dd></div>
+    <div><dt>Saber de experiência</dt><dd>Aprendizagem no padecer; pessoal, singular, incerto. Ao contrário do experimento, produz diferença, não consenso (p. 27–28).</dd></div>
+  </dl></div></section>
+  <section class="note"><div class="cue"><span>Citação</span></div><div class="note-body"><blockquote class="cit">“Se o experimento é genérico, a experiência é singular.”<cite>Larrosa, 2002, p. 28</cite></blockquote></div></section>
+  <section class="note"><div class="cue"><span>No estágio</span></div><div class="note-body"><p>Desconfiar de um registro que só acumula dados e opiniões a favor ou contra a aula. Tentar o gesto de interrupção: olhar devagar, descrever antes de julgar. Professora, crianças e observador vivem o mesmo acontecimento sem fazer a mesma experiência.</p></div></section>
+  <section class="note"><div class="cue"><span>Para discutir</span></div><div class="note-body"><ul><li>Se ninguém aprende da experiência de outro, o que um estágio de observação pode formar?</li><li>A crítica ao “trabalho” e à lógica da ação convive com a exigência de planejar e avaliar?</li></ul></div></section>
+</article>
+
+<!-- MEIRIEU -->
+<article class="modulo" id="meirieu">
+  <header class="modulo-h"><span class="modulo-num">Aula 9 · 21/10</span><h2>Meirieu: o que é aprender?</h2></header>
+  <p class="ref">MEIRIEU, Philippe. O que é aprender? In: <em>Aprender… sim, mas como?</em> Porto Alegre: Artmed, 1998. p. 47–69.</p>
+  <ul class="chips"><li class="chip chip-warn">PDF fora do acervo local</li><li class="chip chip-warn">leitura a confirmar</li></ul>
+  <section class="note note-warn"><div class="cue"><span>Atenção</span></div><div class="note-body"><p>Este texto não está na pasta local (o link do e-Disciplinas exige login), por isso não foi conferido página a página. O que segue registra a proposta da aula e as discussões anotadas. Ao ler, completar com tese e citação.</p></div></section>
+  <section class="note"><div class="cue"><span>Proposta da aula</span></div><div class="note-body"><p>Pesquisar quem é Philippe Meirieu, sintetizar a ideia central do capítulo e discutir como as <strong>representações da aprendizagem</strong> estão ligadas ao trabalho de ensinar e avaliar. A disciplina pôs ao lado uma leitura de Perrenoud sobre avaliação (título a confirmar) e uma oficina sobre instrumentos de avaliação (21/10).</p></div></section>
+  <section class="note"><div class="cue"><span>Discutido em aula · 07/10</span></div><div class="note-body"><ul>
+    <li>Os romances do Clube mostram o cotidiano concreto da profissão.</li>
+    <li>Incluir os alunos rotulados como “lerdos”: ritmos e modos diferentes de aprender.</li>
+    <li>Dominar o conteúdo não garante saber ensiná-lo.</li>
+    <li>Na universidade, a valorização da pesquisa pode deixar a formação pedagógica em segundo plano.</li>
+    <li>Tato pedagógico: perceber a situação e agir com sensibilidade e discernimento.</li>
+    <li>Estratégias e táticas do cotidiano, com Michel de Certeau.</li>
+  </ul><p class="fonte"><span>Cuidado</span> pontos da discussão em aula; não atribuí-los a Meirieu sem conferir o texto.</p></div></section>
+</article>
+
+<!-- NOBLIT -->
+<article class="modulo" id="noblit">
+  <header class="modulo-h"><span class="modulo-num">Aula 10 · 28/10</span><h2>Noblit: poder e desvelo na sala de aula</h2></header>
+  <p class="ref">NOBLIT, George W. Poder e desvelo na sala de aula. Tradução e apresentação de Belmira Oliveira Bueno. <em>Revista da Faculdade de Educação</em>, São Paulo, v. 21, n. 2, p. 119–137, jul./dez. 1995.</p>
+  <ul class="chips"><li class="chip chip-acc">notas M01 (13 p.) no repositório</li><li class="chip chip-warn">leitura a confirmar</li></ul>
+  <section class="note"><div class="cue"><span>Pergunta</span></div><div class="note-body"><p>O poder de uma professora pode servir ao cuidado, em vez de ser, por definição, opressão?</p></div></section>
+  <section class="note"><div class="cue"><span>Tese</span></div><div class="note-body"><p>Depois de um ano observando a 2ª série de Pam, Noblit revê sua ideia de que poder e opressão eram a mesma coisa. Na sala de Pam, o poder centralizado é usado para incluir, proteger e dar continuidade ao grupo. O desvelo aparece como relação recíproca e desigual, e a autoridade da professora é moral porque as crianças a reconhecem na relação.</p></div></section>
+  <section class="note"><div class="cue"><span>Conceitos</span></div><div class="note-body"><dl class="conc">
+    <div><dt>Desvelo</dt><dd>Tradução de <em>caring</em>: atenção comprometida com o outro e com a relação, não simpatia momentânea (p. 120–122).</dd></div>
+    <div><dt>Poder e opressão</dt><dd>O caso separa o poder usado em benefício próprio do poder usado a serviço moral dos outros (p. 134).</dd></div>
+    <div><dt>Reciprocidade desigual</dt><dd>Professora e crianças sustentam a relação, mas não têm o mesmo poder nem a mesma responsabilidade (p. 135).</dd></div>
+    <div><dt>Ritual</dt><dd>As sessões de perguntas, lidas primeiro como competição, revelam-se busca de pertencimento: Pam volta a quem errou e chama outros para ajudar (p. 131–133).</dd></div>
+    <div><dt>Autoridade moral</dt><dd>Vem da responsabilidade por criar um contexto em que todos participem, e é construída também pelas crianças (p. 136).</dd></div>
+  </dl></div></section>
+  <section class="note"><div class="cue"><span>Citação</span></div><div class="note-body"><blockquote class="cit">“O poder é utilizado para confirmar e não para negar o outro.”<cite>Noblit, 1995, p. 135</cite></blockquote></div></section>
+  <section class="note"><div class="cue"><span>No estágio</span></div><div class="note-body"><p>Não julgar a condução centralizada (escolher quem lê em voz alta, corrigir diante da turma) só pela forma, mas pelo que ela produz: quem recebe a palavra, como o erro de leitura é acolhido. E, como Noblit, registrar as próprias expectativas e revê-las, separando descrição de interpretação.</p></div></section>
+  <section class="note"><div class="cue"><span>Para discutir</span></div><div class="note-body"><ul><li>Que evidências distinguiriam uma pergunta pública que exclui de uma que acolhe?</li><li>Onde fica o limite entre exercício ético do poder e imposição?</li></ul></div></section>
+</article>
+
+<!-- DUBET -->
+<article class="modulo" id="dubet">
+  <header class="modulo-h"><span class="modulo-num">Aula 11 · 04/11</span><h2>Dubet: quando o sociólogo quer saber o que é ser professor</h2></header>
+  <p class="ref">DUBET, François. Quando o sociólogo quer saber o que é ser professor. Entrevista a Angelina Teixeira Peralva e Marilia Pontes Sposito. Tradução de Ines Rosa Bueno. <em>Revista Brasileira de Educação</em>, n. 5/6, p. 222–231, maio/dez. 1997.</p>
+  <ul class="chips"><li class="chip chip-acc">notas M02 (17 p.) no repositório</li><li class="chip chip-warn">leitura a confirmar</li></ul>
+  <section class="note"><div class="cue"><span>Pergunta</span></div><div class="note-body"><p>O que um sociólogo aprende sobre a relação pedagógica ao assumir, por um ano, uma turma de colégio popular?</p></div></section>
+  <section class="note"><div class="cue"><span>Tese</span></div><div class="note-body"><p>Os professores não exageram: a relação pedagógica é desregulada de saída, porque os alunos não se dispõem naturalmente a fazer o papel de aluno. Ela precisa ser reconstruída a cada aula, com a personalidade do professor. A saída não é uma pedagogia milagrosa nem a volta da disciplina pura, mas regras definidas, aplicadas e recíprocas, programas mais modestos e formação prática.</p></div></section>
+  <section class="note"><div class="cue"><span>Conceitos</span></div><div class="note-body"><dl class="conc">
+    <div><dt>Relação desregulada</dt><dd>Nada garante que os alunos escutem; a cada aula é preciso relembrar regras, reinteressar, ameaçar e recompensar (p. 224).</dd></div>
+    <div><dt>O “golpe de estado”</dt><dd>Uma semana de punições rígidas estabiliza a turma, e Dubet a julga um fracasso pedagógico e moral (p. 224–225).</dd></div>
+    <div><dt>Pedagogia e personalidade</dt><dd>Não há corte entre método e personalidade; mudar de método é mudar a si mesmo (p. 226).</dd></div>
+    <div><dt>Ficção do julgamento escolar</dt><dd>Tratar todos como iguais e explicar o fracasso só pela falta de esforço impede o aluno de entender o que lhe acontece (p. 226).</dd></div>
+    <div><dt>Quadro normativo democrático</dt><dd>Regras de vida em grupo que obrigam também os adultos e abrem espaço para a expressão dos alunos (p. 227–229).</dd></div>
+  </dl></div></section>
+  <section class="note"><div class="cue"><span>Citação</span></div><div class="note-body"><blockquote class="cit">“Os alunos não estão ‘naturalmente’ dispostos a fazer o papel de aluno.”<cite>Dubet, 1997, p. 223</cite></blockquote></div></section>
+  <section class="note"><div class="cue"><span>No estágio</span></div><div class="note-body"><p>Observar o trabalho invisível de “botar ordem”: quanto da aula vai para organizar e recompor a atenção, se as regras valem para os dois lados, se as dificuldades de leitura são explicadas às crianças só como falta de esforço. Dubet fala de adolescentes; a transposição para o 4º ano é limitada (p. 230).</p></div></section>
+  <section class="note"><div class="cue"><span>Para discutir</span></div><div class="note-body"><ul><li>Como o “golpe de estado” pode ter funcionado e ser, ao mesmo tempo, um fracasso moral?</li><li>Se método e personalidade não se separam, o que a formação de professores consegue ensinar?</li></ul></div></section>
+</article>
+
+<!-- TARDIF -->
+<article class="modulo" id="tardif">
+  <header class="modulo-h"><span class="modulo-num">Aula 12 · 11/11</span><h2>Tardif, Lessard e Lahaye: os professores face ao saber</h2></header>
+  <p class="ref">TARDIF, Maurice; LESSARD, Claude; LAHAYE, Louis. Os professores face ao saber: esboço de uma problemática do saber docente. <em>Teoria &amp; Educação</em>, Porto Alegre, n. 4, p. 215–233, 1991.</p>
+  <ul class="chips"><li class="chip chip-warn">PDF fora do acervo local</li><li class="chip chip-warn">leitura a confirmar</li></ul>
+  <section class="note note-warn"><div class="cue"><span>Atenção</span></div><div class="note-body"><p>O PDF não está na pasta local, então este bloco não foi conferido no texto. A tipologia abaixo é a que Vicentini et al. (2021, p. 198) atribuem a este artigo. Ao ler, completar com tese, páginas e citação.</p></div></section>
+  <section class="note"><div class="cue"><span>Os saberes</span></div><div class="note-body"><dl class="conc">
+    <div><dt>Da formação profissional</dt><dd>Transmitidos pelas instituições de formação de professores.</dd></div>
+    <div><dt>Disciplinares</dt><dd>Os saberes dos campos de conhecimento, como a Física ou a Língua Portuguesa.</dd></div>
+    <div><dt>Curriculares</dt><dd>Programas, objetivos e métodos que a escola define.</dd></div>
+    <div><dt>Da experiência</dt><dd>Nascem da prática e da convivência na instituição, mas também da história familiar, escolar e pessoal.</dd></div>
+  </dl></div></section>
+  <section class="note"><div class="cue"><span>Discutido em aula</span></div><div class="note-body"><p>Em 07/10 a turma já ligava Tardif à ideia de que dominar o conteúdo não basta para ensinar: o professor mobiliza saberes de origens diferentes, e os da experiência pesam na prática.</p></div></section>
+  <section class="note"><div class="cue"><span>No estágio</span></div><div class="note-body"><p>Na entrevista com a professora, perguntar de onde vêm as decisões que ela toma: da formação, do currículo da escola, do conhecimento da língua, de anos de turma. É uma forma de ver a pluralidade dos saberes em uma pessoa concreta.</p></div></section>
+</article>
+
+<!-- SILVA E VIEIRA -->
+<article class="modulo" id="silva-vieira">
+  <header class="modulo-h"><span class="modulo-num">Clube de Leitura · 07/10</span><h2>Silva e Vieira: Diário de escola, heranças e metamorfoses</h2></header>
+  <p class="ref">SILVA, Vivian Batista da; VIEIRA, Keila da Silva. Diário de escola: narrativas de heranças e metamorfoses do trabalho docente. <em>Cadernos de Pesquisa</em>, São Luís, v. 28, n. 4, p. 587–608, out./dez. 2021.</p>
+  <ul class="chips"><li class="chip">texto da docente da turma</li><li class="chip chip-warn">leitura a confirmar</li></ul>
+  <section class="note"><div class="cue"><span>Pergunta</span></div><div class="note-body"><p>O que o relato de Daniel Pennac, ex-“aluno lerdo” que virou professor, revela sobre as heranças da escola moderna e sobre como transformá-la?</p></div></section>
+  <section class="note"><div class="cue"><span>Tese</span></div><div class="note-body"><p>O livro mostra a gramática escolar herdada do século XIX (seriação, tempos rígidos, padrões de normalidade) e como ela produz o fracasso ao tratar dificuldades como incapacidade individual. Mostra também as táticas de professores que “resgatam” alunos, o que as autoras aproximam da ideia de metamorfose da escola de Nóvoa.</p></div></section>
+  <section class="note"><div class="cue"><span>Conceitos</span></div><div class="note-body"><dl class="conc">
+    <div><dt>Forma escolar</dt><dd>Sala de aula, tempos marcados, classes por idade, provas e notas, tomados como o único sistema possível (p. 597–598).</dd></div>
+    <div><dt>Fracasso escolar</dt><dd>Produzido pela própria escola ao fixar a normalidade; o caso de Pennac, de família culta, mostra que a explicação social não esgota o problema (p. 596, 600–601).</dd></div>
+    <div><dt>Tática</dt><dd>Com Certeau: modos cotidianos de contornar a lógica dominante para ensinar quem estaria “fadado ao fracasso” (p. 590–591).</dd></div>
+    <div><dt>Metamorfose da escola</dt><dd>Com Nóvoa: transformar a escola, em vez de anunciar seu fim (p. 599–600).</dd></div>
+  </dl></div></section>
+  <section class="note"><div class="cue"><span>Citação</span></div><div class="note-body"><blockquote class="cit">“a escola não é o lugar das excelências, senão um lugar de aprendizagens”<cite>Silva e Vieira, 2021, p. 600</cite></blockquote></div></section>
+  <section class="note"><div class="cue"><span>No estágio</span></div><div class="note-body"><p>Olhar para quem passa despercebido: como a professora lida com quem ainda não lê ou escreve com a fluência esperada no 4º ano. Pennac, professor de francês, usa a própria língua para tirar alunos do medo; vale perguntar se as tarefas de Língua Portuguesa abrem essa entrada ou reforçam a vergonha.</p></div></section>
+</article>
+
+<!-- HAMILTON -->
+<article class="modulo" id="hamilton">
+  <header class="modulo-h"><span class="modulo-num">Indicação complementar</span><h2>Hamilton: notas de lugar nenhum</h2></header>
+  <p class="ref">HAMILTON, David. Notas de lugar nenhum: sobre os primórdios da escolarização moderna. Tradução de Luiz Ramires. <em>Revista Brasileira de História da Educação</em>, n. 1, p. 45–73, jan./jun. 2001.</p>
+  <section class="note"><div class="cue"><span>Tese</span></div><div class="note-body"><p>A escolarização moderna não descende da escola medieval. Nasceu da combinação de ideias dispersas (humanismo e imprensa, retórica, disciplina religiosa, neoestoicismo) e emergiu junto com o Estado Moderno, que Hoole e Comênio ajudaram a servir no século XVII.</p></div></section>
+  <section class="note"><div class="cue"><span>Conceitos</span></div><div class="note-body"><dl class="conc">
+    <div><dt>Escolarização e educação</dt><dd>Ensinar é antigo; criar uma atividade separada da vida em geral é outro processo (p. 51).</dd></div>
+    <div><dt>Pedagogia e didática</dt><dd>No século XVI, textos para os pais (criar os filhos) se distinguem de textos para mestres (instruir); aos poucos a didática passa a dirigir a pedagogia (p. 53–56).</dd></div>
+    <div><dt>Método e disciplina</dt><dd>O currículo se define mais pela ordem e sequência que pelo conteúdo (p. 56–57).</dd></div>
+  </dl></div></section>
+  <section class="note"><div class="cue"><span>Citação</span></div><div class="note-body"><blockquote class="cit">“A história da escolarização não é idêntica à história da educação”<cite>Hamilton, 2001, p. 51</cite></blockquote></div></section>
+  <section class="note"><div class="cue"><span>Ponte</span></div><div class="note-body"><p>Azanha parte de Comênio; Hamilton mostra de onde veio o sonho do método. Ajuda a ver como históricas, e não naturais, práticas que parecem óbvias na sala observada: a turma como classe, a sequência ordenada, o método como resposta.</p></div></section>
+</article>
+
+<h2 class="section-h" id="clube">Clube de Leitura</h2>
+<section class="intro">
+  <p><strong>O Clube pede que um romance seja lido como fonte sobre o trabalho docente.</strong> Cada grupo escolheu um livro entre os indicados e responde a quatro perguntas: apresentar o livro, identificar os professores retratados, descrever a cultura escolar vivida e dizer por que o livro marca quem quer ser professor.</p>
+</section>
+
+<article class="modulo" id="nickel">
+  <header class="modulo-h"><span class="modulo-num">Livro do grupo</span><h2>O Reformatório Nickel</h2></header>
+  <p class="ref">WHITEHEAD, Colson. <em>O reformatório Nickel</em>. Tradução de Rogério W. Galindo. Rio de Janeiro: HarperCollins Brasil, 2024. 240 p. Original: <em>The Nickel Boys</em>, 2019. Prêmio Pulitzer de Ficção 2020.</p>
+  <ul class="chips"><li class="chip chip-acc">leitura em andamento</li><li class="chip chip-warn">data do Clube a confirmar em 25/11</li><li class="chip">capítulo 1 em áudio na pasta local</li></ul>
+
+  <section class="note"><div class="cue"><span>1 · O livro</span></div><div class="note-body">
+    <h3>Ficção inspirada na Dozier School for Boys</h3>
+    <p>Nos agradecimentos, Whitehead conta que a história é inventada, mas inspirada num reformatório real de Marianna, na Flórida, cujo cemitério clandestino veio à tona por reportagens de 2014 e pelo trabalho forense de uma equipe da Universidade do Sul da Flórida (p. 237–238).</p>
+    <p><strong>Enredo sem o desfecho.</strong> O prólogo começa no presente, com a descoberta do cemitério secreto. Na Parte Um, em Tallahassee no início dos anos 1960, Elwood Curtis cresce com a avó Harriet, ouvindo um disco de discursos de Martin Luther King. A caminho da primeira aula numa faculdade, pega carona num carro roubado e é tratado como ladrão. Na Parte Dois, é mandado ao Nickel, conhece Turner e aprende como a instituição funciona. A Parte Três alterna o adulto em Nova York e o fim da história no reformatório.</p>
+    <p><strong>Forma.</strong> Narrador em terceira pessoa, voz contida, com humor amargo e pouca descrição direta da violência. Antecipações ligam o passado ao presente. Discursos de King entram em itálico como contraponto ético; também aparecem Baldwin e a “Carta da prisão de Birmingham”.</p>
+  </div></section>
+
+  <section class="note"><div class="cue"><span>2 · Os professores</span></div><div class="note-body">
+    <h3>Educadores fora e dentro do Nickel</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Quem</th><th>Função</th><th>Como age</th><th>p.</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Sr. Hill</strong></td><td>professor de história na escola negra de Elwood</td><td>Distribui canetas para os alunos riscarem os xingamentos racistas dos livros de segunda mão. Militante, dá Baldwin a Elwood e abre a vaga no curso gratuito. Autoridade moral e política.</td><td class="num">35–47</td></tr>
+        <tr><td><strong>Harriet</strong></td><td>avó, educadora familiar</td><td>Regras rígidas, trabalho como proteção, medo do custo da militância.</td><td class="num">26–44</td></tr>
+        <tr><td><strong>Spencer</strong></td><td>superintendente</td><td>Discurso de recepção, sistema de patentes, espancamentos na Casa Branca. Autoridade pelo terror.</td><td class="num">56–81</td></tr>
+        <tr><td><strong>Blakeley</strong></td><td>responsável pelo dormitório Cleveland</td><td>Recepção suave, filosofia do trabalho, “Sim, senhor” o tempo todo.</td><td class="num">59–63</td></tr>
+        <tr><td><strong>Sr. Goodall</strong></td><td>professor dos meninos mais velhos</td><td>Ninguém presta atenção; não corrige a leitura; promete aulas avançadas e esquece. O professor ausente.</td><td class="num">69–70, 98</td></tr>
+        <tr><td><strong>Srta. Baker</strong></td><td>professora de arte</td><td>Jovem, indignada com a precariedade e com a resistência às melhorias. Os professores jovens não duram.</td><td class="num">133–135</td></tr>
+        <tr><td><strong>Hardee</strong></td><td>diretor</td><td>Quase não sai do gabinete; mestre de cerimônias do boxe e do Natal; maquia a escola para a inspeção.</td><td class="num">71, 134, 190</td></tr>
+        <tr><td><strong>Harper</strong></td><td>supervisor branco de 20 anos</td><td>Comanda o desvio de suprimentos para comerciantes da cidade.</td><td class="num">101–108</td></tr>
+        <tr><td><strong>Phil</strong>, <strong>Terrance Crowe</strong></td><td>funcionários</td><td>Fingem não ver; Elwood chama Crowe de “um dos maiores cúmplices”.</td><td class="num">76, 197–198</td></tr>
+      </tbody>
+    </table></div>
+    <p class="fonte"><span>Fonte</span> Leitura integral do OCR do livro. Outros funcionários violentos e abusadores aparecem nas p. 77–79, 85–92, 116–117, 139–149 e 166–173.</p>
+  </div></section>
+
+  <section class="note"><div class="cue"><span>3 · Cultura escolar</span></div><div class="note-body">
+    <h3>Uma escola na forma, sem relação pedagógica</h3>
+    <div class="grid2">
+      <div class="panel"><h3>Espaços</h3><p>Sem muro nem cerca: o campus parece uma escola de verdade (p. 55–56). Brancos colina abaixo, negros colina acima; ginásio e piscina em horários separados (p. 59, 71, 174). O muro real é a Casa Branca, onde se apanha (p. 79).</p></div>
+      <div class="panel"><h3>Tempos</h3><p>Alvorada, banho gelado de dois minutos, fila dupla, refeitório hierarquizado (p. 64–65). Aula em dias alternados com trabalho (p. 60). Rituais: boxe em dezembro, espetáculo de Natal, inspeção maquiada (p. 115, 134, 190–199).</p></div>
+      <div class="panel"><h3>Mérito</h3><p>Quatro patentes, de Desbravador a Ás; quem chega a Ás “se forma” (p. 57). Contam trabalho e docilidade, não estudo: “Os professores não faziam chamada nem davam notas” (p. 68). O manual de conduta nunca é visto (p. 136).</p></div>
+      <div class="panel"><h3>Trabalho e corrupção</h3><p>Os alunos fabricam tijolos e cuidam das lavouras e da gráfica (p. 60, 89). Comida, remédios e material escolar dos negros são vendidos na cidade (p. 104–106).</p></div>
+      <div class="panel"><h3>Regras e punições</h3><p>Dizer “Sim, senhor” e só falar com um branco se ele começar (p. 61, 200). Surras, celas escuras, abuso, mortes registradas como fugas (p. 79, 94, 132, 214).</p></div>
+      <div class="panel"><h3>Discurso oficial</h3><p>O folheto promete treinamento físico, intelectual e moral; os internos são chamados de “alunos” (p. 89). Na recepção, Spencer diz que ali é uma escola e eles são os professores (p. 57).</p></div>
+    </div>
+  </div></section>
+
+  <section class="note"><div class="cue"><span>4 · Por que marca</span></div><div class="note-body">
+    <h3>Seis pontos para quem vai ensinar</h3>
+    <ol>
+      <li><strong>Sr. Hill e sr. Goodall.</strong> Os dois ensinam garotos negros; um transforma o material racista em ato pedagógico, o outro desiste. <em>Interpretação:</em> com Noblit, a autoridade pode estar a serviço do cuidado ou virar dominação e abandono.</li>
+      <li><strong>Forma escolar sem relação.</strong> Aulas, ranking, formatura e festa, medindo obediência. <em>Interpretação:</em> com Dubet, o papel institucional não garante a relação pedagógica.</li>
+      <li><strong>Vista grossa.</strong> Elwood pensa que fingir não ver o tornaria tão culpado quanto os outros (p. 95). O adulto que não bate, mas cala, participa da cultura da instituição.</li>
+      <li><strong>Uma experiência que marca para a vida.</strong> O reformatório não acaba quando se sai dele (p. 186). <em>Interpretação:</em> com Larrosa, a escola também pode produzir experiências que deformam.</li>
+      <li><strong>Saberes sufocados.</strong> Os saberes do sr. Hill vêm da formação e da militância; a srta. Baker esbarra na instituição. <em>Interpretação:</em> com Tardif, saberes se constroem e se perdem na relação com a escola.</li>
+      <li><strong>Racismo institucional e expectativas.</strong> Para quem vai ensinar em escolas públicas brasileiras, o livro pergunta que expectativas a escola deposita, ou deixa de depositar, em cada aluno.</li>
+    </ol>
+  </div></section>
+
+  <section class="note"><div class="cue"><span>Citação</span></div><div class="note-body"><blockquote class="cit">“Todos os infratores violentos que havia no Nickel, acrescentou Elwood, eram funcionários.”<cite>Whitehead, 2024, p. 89 (texto conferido no OCR)</cite></blockquote></div></section>
+
+  <details class="spoiler"><summary>Desfecho do livro (spoiler)</summary>
+    <ul>
+      <li>Turner entrega ao inspetor a carta de denúncia de Elwood (p. 205–206). Elwood é espancado e trancado numa cela escura; os dois fogem, e Harper mata Elwood na estrada (p. 215–226).</li>
+      <li>O homem de Nova York é Turner, que adotou o nome do amigo para viver por ele (p. 227–228). No epílogo, em 2014, conta a verdade à mulher e vai a Tallahassee depor sobre o cemitério (p. 229–235).</li>
+      <li>Griff não perde a luta combinada, é levado “lá atrás” e nunca volta; é exumado cinquenta anos depois (p. 131–132).</li>
+    </ul>
+  </details>
+
+  <details class="fold"><summary>Personagens principais</summary>
+    <ul>
+      <li><strong>Elwood Curtis</strong>: garoto negro de Tallahassee, idealista, leitor de King.</li>
+      <li><strong>Turner</strong>: amigo no Nickel, de Houston, cético e estrategista.</li>
+      <li><strong>Harriet Johnson</strong>: avó de Elwood, camareira do Richmond Hotel.</li>
+      <li><strong>Sr. Hill</strong>: professor de história, ativista. <strong>Sr. Marconi</strong>: dono da tabacaria.</li>
+      <li><strong>Spencer, Blakeley, Hardee, Harper, Earl, Hennepin</strong>: funcionários do Nickel.</li>
+      <li><strong>Sr. Goodall e srta. Baker</strong>: professores no Nickel.</li>
+      <li><strong>Desmond, Jaimie, Griff, Corey, Chickie Pete, Clayton Smith</strong>: outros garotos.</li>
+    </ul>
+  </details>
+</article>
+
+<article class="modulo" id="pennac">
+  <header class="modulo-h"><span class="modulo-num">Indicado à turma</span><h2>Diário de escola</h2></header>
+  <p class="ref">PENNAC, Daniel. <em>Diário de escola</em>. Tradução de Leny Werneck. Rio de Janeiro: Rocco, 2008. Original: <em>Chagrin d'école</em>, 2007.</p>
+  <ul class="chips"><li class="chip chip-acc">professora recomendou os capítulos 4, 7, 10 e 12</li><li class="chip chip-warn">divisão dos capítulos a confirmar</li></ul>
+  <section class="note"><div class="cue"><span>Tese</span></div><div class="note-body"><p>Um livro sobre o mau aluno, o “lerdo”, e sobre a dor de não entender, partilhada por alunos, pais e professores. Pennac foi lerdo sem causa social aparente, foi salvo por quatro professores e virou professor de francês. No fim, nomeia o que falta aos métodos: amor, entendido como reanimar quem bateu no vidro, independentemente de simpatia pessoal.</p></div></section>
+  <section class="note"><div class="cue"><span>Conceitos</span></div><div class="note-body"><dl class="conc">
+    <div><dt>Lerdo</dt><dd>Não é rótulo sociológico, é experiência de nulidade, vergonha e solidão diante de um mundo em que os outros se entendem.</dd></div>
+    <div><dt>Medo</dt><dd>O ferrolho da escolaridade; tratar o medo é condição para o saber passar.</dd></div>
+    <div><dt>A cebola</dt><dd>O aluno chega com camadas de desgosto, medo e raiva; a aula só começa quando o fardo é posto no chão.</dd></div>
+    <div><dt>Presente de encarnação</dt><dd>Um tempo em que o saber se encarna na aula, sem usar o passado como vergonha nem o futuro como castigo.</dd></div>
+  </dl></div></section>
+  <section class="note note-warn"><div class="cue"><span>Quais capítulos?</span></div><div class="note-body"><p>O livro tem seis partes com seções numeradas, então “capítulo 12” não pode ser uma parte. A hipótese mais coerente são as seções 4, 7, 10 e 12 da Parte I, que vão do lerdo ao professor: o anúncio do livro, a solidão e a vergonha, a busca humilhante de aprovação, e as cartas à mãe aos 14 anos e do pai, dez anos depois, endereçada ao “Professor”. Confirmar com a professora.</p></div></section>
+</article>
+
+<article class="modulo" id="nemesis">
+  <header class="modulo-h"><span class="modulo-num">Indicado, não escolhido</span><h2>Nêmesis</h2></header>
+  <p class="ref">ROTH, Philip. <em>Nêmesis</em>. Tradução de Jorio Dauster. São Paulo: Companhia das Letras, 2011.</p>
+  <section class="note"><div class="cue"><span>Sinopse</span></div><div class="note-body"><p>Newark, verão de 1944. Bucky Cantor, jovem professor de educação física impedido de ir à guerra, cuida do pátio de recreio de uma escola enquanto a poliomielite atinge as crianças. Vai para uma colônia de férias, e a doença chega lá também.</p></div></section>
+  <section class="note"><div class="cue"><span>Por que importa</span></div><div class="note-body"><p>Para a professora, é a maior expressão da culpa entre os livros discutidos. Bucky não aceita os limites da própria responsabilidade e transforma a tragédia em culpa pessoal. <em>Interpretação:</em> é o outro lado do desvelo de Noblit, e o avesso do Nickel, onde os adultos são responsáveis e não sentem culpa nenhuma.</p></div></section>
+</article>
+
+<h2 class="section-h" id="estagio">Estágio e portfólio</h2>
+<div class="grid2">
+  <div class="panel"><h3>O estágio</h3><ul>
+    <li>Escola de Aplicação da FEUSP, acompanhando uma professora de Língua Portuguesa do 4º ano.</li>
+    <li>30 horas: acompanhamento em sala, estudo de materiais e entrevista com a professora.</li>
+    <li>Limite de 6 h por dia; visto da professora a cada dia; ao final, assinaturas e carimbo da escola, do estudante e da docente da FEUSP.</li>
+    <li>Termo de Compromisso da FEUSP: assinado pelo estudante e pela docente, e levado à escola no primeiro dia.</li>
+  </ul></div>
+  <div class="panel"><h3>Prazos</h3>
+    <div class="table-wrap"><table><tbody>
+      <tr><td class="data">25/11</td><td>entrevista com a professora; sem aula na FEUSP</td></tr>
+      <tr><td class="data">27/11</td><td>limite da Escola de Aplicação para entregar a ficha; devolução após cinco dias úteis</td></tr>
+      <tr><td class="data">02/12</td><td>entrega do portfólio e das fichas assinadas</td></tr>
+      <tr><td class="data">04/12</td><td>fim das aulas na Escola de Aplicação</td></tr>
+    </tbody></table></div>
+    <p class="fonte"><span>Atenção</span> entregue em 27/11, a ficha voltaria por volta de 04/12. Combinar com a professora o que entregar em 02/12.</p>
+  </div>
+</div>
+
+<section class="note" style="margin-top:18px"><div class="cue"><span>O portfólio</span></div><div class="note-body">
+  <h3>Nove partes pedidas pela professora</h3>
+  <ol>
+    <li>Capa identificada.</li>
+    <li>Sumário.</li>
+    <li>Apresentação, de uma a duas páginas.</li>
+    <li>Descrição da escola: o Projeto Político-Pedagógico 2024–2028 a apresenta como escola de Educação Básica e de formação de professores.</li>
+    <li>Anotações das aulas, manuscritas valem se legíveis e contextualizadas.</li>
+    <li>Materiais observados ou produzidos, com origem, finalidade e uso.</li>
+    <li>Registro da conversa ou entrevista com a professora.</li>
+    <li>Considerações finais.</li>
+    <li>Referências em ABNT.</li>
+  </ol>
+  <p class="fonte"><span>Fonte</span> aviso da docente no e-Disciplinas, 16/11/2026.</p>
+</div></section>
+
+<section class="note"><div class="cue"><span>Roteiro de observação</span></div><div class="note-body">
+  <div class="table-wrap"><table>
+    <thead><tr><th>Olhar</th><th>O que registrar</th><th>Leitura que ajuda</th></tr></thead>
+    <tbody>
+      <tr><td>Decisões</td><td>mudanças feitas durante a aula e o motivo</td><td><a href="#azanha">Azanha</a></td></tr>
+      <tr><td>Tato</td><td>tom de voz, resposta a perguntas, manejo do erro</td><td><a href="#vicentini">Vicentini et al.</a></td></tr>
+      <tr><td>O próprio olhar</td><td>descrição antes do juízo; o que me aconteceu</td><td><a href="#larrosa">Larrosa</a></td></tr>
+      <tr><td>Poder e cuidado</td><td>quem recebe a palavra; como o erro de leitura é acolhido</td><td><a href="#noblit">Noblit</a></td></tr>
+      <tr><td>Ordem</td><td>tempo gasto para organizar; regras que valem para os dois lados</td><td><a href="#dubet">Dubet</a></td></tr>
+      <tr><td>Saberes</td><td>de onde vêm as decisões da professora</td><td><a href="#tardif">Tardif</a></td></tr>
+      <tr><td>Quem fica para trás</td><td>alunos que ainda não leem com fluência; medo e vergonha</td><td><a href="#silva-vieira">Silva e Vieira</a>, <a href="#pennac">Pennac</a></td></tr>
+      <tr><td>Heranças</td><td>rotinas da forma escolar e pequenas táticas que as deslocam</td><td><a href="#hamilton">Hamilton</a></td></tr>
+    </tbody>
+  </table></div>
+  <p class="fonte"><span>Cuidado</span> não registrar nomes, imagens ou produções identificáveis das crianças.</p>
+</div></section>
+
+<h2 class="section-h" id="conceitos">Conceitos</h2>
+<dl class="gloss">
+  <div><dt>Regra não exaustiva <small>Azanha</small></dt><dd>Orienta e aumenta a chance de sucesso, sem garanti-lo.</dd></div>
+  <div><dt>Solidão docente <small>Azanha</small></dt><dd>Nenhum método decide no lugar do professor.</dd></div>
+  <div><dt>Pressuposição absoluta <small>Azanha</small></dt><dd>Ideia cuja negação paralisaria o esforço educativo.</dd></div>
+  <div><dt>Choque com a realidade <small>Huberman, via Vicentini</small></dt><dd>Entusiasmo inicial que vira sobrevivência na entrada da carreira.</dd></div>
+  <div><dt>Caixa de ovos <small>Hargreaves, via Vicentini</small></dt><dd>Imagem da escola em que cada professor fica isolado na sua sala.</dd></div>
+  <div><dt>Sensibilidade docente <small>Vicentini et al.</small></dt><dd>Atenção à criança que se aprende ao viver a solicitude na formação.</dd></div>
+  <div><dt>Experiência <small>Larrosa</small></dt><dd>O que nos acontece e nos toca, não tudo o que se passa.</dd></div>
+  <div><dt>Gesto de interrupção <small>Larrosa</small></dt><dd>Parar, olhar devagar, suspender o juízo.</dd></div>
+  <div><dt>Desvelo <small>Noblit</small></dt><dd>Cuidado comprometido com o outro e com a relação.</dd></div>
+  <div><dt>Autoridade moral <small>Noblit</small></dt><dd>Autoridade reconhecida na relação, não só pelo cargo.</dd></div>
+  <div><dt>Relação desregulada <small>Dubet</small></dt><dd>A relação pedagógica não está dada; reconstrói-se a cada aula.</dd></div>
+  <div><dt>Quadro normativo <small>Dubet</small></dt><dd>Regras definidas, aplicadas e recíprocas, que obrigam também os adultos.</dd></div>
+  <div><dt>Saberes docentes <small>Tardif</small></dt><dd>Da formação, das disciplinas, do currículo e da experiência.</dd></div>
+  <div><dt>Forma escolar <small>Silva e Vieira</small></dt><dd>Seriação, tempos marcados, provas e notas tomados como natural.</dd></div>
+  <div><dt>Tática <small>Certeau</small></dt><dd>Modo de usar ou deslocar o que a instituição impõe, aproveitando brechas.</dd></div>
+  <div><dt>Lerdo <small>Pennac</small></dt><dd>Experiência de nulidade, vergonha e solidão de quem não entende.</dd></div>
+  <div><dt>Tato pedagógico <small>aula de 07/10</small></dt><dd>Perceber a situação e agir com sensibilidade, sem fórmula pronta.</dd></div>
+  <div><dt>Escolarização <small>Hamilton</small></dt><dd>A escola como atividade separada da vida, nascida com o Estado Moderno.</dd></div>
+</dl>
+
+<h2 class="section-h" id="bibliografia">Bibliografia</h2>
+<section class="note"><div class="cue"><span>Lidas em aula</span></div><div class="note-body">
+<ul class="bib">
+  <li>AZANHA, José Mário Pires. Uma reflexão sobre a Didática. In: <em>Educação: alguns escritos</em>. São Paulo: Companhia Editora Nacional, 1987. p. 70–77.</li>
+  <li>DUBET, François. Quando o sociólogo quer saber o que é ser professor. <em>Revista Brasileira de Educação</em>, n. 5/6, p. 222–231, 1997.</li>
+  <li>HAMILTON, David. Notas de lugar nenhum: sobre os primórdios da escolarização moderna. <em>Revista Brasileira de História da Educação</em>, n. 1, p. 45–73, 2001.</li>
+  <li>LARROSA BONDÍA, Jorge. Notas sobre a experiência e o saber de experiência. <em>Revista Brasileira de Educação</em>, n. 19, p. 20–28, 2002.</li>
+  <li>MEIRIEU, Philippe. O que é aprender? In: <em>Aprender… sim, mas como?</em> Porto Alegre: Artmed, 1998. p. 47–69.</li>
+  <li>NOBLIT, George W. Poder e desvelo na sala de aula. <em>Revista da Faculdade de Educação</em>, v. 21, n. 2, p. 119–137, 1995.</li>
+  <li>PENNAC, Daniel. <em>Diário de escola</em>. Rio de Janeiro: Rocco, 2008.</li>
+  <li>ROTH, Philip. <em>Nêmesis</em>. São Paulo: Companhia das Letras, 2011.</li>
+  <li>SILVA, Vivian Batista da; VIEIRA, Keila da Silva. Diário de escola: narrativas de heranças e metamorfoses do trabalho docente. <em>Cadernos de Pesquisa</em>, v. 28, n. 4, p. 587–608, 2021.</li>
+  <li>TARDIF, Maurice; LESSARD, Claude; LAHAYE, Louis. Os professores face ao saber. <em>Teoria &amp; Educação</em>, n. 4, p. 215–233, 1991.</li>
+  <li>VICENTINI, Paula Perin et al. Vivências iniciais no magistério e formação para a sensibilidade na sala de aula. <em>Revista Práxis Educacional</em>, v. 17, n. 44, p. 190–218, 2021.</li>
+  <li>WHITEHEAD, Colson. <em>O reformatório Nickel</em>. Rio de Janeiro: HarperCollins Brasil, 2024.</li>
+</ul></div></section>
+
+<details class="fold"><summary>Bibliografia completa da ementa (Júpiter) · ✔ = virou leitura de aula</summary>
+<ul class="bib">
+  <li>ALMEIDA, Guido de. <em>O professor que não ensina</em>. Summus, 1996.</li>
+  <li class="lida">AZANHA, J. M. P. Uma reflexão sobre a Didática, 1985.</li>
+  <li>BISSERET, Noëlle. A ideologia das aptidões naturais, 1979.</li>
+  <li>BOURDIEU, P.; SAINT-MARTIN, M. As categorias do juízo professoral, 1998.</li>
+  <li>BUENO, B. O.; CATANI, D. B.; SOUSA, C. P. <em>A vida e o ofício dos professores</em>, 1998.</li>
+  <li>CASTRO, A. D.; CARVALHO, A. M. P. (orgs.). <em>Ensinar a ensinar</em>, 2001.</li>
+  <li>CATANI, D. B.; GALLEGO, R. C. <em>Avaliação</em>. UNESP, 2009.</li>
+  <li>CATANI, D. B. et al. <em>Docência, memória e gênero</em>, 1997.</li>
+  <li>CHARLOT, B. A criança no singular, 1996; <em>Da relação com o saber</em>, 2000.</li>
+  <li>CHERVEL, A. História das disciplinas escolares, 1990.</li>
+  <li>DEMARTINI, Z. B. F. Histórias de vida na abordagem de problemas educacionais, 1998.</li>
+  <li class="lida">DUBET, F. Quando o sociólogo quer saber o que é ser professor, 1997.</li>
+  <li>FOUCAULT, M. <em>Vigiar e punir</em>, 1987.</li>
+  <li>GUIMARÃES, C. E. A disciplina no processo ensino-aprendizagem, 1982.</li>
+  <li>GUSDORF, G. <em>Professores, para quê?</em>, 1967.</li>
+  <li>HARGREAVES, A. <em>Os professores em tempos de mudança</em>, 1998.</li>
+  <li>HOFFMANN, J. <em>Avaliação: mito &amp; desafio</em>, 1993.</li>
+  <li>HUBERMAN, M. O ciclo de vida profissional dos professores, 1992.</li>
+  <li>LEITE, D. M. Educação e relações interpessoais, 1985.</li>
+  <li class="lida">MEIRIEU, P. <em>Aprender… sim, mas como?</em>, 1998.</li>
+  <li>MORAIS, R. (org.). <em>Sala de aula: que espaço é esse?</em>, 1994.</li>
+  <li>NAGLE, J. O discurso pedagógico, 1979.</li>
+  <li class="lida">NOBLIT, G. W. Poder e desvelo na sala de aula, 1995.</li>
+  <li>NÓVOA, A. <em>Formação de professores e trabalho pedagógico</em>, 2002.</li>
+  <li>PATTO, M. H. S. <em>Introdução à psicologia escolar</em>; <em>A produção do fracasso escolar</em>, 1991.</li>
+  <li>PENIN, S. et al. <em>Profissão docente: pontos e contrapontos</em>, 2009.</li>
+  <li>PERRENOUD, P. <em>Avaliação: da excelência à regulação das aprendizagens</em>, 1999; <em>Práticas pedagógicas e profissão docente</em>, 1993.</li>
+  <li>SACRISTÁN, J. G. Consciência e ação sobre a prática como libertação profissional dos professores, 1995.</li>
+  <li>SÃO PAULO. CEE. Deliberação 155/2017; Deliberação 186/2020.</li>
+  <li>SANTIAGO, A. R. F. Projeto político-pedagógico: escola básica e a crise de paradigmas, 1994.</li>
+  <li>SCHEFFLER, I. <em>A linguagem da educação</em>, 1974.</li>
+  <li>TARDIF, M. Saberes profissionais dos professores e conhecimentos universitários, 2000.</li>
+  <li>THOMPSON, P. <em>A voz do passado: história oral</em>, 1992.</li>
+  <li>WOODS, P. <em>Investigar a arte de ensinar</em>, 1999.</li>
+</ul>
+</details>
+
+<section class="box box-warn" style="margin-top:32px"><div class="box-h">Ainda a conferir</div><ul>
+  <li>Baixar Meirieu e Tardif do e-Disciplinas e completar os dois blocos.</li>
+  <li>Material de Perrenoud indicado em 21/10: título e páginas.</li>
+  <li>Quais são os “capítulos” 4, 7, 10 e 12 de <em>Diário de escola</em>.</li>
+  <li>Data e formato do Clube de Leitura, e o peso de Clube e estágio na nota.</li>
+  <li>Citações de <em>O Reformatório Nickel</em> vêm de OCR: conferir no livro antes de usar no trabalho do grupo.</li>
+</ul></section>
+
+</main>
+
+<footer class="footer gutter">
+  <p><strong>EDM0402 · Didática</strong> · Faculdade de Educação da USP · 2º semestre de 2026 · turma de quarta-feira.</p>
+  <p>Notas de estudo de Jhuann Piedro a partir do cronograma e da ementa da disciplina, das leituras indicadas pela Prof.ª Vivian Batista da Silva e dos livros do Clube de Leitura. Sínteses, ligações entre autores e erros são das notas; não é material oficial da disciplina.</p>
+  <p>Família das <a href="../aga0299/">notas de AGA0299</a>. Disciplinas de ensino usam o tema rosa.</p>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  try { var t = localStorage.getItem('edm-tema'); if (t) root.dataset.theme = t; } catch (e) {}
+  document.getElementById('tema').addEventListener('click', function () {
+    var dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('edm-tema', root.dataset.theme); } catch (e) {}
+  });
+  var links = Array.prototype.slice.call(document.querySelectorAll('.secnav a'));
+  var alvos = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+  function marca() {
+    var y = window.scrollY + 120, ativo = -1;
+    alvos.forEach(function (el, i) { if (el && el.getBoundingClientRect().top + window.scrollY <= y) ativo = i; });
+    links.forEach(function (a, i) { a.classList.toggle('on', i === ativo); });
+  }
+  window.addEventListener('scroll', marca, { passive: true });
+  marca();
+})();
+</script>
+</body>
+</html>
