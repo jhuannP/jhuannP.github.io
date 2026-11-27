@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VI · Indução magnética — Física III para IME</title>
+<meta name="description" content="Fluxo magnético, lei de Faraday–Neumann–Lenz, campo elétrico induzido, haste nos trilhos, motor linear, gerador de corrente alternada e a barra com bateria do simulado.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('fis3-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Física III <em>para IME</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="cap1.html" title="Força magnética">I</a><a href="cap2.html" title="Torque e dipolo magnético">II</a><a href="cap3.html" title="Lei de Biot–Savart">III</a><a href="cap4.html" title="Lei de Ampère">IV</a><a href="cap5.html" title="Meios magnéticos">V</a><a class="on" href="cap6.html" title="Indução magnética">VI</a><a href="cap7.html" title="Indutância e energia magnética">VII</a><a href="cap8.html" title="Maxwell e ondas">VIII</a><a class="prova" href="prova.html" title="Resolução da prova">Prova</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<section class="chapter-hero" data-num="VI">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo VI · Slides “Indução Magnética”</p>
+    <h1>Indução magnética</h1>
+    <p class="lede">Um ímã parado ao lado de uma bobina não faz nada. Basta mexê-lo para aparecer uma corrente. Este capítulo explica por quê, para que lado ela anda e como isso acende as lâmpadas do país.</p>
+    <div class="meta"><span>Sears §29.1–29.6 · p. 305–323</span><span>Quick quiz e Exercícios 29, 30 e 31 dos slides</span><span>Simulado P2, Exercício 2</span><span>5 simulações</span></div>
+  </div>
+</section>
+
+<div class="layout">
+  <nav class="toc" aria-label="Neste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol>
+      <li><a href="#fluxo"><span class="toc-num">1</span>Fluxo magnético</a></li>
+      <li><a href="#faraday"><span class="toc-num">2</span>Lei de Faraday–Neumann–Lenz</a></li>
+      <li><a href="#campoE"><span class="toc-num">3</span>O campo elétrico induzido</a></li>
+      <li><a href="#quiz"><span class="toc-num">4</span>Quick quiz: ímã e bobina</a></li>
+      <li><a href="#ex29"><span class="toc-num">5</span>Exercício 29: haste nos trilhos</a></li>
+      <li><a href="#ex30"><span class="toc-num">6</span>Exercício 30: motor linear</a></li>
+      <li><a href="#ex31"><span class="toc-num">7</span>Exercício 31: gerador CA</a></li>
+      <li><a href="#simulado"><span class="toc-num">8</span>Simulado: barra com bateria</a></li>
+      <li><a href="#tubo"><span class="toc-num">9</span>Experimento: ímã no cano</a></li>
+      <li><a href="#resumo"><span class="toc-num">✓</span>Resumo e fórmulas</a></li>
+    </ol>
+  </nav>
+  <main id="conteudo" class="content">
+
+    <!-- ===================== 1 FLUXO ===================== -->
+    <article class="modulo" id="fluxo">
+      <header class="modulo-h"><span class="modulo-num">Módulo 1</span><h2>Fluxo magnético: quanto campo atravessa uma superfície</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Contar linhas que furam uma janela <span class="nivel nivel-1">básico</span></h3>
+        <p>Imagine o campo magnético como chuva de linhas e uma espira como uma janela. O <strong>fluxo magnético</strong> \(\Phi_B\) mede “quantas linhas passam pela janela”. Ele cresce se o campo é mais forte, se a janela é maior, e é máximo quando a janela está de frente para as linhas. Com a janela de lado, nenhuma linha passa: fluxo zero.</p>
+        <p>Unidade: tesla vezes metro quadrado, que tem nome próprio, o <strong>weber</strong>: \(1\ \text{Wb}=1\ \text{T·m}^2\).</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A fórmula</span></div><div class="note-body">
+        <h3>Superfície aberta e o vetor normal \(\hat n\) <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Como no slide, divida a superfície aberta \(S\) em pedacinhos \(dS\). Cada pedacinho tem um <strong>vetor unitário normal</strong> \(\hat n\), e definimos o vetor área \(d\vec S=dS\,\hat n\). O fluxo soma a componente de \(\vec B\) perpendicular a cada pedacinho:</p>
+        $$\Phi_B=\int_S \vec B\cdot d\vec S=\int_S \vec B\cdot\hat n\,dS \qquad (\text{Sears Eq. 27.6, p. 226})$$
+        <p>Se \(\vec B\) é uniforme e a superfície é plana, de área \(A\), isso vira \(\Phi_B=BA\cos\varphi\), onde \(\varphi\) é o ângulo entre \(\vec B\) e \(\hat n\).</p>
+        <figure class="figure">
+          <svg viewBox="0 0 560 230" role="img" aria-label="Superfície aberta atravessada por linhas de B, com vetor normal n e um elemento dS; à direita uma superfície fechada com linhas entrando e saindo">
+            <defs><marker id="a6c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker>
+            <marker id="a6o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker></defs>
+            <g stroke="var(--cyan)" stroke-width="1.6" fill="none">
+              <path d="M30 70 C110 60 200 64 300 58" marker-end="url(#a6c)"/><path d="M30 110 C110 105 200 110 300 106" marker-end="url(#a6c)"/>
+              <path d="M30 150 C110 152 200 156 300 158" marker-end="url(#a6c)"/><path d="M30 190 C110 196 200 200 300 206" marker-end="url(#a6c)"/>
+            </g>
+            <ellipse cx="165" cy="130" rx="38" ry="80" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2" opacity=".85"/>
+            <rect x="158" y="112" width="16" height="22" fill="none" stroke="var(--ink)" stroke-width="1.4"/>
+            <text x="180" y="128" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">dS</text>
+            <line x1="166" y1="123" x2="236" y2="123" stroke="var(--accent)" stroke-width="2.4" marker-end="url(#a6o)"/>
+            <text x="240" y="118" font-size="15" fill="var(--accent)" font-family="IBM Plex Sans" font-weight="600">n̂</text>
+            <text x="150" y="226" font-size="13" fill="var(--muted)" font-family="IBM Plex Sans">área aberta S</text>
+            <text x="30" y="56" font-size="14" fill="var(--cyan)" font-family="IBM Plex Sans" font-weight="600">B</text>
+            <circle cx="450" cy="125" r="62" fill="var(--surface-2)" stroke="var(--ink)" stroke-width="1.6"/>
+            <g stroke="var(--cyan)" stroke-width="1.6" fill="none">
+              <path d="M350 95 L550 95" marker-end="url(#a6c)"/><path d="M350 125 L550 125" marker-end="url(#a6c)"/><path d="M350 155 L550 155" marker-end="url(#a6c)"/>
+            </g>
+            <text x="402" y="214" font-size="13" fill="var(--muted)" font-family="IBM Plex Sans">fechada: entra = sai</text>
+          </svg>
+          <figcaption>À esquerda, uma superfície aberta (como a da espira) com normal \(\hat n\). À direita, uma superfície fechada: toda linha que entra também sai, e o fluxo total é zero.</figcaption>
+        </figure>
+      </div></section>
+
+      <section class="note note-key"><div class="cue"><span>O sinal</span></div><div class="note-body">
+        <h3>O sinal do fluxo é uma escolha sua <span class="nivel nivel-3">avançado</span></h3>
+        <p>Uma superfície aberta tem dois lados, então há duas normais possíveis: \(\hat n\) e \(-\hat n\). Trocar a normal troca o sinal do fluxo. Não existe a normal “certa”; existe a normal <strong>combinada com um sentido de circulação</strong> na borda da superfície:</p>
+        <aside class="box box-key"><div class="box-h">Regra da mão direita para a borda</div><p>Curve os dedos da mão direita no sentido escolhido para percorrer a espira. O polegar aponta \(\hat n\). Anti-horário visto de cima ⇒ \(\hat n\) para cima (\(+\hat k\)); horário ⇒ \(\hat n=-\hat k\). Uma fem ou corrente <em>positiva</em> anda nesse sentido escolhido; uma negativa anda ao contrário.</p></aside>
+        <p>É isso que o professor chama, no Exercício 29, de “reconhecer o sinal do fluxo implica reconhecer a direção da normal associada à circulação da corrente induzida”.</p>
+      </div></section>
+
+      <details class="reveal"><summary>Estudante: o que acontece com o fluxo magnético quando ele atravessa toda uma área fechada?</summary><div>
+        <p>Ele é <strong>zero</strong>. Para superfícies fechadas usa-se sempre a normal apontando para fora, e cada linha de \(\vec B\) que entra também sai, porque linhas de \(\vec B\) não começam nem terminam em lugar nenhum:</p>
+        $$\oint_S\vec B\cdot d\vec S=0 \qquad (\text{Lei de Gauss do magnetismo, Sears Eq. 27.8, p. 227})$$
+        <p>Comparando com a lei de Gauss elétrica (\(\oint\vec E\cdot d\vec S=q/\varepsilon_0\)): o “zero” significa que <strong>não existe carga magnética</strong> (monopolo). A peça fundamental do magnetismo é o dipolo, que sempre tem um N e um S juntos. Quebre um ímã ao meio e você terá dois ímãs, cada um com N e S.</p>
+      </div></details>
+
+      <div class="quiz"><p class="quiz-q">Uma espira quadrada de lado 10 cm está no plano xy, num campo \(\vec B=-0{,}4\,\hat k\) T. Escolhendo o sentido anti-horário (visto de \(+z\)), quanto vale \(\Phi_B\)?</p>
+        <div class="quiz-opts"><button>\(+4\times10^{-3}\) Wb</button><button data-ok>\(-4\times10^{-3}\) Wb</button><button>Zero, porque \(\vec B\) é perpendicular ao plano</button></div>
+        <p class="quiz-fb">Anti-horário ⇒ \(\hat n=+\hat k\). Então \(\Phi=\vec B\cdot\hat n\,A=(-0{,}4)(0{,}01)=-4\times10^{-3}\) Wb. Se você tivesse escolhido horário (\(\hat n=-\hat k\)), daria \(+4\times10^{-3}\) Wb; as duas respostas são corretas <em>com o sentido declarado</em>. Perpendicular ao plano é justamente o caso de fluxo máximo.</p></div>
+
+      <p class="fonte"><span>Sears</span> §27.3 “Linhas de campo magnético e fluxo magnético”, p. 225–228.</p>
+    </article>
+
+    <!-- ===================== 2 FARADAY ===================== -->
+    <article class="modulo" id="faraday">
+      <header class="modulo-h"><span class="modulo-num">Módulo 2</span><h2>Lei de Faraday–Neumann–Lenz</h2></header>
+
+      <section class="note"><div class="cue"><span>A história</span></div><div class="note-body">
+        <h3>O experimento inicial de Faraday <span class="nivel nivel-1">básico</span></h3>
+        <p>Em 1831, Faraday enrolou fios num carretel de madeira e ligou as pontas a um galvanômetro (um medidor de corrente sensível). Depois aproximou um <strong>solenoide</strong> ligado a uma bateria, que funciona como um ímã. Resultado:</p>
+        <ul>
+          <li>solenoide parado, perto ou longe: o ponteiro fica no zero;</li>
+          <li>solenoide se aproximando: o ponteiro mexe para um lado;</li>
+          <li>solenoide se afastando: o ponteiro mexe para o <strong>outro</strong> lado;</li>
+          <li>mais rápido: ponteiro mexe mais.</li>
+        </ul>
+        <p>A conclusão dele: não é o campo que gera a tensão, é a <strong>variação</strong> do fluxo. A tensão detectada era proporcional a \(d\Phi/dt\).</p>
+        <figure class="figure">
+          <svg viewBox="0 0 560 210" role="img" aria-label="Solenoide com bateria se aproximando de um carretel de madeira com espiras ligadas a um galvanômetro">
+            <defs><marker id="a6k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--ink)"/></marker>
+            <marker id="a6b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker></defs>
+            <rect x="40" y="60" width="130" height="56" rx="6" fill="var(--surface-2)" stroke="var(--muted)"/>
+            <g stroke="var(--accent)" stroke-width="2.2" fill="none">
+              <path d="M52 60v56M64 60v56M76 60v56M88 60v56M100 60v56M112 60v56M124 60v56M136 60v56M148 60v56M160 60v56"/>
+            </g>
+            <path d="M52 116 v40 h40 M160 116 v40 h-40" stroke="var(--ink)" fill="none" stroke-width="1.6"/>
+            <path d="M92 146 v20 M100 150 v12" stroke="var(--ink)" stroke-width="2.4"/>
+            <text x="106" y="182" font-size="12" fill="var(--muted)" font-family="IBM Plex Sans">bateria</text>
+            <line x1="70" y1="40" x2="140" y2="40" stroke="var(--ink)" stroke-width="2" marker-end="url(#a6k)"/>
+            <text x="74" y="30" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">aproxima</text>
+            <line x1="175" y1="88" x2="300" y2="88" stroke="var(--cyan)" stroke-width="2" marker-end="url(#a6b)"/>
+            <text x="225" y="80" font-size="14" fill="var(--cyan)" font-family="IBM Plex Sans" font-weight="600">B</text>
+            <rect x="318" y="52" width="90" height="72" rx="4" fill="#b98a5a" opacity=".55"/>
+            <text x="330" y="140" font-size="12" fill="var(--muted)" font-family="IBM Plex Sans">madeira</text>
+            <g stroke="var(--accent)" stroke-width="2.2" fill="none"><path d="M330 52v72M344 52v72M358 52v72M372 52v72M386 52v72M400 52v72"/></g>
+            <path d="M330 124 v40 h120 M400 52 v-22 h80 v100" stroke="var(--ink)" fill="none" stroke-width="1.6"/>
+            <circle cx="480" cy="160" r="30" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.6"/>
+            <line x1="480" y1="172" x2="494" y2="140" stroke="var(--warm)" stroke-width="2.4"/>
+            <text x="474" y="182" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans" font-weight="600">G</text>
+          </svg>
+          <figcaption>Esquema do experimento inicial de Faraday: um solenoide com corrente (o “ímã”) se aproxima de espiras enroladas em madeira. O galvânometro G só acusa corrente enquanto o fluxo nas espiras está mudando.</figcaption>
+        </figure>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A lei</span></div><div class="note-body">
+        <h3>Fem induzida e o sinal de menos <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Uma variação de fluxo produz uma <strong>força eletromotriz (fem)</strong> \(\mathcal E\) (o slide usa \(\xi\)): uma tensão “não eletrostática”, que empurra cargas ao redor do circuito como uma pilha invisível.</p>
+        $$\boxed{\mathcal E=-\frac{d\Phi_B}{dt}}\qquad(\text{Sears Eq. 29.3, p. 307});\qquad \text{com }N\text{ espiras iguais: }\ \mathcal E=-N\frac{d\Phi_B}{dt}$$
+        <p>O fluxo \(\Phi_B=BA\cos\varphi\) pode mudar de três jeitos: mudando \(B\) (ímã se aproxima), mudando a área \(A\) (haste deslizante) ou mudando o ângulo \(\varphi\) (espira girando: o gerador).</p>
+        <p><strong>Lei de Lenz</strong> (o sinal de menos): a corrente induzida circula num sentido tal que o campo que <em>ela</em> cria se opõe à <strong>variação</strong> do fluxo. Não se opõe ao campo, se opõe à mudança. Se o fluxo cresce, o campo induzido aponta contra o externo; se o fluxo diminui, o campo induzido aponta <em>a favor</em> do externo, tentando repor o que está sumindo.</p>
+        <aside class="box box-key"><div class="box-h">Analogia</div><p>A espira é “conservadora”: ela gosta do fluxo que já tem e reage a qualquer mudança, como a inércia reage a mudanças de velocidade. Se fosse o contrário (a corrente induzida reforçasse a mudança), um empurrãozinho num ímã geraria energia infinita. O sinal de menos é a conservação de energia.</p></aside>
+      </div></section>
+
+      <div class="worked"><div class="worked-h"><span>Exemplo</span> Um número para sentir a escala</div>
+        <p>Uma espira de área \(A=0{,}02\ \text{m}^2\) e resistência \(0{,}5\ \Omega\) está perpendicular a um campo que sobe de 0 a \(0{,}5\) T em \(0{,}1\) s.</p>
+        <ol class="steps">
+          <li>Variação do fluxo: \(\Delta\Phi=(0{,}5)(0{,}02)-0=0{,}01\ \text{Wb}\).</li>
+          <li>Fem média: \(|\mathcal E|=\Delta\Phi/\Delta t=0{,}01/0{,}1=0{,}1\ \text{V}\).</li>
+          <li>Corrente: \(i=|\mathcal E|/R=0{,}2\ \text{A}\). Com 200 espiras seriam 20 V: é por isso que bobinas têm muitas voltas.</li>
+          <li>Sentido (Lenz): o fluxo cresce, então o campo induzido aponta contra \(\vec B\) dentro da espira.</li>
+        </ol>
+      </div>
+
+      <section class="note note-warn"><div class="cue"><span>Cuidado</span></div><div class="note-body">
+        <p>“A corrente induzida se opõe ao campo” é <strong>errado</strong>. Ela se opõe à <em>variação</em>. Um ímã sendo <em>afastado</em> faz a espira criar um campo no <strong>mesmo</strong> sentido do campo do ímã.</p>
+      </div></section>
+
+      <p class="fonte"><span>Sears</span> §29.1 “Experiências de indução”, p. 305; §29.2 “Lei de Faraday”, p. 306–315; §29.3 “Lei de Lenz”, p. 315–317.</p>
+    </article>
+
+    <!-- ===================== 3 CAMPO E ===================== -->
+    <article class="modulo" id="campoE">
+      <header class="modulo-h"><span class="modulo-num">Módulo 3</span><h2>Como Maxwell enxerga a indução: um campo elétrico que gira</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Quem empurra os elétrons? <span class="nivel nivel-1">básico</span></h3>
+        <p>Numa espira parada, com um campo \(\vec B\) variando, não há força magnética sobre cargas paradas. Então quem empurra os elétrons? A resposta de Maxwell: <strong>um campo magnético que varia cria um campo elétrico</strong>, mesmo no vácuo, mesmo sem fio nenhum. O fio só serve de trilho para as cargas mostrarem que esse \(\vec E\) existe.</p>
+        <p>Esse \(\vec E\) é estranho: suas linhas <strong>fecham em si mesmas</strong>, girando em volta da região onde \(\vec B\) muda, como no slide. Não começam em cargas positivas nem terminam em negativas.</p>
+        <figure class="figure">
+          <svg viewBox="0 0 520 220" role="img" aria-label="Região circular com campo B saindo da tela e aumentando; linhas de E induzido em círculos ao redor, no sentido horário">
+            <defs><marker id="a6e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker></defs>
+            <circle cx="150" cy="110" r="62" fill="var(--cyan-soft)" stroke="var(--cyan)" stroke-width="1.5"/>
+            <g fill="var(--cyan)"><circle cx="120" cy="85" r="3"/><circle cx="150" cy="85" r="3"/><circle cx="180" cy="85" r="3"/><circle cx="120" cy="115" r="3"/><circle cx="150" cy="115" r="3"/><circle cx="180" cy="115" r="3"/><circle cx="120" cy="145" r="3"/><circle cx="150" cy="145" r="3"/><circle cx="180" cy="145" r="3"/></g>
+            <g fill="none" stroke="var(--cyan)" stroke-width="1"><circle cx="120" cy="85" r="7"/><circle cx="150" cy="85" r="7"/><circle cx="180" cy="85" r="7"/><circle cx="120" cy="115" r="7"/><circle cx="150" cy="115" r="7"/><circle cx="180" cy="115" r="7"/><circle cx="120" cy="145" r="7"/><circle cx="150" cy="145" r="7"/><circle cx="180" cy="145" r="7"/></g>
+            <circle cx="150" cy="110" r="88" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5 4"/>
+            <path d="M150 22 A88 88 0 0 1 238 110" fill="none" stroke="var(--accent)" stroke-width="2.4" marker-end="url(#a6e)"/>
+            <path d="M150 198 A88 88 0 0 1 62 110" fill="none" stroke="var(--accent)" stroke-width="2.4" marker-end="url(#a6e)"/>
+            <text x="246" y="70" font-size="15" fill="var(--accent)" font-family="IBM Plex Sans" font-weight="600">E induzido</text>
+            <text x="280" y="120" font-size="14" fill="var(--ink)" font-family="IBM Plex Sans">B saindo da tela (⊙) e</text>
+            <text x="280" y="140" font-size="14" fill="var(--ink)" font-family="IBM Plex Sans">aumentando ⇒ E circula</text>
+            <text x="280" y="160" font-size="14" fill="var(--ink)" font-family="IBM Plex Sans">no sentido horário</text>
+          </svg>
+          <figcaption>Se \(\vec B\) (saindo da tela) cresce, a circulação de \(\vec E\) é horária: uma corrente nesse sentido criaria campo entrando na tela, contra o aumento (Lenz).</figcaption>
+        </figure>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A equação</span></div><div class="note-body">
+        <h3>Forma integral: a lei de Faraday como equação de Maxwell <span class="nivel nivel-3">avançado</span></h3>
+        <p>A fem é o trabalho por unidade de carga ao dar uma volta: \(\mathcal E=\oint\vec E\cdot d\vec l\). Juntando com Faraday:</p>
+        $$\oint_C\vec E\cdot d\vec l=-\frac{d}{dt}\int_S\vec B\cdot d\vec S \qquad(\text{Sears Eq. 29.10, p. 321})$$
+        <p>O caminho \(C\) é a borda de \(S\), percorrido no sentido ligado a \(\hat n\) pela mão direita. Três consequências:</p>
+        <ul>
+          <li>\(\oint\vec E\cdot d\vec l\neq0\): o \(\vec E\) induzido <strong>não é conservativo</strong>. Não existe “potencial elétrico” para ele; “diferença de potencial” ao longo da espira não faz sentido, só a fem.</li>
+          <li>Na eletrostática, \(\oint\vec E\cdot d\vec l=0\) era a regra. Agora ela vale só quando nada varia no tempo.</li>
+          <li>Na forma diferencial: \(\nabla\times\vec E=-\partial\vec B/\partial t\). É uma das quatro equações de Maxwell (Capítulo VIII).</li>
+        </ul>
+      </div></section>
+
+      <div class="worked"><div class="worked-h"><span>Exemplo</span> \(\vec E\) induzido dentro de um solenoide</div>
+        <p>Um solenoide longo de raio \(R\) tem campo uniforme \(B(t)\) ao longo do eixo, crescendo a uma taxa \(dB/dt\). Qual é \(E\) a uma distância \(r\lt R\) do eixo?</p>
+        <ol class="steps">
+          <li>Simetria: \(\vec E\) é tangente a círculos centrados no eixo e tem o mesmo módulo em todo o círculo de raio \(r\).</li>
+          <li>Lado esquerdo: \(\oint\vec E\cdot d\vec l=E\cdot2\pi r\). Lado direito: \(|d\Phi/dt|=\pi r^2\,dB/dt\).</li>
+          <li>Logo \(E=\dfrac{r}{2}\dfrac{dB}{dt}\) para \(r\lt R\), e \(E=\dfrac{R^2}{2r}\dfrac{dB}{dt}\) para \(r>R\): há campo elétrico <strong>fora</strong> do solenoide, onde \(B\approx0\)! O que conta é o fluxo englobado pelo caminho.</li>
+        </ol>
+      </div>
+
+      <p class="fonte"><span>Sears</span> §29.5 “Campos elétricos induzidos”, p. 320–322 (Eqs. 29.10 e 29.11, p. 321).</p>
+    </article>
+
+    <!-- ===================== 4 QUIZ ÍMÃ ===================== -->
+    <article class="modulo" id="quiz">
+      <header class="modulo-h"><span class="modulo-num">Módulo 4</span><h2>Quick quiz: o ímã entrando e saindo da bobina</h2></header>
+
+      <section class="note"><div class="cue"><span>O enunciado</span></div><div class="note-body">
+        <h3>A pergunta do slide <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Uma bobina ligada a um galvanômetro recebe uma barra imantada. “Esboce a polaridade da corrente quando a barra entra e quando a barra sai da bobina. Assuma que o polo no dedo da pessoa é o polo <strong>Sul</strong>.” Ou seja: a pessoa segura a barra pelo Sul, e é o polo <strong>Norte</strong> que entra primeiro na bobina (como no desenho do slide, com o N embaixo e a barra descendo).</p>
+        <ol class="steps">
+          <li><strong>Campo do ímã na bobina:</strong> linhas saem do N. Com o N entrando por cima, o campo dentro da bobina aponta para baixo, para dentro dela.</li>
+          <li><strong>Entrando:</strong> o fluxo para baixo <em>cresce</em>. Lenz: a bobina cria campo para <strong>cima</strong>. Uma bobina com campo para cima tem um N na face de cima: <strong>N contra N, repulsão</strong>. Visto de cima, a corrente induzida gira no sentido <strong>anti-horário</strong>.</li>
+          <li><strong>Saindo:</strong> o fluxo para baixo <em>diminui</em>. A bobina cria campo para <strong>baixo</strong>, repondo o que some. A face de cima vira S, que <strong>atrai</strong> o N que vai embora. Corrente <strong>horária</strong> vista de cima: polaridade <strong>invertida</strong> no galvanômetro.</li>
+          <li><strong>Parado lá dentro:</strong> fluxo constante, corrente zero, ponteiro no zero.</li>
+        </ol>
+        <aside class="box box-key"><div class="box-h">Truque para a polaridade</div><p>Olhe para uma face da bobina. Corrente <strong>anti-horária</strong> ⇒ essa face é um polo <strong>N</strong>; horária ⇒ S. (Desenhe as letras N e S com setas nas pontas: as setas do “N” giram no anti-horário.) E a bobina sempre “briga” com o ímã: <strong>entrando repele, saindo atrai</strong>.</p></aside>
+        <p>Qual terminal do galvanômetro fica + depende do <strong>sentido do enrolamento</strong> do fio, que a foto não deixa ver. O que é certo e o que a prova cobra: (i) entrar e sair dão polaridades <strong>opostas</strong>; (ii) o campo induzido aponta contra o do ímã ao entrar e a favor ao sair. No esboço do slide, os sinais + e − marcados no amperímetro A para a entrada se invertem para a saída.</p>
+      </div></section>
+
+      <div class="widget" id="w-ima">
+        <p class="w-title">Ímã e bobina com galvanômetro</p>
+        <p class="w-caption"><strong>Arraste o ímã</strong> com o mouse ou o dedo (ou use os botões). A bobina tem 200 espiras e o sentido positivo de circulação é o de \(\hat n=+\hat\imath\) (para a direita, longe do ímã). Seta azul: campo do ímã dentro da bobina; seta laranja: campo induzido. Os dois LEDs estão em antiparalelo: o verde acende com corrente positiva, o vermelho com negativa. Observe que, com o ímã parado, nada acontece.</p>
+        <canvas class="w-canvas" height="300"></canvas>
+        <canvas class="w-canvas" height="170"></canvas>
+        <div class="w-row"><button class="w-btn" data-act="in">Empurrar para dentro</button><button class="w-btn" data-act="out">Puxar para fora</button><button class="w-btn" data-act="through">Atravessar a bobina</button><button class="w-btn" data-act="flip">Virar o ímã (S para a bobina)</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">O ímã atravessa a bobina inteira, entrando pela esquerda e saindo pela direita, com velocidade constante. Como fica o gráfico da fem?</p>
+        <div class="quiz-opts"><button>Um único pulso, sempre do mesmo sinal</button><button data-ok>Dois pulsos de sinais opostos: um ao entrar, outro ao sair, com zero no meio</button><button>Uma fem constante enquanto o ímã está dentro</button></div>
+        <p class="quiz-fb">O fluxo sobe enquanto o ímã chega ao centro (fem de um sinal), é máximo e quase parado no centro (\(d\Phi/dt\approx0\)) e desce ao sair (fem do outro sinal). Aperte “Atravessar a bobina” na simulação e veja o gráfico.</p></div>
+
+      <p class="fonte"><span>Sears</span> §29.3 “Lei de Lenz”, p. 315–317.</p>
+    </article>
+
+    <!-- ===================== 5 EX 29 ===================== -->
+    <article class="modulo" id="ex29">
+      <header class="modulo-h"><span class="modulo-num">Módulo 5</span><h2>Exercício 29: a haste que desliza nos trilhos</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Uma espira que muda de tamanho <span class="nivel nivel-1">básico</span></h3>
+        <p>Trilhos em forma de U e uma haste metálica apoiada neles formam um retângulo condutor. Empurrando a haste, o retângulo cresce, mais linhas de \(\vec B\) passam por ele, e aparece uma fem. É o gerador mais simples possível: você faz força, sai corrente, e os trilhos esquentam.</p>
+        <p>A fem vale \(Bhv\), a “área varrida por segundo” (\(h\cdot v\)) vezes o campo. Essa é a <strong>fem de movimento</strong>.</p>
+        $$|\mathcal E|=Bhv\qquad(\text{Sears Eq. 29.6, p. 317, com } L\to h)$$
+      </div></section>
+
+      <div class="worked prova"><div class="worked-h"><span>Exercício 29 dos slides</span> Haste AA′ com velocidade \(\vec v\) nos trilhos em U, \(\vec B=-B\hat k\) (entrando na página), altura \(h\), resistência \(R\)</div>
+        <figure class="figure">
+          <svg viewBox="0 0 560 250" role="img" aria-label="Trilhos em U com campo entrando na página, haste AA' à direita movendo-se para a direita, corrente anti-horária e força magnética para a esquerda">
+            <defs><marker id="a6r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--warm)"/></marker>
+            <marker id="a6g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--ok)"/></marker>
+            <marker id="a6p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker></defs>
+            <rect x="70" y="52" width="240" height="150" fill="var(--cyan-soft)"/>
+            <g stroke="var(--cyan)" stroke-width="1.4"><path d="M95 72l8 8m0-8l-8 8M155 72l8 8m0-8l-8 8M215 72l8 8m0-8l-8 8M275 72l8 8m0-8l-8 8M95 122l8 8m0-8l-8 8M155 122l8 8m0-8l-8 8M215 122l8 8m0-8l-8 8M275 122l8 8m0-8l-8 8M95 172l8 8m0-8l-8 8M155 172l8 8m0-8l-8 8M215 172l8 8m0-8l-8 8M275 172l8 8m0-8l-8 8M345 72l8 8m0-8l-8 8M345 122l8 8m0-8l-8 8M345 172l8 8m0-8l-8 8M405 72l8 8m0-8l-8 8M405 172l8 8m0-8l-8 8"/></g>
+            <path d="M470 52 H70 V202 H470" fill="none" stroke="var(--muted)" stroke-width="5"/>
+            <rect x="306" y="40" width="10" height="174" fill="var(--accent)"/>
+            <text x="322" y="38" font-size="15" fill="var(--ink)" font-family="IBM Plex Sans" font-weight="600">A</text>
+            <text x="322" y="230" font-size="15" fill="var(--ink)" font-family="IBM Plex Sans" font-weight="600">A′</text>
+            <path d="M88 70 V185 H290" fill="none" stroke="var(--accent)" stroke-width="2.4" marker-end="url(#a6p)"/>
+            <path d="M296 175 V80" fill="none" stroke="var(--accent)" stroke-width="2.4" marker-end="url(#a6p)"/>
+            <text x="100" y="160" font-size="16" fill="var(--accent)" font-family="IBM Plex Sans" font-weight="600">i</text>
+            <line x1="318" y1="128" x2="380" y2="128" stroke="var(--ok)" stroke-width="2.6" marker-end="url(#a6g)"/>
+            <text x="386" y="133" font-size="15" fill="var(--ok)" font-family="IBM Plex Sans" font-weight="600">v</text>
+            <line x1="304" y1="105" x2="246" y2="105" stroke="var(--warm)" stroke-width="2.6" marker-end="url(#a6r)"/>
+            <text x="244" y="96" font-size="15" fill="var(--warm)" font-family="IBM Plex Sans" font-weight="600">Fm</text>
+            <path d="M70 222 H306" stroke="var(--ink)" stroke-width="1"/><text x="180" y="240" font-size="14" fill="var(--ink)" font-family="IBM Plex Sans">l</text>
+            <path d="M490 52 V202" stroke="var(--ink)" stroke-width="1"/><text x="498" y="132" font-size="14" fill="var(--ink)" font-family="IBM Plex Sans">h</text>
+            <text x="12" y="24" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">eixos: x (î) →, y (ĵ) ↑, z (k̂) saindo · B = −B k̂</text>
+          </svg>
+          <figcaption>Figura no padrão do slide: a corrente induzida é anti-horária, sobe na haste (de A′ para A) e a força magnética \(\vec F_m\) aponta contra \(\vec v\).</figcaption>
+        </figure>
+
+        <p><strong>Passo 0 · eixos.</strong> Pedem grandezas vetoriais, então primeiro os eixos: \(\hat\imath\) para a direita (sentido de \(\vec v\)), \(\hat\jmath\) para cima no papel, \(\hat k=\hat\imath\times\hat\jmath\) <strong>saindo</strong> do papel. Assim \(\vec B=-B\hat k\) (os “×” do desenho), \(\vec v=v\hat\imath\), e a haste está a uma distância \(l(t)\) do fundo do U, com \(dl/dt=v\).</p>
+
+        <p><strong>a) Corrente induzida.</strong></p>
+        <ol class="steps">
+          <li><strong>Escolho uma circulação e a normal ligada a ela.</strong> Escolho anti-horário ⇒ \(\hat n=+\hat k\) (mão direita).</li>
+          <li><strong>Fluxo:</strong> \(\Phi=\vec B\cdot\hat n\,A=(-B\hat k)\cdot(\hat k)\,(h\,l)=-Bhl\).</li>
+          <li><strong>Faraday:</strong> \(\mathcal E=-\dfrac{d\Phi}{dt}=-\dfrac{d}{dt}(-Bhl)=+Bh\dfrac{dl}{dt}=+Bhv\).</li>
+          <li><strong>Interpretação do sinal:</strong> \(\mathcal E>0\) significa que a fem empurra no sentido escolhido, <strong>anti-horário</strong>. Corrente: \(i=\dfrac{Bhv}{R}\).</li>
+          <li><strong>Conferência por Lenz:</strong> o fluxo “para dentro” está aumentando; a corrente deve criar campo <strong>para fora</strong> dentro do retângulo; pela mão direita, isso é circulação anti-horária. ✔</li>
+          <li><strong>Vetor na haste:</strong> anti-horário no lado direito do retângulo significa subir, de A′ para A: $$\vec i_{\text{haste}}=\frac{Bhv}{R}\,\hat\jmath$$</li>
+        </ol>
+        <details class="reveal"><summary>E se eu tivesse escolhido o sentido horário?</summary><div>
+          <p>Horário ⇒ \(\hat n=-\hat k\). Então \(\Phi=(-B\hat k)\cdot(-\hat k)hl=+Bhl\) e \(\mathcal E=-Bhv\lt 0\). Negativo quer dizer “ao contrário do sentido escolhido”, ou seja, anti-horário. <strong>Mesma resposta física.</strong> A escolha de \(\hat n\) muda os sinais intermediários, nunca o sentido real da corrente. Na prova, declare a sua escolha.</p>
+        </div></details>
+
+        <p><strong>b) Força sobre a haste.</strong> Força num fio reto: \(\vec F=i\,\vec L\times\vec B\), com \(\vec L\) no sentido da corrente (Sears Eq. 27.19, p. 236). Na haste, \(\vec L=h\hat\jmath\):</p>
+        $$\vec F_m=i\,(h\hat\jmath)\times(-B\hat k)=-ihB\,(\hat\jmath\times\hat k)=-ihB\,\hat\imath=\boxed{-\frac{B^2h^2v}{R}\,\hat\imath}$$
+        <p>Aponta para a esquerda, <strong>contra</strong> \(\vec v\): é a “força de atrito resistente” do enunciado, de origem magnética. Lenz de novo, agora em forma de força: o circuito tenta impedir o aumento de área. Ela é proporcional a \(v\), como um atrito viscoso.</p>
+
+        <p><strong>c) Potência para mover a haste.</strong> Para manter \(v\) constante, alguém aplica \(\vec F_{\text{ext}}=-\vec F_m=+\frac{B^2h^2v}{R}\hat\imath\). Potência mecânica:</p>
+        $$P_{\text{mec}}=\frac{dW}{dt}=\vec F_{\text{ext}}\cdot\vec v=\frac{B^2h^2v^2}{R}$$
+        <p><strong>d) Potência dissipada.</strong> Efeito Joule no resistor:</p>
+        $$P_J=i^2R=\left(\frac{Bhv}{R}\right)^2R=\frac{B^2h^2v^2}{R}=\mathcal E\,i$$
+        <aside class="box box-ok"><div class="box-h">Conclusão do slide</div><p>\(P_{\text{mec}}=P_J\). Toda a potência que você gasta empurrando vira calor no trilho, passando pelo meio do caminho como energia elétrica: <strong>potência mecânica ⇒ (gera) fem ⇒ (dissipa) efeito Joule</strong>. Nenhuma energia surge do nada nem se perde.</p></aside>
+        <p>Números: \(B=0{,}5\) T, \(h=0{,}4\) m, \(v=2\) m/s, \(R=0{,}8\ \Omega\) ⇒ \(\mathcal E=0{,}4\) V, \(i=0{,}5\) A, \(|\vec F_m|=0{,}1\) N, \(P=0{,}2\) W nos dois cálculos.</p>
+      </div>
+
+      <div class="widget" id="w-haste">
+        <p class="w-title">Gerador de haste deslizante (Exercício 29)</p>
+        <p class="w-caption">Vista de cima, campo entrando na tela (×). No modo “empurrar”, uma mão externa mantém \(v\) constante: compare as barras de potência mecânica e de Joule. No modo “soltar”, ninguém empurra; a força magnética freia a haste e a energia cinética vira calor. Animação em câmera lenta.</p>
+        <canvas class="w-canvas" height="300"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Campo B <output data-o="B"></output></span><input type="range" data-k="B" min="0.1" max="2" step="0.1" value="0.5"></label>
+          <label class="w-control"><span>Altura h <output data-o="h"></output></span><input type="range" data-k="h" min="0.1" max="1" step="0.05" value="0.4"></label>
+          <label class="w-control"><span>Velocidade v <output data-o="v"></output></span><input type="range" data-k="v" min="0" max="5" step="0.1" value="2"></label>
+          <label class="w-control"><span>Resistência R <output data-o="R"></output></span><input type="range" data-k="R" min="0.2" max="5" step="0.1" value="0.8"></label>
+          <label class="w-control"><span>Massa da haste m <output data-o="m"></output></span><input type="range" data-k="m" min="0.01" max="0.5" step="0.01" value="0.05"></label>
+        </div>
+        <div class="w-row"><button class="w-btn on" data-act="push">Empurrar com v constante</button><button class="w-btn" data-act="free">Soltar (ninguém empurra)</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <details class="reveal"><summary>Estudante: e se eu soltar a haste, quanto tempo ela leva para parar?</summary><div>
+        <p>Sem força externa, Newton dá \(m\,dv/dt=-\frac{B^2h^2}{R}v\). A solução é \(v(t)=v_0e^{-t/\tau}\) com \(\tau=\frac{mR}{B^2h^2}\). Tecnicamente ela nunca para, mas após uns \(5\tau\) já está praticamente parada. A energia cinética inicial \(\frac12mv_0^2\) vira, inteira, calor \(\int i^2R\,dt\). Use o botão “Soltar” acima.</p>
+      </div></details>
+
+      <p class="fonte"><span>Sears</span> Exemplos 29.5 “Gerador III: um gerador com haste deslizante” e 29.6 “Trabalho e potência no gerador com haste deslizante”, p. 313–314; §29.4 “Força eletromotriz produzida pelo movimento”, p. 317–319.</p>
+    </article>
+
+    <!-- ===================== 6 EX 30 ===================== -->
+    <article class="modulo" id="ex30">
+      <header class="modulo-h"><span class="modulo-num">Módulo 6</span><h2>Exercício 30: o protótipo de motor linear</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>O mesmo circuito, ao contrário <span class="nivel nivel-1">básico</span></h3>
+        <p>No Exercício 29 você empurrava e saía corrente (gerador). Agora uma bateria \(V\) empurra corrente pela haste, o campo faz força nela, e essa força levanta uma massa \(m\) por um fio que passa por uma roldana (motor). Mas a haste, ao andar, <strong>também é um gerador</strong>: produz uma fem que briga contra a bateria. É a “força contraeletromotriz” de todo motor elétrico.</p>
+      </div></section>
+
+      <div class="worked prova"><div class="worked-h"><span>Exercício 30 dos slides</span> Bateria \(V\), haste de comprimento \(h\), \(\vec B=-B\hat k\), massa \(m\) subindo com \(v\) constante</div>
+        <figure class="figure">
+          <svg viewBox="0 0 560 220" role="img" aria-label="Vista de cima: bateria à esquerda, trilhos, haste à direita com corrente descendo e força magnética para a direita; fio da haste para uma roldana à esquerda de onde pende a massa m">
+            <defs><marker id="a6q" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker>
+            <marker id="a6s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--ok)"/></marker>
+            <marker id="a6t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--warm)"/></marker></defs>
+            <path d="M120 40 H470 M120 180 H470" stroke="var(--muted)" stroke-width="5"/>
+            <path d="M120 40 V95 M120 125 V180" stroke="var(--ink)" stroke-width="2"/>
+            <path d="M104 95 H136" stroke="var(--ink)" stroke-width="2.4"/><path d="M112 125 H128" stroke="var(--ink)" stroke-width="5"/>
+            <text x="86" y="92" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">+</text><text x="88" y="132" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">−</text>
+            <text x="140" y="114" font-size="14" fill="var(--ink)" font-family="IBM Plex Sans" font-weight="600">V</text>
+            <rect x="330" y="30" width="10" height="160" fill="var(--accent)"/>
+            <text x="346" y="28" font-size="14" fill="var(--ink)" font-family="IBM Plex Sans" font-weight="600">A</text><text x="346" y="204" font-size="14" fill="var(--ink)" font-family="IBM Plex Sans" font-weight="600">A′</text>
+            <path d="M150 52 H318" stroke="var(--accent)" stroke-width="2.2" fill="none" marker-end="url(#a6q)"/>
+            <path d="M322 60 V160" stroke="var(--accent)" stroke-width="2.2" fill="none" marker-end="url(#a6q)"/>
+            <text x="220" y="70" font-size="14" fill="var(--accent)" font-family="IBM Plex Sans" font-weight="600">i = I − Iᵢ (horário)</text>
+            <line x1="342" y1="110" x2="410" y2="110" stroke="var(--ok)" stroke-width="2.6" marker-end="url(#a6s)"/>
+            <text x="414" y="104" font-size="14" fill="var(--ok)" font-family="IBM Plex Sans" font-weight="600">Fm, v</text>
+            <path d="M330 140 H40" stroke="var(--ink)" stroke-width="1.2" stroke-dasharray="4 3"/>
+            <circle cx="40" cy="150" r="10" fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+            <path d="M30 150 V190" stroke="var(--ink)" stroke-width="1.2"/>
+            <rect x="20" y="190" width="22" height="22" fill="var(--cyan)"/><text x="26" y="206" font-size="13" fill="#fff" font-family="IBM Plex Sans">m</text>
+            <line x1="250" y1="140" x2="200" y2="140" stroke="var(--warm)" stroke-width="2.2" marker-end="url(#a6t)"/>
+            <text x="190" y="158" font-size="13" fill="var(--warm)" font-family="IBM Plex Sans">T = mg</text>
+            <text x="400" y="200" font-size="13" fill="var(--muted)" font-family="IBM Plex Sans">B = −B k̂ (×)</text>
+          </svg>
+          <figcaption>Vista de cima (o slide desenha em perspectiva, com \(\hat k\) para cima e \(-\hat\jmath\) apontando para o leitor). A corrente da bateria circula no sentido horário visto de cima, então \(\hat n=-\hat k\). O fio vai até uma roldana; com a haste indo para \(+\hat\imath\), a massa sobe.</figcaption>
+        </figure>
+
+        <p><strong>a) Corrente nos trilhos.</strong></p>
+        <ol class="steps">
+          <li><strong>Sentido da bateria e normal:</strong> a bateria faz \(I\) circular no sentido horário visto de cima ⇒ \(\hat n=-\hat k\). Na haste, horário significa corrente ao longo de \(-\hat\jmath\) (de A para A′).</li>
+          <li><strong>A força aponta para onde?</strong> \(\vec F_m=i(-h\hat\jmath)\times(-B\hat k)=ihB(\hat\jmath\times\hat k)=+ihB\,\hat\imath\). Empurra a haste para a frente, puxando o fio e levantando \(m\). ✔</li>
+          <li><strong>Fem induzida:</strong> \(\Phi=(-B\hat k)\cdot(-\hat k)\,h\,x=+Bhx\), crescendo. \(\mathcal E_{\text{ind}}=-d\Phi/dt=-Bhv\): negativa, isto é, empurra no sentido <strong>anti-horário</strong>, contra a bateria. A corrente induzida \(I_i=Bhv/R\) se opõe a \(I=V/R\).</li>
+          <li><strong>Corrente líquida (no sentido horário):</strong> $$i=I-I_i=\frac{V-Bhv}{R}$$ No vetor, na haste: \(\vec i=-\dfrac{V-Bhv}{R}\,\hat\jmath\).</li>
+          <li><strong>Velocidade constante</strong> ⇒ força resultante nula na haste: \(ihB=mg\), logo \(i=\dfrac{mg}{Bh}\). Juntando com o item anterior, \(v=\dfrac{V}{Bh}-\dfrac{mgR}{B^2h^2}\).</li>
+        </ol>
+
+        <p><strong>b) Balanço de potências.</strong> Multiplique a equação do circuito, \(V=Bhv+iR\), por \(i\):</p>
+        $$\underbrace{iV}_{\text{fornecida pela bateria}}=\underbrace{(ihB)\,v}_{=\,F_m v\,=\,mgv}+\underbrace{i^2R}_{\text{Joule}}\qquad\Longrightarrow\qquad mgv=\frac{mg}{hB}\,V-R\left(\frac{mg}{hB}\right)^2$$
+        <p>(É exatamente a resposta do slide.)</p>
+
+        <p><strong>c) Interpretação.</strong></p>
+        <ul>
+          <li>A bateria entrega \(iV\). Uma parte, \(mgv\), vira energia potencial da massa (trabalho útil). O resto, \(i^2R\), vira calor.</li>
+          <li>O termo \(Bhv\) (a fem contrária) é <strong>o canal por onde a energia elétrica vira mecânica</strong>: \(i\cdot Bhv=mgv\). Sem fem contrária, não haveria trabalho mecânico.</li>
+          <li>Eficiência: \(\eta=\dfrac{mgv}{iV}=\dfrac{Bhv}{V}\). Quanto mais rápido o motor gira (maior fem contrária), mais eficiente. Motor travado (\(v=0\)) ⇒ \(i=V/R\) máxima e 100% vira calor: é por isso que motor travado queima.</li>
+          <li>Se \(V\lt mgR/(Bh)\), dá \(v\lt0\): a massa desce, puxa a haste para trás e a máquina passa a funcionar como gerador.</li>
+        </ul>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">No motor linear, se a massa \(m\) for dobrada (mesma bateria), o que acontece com a corrente em regime e com a velocidade?</p>
+        <div class="quiz-opts"><button>A corrente cai e a velocidade sobe</button><button data-ok>A corrente dobra (\(i=mg/Bh\)) e a velocidade cai</button><button>Nada muda, a bateria é a mesma</button></div>
+        <p class="quiz-fb">Para equilibrar o dobro do peso, a força \(ihB\) precisa dobrar, então \(i\) dobra. Pela equação do circuito, \(Bhv=V-iR\) diminui: a velocidade cai. Motor com mais carga gira mais devagar e puxa mais corrente.</p></div>
+
+      <p class="fonte"><span>Sears</span> §27.8 “O motor de corrente contínua”, p. 245–247 (fem contrária); Exemplo 29.4 “Gerador II: um gerador de corrente contínua e fem induzida em um motor”, p. 312.</p>
+    </article>
+
+    <!-- ===================== 7 EX 31 ===================== -->
+    <article class="modulo" id="ex31">
+      <header class="modulo-h"><span class="modulo-num">Módulo 7</span><h2>Exercício 31: o gerador de corrente alternada</h2></header>
+
+      <section class="note"><div class="cue"><span>Motivação</span></div><div class="note-body">
+        <h3>De onde vem a energia da tomada <span class="nivel nivel-1">básico</span></h3>
+        <p>Quase toda a energia elétrica do mundo sai do mesmo truque: <strong>girar uma bobina num campo magnético</strong> (ou girar o ímã perto de bobinas). O que muda é quem faz girar: vapor (carvão, gás, nuclear), vento, ou, no caso brasileiro, a <strong>queda d’água</strong>. O slide lembra que o Brasil é afortunado por ter grandes quedas d’água e cita que o país produz cerca de <strong>160 GW</strong> de potência elétrica, distribuída por mais de 10 000 km de rede de transmissão (Martelli et al., <em>Futures</em> 120, 102555, 2020).</p>
+        <p>Dois desafios aparecem no slide: (1) <strong>transmitir sem dissipar</strong>: a perda nos cabos é \(i^2R\), e para a mesma potência \(P=iV\), \(i=P/V\); por isso se transmite em alta tensão (perda \(\propto 1/V^2\)), elevando e baixando a tensão com transformadores, que são indutância mútua (Capítulo VII). (2) <strong>Armazenar</strong>: a demanda não acompanha a geração, e a eficiência das baterias é “o novo desafio para a nossa geração”.</p>
+      </div></section>
+
+      <div class="worked prova"><div class="worked-h"><span>Exercício 31 dos slides</span> Proponha um gerador de corrente alternada que transforme potência mecânica em elétrica</div>
+        <p><strong>Proposta:</strong> uma bobina de \(N\) espiras, área \(A\), girando com velocidade angular constante \(\omega\) em torno de um eixo de simetria perpendicular a um campo uniforme \(\vec B\) (entre os polos de um ímã). As pontas vão a anéis deslizantes, que ligam a bobina ao circuito externo sem torcer os fios.</p>
+        <ol class="steps">
+          <li><strong>Eixos:</strong> \(\vec B=B\hat\imath\), eixo de rotação \(\hat k\). A normal da bobina gira: \(\hat n(t)=\cos\omega t\,\hat\imath+\sin\omega t\,\hat\jmath\) (em \(t=0\), \(\hat n\parallel\vec B\)).</li>
+          <li><strong>Fluxo por espira:</strong> \(\Phi=\vec B\cdot\hat n\,A=BA\cos\omega t\).</li>
+          <li><strong>Faraday com N espiras:</strong> $$\mathcal E(t)=-N\frac{d\Phi}{dt}=NBA\omega\,\sin\omega t,\qquad \mathcal E_{\max}=NBA\omega$$</li>
+          <li><strong>Leitura do gráfico:</strong> a fem é máxima quando o fluxo é <em>zero</em> (plano da bobina paralelo a \(\vec B\)), porque é aí que o fluxo varia mais rápido. E é zero quando o fluxo é máximo. Fem e fluxo estão defasados de 90°.</li>
+          <li><strong>Potência:</strong> com uma carga \(R\), \(P(t)=\mathcal E^2/R\), média \(\bar P=\dfrac{(NBA\omega)^2}{2R}\). A turbina precisa fornecer o torque médio \(\bar\tau=\bar P/\omega\): a corrente na bobina sofre torque magnético contrário à rotação (Lenz outra vez). Sem carga (\(R\to\infty\)) não há corrente, não há torque resistente e a turbina gira “de graça”; ao ligar mais aparelhos, a água precisa empurrar mais.</li>
+        </ol>
+        <p><strong>Números:</strong> \(N=100\), \(B=0{,}5\) T, \(A=0{,}01\ \text{m}^2\), \(f=60\) Hz (\(\omega=2\pi f\approx377\) rad/s): \(\mathcal E_{\max}=100\cdot0{,}5\cdot0{,}01\cdot377\approx189\) V, valor eficaz \(\mathcal E_{\max}/\sqrt2\approx133\) V. Parecido com a tomada.</p>
+      </div>
+
+      <div class="widget" id="w-ac">
+        <p class="w-title">Gerador de corrente alternada</p>
+        <p class="w-caption">A bobina gira entre os polos N e S. A seta laranja é a normal \(\hat n\); as setas azuis, \(\vec B\). Os gráficos mostram \(\Phi(t)\) por espira e \(\mathcal E(t)\); o ponto acompanha o instante atual. Frequências altas são mostradas em câmera lenta.</p>
+        <canvas class="w-canvas" height="280"></canvas>
+        <canvas class="w-canvas" height="190"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Espiras N <output data-o="N"></output></span><input type="range" data-k="N" min="1" max="300" step="1" value="100"></label>
+          <label class="w-control"><span>Campo B <output data-o="B"></output></span><input type="range" data-k="B" min="0.05" max="1.5" step="0.05" value="0.5"></label>
+          <label class="w-control"><span>Área A <output data-o="A"></output></span><input type="range" data-k="A" min="10" max="400" step="10" value="100"></label>
+          <label class="w-control"><span>Frequência f <output data-o="f"></output></span><input type="range" data-k="f" min="0.2" max="60" step="0.2" value="1"></label>
+          <label class="w-control"><span>Carga R <output data-o="R"></output></span><input type="range" data-k="R" min="5" max="500" step="5" value="100"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="br">Rede brasileira (60 Hz)</button><button class="w-btn" data-act="pause">Pausar</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <details class="reveal"><summary>Estudante: se a fem troca de sinal, como a lâmpada não pisca?</summary><div>
+        <p>Ela pisca! A 60 Hz a corrente se anula 120 vezes por segundo, rápido demais para o olho (e o filamento quente não esfria tão rápido). Para obter corrente contínua, troca-se os anéis por um <strong>comutador</strong> (anel partido), que inverte as ligações a cada meia volta (Sears Exemplo 29.4, p. 312).</p>
+      </div></details>
+
+      <p class="fonte"><span>Sears</span> Exemplo 29.3 “Gerador I: um alternador simples”, p. 311; Exemplo 29.4, p. 312.</p>
+    </article>
+
+    <!-- ===================== 8 SIMULADO ===================== -->
+    <article class="modulo" id="simulado">
+      <header class="modulo-h"><span class="modulo-num">Módulo 8</span><h2>Simulado P2, Exercício 2: a barra com bateria</h2></header>
+
+      <section class="note"><div class="cue"><span>A história</span></div><div class="note-body">
+        <h3>Um motor que encontra sua velocidade de cruzeiro <span class="nivel nivel-2">intermediário</span></h3>
+        <p>É o Exercício 30 sem a massa pendurada. A bateria empurra corrente, a força acelera a barra, a barra em movimento gera fem contrária, a corrente cai, a força cai… até que a fem contrária iguala a da bateria: corrente zero, força zero, velocidade constante.</p>
+        <ol class="steps">
+          <li>Início: \(v=0\), \(I=\mathcal E/R\), força máxima.</li>
+          <li>Andando: \(I=\dfrac{\mathcal E-Bdv}{R}\) (Lenz: a fem induzida briga com a bateria).</li>
+          <li>Mais rápido ⇒ menos corrente ⇒ menos força.</li>
+          <li>Quando \(Bdv=\mathcal E\): <strong>velocidade terminal</strong> \(v_T=\mathcal E/(Bd)\).</li>
+        </ol>
+      </div></section>
+
+      <div class="worked prova"><div class="worked-h"><span>Simulado P2 · Exercício 2</span> Barra de massa \(m\), resistência \(R\), trilhos sem atrito separados por \(d\), bateria \(\mathcal E\), \(\vec B\) saindo do plano; parte do repouso em \(t=0\) para a direita</div>
+        <p><strong>Eixos:</strong> \(\hat\imath\) para a direita (sentido do movimento), \(\hat\jmath\) para cima na folha, \(\hat k\) saindo: \(\vec B=+B\hat k\). Para a barra ir para \(+\hat\imath\), a corrente nela precisa subir: \((d\hat\jmath)\times(B\hat k)=Bd\,\hat\imath\). ✔ Subir na barra da direita é circular no sentido anti-horário ⇒ escolho \(\hat n=+\hat k\).</p>
+        <p><strong>a) fem induzida.</strong> Com a barra a uma distância \(x\) da bateria, \(\Phi=(B\hat k)\cdot(\hat k)\,d\,x=Bdx\). Então</p>
+        $$\mathcal E_{\text{ind}}=-\frac{d\Phi}{dt}=-Bd\,v$$
+        <p>O sinal negativo diz: ela empurra no sentido horário, <strong>contra</strong> a bateria (que empurra anti-horário).</p>
+        <p><strong>b) Força magnética (vetorial).</strong> Corrente líquida no sentido anti-horário: \(I=\dfrac{\mathcal E-Bdv}{R}\). Na barra, \(\vec L=d\hat\jmath\):</p>
+        $$\vec F=I\,(d\hat\jmath)\times(B\hat k)=\frac{Bd}{R}\,(\mathcal E-Bdv)\,\hat\imath$$
+        <p><strong>c) Velocidade.</strong> Segunda lei de Newton (sem atrito): \(m\dfrac{dv}{dt}=\dfrac{Bd}{R}(\mathcal E-Bdv)\). Troca de variável \(u=\mathcal E-Bdv\), \(du=-Bd\,dv\):</p>
+        $$\frac{du}{dt}=-\frac{(Bd)^2}{mR}\,u\ \Rightarrow\ u=\mathcal E\,e^{-t/\tau},\qquad \tau=\frac{mR}{(Bd)^2}$$
+        $$\boxed{\vec v(t)=\frac{\mathcal E}{Bd}\left(1-e^{-t/\tau}\right)\hat\imath}\qquad\qquad \boxed{\vec F(t)=\frac{\mathcal E Bd}{R}\,e^{-t/\tau}\,\hat\imath}$$
+        <aside class="box box-key"><div class="box-h">Confira em 10 segundos</div><p>Em \(t=0\): \(v=0\) e a força é máxima, \(\mathcal EBd/R\). Para \(t\to\infty\): \(v\to\mathcal E/(Bd)\) e \(F\to0\). Unidade de \(\tau\): \(\text{kg·Ω}/(\text{T·m})^2=\) s. Se a sua velocidade cresce sem limite, faltou o sinal da Lei de Lenz.</p></aside>
+        <p>A resolução comentada da prova inteira está em <a href="prova.html">Prova</a>.</p>
+      </div>
+
+      <div class="widget" id="w-rail">
+        <p class="w-title">Barra nos trilhos com bateria</p>
+        <p class="w-caption">Vista de cima, \(\vec B\) saindo da tela (pontos). Os pontinhos amarelos são a corrente (mais rápidos = mais corrente) e a seta laranja é a força na barra. O gráfico compara a simulação passo a passo (linha cheia) com a fórmula do gabarito (tracejada). O desenho do movimento está fora de escala.</p>
+        <canvas class="w-canvas" height="250"></canvas>
+        <canvas class="w-canvas" height="190"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>fem da bateria ε <output data-o="E"></output></span><input type="range" data-k="E" min="2" max="24" step="1" value="12"></label>
+          <label class="w-control"><span>Campo B <output data-o="B"></output></span><input type="range" data-k="B" min="0.2" max="2.5" step="0.1" value="1"></label>
+          <label class="w-control"><span>Distância entre trilhos d <output data-o="d"></output></span><input type="range" data-k="d" min="0.2" max="1" step="0.02" value="0.5"></label>
+          <label class="w-control"><span>Resistência R <output data-o="R"></output></span><input type="range" data-k="R" min="0.5" max="8" step="0.5" value="2"></label>
+          <label class="w-control"><span>Massa m <output data-o="m"></output></span><input type="range" data-k="m" min="0.1" max="2" step="0.1" value="0.5"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="restart">Fechar a chave de novo (t = 0)</button><button class="w-btn" data-act="sears">Valores do Sears 29.56</button><button class="w-btn" data-act="nolenz">Desligar Lenz (física errada)</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <section class="note"><div class="cue"><span>Com números</span></div><div class="note-body">
+        <h3>Sears, Problema 29.56 <span class="nivel nivel-2">intermediário</span></h3>
+        <p>É o mesmo exercício: \(L=0{,}36\) m, \(B=2{,}4\) T, \(\mathcal E=12\) V, \(m=0{,}90\) kg, \(R=5{,}0\ \Omega\). Então \(Bd=0{,}864\) T·m, \(v_T=12/0{,}864\approx13{,}9\) m/s, \(\tau=0{,}9\cdot5/0{,}864^2\approx6{,}0\) s, aceleração inicial \(\mathcal EBd/(mR)\approx2{,}3\ \text{m/s}^2\). Aperte “Valores do Sears 29.56” e confira.</p>
+        <p>Balanço de energia em regime: corrente zero, nada dissipa, nada acelera. Durante a aceleração, metade da energia que a bateria entrega vai para a energia cinética final e metade vira calor (resultado clássico: \(\int\mathcal EI\,dt=mv_T^2\), \(\frac12mv_T^2\) fica na barra).</p>
+      </div></section>
+
+      <p class="fonte"><span>Sears</span> Problema 29.56 “Velocidade terminal”, p. 338.</p>
+    </article>
+
+    <!-- ===================== 9 TUBO ===================== -->
+    <article class="modulo" id="tubo">
+      <header class="modulo-h"><span class="modulo-num">Módulo 9</span><h2>Experimento: Lenz em casa com um ímã e um cano</h2></header>
+
+      <div class="widget" id="w-tube">
+        <p class="w-title lab">Ímã caindo num tubo de cobre</p>
+        <p class="w-caption">Solte um ímã de neodímio num cano de cobre e num de PVC do mesmo tamanho. No cobre, o ímã em queda muda o fluxo nas “fatias” do cano; surgem correntes circulares (correntes de Foucault) que o freiam: abaixo dele o fluxo cresce e a fatia repele, acima o fluxo diminui e a fatia atrai. Ele atinge uma velocidade terminal, exatamente como a barra.</p>
+        <canvas class="w-canvas" height="320"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Freio magnético (condutividade × B²) <output data-o="k"></output></span><input type="range" data-k="k" min="2" max="40" step="1" value="14"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="drop">Soltar os ímãs</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <section class="note note-lab"><div class="cue"><span>Experimento</span></div><div class="note-body">
+        <h3>Três versões caseiras, da mais simples à mais caprichada</h3>
+        <ol class="steps">
+          <li><strong>Ímã no cano.</strong> Ímã de neodímio (de fone velho ou comprado) e um pedaço de cano de cobre ou alumínio de ~1 m (loja de material de construção ou de refrigeração). Solte o ímã dentro: ele demora segundos para sair. Compare com um cano de PVC ou com uma moeda de mesmo tamanho no cobre. Olhando por cima, você vê o ímã descer “flutuando”.</li>
+          <li><strong>Régua de alumínio.</strong> Incline uma régua de alumínio e deixe o ímã escorregar; depois numa régua de plástico. No alumínio ele desce devagar e sem acelerar muito.</li>
+          <li><strong>Lanterna de sacudir.</strong> Enrole ~300 voltas de fio esmaltado fino num tubo plástico, ponha um ímã solto dentro, tampe e ligue um LED nas pontas (raspe o esmalte). Sacudindo rápido o LED pisca: cada passagem do ímã dá um pulso, e entrar e sair dão pulsos de sinais opostos. Ligue dois LEDs em antiparalelo para ver isso (como na simulação do Módulo 4).</li>
+        </ol>
+        <p><strong>Segurança:</strong> ímãs de neodímio quebram e beliscam os dedos; mantenha longe de cartões, celulares, marca-passos e crianças pequenas (engolir dois ímãs é emergência médica).</p>
+      </div></section>
+      <p class="fonte"><span>Sears</span> §29.6 “Correntes de Foucault”, p. 322–323.</p>
+    </article>
+
+    <!-- ===================== RESUMO ===================== -->
+    <article class="modulo" id="resumo">
+      <header class="modulo-h"><span class="modulo-num">Fechamento</span><h2>Resumo e fórmulas</h2></header>
+      <div class="table-wrap"><table>
+        <tr><th>Grandeza</th><th>Fórmula</th><th>Quando usar</th></tr>
+        <tr><td>Fluxo magnético</td><td>\(\Phi_B=\int\vec B\cdot\hat n\,dS\); uniforme: \(BA\cos\varphi\)</td><td>Sempre declarar \(\hat n\) (ligado à circulação pela mão direita)</td></tr>
+        <tr><td>Gauss do magnetismo</td><td>\(\oint\vec B\cdot d\vec S=0\)</td><td>Superfície fechada: não há monopolo</td></tr>
+        <tr><td>Faraday–Neumann–Lenz</td><td>\(\mathcal E=-N\,d\Phi_B/dt\)</td><td>Qualquer variação de fluxo (B, área, ângulo)</td></tr>
+        <tr><td>Campo E induzido</td><td>\(\oint\vec E\cdot d\vec l=-\frac{d}{dt}\int\vec B\cdot d\vec S\)</td><td>Não conservativo; existe sem fio</td></tr>
+        <tr><td>Fem de movimento</td><td>\(|\mathcal E|=Bhv\)</td><td>Haste em trilhos (\(\vec v\perp\vec B\perp\) haste)</td></tr>
+        <tr><td>Força na haste</td><td>\(\vec F=i\vec L\times\vec B\) ⇒ \(-\frac{B^2h^2v}{R}\hat\imath\)</td><td>Sempre contra \(\vec v\) no gerador</td></tr>
+        <tr><td>Potências (gerador)</td><td>\(F_{\text{ext}}v=\mathcal Ei=i^2R\)</td><td>Exercício 29</td></tr>
+        <tr><td>Potências (motor)</td><td>\(iV=mgv+i^2R\), \(i=\frac{V-Bhv}{R}\)</td><td>Exercício 30</td></tr>
+        <tr><td>Gerador CA</td><td>\(\Phi=BA\cos\omega t\), \(\mathcal E=NBA\omega\sin\omega t\)</td><td>Exercício 31</td></tr>
+        <tr><td>Barra com bateria</td><td>\(\vec v=\frac{\mathcal E}{Bd}(1-e^{-t/\tau})\hat\imath\), \(\tau=\frac{mR}{(Bd)^2}\)</td><td>Simulado, Ex. 2; Sears 29.56</td></tr>
+      </table></div>
+
+      <section class="note note-warn"><div class="cue"><span>Na prova</span></div><div class="note-body">
+        <h3>Erros comuns</h3>
+        <ul>
+          <li><strong>Não declarar eixos e \(\hat n\).</strong> O professor pede resposta vetorial: escreva \(\hat\imath,\hat\jmath,\hat k\), a normal e o sentido de circulação antes de qualquer conta.</li>
+          <li><strong>Confundir “se opõe ao campo” com “se opõe à variação”.</strong> Fluxo diminuindo ⇒ campo induzido a favor do externo.</li>
+          <li><strong>Trocar a ordem do produto vetorial.</strong> \(\vec F=i\vec L\times\vec B\), com \(\vec L\) no sentido da corrente. \(\hat\jmath\times\hat k=+\hat\imath\), \(\hat k\times\hat\jmath=-\hat\imath\).</li>
+          <li><strong>Somar a fem induzida à da bateria.</strong> Em motor e na barra com bateria, ela <em>subtrai</em>: \(I=(\mathcal E-Bdv)/R\). Se a velocidade não tem limite, o sinal está errado.</li>
+          <li><strong>Esquecer o \(N\).</strong> Bobinas: \(\mathcal E=-N\,d\Phi/dt\).</li>
+          <li><strong>Achar que fem máxima ocorre com fluxo máximo.</strong> No gerador é o contrário: fem máxima quando \(\Phi=0\).</li>
+          <li><strong>Sinal de \(\mathcal E\) negativo assusta?</strong> Não é erro: significa corrente ao contrário do sentido escolhido. Diga isso por escrito.</li>
+        </ul>
+      </div></section>
+    </article>
+
+    <nav class="chapter-nav"><a class="prev" href="cap5.html"><small>← Anterior</small>V · Meios magnéticos</a><a class="next" href="cap7.html"><small>Próximo →</small>VII · Indutância e energia magnética</a></nav>
+  </main>
+</div>
+
+<footer class="footer">
+  <p><strong>Física III · Magnetismo, indução e ondas</strong> · Física para IME (IFUSP) · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir dos slides e do simulado do Prof. Julio A. Larrea J. (IFUSP) e de Young &amp; Freedman, <em>Física III</em>, 14ª ed. Texto, simulações e erros são das notas; não é material oficial da disciplina.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/core.js"></script>
+<script src="assets/cap6.js"></script>
+</body>
+</html>

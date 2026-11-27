@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VII · Indutância e energia magnética — Física III para IME</title>
+<meta name="description" content="Correntes de Foucault, autoindutância do solenoide, energia magnética ½LI² e densidade B²/2μ0, circuito R-L, indutância mútua e o cabo coaxial do Exercício 32.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('fis3-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Física III <em>para IME</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="cap1.html" title="Força magnética">I</a><a href="cap2.html" title="Torque e dipolo magnético">II</a><a href="cap3.html" title="Lei de Biot–Savart">III</a><a href="cap4.html" title="Lei de Ampère">IV</a><a href="cap5.html" title="Meios magnéticos">V</a><a href="cap6.html" title="Indução magnética">VI</a><a class="on" href="cap7.html" title="Indutância e energia magnética">VII</a><a href="cap8.html" title="Maxwell e ondas">VIII</a><a class="prova" href="prova.html" title="Resolução da prova">Prova</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<section class="chapter-hero" data-num="VII">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo VII · Slides “Autoindutância Magnética” (Aula Indução e Energia Magnética)</p>
+    <h1>Indutância e energia magnética</h1>
+    <p class="lede">Um circuito sente o próprio campo: resiste a mudar de corrente, como um corpo pesado resiste a mudar de velocidade. E o campo magnético guarda energia, que dá para calcular dentro de uma bobina ou de um cabo de antena.</p>
+    <div class="meta"><span>Sears §29.6, §30.1–30.4 · p. 322–323, 344–359</span><span>Exercício 32 dos slides</span><span>4 simulações</span></div>
+  </div>
+</section>
+
+<div class="layout">
+  <nav class="toc" aria-label="Neste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol>
+      <li><a href="#foucault"><span class="toc-num">1</span>Correntes de Foucault</a></li>
+      <li><a href="#autoind"><span class="toc-num">2</span>Autoindutância</a></li>
+      <li><a href="#energia"><span class="toc-num">3</span>Energia magnética</a></li>
+      <li><a href="#rl"><span class="toc-num">4</span>Circuito R-L</a></li>
+      <li><a href="#mutua"><span class="toc-num">5</span>Dois circuitos: indutância mútua</a></li>
+      <li><a href="#ex32"><span class="toc-num">6</span>Exercício 32: cabo coaxial</a></li>
+      <li><a href="#lab"><span class="toc-num">7</span>Experimentos</a></li>
+      <li><a href="#resumo"><span class="toc-num">✓</span>Resumo e fórmulas</a></li>
+    </ol>
+  </nav>
+  <main id="conteudo" class="content">
+
+    <!-- ===================== 1 FOUCAULT ===================== -->
+    <article class="modulo" id="foucault">
+      <header class="modulo-h"><span class="modulo-num">Módulo 1</span><h2>Correntes de Foucault: indução sem fio</h2></header>
+
+      <section class="note"><div class="cue"><span>A pergunta</span></div><div class="note-body">
+        <h3>Dá para induzir corrente fora de um fio? <span class="nivel nivel-1">básico</span></h3>
+        <p>O slide abre perguntando se podemos induzir correntes num condutor que não sejam aquelas que ele “transporta” num circuito. Sim. Pense numa placa de metal maciça como uma pilha infinita de espiras grudadas, de todos os tamanhos. Se o fluxo através da placa muda (um ímã passa, ou o campo é alternado), cada uma dessas “espiras imaginárias” ganha uma fem e os elétrons livres giram em <strong>redemoinhos</strong>. Em inglês, <em>eddy currents</em> (redemoinho = <em>eddy</em>); em português, <strong>correntes de Foucault</strong> ou correntes parasitas.</p>
+        <p>Como toda corrente induzida, elas seguem Lenz: giram no sentido que se opõe à variação de fluxo. E como o metal tem resistência, elas <strong>dissipam energia em calor</strong> (efeito Joule).</p>
+        <figure class="figure">
+          <svg viewBox="0 0 560 200" role="img" aria-label="Placa maciça com grandes redemoinhos de corrente e placa cortada em tiras com redemoinhos pequenos, ambas sob campo B(t) para cima">
+            <defs><marker id="a7c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker>
+            <marker id="a7o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker></defs>
+            <line x1="40" y1="170" x2="40" y2="40" stroke="var(--cyan)" stroke-width="2.2" marker-end="url(#a7c)"/>
+            <text x="14" y="30" font-size="14" fill="var(--cyan)" font-family="IBM Plex Sans" font-weight="600">B(t)</text>
+            <rect x="70" y="30" width="150" height="150" fill="var(--cyan-soft)" stroke="var(--ink)" stroke-width="1.4"/>
+            <ellipse cx="145" cy="105" rx="58" ry="58" fill="none" stroke="var(--accent)" stroke-width="2.4"/>
+            <ellipse cx="145" cy="105" rx="30" ry="30" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
+            <path d="M203 100 L203 112" stroke="var(--accent)" stroke-width="2.4" marker-end="url(#a7o)"/>
+            <text x="85" y="196" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">maciça: redemoinhos grandes</text>
+            <line x1="300" y1="170" x2="300" y2="40" stroke="var(--cyan)" stroke-width="2.2" marker-end="url(#a7c)"/>
+            <g fill="var(--cyan-soft)" stroke="var(--ink)" stroke-width="1.4"><rect x="330" y="30" width="26" height="150"/><rect x="362" y="30" width="26" height="150"/><rect x="394" y="30" width="26" height="150"/><rect x="426" y="30" width="26" height="150"/><rect x="458" y="30" width="26" height="150"/></g>
+            <g fill="none" stroke="var(--accent)" stroke-width="1.6"><ellipse cx="343" cy="105" rx="8" ry="55"/><ellipse cx="375" cy="105" rx="8" ry="55"/><ellipse cx="407" cy="105" rx="8" ry="55"/><ellipse cx="439" cy="105" rx="8" ry="55"/><ellipse cx="471" cy="105" rx="8" ry="55"/></g>
+            <text x="330" y="196" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">cortada/laminada: estreitos</text>
+          </svg>
+          <figcaption>Com \(\vec B(t)\) crescendo para cima, os redemoinhos giram no sentido horário visto de cima (campo induzido para baixo). Cortando o metal em tiras isoladas, cada redemoinho fica estreito: menos fluxo por caminho e mais resistência por caminho.</figcaption>
+        </figure>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Situação real</span></div><div class="note-body">
+        <h3>O criostato com bobina supercondutora <span class="nivel nivel-2">intermediário</span></h3>
+        <p>O slide mostra um criostato (TU Wien, 2017): uma geladeira de temperaturas muito baixas com uma <strong>bobina de fio supercondutor</strong> (\(R=0\)) que produz um campo alternado \(B(t)\), mais homogêneo no centro. Muitos problemas de engenharia e de materiais são estudados assim. “E eu, o que tenho a ver com isso?” A pegadinha: qualquer peça condutora dentro do campo alternado (porta-amostra, suporte de cobre, a própria amostra) vira palco de correntes de Foucault e <strong>esquenta</strong>. Num criostato, alguns miliwatts de calor podem ser o suficiente para estragar a medida.</p>
+        <aside class="box box-warn"><div class="box-h">Be careful: como reduzir as correntes de Foucault</div><p>Fazer <strong>cortes</strong> no metal (fendas, lâminas isoladas, fios finos em vez de bloco). O slide escreve “fazendo cortes no metal se reduz R, e assim o efeito Joule”; a leitura fisicamente precisa é que os cortes <strong>aumentam a resistência</strong> dos caminhos fechados das correntes parasitas (e encolhem a área de cada redemoinho, diminuindo a fem), o que <strong>reduz a corrente \(i_E\) e a potência dissipada</strong>. É o mesmo motivo de os núcleos de transformador serem feitos de chapas finas isoladas (Sears §31.6, p. 400).</p></aside>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A conta</span></div><div class="note-body">
+        <h3>Quanto esquenta uma chapa de espessura \(d\)? <span class="nivel nivel-3">avançado</span></h3>
+        <p>Chapa fina de condutividade \(\sigma\), campo uniforme \(B=B_0\sin\omega t\) paralelo à chapa. Num retângulo simétrico de meia-largura \(x\) e comprimento \(L\): \(E\cdot2L=2xL\,\dot B\Rightarrow E=x\,\dot B\). Potência por volume \(\sigma E^2\), média na espessura (\(\langle x^2\rangle=d^2/12\)) e no tempo (\(\langle\cos^2\rangle=\frac12\)):</p>
+        $$\frac{\bar P}{V}=\frac{\sigma\,\omega^2B_0^2\,d^2}{24}$$
+        <p>A perda cai com o <strong>quadrado da espessura</strong>: dividir um bloco em 10 lâminas isoladas corta a perda por 100. E cresce com \(\omega^2\): em frequência alta o problema é muito pior. (Vale enquanto a chapa é mais fina que a profundidade de penetração do campo.)</p>
+      </div></section>
+
+      <div class="widget" id="w-freio">
+        <p class="w-title">Freio por correntes de Foucault: pêndulos</p>
+        <p class="w-caption">Três pêndulos idênticos passam pelo vão de um ímã (faixa colorida embaixo): placa de cobre maciça, placa de cobre com fendas e placa de plástico. As espirais amarelas indicam as correntes de Foucault (mais fortes quando a placa passa rápido pelo campo). O gráfico mostra o ângulo de cada um.</p>
+        <canvas class="w-canvas" height="290"></canvas>
+        <canvas class="w-canvas" height="160"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Força do ímã (B²σ) <output data-o="k"></output></span><input type="range" data-k="k" min="0" max="30" step="1" value="8"></label>
+          <label class="w-control"><span>Ângulo inicial <output data-o="a0"></output></span><input type="range" data-k="a0" min="15" max="70" step="1" value="45"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="go">Soltar os pêndulos</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">Uma panela de indução esquenta a panela de ferro, mas não a mão sobre a placa nem uma panela de vidro. Por quê?</p>
+        <div class="quiz-opts"><button>Porque a placa emite micro-ondas só para o ferro</button><button data-ok>O campo alternado da bobina sob o vidro induz correntes de Foucault no fundo metálico, que esquenta por efeito Joule; vidro e pele quase não conduzem</button><button>Porque o ímã da placa atrai o ferro e o atrito esquenta</button></div>
+        <p class="quiz-fb">Fogão de indução = transformador cujo “secundário” é o fundo da panela. Sem material condutor, não há corrente induzida relevante e não há calor. (Panelas de ferro também esquentam por histerese magnética, um efeito extra.)</p></div>
+
+      <p class="fonte"><span>Sears</span> §29.6 “Correntes de Foucault”, p. 322–323; lâminas de transformador, §31.6, p. 400.</p>
+    </article>
+
+    <!-- ===================== 2 AUTOINDUTÂNCIA ===================== -->
+    <article class="modulo" id="autoind">
+      <header class="modulo-h"><span class="modulo-num">Módulo 2</span><h2>Autoindutância: o circuito sente o próprio campo</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>A inércia elétrica <span class="nivel nivel-1">básico</span></h3>
+        <p>Uma bobina com corrente cria campo, e esse campo atravessa a própria bobina. Se a corrente muda, o fluxo <em>dela mesma</em> muda, e Faraday–Lenz dá uma fem que <strong>se opõe à mudança da corrente</strong>. Esse é o fenômeno de <strong>autoindução</strong>.</p>
+        <p>Analogia: a indutância \(L\) é para a corrente o que a massa é para a velocidade. Um carro pesado custa a acelerar e custa a frear; uma bobina com \(L\) grande custa a ligar e custa a desligar (por isso sai faísca ao abrir a chave de um motor). Corrente constante passa sem dificuldade, assim como velocidade constante não exige força.</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A definição</span></div><div class="note-body">
+        <h3>\(L=\Phi_{\text{total}}/I\) e a fem autoinduzida <span class="nivel nivel-2">intermediário</span></h3>
+        <p>O fluxo total através das \(N\) espiras é proporcional à corrente, e a constante é a autoindutância (o slide chama de \(L\) ou \(L_{11}\)):</p>
+        $$L=L_{11}=\frac{N\Phi_B}{i}\qquad(\text{Sears Eq. 30.6, p. 347}),\qquad \mathcal E_L=-L\frac{di}{dt}\qquad(\text{Eq. 30.7})$$
+        <p>Unidade: \(1\ \text{H (henry)}=1\ \text{Wb/A}=1\ \text{V·s/A}\). \(L\) só depende da <strong>geometria</strong> (e do meio), nunca da corrente.</p>
+        <p>O slide liga um solenoide a uma fonte alternada \(\mathcal E=V_0\sin\omega t\) e escreve a queda no indutor incluindo a resistência interna \(r\) do fio:</p>
+        $$V_L=\mathcal E_L-I_Lr=-L\frac{dI_L}{dt}-I_Lr\qquad\text{(indutor ideal: }r=0\text{)}$$
+        <p>Lido como fonte: a bobina se comporta como uma “pilha” de fem \(-L\,dI/dt\) em série com o resistor \(r\). Medida no sentido da corrente, a tensão que um voltímetro vê nos terminais é \(L\,dI/dt+Ir\).</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Dedução</span></div><div class="note-body">
+        <h3>Solenoide: \(L=\mu_0n_1^2S_1l\) <span class="nivel nivel-3">avançado</span></h3>
+        <figure class="figure">
+          <svg viewBox="0 0 560 190" role="img" aria-label="Solenoide de comprimento l, raio R1, seção S1, N1 espiras, ligado a fonte alternada V0 sen omega t">
+            <defs><marker id="a7b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker></defs>
+            <rect x="100" y="50" width="260" height="70" fill="var(--cyan-soft)"/>
+            <g stroke="var(--accent)" stroke-width="2.2" fill="none"><path d="M110 50v70M130 50v70M150 50v70M170 50v70M190 50v70M210 50v70M230 50v70M250 50v70M270 50v70M290 50v70M310 50v70M330 50v70M350 50v70"/></g>
+            <line x1="120" y1="85" x2="340" y2="85" stroke="var(--cyan)" stroke-width="2.2" marker-end="url(#a7b)"/>
+            <text x="220" y="78" font-size="14" fill="var(--cyan)" font-family="IBM Plex Sans" font-weight="600">B = μ0 n1 i1</text>
+            <path d="M100 140 H360" stroke="var(--ink)"/><text x="222" y="158" font-size="14" fill="var(--ink)" font-family="IBM Plex Sans">l</text>
+            <path d="M375 50 V120" stroke="var(--ink)"/><text x="382" y="90" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">2R1 (S1 = πR1²)</text>
+            <path d="M110 120 V176 H460 V120 M350 50 V24 H460 V60" stroke="var(--ink)" fill="none" stroke-width="1.4"/>
+            <circle cx="460" cy="90" r="28" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.4"/>
+            <path d="M444 90 q8 -14 16 0 t16 0" stroke="var(--ink)" fill="none" stroke-width="1.6"/>
+            <text x="494" y="94" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">V0 sen ωt</text>
+            <text x="20" y="40" font-size="13" fill="var(--muted)" font-family="IBM Plex Sans">N1 espiras, n1 = N1/l</text>
+          </svg>
+        </figure>
+        <ol class="steps">
+          <li><strong>Campo</strong> (Ampère, Capítulo IV): solenoide longo, \(B=\mu_0n_1i_1\) dentro e \(\approx0\) fora.</li>
+          <li><strong>Fluxo numa espira:</strong> \(\Phi_1=BS_1=\mu_0n_1i_1S_1\).</li>
+          <li><strong>Fluxo total</strong> (as \(N_1=n_1l\) espiras em série somam): \(N_1\Phi_1=\mu_0n_1^2S_1l\,i_1\).</li>
+          <li><strong>Divida por \(i_1\):</strong> $$\boxed{L=\mu_0n_1^2S_1l=\frac{\mu_0N_1^2S_1}{l}}$$ Cresce com \(N^2\) (mais espiras geram mais campo <em>e</em> pegam mais fluxo) e com o volume \(S_1l\).</li>
+        </ol>
+        <p><strong>Número:</strong> \(N=500\), \(l=25\) cm, raio 1 cm ⇒ \(n=2000\ \text{m}^{-1}\), \(S=3{,}14\times10^{-4}\ \text{m}^2\), \(L=4\pi\times10^{-7}\cdot(2000)^2\cdot3{,}14\times10^{-4}\cdot0{,}25\approx0{,}39\) mH.</p>
+        <details class="reveal"><summary>Estudante: e com a fonte \(V_0\sin\omega t\), como fica a corrente num indutor ideal?</summary><div>
+          <p>Malha: \(V_0\sin\omega t-L\,dI/dt=0\Rightarrow I=-\dfrac{V_0}{\omega L}\cos\omega t\). A amplitude é \(V_0/(\omega L)\): o indutor “resiste” mais quanto maior a frequência (reatância \(X_L=\omega L\)), e a corrente fica <strong>atrasada 90°</strong> em relação à tensão. Indutores deixam passar corrente contínua e barram frequências altas.</p>
+        </div></details>
+      </div></section>
+
+      <p class="fonte"><span>Sears</span> §30.2 “Indutores e autoindutância”, p. 347–351 (Eqs. 30.6–30.8).</p>
+    </article>
+
+    <!-- ===================== 3 ENERGIA ===================== -->
+    <article class="modulo" id="energia">
+      <header class="modulo-h"><span class="modulo-num">Módulo 3</span><h2>Energia magnética: \(U=\frac12LI^2\) e \(u=B^2/2\mu_0\)</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Ligar uma bobina custa trabalho <span class="nivel nivel-1">básico</span></h3>
+        <p>Enquanto a corrente sobe, a fem autoinduzida empurra contra. A fonte precisa vencer esse empurrão, gastando energia. Essa energia não some: fica guardada <strong>no campo magnético</strong>. Quando a corrente cai, o indutor devolve a energia (é a faísca ao abrir a chave, ou a ignição do carro, que usa esse truque para gerar milhares de volts).</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Dedução</span></div><div class="note-body">
+        <h3>Do slide: \(dW/dt=-\mathcal E_1i_1\) <span class="nivel nivel-2">intermediário</span></h3>
+        <ol class="steps">
+          <li>Para manter a corrente subindo contra a fem induzida \(\mathcal E_1=-L_1\,di_1/dt\), a fonte entrega potência $$\frac{dW}{dt}=-\mathcal E_1i_1=L_1i_1\frac{di_1}{dt}$$</li>
+          <li>Somando de corrente zero até \(I_1\): $$U_1=\int_0^{I_1}L_1i_1\,di_1=\boxed{\tfrac12L_1I_1^2}\qquad(\text{Sears Eq. 30.9, p. 352})$$</li>
+          <li>Repare na analogia: \(\frac12LI^2\) ↔ \(\frac12mv^2\). Indutância é “massa”, corrente é “velocidade”.</li>
+        </ol>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Onde mora</span></div><div class="note-body">
+        <h3>Densidade de energia \(u=B^2/2\mu_0\), conferida no solenoide <span class="nivel nivel-3">avançado</span></h3>
+        <p>No solenoide, \(L=\mu_0n^2Sl\) e \(B=\mu_0nI\). Então</p>
+        $$U=\tfrac12\mu_0n^2Sl\,I^2=\frac{(\mu_0nI)^2}{2\mu_0}\,(Sl)=\frac{B^2}{2\mu_0}\times\text{(volume)}$$
+        <p>A energia está espalhada pelo volume onde existe campo, com densidade</p>
+        $$u=\frac{B^2}{2\mu_0}\qquad(\text{Sears Eq. 30.10, p. 353; num material: }B^2/2\mu)$$
+        <p>Esse resultado é geral (vale para qualquer configuração; o solenoide só facilita a conta) e é o irmão de \(u_E=\frac12\varepsilon_0E^2\) do capacitor. Para campos não uniformes, \(U=\int\frac{B^2}{2\mu_0}\,dV\); é assim que se resolve o item c) do Exercício 32 por um segundo caminho.</p>
+        <p><strong>Número</strong> (solenoide do módulo anterior, \(I=2\) A): \(B=\mu_0nI\approx5{,}0\) mT, \(u\approx10\ \text{J/m}^3\), volume \(7{,}85\times10^{-5}\ \text{m}^3\) ⇒ \(U\approx7{,}9\times10^{-4}\) J \(=\frac12(3{,}95\times10^{-4})(2)^2\). ✔</p>
+      </div></section>
+
+      <div class="widget" id="w-sol">
+        <p class="w-title">Solenoide: \(\tfrac12LI^2\) contra \(u\times\text{volume}\)</p>
+        <p class="w-caption">Corte longitudinal: ⊙ em cima e ⊗ embaixo são as espiras; o tom de azul dentro é a densidade de energia \(u=B^2/2\mu_0\). Mude as dimensões e a corrente: as duas maneiras de calcular a energia sempre coincidem no modelo de solenoide longo. Quando o solenoide é curto, a leitura avisa quanto os efeitos de borda reduzem \(L\) de verdade.</p>
+        <canvas class="w-canvas" height="240"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Espiras N <output data-o="N"></output></span><input type="range" data-k="N" min="50" max="2000" step="50" value="500"></label>
+          <label class="w-control"><span>Comprimento l <output data-o="l"></output></span><input type="range" data-k="l" min="2" max="60" step="1" value="25"></label>
+          <label class="w-control"><span>Raio <output data-o="r"></output></span><input type="range" data-k="r" min="0.5" max="6" step="0.1" value="1"></label>
+          <label class="w-control"><span>Corrente I <output data-o="I"></output></span><input type="range" data-k="I" min="0" max="10" step="0.1" value="2"></label>
+        </div>
+        <div class="w-readout"></div>
+      </div>
+
+      <p class="fonte"><span>Sears</span> §30.3 “Energia do campo magnético”, p. 351–354 (Eqs. 30.9–30.11).</p>
+    </article>
+
+    <!-- ===================== 4 RL ===================== -->
+    <article class="modulo" id="rl">
+      <header class="modulo-h"><span class="modulo-num">Módulo 4 · complemento do Sears</span><h2>O circuito R-L: a corrente que não pula</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Ligar e desligar com inércia <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Bateria \(\mathcal E\), resistor \(R\) e indutor \(L\) em série. Ao fechar a chave, a corrente <strong>não</strong> pula para \(\mathcal E/R\): o indutor segura. A lei das malhas (Sears Eq. 30.12, p. 356):</p>
+        $$\mathcal E-iR-L\frac{di}{dt}=0\ \Rightarrow\ i(t)=\frac{\mathcal E}{R}\left(1-e^{-t/\tau}\right),\qquad \tau=\frac LR\qquad(\text{Eqs. 30.14 e 30.16, p. 356–357})$$
+        <ul>
+          <li>Em \(t=0\): \(i=0\) e toda a tensão da bateria está no indutor (\(L\,di/dt=\mathcal E\)).</li>
+          <li>Depois de alguns \(\tau\): \(i\to\mathcal E/R\), \(di/dt\to0\) e o indutor vira um fio comum, com energia \(\frac12L(\mathcal E/R)^2\) guardada.</li>
+          <li>Ao trocar a bateria por um curto (chave na outra posição): \(i=I_0e^{-t/\tau}\) (Eq. 30.18, p. 358). A energia guardada vira calor no resistor.</li>
+          <li>Balanço de potência (Eq. 30.17): \(\mathcal Ei=i^2R+Li\,\dfrac{di}{dt}\): a bateria paga o Joule e “enche” o campo.</li>
+        </ul>
+      </div></section>
+
+      <div class="widget" id="w-rl">
+        <p class="w-title">Circuito R-L com chave</p>
+        <p class="w-caption">Clique para ligar a bateria ou desligá-la (a chave passa a fechar o circuito só por R e L). O gráfico mostra, em função de \(t/\tau\), a corrente \(i\), a tensão no indutor \(v_L=L\,di/dt\) e a energia \(U=\frac12Li^2\), cada uma relativa ao seu máximo. O tempo é ajustado para que \(5\tau\) dure ~4 s na tela.</p>
+        <canvas class="w-canvas" height="200"></canvas>
+        <canvas class="w-canvas" height="200"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>fem ε <output data-o="E"></output></span><input type="range" data-k="E" min="1" max="24" step="1" value="12"></label>
+          <label class="w-control"><span>Resistência R <output data-o="R"></output></span><input type="range" data-k="R" min="1" max="100" step="1" value="10"></label>
+          <label class="w-control"><span>Indutância L <output data-o="L"></output></span><input type="range" data-k="L" min="0.01" max="2" step="0.01" value="0.5"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="on">Ligar a bateria (t = 0)</button><button class="w-btn" data-act="off">Desligar (curto por R)</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">Com \(\mathcal E=12\) V, \(R=10\ \Omega\), \(L=0{,}5\) H, quanto tempo a corrente leva para atingir 63% do valor final, e quanta energia fica no indutor?</p>
+        <div class="quiz-opts"><button>5 s e 7,2 J</button><button data-ok>50 ms e 0,36 J</button><button>0,05 ms e 0,72 J</button></div>
+        <p class="quiz-fb">\(\tau=L/R=0{,}05\) s, e \(1-e^{-1}\approx63\%\). Corrente final \(1{,}2\) A, energia \(\frac12(0{,}5)(1{,}2)^2=0{,}36\) J. Confira na simulação.</p></div>
+
+      <p class="fonte"><span>Sears</span> §30.4 “O circuito R-L”, p. 354–359.</p>
+    </article>
+
+    <!-- ===================== 5 MÚTUA ===================== -->
+    <article class="modulo" id="mutua">
+      <header class="modulo-h"><span class="modulo-num">Módulo 5</span><h2>Dois circuitos: autoindutância e indutância mútua</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>O que acontece se aproximo um segundo indutor? <span class="nivel nivel-1">básico</span></h3>
+        <p>O slide pergunta: se a energia depende de \(L_1\), o que muda com um segundo circuito por perto? Agora parte do fluxo criado por um circuito atravessa o outro. Mudar a corrente num deles induz fem no vizinho, sem contato elétrico nenhum. É assim que funcionam o transformador, o carregador sem fio do celular e o cartão de ônibus por aproximação.</p>
+        <figure class="figure">
+          <svg viewBox="0 0 560 170" role="img" aria-label="Duas bobinas lado a lado, linhas do campo da bobina 1 atravessando a bobina 2">
+            <defs><marker id="a7m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker></defs>
+            <g stroke="var(--cyan)" stroke-width="1.5" fill="none">
+              <path d="M90 85 H470" marker-end="url(#a7m)"/>
+              <path d="M90 70 C200 60 330 55 470 40" marker-end="url(#a7m)"/>
+              <path d="M90 100 C200 110 330 115 470 130" marker-end="url(#a7m)"/>
+              <path d="M90 60 C150 20 200 10 250 18" stroke-dasharray="4 3"/>
+            </g>
+            <g stroke="var(--accent)" stroke-width="2.4" fill="none"><ellipse cx="110" cy="85" rx="10" ry="40"/><ellipse cx="128" cy="85" rx="10" ry="40"/><ellipse cx="146" cy="85" rx="10" ry="40"/></g>
+            <g stroke="var(--ok)" stroke-width="2.4" fill="none"><ellipse cx="380" cy="85" rx="10" ry="34"/><ellipse cx="398" cy="85" rx="10" ry="34"/></g>
+            <text x="100" y="150" font-size="14" fill="var(--accent)" font-family="IBM Plex Sans" font-weight="600">circuito 1 (L1, I1)</text>
+            <text x="350" y="150" font-size="14" fill="var(--ok)" font-family="IBM Plex Sans" font-weight="600">circuito 2 (L2, I2)</text>
+            <text x="220" y="80" font-size="13" fill="var(--cyan)" font-family="IBM Plex Sans">φ1(2) = L12 I1</text>
+          </svg>
+          <figcaption>Parte do fluxo de 1 atravessa 2 (\(\phi_{1(2)}\)); a constante de proporcionalidade é a indutância mútua \(L_{12}\).</figcaption>
+        </figure>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>As fórmulas</span></div><div class="note-body">
+        <h3>\(L_{12}\) e a energia total <span class="nivel nivel-2">intermediário</span></h3>
+        $$N_2\Phi_{2}=L_{12}\,i_1,\qquad \mathcal E_2=-L_{12}\frac{di_1}{dt},\qquad \mathcal E_1=-L_{12}\frac{di_2}{dt}\qquad(\text{Sears Eqs. 30.4–30.5, p. 345, com }M=L_{12})$$
+        <p>Fato notável: o mesmo \(L_{12}=L_{21}\) serve nos dois sentidos (fórmula de Neumann), mesmo que as bobinas sejam muito diferentes. A energia do sistema, como no slide:</p>
+        $$\boxed{U=\tfrac12L_1I_1^2+\tfrac12L_2I_2^2+L_{12}I_1I_2}$$
+        <ol class="steps">
+          <li><strong>De onde vem cada termo:</strong> ligue \(I_1\) com o circuito 2 aberto: custa \(\frac12L_1I_1^2\).</li>
+          <li>Agora ligue \(I_2\) mantendo \(I_1\) fixo: a fonte 2 paga \(\frac12L_2I_2^2\).</li>
+          <li>Mas, enquanto \(i_2\) sobe, ele induz \(\mathcal E_1=-L_{12}\,di_2/dt\) no circuito 1, e a fonte 1 precisa trabalhar para manter \(I_1\): \(\int L_{12}I_1\,di_2=L_{12}I_1I_2\). Esse é o termo cruzado.</li>
+        </ol>
+        <aside class="box box-key"><div class="box-h">Sinal do termo cruzado</div><p>\(L_{12}I_1I_2>0\) quando os fluxos das duas correntes se <strong>reforçam</strong> dentro dos circuitos, e é negativo quando se cancelam (inverta uma corrente e o termo troca de sinal). Como a energia magnética \(\int B^2/2\mu_0\,dV\) nunca é negativa, sempre vale \(L_{12}^2\le L_1L_2\).</p></aside>
+        <p><strong>Exemplo:</strong> bobina 2 (\(N_2\) espiras) enrolada sobre um solenoide 1 longo (\(n_1\), seção \(S_1\)): todo o fluxo de 1 passa por 2, \(\Phi_2=\mu_0n_1i_1S_1\), logo \(L_{12}=\mu_0n_1N_2S_1\). No <strong>transformador</strong> ideal, a mesma \(d\Phi/dt\) por espira dá \(V_2/V_1=N_2/N_1\): é isso que eleva a tensão para transmitir energia com pouca perda (motivação do Exercício 31).</p>
+      </div></section>
+
+      <div class="quiz"><p class="quiz-q">Duas bobinas com \(L_1=L_2=1\) mH e \(L_{12}=0{,}5\) mH têm \(I_1=I_2=2\) A com fluxos se reforçando. Qual é a energia total? E se invertermos \(I_2\)?</p>
+        <div class="quiz-opts"><button>4 mJ nos dois casos</button><button data-ok>6 mJ; invertendo \(I_2\), 2 mJ</button><button>2 mJ; invertendo, 6 mJ</button></div>
+        <p class="quiz-fb">\(\frac12(1)(4)+\frac12(1)(4)+(0{,}5)(2)(2)=2+2+2=6\) mJ. Invertendo \(I_2\), o termo cruzado vira \(-2\) mJ: total 2 mJ. Os campos se cancelam em parte e o espaço guarda menos energia.</p></div>
+
+      <p class="fonte"><span>Sears</span> §30.1 “Indutância mútua”, p. 344–347.</p>
+    </article>
+
+    <!-- ===================== 6 EX 32 ===================== -->
+    <article class="modulo" id="ex32">
+      <header class="modulo-h"><span class="modulo-num">Módulo 6</span><h2>Exercício 32: o cabo coaxial</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Um cabo que leva e traz a corrente <span class="nivel nivel-1">básico</span></h3>
+        <p>O cabo da antena de TV (ou de internet) tem um fio central e uma malha cilíndrica em volta, separados por plástico. A corrente vai pelo fio e volta pela malha. Resultado: o campo magnético fica <strong>preso entre os dois condutores</strong> e é zero fora. Nada vaza e nada de fora interfere. Mesmo assim, o cabo tem indutância, porque guarda energia nesse campo interno.</p>
+      </div></section>
+
+      <div class="worked prova"><div class="worked-h"><span>Exercício 32 dos slides</span> Fio interno de raio \(a\), camada condutora fina de raio \(b\), corrente \(i\) entra pelo fio e sai pela camada</div>
+        <figure class="figure">
+          <svg viewBox="0 0 560 230" role="img" aria-label="Corte transversal do cabo coaxial com corrente entrando no fio central, campo B em sentido horário, e vista lateral com o retângulo ABCA' de comprimento l entre os raios a e b">
+            <defs><marker id="a7x" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker>
+            <marker id="a7y" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker></defs>
+            <circle cx="120" cy="115" r="86" fill="var(--surface-2)" stroke="var(--ink)" stroke-width="3"/>
+            <circle cx="120" cy="115" r="22" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+            <circle cx="120" cy="115" r="12" fill="none" stroke="var(--accent)" stroke-width="1.6"/><path d="M112 107l16 16M128 107l-16 16" stroke="var(--accent)" stroke-width="1.6"/>
+            <circle cx="120" cy="115" r="55" fill="none" stroke="var(--cyan)" stroke-width="1.5" stroke-dasharray="5 4"/>
+            <path d="M175 115 A55 55 0 0 1 120 170" fill="none" stroke="var(--cyan)" stroke-width="2.4" marker-end="url(#a7x)"/>
+            <path d="M65 115 A55 55 0 0 1 120 60" fill="none" stroke="var(--cyan)" stroke-width="2.4" marker-end="url(#a7x)"/>
+            <text x="150" y="60" font-size="13" fill="var(--cyan)" font-family="IBM Plex Sans" font-weight="600">B = −B θ̂</text>
+            <text x="98" y="150" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">a</text><text x="190" y="190" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">b</text>
+            <text x="20" y="225" font-size="12" fill="var(--muted)" font-family="IBM Plex Sans">corte: k̂ saindo, corrente no fio entrando (−k̂)</text>
+            <rect x="260" y="70" width="280" height="22" fill="var(--accent-soft)" stroke="var(--accent)"/>
+            <path d="M260 40 H540 M260 122 H540" stroke="var(--ink)" stroke-width="3"/>
+            <rect x="340" y="40" width="120" height="30" fill="var(--cyan-soft)" stroke="var(--cyan)" stroke-width="1.6"/>
+            <text x="330" y="36" font-size="12" fill="var(--ink)" font-family="IBM Plex Sans">A′</text><text x="462" y="36" font-size="12" fill="var(--ink)" font-family="IBM Plex Sans">B</text>
+            <text x="330" y="84" font-size="12" fill="var(--ink)" font-family="IBM Plex Sans">A</text><text x="462" y="84" font-size="12" fill="var(--ink)" font-family="IBM Plex Sans">C</text>
+            <line x1="290" y1="81" x2="330" y2="81" stroke="var(--accent)" stroke-width="2.2" marker-end="url(#a7y)"/>
+            <line x1="520" y1="132" x2="480" y2="132" stroke="var(--accent)" stroke-width="2.2" marker-end="url(#a7y)"/>
+            <text x="300" y="148" font-size="12" fill="var(--accent)" font-family="IBM Plex Sans">i volta pela camada externa</text>
+            <path d="M340 175 H460" stroke="var(--ink)"/><text x="396" y="192" font-size="13" fill="var(--ink)" font-family="IBM Plex Sans">l</text>
+            <text x="352" y="60" font-size="11" fill="var(--cyan)" font-family="IBM Plex Sans">fluxo por aqui</text>
+          </svg>
+          <figcaption>À esquerda, corte transversal na convenção do slide (\(\hat k\) saindo da página, corrente do fio interno no sentido \(-\hat k\), \(\vec B=-B\hat\theta\)). À direita, vista lateral: o retângulo ABCA′, entre \(\rho=a\) e \(\rho=b\), de comprimento \(l\), é a superfície por onde se calcula o fluxo.</figcaption>
+        </figure>
+
+        <p><strong>i) Coordenadas.</strong> A simetria é cilíndrica: use \((\hat\rho,\hat\theta,\hat k)\), com \(\hat k\) ao longo do cabo e \(\hat\rho\times\hat\theta=\hat k\). Como no slide, a corrente do fio interno corre no sentido \(-\hat k\) e volta, pela camada, no sentido \(+\hat k\).</p>
+
+        <p><strong>a) Campo \(\vec B\) (lei de Ampère).</strong> Pela simetria, \(\vec B\) é tangente a círculos coaxiais e só depende de \(\rho\): \(\vec B=B_\theta(\rho)\hat\theta\). Amperiana: círculo de raio \(\rho\) percorrido no sentido \(+\hat\theta\) (normal \(+\hat k\)).</p>
+        <ul>
+          <li>\(a\lt\rho\lt b\): corrente envolvida no sentido \(+\hat k\) é \(-i\). Então \(B_\theta\,2\pi\rho=\mu_0(-i)\) e $$\vec B=-\frac{\mu_0i}{2\pi\rho}\,\hat\theta$$ que é o \(\vec B=-B\hat\theta\) do slide (sentido horário visto com \(\hat k\) saindo).</li>
+          <li>\(\rho>b\): corrente envolvida \(-i+i=0\) ⇒ \(\vec B=0\). O cabo não “vaza” campo.</li>
+          <li>\(\rho\lt a\): no modelo do slide o fio central conduz pela superfície (ou é tão fino que seu interior não conta) ⇒ \(\vec B=0\) dentro. Veja o comentário avançado abaixo para fio maciço.</li>
+        </ul>
+        <aside class="box box-key"><div class="box-h">De onde vem o sinal</div><p>O sinal de \(\vec B\) depende só do sentido escolhido para a corrente. Se o fio interno levasse a corrente no sentido \(+\hat k\), daria \(\vec B=+\frac{\mu_0i}{2\pi\rho}\hat\theta\) (anti-horário, regra da mão direita com o polegar na corrente). O módulo \(\mu_0i/2\pi\rho\) é o de um fio longo (Sears Eq. 28.9, p. 270), porque só o fio interno está dentro da amperiana.</p></aside>
+
+        <p><strong>b) Fluxo magnético. Justificativa:</strong> imagine o circuito fechado lá na ponta: a corrente vai pelo fio e volta pela camada. A superfície limitada por esse percurso é o retângulo ABCA′, num plano que contém o eixo, entre \(\rho=a\) e \(\rho=b\), de comprimento \(l\). Escolho \(\hat n=-\hat\theta\) (como no slide), para o fluxo sair positivo. Elemento de área \(dS=l\,d\rho\):</p>
+        $$\Phi=\int_a^b\left(-\frac{\mu_0i}{2\pi\rho}\hat\theta\right)\cdot(-\hat\theta)\,l\,d\rho=\frac{\mu_0il}{2\pi}\int_a^b\frac{d\rho}{\rho}\ \Rightarrow\ \boxed{\frac{\Phi}{l}=\frac{\mu_0i}{2\pi}\ln\frac ba}$$
+        <p>Fora de \(b\) e dentro de \(a\) não há campo, então nada mais contribui.</p>
+
+        <p><strong>c) Autoindutância por comprimento e energia.</strong> \(L=\Phi/i\) (uma “espira” só):</p>
+        $$\boxed{\frac Ll=\frac{\mu_0}{2\pi}\ln\frac ba}\qquad\qquad \boxed{\frac Ul=\frac12\frac Ll\,i^2=\frac{\mu_0i^2}{4\pi}\ln\frac ba}$$
+        <p><strong>Conferência pela densidade de energia</strong> (Sears Problemas 30.46–30.47, p. 371, fazem exatamente isso): casca de raio \(\rho\), espessura \(d\rho\), volume \(2\pi\rho\,l\,d\rho\):</p>
+        $$\frac Ul=\int_a^b\frac{1}{2\mu_0}\left(\frac{\mu_0i}{2\pi\rho}\right)^2 2\pi\rho\,d\rho=\frac{\mu_0i^2}{4\pi}\int_a^b\frac{d\rho}{\rho}=\frac{\mu_0i^2}{4\pi}\ln\frac ba$$
+        <p>Mesmo resultado pelos dois caminhos. ✔</p>
+
+        <p><strong>d) Interpretação.</strong></p>
+        <ul>
+          <li><strong>\(a\ll b\):</strong> a área \(S\) entre os condutores cresce e \(L\to\infty\), mas <strong>muito devagar</strong>, como \(\ln(b/a)\): multiplicar \(b/a\) por 10 só soma \(\mu_0\ln10/2\pi\approx0{,}46\ \mu\text{H/m}\). No gráfico do slide (\(l=1\) m), \(2\pi L/(\mu_0l)=\ln(b/a)\) vai de 0 a ~9 quando \(b/a\) vai de 1 a 10 000.</li>
+          <li><strong>\(a\to b\):</strong> \(\ln(b/a)\to0\), a área \(S\to0\) e \(L\to0\): ida e volta praticamente coincidem, “quase um único fio”, e os campos se cancelam.</li>
+          <li>Em qualquer caso \(L>0\), como toda autoindutância (energia \(\frac12LI^2\ge0\)).</li>
+          <li>Um cabo RG-58 típico (\(a\approx0{,}45\) mm, \(b\approx1{,}47\) mm) dá \(L/l\approx2\times10^{-7}\ln3{,}3\approx0{,}24\ \mu\text{H/m}\), próximo do valor de catálogo.</li>
+        </ul>
+      </div>
+
+      <details class="reveal"><summary>Avançado: e se o fio interno for maciço, com corrente uniforme?</summary><div>
+        <p>Aí há campo dentro do fio: Ampère com corrente envolvida \(i\rho^2/a^2\) dá \(B=\dfrac{\mu_0i\rho}{2\pi a^2}\) para \(\rho\lt a\) (Sears Eqs. 28.21–28.22, p. 282). A energia extra por comprimento:</p>
+        $$\frac{U_{\text{int}}}{l}=\int_0^a\frac{1}{2\mu_0}\left(\frac{\mu_0i\rho}{2\pi a^2}\right)^22\pi\rho\,d\rho=\frac{\mu_0i^2}{16\pi}\ \Rightarrow\ \frac{L_{\text{int}}}{l}=\frac{\mu_0}{8\pi}=50\ \text{nH/m}$$
+        <p>Então \(L/l=\dfrac{\mu_0}{2\pi}\left(\ln\dfrac ba+\dfrac14\right)\). A correção é independente de \(a\) e de \(b\). Em alta frequência a corrente foge para a superfície (efeito pelicular) e o modelo do slide (sem campo interno) volta a ser o correto. Na prova, siga o modelo do slide, a menos que o enunciado diga “fio maciço com corrente uniforme”.</p>
+      </div></details>
+
+      <div class="widget" id="w-coax">
+        <p class="w-title">Cabo coaxial: campo, indutância e energia</p>
+        <p class="w-caption">À esquerda, o corte do cabo com as setas de \(\vec B\) (comprimento ∝ \(1/\rho\)); à direita, \(B(\rho)\). Embaixo, \(2\pi L/(\mu_0l)=\ln(b/a)\) em escala logarítmica, como no gráfico do slide, com o seu cabo marcado. Inverta a corrente para ver o sinal de \(\hat\theta\) trocar.</p>
+        <canvas class="w-canvas" height="250"></canvas>
+        <canvas class="w-canvas" height="190"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Raio interno a <output data-o="a"></output></span><input type="range" data-k="a" min="0.1" max="5" step="0.05" value="0.45"></label>
+          <label class="w-control"><span>Raio externo b <output data-o="b"></output></span><input type="range" data-k="b" min="0.5" max="50" step="0.1" value="1.5"></label>
+          <label class="w-control"><span>Corrente i <output data-o="i"></output></span><input type="range" data-k="i" min="0.5" max="20" step="0.5" value="5"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="dir">Inverter a corrente</button><button class="w-btn" data-act="solid">Fio interno maciço (+μ0/8π)</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <p class="fonte"><span>Sears</span> Problemas 30.46–30.47 (cabo coaxial), p. 371; Problema 28.43 (campo no cabo coaxial), p. 297; Eq. 30.10, p. 353.</p>
+    </article>
+
+    <!-- ===================== 7 LAB ===================== -->
+    <article class="modulo" id="lab">
+      <header class="modulo-h"><span class="modulo-num">Módulo 7</span><h2>Experimentos</h2></header>
+
+      <section class="note note-lab"><div class="cue"><span>Em casa</span></div><div class="note-body">
+        <h3>Freio magnético numa régua de alumínio</h3>
+        <ol class="steps">
+          <li><strong>Material:</strong> um ímã de neodímio pequeno, uma régua (ou perfil, ou chapa) de alumínio e uma régua de plástico do mesmo tamanho. Alumínio não é atraído por ímãs, o que deixa o efeito ainda mais surpreendente.</li>
+          <li>Incline as duas réguas no mesmo ângulo e solte o ímã em cada uma. No plástico ele escorrega e acelera; no alumínio desce devagar, quase com velocidade constante.</li>
+          <li><strong>Versão pêndulo:</strong> pendure uma chapinha de alumínio por um barbante e deixe-a oscilar passando rente ao ímã preso numa mesa. Ela para em poucas oscilações. Faça fendas com uma tesoura de lata (tipo pente) e repita: o amortecimento cai muito, como na simulação do Módulo 1.</li>
+          <li><strong>Física:</strong> o movimento muda o fluxo em cada pedaço da chapa; surgem correntes de Foucault que, por Lenz, criam forças contra o movimento; a energia cinética vira calor (pouquíssimo, não dá para sentir).</li>
+        </ol>
+      </div></section>
+
+      <section class="note note-warn"><div class="cue"><span>Só em aula</span></div><div class="note-body">
+        <h3>O anel saltador de Thomson (demonstração de laboratório, não faça em casa)</h3>
+        <p>Uma bobina grande com núcleo de ferro comprido, ligada direto na tomada (corrente alternada, centenas de watts), e um anel de alumínio encaixado no núcleo. Ao ligar, o anel <strong>salta</strong> dezenas de centímetros. O campo alternado induz corrente no anel (indutância mútua); por Lenz o anel é repelido. Com o anel cortado (uma fenda), ele não salta: sem caminho fechado, sem corrente. Esfriado em nitrogênio líquido, salta mais alto (resistência menor). Envolve tensão de rede, correntes grandes, aquecimento e peças que voam: <strong>é uma demonstração para laboratório didático com professor</strong>, não um experimento caseiro.</p>
+      </div></section>
+    </article>
+
+    <!-- ===================== RESUMO ===================== -->
+    <article class="modulo" id="resumo">
+      <header class="modulo-h"><span class="modulo-num">Fechamento</span><h2>Resumo e fórmulas</h2></header>
+      <div class="table-wrap"><table>
+        <tr><th>Grandeza</th><th>Fórmula</th><th>Quando usar</th></tr>
+        <tr><td>Correntes de Foucault</td><td>\(\bar P/V=\sigma\omega^2B_0^2d^2/24\) (chapa fina)</td><td>Metal maciço em campo variável; cortes/lâminas reduzem</td></tr>
+        <tr><td>Autoindutância</td><td>\(L=N\Phi/i\), \(\mathcal E_L=-L\,di/dt\)</td><td>Qualquer bobina; depende só da geometria</td></tr>
+        <tr><td>Solenoide</td><td>\(L=\mu_0n^2Sl=\mu_0N^2S/l\)</td><td>Solenoide longo (\(l\gg\) raio)</td></tr>
+        <tr><td>Queda no indutor (slide)</td><td>\(V_L=-L\,dI/dt-Ir\)</td><td>Indutor real com resistência interna \(r\)</td></tr>
+        <tr><td>Energia</td><td>\(U=\frac12LI^2\)</td><td>Energia guardada no indutor</td></tr>
+        <tr><td>Densidade de energia</td><td>\(u=B^2/2\mu_0\), \(U=\int u\,dV\)</td><td>Campos não uniformes (coaxial, toroide)</td></tr>
+        <tr><td>Circuito R-L</td><td>\(i=\frac{\mathcal E}{R}(1-e^{-t/\tau})\), \(\tau=L/R\)</td><td>Ligar/desligar circuito com indutor</td></tr>
+        <tr><td>Indutância mútua</td><td>\(\mathcal E_2=-L_{12}\,di_1/dt\), \(L_{12}=L_{21}\)</td><td>Dois circuitos acoplados, transformador</td></tr>
+        <tr><td>Energia de dois circuitos</td><td>\(U=\frac12L_1I_1^2+\frac12L_2I_2^2+L_{12}I_1I_2\)</td><td>Termo cruzado com sinal (reforço/cancelamento)</td></tr>
+        <tr><td>Coaxial</td><td>\(\vec B=-\frac{\mu_0i}{2\pi\rho}\hat\theta\) (\(a\lt\rho\lt b\)), \(\frac Ll=\frac{\mu_0}{2\pi}\ln\frac ba\), \(\frac Ul=\frac{\mu_0i^2}{4\pi}\ln\frac ba\)</td><td>Exercício 32 (sinal conforme o sentido da corrente)</td></tr>
+      </table></div>
+
+      <section class="note note-warn"><div class="cue"><span>Na prova</span></div><div class="note-body">
+        <h3>Erros comuns</h3>
+        <ul>
+          <li><strong>Esquecer o \(N\) duas vezes.</strong> No solenoide, \(N\) entra no campo e no número de espiras que o fluxo atravessa: \(L\propto N^2\).</li>
+          <li><strong>Usar \(\ln(a/b)\).</strong> Dá indutância negativa, o que é impossível. É \(\ln(b/a)\), com \(b>a\).</li>
+          <li><strong>Esquecer o \(\frac12\)</strong> em \(\frac12LI^2\) ou em \(B^2/2\mu_0\).</li>
+          <li><strong>Calcular \(\vec B\) fora do coaxial como \(\mu_0i/2\pi\rho\).</strong> A corrente líquida é zero: \(\vec B=0\) fora.</li>
+          <li><strong>Não justificar o fluxo.</strong> Diga qual superfície (retângulo entre \(a\) e \(b\), comprimento \(l\)), qual \(\hat n\) e por que fora dela não há fluxo.</li>
+          <li><strong>Dizer que cortes no metal diminuem a resistência.</strong> Eles aumentam a resistência dos caminhos das correntes parasitas e por isso reduzem o Joule.</li>
+          <li><strong>Sinal do termo mútuo.</strong> \(L_{12}I_1I_2\) pode ser negativo; o total nunca.</li>
+        </ul>
+      </div></section>
+    </article>
+
+    <nav class="chapter-nav"><a class="prev" href="cap6.html"><small>← Anterior</small>VI · Indução magnética</a><a class="next" href="cap8.html"><small>Próximo →</small>VIII · Maxwell e ondas</a></nav>
+  </main>
+</div>
+
+<footer class="footer">
+  <p><strong>Física III · Magnetismo, indução e ondas</strong> · Física para IME (IFUSP) · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir dos slides e do simulado do Prof. Julio A. Larrea J. (IFUSP) e de Young &amp; Freedman, <em>Física III</em>, 14ª ed. Texto, simulações e erros são das notas; não é material oficial da disciplina.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/core.js"></script>
+<script src="assets/cap7.js"></script>
+</body>
+</html>

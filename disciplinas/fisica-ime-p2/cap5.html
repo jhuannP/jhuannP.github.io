@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V · Meios magnéticos — Física III para IME</title>
+<meta name="description" content="Magnetismo na matéria: correntes atômicas, magnetização, campo H, susceptibilidade, a arruela magnetizada (Exercício 27) e as ordens magnéticas: dia, para, ferro, antiferro e ferrimagnetismo.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('fis3-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Física III <em>para IME</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="cap1.html" title="Força magnética">I</a><a href="cap2.html" title="Torque e dipolo magnético">II</a><a href="cap3.html" title="Lei de Biot–Savart">III</a><a href="cap4.html" title="Lei de Ampère">IV</a><a class="on" href="cap5.html" title="Meios magnéticos">V</a><a href="cap6.html" title="Indução magnética">VI</a><a href="cap7.html" title="Indutância e energia magnética">VII</a><a href="cap8.html" title="Maxwell e ondas">VIII</a><a class="prova" href="prova.html" title="Resolução da prova">Prova</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<section class="chapter-hero" data-num="V">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo V · Slides “Magnetismo em materiais”</p>
+    <h1>Meios magnéticos</h1>
+    <p class="lede">Por que um ímã gruda na geladeira mas não numa panela de alumínio? Dentro da matéria há bilhões de correntes atômicas minúsculas; o jeito como elas se organizam decide se o material ignora, repele ou amplifica um campo magnético.</p>
+    <div class="meta"><span>Sears §28.8 · p. 284–291</span><span>Exercício 27 dos slides (meios)</span><span>4 simulações</span></div>
+  </div>
+</section>
+
+<div class="layout">
+  <nav class="toc" aria-label="Neste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol>
+      <li><a href="#m1"><span class="toc-num">1</span>Correntes atômicas e M</a></li>
+      <li><a href="#m2"><span class="toc-num">2</span>H, χ e permeabilidade</a></li>
+      <li><a href="#m3"><span class="toc-num">3</span>A arruela (Exercício 27)</a></li>
+      <li><a href="#m4"><span class="toc-num">4</span>Dia e paramagnetismo</a></li>
+      <li><a href="#m5"><span class="toc-num">5</span>Ferromagnetismo e histerese</a></li>
+      <li><a href="#m6"><span class="toc-num">6</span>Antiferro e ferrimagnetismo</a></li>
+      <li><a href="#m7"><span class="toc-num">7</span>Mudar M: campo e temperatura</a></li>
+      <li><a href="#m8"><span class="toc-num">8</span>Experimentos</a></li>
+      <li><a href="#resumo"><span class="toc-num">✓</span>Resumo e fórmulas</a></li>
+    </ol>
+  </nav>
+  <main id="conteudo" class="content">
+
+    <!-- ============ M1 ============ -->
+    <article class="modulo" id="m1">
+      <header class="modulo-h"><span class="modulo-num">Módulo 1</span><h2>Correntes atômicas e magnetização</h2></header>
+
+      <section class="note"><div class="cue"><span>Objetivos</span></div><div class="note-body">
+        <h3>O que o slide quer</h3>
+        <ul>
+          <li>Uma abordagem <strong>clássica</strong>: magnetismo da matéria = correntes em escala atômica.</li>
+          <li>Quais propriedades físicas detectam magnetismo (magnetização, susceptibilidade) e como se relacionam com \(\vec B\) e \(\vec H\).</li>
+          <li>Os tipos de <strong>ordem magnética</strong> dentro de um material, com exemplos úteis para engenheiros.</li>
+        </ul>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Cada átomo é uma espirinha <span class="nivel nivel-1">básico</span></h3>
+        <p>No capítulo II vimos que uma espira com corrente \(i\) e área \(S\) tem momento de dipolo magnético</p>
+        $$\vec m=i\,S\,\hat n,$$
+        <p>com \(\hat n\) pela mão direita. No modelo clássico, um elétron girando em volta do núcleo é uma espira minúscula; além disso, o próprio elétron tem um momento intrínseco (o <em>spin</em>). A unidade natural desses momentos é o <strong>magneton de Bohr</strong>, \(\mu_B=9{,}27\times10^{-24}\ \text{A·m}^2\) (Sears Eq. 28.27, p. 286).</p>
+        <p>Num pedaço de material há uns \(10^{28}\) átomos por m³. Se as espirinhas apontam para todo lado, elas se anulam. Se apontam (em média) para o mesmo lado, somam-se num ímã macroscópico.</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Definição</span></div><div class="note-body">
+        <h3>Magnetização \(\vec M\) <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Por analogia com a polarização \(\vec P\) dos dielétricos (momento de dipolo elétrico por volume), definimos (anotação manuscrita do slide; Sears Eq. 28.28, p. 286):</p>
+        $$\vec M=\frac{1}{V}\sum_{i=1}^{N}\vec m_i\qquad[\vec M]=\frac{\text{A·m}^2}{\text{m}^3}=\text{A/m}.$$
+        <p>Ordem de grandeza: se cada átomo de ferro contribui ~\(2\mu_B\) e há \(8{,}5\times10^{28}\) átomos/m³, todos alinhados dariam \(M\approx1{,}6\times10^{6}\ \text{A/m}\), perto da magnetização de saturação medida do ferro (\(\approx1{,}7\times10^6\ \text{A/m}\)).</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Avançado</span></div><div class="note-body">
+        <h3>Correntes amperianas (de magnetização) <span class="nivel nivel-3">avançado</span></h3>
+        <figure class="figure">
+          <svg viewBox="0 0 460 190" width="460" role="img" aria-label="Grade de espirinhas iguais: correntes internas se cancelam, sobra uma corrente na borda">
+            <defs><marker id="a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="currentColor"/></marker></defs>
+            <g fill="none" stroke="var(--accent)" stroke-width="1.6">
+              <rect x="20" y="20" width="40" height="40" rx="5"/><rect x="66" y="20" width="40" height="40" rx="5"/><rect x="112" y="20" width="40" height="40" rx="5"/><rect x="158" y="20" width="40" height="40" rx="5"/>
+              <rect x="20" y="66" width="40" height="40" rx="5"/><rect x="66" y="66" width="40" height="40" rx="5"/><rect x="112" y="66" width="40" height="40" rx="5"/><rect x="158" y="66" width="40" height="40" rx="5"/>
+              <rect x="20" y="112" width="40" height="40" rx="5"/><rect x="66" y="112" width="40" height="40" rx="5"/><rect x="112" y="112" width="40" height="40" rx="5"/><rect x="158" y="112" width="40" height="40" rx="5"/>
+            </g>
+            <g style="color:var(--accent)"><line x1="60" y1="46" x2="60" y2="34" stroke="var(--accent)" stroke-width="2" marker-end="url(#a5)"/><line x1="66" y1="34" x2="66" y2="46" stroke="var(--accent)" stroke-width="2" marker-end="url(#a5)"/></g>
+            <text x="22" y="172" fill="var(--muted)" font-family="IBM Plex Sans" font-size="12">vizinhas: correntes opostas se anulam</text>
+            <text x="226" y="92" fill="var(--ink)" font-family="IBM Plex Sans" font-size="22">=</text>
+            <rect x="260" y="20" width="178" height="132" rx="8" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="3"/>
+            <g style="color:var(--accent)"><line x1="438" y1="110" x2="438" y2="60" stroke="var(--accent)" stroke-width="3" marker-end="url(#a5)"/><line x1="260" y1="60" x2="260" y2="110" stroke="var(--accent)" stroke-width="3" marker-end="url(#a5)"/></g>
+            <circle cx="349" cy="86" r="10" fill="none" stroke="var(--ink)" stroke-width="1.6"/><circle cx="349" cy="86" r="3.2" fill="var(--ink)"/>
+            <text x="364" y="91" fill="var(--ink)" font-family="IBM Plex Sans" font-size="14">M</text>
+            <text x="270" y="172" fill="var(--muted)" font-family="IBM Plex Sans" font-size="12">sobra só a corrente na borda: K = M</text>
+          </svg>
+          <figcaption>Magnetização uniforme (saindo do papel): por dentro, cada lado de espirinha tem uma vizinha com corrente oposta. Sobra uma corrente superficial na borda, com densidade (por unidade de comprimento) \(K=M\).</figcaption>
+        </figure>
+        <p>Em forma vetorial, a densidade de corrente superficial é \(\vec K_b=\vec M\times\hat n\) (\(\hat n\) = normal para fora da superfície), e no volume \(\vec j_b=\nabla\times\vec M\) (zero se \(\vec M\) é uniforme). Essas são as <strong>correntes amperianas</strong>: elas criam o campo do ímã exatamente como correntes de verdade (Biot–Savart, Ampère). Num cilindro de altura \(t\) magnetizado ao longo do eixo, a borda lateral carrega uma corrente total \(I_b=K\,t=M\,t\). Esta é a chave do Exercício 27.</p>
+      </div></section>
+      <p class="fonte"><span>Sears</span> §28.8, p. 284–287; Eqs. 28.27–28.29.</p>
+    </article>
+
+    <!-- ============ M2 ============ -->
+    <article class="modulo" id="m2">
+      <header class="modulo-h"><span class="modulo-num">Módulo 2</span><h2>Os campos \(\vec H\) e \(\vec B\), susceptibilidade e permeabilidade</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Quem manda e quem responde <span class="nivel nivel-1">básico</span></h3>
+        <p>Coloque um material num campo externo (por exemplo, dentro de um solenoide). Há três personagens:</p>
+        <ul>
+          <li>\(\vec H\), <strong>campo de intensidade magnética</strong> (o slide o chama de “campo magnético externo”): o que <em>você</em> controla com correntes livres. Unidade A/m.</li>
+          <li>\(\vec M\), a <strong>resposta</strong> do material (A/m).</li>
+          <li>\(\vec B\), o <strong>campo de indução magnética</strong> de verdade dentro do material, que entra em \(\vec F=q\vec v\times\vec B\) (T).</li>
+        </ul>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Relações</span></div><div class="note-body">
+        <h3>As fórmulas corretas <span class="nivel nivel-2">intermediário</span></h3>
+        $$\vec H=\frac{\vec B}{\mu_0}-\vec M\quad\Longleftrightarrow\quad\vec B=\mu_0(\vec H+\vec M).$$
+        <p>Para um <strong>material linear</strong>, a resposta é proporcional ao estímulo:</p>
+        $$\vec M=\chi_m\vec H,\qquad\chi_m=\frac{M}{H}=\frac{dM}{dH}\quad(\text{susceptibilidade, adimensional no SI}).$$
+        <p>Substituindo:</p>
+        $$\vec B=\mu_0(1+\chi_m)\,\vec H=\mu\,\vec H,\qquad \mu=\mu_0(1+\chi_m),\qquad K_m=\frac{\mu}{\mu_0}=1+\chi_m.$$
+        <p>\(\mu\) é a <strong>permeabilidade do meio</strong> e \(K_m\) a <strong>permeabilidade relativa</strong> (Sears Eqs. 28.30–28.31, p. 287). No vácuo, \(\vec M=0\), \(K_m=1\), \(\vec B=\mu_0\vec H\).</p>
+        <aside class="box box-warn"><div class="box-h">Atenção: erro de digitação no slide</div><p>O slide escreve “\(\vec B=(1+\chi_m)\mu_0\vec M\), ou \(\vec B=\mu\vec M\)”. O correto é com \(\vec H\): \(\vec B=(1+\chi_m)\mu_0\vec H=\mu\vec H\). (Confira as unidades: \(\mu\vec H\) dá T·m/A × A/m = T. Com \(\vec M\) a unidade também fecharia, mas a relação seria outra e falharia no vácuo, onde \(\vec M=0\) e \(\vec B\ne0\).) As demais fórmulas do slide (\(\mu=\mu_0(1+\chi_m)\), \(K_m=\mu/\mu_0=1+\chi_m\)) estão certas.</p></aside>
+        <p>O slide nota que \(\chi_m\) às vezes aparece por massa, por volume ou por mol (frequente em CGS). No SI, a \(\chi_m\) “de volume” é adimensional.</p>
+        <p>Outra forma (Sears Eq. 28.29, p. 287): se \(\vec B_0=\mu_0\vec H\) é o campo que existiria no vácuo, \(\vec B=\vec B_0+\mu_0\vec M\). O material <strong>soma</strong> \(\mu_0\vec M\) ao campo.</p>
+      </div></section>
+
+      <div class="table-wrap"><table>
+        <tr><th>Material (20 °C)</th><th>\(\chi_m\)</th><th>Tipo</th></tr>
+        <tr><td>Alumínio</td><td>\(+2{,}2\times10^{-5}\)</td><td>paramagnético</td></tr>
+        <tr><td>Platina</td><td>\(+2{,}6\times10^{-4}\)</td><td>paramagnético</td></tr>
+        <tr><td>Oxigênio (gás)</td><td>\(+1{,}9\times10^{-6}\)</td><td>paramagnético</td></tr>
+        <tr><td>Cobre</td><td>\(-1{,}0\times10^{-5}\)</td><td>diamagnético</td></tr>
+        <tr><td>Água (valor típico)</td><td>\(\approx-9\times10^{-6}\)</td><td>diamagnético</td></tr>
+        <tr><td>Bismuto</td><td>\(-1{,}66\times10^{-4}\)</td><td>diamagnético (o mais forte comum)</td></tr>
+        <tr><td>Ferro doce, aço-silício</td><td>\(10^{3}\) a \(10^{5}\) (não linear!)</td><td>ferromagnético</td></tr>
+      </table></div>
+      <p class="fonte"><span>Sears</span> Tabela 28.1, p. 287 (exceto água e ferro, valores típicos de outras fontes).</p>
+
+      <div class="worked"><div class="worked-h"><span>Exemplo</span> Solenoide com núcleo</div>
+        <p>Um solenoide com \(n=1000\) espiras/m e \(I=2\ \text{A}\) tem \(H=nI=2000\ \text{A/m}\) (Ampère para \(\vec H\) conta só correntes livres) e, vazio, \(B_0=\mu_0 H=2{,}51\ \text{mT}\).</p>
+        <ul>
+          <li>Núcleo de alumínio: \(M=\chi_m H=0{,}044\ \text{A/m}\); \(B=\mu_0(1+\chi_m)H\): aumento de 0,002 %. Imperceptível.</li>
+          <li>Núcleo de bismuto: \(B\) <em>diminui</em> 0,017 %.</li>
+          <li>Núcleo de ferro com \(K_m\approx5000\) (na faixa linear): \(B\approx12\ \text{T}\)? Não! O ferro <strong>satura</strong> em \(\mu_0M_s\approx2\ \text{T}\). Para ferromagnéticos, \(\chi_m\) não é constante: veja a histerese no Módulo 5.</li>
+        </ul>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">Num material com χm = −2×10⁻⁵, comparado ao vácuo, o campo B dentro dele (mesmo H) é…</p>
+        <div class="quiz-opts"><button>um pouco maior (paramagnético)</button><button data-ok>um pouco menor (diamagnético)</button><button>zero</button><button>muito maior (ferromagnético)</button></div>
+        <p class="quiz-fb">\(K_m=1+\chi_m=0{,}99998\): \(B=\mu H\) é 0,002 % menor. \(\vec M\) aponta contra \(\vec H\).</p></div>
+    </article>
+
+    <!-- ============ M3 ============ -->
+    <article class="modulo" id="m3">
+      <header class="modulo-h"><span class="modulo-num">Módulo 3</span><h2>A arruela magnetizada (Exercício 27 dos meios)</h2></header>
+
+      <div class="worked"><div class="worked-h"><span>Exercício 27 dos slides (meios)</span> Chapa em forma de rosca (arruela): raio interno r, externo R, espessura t ≪ R, magnetização uniforme M paralela ao eixo</div>
+        <p>(a) Encontre o campo no eixo de simetria, supondo que o campo da chapa pode ser calculado como a diferença dos campos de duas espiras (raio externo e interno), com correntes \(i\) no mesmo sentido. (b) Calcule a corrente amperiana associada a essa magnetização.</p>
+        <figure class="figure">
+          <svg viewBox="0 0 440 210" width="440" role="img" aria-label="Arruela em perspectiva com corrente anti-horária na borda externa e horária na borda interna, eixo z">
+            <defs><marker id="a5b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="currentColor"/></marker></defs>
+            <ellipse cx="200" cy="130" rx="160" ry="44" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="3"/>
+            <ellipse cx="200" cy="130" rx="60" ry="16" fill="var(--bg)" stroke="var(--cyan)" stroke-width="3"/>
+            <g style="color:var(--muted)"><line x1="200" y1="196" x2="200" y2="14" stroke="var(--muted)" stroke-dasharray="5 4" marker-end="url(#a5b)"/></g>
+            <text x="208" y="22" fill="var(--ink)" font-family="IBM Plex Sans" font-size="14">z (k̂), M</text>
+            <g style="color:var(--accent)"><path d="M300,166 Q340,158 356,140" fill="none" stroke="var(--accent)" stroke-width="2.5" marker-end="url(#a5b)"/></g>
+            <text x="350" y="182" fill="var(--accent)" font-family="IBM Plex Sans" font-size="13">I_b = M t</text>
+            <g style="color:var(--cyan)"><path d="M248,140 Q232,146 214,146" fill="none" stroke="var(--cyan)" stroke-width="2.5" marker-end="url(#a5b)"/></g>
+            <text x="216" y="164" fill="var(--cyan)" font-family="IBM Plex Sans" font-size="13">−M t</text>
+            <line x1="200" y1="130" x2="360" y2="130" stroke="var(--ink)" stroke-width="1"/><text x="300" y="124" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">R</text>
+            <line x1="200" y1="130" x2="140" y2="130" stroke="var(--ink)" stroke-width="1"/><text x="160" y="124" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">r</text>
+            <circle cx="200" cy="60" r="4" fill="var(--ink)"/><text x="208" y="64" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">P = (0,0,z)</text>
+          </svg>
+          <figcaption>Borda externa: corrente amperiana anti-horária (vista de cima) \(I_b=Mt\). Borda interna: a mesma corrente, no sentido oposto. Faces de cima e de baixo: sem corrente.</figcaption>
+        </figure>
+        <ol class="steps">
+          <li><strong>Trocar o ímã por correntes.</strong> Com \(\vec M=M\hat k\) uniforme, \(\vec j_b=\nabla\times\vec M=0\) por dentro. Nas superfícies, \(\vec K_b=\vec M\times\hat n\):
+            <ul>
+              <li>borda externa (\(\hat n=\hat\rho\)): \(\vec K_b=M\,\hat k\times\hat\rho=M\,\hat\varphi\) (anti-horária);</li>
+              <li>borda interna (\(\hat n=-\hat\rho\)): \(\vec K_b=-M\,\hat\varphi\) (horária);</li>
+              <li>faces planas (\(\hat n=\pm\hat k\parallel\vec M\)): \(\vec K_b=0\).</li>
+            </ul></li>
+          <li><strong>(b) Corrente amperiana.</strong> A densidade \(K_b=M\) (A/m) se espalha pela altura \(t\) da borda:
+            $$\boxed{I_b=K_b\,t=M\,t}$$
+            Pela lei de Ampère aplicada a \(\vec M\) (\(\oint\vec M\cdot d\vec l=I_b\)): um retângulo que corta a borda externa, com um lado de comprimento \(t\) dentro do material (onde \(\vec M\parallel d\vec l\)) e o resto fora (\(\vec M=0\)), dá \(\oint\vec M\cdot d\vec l=Mt\). Mesmo resultado.</li>
+          <li><strong>Espiras finas.</strong> Como \(t\ll R\) (e supomos também \(t\) pequeno frente a \(r\) e a \(|z|\)), cada borda é uma espira fina. Campo de uma espira de raio \(a\) e corrente \(I\) no eixo (capítulo III):
+            $$\vec B_{\text{esp}}(z)=\frac{\mu_0 I\,a^2}{2(a^2+z^2)^{3/2}}\hat k.$$</li>
+          <li><strong>(a) Superposição.</strong> Externa com \(+I_b\), interna com \(-I_b\). Equivale à “diferença de duas espiras com correntes no mesmo sentido” do enunciado:
+            $$\boxed{\vec B(z)=\frac{\mu_0 M t}{2}\left[\frac{R^2}{(R^2+z^2)^{3/2}}-\frac{r^2}{(r^2+z^2)^{3/2}}\right]\hat k}$$
+            Equivalentemente, \(\vec H(z)=\vec B/\mu_0\) no eixo (fora do material, \(\vec M=0\)).</li>
+          <li><strong>Conferências.</strong>
+            <ul>
+              <li><strong>Longe</strong> (\(|z|\gg R\)): \(B\approx\frac{\mu_0 Mt}{2}\frac{R^2-r^2}{|z|^3}=\frac{\mu_0}{2\pi}\frac{m}{|z|^3}\) com \(m=M\cdot\pi(R^2-r^2)t=M\times\text{volume}\). É um dipolo com o momento total do ímã. ✓</li>
+              <li><strong>No centro</strong> (\(z=0\)): \(B=\frac{\mu_0Mt}{2}\left(\frac1R-\frac1r\right)&lt;0\). No meio do furo o campo aponta <em>contra</em> \(\vec M\): é o campo de retorno, como no plano equatorial de um dipolo.</li>
+              <li><strong>Disco cheio</strong> (\(r\to0\)): sobra só a espira externa.</li>
+            </ul></li>
+        </ol>
+        <p><strong>Número:</strong> arruela de neodímio com \(M=1{,}0\times10^6\ \text{A/m}\), \(t=1\ \text{mm}\): \(I_b=1000\ \text{A}\)! Um ímã fininho equivale a uma espira com mil ampères. Com \(R=3\ \text{cm}\), \(r=1\ \text{cm}\): \(B(0)=\frac{4\pi\times10^{-7}\cdot1000}{2}\left(\frac1{0{,}03}-\frac1{0{,}01}\right)\approx-42\ \text{mT}\).</p>
+        <aside class="box box-warn"><div class="box-h">Sobre a notação do slide</div><p>O enunciado (a) pede “o valor da magnetização \(\vec M\)” no eixo, e a resolução manuscrita escreve \(\vec M(z)=\frac{i}{2}\left[\frac{R^2}{(z^2+R^2)^{3/2}}-\frac{r^2}{(z^2+r^2)^{3/2}}\right]\hat k\) e, no item (b), \(I=\frac{it}{2}[\dots]\). Fora do material a magnetização é zero; o que se calcula no eixo é o <strong>campo</strong>: \(\vec B/\mu_0\) (A/m) produzido por espiras de corrente \(i\). A leitura consistente é: corrente amperiana \(I_b=Mt\) (que faz o papel do \(i\) das espiras) e \(\vec B(z)=\frac{\mu_0 I_b}{2}[\dots]\hat k\). Se a prova usar a notação do slide, escreva as duas formas e explique o que cada símbolo significa.</p></aside>
+      </div>
+
+      <div class="widget" id="w-arruela">
+        <p class="w-title">Campo no eixo da arruela magnetizada</p>
+        <p class="w-caption">A curva cheia é o campo da arruela; as tracejadas, das espiras externa (+I<sub>b</sub>) e interna (−I<sub>b</sub>) separadas. Feche o furo (r → 0) e veja o disco; abra-o e veja o campo no centro ficar negativo. A linha pontilhada é a aproximação de dipolo, boa só longe.</p>
+        <canvas class="w-canvas" height="320"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Raio externo R <output data-o="R"></output></span><input type="range" data-k="R" min="1" max="5" step="0.1" value="3"></label>
+          <label class="w-control"><span>Raio interno r <output data-o="r"></output></span><input type="range" data-k="r" min="0" max="4.8" step="0.1" value="1"></label>
+          <label class="w-control"><span>Magnetização M <output data-o="M"></output></span><input type="range" data-k="M" min="100" max="1200" step="50" value="1000"></label>
+          <label class="w-control"><span>Espessura t <output data-o="t"></output></span><input type="range" data-k="t" min="0.2" max="3" step="0.1" value="1"></label>
+        </div>
+        <div class="w-readout"></div>
+      </div>
+      <p class="fonte"><span>Base</span> espira no eixo: Sears Eq. 28.15, p. 275; correntes de magnetização: Sears §28.8 (discussão qualitativa).</p>
+    </article>
+
+    <!-- ============ M4 ============ -->
+    <article class="modulo" id="m4">
+      <header class="modulo-h"><span class="modulo-num">Módulo 4</span><h2>Diamagnetismo e paramagnetismo</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Sem campo, nada; com campo, uma resposta fraca <span class="nivel nivel-1">básico</span></h3>
+        <p>O slide pergunta: “que esperamos da susceptibilidade para o paramagnetismo? e para o diamagnetismo?”. Nos dois casos <strong>não existe magnetismo espontâneo</strong>: \(M=0\) sem campo. Só há magnetismo <strong>induzido</strong> por um campo externo.</p>
+        <div class="two">
+          <div class="box box-lab"><div class="box-h">Diamagnetismo: \(\chi_m&lt;0\)</div>
+            <p>Os átomos não têm momento próprio (camadas eletrônicas completas). O campo aplicado modifica o movimento orbital dos elétrons e induz momentos <strong>contrários</strong> ao campo (é a lei de Lenz em escala atômica, capítulo VI). Fraco (\(|\chi_m|\sim10^{-5}\)), praticamente independente da temperatura e presente em <em>toda</em> matéria. Exemplos: água, cobre, bismuto, grafite, nós mesmos. Um campo de 16 T já fez um sapo vivo levitar.</p></div>
+          <div class="box box-key"><div class="box-h">Paramagnetismo: \(\chi_m&gt;0\)</div>
+            <p>Os átomos têm momentos permanentes, mas apontam ao acaso por causa da agitação térmica (\(M=0\)). Um campo tenta alinhá-los (energia \(U=-\vec m\cdot\vec B\), capítulo II); o calor desalinha. Resultado: alinhamento parcial, fraco, que <strong>diminui com a temperatura</strong>: lei de Curie \(M=C\,B/T\), ou seja, \(\chi_m\propto1/T\) (Sears Eq. 28.32, p. 287). Exemplos: alumínio, platina, oxigênio líquido.</p></div>
+        </div>
+      </div></section>
+
+      <div class="widget" id="w-ordens">
+        <p class="w-title">As cinco respostas magnéticas</p>
+        <p class="w-caption">Cada seta é o momento de um átomo (em antiferro e ferri, as duas sub-redes estão em cores diferentes). Escolha o tipo de material, mude a temperatura (em unidades da temperatura de ordem, T<sub>C</sub> ou T<sub>N</sub>) e o campo aplicado. O gráfico mostra M(T) para o campo escolhido, calculado num modelo de campo médio (no diamagnético a escala está muito ampliada).</p>
+        <canvas class="w-canvas" height="320"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Temperatura T/T<sub>ordem</sub> <output data-o="T"></output></span><input type="range" data-k="T" min="0.02" max="2" step="0.02" value="0.6"></label>
+          <label class="w-control"><span>Campo aplicado h <output data-o="h"></output></span><input type="range" data-k="h" min="-1" max="1" step="0.02" value="0"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="dia">Dia</button><button class="w-btn" data-act="para">Para</button><button class="w-btn on" data-act="ferro">Ferro</button><button class="w-btn" data-act="anti">Antiferro</button><button class="w-btn" data-act="ferri">Ferri</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <section class="note"><div class="cue"><span>Avançado</span></div><div class="note-body">
+        <h3>De onde vem a lei de Curie <span class="nivel nivel-3">avançado</span></h3>
+        <p>Um momento \(m\) num campo \(B\) tem energia \(\mp mB\) (paralelo ou antiparalelo, no modelo de dois estados). Com a estatística de Boltzmann, a fração alinhada dá \(\langle m_z\rangle=m\tanh\!\left(\frac{mB}{k_BT}\right)\approx\frac{m^2B}{k_BT}\) para \(mB\ll k_BT\). Multiplicando pelo número de átomos por volume, \(M=\frac{n m^2}{k_B}\frac{B}{T}\): a lei de Curie, com \(C=nm^2/k_B\). Com campo muito forte ou temperatura muito baixa, satura em \(M=nm\).</p>
+      </div></section>
+      <p class="fonte"><span>Sears</span> §28.8, p. 286–288; Eq. 28.32; Exemplo 28.11 (p. 288).</p>
+    </article>
+
+    <!-- ============ M5 ============ -->
+    <article class="modulo" id="m5">
+      <header class="modulo-h"><span class="modulo-num">Módulo 5</span><h2>Ferromagnetismo, domínios e histerese</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Vizinhos que concordam <span class="nivel nivel-1">básico</span></h3>
+        <p>No ferro (estrutura cúbica de corpo centrado, BCC), níquel e cobalto, uma interação quântica (a <em>troca</em>) faz momentos vizinhos preferirem apontar <strong>para o mesmo lado</strong>. Abaixo da <strong>temperatura de Curie</strong> \(T_C\) aparece <strong>magnetização espontânea</strong>, sem campo nenhum: é a ordem ferromagnética. Acima de \(T_C\), a agitação térmica vence e o material vira paramagnético (\(M=0\)).</p>
+        <ul>
+          <li>Ferro: \(T_C=1043\ \text{K}\) (770 °C). Níquel: 627 K. Gadolínio: ~293 K (perde o ferromagnetismo num dia quente!).</li>
+          <li>O slide fala em <strong>quebra de simetria</strong>: acima de \(T_C\) todas as direções são equivalentes; abaixo, o material “escolhe” uma.</li>
+          <li><strong>Domínios:</strong> um prego de ferro “desmagnetizado” já está ordenado por dentro, mas dividido em regiões (domínios) com magnetizações em direções diferentes que se anulam no total. Cada domínio contribui; um campo externo faz crescer os domínios alinhados com ele.</li>
+        </ul>
+      </div></section>
+
+      <div class="widget" id="w-dominios">
+        <p class="w-title">Domínios e transição de Curie (modelo de Ising)</p>
+        <p class="w-caption">Rede de momentos que só apontam para cima (laranja) ou para baixo (azul) e gostam de concordar com os vizinhos; a temperatura sorteia viradas (Monte Carlo de Metropolis). Abaixo de T<sub>C</sub> ≈ 2,27 (nas unidades do modelo) formam-se domínios que crescem; acima, ruído. Use “Resfriar devagar” para medir M(T) e comparar com a curva exata de Onsager.</p>
+        <canvas class="w-canvas" height="320"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Temperatura T <output data-o="T"></output></span><input type="range" data-k="T" min="0.5" max="4.5" step="0.05" value="1.8"></label>
+          <label class="w-control"><span>Campo h <output data-o="h"></output></span><input type="range" data-k="h" min="-0.4" max="0.4" step="0.02" value="0"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="quente">Embaralhar (T alto)</button><button class="w-btn" data-act="cool">Resfriar devagar</button><button class="w-btn" data-act="limpa">Limpar gráfico</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <section class="note"><div class="cue"><span>Histerese</span></div><div class="note-body">
+        <h3>A curva M × H tem memória <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Começando de um ferro desmagnetizado e aumentando \(H\), percorre-se a <strong>curva inicial</strong>: as paredes de domínio se movem, depois os domínios giram, até a <strong>magnetização de saturação</strong> \(M_s\) (todos alinhados; ali \(dM/dH=0\)). Baixando \(H\) de volta a zero, \(M\) <em>não volta</em> a zero:</p>
+        <ul>
+          <li>\(M_r\), <strong>remanência</strong> (retentividade): a magnetização que sobra com \(H=0\). É isso que faz um ímã permanente.</li>
+          <li>\(H_c\), <strong>campo coercitivo</strong> (coercividade): o campo reverso necessário para zerar \(M\).</li>
+        </ul>
+        <p>A área do laço é a energia dissipada por ciclo (por volume, \(\mu_0\oint H\,dM\)): vira calor no núcleo de transformadores.</p>
+        <aside class="box box-key"><div class="box-h">Uma dica para os engenheiros</div><p><strong>Materiais moles</strong> (ferro doce, aço-silício, ferrites): \(H_c\) pequeno, laço fino, pouca perda. Usados em transformadores, motores, indutores. <strong>Materiais duros</strong> (NdFeB, SmCo, alnico, ferrite de bário): \(H_c\) e \(M_r\) grandes, laço gordo. Usados em ímãs permanentes, alto-falantes, motores de carro elétrico, e antigamente em discos rígidos e fitas (um bit = uma região magnetizada para um lado).</p></aside>
+      </div></section>
+
+      <div class="widget" id="w-histerese">
+        <p class="w-title">Traçador de histerese</p>
+        <p class="w-caption">Mova o campo H para frente e para trás (ou aperte “Ciclo automático”). O ponto amarelo deixa um rastro. Comece em “Desmagnetizar” para ver a curva inicial. Compare um material mole e um duro; leia M<sub>r</sub> e H<sub>c</sub>.</p>
+        <canvas class="w-canvas" height="340"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Campo aplicado H <output data-o="H"></output></span><input type="range" data-k="H" min="-3" max="3" step="0.01" value="0"></label>
+          <label class="w-control"><span>Coercividade H<sub>c</sub> <output data-o="Hc"></output></span><input type="range" data-k="Hc" min="0.05" max="1.8" step="0.05" value="0.8"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="auto">Ciclo automático</button><button class="w-btn" data-act="mole">Material mole</button><button class="w-btn" data-act="duro">Material duro</button><button class="w-btn" data-act="virgem">Desmagnetizar</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">Para um bom núcleo de transformador (corrente alternada, 60 Hz), você quer um material com…</p>
+        <div class="quiz-opts"><button>Hc grande e laço largo</button><button data-ok>Hc pequeno e laço estreito</button><button>χ negativo</button></div>
+        <p class="quiz-fb">A cada ciclo (60 por segundo) o material percorre o laço; a área é energia perdida em calor. Laço estreito = material mole.</p></div>
+      <p class="fonte"><span>Sears</span> §28.8, Ferromagnetismo e histerese, p. 288–291; Exemplo 28.12 (p. 290).</p>
+    </article>
+
+    <!-- ============ M6 ============ -->
+    <article class="modulo" id="m6">
+      <header class="modulo-h"><span class="modulo-num">Módulo 6</span><h2>Antiferromagnetismo e ferrimagnetismo</h2></header>
+
+      <section class="note"><div class="cue"><span>Antiferro</span></div><div class="note-body">
+        <h3>Vizinhos que discordam <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Se a interação favorece vizinhos <strong>antiparalelos</strong>, abaixo da <strong>temperatura de Néel</strong> \(T_N\) os momentos se organizam em duas sub-redes opostas (para cima, para baixo, para cima…). É uma ordem real (quebra de simetria), mas os momentos se cancelam: \(M\approx0\). Exemplo do slide: a goethita, α-Fe<sup>III</sup>OOH (estrutura ortorrômbica), com \(T_N\approx400\ \text{K}\). Acima de \(T_N\): paramagnético.</p>
+        <details class="reveal"><summary>Slide: “Por que M não é = 0?”</summary><div>
+          <p>Num antiferromagneto ideal e sem campo, \(M=0\). Mas nas medidas reais: (1) mede-se com um campo aplicado, que induz \(M=\chi H\ne0\); a susceptibilidade tem um pico (“cúspide”) em \(T_N\) e diminui abaixo dele, porque a ordem antiparalela resiste ao campo. (2) Amostras reais como a goethita têm momentos <strong>não compensados</strong> (defeitos, grãos pequenos, superfícies, leve inclinação dos momentos), que deixam um pequeno \(M\) líquido.</p>
+          <p>Por isso o slide mostra duas curvas: <strong>FC</strong> (<em>field cooling</em>: resfria com o campo ligado, os momentos não compensados “congelam” alinhados) e <strong>ZFC</strong> (<em>zero field cooling</em>: resfria sem campo, liga o campo só para medir). A diferença entre FC e ZFC revela esses momentos “presos”.</p>
+        </div></details>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Ferri</span></div><div class="note-body">
+        <h3>Duas sub-redes desiguais <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Como no antiferro, há duas sub-redes antiparalelas, mas com momentos de <strong>tamanhos diferentes</strong>: a soma não se anula. Resultado: magnetização espontânea, saturação \(M_s\), histerese, tudo parecido com o ferro, mas por outro mecanismo. Exemplo do slide: a <strong>magnetita</strong> Fe₃O₄ (estrutura cúbica tipo espinélio; \(T_C\approx858\ \text{K}\)), o ímã natural que deu nome ao magnetismo (Magnésia, Grécia). As ferrites (ímãs pretos de geladeira, núcleos de alta frequência) são ferrimagnéticas e isolantes elétricas: ótimas contra correntes de Foucault (capítulo VI).</p>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 520 150" width="520" role="img" aria-label="Quatro padrões de setas: paramagnético desordenado, ferro todas para cima, antiferro alternadas iguais, ferri alternadas desiguais">
+          <defs><marker id="a5c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="currentColor"/></marker></defs>
+          <g font-family="IBM Plex Sans" font-size="13" fill="var(--ink)" text-anchor="middle"><text x="65" y="140">para</text><text x="195" y="140">ferro</text><text x="325" y="140">antiferro</text><text x="455" y="140">ferri</text></g>
+          <g style="color:var(--muted)" stroke="var(--muted)" stroke-width="2.5">
+            <line x1="25" y1="70" x2="40" y2="40" marker-end="url(#a5c)"/><line x1="55" y1="50" x2="45" y2="85" marker-end="url(#a5c)"/><line x1="70" y1="80" x2="92" y2="60" marker-end="url(#a5c)"/><line x1="100" y1="45" x2="90" y2="30" marker-end="url(#a5c)"/><line x1="30" y1="110" x2="55" y2="100" marker-end="url(#a5c)"/><line x1="85" y1="95" x2="80" y2="120" marker-end="url(#a5c)"/></g>
+          <g style="color:var(--accent)" stroke="var(--accent)" stroke-width="2.5">
+            <line x1="160" y1="110" x2="160" y2="40" marker-end="url(#a5c)"/><line x1="183" y1="110" x2="183" y2="40" marker-end="url(#a5c)"/><line x1="206" y1="110" x2="206" y2="40" marker-end="url(#a5c)"/><line x1="229" y1="110" x2="229" y2="40" marker-end="url(#a5c)"/>
+            <line x1="290" y1="110" x2="290" y2="40" marker-end="url(#a5c)"/><line x1="336" y1="110" x2="336" y2="40" marker-end="url(#a5c)"/>
+            <line x1="420" y1="110" x2="420" y2="40" marker-end="url(#a5c)"/><line x1="466" y1="110" x2="466" y2="40" marker-end="url(#a5c)"/></g>
+          <g style="color:var(--cyan)" stroke="var(--cyan)" stroke-width="2.5">
+            <line x1="313" y1="40" x2="313" y2="110" marker-end="url(#a5c)"/><line x1="359" y1="40" x2="359" y2="110" marker-end="url(#a5c)"/>
+            <line x1="443" y1="60" x2="443" y2="95" marker-end="url(#a5c)"/><line x1="489" y1="60" x2="489" y2="95" marker-end="url(#a5c)"/></g>
+        </svg>
+        <figcaption>Os quatro arranjos: desordem (para), todos alinhados (ferro), duas sub-redes iguais e opostas (antiferro), duas sub-redes desiguais e opostas (ferri).</figcaption>
+      </figure>
+
+      <div class="quiz"><p class="quiz-q">Um material tem ordem magnética abaixo de 600 K, duas sub-redes antiparalelas e magnetização espontânea não nula. Ele é…</p>
+        <div class="quiz-opts"><button>antiferromagnético</button><button data-ok>ferrimagnético</button><button>paramagnético</button><button>diamagnético</button></div>
+        <p class="quiz-fb">Sub-redes opostas que <em>não</em> se cancelam: ferrimagnetismo (como a magnetita). No antiferro elas se cancelam.</p></div>
+    </article>
+
+    <!-- ============ M7 ============ -->
+    <article class="modulo" id="m7">
+      <header class="modulo-h"><span class="modulo-num">Módulo 7</span><h2>Formas de mudar a magnetização</h2></header>
+
+      <section class="note"><div class="cue"><span>Mensagem</span></div><div class="note-body">
+        <h3>Dois botões: campo e temperatura <span class="nivel nivel-1">básico</span></h3>
+        <ol class="steps">
+          <li><strong>Campo magnético.</strong> Com \(\vec B=0\) um prego é “não magnético” (domínios ao acaso); com \(\vec B=\mu_0\vec H\) aplicado, ele se magnetiza e vira ímã. Diamagnéticos respondem contra o campo; para, ferro e antiferro, a favor.</li>
+          <li><strong>Temperatura.</strong> Resfriando um ferromagneto a partir de \(T&gt;T_C\): desordem (\(M=0\)) → início da ordem logo abaixo de \(T_C\) (\(M\) pequeno, cresce rápido) → ordem completa perto de \(T=0\) (\(M=M_s\)).</li>
+        </ol>
+        <figure class="figure">
+          <svg viewBox="0 0 320 180" width="320" role="img" aria-label="Gráfico M versus T: M igual a Ms em T zero, decresce até zero em Tc e permanece zero acima">
+            <line x1="40" y1="150" x2="300" y2="150" stroke="var(--muted)"/><line x1="40" y1="150" x2="40" y2="15" stroke="var(--muted)"/>
+            <path d="M40,40 C120,40 170,50 195,85 C208,105 212,130 215,150 L295,150" fill="none" stroke="var(--accent)" stroke-width="3"/>
+            <line x1="215" y1="150" x2="215" y2="30" stroke="var(--muted)" stroke-dasharray="4 4"/>
+            <text x="210" y="168" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">T_C</text>
+            <text x="290" y="168" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">T</text>
+            <text x="14" y="44" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">M_s</text>
+            <text x="16" y="22" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">M</text>
+            <text x="230" y="140" fill="var(--muted)" font-family="IBM Plex Sans" font-size="12">desordem, M = 0</text>
+            <text x="60" y="30" fill="var(--muted)" font-family="IBM Plex Sans" font-size="12">ordem completa</text>
+          </svg>
+          <figcaption>\(M(T)\) sem campo: o <strong>parâmetro de ordem</strong> da transição ferromagnética.</figcaption>
+        </figure>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Avançado</span></div><div class="note-body">
+        <h3>Parâmetro de ordem (teoria LGW) <span class="nivel nivel-3">avançado</span></h3>
+        <p>O slide cita a teoria de Landau–Ginzburg–Wilson: \(M\) é o <strong>parâmetro de ordem</strong>, zero na fase desordenada e não nulo na ordenada, como a polarização num ferroelétrico. Na versão mais simples (Landau, campo médio), a energia livre é \(F(M)=a(T-T_C)M^2+bM^4-\mu_0HM\). Para \(T&lt;T_C\) e \(H=0\), o mínimo fica em \(M\ne0\), com \(M\propto(T_C-T)^{1/2}\). Experimentos e modelos melhores dão expoentes um pouco diferentes (≈ 0,33–0,37 em 3D; exatamente 1/8 no modelo de Ising em 2D da simulação acima).</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Desafio</span></div><div class="note-body">
+        <h3>E no zero absoluto? (curiosidade, fora da prova)</h3>
+        <p>O slide termina com um desafio: em \(T=0\ \text{K}\), sem agitação térmica, a magnetização ainda pode mudar? Sim: em vez da temperatura, mexe-se em outro “botão” (campo, pressão, composição química) e o sistema pode trocar de fase por causa das <strong>flutuações quânticas</strong>, que existem mesmo em \(T=0\) por causa do princípio da incerteza. São as <em>transições de fase quânticas</em>. Perto delas, os spins podem ficar <strong>emaranhados</strong> (estados que não se descrevem spin por spin). O slide cita a primeira evidência de emaranhamento quântico de 4 spins num material como uma rota para futuros computadores quânticos.</p>
+      </div></section>
+    </article>
+
+    <!-- ============ M8 ============ -->
+    <article class="modulo" id="m8">
+      <header class="modulo-h"><span class="modulo-num">Módulo 8</span><h2>Experimentos caseiros</h2></header>
+
+      <section class="note note-lab"><div class="cue"><span>Experimento 1</span></div><div class="note-body">
+        <h3>Magnetize uma agulha e faça uma bússola</h3>
+        <p>Passe um ímã ao longo de uma agulha de costura ~30 vezes, <strong>sempre no mesmo sentido</strong> (levante o ímã para voltar). Espete a agulha num pedacinho de rolha ou isopor e ponha numa tigela de água: ela gira até apontar norte–sul. Depois bata a agulha algumas vezes na mesa e teste de novo: ela perde parte da magnetização.</p>
+        <p><strong>Física:</strong> o ímã alinha os domínios do aço (material “duro”, guarda remanência \(M_r\)). As batidas fornecem energia para os domínios se desalinharem: é a desordem vencendo a ordem.</p>
+      </div></section>
+
+      <section class="note note-lab"><div class="cue"><span>Experimento 2</span></div><div class="note-body">
+        <h3>Ponto de Curie com um clipe</h3>
+        <p>Pendure um clipe de aço (ou um pedaço de palha de aço) num fio de cobre, de modo que um ímã preso a 1–2 cm de distância o puxe e ele fique inclinado. Aqueça o clipe com a chama de uma vela. Quando ele passar da temperatura de Curie (~770 °C para o ferro, rubro), <strong>solta do ímã</strong> e cai na vertical. Ao esfriar, volta a ser atraído.</p>
+        <aside class="box box-warn"><div class="box-h">Segurança</div><p>Fogo e metal incandescente: faça com um adulto, sobre uma bandeja de metal, cabelo preso, longe de cortinas. Segure tudo com alicate. Mantenha o ímã longe da chama: ímãs de neodímio perdem a magnetização já a ~80 °C e o revestimento pode queimar.</p></aside>
+      </div></section>
+
+      <section class="note note-lab"><div class="cue"><span>Experimento 3</span></div><div class="note-body">
+        <h3>Uvas diamagnéticas e ferro no cereal</h3>
+        <p><strong>Uvas:</strong> espete duas uvas grandes nas pontas de um canudo e equilibre o canudo pelo meio sobre a tampa de uma garrafa (ou pendure por um fio), sem vento. Aproxime devagar um ímã forte de neodímio de uma uva, sem encostar: ela é <strong>repelida</strong> lentamente. A uva é quase só água, diamagnética (\(\chi_m\approx-9\times10^{-6}\)). A força é minúscula; só funciona porque o canudo gira quase sem atrito.</p>
+        <p><strong>Cereal:</strong> amasse cereal “enriquecido com ferro” num saco com água, espere 20 min e passe um ímã forte por fora do saco: aparecem pontinhos pretos de ferro metálico (ferromagnético) se juntando.</p>
+        <aside class="box box-warn"><div class="box-h">Segurança</div><p>Ímãs de neodímio prendem a pele com força e podem estilhaçar se baterem um no outro. Mantenha longe de cartões, celulares, marca-passos e de crianças pequenas (engolir dois ímãs é grave).</p></aside>
+      </div></section>
+    </article>
+
+    <!-- ============ RESUMO ============ -->
+    <article class="modulo" id="resumo">
+      <header class="modulo-h"><span class="modulo-num">Fechamento</span><h2>Resumo e fórmulas</h2></header>
+      <div class="table-wrap"><table>
+        <tr><th>Grandeza</th><th>Fórmula</th><th>Observação</th></tr>
+        <tr><td>Momento de uma espira</td><td>\(\vec m=iS\hat n\)</td><td>átomos ~ \(\mu_B=9{,}27\times10^{-24}\) A·m²</td></tr>
+        <tr><td>Magnetização</td><td>\(\vec M=\frac1V\sum\vec m_i\) (A/m)</td><td>análoga à polarização \(\vec P\)</td></tr>
+        <tr><td>Campo H</td><td>\(\vec H=\vec B/\mu_0-\vec M\)</td><td>só correntes livres o produzem</td></tr>
+        <tr><td>Material linear</td><td>\(\vec M=\chi_m\vec H\), \(\vec B=\mu_0(1+\chi_m)\vec H=\mu\vec H\)</td><td>\(K_m=\mu/\mu_0=1+\chi_m\) (slide: troque \(\vec M\) por \(\vec H\))</td></tr>
+        <tr><td>Correntes amperianas</td><td>\(\vec K_b=\vec M\times\hat n\), \(\vec j_b=\nabla\times\vec M\)</td><td>arruela: \(I_b=Mt\)</td></tr>
+        <tr><td>Arruela no eixo</td><td>\(\frac{\mu_0Mt}{2}\left[\frac{R^2}{(R^2+z^2)^{3/2}}-\frac{r^2}{(r^2+z^2)^{3/2}}\right]\hat k\)</td><td>Exercício 27; longe = dipolo</td></tr>
+        <tr><td>Dia / para</td><td>\(\chi_m&lt;0\) (~const.) / \(\chi_m&gt;0\), \(\chi_m\propto1/T\)</td><td>só magnetismo induzido</td></tr>
+        <tr><td>Ferro / ferri</td><td>\(M\ne0\) espontâneo abaixo de \(T_C\); histerese \(M_s,M_r,H_c\)</td><td>ferro BCC; magnetita (espinélio)</td></tr>
+        <tr><td>Antiferro</td><td>sub-redes iguais e opostas abaixo de \(T_N\)</td><td>goethita; \(M\approx0\)</td></tr>
+      </table></div>
+      <section class="note note-warn"><div class="cue"><span>Na prova</span></div><div class="note-body">
+        <h3>Erros comuns</h3>
+        <ul>
+          <li><strong>Escrever \(\vec B=\mu\vec M\)</strong> (erro do slide). É \(\vec B=\mu\vec H\).</li>
+          <li><strong>Sinal de \(\chi_m\)</strong>: dia é negativo, para é positivo; ferro não tem \(\chi\) constante.</li>
+          <li><strong>Esquecer o sentido oposto</strong> da corrente amperiana na borda interna da arruela.</li>
+          <li><strong>Confundir \(I_b=Mt\)</strong> (corrente, A) com \(K_b=M\) (corrente por comprimento, A/m).</li>
+          <li><strong>Achar que antiferro não tem ordem</strong>: tem (abaixo de \(T_N\)); só não tem \(M\) líquido.</li>
+          <li><strong>Confundir remanência e coercividade</strong>: \(M_r\) é o \(M\) que sobra em \(H=0\); \(H_c\) é o \(H\) que zera \(M\).</li>
+        </ul>
+      </div></section>
+    </article>
+
+    <nav class="chapter-nav"><a class="prev" href="cap4.html"><small>← Anterior</small>IV · Lei de Ampère</a><a class="next" href="cap6.html"><small>Próximo →</small>VI · Indução magnética</a></nav>
+  </main>
+</div>
+
+<footer class="footer">
+  <p><strong>Física III · Magnetismo, indução e ondas</strong> · Física para IME (IFUSP) · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir dos slides e do simulado do Prof. Julio A. Larrea J. (IFUSP) e de Young &amp; Freedman, <em>Física III</em>, 14ª ed. Texto, simulações e erros são das notas; não é material oficial da disciplina.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/core.js"></script>
+<script src="assets/cap5.js"></script>
+</body>
+</html>

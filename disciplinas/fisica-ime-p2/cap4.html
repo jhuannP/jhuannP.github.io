@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IV · Lei de Ampère — Física III para IME</title>
+<meta name="description" content="A lei de Ampère: circulação do campo magnético, fio grosso (Exercício 24), solenoide, toroide, cabo coaxial e a forma diferencial que começa as equações de Maxwell.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('fis3-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Física III <em>para IME</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="cap1.html" title="Força magnética">I</a><a href="cap2.html" title="Torque e dipolo magnético">II</a><a href="cap3.html" title="Lei de Biot–Savart">III</a><a class="on" href="cap4.html" title="Lei de Ampère">IV</a><a href="cap5.html" title="Meios magnéticos">V</a><a href="cap6.html" title="Indução magnética">VI</a><a href="cap7.html" title="Indutância e energia magnética">VII</a><a href="cap8.html" title="Maxwell e ondas">VIII</a><a class="prova" href="prova.html" title="Resolução da prova">Prova</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<section class="chapter-hero" data-num="IV">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo IV · Slides “Dipolo magnético e Lei de Ampère” (2ª parte)</p>
+    <h1>Lei de Ampère</h1>
+    <p class="lede">Dê uma volta completa em torno de algumas correntes somando o campo ao longo do caminho: o resultado só depende da corrente que você abraçou. Quando há simetria, isso dá o campo em duas linhas.</p>
+    <div class="meta"><span>Sears §28.6–28.7 · p. 277–284</span><span>Exercício 24 dos slides</span><span>4 simulações</span></div>
+  </div>
+</section>
+
+<div class="layout">
+  <nav class="toc" aria-label="Neste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol>
+      <li><a href="#m1"><span class="toc-num">1</span>Circulação e a lei</a></li>
+      <li><a href="#m2"><span class="toc-num">2</span>Fio grosso (Exercício 24)</a></li>
+      <li><a href="#m3"><span class="toc-num">3</span>Solenoide por Ampère</a></li>
+      <li><a href="#m4"><span class="toc-num">4</span>Toroide</a></li>
+      <li><a href="#m5"><span class="toc-num">5</span>Cabo coaxial</a></li>
+      <li><a href="#m6"><span class="toc-num">6</span>Forma diferencial e Maxwell</a></li>
+      <li><a href="#m7"><span class="toc-num">7</span>Experimento: eletroímã</a></li>
+      <li><a href="#resumo"><span class="toc-num">✓</span>Resumo e fórmulas</a></li>
+    </ol>
+  </nav>
+  <main id="conteudo" class="content">
+
+    <!-- ============ M1 ============ -->
+    <article class="modulo" id="m1">
+      <header class="modulo-h"><span class="modulo-num">Módulo 1</span><h2>Circulação do campo e a lei de Ampère</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Andar em volta e somar <span class="nivel nivel-1">básico</span></h3>
+        <p>Imagine que você caminha numa trilha fechada (um laço C) em volta de um fio com corrente. A cada passinho \(\Delta l\), você anota quanto do campo aponta <strong>no sentido em que você anda</strong>: a componente \(B_\parallel\). Multiplica por \(\Delta l\) e soma tudo até voltar ao início.</p>
+        <p>O resultado (a <strong>circulação</strong>) tem uma propriedade mágica: não importa o formato da trilha, só importa <strong>quanta corrente atravessa</strong> a área cercada por ela.</p>
+        $$\sum B_\parallel\,\Delta l\;\xrightarrow{\ \Delta l\to dl\ }\;\oint_C\vec B\cdot d\vec l=\mu_0\,I_{\text{enc}}\qquad(\text{Sears Eq. 28.20, p. 280})$$
+        <p>\(I_{\text{enc}}\) é <em>toda</em> a corrente que atravessa a superfície S limitada pela curva fechada C.</p>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 520 230" width="520" role="img" aria-label="Curva fechada C em volta de um fio; segmentos dl com B paralelo; regra da mão direita">
+          <defs><marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="currentColor"/></marker></defs>
+          <path d="M60,120 C60,40 260,30 280,90 C300,150 250,210 150,200 C80,195 60,170 60,120Z" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2.5"/>
+          <text x="200" y="60" fill="var(--accent)" font-family="IBM Plex Sans" font-size="15" font-weight="600">C</text>
+          <text x="110" y="150" fill="var(--muted)" font-family="IBM Plex Sans" font-size="14">S</text>
+          <circle cx="170" cy="120" r="11" fill="none" stroke="var(--ink)" stroke-width="2"/><circle cx="170" cy="120" r="3.5" fill="var(--ink)"/>
+          <text x="186" y="126" fill="var(--ink)" font-family="IBM Plex Sans" font-size="14">I (saindo)</text>
+          <g style="color:var(--cyan)"><line x1="258" y1="150" x2="238" y2="180" stroke="var(--cyan)" stroke-width="2.5" marker-end="url(#a4)"/><line x1="258" y1="150" x2="250" y2="178" stroke="var(--ink)" stroke-width="2" marker-end="url(#a4)"/></g>
+          <text x="262" y="186" fill="var(--cyan)" font-family="IBM Plex Sans" font-size="14">B</text>
+          <text x="222" y="200" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">dl</text>
+          <g style="color:var(--accent)"><path d="M90,62 A90,70 0 0 0 64,100" fill="none" stroke="var(--accent)" stroke-width="2" marker-end="url(#a4)"/></g>
+          <text x="340" y="70" fill="var(--ink)" font-family="IBM Plex Sans" font-size="14" font-weight="600">Regra da mão direita</text>
+          <text x="340" y="96" fill="var(--ink-2)" font-family="IBM Plex Sans" font-size="13">polegar: sentido da corrente</text>
+          <text x="340" y="116" fill="var(--ink-2)" font-family="IBM Plex Sans" font-size="13">dedos curvados: sentido de B</text>
+          <text x="340" y="146" fill="var(--ink-2)" font-family="IBM Plex Sans" font-size="13">Percorrendo C no sentido dos</text>
+          <text x="340" y="166" fill="var(--ink-2)" font-family="IBM Plex Sans" font-size="13">dedos, a corrente no sentido do</text>
+          <text x="340" y="186" fill="var(--ink-2)" font-family="IBM Plex Sans" font-size="13">polegar conta como positiva.</text>
+        </svg>
+        <figcaption>Curva C (anti-horária vista de cima) e superfície S. A corrente sai do papel: pela mão direita conta como \(+I\).</figcaption>
+      </figure>
+
+      <section class="note"><div class="cue"><span>Por quê?</span></div><div class="note-body">
+        <h3>Verificando com o fio reto <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Em volta de um fio, \(\vec B=\frac{\mu_0 I}{2\pi\rho}\hat\varphi\). Num círculo de raio \(\rho\), \(d\vec l=\rho\,d\varphi\,\hat\varphi\):</p>
+        $$\oint\vec B\cdot d\vec l=\int_0^{2\pi}\frac{\mu_0 I}{2\pi\rho}\,\rho\,d\varphi=\mu_0 I.$$
+        <p>O \(\rho\) cancelou: um círculo maior é mais comprido, mas o campo nele é mais fraco na mesma proporção. Para um caminho qualquer, só a parte de \(d\vec l\) ao longo de \(\hat\varphi\) conta, e \(\vec B\cdot d\vec l=\frac{\mu_0 I}{2\pi}d\varphi\): o resultado é \(\mu_0 I\) vezes “quantas voltas” o caminho dá no fio. Fio <strong>fora</strong> do laço: o ângulo vai e volta, total zero.</p>
+        <aside class="box box-key"><div class="box-h">Sinais de \(I_{\text{enc}}\)</div><p>Escolha o sentido de percurso de C. Pela mão direita (dedos no sentido de percurso), o polegar define a normal de S. Correntes no sentido do polegar entram com \(+\); contrárias, com \(-\). Correntes fora de S não entram na conta (mas mudam \(\vec B\)!).</p></aside>
+      </div></section>
+
+      <div class="widget" id="w-ampere">
+        <p class="w-title">Laço amperiano: confira ∮B·dl = μ0 I<sub>enc</sub></p>
+        <p class="w-caption"><strong>Arraste os fios</strong> (⊙ saindo, ⊗ entrando) e <strong>arraste o laço</strong> (clique fora dos fios). O laço é percorrido no sentido anti-horário; a circulação é calculada numericamente com 720 passinhos. Cores no laço: verde onde \(\vec B\cdot d\vec l>0\), rosa onde é negativo. Coloque um fio fora: o campo no laço muda, a circulação total não.</p>
+        <canvas class="w-canvas" height="380"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Corrente fio 1 <output data-o="I1"></output></span><input type="range" data-k="I1" min="-5" max="5" step="0.5" value="3"></label>
+          <label class="w-control"><span>Corrente fio 2 <output data-o="I2"></output></span><input type="range" data-k="I2" min="-5" max="5" step="0.5" value="-2"></label>
+          <label class="w-control"><span>Corrente fio 3 <output data-o="I3"></output></span><input type="range" data-k="I3" min="-5" max="5" step="0.5" value="4"></label>
+          <label class="w-control"><span>Tamanho do laço <output data-o="R"></output></span><input type="range" data-k="R" min="1" max="7" step="0.1" value="4"></label>
+        </div>
+        <div class="w-row"><span class="lbl">Forma:</span><button class="w-btn on" data-act="circ">Círculo</button><button class="w-btn" data-act="quad">Quadrado</button><button class="w-btn" data-act="bat">Batata</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <section class="note note-warn"><div class="cue"><span>Muito cuidado</span></div><div class="note-body">
+        <h3>A lei vale sempre; o atalho, só com simetria</h3>
+        <p>O slide avisa: Ampère simplifica o cálculo de \(\vec B\), “embora deva se ter MUITO CUIDADO em sua aplicação (só em casos de alta simetria espacial)”. Para tirar \(B\) de dentro da integral você precisa de um caminho onde:</p>
+        <ol>
+          <li>\(\vec B\) é <strong>paralelo</strong> a \(d\vec l\) (ou perpendicular, dando zero) em cada trecho; e</li>
+          <li>\(|\vec B|\) é <strong>constante</strong> nos trechos paralelos.</li>
+        </ol>
+        <p>Então \(\oint\vec B\cdot d\vec l=B\cdot(\text{comprimento})\). Simetrias que permitem isso: cilíndrica (fios, coaxial), planar (solenoide infinito, placa de corrente) e toroidal. Na simulação acima, a lei confere em qualquer forma, mas só no círculo centrado num fio único o \(B\) é constante ao longo do laço.</p>
+      </div></section>
+
+      <div class="quiz"><p class="quiz-q">Um laço envolve um fio com 5 A saindo do papel e outro com 2 A entrando. Um terceiro fio com 10 A está fora do laço. Quanto vale ∮B·dl (anti-horário)?</p>
+        <div class="quiz-opts"><button>μ0 · 17 A</button><button>μ0 · 13 A</button><button data-ok>μ0 · 3 A</button><button>zero, porque há correntes opostas</button></div>
+        <p class="quiz-fb">\(I_{\text{enc}}=+5-2=3\ \text{A}\). O fio de 10 A muda o campo em cada ponto do laço, mas sua contribuição para a circulação é zero.</p></div>
+      <p class="fonte"><span>Sears</span> §28.6, p. 277–281; Eq. 28.20.</p>
+    </article>
+
+    <!-- ============ M2 ============ -->
+    <article class="modulo" id="m2">
+      <header class="modulo-h"><span class="modulo-num">Módulo 2</span><h2>O fio grosso (Exercício 24)</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Dentro do fio, só conta a corrente “de dentro” <span class="nivel nivel-1">básico</span></h3>
+        <p>Um fio real tem espessura. Fora dele, ele se comporta como um fio fininho. Dentro, um laço de raio \(\rho\) só abraça a corrente que passa no miolo de raio \(\rho\). Como a corrente está espalhada por igual, essa fração é a razão das áreas: \(\rho^2/a^2\).</p>
+      </div></section>
+
+      <div class="worked"><div class="worked-h"><span>Exercício 24 dos slides</span> Fio cilíndrico de raio a com corrente estacionária i uniforme</div>
+        <p>(a) Calcule \(\vec B\) para pontos interiores (\(0\le\rho\le a\)) e exteriores (\(\rho&gt;a\)), \(\rho\) = distância ao eixo. (b) Esboce \(B(\rho)\) e interprete.</p>
+        <ol class="steps">
+          <li><strong>Eixos e simetria.</strong> Coordenadas cilíndricas com \(\hat k\) no sentido da corrente. A distribuição não muda se girarmos em torno do eixo nem se andarmos ao longo dele, então \(B\) só pode depender de \(\rho\). As linhas de campo são círculos: \(\vec B=B(\rho)\,\hat\varphi\) (não há componente radial, pois \(\nabla\cdot\vec B=0\); a componente em \(\hat k\) é nula pela Biot–Savart, já que \(d\vec l\parallel\hat k\)).</li>
+          <li><strong>Caminho amperiano:</strong> círculo de raio \(\rho\) centrado no eixo, percorrido no sentido de \(\hat\varphi\): \(d\vec l=\rho\,d\varphi\,\hat\varphi\). Então
+            $$\oint_C B\,\hat\varphi\cdot\rho\,d\varphi\,\hat\varphi=B\,\rho\int_0^{2\pi}d\varphi=B\,(2\pi\rho).$$</li>
+          <li><strong>Exterior</strong> (\(\rho&gt;a\), curva C₂): o laço abraça toda a corrente, \(I_{\text{enc}}=i\):
+            $$B\,(2\pi\rho)=\mu_0 i\;\Rightarrow\;\boxed{\vec B=\frac{\mu_0\, i}{2\pi\rho}\,\hat\varphi\quad(\rho&gt;a)}$$</li>
+          <li><strong>Interior</strong> (\(\rho\le a\), curva C₁): a densidade de corrente é uniforme, \(j=\dfrac{i}{\pi a^2}=\dfrac{i'}{\pi\rho^2}\), logo \(i'=i\,\dfrac{\rho^2}{a^2}\). Então
+            $$B\,(2\pi\rho)=\mu_0\,i\frac{\rho^2}{a^2}\;\Rightarrow\;\boxed{\vec B=\frac{\mu_0\, i\,\rho}{2\pi a^2}\,\hat\varphi\quad(0\le\rho\le a)}\qquad(\text{Sears Eqs. 28.21–28.22, p. 282})$$</li>
+          <li><strong>Continuidade:</strong> em \(\rho=a\) as duas dão \(\mu_0 i/(2\pi a)\). Bom sinal.</li>
+        </ol>
+        <div class="two">
+          <figure class="figure">
+            <svg viewBox="0 0 300 200" width="300" role="img" aria-label="Gráfico de B em função de rho: reta crescente até a e depois queda como 1/rho">
+              <line x1="40" y1="170" x2="290" y2="170" stroke="var(--muted)"/><line x1="40" y1="170" x2="40" y2="15" stroke="var(--muted)"/>
+              <path d="M40,170 L110,45" stroke="var(--accent)" stroke-width="3" fill="none"/>
+              <path d="M110,45 Q150,100 200,115 T290,138" stroke="var(--cyan)" stroke-width="3" fill="none"/>
+              <line x1="110" y1="45" x2="110" y2="170" stroke="var(--muted)" stroke-dasharray="4 4"/>
+              <text x="106" y="186" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">a</text>
+              <text x="276" y="188" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">ρ</text>
+              <text x="14" y="22" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">B</text>
+              <text x="46" y="80" fill="var(--accent)" font-family="IBM Plex Sans" font-size="12">∝ ρ</text>
+              <text x="200" y="100" fill="var(--cyan)" font-family="IBM Plex Sans" font-size="12">∝ 1/ρ</text>
+              <text x="116" y="38" fill="var(--ink)" font-family="IBM Plex Sans" font-size="12">μ0 i/(2πa)</text>
+            </svg>
+            <figcaption>(b) Esboço: sobe linearmente dentro, máximo na superfície, cai como \(1/\rho\) fora.</figcaption>
+          </figure>
+          <div>
+            <p><strong>Interpretação.</strong></p>
+            <ul>
+              <li>No eixo, \(B=0\): por simetria, cada pedacinho de corrente tem um “gêmeo” do lado oposto que cancela seu campo.</li>
+              <li>O campo é <strong>máximo na superfície</strong> do fio.</li>
+              <li>Fora, o fio grosso é indistinguível de um fio fino com a mesma corrente (resultado do Exercício 26).</li>
+            </ul>
+            <p><strong>Número:</strong> \(i=20\ \text{A}\), \(a=2\ \text{mm}\): na superfície \(B=\frac{4\pi\times10^{-7}\cdot20}{2\pi\cdot0{,}002}=2{,}0\ \text{mT}\); em \(\rho=1\ \text{mm}\), 1,0 mT; em \(\rho=4\ \text{mm}\), 1,0 mT também.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="widget" id="w-fiogrosso">
+        <p class="w-title">Fio grosso: B(ρ) dentro e fora</p>
+        <p class="w-caption">À esquerda, a seção do fio (corrente saindo) e o laço amperiano de raio ρ. A parte sombreada é a corrente abraçada. À direita, o gráfico \(B(\rho)\): mude o raio do fio e a corrente.</p>
+        <canvas class="w-canvas" height="320"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Corrente i <output data-o="i"></output></span><input type="range" data-k="i" min="1" max="50" step="1" value="20"></label>
+          <label class="w-control"><span>Raio do fio a <output data-o="a"></output></span><input type="range" data-k="a" min="1" max="10" step="0.5" value="5"></label>
+          <label class="w-control"><span>Raio do laço ρ <output data-o="r"></output></span><input type="range" data-k="r" min="0" max="30" step="0.25" value="3"></label>
+        </div>
+        <div class="w-readout"></div>
+      </div>
+
+      <details class="reveal"><summary>Estudante: e se a corrente não fosse uniforme, por exemplo \(j=j_0\,\rho/a\)?</summary><div>
+        <p>Use a mesma receita, mas calcule \(I_{\text{enc}}=\int_0^{\rho}j(\rho')\,2\pi\rho'\,d\rho'=\frac{2\pi j_0\rho^3}{3a}\). Então \(B=\frac{\mu_0 j_0\rho^2}{3a}\) dentro. Com \(i=\frac{2\pi j_0 a^2}{3}\), em \(\rho=a\) dá de novo \(\mu_0 i/(2\pi a)\). Fora, nada muda.</p>
+      </div></details>
+      <p class="fonte"><span>Sears</span> §28.7, Exemplo 28.8, p. 282; Eqs. 28.21–28.22.</p>
+    </article>
+
+    <!-- ============ M3 ============ -->
+    <article class="modulo" id="m3">
+      <header class="modulo-h"><span class="modulo-num">Módulo 3</span><h2>Solenoide pela lei de Ampère</h2></header>
+      <section class="note"><div class="cue"><span>A conta</span></div><div class="note-body">
+        <h3>Um retângulo resolve tudo <span class="nivel nivel-2">intermediário</span></h3>
+        <p>No capítulo III (Exercício 27) achamos \(B=\mu_0 nI\) com uma integral trabalhosa. Agora, com Ampère, supondo solenoide <strong>ideal</strong> (infinito, espiras bem juntas): dentro o campo é uniforme e axial; fora é zero.</p>
+        <ol class="steps">
+          <li>Retângulo abcd: lado ab (comprimento \(\ell\)) <strong>dentro</strong>, paralelo ao eixo; lado cd fora; lados bc e da perpendiculares ao eixo.</li>
+          <li>Circulação: em ab, \(\vec B\parallel d\vec l\): dá \(B\ell\). Em bc e da, \(\vec B\perp d\vec l\) (dentro) ou \(\vec B=0\) (fora): zero. Em cd, \(B=0\). Total: \(\oint\vec B\cdot d\vec l=B\ell\).</li>
+          <li>Corrente abraçada: \(n\ell\) espiras atravessam o retângulo, cada uma com \(I\): \(I_{\text{enc}}=n\ell I\).</li>
+          <li>\(B\ell=\mu_0 n\ell I\Rightarrow\boxed{\vec B=\mu_0\,n\,I\,\hat k}\) (Sears Eq. 28.23, p. 283), com \(\hat k\) dado pela mão direita (dedos na corrente das espiras, polegar no campo).</li>
+        </ol>
+        <details class="reveal"><summary>Estudante: por que o campo fora do solenoide ideal é zero?</summary><div>
+          <p>Pegue um retângulo inteiramente fora: \(I_{\text{enc}}=0\), então o campo axial fora é o mesmo a qualquer distância. Como ele deve ir a zero muito longe, é zero em todo o lado de fora. (Num solenoide real e finito, há um pequeno campo de retorno fora, como num ímã de barra.)</p>
+        </div></details>
+      </div></section>
+
+      <div class="widget" id="w-solamp">
+        <p class="w-title">Solenoide em corte com retângulo amperiano</p>
+        <p class="w-caption">Corte longitudinal de um solenoide longo: em cima as espiras saem da tela (⊙), embaixo entram (⊗). O campo (setas) foi calculado somando o campo de cada fio. <strong>Arraste o retângulo</strong>: se ele cruza uma fileira de espiras, a circulação é μ0 vezes a corrente das espiras abraçadas; se fica todo dentro ou todo fora, dá zero.</p>
+        <canvas class="w-canvas" height="340"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Largura do retângulo <output data-o="W"></output></span><input type="range" data-k="W" min="1" max="12" step="0.25" value="4"></label>
+          <label class="w-control"><span>Altura do retângulo <output data-o="H"></output></span><input type="range" data-k="H" min="0.5" max="8" step="0.25" value="3"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="cruza">Cruzando a fileira de cima</button><button class="w-btn" data-act="dentro">Todo dentro</button><button class="w-btn" data-act="fora">Todo fora</button></div>
+        <div class="w-readout"></div>
+      </div>
+      <p class="fonte"><span>Sears</span> §28.7, Exemplo 28.9, p. 282–283; Eq. 28.23.</p>
+    </article>
+
+    <!-- ============ M4 ============ -->
+    <article class="modulo" id="m4">
+      <header class="modulo-h"><span class="modulo-num">Módulo 4</span><h2>O toroide</h2></header>
+      <section class="note"><div class="cue"><span>A conta</span></div><div class="note-body">
+        <h3>Um solenoide fechado em anel <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Enrole \(N\) espiras num anel (uma “rosquinha”). As linhas de campo são círculos dentro do anel. Laço amperiano: círculo de raio \(r\) concêntrico.</p>
+        <ul>
+          <li><strong>No buraco</strong> (\(r\) menor que o raio interno): nenhuma corrente atravessa o disco: \(B=0\).</li>
+          <li><strong>Dentro do núcleo</strong>: o disco é atravessado \(N\) vezes, sempre no mesmo sentido: \(B\,2\pi r=\mu_0 NI\Rightarrow\boxed{B=\dfrac{\mu_0 NI}{2\pi r}}\) (Sears Eq. 28.24, p. 284).</li>
+          <li><strong>Fora</strong>: cada espira atravessa o disco duas vezes, em sentidos opostos: \(I_{\text{enc}}=NI-NI=0\Rightarrow B=0\).</li>
+        </ul>
+        <p>O campo fica <strong>confinado no núcleo</strong>, por isso toroides são usados em transformadores e filtros: não “vazam” campo para os vizinhos. Note que \(N/(2\pi r)\) é o número de espiras por metro ao longo do círculo: localmente é um solenoide, \(B=\mu_0 nI\).</p>
+      </div></section>
+
+      <div class="widget" id="w-toroide">
+        <p class="w-title">Toroide visto de cima</p>
+        <p class="w-caption">Fios do lado de dentro sobem (⊙), os de fora descem (⊗): cada par é uma espira. Mude o raio r do laço amperiano e veja a circulação numérica e o gráfico \(B(r)\): zero no buraco, \(\propto1/r\) no núcleo, zero fora.</p>
+        <canvas class="w-canvas" height="340"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Número de espiras N <output data-o="N"></output></span><input type="range" data-k="N" min="8" max="80" step="2" value="32"></label>
+          <label class="w-control"><span>Corrente I <output data-o="I"></output></span><input type="range" data-k="I" min="0.5" max="5" step="0.5" value="2"></label>
+          <label class="w-control"><span>Raio do laço r <output data-o="r"></output></span><input type="range" data-k="r" min="0.5" max="7" step="0.05" value="3.5"></label>
+        </div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">Num toroide, o campo magnético no raio interno do núcleo comparado ao do raio externo é…</p>
+        <div class="quiz-opts"><button>igual (campo uniforme, como no solenoide)</button><button data-ok>maior, na razão r<sub>ext</sub>/r<sub>int</sub></button><button>menor</button></div>
+        <p class="quiz-fb">\(B=\mu_0NI/(2\pi r)\): diminui com r. As espiras ficam mais “apertadas” por dentro (mais espiras por metro).</p></div>
+      <p class="fonte"><span>Sears</span> §28.7, Exemplo 28.10, p. 284; Eq. 28.24.</p>
+    </article>
+
+    <!-- ============ M5 ============ -->
+    <article class="modulo" id="m5">
+      <header class="modulo-h"><span class="modulo-num">Módulo 5</span><h2>Cabo coaxial (ponte para o capítulo VII)</h2></header>
+      <div class="worked"><div class="worked-h"><span>Exemplo</span> Cabo coaxial: condutor central de raio a com i; malha externa (raios b a c) com −i</div>
+        <p>Mesma simetria cilíndrica do Exercício 24: \(\vec B=B(\rho)\hat\varphi\) e \(\oint\vec B\cdot d\vec l=2\pi\rho B\). Só muda \(I_{\text{enc}}\):</p>
+        <div class="table-wrap"><table>
+          <tr><th>Região</th><th>\(I_{\text{enc}}\)</th><th>\(\vec B\)</th></tr>
+          <tr><td>\(\rho&lt;a\) (dentro do central)</td><td>\(i\rho^2/a^2\)</td><td>\(\dfrac{\mu_0 i\rho}{2\pi a^2}\hat\varphi\)</td></tr>
+          <tr><td>\(a&lt;\rho&lt;b\) (isolante)</td><td>\(i\)</td><td>\(\dfrac{\mu_0 i}{2\pi\rho}\hat\varphi\)</td></tr>
+          <tr><td>\(b&lt;\rho&lt;c\) (na malha)</td><td>\(i-i\dfrac{\rho^2-b^2}{c^2-b^2}\)</td><td>\(\dfrac{\mu_0 i}{2\pi\rho}\dfrac{c^2-\rho^2}{c^2-b^2}\hat\varphi\)</td></tr>
+          <tr><td>\(\rho&gt;c\) (fora)</td><td>\(i-i=0\)</td><td>\(\vec 0\)</td></tr>
+        </table></div>
+        <p><strong>Por que importa:</strong> o campo fica preso entre os condutores; o cabo não interfere nem sofre interferência (por isso antenas e cabos de TV usam coaxial). No capítulo VII usaremos \(B=\mu_0 i/(2\pi\rho)\) entre os condutores para calcular a energia magnética e a indutância por metro, \(L/\ell=\frac{\mu_0}{2\pi}\ln(b/a)\).</p>
+      </div>
+    </article>
+
+    <!-- ============ M6 ============ -->
+    <article class="modulo" id="m6">
+      <header class="modulo-h"><span class="modulo-num">Módulo 6</span><h2>Forma diferencial: começamos as equações de Maxwell</h2></header>
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>De “em volta” para “em cada ponto” <span class="nivel nivel-3">avançado</span></h3>
+        <p>A forma integral fala de um laço inteiro. Encolhendo o laço até um ponto, aparece o <strong>rotacional</strong>: quanto o campo “gira” em volta daquele ponto. Pelo teorema de Stokes,</p>
+        $$\oint_C\vec B\cdot d\vec l=\int_S(\nabla\times\vec B)\cdot d\vec A\quad\text{e}\quad\mu_0 I_{\text{enc}}=\mu_0\int_S\vec j\cdot d\vec A\;\Longrightarrow\;\nabla\times\vec B=\mu_0\,\vec j.$$
+        <p>Leitura: o campo magnético só “redemoinha” onde passa corrente. Fora dos fios, \(\nabla\times\vec B=0\) (mas \(\vec B\ne0\)!).</p>
+      </div></section>
+
+      <section class="note note-key"><div class="cue"><span>Tabela do slide</span></div><div class="note-body">
+        <h3>Equações de Maxwell no vácuo, caso estático</h3>
+        <div class="table-wrap"><table>
+          <tr><th>Magnetismo (\(\mu_0\))</th><th>Significado</th><th>Eletricidade (\(\epsilon_0\))</th><th>Significado</th></tr>
+          <tr><td>\(\nabla\cdot\vec B=0\)</td><td>Não existe monopolo magnético. A configuração mínima é o dipolo: linhas de \(\vec B\) sempre se fecham.</td><td>\(\nabla\cdot\vec E=\rho/\epsilon_0\)</td><td>Existe monopolo elétrico: uma carga sozinha cria campo (lei de Gauss).</td></tr>
+          <tr><td>\(\nabla\times\vec B=\mu_0\vec j\)</td><td>Lei de Ampère: o campo magnético se origina de corrente que atravessa o caminho de circulação.</td><td>\(\nabla\times\vec E=0\)</td><td>Campo eletrostático conservativo: vem de um potencial; superfícies equipotenciais.</td></tr>
+        </table></div>
+        <p>E uma condição de compatibilidade: \(\nabla\cdot\vec j=0\). Como o divergente de um rotacional é sempre zero, \(\nabla\cdot(\nabla\times\vec B)=0=\mu_0\nabla\cdot\vec j\). Significa correntes <strong>estacionárias</strong>: a corrente é a mesma em todo o circuito, não se cria nem se destrói carga em lugar nenhum.</p>
+        <aside class="box box-warn"><div class="box-h">Spoiler do capítulo VIII</div><p>Quando um capacitor está carregando, \(\nabla\cdot\vec j\ne0\) (carga se acumula nas placas) e a lei de Ampère nesta forma quebra. Maxwell consertou com a corrente de deslocamento \(\mu_0\epsilon_0\,\partial\vec E/\partial t\). E no capítulo VI, \(\nabla\times\vec E=0\) vira \(-\partial\vec B/\partial t\) (Faraday).</p></aside>
+      </div></section>
+
+      <div class="worked"><div class="worked-h"><span>Conferência</span> O fio grosso satisfaz ∇×B = μ0 j?</div>
+        <p>Para \(\vec B=B_\varphi(\rho)\hat\varphi\), o rotacional em cilíndricas tem só componente \(z\): \((\nabla\times\vec B)_z=\frac1\rho\frac{d}{d\rho}(\rho B_\varphi)\).</p>
+        <ul>
+          <li>Dentro: \(\rho B_\varphi=\frac{\mu_0 i\rho^2}{2\pi a^2}\Rightarrow(\nabla\times\vec B)_z=\frac{\mu_0 i}{\pi a^2}=\mu_0 j\). ✓</li>
+          <li>Fora: \(\rho B_\varphi=\frac{\mu_0 i}{2\pi}\) é constante \(\Rightarrow\nabla\times\vec B=0\), e lá \(j=0\). ✓</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ============ M7 ============ -->
+    <article class="modulo" id="m7">
+      <header class="modulo-h"><span class="modulo-num">Módulo 7</span><h2>Experimento: eletroímã de prego</h2></header>
+      <section class="note note-lab"><div class="cue"><span>Experimento</span></div><div class="note-body">
+        <h3>Quanto mais voltas, mais clipes</h3>
+        <p><strong>Material:</strong> prego grande de ferro (10–15 cm), 1,5–2 m de fio de cobre esmaltado fino (fio de bobina, 0,3–0,5 mm), uma pilha AA ou D, lixa, fita isolante, clipes de papel.</p>
+        <ol class="steps">
+          <li>Lixe 1 cm de cada ponta do fio (o esmalte é isolante).</li>
+          <li>Enrole <strong>10 voltas</strong> bem juntas no prego, sempre no mesmo sentido. Encoste as pontas na pilha por poucos segundos e veja quantos clipes o prego levanta. Anote.</li>
+          <li>Repita com 20, 40 e 80 voltas (no mesmo comprimento de prego, em camadas). Faça um gráfico clipes × voltas.</li>
+          <li>Tire o prego e teste só a bobina: ela atrai muito menos.</li>
+        </ol>
+        <p><strong>Física:</strong> dentro da bobina \(B_0\approx\mu_0 nI\) (solenoide). Dobrar as voltas dobra \(n\) e o campo; o número de clipes cresce (não exatamente na mesma proporção: a força depende de como o campo varia no espaço e o ferro satura). O ferro multiplica o campo por centenas a milhares de vezes: seus domínios magnéticos se alinham (capítulo V). Com mais voltas o fio fica mais longo e mais resistivo, então a corrente cai um pouco: a melhoria é menor que o dobro.</p>
+        <aside class="box box-warn"><div class="box-h">Segurança</div><p>A bobina é praticamente um curto-circuito: o fio e a pilha <strong>esquentam</strong>. Ligue só durante o teste (segundos), use só pilhas comuns (nunca bateria de lítio, de carro ou fonte de tomada). Lixe o esmalte com cuidado e não deixe o prego quente sobre superfícies plásticas.</p></aside>
+      </div></section>
+    </article>
+
+    <!-- ============ RESUMO ============ -->
+    <article class="modulo" id="resumo">
+      <header class="modulo-h"><span class="modulo-num">Fechamento</span><h2>Resumo e fórmulas</h2></header>
+      <div class="table-wrap"><table>
+        <tr><th>Situação</th><th>Caminho amperiano</th><th>Resultado</th></tr>
+        <tr><td>Lei de Ampère</td><td>qualquer curva fechada</td><td>\(\oint_C\vec B\cdot d\vec l=\mu_0 I_{\text{enc}}\) (sinal pela mão direita)</td></tr>
+        <tr><td>Fio fino / fio grosso fora</td><td>círculo de raio \(\rho\)</td><td>\(\vec B=\dfrac{\mu_0 i}{2\pi\rho}\hat\varphi\)</td></tr>
+        <tr><td>Fio grosso dentro (Ex. 24)</td><td>círculo, \(I_{\text{enc}}=i\rho^2/a^2\)</td><td>\(\vec B=\dfrac{\mu_0 i\rho}{2\pi a^2}\hat\varphi\)</td></tr>
+        <tr><td>Solenoide ideal</td><td>retângulo cruzando as espiras</td><td>\(B=\mu_0 nI\) dentro, 0 fora</td></tr>
+        <tr><td>Toroide</td><td>círculo no núcleo</td><td>\(B=\dfrac{\mu_0 NI}{2\pi r}\) no núcleo, 0 no buraco e fora</td></tr>
+        <tr><td>Coaxial</td><td>círculo</td><td>\(\dfrac{\mu_0 i}{2\pi\rho}\) entre condutores, 0 fora</td></tr>
+        <tr><td>Forma diferencial</td><td>Stokes</td><td>\(\nabla\times\vec B=\mu_0\vec j\), \(\nabla\cdot\vec B=0\), \(\nabla\cdot\vec j=0\)</td></tr>
+      </table></div>
+      <section class="note note-warn"><div class="cue"><span>Na prova</span></div><div class="note-body">
+        <h3>Erros comuns</h3>
+        <ul>
+          <li><strong>Usar Ampère sem simetria</strong> (espira, fio finito): a lei vale, mas você não consegue isolar \(B\).</li>
+          <li><strong>Esquecer de justificar</strong> por que \(\vec B=B(\rho)\hat\varphi\) antes de tirar \(B\) da integral. Escreva a frase da simetria.</li>
+          <li><strong>Usar \(i\) em vez de \(i'=i\rho^2/a^2\)</strong> dentro do fio grosso.</li>
+          <li><strong>Sinal de \(I_{\text{enc}}\)</strong>: defina o sentido do laço, use a mão direita, some com sinais.</li>
+          <li><strong>Confundir</strong> \(\nabla\times\vec B=0\) fora do fio com \(\vec B=0\).</li>
+          <li><strong>Resposta sem vetor e sem esboço</strong> quando o enunciado pede \(B(\rho)\).</li>
+        </ul>
+      </div></section>
+    </article>
+
+    <nav class="chapter-nav"><a class="prev" href="cap3.html"><small>← Anterior</small>III · Lei de Biot–Savart</a><a class="next" href="cap5.html"><small>Próximo →</small>V · Meios magnéticos</a></nav>
+  </main>
+</div>
+
+<footer class="footer">
+  <p><strong>Física III · Magnetismo, indução e ondas</strong> · Física para IME (IFUSP) · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir dos slides e do simulado do Prof. Julio A. Larrea J. (IFUSP) e de Young &amp; Freedman, <em>Física III</em>, 14ª ed. Texto, simulações e erros são das notas; não é material oficial da disciplina.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/core.js"></script>
+<script src="assets/cap4.js"></script>
+</body>
+</html>

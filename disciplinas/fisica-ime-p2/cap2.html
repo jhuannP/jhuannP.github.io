@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>II · Torque e dipolo magnético — Física III para IME</title>
+<meta name="description" content="Força sobre fios com corrente, torque numa espira (Exercício 23), momento de dipolo magnético, energia U = −m·B, ausência de monopolos e o motor de corrente contínua.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('fis3-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Física III <em>para IME</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="cap1.html" title="Força magnética">I</a><a class="on" href="cap2.html" title="Torque e dipolo magnético">II</a><a href="cap3.html" title="Lei de Biot–Savart">III</a><a href="cap4.html" title="Lei de Ampère">IV</a><a href="cap5.html" title="Meios magnéticos">V</a><a href="cap6.html" title="Indução magnética">VI</a><a href="cap7.html" title="Indutância e energia magnética">VII</a><a href="cap8.html" title="Maxwell e ondas">VIII</a><a class="prova" href="prova.html" title="Resolução da prova">Prova</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<section class="chapter-hero" data-num="II">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo II · Slides “Interação magnética (parte 2)” e “Dipolo magnético” (1ª metade)</p>
+    <h1>Torque e dipolo magnético</h1>
+    <p class="lede">Por que uma espira com corrente gira dentro de um ímã como se fosse uma agulha de bússola? A resposta define o momento magnético, explica motores elétricos e mostra que o “átomo” do magnetismo é o dipolo, nunca um polo isolado.</p>
+    <div class="meta"><span>Sears §27.6–27.8 · p. 235–247</span><span>Exercício 23 dos slides · Simulado Ex. 1</span><span>5 simulações</span></div>
+  </div>
+</section>
+
+<div class="layout">
+  <nav class="toc" aria-label="Neste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol>
+      <li><a href="#m1"><span class="toc-num">1</span>Força sobre um fio</a></li>
+      <li><a href="#m2"><span class="toc-num">2</span>Torque na espira (Ex. 23)</a></li>
+      <li><a href="#m3"><span class="toc-num">3</span>Momento de dipolo m</a></li>
+      <li><a href="#m4"><span class="toc-num">4</span>Energia U = −m·B</a></li>
+      <li><a href="#m5"><span class="toc-num">5</span>Não há monopolos</a></li>
+      <li><a href="#m6"><span class="toc-num">6</span>Motor de corrente contínua</a></li>
+      <li><a href="#m7"><span class="toc-num">7</span>Simulado: 4 espiras</a></li>
+      <li><a href="#resumo"><span class="toc-num">✓</span>Resumo e fórmulas</a></li>
+    </ol>
+  </nav>
+  <main id="conteudo" class="content">
+
+    <!-- ======================= M1 ======================= -->
+    <article class="modulo" id="m1">
+      <header class="modulo-h"><span class="modulo-num">Módulo 1</span><h2>Força magnética sobre um fio com corrente</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Um fio é uma fila de cargas andando <span class="nivel nivel-1">básico</span></h3>
+        <p>No capítulo I vimos que cada carga em movimento sente \(q\,\vec v\times\vec B\). Um fio com corrente é um “trem” de cargas andando juntas; cada vagão sente essa força, e o fio inteiro é empurrado de lado. É assim que um alto-falante empurra o cone e um motor gira.</p>
+        <p>Num pedacinho \(d\vec l\) do fio (apontando no sentido da corrente) passa a carga \(dq\) com velocidade \(\vec v\), e \(dq\,\vec v=dq\,\dfrac{d\vec l}{dt}=i\,d\vec l\). Logo:</p>
+        $$d\vec F_m=i\,d\vec l\times\vec B\qquad\Longrightarrow\qquad \vec F_m=i\int_C d\vec l\times\vec B\qquad(\text{Sears Eq. 27.20, p. 236})$$
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Casos</span></div><div class="note-body">
+        <h3>Três resultados para guardar <span class="nivel nivel-2">intermediário</span></h3>
+        <ol class="steps">
+          <li><strong>Fio reto</strong> de comprimento \(L\) em \(\vec B\) uniforme: \(\vec F=i\,\vec L\times\vec B\), \(|F|=iLB\sin\phi\) (Eq. 27.19, p. 236).</li>
+          <li><strong>Fio curvo</strong> em \(\vec B\) uniforme: \(\vec B\) sai da integral, \(\vec F=i\left(\int d\vec l\right)\times\vec B=i\,\vec L_{AB}\times\vec B\), onde \(\vec L_{AB}\) é o vetor que liga o início ao fim do fio. O formato não importa, só as pontas!</li>
+          <li><strong>Espira fechada</strong> em \(\vec B\) uniforme: início = fim, \(\oint d\vec l=\vec 0\), logo \(\vec F_{\text{total}}=\vec 0\). Mas, como veremos, o <strong>torque</strong> em geral não é zero.</li>
+        </ol>
+      </div></section>
+
+      <div class="widget" id="w-fio">
+        <p class="w-title">Força em fios de formatos diferentes</p>
+        <p class="w-caption">\(\vec B\) entra na tela (⊗); a corrente vai da esquerda para a direita (pontinhos amarelos). Setas finas = \(d\vec F=i\,d\vec l\times\vec B\) em cada trecho; seta grossa = força total. Compare o reto, o semicírculo e o zigue-zague (mesmas pontas): a força total é a mesma. Na espira fechada ela some.</p>
+        <canvas class="w-canvas" height="320"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Corrente i <output data-o="I"></output></span><input type="range" data-k="I" min="0.5" max="5" step="0.1" value="2"></label>
+          <label class="w-control"><span>Campo B <output data-o="B"></output></span><input type="range" data-k="B" min="0.1" max="1" step="0.05" value="0.4"></label>
+          <label class="w-control"><span>Distância entre as pontas L <output data-o="L"></output></span><input type="range" data-k="L" min="0.2" max="1" step="0.05" value="0.5"></label>
+        </div>
+        <div class="w-row"><span class="lbl">Formato:</span><button class="w-btn on" data-shape="reto">reto</button><button class="w-btn" data-shape="semi">semicírculo</button><button class="w-btn" data-shape="zig">zigue-zague</button><button class="w-btn" data-shape="loop">espira fechada</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="worked"><div class="worked-h"><span>Exemplo</span> Semicírculo × fio reto</div>
+        <p>Um fio em semicírculo de raio \(R\) leva corrente \(i\) de \((-R,0)\) a \((R,0)\) passando por cima, com \(\vec B=-B\hat k\). Ache \(\vec F\).</p>
+        <ol class="steps">
+          <li>Parametrize: \(\vec r(\theta)=R(\cos\theta,\sin\theta)\), com \(\theta\) indo de \(\pi\) a \(0\). Então \(d\vec l=R(-\sin\theta,\cos\theta,0)\,d\theta\).</li>
+          <li>\(d\vec l\times\vec B=R\,d\theta\,(-\sin\theta\,\hat\imath+\cos\theta\,\hat\jmath)\times(-B\hat k)=RB\,d\theta\,(-\cos\theta\,\hat\imath-\sin\theta\,\hat\jmath)\) (use \(\hat\imath\times\hat k=-\hat\jmath\) e \(\hat\jmath\times\hat k=\hat\imath\)).</li>
+          <li>Integre de \(\pi\) a \(0\): \(\int_\pi^0\cos\theta\,d\theta=0\) e \(\int_\pi^0\sin\theta\,d\theta=-2\). Logo \(\vec F=iRB\,(0\,\hat\imath+2\,\hat\jmath)=2iRB\,\hat\jmath\).</li>
+          <li>Atalho: \(\vec L_{AB}=2R\,\hat\imath\Rightarrow\vec F=i(2R\hat\imath)\times(-B\hat k)=2iRB\,\hat\jmath\). Igual, como prometido.</li>
+        </ol>
+        <p>Com \(i=2\) A, \(R=0{,}25\) m, \(B=0{,}40\) T: \(\vec F=0{,}40\,\hat\jmath\) N. Confira no simulador (L = 0,5 m).</p>
+      </div>
+
+      <details class="reveal"><summary>Estudante: se a força total na espira é zero, por que ela se mexe?</summary><div><p>Força total zero significa que o centro de massa não acelera. Mas forças iguais e opostas aplicadas em pontos diferentes formam um <strong>binário</strong>, que gira o corpo. Pense em girar um volante com as duas mãos: você empurra uma para cima e outra para baixo, a soma é zero, e o volante gira.</p></div></details>
+      <p class="fonte"><span>Sears</span> §27.6 “Força magnética sobre um condutor que transporta uma corrente”, p. 235–238; Eqs. 27.19–27.20.</p>
+    </article>
+
+    <!-- ======================= M2 ======================= -->
+    <article class="modulo" id="m2">
+      <header class="modulo-h"><span class="modulo-num">Módulo 2</span><h2>Torque numa espira retangular: Exercício 23</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Duas forças opostas, fora da mesma reta <span class="nivel nivel-1">básico</span></h3>
+        <p>Numa espira retangular, os lados opostos levam correntes em sentidos opostos, então sentem forças opostas. Um par de lados tem forças na <strong>mesma reta</strong> (só esticam a espira). O outro par tem forças em <strong>retas paralelas diferentes</strong>: isso é um binário e produz torque. O resultado, para qualquer espira plana, fica numa fórmula curta: \(\vec\tau=i S\,\hat n\times\vec B\).</p>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 520 320" width="520" role="img" aria-label="Espira retangular do Exercício 23 com os quatro segmentos, forças e ângulo phi">
+          <defs>
+            <marker id="c2ax" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--muted)"/></marker>
+            <marker id="c2i" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker>
+            <marker id="c2f" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker>
+            <marker id="c2n" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ok)"/></marker>
+          </defs>
+          <g stroke="var(--muted)" stroke-width="1.4" fill="none">
+            <line x1="170" y1="200" x2="170" y2="18" marker-end="url(#c2ax)"/><line x1="170" y1="200" x2="400" y2="200" marker-end="url(#c2ax)"/><line x1="170" y1="200" x2="56" y2="293" marker-end="url(#c2ax)"/>
+          </g>
+          <text x="178" y="22" font-family="Newsreader,serif" font-style="italic" font-size="17" fill="var(--muted)">z (k̂)</text>
+          <text x="404" y="214" font-family="Newsreader,serif" font-style="italic" font-size="17" fill="var(--muted)">y (ĵ)</text>
+          <text x="38" y="300" font-family="Newsreader,serif" font-style="italic" font-size="17" fill="var(--muted)">x (î)</text>
+          <path d="M140 225 Q170 240 197 222" fill="none" stroke="var(--muted)" stroke-width="1.2"/>
+          <text x="150" y="252" font-family="Newsreader,serif" font-style="italic" font-size="17" fill="var(--ink)">φ</text>
+          <polygon points="170,200 245,252.6 245,98.6 170,46" fill="var(--accent-soft)" opacity=".6"/>
+          <g stroke="var(--accent)" stroke-width="3.2">
+            <line x1="170" y1="200" x2="207.5" y2="226.3" marker-end="url(#c2i)"/><line x1="207.5" y1="226.3" x2="245" y2="252.6"/>
+            <line x1="245" y1="252.6" x2="245" y2="175.6" marker-end="url(#c2i)"/><line x1="245" y1="175.6" x2="245" y2="98.6"/>
+            <line x1="245" y1="98.6" x2="207.5" y2="72.3" marker-end="url(#c2i)"/><line x1="207.5" y1="72.3" x2="170" y2="46"/>
+            <line x1="170" y1="46" x2="170" y2="123" marker-end="url(#c2i)"/><line x1="170" y1="123" x2="170" y2="200"/>
+          </g>
+          <g font-family="IBM Plex Sans,sans-serif" font-size="14" font-weight="600" fill="var(--accent-ink)">
+            <text x="214" y="250">1</text><text x="252" y="190">2</text><text x="212" y="64">3</text><text x="154" y="128">4</text>
+          </g>
+          <circle cx="207.5" cy="149.3" r="3.5" fill="var(--ink)"/><text x="214" y="146" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--ink)">CM</text>
+          <g stroke="var(--cyan)" stroke-width="2.6">
+            <line x1="207.5" y1="226.3" x2="207.5" y2="190" marker-end="url(#c2f)"/>
+            <line x1="207.5" y1="72.3" x2="207.5" y2="108" marker-end="url(#c2f)"/>
+            <line x1="245" y1="175.6" x2="280" y2="147" marker-end="url(#c2f)"/>
+            <line x1="170" y1="123" x2="135" y2="151.5" marker-end="url(#c2f)"/>
+          </g>
+          <g font-family="Newsreader,serif" font-style="italic" font-size="15" fill="var(--cyan)">
+            <text x="213" y="200">F₁</text><text x="213" y="104">F₃</text><text x="283" y="146">F₂</text><text x="112" y="166">F₄</text>
+          </g>
+          <line x1="207.5" y1="149.3" x2="163" y2="164" stroke="var(--ok)" stroke-width="2.6" marker-end="url(#c2n)"/>
+          <text x="140" y="176" font-family="Newsreader,serif" font-style="italic" font-size="16" fill="var(--ok)">n̂</text>
+          <line x1="310" y1="60" x2="400" y2="60" stroke="var(--cyan)" stroke-width="3" marker-end="url(#c2f)"/>
+          <text x="318" y="50" font-family="Newsreader,serif" font-style="italic" font-size="17" fill="var(--cyan)">B = B ĵ</text>
+          <text x="300" y="250" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)">lado 1 (comprimento a) no plano xy,</text>
+          <text x="300" y="266" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)">a um ângulo φ do eixo x;</text>
+          <text x="300" y="282" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)">lado 4 (comprimento b) sobre o eixo z</text>
+        </svg>
+        <figcaption>Geometria dos slides: a espira tem um lado sobre o eixo \(z\) e gira em torno dele (ângulo \(\phi\) medido a partir de \(x\)). A corrente percorre 1 → 2 → 3 → 4. \(F_1\) e \(F_3\) estão na mesma reta vertical (pelo CM); \(F_2\) e \(F_4\), não.</figcaption>
+      </figure>
+
+      <div class="worked"><div class="worked-h"><span>Exercício 23 dos slides</span> Mostre que \(\vec\tau=iS\,\hat n\times\vec B\) para a espira em \(\vec B=B\hat\jmath\)</div>
+        <p><strong>Enunciado.</strong> Uma espira retangular \(a\times b\) com corrente \(i\) está em \(\vec B=B\hat\jmath\), como na figura. Mostre que o torque é \(\vec\tau=iS\,\hat n\times\vec B\), onde \(\hat n\) é a normal (que acompanha o sentido da corrente pela regra da mão direita) e \(S=ab\). Sugestão: use o centro de massa como referência.</p>
+        <ol class="steps">
+          <li><strong>Vetores dos 4 segmentos</strong> (sentido da corrente; projeções do lado 1 como no slide, \(a\cos\phi\) em \(x\) e \(a\sin\phi\) em \(y\)):
+            $$\vec l_1=a(\cos\phi\,\hat\imath+\sin\phi\,\hat\jmath),\quad \vec l_2=b\,\hat k,\quad \vec l_3=-a(\cos\phi\,\hat\imath+\sin\phi\,\hat\jmath),\quad \vec l_4=-b\,\hat k.$$
+            Confira: \(\vec l_1+\vec l_2+\vec l_3+\vec l_4=\vec 0\) (caminho fechado).</li>
+          <li><strong>Normal.</strong> A regra da mão direita com a corrente dá \(\hat n\parallel\vec l_1\times\vec l_2\):
+            $$\vec l_1\times\vec l_2=ab(\cos\phi\,\hat\imath+\sin\phi\,\hat\jmath)\times\hat k=ab(\sin\phi\,\hat\imath-\cos\phi\,\hat\jmath)\ \Rightarrow\ \hat n=\sin\phi\,\hat\imath-\cos\phi\,\hat\jmath,$$
+            usando \(\hat\imath\times\hat k=-\hat\jmath\) e \(\hat\jmath\times\hat k=\hat\imath\). (É o “sen φ, −cos φ” do slide.)</li>
+          <li><strong>Forças</strong> \(\vec F_k=i\,\vec l_k\times\vec B\):
+            $$\vec F_1=iaB\cos\phi\,(\hat\imath\times\hat\jmath)+iaB\sin\phi\,(\hat\jmath\times\hat\jmath)=iaB\cos\phi\,\hat k,\qquad \vec F_3=-iaB\cos\phi\,\hat k,$$
+            $$\vec F_2=ibB\,(\hat k\times\hat\jmath)=-ibB\,\hat\imath,\qquad \vec F_4=+ibB\,\hat\imath.$$
+            Soma: \(\vec F_1+\vec F_2+\vec F_3+\vec F_4=\vec 0\). Nenhuma translação, como esperado.</li>
+          <li><strong>Braços a partir do CM</strong> (vetor do CM até o meio de cada lado). O CM fica em \(\left(\tfrac a2\cos\phi,\tfrac a2\sin\phi,\tfrac b2\right)\), então
+            $$\vec r_1=-\tfrac b2\hat k,\quad \vec r_3=+\tfrac b2\hat k,\quad \vec r_2=+\tfrac a2(\cos\phi\,\hat\imath+\sin\phi\,\hat\jmath),\quad \vec r_4=-\tfrac a2(\cos\phi\,\hat\imath+\sin\phi\,\hat\jmath).$$</li>
+          <li><strong>Binário 1–3.</strong> \(\vec r_1\parallel\vec F_1\) e \(\vec r_3\parallel\vec F_3\) (todos ao longo de \(\hat k\)): \(\vec\tau_1=\vec\tau_3=\vec 0\). As duas forças estão na mesma reta que passa pelo CM (esquema do slide): só tracionam a espira.</li>
+          <li><strong>Binário 2–4.</strong>
+            $$\vec\tau_2=\tfrac a2(\cos\phi\,\hat\imath+\sin\phi\,\hat\jmath)\times(-ibB\,\hat\imath)=-\tfrac{iabB}{2}\sin\phi\,(\hat\jmath\times\hat\imath)=+\tfrac{iabB}{2}\sin\phi\,\hat k,$$
+            $$\vec\tau_4=-\tfrac a2(\cos\phi\,\hat\imath+\sin\phi\,\hat\jmath)\times(ibB\,\hat\imath)=+\tfrac{iabB}{2}\sin\phi\,\hat k.$$</li>
+          <li><strong>Torque total:</strong> \(\vec\tau=iabB\sin\phi\,\hat k\).</li>
+          <li><strong>Comparação com a fórmula pedida:</strong>
+            $$iS\,\hat n\times\vec B=iab\,(\sin\phi\,\hat\imath-\cos\phi\,\hat\jmath)\times B\hat\jmath=iabB\sin\phi\,(\hat\imath\times\hat\jmath)=iabB\sin\phi\,\hat k.\ \checkmark$$</li>
+        </ol>
+        <aside class="box box-key"><div class="box-h">Leitura física</div><p>\(\vec\tau\) ao longo de \(+\hat k\) faz a espira girar no sentido de aumentar \(\phi\) (anti-horário visto de cima). Isso leva \(\hat n\) em direção a \(+\hat\jmath\), isto é, a alinhar com \(\vec B\). O torque é máximo em \(\phi=90^\circ\) (\(\hat n=\hat\imath\perp\vec B\)) e zero em \(\phi=180^\circ\) (\(\hat n=\hat\jmath\parallel\vec B\), equilíbrio estável) e em \(\phi=0\) (\(\hat n=-\hat\jmath\), equilíbrio instável).</p></aside>
+        <details class="reveal"><summary>Estudante: e se eu calcular o torque em relação à origem (o eixo z), e não ao CM?</summary><div><p>Dá o mesmo. Para qualquer ponto \(O\): \(\vec\tau_O=\vec\tau_{CM}+\vec R_{CM}\times\sum\vec F\), e \(\sum\vec F=\vec 0\). Torque de um binário não depende do ponto de referência. O CM só simplifica as contas (braços simétricos).</p></div></details>
+      </div>
+
+      <div class="widget" id="w-ex23">
+        <p class="w-title">A espira do Exercício 23 em 3D</p>
+        <p class="w-caption">Mesma geometria dos slides (lado 4 no eixo \(z\), \(\vec B=B\hat\jmath\)). Mude \(\phi\) e veja as quatro forças: \(F_1\) e \(F_3\) (verticais) ficam na mesma reta; \(F_2\) e \(F_4\) formam o binário. Seta verde = \(\hat n\); seta rosa = \(\vec\tau\) (sempre ao longo de \(\pm\hat k\)). “Soltar” deixa a espira girar como uma porta presa no eixo \(z\), com atrito.</p>
+        <canvas class="w-canvas" height="360"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Ângulo φ <output data-o="phi"></output></span><input type="range" data-k="phi" min="0" max="360" step="1" value="50"></label>
+          <label class="w-control"><span>Corrente i <output data-o="I"></output></span><input type="range" data-k="I" min="0.5" max="5" step="0.1" value="2"></label>
+          <label class="w-control"><span>Campo B <output data-o="B"></output></span><input type="range" data-k="B" min="0.1" max="1" step="0.05" value="0.5"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="release">Soltar a espira</button><span class="lbl">a = 0,30 m, b = 0,20 m</span></div>
+        <div class="w-readout"></div>
+      </div>
+      <p class="fonte"><span>Sears</span> §27.7 “Força e torque sobre uma espira de corrente”, p. 238–243; Eq. 27.23 (\(\tau=IBA\sin\phi\)), p. 240.</p>
+    </article>
+
+    <!-- ======================= M3 ======================= -->
+    <article class="modulo" id="m3">
+      <header class="modulo-h"><span class="modulo-num">Módulo 3</span><h2>Momento de dipolo magnético</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Uma espira com corrente é uma bússola <span class="nivel nivel-1">básico</span></h3>
+        <p>No Exercício 23, tudo o que importa da espira se juntou num único vetor: corrente × área, na direção da normal. O professor dá nome a ele:</p>
+        $$\vec m=iS\,\hat n=i\vec S\qquad\Longrightarrow\qquad \vec\tau=\vec m\times\vec B\qquad(\text{Sears Eqs. 27.24 e 27.26, p. 240–241})$$
+        <p>(O Sears chama \(\vec m\) de \(\vec\mu\) e \(S\) de \(A\); é a mesma coisa.) Unidade: A·m². O torque tenta <strong>alinhar \(\vec m\) com \(\vec B\)</strong>, exatamente como acontece com a agulha da bússola. Daí o nome “dipolo”: a espira se comporta como um pequeno ímã com N do lado para onde \(\vec m\) aponta.</p>
+      </div></section>
+
+      <div class="two">
+        <figure class="figure">
+          <svg viewBox="0 0 240 200" width="240" role="img" aria-label="Regra da mão direita para uma espira">
+            <defs><marker id="c2a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ok)"/></marker>
+            <marker id="c2a3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker></defs>
+            <ellipse cx="120" cy="140" rx="80" ry="26" fill="none" stroke="var(--accent)" stroke-width="4"/>
+            <path d="M70 160 Q120 172 170 160" fill="none" stroke="var(--accent)" stroke-width="4" marker-end="url(#c2a3)"/>
+            <line x1="120" y1="140" x2="120" y2="34" stroke="var(--ok)" stroke-width="4" marker-end="url(#c2a2)"/>
+            <text x="132" y="44" font-family="Newsreader,serif" font-size="24" font-style="italic" fill="var(--ok)">m</text>
+            <text x="186" y="182" font-family="IBM Plex Sans,sans-serif" font-size="14" fill="var(--accent)">i</text>
+            <text x="10" y="196" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)">anti-horária vista de cima → m para cima</text>
+          </svg>
+          <figcaption>Dedos da mão direita seguem a corrente; o polegar aponta \(\vec m\). Anti-horária no papel: \(+\hat k\). Horária: \(-\hat k\).</figcaption>
+        </figure>
+        <figure class="figure">
+          <svg viewBox="0 0 240 200" width="240" role="img" aria-label="Espira equivalente a um pequeno ímã">
+            <ellipse cx="70" cy="100" rx="22" ry="62" fill="none" stroke="var(--accent)" stroke-width="4"/>
+            <line x1="70" y1="100" x2="128" y2="100" stroke="var(--ok)" stroke-width="4"/><path d="M128 92 L144 100 L128 108z" fill="var(--ok)"/>
+            <text x="112" y="88" font-family="Newsreader,serif" font-size="20" font-style="italic" fill="var(--ok)">m</text>
+            <text x="120" y="135" text-anchor="middle" font-size="22" fill="var(--muted)">≡</text>
+            <rect x="160" y="88" width="34" height="24" fill="#3b82f6"/><rect x="194" y="88" width="34" height="24" fill="#e5484d"/>
+            <text x="177" y="105" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="#fff">S</text><text x="211" y="105" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="#fff">N</text>
+          </svg>
+          <figcaption>Para fora (de longe) a espira e o ímã têm o mesmo campo: o lado para onde \(\vec m\) aponta é o polo norte.</figcaption>
+        </figure>
+      </div>
+
+      <section class="note"><div class="cue"><span>Generalização</span></div><div class="note-body">
+        <h3>Vale para qualquer espira plana <span class="nivel nivel-2">intermediário</span></h3>
+        <ul>
+          <li>Qualquer forma plana (círculo, triângulo, trapézio...) pode ser recortada em retângulos fininhos; os lados internos se cancelam e sobra \(\vec m=iS\hat n\) com \(S\) a área total.</li>
+          <li>Bobina com \(N\) voltas: \(\vec m=NiS\,\hat n\) e \(|\vec\tau|=NiSB\sin\theta\) (Sears Eq. 27.28, p. 242).</li>
+          <li>Vários dipolos no mesmo \(\vec B\) uniforme: \(\vec\tau_{\text{tot}}=\left(\sum\vec m_k\right)\times\vec B\). É o que se usa no Simulado (módulo 7).</li>
+        </ul>
+        <p>Exemplo rápido: bobina circular de raio 5,0 cm, 100 voltas, \(i=0{,}20\) A, em \(B=0{,}30\) T com \(\hat n\perp\vec B\): \(m=100(0{,}20)\pi(0{,}05)^2\approx0{,}157\) A·m² e \(\tau=mB\approx4{,}7\times10^{-2}\) N·m.</p>
+      </div></section>
+
+      <div class="widget" id="w-loop">
+        <p class="w-title">Espira vista de lado num campo uniforme</p>
+        <p class="w-caption">A espira aparece “de perfil” (traço laranja): ⊙ = corrente saindo da tela, ⊗ = entrando. As setas amarelas são as forças nos dois lados (o binário). Arraste o ângulo, ou solte a espira e veja-a oscilar até alinhar \(\vec m\) com \(\vec B\). O botão “Comutador” inverte a corrente a cada meia volta: vira um motor (módulo 6).</p>
+        <canvas class="w-canvas" height="330"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Ângulo θ entre m e B <output data-o="phi"></output></span><input type="range" data-k="phi" min="0" max="360" value="70"></label>
+          <label class="w-control"><span>Corrente i <output data-o="I"></output></span><input type="range" data-k="I" min="0.2" max="3" step="0.1" value="1"></label>
+          <label class="w-control"><span>Campo B <output data-o="B"></output></span><input type="range" data-k="B" min="0.1" max="2" step="0.1" value="1"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="release">Soltar a espira</button><button class="w-btn" data-act="flip">Inverter a corrente</button><button class="w-btn" data-act="motor">Comutador (motor CC)</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">Uma espira no plano \(xy\) tem corrente horária (vista de \(+z\)) e está em \(\vec B=B\hat\imath\). Qual é o torque?</p>
+        <div class="quiz-opts"><button>\(+iSB\,\hat\jmath\)</button><button data-ok>\(-iSB\,\hat\jmath\)</button><button>\(-iSB\,\hat k\)</button><button>Zero, porque \(\vec m\perp\vec B\)</button></div>
+        <p class="quiz-fb">Horária ⇒ \(\vec m=-iS\hat k\). \(\vec\tau=(-iS\hat k)\times(B\hat\imath)=-iSB\,(\hat k\times\hat\imath)=-iSB\,\hat\jmath\). Perpendicular dá torque <em>máximo</em>.</p></div>
+      <p class="fonte"><span>Sears</span> §27.7, p. 238–243: Eq. 27.24 (\(\mu=IA\)), Eq. 27.26 (\(\vec\tau=\vec\mu\times\vec B\)), Eq. 27.28 (bobina).</p>
+    </article>
+
+    <!-- ======================= M4 ======================= -->
+    <article class="modulo" id="m4">
+      <header class="modulo-h"><span class="modulo-num">Módulo 4</span><h2>Energia potencial do dipolo: U = −m·B</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Desalinhar custa energia <span class="nivel nivel-1">básico</span></h3>
+        <p>Para tirar a agulha de uma bússola do alinhamento você precisa fazer força: o trabalho que você faz fica guardado como energia de orientação, e é devolvido quando você solta (ela volta oscilando). Essa é a energia da interação dipolar magnética:</p>
+        $$U=-\vec m\cdot\vec B=-mB\cos\theta\qquad(\text{Sears Eq. 27.27, p. 241})$$
+        <p>\(\theta\) é o ângulo entre \(\vec m\) e \(\vec B\). Alinhado (\(\theta=0\)): \(U=-mB\), mínimo. Oposto (\(\theta=\pi\)): \(U=+mB\), máximo. Perpendicular: \(U=0\).</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Dedução</span></div><div class="note-body">
+        <h3>De onde vem o sinal de menos <span class="nivel nivel-3">avançado</span></h3>
+        <p>O torque restaurador tem módulo \(mB\sin\theta\) e tende a diminuir \(\theta\). Para girar devagar de \(\theta_0\) até \(\theta\), um agente externo faz
+        $$W_{\text{ext}}=\int_{\theta_0}^{\theta}mB\sin\theta'\,d\theta'=-mB\cos\theta+mB\cos\theta_0=U(\theta)-U(\theta_0).$$
+        Escolhendo \(U(90^\circ)=0\), fica \(U=-mB\cos\theta=-\vec m\cdot\vec B\). E, ao contrário, \(\tau_\theta=-\dfrac{dU}{d\theta}=-mB\sin\theta\): o torque empurra para o fundo do “vale” de energia.</p>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 520 270" width="520" role="img" aria-label="Gráfico de U sobre mB versus theta, com equilíbrio estável e instável">
+          <line x1="70" y1="120" x2="490" y2="120" stroke="var(--muted)" stroke-width="1"/>
+          <line x1="70" y1="30" x2="70" y2="215" stroke="var(--muted)" stroke-width="1"/>
+          <path d="M70.0 120.0L73.3 122.1L76.7 124.2L80.0 126.3L83.3 128.3L86.7 130.4L90.0 132.4L93.3 134.3L96.7 136.3L100.0 138.2L103.3 140.0L106.7 141.8L110.0 143.5L113.3 145.2L116.7 146.8L120.0 148.3L123.3 149.7L126.7 151.1L130.0 152.4L133.3 153.5L136.7 154.6L140.0 155.6L143.3 156.5L146.7 157.3L150.0 158.0L153.3 158.6L156.7 159.1L160.0 159.5L163.3 159.8L166.7 159.9L170.0 160.0L173.3 159.9L176.7 159.8L180.0 159.5L183.3 159.1L186.7 158.6L190.0 158.0L193.3 157.3L196.7 156.5L200.0 155.6L203.3 154.6L206.7 153.5L210.0 152.4L213.3 151.1L216.7 149.7L220.0 148.3L223.3 146.8L226.7 145.2L230.0 143.5L233.3 141.8L236.7 140.0L240.0 138.2L243.3 136.3L246.7 134.3L250.0 132.4L253.3 130.4L256.7 128.3L260.0 126.3L263.3 124.2L266.7 122.1L270.0 120.0L273.3 117.9L276.7 115.8L280.0 113.7L283.3 111.7L286.7 109.6L290.0 107.6L293.3 105.7L296.7 103.7L300.0 101.8L303.3 100.0L306.7 98.2L310.0 96.5L313.3 94.8L316.7 93.2L320.0 91.7L323.3 90.3L326.7 88.9L330.0 87.6L333.3 86.5L336.7 85.4L340.0 84.4L343.3 83.5L346.7 82.7L350.0 82.0L353.3 81.4L356.7 80.9L360.0 80.5L363.3 80.2L366.7 80.1L370.0 80.0L373.3 80.1L376.7 80.2L380.0 80.5L383.3 80.9L386.7 81.4L390.0 82.0L393.3 82.7L396.7 83.5L400.0 84.4L403.3 85.4L406.7 86.5L410.0 87.6L413.3 88.9L416.7 90.3L420.0 91.7L423.3 93.2L426.7 94.8L430.0 96.5L433.3 98.2L436.7 100.0L440.0 101.8L443.3 103.7L446.7 105.7L450.0 107.6L453.3 109.6L456.7 111.7L460.0 113.7L463.3 115.8L466.7 117.9L470.0 120.0" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-dasharray="5 4"/>
+          <path d="M70.0 200.0L73.3 199.9L76.7 199.6L80.0 199.0L83.3 198.3L86.7 197.3L90.0 196.1L93.3 194.7L96.7 193.1L100.0 191.3L103.3 189.3L106.7 187.1L110.0 184.7L113.3 182.2L116.7 179.5L120.0 176.6L123.3 173.5L126.7 170.3L130.0 167.0L133.3 163.6L136.7 160.0L140.0 156.3L143.3 152.5L146.7 148.7L150.0 144.7L153.3 140.7L156.7 136.6L160.0 132.5L163.3 128.4L166.7 124.2L170.0 120.0L173.3 115.8L176.7 111.6L180.0 107.5L183.3 103.4L186.7 99.3L190.0 95.3L193.3 91.3L196.7 87.5L200.0 83.7L203.3 80.0L206.7 76.4L210.0 73.0L213.3 69.7L216.7 66.5L220.0 63.4L223.3 60.5L226.7 57.8L230.0 55.3L233.3 52.9L236.7 50.7L240.0 48.7L243.3 46.9L246.7 45.3L250.0 43.9L253.3 42.7L256.7 41.7L260.0 41.0L263.3 40.4L266.7 40.1L270.0 40.0L273.3 40.1L276.7 40.4L280.0 41.0L283.3 41.7L286.7 42.7L290.0 43.9L293.3 45.3L296.7 46.9L300.0 48.7L303.3 50.7L306.7 52.9L310.0 55.3L313.3 57.8L316.7 60.5L320.0 63.4L323.3 66.5L326.7 69.7L330.0 73.0L333.3 76.4L336.7 80.0L340.0 83.7L343.3 87.5L346.7 91.3L350.0 95.3L353.3 99.3L356.7 103.4L360.0 107.5L363.3 111.6L366.7 115.8L370.0 120.0L373.3 124.2L376.7 128.4L380.0 132.5L383.3 136.6L386.7 140.7L390.0 144.7L393.3 148.7L396.7 152.5L400.0 156.3L403.3 160.0L406.7 163.6L410.0 167.0L413.3 170.3L416.7 173.5L420.0 176.6L423.3 179.5L426.7 182.2L430.0 184.7L433.3 187.1L436.7 189.3L440.0 191.3L443.3 193.1L446.7 194.7L450.0 196.1L453.3 197.3L456.7 198.3L460.0 199.0L463.3 199.6L466.7 199.9L470.0 200.0" fill="none" stroke="var(--accent)" stroke-width="3"/>
+          <g font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)" text-anchor="middle">
+            <text x="70" y="232">0</text><text x="170" y="232">π/2</text><text x="270" y="232">π</text><text x="370" y="232">3π/2</text><text x="470" y="232">2π</text>
+            <text x="500" y="124">θ</text>
+          </g>
+          <g font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)" text-anchor="end"><text x="62" y="44">+1</text><text x="62" y="124">0</text><text x="62" y="204">−1</text></g>
+          <text x="80" y="22" font-family="Newsreader,serif" font-style="italic" font-size="16" fill="var(--accent)">U/mB = −cos θ</text>
+          <text x="300" y="22" font-family="Newsreader,serif" font-style="italic" font-size="15" fill="var(--cyan)">τ/mB = −sen θ (tracejado)</text>
+          <circle cx="70" cy="200" r="6" fill="var(--ok)"/><circle cx="470" cy="200" r="6" fill="var(--ok)"/><circle cx="270" cy="40" r="6" fill="none" stroke="var(--warm)" stroke-width="2.5"/>
+          <text x="92" y="214" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--ok)">estável: m ∥ B</text>
+          <text x="282" y="58" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--warm)">instável: m antiparalelo a B</text>
+          <text x="176" y="112" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--ink)">U = 0, |τ| máximo</text>
+          <text x="270" y="262" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)">(mesma curva do slide, que a continua além de 2π: é periódica)</text>
+        </svg>
+        <figcaption>Vale em \(\theta=0\) (bola no fundo da tigela: estável) e topo em \(\theta=\pi\) (bola no alto do morro: qualquer empurrão derruba). O torque (tracejado) é zero nos dois, mas só no vale ele <em>puxa de volta</em>.</figcaption>
+      </figure>
+
+      <details class="reveal"><summary>Estudante: qual deveria ser o sentido da corrente? (pergunta do slide)</summary><div>
+        <p>No slide, a espira está num campo horizontal e \(\vec m\) aponta para cima e para a direita, saindo do plano da espira. O sentido da corrente é o que, pela regra da mão direita, faz o polegar apontar ao longo de \(\vec m\): <strong>anti-horário para quem olha a espira da ponta de \(\vec m\)</strong> (olhando contra \(\vec m\)). Se a corrente fosse invertida, \(\vec m\) inverteria, \(\theta\to\theta+\pi\) e a espira giraria para o outro lado.</p>
+        <p>O torque mostrado no slide confere: com \(\vec m\) acima de \(\vec B\) (à direita), \(\vec\tau=\vec m\times\vec B\) entra na tela (⊗) e gira \(\vec m\) no sentido horário, em direção a \(\vec B\).</p>
+      </div></details>
+
+      <section class="note note-key"><div class="cue"><span>Bússola e Terra</span></div><div class="note-body">
+        <p>O slide compara a espira a um ímã em barra: \(\vec m\) aponta do S para o N do ímã. A agulha da bússola é um dipolo que procura o mínimo \(U=-mB\): alinha \(\vec m\) com o campo da Terra. Como a ponta N da agulha vai para o norte geográfico, lá está o <strong>polo sul magnético</strong> da Terra.</p>
+      </div></section>
+
+      <div class="quiz"><p class="quiz-q">Um dipolo de \(m=2{,}0\) A·m² está antiparalelo a \(B=0{,}50\) T. Quanto trabalho um agente externo precisa fazer para virá-lo até ficar paralelo?</p>
+        <div class="quiz-opts"><button>+2,0 J</button><button data-ok>−2,0 J (o campo é que faz o trabalho)</button><button>Zero</button><button>+1,0 J</button></div>
+        <p class="quiz-fb">\(W_{\text{ext}}=U_f-U_i=(-mB)-(+mB)=-2mB=-2{,}0\) J. A energia diminui: o próprio campo gira o dipolo e o agente só precisa frear.</p></div>
+
+      <details class="reveal"><summary>Estudante: mas o campo magnético não fazia trabalho zero? (cap. I, Exemplo 21)</summary><div><p>Sobre uma carga livre, sim. Numa espira, a força magnética sobre os elétrons não realiza trabalho, mas ela empurra os elétrons contra a rede do fio, e é a rede (e, no fundo, a fonte que mantém a corrente) que transfere energia. Para a P2, use \(U=-\vec m\cdot\vec B\) como energia potencial de orientação do dipolo; ela responde ao objetivo ii dos slides: “campo magnético gera energia potencial?” Para dipolos, sim.</p></div></details>
+      <p class="fonte"><span>Sears</span> §27.7, Eq. 27.27, p. 241; Exemplo 27.10, p. 243.</p>
+    </article>
+
+    <!-- ======================= M5 ======================= -->
+    <article class="modulo" id="m5">
+      <header class="modulo-h"><span class="modulo-num">Módulo 5</span><h2>Existe monopolo magnético?</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Corte o ímã: ganha dois ímãs <span class="nivel nivel-1">básico</span></h3>
+        <p>Um dipolo <em>elétrico</em> é feito de duas cargas, \(+q\) e \(-q\), que podem ser separadas: cada uma, sozinha, é um <strong>monopolo elétrico</strong>. Com o ímã, o slide pergunta: dá para fazer o mesmo?</p>
+        <p>Não. Corte um ímã ao meio e cada metade aparece com N e S. Corte de novo: mais dois ímãs. Até chegar aos átomos, que também são dipolos (correntes atômicas e o spin do elétron). Na física clássica, <strong>a mínima configuração magnética é o dipolo</strong>. Isso é a mesma afirmação que \(\oint\vec B\cdot d\vec S=0\) do <a href="cap1.html#m6">capítulo I</a>: linhas de \(\vec B\) sempre fechadas.</p>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 560 200" width="560" role="img" aria-label="Dipolo elétrico se separa em duas cargas; ímã cortado vira dois ímãs">
+          <text x="130" y="20" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="13" font-weight="600" fill="var(--ink)">elétrico: separa</text>
+          <circle cx="90" cy="60" r="14" fill="var(--cyan-soft)" stroke="var(--cyan)" stroke-width="2"/><text x="90" y="65" text-anchor="middle" font-size="16" fill="var(--cyan)">−q</text>
+          <circle cx="170" cy="60" r="14" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/><text x="170" y="65" text-anchor="middle" font-size="16" fill="var(--accent)">+q</text>
+          <line x1="104" y1="60" x2="156" y2="60" stroke="var(--muted)" stroke-dasharray="3 3"/>
+          <text x="130" y="105" text-anchor="middle" font-size="20" fill="var(--muted)">↓</text>
+          <circle cx="50" cy="150" r="14" fill="var(--cyan-soft)" stroke="var(--cyan)" stroke-width="2"/><text x="50" y="155" text-anchor="middle" font-size="16" fill="var(--cyan)">−q</text>
+          <circle cx="210" cy="150" r="14" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/><text x="210" y="155" text-anchor="middle" font-size="16" fill="var(--accent)">+q</text>
+          <text x="130" y="190" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)">dois monopolos elétricos</text>
+          <text x="420" y="20" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="13" font-weight="600" fill="var(--ink)">magnético: não separa</text>
+          <rect x="340" y="48" width="80" height="26" fill="#3b82f6"/><rect x="420" y="48" width="80" height="26" fill="#e5484d"/>
+          <text x="380" y="66" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="14" fill="#fff">S</text><text x="460" y="66" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="14" fill="#fff">N</text>
+          <line x1="420" y1="40" x2="420" y2="82" stroke="var(--warm)" stroke-width="2" stroke-dasharray="4 3"/>
+          <text x="420" y="105" text-anchor="middle" font-size="20" fill="var(--muted)">↓</text>
+          <rect x="320" y="138" width="40" height="26" fill="#3b82f6"/><rect x="360" y="138" width="40" height="26" fill="#e5484d"/>
+          <rect x="440" y="138" width="40" height="26" fill="#3b82f6"/><rect x="480" y="138" width="40" height="26" fill="#e5484d"/>
+          <g font-family="IBM Plex Sans,sans-serif" font-size="13" fill="#fff" text-anchor="middle"><text x="340" y="156">S</text><text x="380" y="156">N</text><text x="460" y="156">S</text><text x="500" y="156">N</text></g>
+          <text x="420" y="190" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)">dois dipolos magnéticos</text>
+        </svg>
+      </figure>
+
+      <div class="widget" id="w-corte">
+        <p class="w-title">Corte o ímã</p>
+        <p class="w-caption">Cada clique em “Cortar” divide todos os pedaços ao meio e os afasta um pouco. As linhas de campo continuam fechadas e cada pedaço tem o seu N e o seu S. O campo é calculado tratando cada pedaço como correntes na superfície (corte bidimensional).</p>
+        <canvas class="w-canvas" height="320"></canvas>
+        <div class="w-row"><button class="w-btn" data-act="cut">Cortar</button><button class="w-btn" data-act="join">Juntar de novo</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <details class="reveal"><summary>Estudante: alguém já procurou monopolos de verdade?</summary><div><p>Sim. Teorias modernas (Dirac, grande unificação) admitem monopolos magnéticos, e há experimentos procurando por eles há décadas. Nenhum foi observado. As equações de Maxwell que usamos na P2 assumem \(\oint\vec B\cdot d\vec S=0\), como diz o slide: “dentro da física clássica”.</p></div></details>
+      <p class="fonte"><span>Sears</span> §27.1, Fig. 27.4 (ímã partido e monopolos), p. 219–220; §27.3, Eq. 27.8, p. 227.</p>
+    </article>
+
+    <!-- ======================= M6 ======================= -->
+    <article class="modulo" id="m6">
+      <header class="modulo-h"><span class="modulo-num">Módulo 6</span><h2>O motor de corrente contínua</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Uma bússola que nunca chega ao norte <span class="nivel nivel-1">básico</span></h3>
+        <p>Solte uma espira com corrente num campo: ela gira, passa do alinhamento por inércia, é puxada de volta e acaba parada em \(\theta=0\) (simulação do módulo 3). Para girar sem parar, um motor faz uma trapaça: <strong>inverte a corrente a cada meia volta</strong>. Assim, sempre que \(\vec m\) está chegando em \(\vec B\), ele passa a apontar ao contrário e o torque continua no mesmo sentido.</p>
+        <p>Quem faz isso é o <strong>comutador</strong>: um anel partido em dois segmentos, preso ao eixo, que encosta em duas escovas fixas ligadas à bateria. A cada meia volta os segmentos trocam de escova e a corrente na bobina troca de sentido.</p>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 520 230" width="520" role="img" aria-label="Esquema de motor CC com comutador e escovas">
+          <rect x="20" y="40" width="70" height="150" fill="#e5484d"/><text x="55" y="122" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="22" fill="#fff">N</text>
+          <rect x="300" y="40" width="70" height="150" fill="#3b82f6"/><text x="335" y="122" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="22" fill="#fff">S</text>
+          <g stroke="var(--cyan)" stroke-width="1.2" opacity=".7"><line x1="94" y1="70" x2="296" y2="70"/><line x1="94" y1="115" x2="296" y2="115"/><line x1="94" y1="160" x2="296" y2="160"/></g>
+          <polygon points="140,70 250,85 250,160 140,145" fill="none" stroke="var(--accent)" stroke-width="4"/>
+          <line x1="195" y1="152" x2="195" y2="196" stroke="var(--ink)" stroke-width="2"/>
+          <path d="M175 200 A20 12 0 0 1 193 188" fill="none" stroke="var(--accent-ink)" stroke-width="6"/>
+          <path d="M197 188 A20 12 0 0 1 215 200" fill="none" stroke="var(--accent-ink)" stroke-width="6"/>
+          <rect x="160" y="200" width="10" height="16" fill="var(--muted)"/><rect x="220" y="200" width="10" height="16" fill="var(--muted)"/>
+          <text x="196" y="228" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="11.5" fill="var(--muted)">comutador + escovas</text>
+          <text x="390" y="70" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="var(--ink)">1. bobina com m</text>
+          <text x="390" y="92" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="var(--ink)">2. τ = m × B gira</text>
+          <text x="390" y="114" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="var(--ink)">3. a cada ½ volta o</text>
+          <text x="390" y="132" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="var(--ink)">   comutador inverte i</text>
+          <text x="390" y="154" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="var(--ink)">4. τ nunca muda de sinal</text>
+        </svg>
+        <figcaption>Esquema do motor CC (Sears Fig. 27.39, §27.8). Sem o comutador, o torque troca de sinal a cada meia volta e a bobina só oscila.</figcaption>
+      </figure>
+
+      <section class="note"><div class="cue"><span>Detalhes</span></div><div class="note-body">
+        <h3>Torque médio e “fem de retorno” <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Com comutador, \(\tau(\theta)=NiSB\,|\sin\theta|\): sempre do mesmo lado, com média \(\langle\tau\rangle=\tfrac{2}{\pi}NiSB\). Motores reais usam várias bobinas em ângulos diferentes para o torque ficar quase constante. Ao girar, a bobina também funciona como gerador e cria uma fem contrária à da bateria (a “fem de retorno”), assunto da indução no <a href="cap6.html">capítulo VI</a>.</p>
+        <p>Use a simulação do módulo 3: aperte “Comutador (motor CC)” e veja a espira girar sem parar; desligue e ela volta a oscilar.</p>
+      </div></section>
+
+      <section class="note note-lab"><div class="cue"><span>Experimento</span></div><div class="note-body">
+        <h3>O motor de uma pilha, um ímã e um fio (motor “do Beakman”)</h3>
+        <p><strong>Material:</strong> uma pilha grande (D ou C), um ímã de neodímio ou de geladeira forte, ~50 cm de fio de cobre esmaltado (de bobina), dois clipes de papel, fita isolante, lixa fina.</p>
+        <ol class="steps">
+          <li>Enrole o fio em volta de um cabo de vassoura ou de uma pilha AA, umas 10 voltas, formando uma bobina de ~2 cm. Deixe as duas pontas saindo <strong>retas e opostas</strong> (serão o eixo). Prenda a bobina dando duas voltinhas de cada ponta em torno dela.</li>
+          <li>Numa ponta, lixe o esmalte <strong>todo em volta</strong>. Na outra, com a bobina deitada, lixe só a <strong>metade de cima</strong> do fio (a metade de baixo fica esmaltada).</li>
+          <li>Desdobre os clipes em forma de suporte com um olhal no alto e prenda-os com fita aos polos da pilha. Cole o ímã no meio da pilha, por cima.</li>
+          <li>Apoie as pontas da bobina nos olhais, logo acima do ímã. Dê um peteleco: ela gira sozinha. Se não girar, inverta o sentido do peteleco ou ajuste a altura.</li>
+        </ol>
+        <p><strong>A física:</strong> a corrente cria \(\vec m\) na bobina e \(\vec\tau=\vec m\times\vec B\) a gira. A metade esmaltada <strong>corta a corrente</strong> durante a meia volta em que o torque seria contrário: é um comutador feito à mão (ele desliga em vez de inverter, mas o efeito é o mesmo: o torque nunca freia). Sem a raspagem pela metade, a bobina só balança, como a espira “solta” da simulação.</p>
+        <p><strong>Segurança:</strong> o circuito é um curto na pilha: a pilha e o fio esquentam. Não use bateria de celular ou de carro, desmonte depois de testar e não deixe ligado sem supervisão. Cuidado com ímãs de neodímio (beliscam os dedos e não devem ficar perto de crianças).</p>
+      </div></section>
+      <p class="fonte"><span>Sears</span> §27.8 “O motor de corrente contínua”, p. 245–247 (comutadores, p. 245–246; Exemplo 27.11, p. 246).</p>
+    </article>
+
+    <!-- ======================= M7 ======================= -->
+    <article class="modulo" id="m7">
+      <header class="modulo-h"><span class="modulo-num">Módulo 7</span><h2>Simulado da P2: quatro espiras no mesmo campo</h2></header>
+
+      <div class="worked prova"><div class="worked-h"><span>Simulado P2 · Exercício 1</span> Torque total e energia de quatro espiras</div>
+        <p><strong>Enunciado (resumo).</strong> Quatro espiras no plano \(xy\), todas com \(I=1\) A, em \(\vec B=1\ \text{T}\,\hat\imath\): <strong>A</strong> retângulo 3 m × 6 m (anti-horária); <strong>B</strong> círculo de raio 1,5 m (horária); <strong>C</strong> trapézio de bases 6 m e 3 m e altura 4,5 m (anti-horária); <strong>D</strong> triângulo de base 3 m e altura 6 m (anti-horária). Calcule (a) o torque total; (b) a energia do sistema.</p>
+        <ol class="steps">
+          <li><strong>Momento de cada espira.</strong> Todas no plano \(xy\) ⇒ \(\vec m=\pm IS\,\hat k\). Anti-horária (vista de \(+z\)) ⇒ \(+\hat k\); horária ⇒ \(-\hat k\).
+            <div class="table-wrap"><table>
+              <tr><th>Espira</th><th>Área</th><th>Sentido</th><th>\(m_z\) (A·m²)</th></tr>
+              <tr><td>A</td><td>\(3\times6=18\)</td><td>anti-horário</td><td>\(+18\)</td></tr>
+              <tr><td>B</td><td>\(\pi(1{,}5)^2\approx7{,}07\)</td><td>horário</td><td>\(-7{,}07\)</td></tr>
+              <tr><td>C</td><td>\(\tfrac{(6+3)}{2}\cdot4{,}5=20{,}25\)</td><td>anti-horário</td><td>\(+20{,}25\)</td></tr>
+              <tr><td>D</td><td>\(\tfrac12\cdot3\cdot6=9\)</td><td>anti-horário</td><td>\(+9\)</td></tr>
+            </table></div></li>
+          <li><strong>Soma</strong> (o campo é uniforme, então \(\vec\tau_{\text{tot}}=(\sum\vec m)\times\vec B\)): \(\sum m_z=I(S_A-S_B+S_C+S_D)=18-7{,}07+20{,}25+9\approx40{,}2\) A·m².</li>
+          <li><strong>Torque:</strong> \(\vec\tau=(40{,}2\,\hat k)\times(1\,\hat\imath)=40{,}2\,(\hat k\times\hat\imath)=40{,}2\,\hat\jmath\ \text{N·m}.\)</li>
+          <li><strong>Energia:</strong> \(U_i=-\vec m_i\cdot\vec B=-(m_{z}\hat k)\cdot(B\hat\imath)=0\) para cada espira, logo \(U_{\text{tot}}=0\). (Todas estão com \(\vec m\perp\vec B\): torque máximo, energia zero.)</li>
+        </ol>
+        <aside class="box box-warn"><div class="box-h">Sobre o gabarito oficial</div><p>O gabarito do simulado escreve \(\vec\tau=45\,\hat\jmath\) N·m: ele usou \(S_B=(1{,}5)^2=2{,}25\) m², esquecendo o \(\pi\) da área do círculo. Com \(S_B=\pi r^2\approx7{,}07\) m², o resultado correto é \(\approx40{,}2\,\hat\jmath\) N·m. A energia (\(U=0\)) está certa. Na prova, mostre a conta \(\pi r^2\) explicitamente.</p></aside>
+        <p>Veja a resolução completa do simulado em <a href="prova.html">Prova</a>.</p>
+      </div>
+
+      <div class="widget" id="w-loops">
+        <p class="w-title">As quatro espiras do simulado</p>
+        <p class="w-caption">Mesma figura do Exercício 1 (cada quadradinho = 1,5 m, I = 1 A, B = 1 T). <strong>Clique numa espira</strong> para inverter a corrente e escolha a direção de \(\vec B\). A soma usa a área correta do círculo (\(\pi r^2\)).</p>
+        <canvas class="w-canvas" height="400"></canvas>
+        <div class="w-row"><span class="lbl">Direção de B:</span><button class="w-btn on" data-b="x">ao longo de x</button><button class="w-btn" data-b="y">ao longo de y</button><button class="w-btn" data-b="z">saindo do plano (z)</button><button class="w-btn" data-act="reset">Voltar ao simulado</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">No simulado, se \(\vec B\) apontasse ao longo de \(+\hat k\) (saindo do plano), o que mudaria?</p>
+        <div class="quiz-opts"><button>O torque dobraria</button><button data-ok>Torque zero e \(U=-(\sum m_z)B\approx-40{,}2\) J</button><button>Torque e energia continuariam iguais</button></div>
+        <p class="quiz-fb">\(\hat k\times\hat k=\vec 0\) ⇒ \(\vec\tau=\vec 0\). E agora \(\vec m\parallel\vec B\): \(U=-\vec m\cdot\vec B=-40{,}2\) J. Teste no simulador com “saindo do plano”.</p></div>
+
+      <section class="note"><div class="cue"><span>Próximo passo</span></div><div class="note-body">
+        <p>A segunda metade do deck “Dipolo magnético e Lei de Ampère” (lei de Ampère e o Exemplo 24) está no <a href="cap4.html">capítulo IV</a>. Antes dela, o <a href="cap3.html">capítulo III</a> mostra como calcular o \(\vec B\) que uma corrente produz (Biot–Savart).</p>
+      </div></section>
+    </article>
+
+    <!-- ======================= RESUMO ======================= -->
+    <article class="modulo" id="resumo">
+      <header class="modulo-h"><span class="modulo-num">Fechamento</span><h2>Resumo e fórmulas</h2></header>
+      <div class="table-wrap"><table>
+        <tr><th>Grandeza</th><th>Fórmula</th><th>Quando usar</th></tr>
+        <tr><td>Força num fio</td><td>\(\vec F=i\int_C d\vec l\times\vec B\)</td><td>Qualquer fio, qualquer campo</td></tr>
+        <tr><td>Fio reto / curvo em \(\vec B\) uniforme</td><td>\(\vec F=i\,\vec L_{AB}\times\vec B\)</td><td>\(\vec L_{AB}\): do início ao fim do fio</td></tr>
+        <tr><td>Espira fechada em \(\vec B\) uniforme</td><td>\(\vec F_{\text{tot}}=\vec 0\)</td><td>Só sobra torque</td></tr>
+        <tr><td>Momento de dipolo</td><td>\(\vec m=NiS\,\hat n\)</td><td>\(\hat n\) pela mão direita com a corrente</td></tr>
+        <tr><td>Torque</td><td>\(\vec\tau=\vec m\times\vec B\), \(|\tau|=mB\sin\theta\)</td><td>Ex. 23; simulado; motores</td></tr>
+        <tr><td>Energia de orientação</td><td>\(U=-\vec m\cdot\vec B=-mB\cos\theta\)</td><td>Mínimo (estável) em \(\theta=0\); máximo (instável) em \(\pi\)</td></tr>
+        <tr><td>Trabalho para girar</td><td>\(W_{\text{ext}}=U_f-U_i\)</td><td>Ex.: de antiparalelo a paralelo, \(-2mB\)</td></tr>
+        <tr><td>Vários dipolos, \(\vec B\) uniforme</td><td>\(\vec\tau=(\sum\vec m_k)\times\vec B\), \(U=-(\sum\vec m_k)\cdot\vec B\)</td><td>Simulado Ex. 1</td></tr>
+        <tr><td>Motor CC (com comutador)</td><td>\(\tau=NiSB|\sin\theta|\), \(\langle\tau\rangle=\tfrac2\pi NiSB\)</td><td>Corrente invertida a cada ½ volta</td></tr>
+        <tr><td>Sem monopolos</td><td>\(\oint\vec B\cdot d\vec S=0\)</td><td>Cortar um ímã dá dois dipolos</td></tr>
+      </table></div>
+
+      <section class="note note-warn"><div class="cue"><span>Na prova</span></div><div class="note-body">
+        <h3>Erros comuns</h3>
+        <ul>
+          <li><strong>Sentido de \(\hat n\):</strong> sempre pela mão direita com a corrente. Horária no papel ⇒ \(-\hat k\).</li>
+          <li><strong>Área do círculo</strong> é \(\pi r^2\) (o próprio gabarito do simulado escorregou aqui).</li>
+          <li><strong>Confundir os ângulos:</strong> em \(\tau=mB\sin\theta\) e \(U=-mB\cos\theta\), \(\theta\) é o ângulo entre \(\vec m\) (a normal) e \(\vec B\), <em>não</em> entre o plano da espira e \(\vec B\). Espira “deitada” no plano do campo ⇒ \(\theta=90^\circ\): torque máximo, \(U=0\).</li>
+          <li><strong>Ordem do produto:</strong> \(\vec\tau=\vec m\times\vec B\) e \(d\vec F=i\,d\vec l\times\vec B\). Inverter troca o sinal.</li>
+          <li><strong>“Força total zero ⇒ nada acontece”:</strong> errado, o binário gira a espira.</li>
+          <li><strong>Equilíbrios:</strong> \(\tau=0\) em \(\theta=0\) e \(\theta=\pi\), mas só \(\theta=0\) é estável.</li>
+          <li><strong>Resposta vetorial:</strong> escreva \(\vec\tau=40{,}2\,\hat\jmath\) N·m, não só “40,2 N·m”.</li>
+        </ul>
+      </div></section>
+    </article>
+
+    <nav class="chapter-nav"><a class="prev" href="cap1.html"><small>← Anterior</small>I · Força magnética</a><a class="next" href="cap3.html"><small>Próximo →</small>III · Lei de Biot–Savart</a></nav>
+  </main>
+</div>
+
+<footer class="footer">
+  <p><strong>Física III · Magnetismo, indução e ondas</strong> · Física para IME (IFUSP) · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir dos slides e do simulado do Prof. Julio A. Larrea J. (IFUSP) e de Young &amp; Freedman, <em>Física III</em>, 14ª ed. Texto, simulações e erros são das notas; não é material oficial da disciplina.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/core.js"></script>
+<script src="assets/cap2.js"></script>
+</body>
+</html>

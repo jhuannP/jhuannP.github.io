@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIII · Maxwell e ondas — Física III para IME</title>
+<meta name="description" content="As quatro equações de Maxwell, a corrente de deslocamento, a velocidade da luz, a onda plana, o vetor de Poynting e a intensidade, com o Exercício 37 dos slides resolvido.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('fis3-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Física III <em>para IME</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="cap1.html" title="Força magnética">I</a><a href="cap2.html" title="Torque e dipolo magnético">II</a><a href="cap3.html" title="Lei de Biot–Savart">III</a><a href="cap4.html" title="Lei de Ampère">IV</a><a href="cap5.html" title="Meios magnéticos">V</a><a href="cap6.html" title="Indução magnética">VI</a><a href="cap7.html" title="Indutância e energia magnética">VII</a><a class="on" href="cap8.html" title="Maxwell e ondas">VIII</a><a class="prova" href="prova.html" title="Resolução da prova">Prova</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<section class="chapter-hero" data-num="VIII">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo VIII · Slides “Equações de Maxwell e onda eletromagnética”</p>
+    <h1>Maxwell e ondas</h1>
+    <p class="lede">Quatro equações resumem tudo o que vimos sobre eletricidade e magnetismo. Quando Maxwell completou a última, os campos ganharam vida própria: viraram uma onda que anda pelo vácuo à velocidade da luz e carrega energia.</p>
+    <div class="meta"><span>Sears §29.7, p. 323–327 · §32.1–32.5, p. 411–434</span><span>Exercício 37 dos slides</span><span>4 simulações</span></div>
+  </div>
+</section>
+
+<div class="layout">
+  <nav class="toc" aria-label="Neste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol>
+      <li><a href="#m1"><span class="toc-num">1</span>Objetivos e mapa</a></li>
+      <li><a href="#m2"><span class="toc-num">2</span>As quatro equações</a></li>
+      <li><a href="#m3"><span class="toc-num">3</span>Corrente de deslocamento</a></li>
+      <li><a href="#m4"><span class="toc-num">4</span>Consequências e a velocidade da luz</a></li>
+      <li><a href="#m5"><span class="toc-num">5</span>A onda plana</a></li>
+      <li><a href="#m6"><span class="toc-num">6</span>Energia e vetor de Poynting</a></li>
+      <li><a href="#m7"><span class="toc-num">7</span>Exercício 37 resolvido</a></li>
+      <li><a href="#m8"><span class="toc-num">8</span>Experimentos</a></li>
+      <li><a href="#m9"><span class="toc-num">9</span>Onde você está no curso</a></li>
+      <li><a href="#resumo"><span class="toc-num">✓</span>Resumo e fórmulas</a></li>
+    </ol>
+  </nav>
+  <main id="conteudo" class="content">
+
+    <!-- ================= M1 ================= -->
+    <article class="modulo" id="m1">
+      <header class="modulo-h"><span class="modulo-num">Módulo 1</span><h2>Objetivos e mapa do capítulo</h2></header>
+
+      <section class="note"><div class="cue"><span>Objetivos</span></div><div class="note-body">
+        <h3>O que o professor quer que você saia sabendo <span class="nivel nivel-1">básico</span></h3>
+        <ol class="steps">
+          <li>Ler as <strong>equações de Maxwell</strong> como as leis da natureza que dizem como campos elétricos e magnéticos nascem e se influenciam: a descrição clássica do eletromagnetismo.</li>
+          <li>Entender a <strong>luz como radiação eletromagnética</strong>: campos \(\vec E\) e \(\vec B\) que se sustentam mutuamente, descritos pelas mesmas equações.</li>
+          <li>Ver a onda como <strong>transporte de energia</strong> dos campos, medido pelo <strong>vetor de Poynting</strong> \(\vec S\).</li>
+          <li>Aplicar tudo em exercícios: corrente de deslocamento, propagação da luz no vácuo e energia da radiação (o Exercício 3 do simulado é exatamente isso).</li>
+        </ol>
+        <p>Esses conceitos são a porta de entrada da óptica e da propagação da luz em meios diferentes, que você verá em Física IV.</p>
+      </div></section>
+
+      <section class="note note-key"><div class="cue"><span>A história em uma frase</span></div><div class="note-body">
+        <p>Faraday mostrou que <strong>\(\vec B\) variando cria \(\vec E\)</strong> (capítulo VI). Maxwell percebeu que, por simetria, <strong>\(\vec E\) variando também cria \(\vec B\)</strong>. Com as duas regras, um campo alimenta o outro, como duas pessoas que se empurram alternadamente numa gangorra que anda: o par se desloca sozinho pelo espaço. Isso é uma onda eletromagnética, e a conta dá exatamente a velocidade da luz.</p>
+      </div></section>
+      <p class="fonte"><span>Sears</span> §32.1 “Equações de Maxwell e ondas eletromagnéticas”, p. 411.</p>
+    </article>
+
+    <!-- ================= M2 ================= -->
+    <article class="modulo" id="m2">
+      <header class="modulo-h"><span class="modulo-num">Módulo 2</span><h2>As quatro equações de Maxwell (no vácuo)</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Quatro frases sobre campos <span class="nivel nivel-1">básico</span></h3>
+        <p>Antes das fórmulas, as quatro leis em português:</p>
+        <ol class="steps">
+          <li><strong>Cargas são fontes de \(\vec E\).</strong> As linhas de campo elétrico saem das cargas positivas e chegam nas negativas.</li>
+          <li><strong>Não existe “carga magnética”.</strong> Linhas de \(\vec B\) nunca começam nem terminam: sempre fecham em laço. O menor ímã possível é um dipolo (norte e sul juntos).</li>
+          <li><strong>\(\vec B\) que varia cria \(\vec E\) circulante</strong> (Faraday). É o que faz o gerador e o carregador por indução funcionarem.</li>
+          <li><strong>Corrente e \(\vec E\) que varia criam \(\vec B\) circulante</strong> (Ampère–Maxwell). A segunda parte, o “\(\vec E\) que varia”, é a novidade de Maxwell.</li>
+        </ol>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>As fórmulas</span></div><div class="note-body">
+        <h3>Forma diferencial e forma integral, lado a lado <span class="nivel nivel-2">intermediário</span></h3>
+        <p>O slide põe à esquerda a forma <em>diferencial</em> (vale ponto a ponto, é a forma “formal”) e à direita a forma <em>integral</em> (vale para superfícies e caminhos, é a que usamos nas contas do curso). As duas dizem a mesma coisa; o teorema de Gauss (divergência) e o de Stokes (rotacional) traduzem uma na outra.</p>
+        <div class="table-wrap"><table>
+          <tr><th>Lei</th><th>Diferencial</th><th>Integral</th><th>Em palavras</th><th>Onde apareceu</th></tr>
+          <tr><td>(1) Gauss elétrico</td><td>\(\nabla\cdot\vec E=\dfrac{\rho}{\varepsilon_0}\)</td><td>\(\displaystyle\oint_S\vec E\cdot\hat n\,dS=\frac{Q_{\text{int}}}{\varepsilon_0}\)</td><td>O fluxo de \(\vec E\) por uma superfície fechada conta a carga lá dentro.</td><td>Física III, parte de eletrostática (P1)</td></tr>
+          <tr><td>(2) Gauss magnético</td><td>\(\nabla\cdot\vec B=0\)</td><td>\(\displaystyle\oint_S\vec B\cdot\hat n\,dS=0\)</td><td>Tudo o que entra de \(\vec B\) numa superfície fechada sai: não há monopolos.</td><td><a href="cap1.html">Cap. I</a> (fluxo magnético)</td></tr>
+          <tr><td>(3) Faraday</td><td>\(\nabla\times\vec E=-\dfrac{\partial\vec B}{\partial t}\)</td><td>\(\displaystyle\oint_C\vec E\cdot d\vec l=-\frac{d}{dt}\int_S\vec B\cdot\hat n\,dS\)</td><td>Fluxo magnético que muda induz uma fem (um \(\vec E\) que circula).</td><td><a href="cap6.html">Cap. VI</a> (indução)</td></tr>
+          <tr><td>(4) Ampère–Maxwell</td><td>\(\nabla\times\vec B=\mu_0\vec J+\dfrac{1}{c^2}\dfrac{\partial\vec E}{\partial t}\)</td><td>\(\displaystyle\oint_C\vec B\cdot d\vec l=\mu_0\,(i+i_d)\)</td><td>Corrente de cargas <em>ou</em> fluxo elétrico variando criam \(\vec B\) circulante.</td><td><a href="cap4.html">Cap. IV</a> (Ampère) + Módulo 3 abaixo</td></tr>
+        </table></div>
+        <p>Na lei (4) aparece a constante \(1/c^2=\varepsilon_0\mu_0\). Ela é o elo entre a parte elétrica (\(\varepsilon_0\)) e a magnética (\(\mu_0\)), e o Módulo 4 mostra que \(c\) é a velocidade da luz.</p>
+        <aside class="box box-key"><div class="box-h">Como lembrar as quatro</div>
+          <p>Duas são sobre <strong>fluxo por superfície fechada</strong> (Gauss E e Gauss B: “de onde saem as linhas?”). Duas são sobre <strong>circulação num caminho fechado</strong> (Faraday e Ampère: “o que faz o campo girar?”). Para \(\vec E\) girar, precisa de \(\vec B\) variando; para \(\vec B\) girar, precisa de corrente ou de \(\vec E\) variando. A assimetria é só que não há “corrente magnética”.</p>
+        </aside>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Nos materiais</span></div><div class="note-body">
+        <h3>A analogia (E, D, P) ↔ (B, H, M) <span class="nivel nivel-3">avançado</span></h3>
+        <p>O slide lembra uma analogia entre campos. Dentro de um material, os átomos respondem ao campo: num dielétrico eles se <strong>polarizam</strong> (\(\vec P\), dipolos elétricos por volume); num material magnético eles se <strong>magnetizam</strong> (\(\vec M\), dipolos magnéticos por volume, <a href="cap5.html">capítulo V</a>). Para separar o que vem das cargas e correntes “livres” do que vem do material, definem-se campos auxiliares:</p>
+        $$\vec D=\varepsilon_0\vec E+\vec P\qquad\qquad \vec H=\frac{1}{\mu_0}\vec B-\vec M$$
+        <div class="table-wrap"><table>
+          <tr><th>Elétrico</th><th>Magnético</th><th>Papel</th></tr>
+          <tr><td>\(\vec E\)</td><td>\(\vec B\)</td><td>campo “verdadeiro”, que exerce força nas cargas</td></tr>
+          <tr><td>\(\vec D\)</td><td>\(\vec H\)</td><td>campo auxiliar, ligado só às fontes livres</td></tr>
+          <tr><td>\(\vec P\)</td><td>\(\vec M\)</td><td>resposta do material (dipolos por volume)</td></tr>
+          <tr><td>\(\varepsilon_0\)</td><td>\(\mu_0\)</td><td>constante do vácuo</td></tr>
+        </table></div>
+        <p>No vácuo, \(\vec P=\vec M=0\), então \(\vec D=\varepsilon_0\vec E\) e \(\vec H=\vec B/\mu_0\): é o caso deste capítulo inteiro. Repare num detalhe de sinal: \(\vec P\) <em>soma</em> em \(\vec D\), mas \(\vec M\) <em>subtrai</em> em \(\vec H\).</p>
+      </div></section>
+
+      <div class="quiz"><p class="quiz-q">Qual das equações de Maxwell diz que não existem monopolos magnéticos?</p>
+        <div class="quiz-opts"><button>\(\nabla\times\vec E=-\partial\vec B/\partial t\)</button><button data-ok>\(\oint\vec B\cdot\hat n\,dS=0\)</button><button>\(\oint\vec B\cdot d\vec l=\mu_0(i+i_d)\)</button></div>
+        <p class="quiz-fb">Fluxo nulo por qualquer superfície fechada significa que não há “fonte” nem “sumidouro” de \(\vec B\): toda linha que entra também sai. Ela está no formulário da prova.</p></div>
+
+      <p class="fonte"><span>Sears</span> §29.7, Eqs. 29.18–29.21, p. 326–327 (as equações de Maxwell); §28.8 (magnetização), p. 284.</p>
+    </article>
+
+    <!-- ================= M3 ================= -->
+    <article class="modulo" id="m3">
+      <header class="modulo-h"><span class="modulo-num">Módulo 3</span><h2>Corrente de deslocamento: a peça que faltava</h2></header>
+
+      <section class="note"><div class="cue"><span>O problema</span></div><div class="note-body">
+        <h3>Ampère estava incompleta <span class="nivel nivel-1">básico</span></h3>
+        <p>Pegue um capacitor sendo carregado. Corre corrente \(i\) no fio, mas <strong>entre as placas não passa carga nenhuma</strong>: elas só se acumulam (+ numa placa, − na outra).</p>
+        <p>A lei de Ampère diz: \(\oint_C\vec B\cdot d\vec l=\mu_0 i_{\text{atravessa}}\), onde \(i_{\text{atravessa}}\) é a corrente que fura <em>qualquer</em> superfície que tenha o caminho \(C\) como borda. Agora escolha duas superfícies com a <strong>mesma borda</strong>:</p>
+        <ul>
+          <li>\(S_1\): um disco plano, furado pelo fio. Atravessa corrente \(i\).</li>
+          <li>\(S_2\): uma “bolsa” que passa entre as placas. Nenhuma carga atravessa: corrente zero.</li>
+        </ul>
+        <p>Mesmo caminho, mesma circulação de \(\vec B\), e duas respostas diferentes (\(\mu_0 i\) e \(0\)). Contradição! Maxwell resolveu dizendo que, entre as placas, o que “atravessa” \(S_2\) é o <strong>fluxo elétrico crescendo</strong>, e que isso conta como uma corrente.</p>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 560 230" role="img" aria-label="Capacitor sendo carregado, com um caminho de Ampère em volta do fio e duas superfícies com a mesma borda: S1 plana, furada pelo fio, e S2 em forma de bolsa passando entre as placas.">
+          <defs><marker id="m3a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker>
+          <marker id="m3b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker></defs>
+          <path d="M150 50 C 260 30, 330 40, 345 70 L 345 160 C 330 190, 260 200, 150 180 Z" fill="var(--cyan)" opacity=".13" stroke="var(--cyan)" stroke-dasharray="5 4"/>
+          <line x1="20" y1="115" x2="320" y2="115" stroke="var(--ink)" stroke-width="3"/>
+          <line x1="380" y1="115" x2="540" y2="115" stroke="var(--ink)" stroke-width="3"/>
+          <rect x="320" y="40" width="8" height="150" fill="var(--accent)"/>
+          <rect x="372" y="40" width="8" height="150" fill="var(--cyan)"/>
+          <text x="324" y="32" text-anchor="middle" font-size="16" fill="var(--accent)" font-family="sans-serif">+q</text>
+          <text x="376" y="32" text-anchor="middle" font-size="16" fill="var(--cyan)" font-family="sans-serif">−q</text>
+          <line x1="332" y1="80" x2="366" y2="80" stroke="var(--accent)" stroke-width="1.6" marker-end="url(#m3a)"/>
+          <line x1="332" y1="115" x2="366" y2="115" stroke="var(--accent)" stroke-width="1.6" marker-end="url(#m3a)"/>
+          <line x1="332" y1="150" x2="366" y2="150" stroke="var(--accent)" stroke-width="1.6" marker-end="url(#m3a)"/>
+          <text x="350" y="212" text-anchor="middle" font-size="13" fill="var(--accent)" font-family="sans-serif">E crescendo</text>
+          <ellipse cx="150" cy="115" rx="14" ry="65" fill="var(--accent)" opacity=".16" stroke="var(--ink)" stroke-width="2"/>
+          <text x="150" y="40" text-anchor="middle" font-size="14" fill="var(--ink)" font-family="sans-serif">caminho C</text>
+          <text x="122" y="200" text-anchor="middle" font-size="14" fill="var(--ink)" font-family="sans-serif">S₁ (plana): i</text>
+          <text x="262" y="210" text-anchor="middle" font-size="14" fill="var(--cyan)" font-family="sans-serif">S₂ (bolsa): i_d</text>
+          <line x1="60" y1="100" x2="100" y2="100" stroke="var(--accent)" stroke-width="2" marker-end="url(#m3a)"/>
+          <text x="80" y="90" text-anchor="middle" font-size="14" fill="var(--accent)" font-family="sans-serif">i</text>
+          <line x1="460" y1="100" x2="500" y2="100" stroke="var(--accent)" stroke-width="2" marker-end="url(#m3a)"/>
+          <text x="480" y="90" text-anchor="middle" font-size="14" fill="var(--accent)" font-family="sans-serif">i</text>
+        </svg>
+        <figcaption>O mesmo caminho \(C\) é borda de \(S_1\) (atravessada pelo fio) e de \(S_2\) (que passa entre as placas). Para a lei de Ampère dar a mesma resposta nas duas, o fluxo elétrico crescente em \(S_2\) tem de contar como corrente.</figcaption>
+      </figure>
+
+      <section class="note"><div class="cue"><span>A fórmula</span></div><div class="note-body">
+        <h3>Definição da corrente de deslocamento <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Maxwell definiu a <strong>densidade de corrente de deslocamento</strong> e a corrente correspondente:</p>
+        $$\vec j_d=\varepsilon_0\frac{\partial\vec E}{\partial t}\qquad\qquad i_d=\int_S\vec j_d\cdot\hat n\,dS=\varepsilon_0\frac{d\Phi_E}{dt}$$
+        <p>e a lei de Ampère <strong>generalizada</strong> (equação (4) de Maxwell):</p>
+        $$\oint_C\vec B\cdot d\vec l=\mu_0\,(i+i_d)=\mu_0\Big(i+\varepsilon_0\frac{d\Phi_E}{dt}\Big)\qquad\Longleftrightarrow\qquad \nabla\times\vec B=\mu_0\Big(\vec J+\varepsilon_0\frac{\partial\vec E}{\partial t}\Big)$$
+        <p>O nome “deslocamento” é histórico: num dielétrico, as cargas de polarização se deslocam um pouquinho quando o campo muda, e isso é uma corrente de verdade. No vácuo não há nada se deslocando, mas o termo continua lá. <strong>Não é carga andando: é campo elétrico mudando.</strong></p>
+        <aside class="box box-ok"><div class="box-h">Confere no capacitor</div>
+          <p>Placas de área \(A\), carga \(q\): \(E=q/(\varepsilon_0A)\), logo \(\Phi_E=EA=q/\varepsilon_0\) e \(i_d=\varepsilon_0\,d\Phi_E/dt=dq/dt=i\). A corrente de deslocamento entre as placas é <strong>exatamente igual</strong> à corrente no fio. A corrente total \(i+i_d\) é contínua: o que para de ser corrente de condução vira corrente de deslocamento.</p>
+        </aside>
+      </div></section>
+
+      <div class="widget" id="w-desloc">
+        <p class="w-title">Capacitor carregando: corrente no fio e corrente de deslocamento</p>
+        <p class="w-caption">Circuito RC ligado em \(t=0\). Os pontos no fio são a corrente de condução \(i\); as setas laranja entre as placas são \(\vec E\), que cresce enquanto a carga se acumula. Os símbolos ⊙/⊗ mostram \(\vec B\) em volta do fio e em volta do vão: têm o mesmo tamanho, porque \(i_d=i\). Troque a superfície para ver que \(S_1\) e \(S_2\) dão a mesma resposta.</p>
+        <canvas class="w-canvas" height="320"></canvas>
+        <canvas class="w-canvas" height="150"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Fem ε <output data-o="emf"></output></span><input type="range" data-k="emf" min="1" max="12" step="0.5" value="9"></label>
+          <label class="w-control"><span>Resistência R <output data-o="R"></output></span><input type="range" data-k="R" min="2" max="20" step="0.5" value="10"></label>
+          <label class="w-control"><span>Capacitância C <output data-o="C"></output></span><input type="range" data-k="C" min="50" max="300" step="10" value="100"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="reset">Ligar de novo (t = 0)</button><button class="w-btn" data-act="pause">Pausar</button><span class="lbl">Superfície:</span><button class="w-btn on" data-act="s1">S₁ plana</button><button class="w-btn" data-act="s2">S₂ bolsa</button></div>
+        <div class="w-readout" aria-live="off"></div>
+      </div>
+
+      <section class="note"><div class="cue"><span>A dedução</span></div><div class="note-body">
+        <h3>A conta do slide, passo a passo <span class="nivel nivel-3">avançado</span></h3>
+        <p>O professor parte de uma região de volume \(V\) com cargas se deslocando, envolvida por \(S=S_1+S_2\): por \(S_1\) passa a corrente de portadores livres \(\vec j\); por \(S_2\) “passa” \(\vec j_d\).</p>
+        <ol class="steps">
+          <li><strong>Stokes na forma generalizada:</strong> \(\displaystyle\int_S(\nabla\times\vec B)\cdot\hat n\,dS=\mu_0\int_S(\vec j+\vec j_d)\cdot\hat n\,dS=\mu_0\int_{S_1}\vec j\cdot\hat n\,dS+\mu_0\int_{S_2}\vec j_d\cdot\hat n\,dS\).</li>
+          <li><strong>Lado esquerdo vira circulação</strong> (Stokes): \(\oint_C\vec B\cdot d\vec l\). Os dois termos da direita são \(\mu_0 i\) e \(\mu_0 i_d\). Resultado: \(\oint_C\vec B\cdot d\vec l=\mu_0 i+\mu_0 i_d\) (4a).</li>
+          <li><strong>Corrente de condução:</strong> \(i=\int_{S_1}\vec j\cdot\hat n\,dS\), com \(\vec j=nq\vec v\) (densidade de portadores × carga × velocidade de arrasto) e, num ôhmico, \(\vec J=\sigma\vec E\).</li>
+          <li><strong>Corrente de deslocamento como carga acumulada:</strong> \(i_d=\int_{S_2}\vec j_d\cdot\hat n\,dS=\dfrac{dQ_d}{dt}\) (4b), onde \(Q_d\) é a carga “de deslocamento” associada a \(S_2\).</li>
+          <li><strong>Gauss em \(S_2\):</strong> \(\int_{S_2}\vec E\cdot\hat n\,dS=Q_d/\varepsilon_0\), então \(Q_d=\varepsilon_0\int_{S_2}\vec E\cdot\hat n\,dS\) (4c).</li>
+          <li><strong>Substituindo (4c) em (4b):</strong> \(i_d=\varepsilon_0\dfrac{d}{dt}\int_{S_2}\vec E\cdot\hat n\,dS=\int_{S_2}\varepsilon_0\dfrac{\partial\vec E}{\partial t}\cdot\hat n\,dS\) (4d). Comparando os integrandos: \(\vec j_d=\varepsilon_0\,\partial\vec E/\partial t\) (4e).</li>
+          <li><strong>De volta à forma diferencial:</strong> \(\nabla\times\vec B=\mu_0\vec J+\mu_0\varepsilon_0\,\partial\vec E/\partial t=\mu_0\vec J+\dfrac{1}{c^2}\dfrac{\partial\vec E}{\partial t}\), com \(1/c^2=\varepsilon_0\mu_0\).</li>
+        </ol>
+      </div></section>
+
+      <details class="reveal"><summary>Estudante: o que acontece com o campo magnético B na presença de cargas que se acumulam?</summary><div>
+        <p>Enquanto a carga se acumula (o capacitor carrega), o campo \(\vec E\) entre as placas cresce, e esse \(\partial\vec E/\partial t\) cria um \(\vec B\) circulante em volta do vão, igualzinho ao \(\vec B\) em volta do fio. Quando o capacitor termina de carregar, \(i=0\) e \(\partial\vec E/\partial t=0\): o \(\vec B\) some dos dois lugares. É por isso que o professor introduz o novo conceito: sem ele, a lei de Ampère não sabe o que fazer com cargas que se acumulam.</p>
+      </div></details>
+      <details class="reveal"><summary>Estudante: qual o significado físico da variação temporal do fluxo elétrico?</summary><div>
+        <p>O fluxo \(\Phi_E=\int_{S_2}\vec E\cdot\hat n\,dS\) “conta” as cargas de deslocamento: \(\varepsilon_0\Phi_E=Q_d\). Se esse fluxo varia, é como se carga estivesse entrando na região a uma taxa \(\varepsilon_0\,d\Phi_E/dt\). Conclusão do slide: \(i_d=\varepsilon_0\,d\Phi_E/dt\), a relação entre corrente de deslocamento e variação do fluxo elétrico. É o “espelho” de Faraday: lá, \(d\Phi_B/dt\) gera \(\vec E\); aqui, \(d\Phi_E/dt\) gera \(\vec B\).</p>
+      </div></details>
+
+      <div class="worked"><div class="worked-h"><span>Exemplo</span> \(\vec B\) entre as placas de um capacitor circular</div>
+        <p>Placas circulares de raio \(a=5{,}0\) cm, carregando com \(i=2{,}0\) A. Ache \(\vec B\) a \(r=3{,}0\) cm e a \(r=10\) cm do eixo, na região entre as placas.</p>
+        <ol class="steps">
+          <li><strong>Eixos.</strong> Eixo \(z\) ao longo do fio, no sentido da corrente; coordenadas cilíndricas \((r,\theta,z)\). Entre as placas, \(\vec E=E\hat k\) uniforme, crescendo.</li>
+          <li><strong>Caminho de Ampère:</strong> círculo de raio \(r\) centrado no eixo, percorrido no sentido \(\hat\theta\) (mão direita com o polegar em \(+\hat k\)). Por simetria, \(\vec B=B(r)\hat\theta\), então \(\oint\vec B\cdot d\vec l=2\pi rB\).</li>
+          <li><strong>Corrente de deslocamento envolvida.</strong> Não há condução entre as placas (\(i=0\) ali). Para \(r&lt;a\), só a fração \(\pi r^2/\pi a^2\) do fluxo elétrico está dentro do círculo: \(i_d^{\text{env}}=i\,r^2/a^2\). Para \(r&gt;a\), todo ele: \(i_d^{\text{env}}=i\).</li>
+          <li><strong>Resultado:</strong>
+          $$\vec B=\begin{cases}\dfrac{\mu_0 i\,r}{2\pi a^2}\,\hat\theta,& r&lt;a\\[2mm] \dfrac{\mu_0 i}{2\pi r}\,\hat\theta,& r&gt;a\end{cases}$$
+          (igual ao fio grosso do <a href="cap4.html">capítulo IV</a>, com \(i_d\) no lugar de \(i\); Sears Eq. 29.17, p. 325).</li>
+          <li><strong>Números</strong> (\(\mu_0/2\pi=2\times10^{-7}\) T·m/A): \(r=3\) cm: \(B=2\times10^{-7}\cdot2\cdot0{,}03/0{,}05^2=4{,}8\times10^{-6}\) T. \(r=10\) cm: \(B=2\times10^{-7}\cdot2/0{,}10=4{,}0\times10^{-6}\) T. Ambos na direção \(\hat\theta\).</li>
+          <li><strong>Taxa de variação de \(E\):</strong> \(\dfrac{dE}{dt}=\dfrac{i}{\varepsilon_0\pi a^2}=\dfrac{2}{(8{,}85\times10^{-12})\pi(0{,}05)^2}\approx2{,}9\times10^{13}\) V/(m·s). Enorme, e mesmo assim o \(B\) é só alguns microtesla: o efeito existe, mas é sutil, por isso demorou a ser descoberto.</li>
+        </ol>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">Um capacitor terminou de carregar e ficou com carga constante. Qual a corrente de deslocamento entre as placas?</p>
+        <div class="quiz-opts"><button>Igual à corrente máxima \(\varepsilon/R\)</button><button data-ok>Zero</button><button>\(\varepsilon_0 E A\)</button></div>
+        <p class="quiz-fb">\(i_d=\varepsilon_0\,d\Phi_E/dt\). Com carga constante, \(E\) é constante e a derivada é zero. O campo \(\vec E\) existe, mas não varia, então não gera \(\vec B\).</p></div>
+
+      <p class="fonte"><span>Sears</span> §29.7 “Corrente de deslocamento e equações de Maxwell”, p. 323–327; Eq. 29.14 (\(i_D=\varepsilon_0\,d\Phi_E/dt\)), p. 324; Eqs. 29.15–29.16 (Ampère generalizada e \(j_D\)), p. 325.</p>
+    </article>
+
+    <!-- ================= M4 ================= -->
+    <article class="modulo" id="m4">
+      <header class="modulo-h"><span class="modulo-num">Módulo 4</span><h2>Consequências: campos perpendiculares e a velocidade da luz</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>O que as equações dizem sem resolver nada <span class="nivel nivel-1">básico</span></h3>
+        <ol class="steps">
+          <li><strong>\(\vec E\perp\vec B\).</strong> As leis (3) e (4) ligam o rotacional de um à variação do outro: \(\vec E\) que circula vem de \(\vec B\) variando e vice-versa. Numa onda, isso força os dois a serem perpendiculares entre si e à direção de propagação.</li>
+          <li><strong>A velocidade da onda já está nas constantes.</strong> \(\dfrac{1}{c^2}=\varepsilon_0\mu_0\Rightarrow c=\dfrac{1}{\sqrt{\varepsilon_0\mu_0}}\). Se existe uma onda que transporta o campo eletromagnético, ela anda a essa velocidade no vácuo.</li>
+        </ol>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A conta</span></div><div class="note-body">
+        <h3>Calculando \(c\) com duas constantes de laboratório <span class="nivel nivel-2">intermediário</span></h3>
+        $$c=\frac{1}{\sqrt{(8{,}854\times10^{-12})(4\pi\times10^{-7})}}=\frac{1}{\sqrt{1{,}113\times10^{-17}}}=\frac{1}{3{,}336\times10^{-9}}\approx2{,}998\times10^{8}\ \text{m/s}$$
+        <p>\(\varepsilon_0\) se mede com capacitores e \(\mu_0\) com fios que se atraem: nada a ver com luz. Mesmo assim o resultado é exatamente a velocidade da luz medida por astrônomos. Foi assim que Maxwell concluiu, em 1865, que <strong>a luz é uma onda eletromagnética</strong>.</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A equação de onda</span></div><div class="note-body">
+        <h3>De Maxwell à equação de onda <span class="nivel nivel-3">avançado</span></h3>
+        <p>No vácuo sem cargas (\(\rho=0\), \(\vec J=0\)), tome o rotacional da lei de Faraday e use a de Ampère–Maxwell:</p>
+        $$\nabla\times(\nabla\times\vec E)=-\frac{\partial}{\partial t}(\nabla\times\vec B)=-\frac{1}{c^2}\frac{\partial^2\vec E}{\partial t^2}$$
+        <p>Como \(\nabla\times(\nabla\times\vec E)=\nabla(\nabla\cdot\vec E)-\nabla^2\vec E\) e \(\nabla\cdot\vec E=0\) no vácuo sem cargas:</p>
+        $$\nabla^2\vec E=\frac{1}{c^2}\frac{\partial^2\vec E}{\partial t^2}\qquad\text{(e o mesmo para }\vec B\text{)}$$
+        <p>Essa é a <strong>equação de onda</strong> com velocidade \(c\). Em uma dimensão (onda andando ao longo de \(y\)): \(\partial^2E/\partial y^2=(1/c^2)\,\partial^2E/\partial t^2\), exatamente o que o Exercício 37(b) pede para verificar. Qualquer função de \(y-ct\) (ou \(y+ct\)) resolve; a senoidal é a mais simples.</p>
+      </div></section>
+
+      <div class="widget" id="w-ondaeq">
+        <p class="w-title">Explorador da equação de onda</p>
+        <p class="w-caption">Em cima, uma “foto” da onda \(E(y,t)=E_0\cos(ky\mp\omega t)\) num instante: a distância entre cristas é \(\lambda\). Embaixo, o “filme” num ponto fixo \(y_0\) (linha tracejada de cima): o tempo entre cristas é \(T\). A bolinha amarela anda com uma crista, à velocidade \(v=\lambda/T=\omega/k\). A leitura confere numericamente que \(\partial^2E/\partial y^2=(1/v^2)\,\partial^2E/\partial t^2\).</p>
+        <canvas class="w-canvas" height="210"></canvas>
+        <canvas class="w-canvas" height="170"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Comprimento de onda λ <output data-o="lam"></output></span><input type="range" data-k="lam" min="1" max="4" step="0.1" value="3"></label>
+          <label class="w-control"><span>Velocidade v/c (meio) <output data-o="vc"></output></span><input type="range" data-k="vc" min="0.4" max="1" step="0.05" value="1"></label>
+          <label class="w-control"><span>Ponto de observação y₀ <output data-o="y0"></output></span><input type="range" data-k="y0" min="0" max="8" step="0.1" value="2"></label>
+        </div>
+        <div class="w-row"><button class="w-btn on" data-act="dir">Sentido: +y, cos(ky − ωt)</button><button class="w-btn" data-act="pause">Pausar</button><button class="w-btn" data-act="ex37">Exercício 37 (vácuo, λ = 3 m)</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <details class="reveal"><summary>Por que o sinal dentro do cosseno define o sentido?</summary><div>
+        <p>Acompanhe uma crista, onde a fase vale zero: \(ky-\omega t=0\Rightarrow y=(\omega/k)\,t\). Com o tempo, \(y\) <strong>cresce</strong>: a crista anda para \(+y\). Com \(ky+\omega t=0\), \(y=-(\omega/k)\,t\): anda para \(-y\). Regra do slide: <strong>sinal “−” → sentido positivo do eixo; sinal “+” → sentido negativo</strong>.</p>
+      </div></details>
+
+      <p class="fonte"><span>Sears</span> §32.2 “Ondas eletromagnéticas planas e a velocidade da luz”, p. 414; Eq. 32.9 (\(c=1/\sqrt{\varepsilon_0\mu_0}\)), p. 417; dedução da equação de onda p. 418–420, Eq. 32.15, p. 420.</p>
+    </article>
+
+    <!-- ================= M5 ================= -->
+    <article class="modulo" id="m5">
+      <header class="modulo-h"><span class="modulo-num">Módulo 5</span><h2>A onda plana monocromática no vácuo</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Uma cor só, frentes de onda planas <span class="nivel nivel-1">básico</span></h3>
+        <p><strong>Plana</strong>: em cada plano perpendicular à direção de propagação, o campo é o mesmo (bem longe da fonte, uma onda esférica parece plana, como a Terra parece plana de perto). <strong>Monocromática</strong>: uma única frequência, ou seja, uma senoide pura. É a onda mais simples possível, e toda onda real pode ser montada somando várias delas.</p>
+        <p>A direção e o sentido de propagação são dados por um vetor unitário \(\hat u\) (o slide chama de \(\hat k\)), perpendicular a \(\vec E\) e a \(\vec B\). O vetor de onda é \(\vec k=k\hat u\), com \(k=2\pi/\lambda\).</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A fórmula</span></div><div class="note-body">
+        <h3>As expressões do slide <span class="nivel nivel-2">intermediário</span></h3>
+        $$\vec E(x,t)=\vec E_0\cos(kx\mp\omega t)\qquad\qquad \vec B(x,t)=\vec B_0\cos(kx\mp\omega t)$$
+        <ul>
+          <li>Sinal \(-\): propaga no sentido <strong>positivo</strong> de \(x\), \(\vec k=k\,\hat x\).</li>
+          <li>Sinal \(+\): propaga no sentido <strong>negativo</strong> de \(x\), \(\vec k=k\,(-\hat x)\).</li>
+        </ul>
+        <p>Basta resolver \(\vec E\); \(\vec B\) sai dele:</p>
+        $$E_0=c\,B_0\qquad\qquad \vec B=\frac{1}{c}\,\hat k\times\vec E$$
+        <p>Relações que você vai usar o tempo todo (não vêm no formulário): \(\omega=2\pi f\), \(k=2\pi/\lambda\), \(c=\lambda f=\omega/k\), \(T=1/f\).</p>
+        <aside class="box box-key"><div class="box-h">Regra da mão direita da onda</div>
+          <p>Os três vetores formam um trio destro, na ordem <strong>\(\vec E\to\vec B\to\hat k\)</strong>: \(\vec E\times\vec B\) aponta para onde a onda vai. Equivalente: \(\hat k\times\vec E\) dá a direção de \(\vec B\), e \(\vec B\times\hat k\) dá a direção de \(\vec E\). Ciclo dos versores: \(\hat\imath\times\hat\jmath=\hat k\), \(\hat\jmath\times\hat k=\hat\imath\), \(\hat k\times\hat\imath=\hat\jmath\) (ao contrário, troca o sinal).</p>
+        </aside>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 440 210" role="img" aria-label="Trio de vetores da onda: E para cima, B saindo para a frente-direita e o vetor de propagação k para a direita.">
+          <defs><marker id="m5e" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker>
+          <marker id="m5b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker>
+          <marker id="m5k" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ink)"/></marker></defs>
+          <line x1="140" y1="130" x2="140" y2="35" stroke="var(--accent)" stroke-width="3" marker-end="url(#m5e)"/>
+          <text x="150" y="40" font-size="16" fill="var(--accent)" font-family="sans-serif">E</text>
+          <line x1="140" y1="130" x2="80" y2="185" stroke="var(--cyan)" stroke-width="3" marker-end="url(#m5b)"/>
+          <text x="62" y="190" font-size="16" fill="var(--cyan)" font-family="sans-serif">B</text>
+          <line x1="140" y1="130" x2="270" y2="130" stroke="var(--ink)" stroke-width="3" marker-end="url(#m5k)"/>
+          <text x="276" y="135" font-size="16" fill="var(--ink)" font-family="sans-serif">k̂ (propagação)</text>
+          <path d="M175 75 A 45 45 0 0 1 200 112" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="300" y="60" font-size="14" fill="var(--muted)" font-family="sans-serif">E × B ∥ k̂</text>
+          <text x="300" y="82" font-size="14" fill="var(--muted)" font-family="sans-serif">B = (1/c) k̂ × E</text>
+          <text x="300" y="104" font-size="14" fill="var(--muted)" font-family="sans-serif">|E| = c|B|</text>
+        </svg>
+        <figcaption>Dedos da mão direita de \(\vec E\) para \(\vec B\): o polegar aponta para \(\hat k\). Aqui \(\vec E\) sobe, \(\vec B\) sai do papel (para a frente) e a onda anda para a direita.</figcaption>
+      </figure>
+
+      <div class="widget" id="w-wave">
+        <p class="w-title">Onda eletromagnética em 3D: escolha k̂ e E, veja B e S</p>
+        <p class="w-caption">Escolha a direção de propagação e para onde \(\vec E\) aponta. O site calcula \(\vec B=\frac1c\hat k\times\vec E\) (azul) e mostra \(\vec S=\vec E\times\vec B/\mu_0\) (amarelo), sempre ao longo de \(\hat k\) e pulsando como \(\cos^2\). Gire a câmera para ver os três perpendiculares. O botão “Simulado” carrega o Exercício 3 da prova; “Exercício 37” carrega o dos slides.</p>
+        <canvas class="w-canvas" height="340"></canvas>
+        <canvas class="w-canvas" height="150"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Propagação k̂</span><select data-sel="k"><option value="+x">+x (î)</option><option value="-x">−x (−î)</option><option value="+y">+y (ĵ)</option><option value="-y">−y (−ĵ)</option><option value="+z" selected>+z (k̂)</option><option value="-z">−z (−k̂)</option></select></label>
+          <label class="w-control"><span>E aponta para</span><select data-sel="e"><option value="+x">+x (î)</option><option value="-x">−x (−î)</option><option value="+y">+y (ĵ)</option><option value="-y" selected>−y (−ĵ)</option><option value="+z">+z (k̂)</option><option value="-z">−z (−k̂)</option></select></label>
+          <label class="w-control"><span>Amplitude B₀ <output data-o="B0"></output></span><input type="range" data-k="B0" min="-9" max="-6" step="0.05" value="-8"></label>
+          <label class="w-control"><span>Frequência f <output data-o="f"></output></span><input type="range" data-k="f" min="6" max="9.5" step="0.05" value="8"></label>
+          <label class="w-control"><span>Girar a câmera <output data-o="yaw"></output></span><input type="range" data-k="yaw" min="0" max="180" value="58"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="pause">Pausar</button><button class="w-btn" data-act="exam">Simulado (Ex. 3)</button><button class="w-btn" data-act="ex37">Exercício 37</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">Uma onda tem \(\vec B=B_0\cos(kz-\omega t)\,\hat\imath\). Para onde aponta \(\vec E\)?</p>
+        <div class="quiz-opts"><button>\(+\hat\jmath\)</button><button data-ok>\(-\hat\jmath\)</button><button>\(+\hat k\)</button></div>
+        <p class="quiz-fb">A onda vai para \(+z\) (sinal “−”). Precisamos de \(\vec E\times\vec B\parallel+\hat k\): \((-\hat\jmath)\times\hat\imath=-(\hat\jmath\times\hat\imath)=-(-\hat k)=+\hat k\). Confira também \(\vec B=\frac1c\hat k\times\vec E\): \(\hat k\times(-\hat\jmath)=+\hat\imath\). Este é o Exercício 3 do simulado.</p></div>
+
+      <p class="fonte"><span>Sears</span> §32.2–32.3, Eq. 32.4 (\(E=cB\)), p. 416; ondas senoidais Eqs. 32.16–32.19, p. 422.</p>
+    </article>
+
+    <!-- ================= M6 ================= -->
+    <article class="modulo" id="m6">
+      <header class="modulo-h"><span class="modulo-num">Módulo 6</span><h2>Energia: densidade, vetor de Poynting e intensidade</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>A luz carrega energia <span class="nivel nivel-1">básico</span></h3>
+        <p>Você sente isso quando fica no sol: a onda entrega energia à sua pele. Os campos guardam energia (como um capacitor guarda energia em \(\vec E\) e um indutor em \(\vec B\), <a href="cap7.html">capítulo VII</a>), e a onda <strong>transporta</strong> essa energia à velocidade \(c\). O vetor de Poynting \(\vec S\) diz quanto e para onde: energia por segundo por metro quadrado (W/m²).</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>As fórmulas</span></div><div class="note-body">
+        <h3>Densidade de energia e Poynting <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Densidades de energia elétrica e magnética:</p>
+        $$u_E=\tfrac12\varepsilon_0E^2\qquad\qquad u_B=\frac{B^2}{2\mu_0}$$
+        <p><strong>Numa onda, as duas são iguais.</strong> Com \(B=E/c\) e \(1/c^2=\varepsilon_0\mu_0\):</p>
+        $$u_B=\frac{(E/c)^2}{2\mu_0}=\frac{\varepsilon_0\mu_0E^2}{2\mu_0}=\tfrac12\varepsilon_0E^2=u_E\qquad\Rightarrow\qquad u=u_E+u_B=\varepsilon_0E^2$$
+        <p>O vetor de Poynting (energia por área por tempo):</p>
+        $$\vec S=\frac{\vec E\times\vec B}{\mu_0}=c\,\varepsilon_0E^2\,\hat k=c\,u\,\hat k$$
+        <p>Leitura do slide: <strong>\(S=cu\)</strong>, “\(\vec S\) transporta a energia \(u\) por unidade de volume com velocidade \(c\)”. Pense numa esteira: a densidade de caixas (\(u\)) vezes a velocidade da esteira (\(c\)) dá quantas caixas passam por segundo.</p>
+        <p>Como \(\cos^2\) oscila entre 0 e 1 com média \(\tfrac12\), a <strong>intensidade</strong> (média temporal de \(S\)) é</p>
+        $$I=\langle S\rangle=\frac{E_0B_0}{2\mu_0}=\frac{E_0^2}{2\mu_0c}=\tfrac12\,c\,\varepsilon_0E_0^2$$
+      </div></section>
+
+      <div class="worked"><div class="worked-h"><span>Exemplo</span> Os campos da luz do Sol</div>
+        <p>A luz solar chega ao chão com intensidade \(I\approx1000\) W/m². Quanto valem \(E_0\) e \(B_0\)?</p>
+        <ol class="steps">
+          <li>\(I=\tfrac12c\varepsilon_0E_0^2\Rightarrow E_0=\sqrt{\dfrac{2I}{c\varepsilon_0}}=\sqrt{\dfrac{2000}{(3\times10^8)(8{,}85\times10^{-12})}}=\sqrt{7{,}5\times10^{5}}\approx8{,}7\times10^{2}\) V/m.</li>
+          <li>\(B_0=E_0/c\approx\dfrac{870}{3\times10^8}\approx2{,}9\times10^{-6}\) T: cerca de 1/20 do campo da Terra.</li>
+          <li>Conferência de unidades: \([\varepsilon_0E^2]=\) J/m³; vezes m/s dá W/m². ✔</li>
+        </ol>
+      </div>
+
+      <section class="note"><div class="cue"><span>Conservação</span></div><div class="note-body">
+        <h3>O balanço de energia em cada ponto <span class="nivel nivel-3">avançado</span></h3>
+        <p>O slide desenha um volumezinho \(dV\) com energia \(u\,dV\), atravessado por \(\vec S\) e com cargas que recebem trabalho \(\vec J\cdot\vec E\). O balanço (teorema de Poynting) é:</p>
+        $$\frac{\partial u}{\partial t}+\nabla\cdot\vec S=-\vec J\cdot\vec E$$
+        <p>Em palavras: <strong>a energia guardada no volume diminui</strong> (\(\partial u/\partial t&lt;0\)) <strong>porque sai pelas paredes</strong> (\(\nabla\cdot\vec S&gt;0\)) <strong>ou porque os campos fazem trabalho nas cargas</strong> (\(\vec J\cdot\vec E&gt;0\), por exemplo aquecendo um resistor, o efeito Joule). É a mesma ideia de uma conta bancária: saldo muda = − (saques pela porta) − (gastos lá dentro). No vácuo sem cargas, \(\vec J=0\) e a energia só viaja.</p>
+      </div></section>
+
+      <div class="quiz"><p class="quiz-q">Se a amplitude \(E_0\) de uma onda dobra, a intensidade…</p>
+        <div class="quiz-opts"><button>dobra</button><button data-ok>quadruplica</button><button>não muda (depende só de f)</button></div>
+        <p class="quiz-fb">\(I=\tfrac12c\varepsilon_0E_0^2\): proporcional ao quadrado da amplitude. A frequência não entra na intensidade clássica.</p></div>
+
+      <div class="quiz"><p class="quiz-q">Numa onda no vácuo, qual fração da energia está no campo magnético?</p>
+        <div class="quiz-opts"><button>Quase nada, porque \(B=E/c\) é minúsculo</button><button data-ok>Metade</button><button>Toda</button></div>
+        <p class="quiz-fb">\(B\) é numericamente pequeno em tesla, mas \(u_B=B^2/2\mu_0\) tem \(\mu_0\) pequeno no denominador. A conta dá \(u_B=u_E\): metade e metade.</p></div>
+
+      <p class="fonte"><span>Sears</span> §32.4 “Energia e momento linear em ondas eletromagnéticas”, Eq. 32.25 (\(u=\varepsilon_0E^2\)), p. 425; Eqs. 32.26–32.28 (Poynting), p. 426; Eq. 32.29 (intensidade), p. 427; Exemplo 32.4, p. 428.</p>
+    </article>
+
+    <!-- ================= M7 ================= -->
+    <article class="modulo" id="m7">
+      <header class="modulo-h"><span class="modulo-num">Módulo 7</span><h2>Exercício 37 dos slides, resolvido</h2></header>
+
+      <div class="worked prova"><div class="worked-h"><span>Exercício 37</span> \(\vec E(y,t)=E_0\cos(ky-\omega t)\,\hat x\) no vácuo</div>
+        <p><strong>Enunciado (resumo).</strong> A função de onda \(\vec E(y,t)=E_0\cos(ky-\omega t)\,\hat x\) descreve o campo elétrico de uma onda plana monocromática no vácuo. Com os versores \((\hat x,\hat y,\hat z)\): (a) qual o versor do vetor de propagação \(\vec k\)? (b) mostre que \(E\) satisfaz \(\partial^2E/\partial y^2=(1/c^2)\,\partial^2E/\partial t^2\) e ache a relação entre \(k\) e \(\omega\); (c) interprete com gráficos de \(E\) versus \(y\) e versus \(t\), relacionando \(\lambda\), \(T\) e \(c\); (d) ache \(\vec B\); (e) ache \(\vec S\) e a densidade de energia.</p>
+
+        <p><strong>(a) Vetor de propagação.</strong> Dica do professor: analise o argumento \(ky-\omega t\).</p>
+        <ul>
+          <li>A variável espacial é \(y\) → a onda anda <strong>ao longo do eixo \(y\)</strong>.</li>
+          <li>O sinal entre os termos é “−” → sentido <strong>positivo</strong>.</li>
+        </ul>
+        $$\hat k=\hat y\qquad\qquad \vec k=k\,\hat y$$
+        <p>Conferência: \(\vec E\parallel\hat x\) é perpendicular a \(\hat y\), como deve ser numa onda transversal.</p>
+
+        <p><strong>(b) Equação de onda.</strong> Derive duas vezes:</p>
+        $$\frac{\partial E}{\partial y}=-kE_0\sin(ky-\omega t),\qquad \frac{\partial^2E}{\partial y^2}=-k^2E_0\cos(ky-\omega t)=-k^2E$$
+        $$\frac{\partial E}{\partial t}=+\omega E_0\sin(ky-\omega t),\qquad \frac{\partial^2E}{\partial t^2}=-\omega^2E_0\cos(ky-\omega t)=-\omega^2E$$
+        <p>Substituindo em \(\partial^2E/\partial y^2=(1/c^2)\,\partial^2E/\partial t^2\): \(-k^2E=-(\omega^2/c^2)E\). Vale para todo \(y\) e \(t\) se, e só se,</p>
+        $$\omega=c\,k\qquad\Longleftrightarrow\qquad c=\frac{\omega}{k}$$
+
+        <p><strong>(c) Gráficos e interpretação.</strong></p>
+        <div class="two">
+          <figure class="figure">
+            <svg viewBox="0 0 320 130" role="img" aria-label="Gráfico de E versus y em t igual a zero: cosseno com duas cristas separadas por lambda.">
+              <line x1="40" y1="60" x2="300" y2="60" stroke="var(--muted)"/>
+              <line x1="40" y1="15" x2="40" y2="105" stroke="var(--muted)"/>
+              <path d="M40,24.0 45,25.2 50,28.8 55,34.5 60,42.0 65,50.7 70,60.0 75,69.3 80,78.0 85,85.5 90,91.2 95,94.8 100,96.0 105,94.8 110,91.2 115,85.5 120,78.0 125,69.3 130,60.0 135,50.7 140,42.0 145,34.5 150,28.8 155,25.2 160,24.0 165,25.2 170,28.8 175,34.5 180,42.0 185,50.7 190,60.0 195,69.3 200,78.0 205,85.5 210,91.2 215,94.8 220,96.0 225,94.8 230,91.2 235,85.5 240,78.0 245,69.3 250,60.0 255,50.7 260,42.0 265,34.5 270,28.8 275,25.2 280,24.0" fill="none" stroke="var(--accent)" stroke-width="2.4"/>
+              <line x1="40" y1="12" x2="160" y2="12" stroke="var(--ink)" stroke-width="1.2"/><line x1="40" y1="7" x2="40" y2="17" stroke="var(--ink)"/><line x1="160" y1="7" x2="160" y2="17" stroke="var(--ink)"/>
+              <text x="100" y="9" text-anchor="middle" font-size="13" fill="var(--ink)" font-family="sans-serif">λ = 2π/k</text>
+              <text x="300" y="76" text-anchor="end" font-size="13" fill="var(--muted)" font-family="sans-serif">y</text>
+              <text x="30" y="22" text-anchor="end" font-size="13" fill="var(--muted)" font-family="sans-serif">E₀</text>
+              <text x="170" y="124" text-anchor="middle" font-size="13" fill="var(--muted)" font-family="sans-serif">foto em t = 0: E = E₀ cos(ky)</text>
+            </svg>
+          </figure>
+          <figure class="figure">
+            <svg viewBox="0 0 320 130" role="img" aria-label="Gráfico de E versus t em y igual a zero: cosseno com duas cristas separadas por T.">
+              <line x1="40" y1="60" x2="300" y2="60" stroke="var(--muted)"/>
+              <line x1="40" y1="15" x2="40" y2="105" stroke="var(--muted)"/>
+              <path d="M40,24.0 45,25.2 50,28.8 55,34.5 60,42.0 65,50.7 70,60.0 75,69.3 80,78.0 85,85.5 90,91.2 95,94.8 100,96.0 105,94.8 110,91.2 115,85.5 120,78.0 125,69.3 130,60.0 135,50.7 140,42.0 145,34.5 150,28.8 155,25.2 160,24.0 165,25.2 170,28.8 175,34.5 180,42.0 185,50.7 190,60.0 195,69.3 200,78.0 205,85.5 210,91.2 215,94.8 220,96.0 225,94.8 230,91.2 235,85.5 240,78.0 245,69.3 250,60.0 255,50.7 260,42.0 265,34.5 270,28.8 275,25.2 280,24.0" fill="none" stroke="var(--cyan)" stroke-width="2.4"/>
+              <line x1="40" y1="12" x2="160" y2="12" stroke="var(--ink)" stroke-width="1.2"/><line x1="40" y1="7" x2="40" y2="17" stroke="var(--ink)"/><line x1="160" y1="7" x2="160" y2="17" stroke="var(--ink)"/>
+              <text x="100" y="9" text-anchor="middle" font-size="13" fill="var(--ink)" font-family="sans-serif">T = 2π/ω</text>
+              <text x="300" y="76" text-anchor="end" font-size="13" fill="var(--muted)" font-family="sans-serif">t</text>
+              <text x="30" y="22" text-anchor="end" font-size="13" fill="var(--muted)" font-family="sans-serif">E₀</text>
+              <text x="170" y="124" text-anchor="middle" font-size="13" fill="var(--muted)" font-family="sans-serif">filme em y = 0: E = E₀ cos(ωt)</text>
+            </svg>
+          </figure>
+        </div>
+        <p>Fixando o tempo, o campo se repete no espaço a cada \(\lambda=2\pi/k\). Fixando o ponto, ele se repete no tempo a cada \(T=2\pi/\omega\). Usando (b):</p>
+        $$c=\frac{\omega}{k}=\frac{2\pi/T}{2\pi/\lambda}=\frac{\lambda}{T}=\lambda f$$
+        <p>Em um período, cada crista anda exatamente um comprimento de onda. É isso que o widget do Módulo 4 mostra com a bolinha amarela.</p>
+
+        <p><strong>(d) Campo magnético.</strong> Use \(\vec B=\frac1c\,\hat k\times\vec E\) com \(\hat k=\hat y\):</p>
+        $$\vec B=\frac{E_0}{c}\cos(ky-\omega t)\,(\hat y\times\hat x)=-\frac{E_0}{c}\cos(ky-\omega t)\,\hat z$$
+        <p>(\(\hat y\times\hat x=-\hat z\), porque \(\hat x\times\hat y=+\hat z\)). Conferências: \(B_0=E_0/c\) ✔; \(\vec B\perp\vec E\) e \(\vec B\perp\hat y\) ✔; mesma fase de \(\vec E\) ✔.</p>
+
+        <p><strong>(e) Poynting e energia.</strong></p>
+        $$\vec S=\frac{\vec E\times\vec B}{\mu_0}=\frac{1}{\mu_0}\Big(E_0\cos(\cdot)\,\hat x\Big)\times\Big(-\frac{E_0}{c}\cos(\cdot)\,\hat z\Big)=-\frac{E_0^2}{\mu_0c}\cos^2(ky-\omega t)\,(\hat x\times\hat z)$$
+        <p>Como \(\hat x\times\hat z=-\hat y\):</p>
+        $$\vec S=\frac{E_0^2}{\mu_0c}\cos^2(ky-\omega t)\,\hat y=c\,\varepsilon_0E_0^2\cos^2(ky-\omega t)\,\hat y$$
+        <p>Aponta para \(+\hat y\), o sentido de \(\hat k\), como tem de ser. Densidade de energia e intensidade:</p>
+        $$u=\varepsilon_0E^2=\varepsilon_0E_0^2\cos^2(ky-\omega t)\qquad\qquad \langle S\rangle=\frac{E_0^2}{2\mu_0c}=\tfrac12c\varepsilon_0E_0^2$$
+        <p>E \(S=c\,u\) ✔ (as duas expressões diferem só pelo fator \(c\), porque \(1/(\mu_0c)=c\varepsilon_0\)).</p>
+      </div>
+
+      <section class="note note-warn"><div class="cue"><span>Cuidado</span></div><div class="note-body">
+        <p>O erro mais comum em (d) é escrever \(\hat x\times\hat y\) em vez de \(\hat y\times\hat x\) e perder o sinal de \(\vec B\). Se no fim \(\vec S\) apontar para \(-\hat y\) com uma onda que anda para \(+\hat y\), algum produto vetorial está trocado: volte e confira.</p>
+      </div></section>
+
+      <p class="fonte"><span>Sears</span> Ondas senoidais, Eqs. 32.16–32.19, p. 422; Poynting Eqs. 32.26–32.28, p. 426.</p>
+    </article>
+
+    <!-- ================= M8 ================= -->
+    <article class="modulo" id="m8">
+      <header class="modulo-h"><span class="modulo-num">Módulo 8</span><h2>Experimentos caseiros</h2></header>
+
+      <div class="widget" id="w-micro">
+        <p class="w-title lab">Medindo c com um micro-ondas e chocolate</p>
+        <p class="w-caption">Tire o prato giratório (ou apoie a barra num prato virado de cabeça para baixo, para ela não girar), coloque uma barra de chocolate e ligue por 15–20 s. Dentro do forno há uma onda estacionária: o chocolate derrete primeiro nos pontos de campo máximo, separados por meio comprimento de onda. Meça a distância entre manchas vizinhas e use a frequência da etiqueta (em geral 2,45 GHz): \(c=\lambda f=2\,\Delta x\,f\).</p>
+        <canvas class="w-canvas" height="220"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Distância medida entre manchas Δx <output data-o="dx"></output></span><input type="range" data-k="dx" min="4" max="8" step="0.1" value="6.1"></label>
+          <label class="w-control"><span>Frequência do forno <output data-o="fm"></output></span><input type="range" data-k="fm" min="2.3" max="2.6" step="0.01" value="2.45"></label>
+        </div>
+        <div class="w-readout"></div>
+      </div>
+
+      <section class="note note-lab"><div class="cue"><span>Experimento</span></div><div class="note-body">
+        <h3>Gaiola de Faraday com papel-alumínio</h3>
+        <p><strong>Material:</strong> um celular, papel-alumínio, outro telefone para ligar.</p>
+        <ol class="steps">
+          <li>Embrulhe o celular em duas ou três camadas de papel-alumínio, sem frestas.</li>
+          <li>Ligue para ele. Na maioria das vezes a chamada não completa (“fora de área”). Abra uma fresta grande e tente de novo.</li>
+          <li>Repare na porta do micro-ondas: ela tem uma tela metálica com furos de poucos milímetros. Você vê a luz (λ ≈ 0,5 μm) passando, mas as micro-ondas (λ ≈ 12 cm) ficam presas.</li>
+        </ol>
+        <p><strong>A física:</strong> o \(\vec E\) da onda empurra os elétrons livres do metal; essas correntes induzidas geram um campo que cancela o da onda do lado de dentro. Uma tela funciona como parede quando os furos são bem menores que \(\lambda\). Não coloque metal nem celular dentro de um micro-ondas ligado.</p>
+      </div></section>
+
+      <section class="note note-lab"><div class="cue"><span>Experimento</span></div><div class="note-body">
+        <h3>Rádio AM “ouvindo” o celular e o computador</h3>
+        <p>Sintonize um rádio AM numa frequência sem estação e aproxime-o de um celular durante uma chamada, de um carregador ou de um notebook. Você ouve chiados e “tec-tec” rítmicos: são ondas eletromagnéticas de baixa frequência emitidas pelas correntes que variam dentro dos aparelhos. É a lei (4) funcionando ao contrário do capacitor: correntes que oscilam irradiam.</p>
+      </div></section>
+
+      <p class="fonte"><span>Sears</span> §32.5 “Ondas eletromagnéticas estacionárias”, p. 431 (nós de \(\vec E\) separados por \(\lambda/2\)); Exemplo 32.7 (cavidade), p. 433; gaiola de Faraday, p. 63 do volume.</p>
+    </article>
+
+    <!-- ================= M9 ================= -->
+    <article class="modulo" id="m9">
+      <header class="modulo-h"><span class="modulo-num">Módulo 9</span><h2>Onde você acha que está neste curso?</h2></header>
+      <section class="note note-key"><div class="cue"><span>Fechamento</span></div><div class="note-body">
+        <p>O último slide de conteúdo coloca o curso num mapa. Tudo o que fizemos vale sob quatro hipóteses:</p>
+        <figure class="figure">
+          <svg viewBox="0 0 520 220" role="img" aria-label="Caixas aninhadas: eletromagnetismo clássico contém sistema inercial não relativístico, que contém vácuo, que contém onda plana.">
+            <rect x="10" y="10" width="500" height="200" rx="14" fill="var(--accent)" opacity=".07" stroke="var(--accent)"/>
+            <text x="24" y="34" font-size="14" fill="var(--accent)" font-family="sans-serif">Eletromagnetismo clássico (equações de Maxwell)</text>
+            <rect x="40" y="48" width="440" height="148" rx="12" fill="var(--cyan)" opacity=".08" stroke="var(--cyan)"/>
+            <text x="54" y="70" font-size="14" fill="var(--cyan)" font-family="sans-serif">Sistema inercial, não relativístico</text>
+            <rect x="70" y="84" width="380" height="98" rx="10" fill="var(--ink)" opacity=".05" stroke="var(--muted)"/>
+            <text x="84" y="106" font-size="14" fill="var(--ink)" font-family="sans-serif">Vácuo (ε₀, μ₀; sem P nem M)</text>
+            <rect x="110" y="118" width="300" height="52" rx="8" fill="var(--accent)" opacity=".18" stroke="var(--accent)"/>
+            <text x="260" y="149" text-anchor="middle" font-size="15" fill="var(--ink)" font-family="sans-serif" font-weight="600">Onda plana monocromática ← você está aqui</text>
+          </svg>
+          <figcaption>Fora do mapa ficam: relatividade (cursos posteriores), propagação em meios materiais e óptica (Física IV) e a natureza quântica da luz.</figcaption>
+        </figure>
+        <p>Frase do professor, em resumo: entender o eletromagnetismo clássico é entender as equações de Maxwell como ferramenta essencial para uma primeira aproximação do conceito de radiação eletromagnética.</p>
+      </div></section>
+    </article>
+
+    <!-- ================= Resumo ================= -->
+    <article class="modulo" id="resumo">
+      <header class="modulo-h"><span class="modulo-num">Fechamento</span><h2>Resumo e fórmulas</h2></header>
+      <div class="table-wrap"><table>
+        <tr><th>Grandeza</th><th>Fórmula</th><th>Quando usar</th></tr>
+        <tr><td>Corrente de deslocamento</td><td>\(i_d=\varepsilon_0\,d\Phi_E/dt\), \(\vec j_d=\varepsilon_0\,\partial\vec E/\partial t\)</td><td>capacitor carregando, campo \(E\) variando</td></tr>
+        <tr><td>Ampère–Maxwell</td><td>\(\oint\vec B\cdot d\vec l=\mu_0(i+i_d)\)</td><td>\(\vec B\) entre placas, superfícies sem condução</td></tr>
+        <tr><td>Velocidade da luz</td><td>\(c=1/\sqrt{\varepsilon_0\mu_0}\approx3\times10^8\) m/s</td><td>sempre no vácuo</td></tr>
+        <tr><td>Onda plana</td><td>\(\vec E=\vec E_0\cos(kx\mp\omega t)\); “−” → \(+x\)</td><td>ler direção e sentido de propagação</td></tr>
+        <tr><td>Relações</td><td>\(\omega=2\pi f\), \(k=2\pi/\lambda\), \(c=\lambda f=\omega/k\)</td><td>números de \(k\), \(\omega\), \(\lambda\)</td></tr>
+        <tr><td>Amplitudes</td><td>\(E_0=cB_0\)</td><td>passar de \(B\) para \(E\) e vice-versa</td></tr>
+        <tr><td>Direção de \(\vec B\)</td><td>\(\vec B=\frac1c\hat k\times\vec E\); \(\vec E\times\vec B\parallel\hat k\)</td><td>resposta vetorial do campo que falta</td></tr>
+        <tr><td>Densidade de energia</td><td>\(u=\varepsilon_0E^2=B^2/\mu_0\) (\(u_E=u_B\))</td><td>energia por volume na onda</td></tr>
+        <tr><td>Poynting</td><td>\(\vec S=\vec E\times\vec B/\mu_0=cu\,\hat k\)</td><td>fluxo de energia instantâneo (W/m²)</td></tr>
+        <tr><td>Intensidade</td><td>\(I=\langle S\rangle=E_0B_0/(2\mu_0)=\tfrac12c\varepsilon_0E_0^2\)</td><td>média no tempo (o ½ vem de \(\langle\cos^2\rangle\))</td></tr>
+        <tr><td>Conservação</td><td>\(\partial u/\partial t+\nabla\cdot\vec S=-\vec J\cdot\vec E\)</td><td>interpretação qualitativa</td></tr>
+      </table></div>
+
+      <section class="note note-warn"><div class="cue"><span>Na prova</span></div><div class="note-body">
+        <h3>Erros comuns deste capítulo</h3>
+        <ul>
+          <li><strong>Nada disto vem no formulário.</strong> Decore \(E=cB\), \(c=1/\sqrt{\varepsilon_0\mu_0}\), \(\vec S=\vec E\times\vec B/\mu_0\), \(I=E_0B_0/2\mu_0\), \(u=\varepsilon_0E^2\), \(\omega=2\pi f\), \(k=2\pi/\lambda\), \(i_d=\varepsilon_0\,d\Phi_E/dt\).</li>
+          <li><strong>Esquecer o ½ da intensidade</strong>: \(\vec S\) instantâneo tem \(\cos^2\); a intensidade é a média, metade do pico.</li>
+          <li><strong>\(10^8\) e não \(10^{-8}\)</strong>: \(c\approx3\times10^{8}\) m/s (o gabarito do simulado tem esse erro de digitação).</li>
+          <li><strong>Sentido de propagação</strong>: sinal “−” entre \(kx\) e \(\omega t\) → sentido positivo.</li>
+          <li><strong>Direção de \(\vec E\) a partir de \(\vec B\)</strong>: não chute; exija \(\vec E\times\vec B\parallel\hat k\) e faça o produto dos versores.</li>
+          <li><strong>Unidades</strong>: se pedirem mW/m², multiplique W/m² por 1000 e arredonde como pedido.</li>
+        </ul>
+        <p>Veja a aplicação completa no <a href="prova.html">Exercício 3 do simulado</a>.</p>
+      </div></section>
+    </article>
+
+    <nav class="chapter-nav"><a class="prev" href="cap7.html"><small>← Anterior</small>VII · Indutância e energia magnética</a><a class="next" href="prova.html"><small>Próximo →</small>Prova · Resolução da prova</a></nav>
+  </main>
+</div>
+
+<footer class="footer">
+  <p><strong>Física III · Magnetismo, indução e ondas</strong> · Física para IME (IFUSP) · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir dos slides e do simulado do Prof. Julio A. Larrea J. (IFUSP) e de Young &amp; Freedman, <em>Física III</em>, 14ª ed. Texto, simulações e erros são das notas; não é material oficial da disciplina.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/core.js"></script>
+<script src="assets/cap8.js"></script>
+</body>
+</html>

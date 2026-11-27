@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resolução da prova — Física III para IME</title>
+<meta name="description" content="Como é a P2, o que vem e o que não vem no formulário, estratégia para respostas vetoriais, o simulado resolvido passo a passo, banco de prováveis questões, erros comuns, cronômetro e treino rápido.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('fis3-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Física III <em>para IME</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="cap1.html" title="Força magnética">I</a><a href="cap2.html" title="Torque e dipolo magnético">II</a><a href="cap3.html" title="Lei de Biot–Savart">III</a><a href="cap4.html" title="Lei de Ampère">IV</a><a href="cap5.html" title="Meios magnéticos">V</a><a href="cap6.html" title="Indução magnética">VI</a><a href="cap7.html" title="Indutância e energia magnética">VII</a><a href="cap8.html" title="Maxwell e ondas">VIII</a><a class="prova on" href="prova.html" title="Resolução da prova">Prova</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<section class="chapter-hero" data-num="P2">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">P2 · sexta-feira 27/11/2026, 10h</p>
+    <h1>Resolução da prova</h1>
+    <p class="lede">O que vem no formulário e o que você precisa decorar, um método para respostas vetoriais, o simulado resolvido questão por questão, um banco de questões prováveis e um treino cronometrado.</p>
+    <div class="meta"><span>Simulado Bloco P2 · Prof. J. Larrea J.</span><span>3 questões · 90 min</span><span>SUB 04/12 às 10h (semestre todo)</span><span>REC 11/12 às 10h</span></div>
+  </div>
+</section>
+
+<div class="layout">
+  <nav class="toc" aria-label="Nesta página">
+    <p class="toc-h">Nesta página</p>
+    <ol>
+      <li><a href="#como"><span class="toc-num">1</span>Como é a prova</a></li>
+      <li><a href="#estrategia"><span class="toc-num">2</span>Estratégia em 6 passos</a></li>
+      <li><a href="#q1"><span class="toc-num">3</span>Simulado · Ex. 1 (torque)</a></li>
+      <li><a href="#q2"><span class="toc-num">4</span>Simulado · Ex. 2 (barra)</a></li>
+      <li><a href="#q3"><span class="toc-num">5</span>Simulado · Ex. 3 (onda)</a></li>
+      <li><a href="#provaveis"><span class="toc-num">6</span>Prováveis questões</a></li>
+      <li><a href="#erros"><span class="toc-num">7</span>Erros comuns</a></li>
+      <li><a href="#treino"><span class="toc-num">8</span>Cronômetro e treino</a></li>
+    </ol>
+  </nav>
+  <main id="conteudo" class="content">
+
+    <!-- ================= 1. Como é a prova ================= -->
+    <article class="modulo" id="como">
+      <header class="modulo-h"><span class="modulo-num">Parte 1</span><h2>Como é a prova</h2></header>
+
+      <section class="note note-key"><div class="cue"><span>Formato</span></div><div class="note-body">
+        <h3>O que esperar, pelo simulado</h3>
+        <ul>
+          <li><strong>3 questões em 90 minutos</strong> (no simulado: 3 + 4 + 3 pontos). Dá para sair depois de 60 minutos.</li>
+          <li>O professor pede <strong>respostas vetoriais</strong>: escolha eixos, escreva versores (\(\hat\imath,\hat\jmath,\hat k\) ou \(\hat\rho,\hat\theta,\hat z\)) e dê a direção e o sentido no fim.</li>
+          <li>Vem um <strong>formulário</strong> (abaixo). O que não está nele, você precisa saber de cabeça.</li>
+          <li><strong>Datas</strong> (último slide): P2 sexta 27/11/2026 às 10h; SUB sexta 04/12/2026 às 10h, aberta, sem justificativa, cobre o <strong>semestre todo</strong> e substitui a menor nota parcial <em>mesmo se for menor</em> (comparecer = aceitar a troca); REC 11/12/2026 às 10h (o slide diz “terça-feira”, mas 11/12/2026 cai numa sexta: confirme com o professor).</li>
+        </ul>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Formulário</span></div><div class="note-body">
+        <h3>O que veio no formulário do simulado</h3>
+        <div class="table-wrap"><table>
+          <tr><th>Tema</th><th>Fórmulas dadas</th></tr>
+          <tr><td>Potencial e corrente</td><td>\(V_B-V_A=-\int_A^B\vec E\cdot d\vec l\), \(\vec E=-\nabla V\), \(dR=\rho\,dl/A\), \(R=\int dR\), \(V=RI\), \(\vec J=\sigma\vec E=\vec E/\rho\)</td></tr>
+          <tr><td>Fluxo magnético</td><td>\(\oint\vec B\cdot d\vec A=0\)</td></tr>
+          <tr><td>Força e torque</td><td>\(d\vec F=I\,d\vec l\times\vec B\), \(\vec F=q\vec v\times\vec B\), \(d\vec\tau=\vec r\times d\vec F\)</td></tr>
+          <tr><td>Dipolo</td><td>\(\vec\mu=I\vec A\), \(\vec\tau=\vec\mu\times\vec B\), \(U=-\vec\mu\cdot\vec B\)</td></tr>
+          <tr><td>Fontes de campo</td><td>\(d\vec B=\dfrac{\mu_0I}{4\pi}\dfrac{d\vec l\times\hat r}{r^2}\), \(\oint\vec B\cdot d\vec l=\mu_0I_{\text{int}}\)</td></tr>
+          <tr><td>Integrais</td><td>\(\displaystyle\int\frac{dx}{(c+x^2)^{3/2}}=\frac{x}{c\,(c+x^2)^{1/2}}\), \(\displaystyle\int\frac{x\,dx}{(c+x^2)^{3/2}}=-\frac{1}{(c+x^2)^{1/2}}\), \(\int\sin x\,dx=-\cos x+C\)</td></tr>
+        </table></div>
+        <p>As duas integrais com \((c+x^2)^{3/2}\) são a assinatura de <strong>Biot–Savart</strong>: fio reto (\(c=\rho^2\)) e espira no eixo (<a href="cap3.html">capítulo III</a>). Se elas aparecem, espere uma questão de campo de um fio ou de uma espira.</p>
+      </div></section>
+
+      <aside class="box box-warn"><div class="box-h">NÃO vem no formulário — decore</div>
+        <div class="table-wrap"><table>
+          <tr><th>Indução</th><th>Ondas</th><th>Indutância e energia</th><th>Campos prontos</th></tr>
+          <tr>
+            <td>\(\mathcal E=-\dfrac{d\Phi_B}{dt}\)<br>\(\mathcal E=vBL\)<br>\(i_d=\varepsilon_0\dfrac{d\Phi_E}{dt}\)</td>
+            <td>\(E=cB\), \(c=1/\sqrt{\varepsilon_0\mu_0}\)<br>\(\vec S=\vec E\times\vec B/\mu_0\)<br>\(I=E_0B_0/(2\mu_0)\), \(u=\varepsilon_0E^2\)<br>\(\omega=2\pi f\), \(\lambda=c/f\), \(k=2\pi/\lambda\)</td>
+            <td>\(L=N\Phi/i\)<br>\(U=\tfrac12LI^2\)<br>\(u_B=B^2/(2\mu_0)\)</td>
+            <td>fio: \(B=\mu_0i/(2\pi\rho)\)<br>solenoide: \(B=\mu_0nI\)<br>órbita: \(r=mv/(|q|B)\)</td>
+          </tr>
+        </table></div>
+        <p>Constantes: \(\mu_0=4\pi\times10^{-7}\) T·m/A, \(\varepsilon_0=8{,}85\times10^{-12}\) F/m, \(c=3\times10^{8}\) m/s. Versores: \(\hat\imath\times\hat\jmath=\hat k\), \(\hat\jmath\times\hat k=\hat\imath\), \(\hat k\times\hat\imath=\hat\jmath\).</p>
+      </aside>
+    </article>
+
+    <!-- ================= 2. Estratégia ================= -->
+    <article class="modulo" id="estrategia">
+      <header class="modulo-h"><span class="modulo-num">Parte 2</span><h2>Estratégia em 6 passos para respostas vetoriais</h2></header>
+      <ol class="steps">
+        <li><strong>Eixos e versores.</strong> Escreva explicitamente “\(\hat\imath\) para a direita, \(\hat\jmath\) para cima, \(\hat k\) saindo do papel” (ou cilíndricas \(\hat\rho,\hat\theta,\hat z\) quando houver simetria em torno de um fio). O professor dá ponto por isso.</li>
+        <li><strong>Desenho.</strong> Esboce a situação com \(\vec B\), a corrente ou a velocidade, a normal \(\hat n\) da superfície e o caminho de integração.</li>
+        <li><strong>Sinal pela mão direita.</strong> Faça os produtos vetoriais com os versores (\(\hat k\times\hat\imath=\hat\jmath\)…) em vez de “ver” a direção. Para fem, oriente o circuito e use \(\hat n\) pela mão direita; depois confira com Lenz.</li>
+        <li><strong>Conferir limites.</strong> \(t=0\) e \(t\to\infty\), \(r\to0\) e \(r\to\infty\): a resposta faz sentido? (força máxima no início, velocidade terminal finita, campo contínuo na superfície do fio…)</li>
+        <li><strong>Unidades.</strong> N·m para torque, T para campo, W/m² para Poynting. Se o enunciado pede mW/m², converta e arredonde como pedido.</li>
+        <li><strong>Resposta vetorial final.</strong> Feche com uma linha só, em caixa: módulo, unidade e versor. Ex.: \(\vec\tau\approx40{,}2\,\hat\jmath\) N·m.</li>
+      </ol>
+    </article>
+
+    <!-- ================= 3. Ex 1 ================= -->
+    <article class="modulo" id="q1">
+      <header class="modulo-h"><span class="modulo-num">Simulado · Exercício 1 · 3 pontos</span><h2>Torque total e energia de quatro espiras</h2></header>
+
+      <div class="worked prova"><div class="worked-h"><span>Exercício 1</span> Espiras no plano \(xy\), \(I=1\) A, \(\vec B=1\,\text{T}\,\hat\imath\)</div>
+        <p><strong>Enunciado.</strong> Quatro espiras com a mesma corrente \(I=1\) A, circulando em sentidos diferentes, estão no plano \(xy\), num campo uniforme \(\vec B\) ao longo de \(x\) com \(B=1\) T. Calcule (a) o torque total [2 pt] e (b) a energia do sistema [1 pt].</p>
+        <figure class="figure">
+          <svg viewBox="0 0 380 380" role="img" aria-label="Grade de 0 a 15 metros com quatro espiras: A retângulo anti-horário, B círculo horário, C trapézio anti-horário, D triângulo anti-horário; campo B para a direita.">
+            <defs><marker id="q1a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ok)"/></marker></defs>
+            <g stroke="var(--line)" stroke-width="1">
+              <line x1="40" y1="40" x2="340" y2="40"/><line x1="40" y1="100" x2="340" y2="100"/><line x1="40" y1="160" x2="340" y2="160"/><line x1="40" y1="220" x2="340" y2="220"/><line x1="40" y1="280" x2="340" y2="280"/>
+              <line x1="100" y1="40" x2="100" y2="340"/><line x1="160" y1="40" x2="160" y2="340"/><line x1="220" y1="40" x2="220" y2="340"/><line x1="280" y1="40" x2="280" y2="340"/><line x1="340" y1="40" x2="340" y2="340"/>
+            </g>
+            <line x1="40" y1="340" x2="360" y2="340" stroke="var(--ink)"/><line x1="40" y1="340" x2="40" y2="30" stroke="var(--ink)"/>
+            <g font-family="sans-serif" font-size="11" fill="var(--muted)" text-anchor="middle">
+              <text x="40" y="355">0</text><text x="100" y="355">3</text><text x="160" y="355">6</text><text x="220" y="355">9</text><text x="280" y="355">12</text><text x="340" y="355">15</text><text x="365" y="355">x (m)</text>
+              <text x="28" y="344">0</text><text x="28" y="284">3</text><text x="28" y="224">6</text><text x="28" y="164">9</text><text x="28" y="104">12</text><text x="28" y="44">15</text>
+            </g>
+            <line x1="200" y1="18" x2="260" y2="18" stroke="var(--ok)" stroke-width="2.4" marker-end="url(#q1a)"/>
+            <text x="270" y="23" font-family="sans-serif" font-size="14" fill="var(--ok)">B</text>
+            <g fill="var(--accent)" fill-opacity=".12" stroke="var(--accent)" stroke-width="2">
+              <rect x="70" y="160" width="60" height="120"/>
+              <circle cx="190" cy="250" r="30" fill="var(--cyan)" stroke="var(--cyan)"/>
+              <polygon points="190,160 310,160 280,70 220,70"/>
+              <polygon points="250,190 310,190 280,310"/>
+            </g>
+            <g font-family="sans-serif" font-size="15" fill="var(--ink)" text-anchor="middle" font-weight="600">
+              <text x="100" y="225">A ↺</text><text x="190" y="255">B ↻</text><text x="250" y="125">C ↺</text><text x="280" y="215">D ↺</text>
+            </g>
+          </svg>
+          <figcaption>Redesenho da figura do simulado (1 quadrado = 1,5 m). ↺ anti-horário (normal \(+\hat k\)); ↻ horário (normal \(-\hat k\)).</figcaption>
+        </figure>
+        <ol class="steps">
+          <li><strong>Eixos.</strong> \(\hat\imath\) para a direita, \(\hat\jmath\) para cima, \(\hat k\) saindo do papel. \(\vec B=B\,\hat\imath\).</li>
+          <li><strong>Momento de cada espira:</strong> \(\vec\mu_i=I S_i\,\hat n_i\). Pela mão direita, sentido anti-horário → \(\hat n=+\hat k\); horário → \(\hat n=-\hat k\).</li>
+          <li><strong>Áreas (leia a grade):</strong>
+            <ul>
+              <li>A: retângulo \(x\in[1{,}5;4{,}5]\), \(y\in[3;9]\): \(S_A=3\times6=18\) m², anti-horário.</li>
+              <li>B: círculo de centro \((7{,}5;4{,}5)\) e raio 1,5 m: \(S_B=\pi(1{,}5)^2\approx7{,}07\) m², <strong>horário</strong>.</li>
+              <li>C: trapézio de bases 6 e 3, altura 4,5: \(S_C=\tfrac{(6+3)}{2}\cdot4{,}5=20{,}25\) m², anti-horário.</li>
+              <li>D: triângulo de base 3 e altura 6: \(S_D=\tfrac12\cdot3\cdot6=9\) m², anti-horário.</li>
+            </ul></li>
+          <li><strong>Torque de cada uma:</strong> \(\vec\tau_i=\vec\mu_i\times\vec B=\pm IS_iB\,(\hat k\times\hat\imath)=\pm IS_iB\,\hat\jmath\).</li>
+          <li><strong>Soma (a):</strong>
+            $$\vec\tau=IB\,(S_A-S_B+S_C+S_D)\,\hat\jmath=(1)(1)(18-7{,}07+20{,}25+9)\,\hat\jmath\approx40{,}2\,\hat\jmath\ \ \text{N·m}$$</li>
+          <li><strong>Energia (b):</strong> \(U_i=-\vec\mu_i\cdot\vec B=\mp IS_iB\,(\hat k\cdot\hat\imath)=0\) para todas, pois \(\vec\mu\perp\vec B\). Logo \(U=\sum U_i=0\). (O torque é máximo justamente quando \(U=0\): a espira está a meio caminho entre a posição estável e a instável.)</li>
+        </ol>
+        <aside class="box box-warn"><div class="box-h">Atenção ao gabarito</div><p>O gabarito oficial usa \(S_B=2{,}25\) m², ou seja, \(r^2\) sem o \(\pi\), e chega a \(45\,\hat\jmath\) N·m. Com a área correta do círculo, \(\pi r^2\approx7{,}07\) m², o resultado é \(\approx40{,}2\,\hat\jmath\) N·m. Na prova, escreva \(S_B=\pi r^2\) explicitamente e mostre a conta: fica claro de onde vem cada número.</p></aside>
+        <p class="fonte"><span>Onde estudar</span> <a href="cap2.html">Cap. II · Torque e dipolo magnético</a>; Sears §27.7, p. 238–243, Eqs. 27.24 (\(\vec\mu=I\vec A\)), 27.26 (\(\vec\tau=\vec\mu\times\vec B\)) e 27.27 (\(U=-\vec\mu\cdot\vec B\)), p. 240–241.</p>
+      </div>
+    </article>
+
+    <!-- ================= 4. Ex 2 ================= -->
+    <article class="modulo" id="q2">
+      <header class="modulo-h"><span class="modulo-num">Simulado · Exercício 2 · 4 pontos</span><h2>Barra com bateria sobre trilhos</h2></header>
+
+      <div class="worked prova"><div class="worked-h"><span>Exercício 2</span> Barra de massa \(m\) e resistência \(R\), trilhos a distância \(d\), bateria \(\mathcal E\), \(\vec B\) saindo do papel</div>
+        <p><strong>Enunciado.</strong> A barra desliza sem atrito sobre trilhos horizontais paralelos separados por \(d\). Uma bateria de fem constante \(\mathcal E\) está ligada aos trilhos e \(\vec B\) é perpendicular, saindo do papel. A barra parte do repouso em \(t=0\) e anda para a direita. Calcule (a) a fem em função dos dados [1 pt]; (b) a força magnética na barra, em forma vetorial [1,5 pt]; (c) a velocidade da barra no instante \(t\), em forma vetorial [1,5 pt].</p>
+        <figure class="figure">
+          <svg viewBox="0 0 460 190" role="img" aria-label="Dois trilhos horizontais separados por d, uma barra vertical que anda para a direita, uma bateria ligando os trilhos à direita e o campo B saindo do papel.">
+            <defs><marker id="q2a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker></defs>
+            <g fill="var(--cyan)"><circle cx="90" cy="60" r="3"/><circle cx="140" cy="60" r="3"/><circle cx="190" cy="60" r="3"/><circle cx="290" cy="60" r="3"/><circle cx="90" cy="95" r="3"/><circle cx="140" cy="95" r="3"/><circle cx="290" cy="95" r="3"/><circle cx="90" cy="130" r="3"/><circle cx="140" cy="130" r="3"/><circle cx="190" cy="130" r="3"/><circle cx="290" cy="130" r="3"/></g>
+            <rect x="40" y="36" width="380" height="7" fill="var(--muted)"/><rect x="40" y="148" width="380" height="7" fill="var(--muted)"/>
+            <rect x="224" y="28" width="10" height="134" fill="var(--accent)"/>
+            <line x1="360" y1="43" x2="360" y2="88" stroke="var(--ink)" stroke-width="2"/><line x1="360" y1="104" x2="360" y2="148" stroke="var(--ink)" stroke-width="2"/>
+            <line x1="342" y1="88" x2="378" y2="88" stroke="var(--ok)" stroke-width="4"/><line x1="350" y1="104" x2="370" y2="104" stroke="var(--ok)" stroke-width="4"/>
+            <text x="386" y="101" font-family="serif" font-size="20" fill="var(--ink)">ε</text>
+            <line x1="62" y1="48" x2="62" y2="144" stroke="var(--ink)"/><text x="52" y="100" font-family="serif" font-style="italic" font-size="18" fill="var(--ink)" text-anchor="end">d</text>
+            <line x1="240" y1="95" x2="290" y2="95" stroke="var(--accent)" stroke-width="2.4" marker-end="url(#q2a)"/><text x="262" y="86" font-family="sans-serif" font-size="13" fill="var(--accent)">v</text>
+            <text x="150" y="112" font-family="sans-serif" font-size="14" fill="var(--cyan)">B (saindo, ⊙)</text>
+            <text x="230" y="182" font-family="sans-serif" font-size="12" fill="var(--muted)" text-anchor="middle">î → direita, ĵ ↑, k̂ saindo do papel</text>
+          </svg>
+          <figcaption>Redesenho da figura do simulado (é a figura do Problema 29.56 do Sears).</figcaption>
+        </figure>
+        <ol class="steps">
+          <li><strong>Eixos.</strong> \(\hat\imath\) para a direita (sentido do movimento), \(\hat\jmath\) para cima, \(\hat k\) saindo; \(\vec B=B\hat k\). Para a força apontar para \(+\hat\imath\), a corrente na barra tem de subir: \(I\,d\,(\hat\jmath\times\hat k)=+IdB\,\hat\imath\). (Se o desenho sugerir a polaridade oposta, a barra iria para a esquerda; o enunciado garante a direita, então use isso.)</li>
+          <li><strong>(a) Fem induzida.</strong> Orientando o circuito no sentido em que a bateria empurra a corrente, o fluxo nesse sentido varia com taxa \(Bdv\) e Faraday dá
+            $$\mathcal E_{\text{ind}}=-\frac{d\Phi_B}{dt}=-Bd\,v$$
+            O sinal “−” é Lenz: a fem induzida se opõe à da bateria (é uma <em>força contraeletromotriz</em>). A fem líquida no circuito é \(\mathcal E-Bdv\), e a corrente é \(I=(\mathcal E-Bdv)/R\).</li>
+          <li><strong>(b) Força magnética.</strong> \(\vec F=I\,\vec d\times\vec B=I\,d\,B\,\hat\imath\):
+            $$\vec F=\frac{Bd}{R}\big(\mathcal E-Bdv\big)\,\hat\imath=\frac{\mathcal E Bd}{R}\,e^{-t/\tau}\,\hat\imath$$
+            (a segunda forma usa o resultado de (c)).</li>
+          <li><strong>(c) Equação de movimento.</strong> Newton em \(x\): \(m\dfrac{dv}{dt}=\dfrac{Bd}{R}(\mathcal E-Bdv)\).</li>
+          <li><strong>Substituição \(u=\mathcal E-Bdv\).</strong> Então \(du/dt=-Bd\,dv/dt\), e
+            $$\frac{du}{dt}=-\frac{(Bd)^2}{mR}\,u\ \Rightarrow\ u(t)=u(0)\,e^{-t/\tau}=\mathcal E\,e^{-t/\tau},\qquad \tau=\frac{mR}{(Bd)^2}$$
+            (com \(v(0)=0\Rightarrow u(0)=\mathcal E\)).</li>
+          <li><strong>Volta para \(v\):</strong>
+            $$\vec v(t)=\frac{\mathcal E}{Bd}\Big(1-e^{-(Bd)^2t/(mR)}\Big)\,\hat\imath$$</li>
+          <li><strong>Conferir limites.</strong> \(t=0\): \(v=0\) e a força é máxima, \(\mathcal EBd/R\) (só a bateria atua). \(t\to\infty\): \(v\to\mathcal E/(Bd)\), a fem induzida iguala a da bateria, \(I\to0\) e \(\vec F\to0\): velocidade terminal. Unidades: \([\mathcal E/(Bd)]=\) V/(T·m) = m/s ✔.</li>
+        </ol>
+        <p class="fonte"><span>Onde estudar</span> <a href="cap6.html">Cap. VI · Indução magnética</a> (barra nos trilhos, motor linear); <a href="cap2.html">Cap. II</a> (força num fio). Sears Problema 29.56, p. 338 (é o mesmo problema); §29.4 fem de movimento, Eq. 29.6, p. 317; Exemplos 29.5–29.6, p. 313.</p>
+      </div>
+    </article>
+
+    <!-- ================= 5. Ex 3 ================= -->
+    <article class="modulo" id="q3">
+      <header class="modulo-h"><span class="modulo-num">Simulado · Exercício 3 · 3 pontos</span><h2>Vetor de Poynting de uma onda de 100 MHz</h2></header>
+
+      <div class="worked prova"><div class="worked-h"><span>Exercício 3</span> \(\vec B(z,t)=(10^{-8}\,\text{T})\cos(kz-\omega t)\,\hat\imath\), \(f=100\) MHz, vácuo</div>
+        <p><strong>Enunciado.</strong> Calcule (a) o vetor de Poynting [1,5 pt]; (b) a intensidade da onda, em mW/m², com os módulos arredondados à primeira casa decimal [1,5 pt].</p>
+        <ol class="steps">
+          <li><strong>Sentido de propagação.</strong> Variável espacial \(z\), sinal “−” → a onda anda para \(+z\): \(\hat k_{\text{prop}}=+\hat k\).</li>
+          <li><strong>Números da onda.</strong> \(\omega=2\pi f=2\pi(10^8)=6{,}28\times10^{8}\) s⁻¹; \(\lambda=c/f=3\times10^8/10^8=3\) m; \(k=2\pi/\lambda=2{,}09\) m⁻¹.</li>
+          <li><strong>Amplitude de \(\vec E\):</strong> \(E_0=cB_0=(3\times10^{8})(10^{-8})=3\) V/m.</li>
+          <li><strong>Direção de \(\vec E\).</strong> Precisa ser \(\perp\hat\imath\) e \(\perp\hat k\), logo \(\pm\hat\jmath\), e com \(\vec E\times\vec B\parallel+\hat k\). Teste: \((-\hat\jmath)\times\hat\imath=-(\hat\jmath\times\hat\imath)=-(-\hat k)=+\hat k\) ✔. Então
+            $$\vec E=-3\cos(kz-\omega t)\,\hat\jmath\ \ \text{V/m}$$
+            (mesma conta por \(\vec B=\tfrac1c\hat k\times\vec E\): \(\hat k\times(-\hat\jmath)=+\hat\imath\) ✔).</li>
+          <li><strong>(a) Poynting:</strong>
+            $$\vec S=\frac{\vec E\times\vec B}{\mu_0}=\frac{E_0B_0}{\mu_0}\cos^2(kz-\omega t)\,\hat k,\qquad \frac{E_0B_0}{\mu_0}=\frac{3\times10^{-8}}{4\pi\times10^{-7}}=2{,}39\times10^{-2}\ \text{W/m}^2$$
+            $$\vec S=(23{,}9\ \text{mW/m}^2)\cos^2\!\big[(2{,}09\ \text{m}^{-1})\,z-(6{,}28\times10^{8}\ \text{s}^{-1})\,t\big]\,\hat k$$</li>
+          <li><strong>(b) Intensidade</strong> (média de \(\cos^2\) é ½):
+            $$I=\langle S\rangle=\frac{E_0B_0}{2\mu_0}=\tfrac12(23{,}9)\approx11{,}9\ \text{mW/m}^2$$
+            O gabarito arredonda para 12 mW/m².</li>
+        </ol>
+        <aside class="box box-warn"><div class="box-h">Erro de digitação no gabarito</div><p>O gabarito escreve \(c\approx3\times10^{-8}\) m/s; o correto é \(3\times10^{8}\) m/s. As contas finais dele estão certas. Se você usar \(10^{-8}\) por engano, \(E_0\) sai \(10^{-16}\) V/m: absurdo que a conferência de ordem de grandeza pega.</p></aside>
+        <p>Quer ver os três vetores? Abra a <a href="cap8.html#m5">onda 3D do capítulo VIII</a> e clique em “Simulado (Ex. 3)”.</p>
+        <p class="fonte"><span>Onde estudar</span> <a href="cap8.html">Cap. VIII · Maxwell e ondas</a> (Módulos 5–7). Sears Eq. 32.4 (\(E=cB\)), p. 416; Eqs. 32.26–32.28 (Poynting), p. 426; Eq. 32.29 (intensidade), p. 427; Exemplo 32.4, p. 428.</p>
+      </div>
+    </article>
+
+    <!-- ================= 6. Prováveis ================= -->
+    <article class="modulo" id="provaveis">
+      <header class="modulo-h"><span class="modulo-num">Parte 6</span><h2>Prováveis questões</h2></header>
+      <p>Um banco no estilo da prova, um por tema, montado a partir dos exercícios e exemplos 21–37 dos slides. Tente responder antes de abrir. A resolução completa está no capítulo indicado.</p>
+
+      <details class="reveal"><summary>1 · Órbita circular (Exemplos 21–22). Um próton entra com \(\vec v=2{,}0\times10^{6}\,\hat\imath\) m/s num campo \(\vec B=-0{,}50\,\hat k\) T. Ache a força inicial, o raio, a frequência angular e o trabalho do campo.</summary><div>
+        <p>\(\vec F=q\vec v\times\vec B=qv(-B)(\hat\imath\times\hat k)=qvB\,\hat\jmath=1{,}6\times10^{-13}\,\hat\jmath\) N. Raio \(r=mv/(|q|B)=\dfrac{(1{,}67\times10^{-27})(2\times10^6)}{(1{,}6\times10^{-19})(0{,}5)}\approx4{,}2\) cm; \(\omega=|q|B/m\approx4{,}8\times10^{7}\) rad/s; giro anti-horário visto de \(+z\) (carga positiva, \(\vec B\) entrando). Trabalho: zero, porque \(\vec F\perp\vec v\) sempre (\(P=\vec F\cdot\vec v=0\)). Para manter a órbita no sentido desenhado no slide, a carga é positiva.</p>
+        <p class="fonte"><span>Ver</span> <a href="cap1.html">Cap. I · Força magnética</a>.</p></div></details>
+
+      <details class="reveal"><summary>2 · Torque numa espira (Exercício 23). Espira retangular de 20 cm × 10 cm no plano \(yz\), \(i=2\) A, normal \(\hat n=+\hat\imath\), em \(\vec B=0{,}50\,\hat\jmath\) T. Ache \(\vec\tau\) e \(U\).</summary><div>
+        <p>\(\vec\tau=iS\,\hat n\times\vec B=(2)(0{,}02)(0{,}5)(\hat\imath\times\hat\jmath)=0{,}020\,\hat k\) N·m. \(U=-\vec\mu\cdot\vec B=0\) (\(\hat\imath\perp\hat\jmath\)). O exercício dos slides pede para <em>mostrar</em> que \(\vec\tau=iS\,\hat n\times\vec B\) somando \(\vec r\times d\vec F\) nos quatro lados a partir do centro da espira.</p>
+        <p class="fonte"><span>Ver</span> <a href="cap2.html">Cap. II · Torque e dipolo magnético</a>.</p></div></details>
+
+      <details class="reveal"><summary>3 · Biot–Savart no fio (Exercício 26). Fio infinito ao longo de \(z\) com \(i=10\) A em \(+\hat k\). Ache \(\vec B\) num ponto P sobre o eixo \(x\), a 5,0 cm do fio.</summary><div>
+        <p>\(d\vec B=\frac{\mu_0 i}{4\pi}\frac{d\vec l\times\hat r}{r^2}\) com \(r^2=\rho^2+z^2\); a integral do formulário com \(c=\rho^2\) dá \(\int_{-\infty}^{\infty}\frac{dz}{(\rho^2+z^2)^{3/2}}=\frac{2}{\rho^2}\), então \(B=\frac{\mu_0 i}{2\pi\rho}\). Direção \(\hat\theta\), que em P (eixo \(+x\)) é \(+\hat\jmath\): \(\vec B=\dfrac{(2\times10^{-7})(10)}{0{,}05}\hat\jmath=4{,}0\times10^{-5}\,\hat\jmath\) T.</p>
+        <p class="fonte"><span>Ver</span> <a href="cap3.html">Cap. III · Lei de Biot–Savart</a>.</p></div></details>
+
+      <details class="reveal"><summary>4 · Solenoide (Exercício 27, seção quadrada). Solenoide longo com \(N=1000\) espiras por metro e \(I=2{,}0\) A. Quanto vale \(\vec B\) no eixo, longe das pontas? E numa ponta?</summary><div>
+        <p>No interior, longe das extremidades: \(\vec B=\mu_0NI\,\hat z=(4\pi\times10^{-7})(1000)(2)\approx2{,}5\times10^{-3}\,\hat z\) T, com \(\hat z\) dado pela mão direita na corrente. O resultado não depende da forma da seção (quadrada ou circular) nem da posição, desde que longe das pontas: é uniforme. Numa ponta, o campo no eixo cai para cerca de metade, porque só há espiras de um lado.</p>
+        <p class="fonte"><span>Ver</span> <a href="cap3.html">Cap. III</a> e <a href="cap4.html">Cap. IV</a>.</p></div></details>
+
+      <details class="reveal"><summary>5 · Ampère no fio grosso (Exercício 24). Cilindro de raio \(a\) com corrente \(i\) uniforme. Ache \(\vec B\) dentro e fora e esboce \(B(\rho)\).</summary><div>
+        <p>Caminho circular de raio \(\rho\): \(2\pi\rho B=\mu_0 i_{\text{int}}\). Dentro, \(i_{\text{int}}=i\rho^2/a^2\Rightarrow\vec B=\dfrac{\mu_0 i\rho}{2\pi a^2}\hat\theta\) (cresce linearmente). Fora, \(\vec B=\dfrac{\mu_0 i}{2\pi\rho}\hat\theta\) (cai como \(1/\rho\)). Máximo \(\mu_0 i/(2\pi a)\) na superfície; contínuo em \(\rho=a\).</p>
+        <p class="fonte"><span>Ver</span> <a href="cap4.html">Cap. IV · Lei de Ampère</a>.</p></div></details>
+
+      <details class="reveal"><summary>6 · Arruela magnetizada (Exercício 27 de meios magnéticos). Chapa em forma de arruela (raios \(r\) e \(R\), espessura \(t\ll R\)) com magnetização uniforme \(M\) ao longo do eixo. Ache a corrente amperiana e \(\vec B\) no eixo.</summary><div>
+        <p>A magnetização equivale a correntes superficiais \(\vec K=\vec M\times\hat n\): uma no aro externo e outra, em sentido oposto, no aro interno, cada uma com \(i=Mt\). No eixo, \(\vec B\) é a diferença entre os campos de duas espiras:</p>
+        $$\vec B(z)=\frac{\mu_0Mt}{2}\left[\frac{R^2}{(R^2+z^2)^{3/2}}-\frac{r^2}{(r^2+z^2)^{3/2}}\right]\hat M$$
+        <p class="fonte"><span>Ver</span> <a href="cap5.html">Cap. V · Meios magnéticos</a> e a espira no eixo do <a href="cap3.html">Cap. III</a>.</p></div></details>
+
+      <details class="reveal"><summary>7 · Barra nos trilhos com resistor (Exercício 29). \(B=0{,}50\) T entrando, barra de \(l=0{,}20\) m a \(v=4{,}0\) m/s, \(R=0{,}10\) Ω. Ache corrente, força resistente, potência para mover a barra e potência dissipada.</summary><div>
+        <p>\(\mathcal E=Blv=0{,}40\) V; \(I=\mathcal E/R=4{,}0\) A, no sentido que cria fluxo contrário ao aumento (Lenz). \(\vec F=-IlB\,\hat v=-\dfrac{B^2l^2v}{R}\hat v=-0{,}40\,\hat v\) N (oposta à velocidade). Potência externa \(Fv=1{,}6\) W \(=I^2R=1{,}6\) W: toda a energia mecânica vira calor.</p>
+        <p class="fonte"><span>Ver</span> <a href="cap6.html">Cap. VI · Indução magnética</a>.</p></div></details>
+
+      <details class="reveal"><summary>8 · Motor linear (Exercício 30). Fonte \(V\) ligada aos trilhos, barra de comprimento \(l\) puxando uma massa \(m\) para cima com velocidade constante, \(\vec B=-B\hat k\). Ache a corrente e o balanço de potências.</summary><div>
+        <p>Fem contrária \(Blv\): \(I=\dfrac{V-Blv}{R}\). Velocidade constante: \(IlB=mg\). Multiplicando \(V=IR+Blv\) por \(I\): \(VI=I^2R+(IlB)v=I^2R+mgv\). <strong>Potência fornecida = potência dissipada + potência mecânica</strong> (energia potencial ganha pela massa por segundo).</p>
+        <p class="fonte"><span>Ver</span> <a href="cap6.html">Cap. VI</a>.</p></div></details>
+
+      <details class="reveal"><summary>9 · Gerador CA (Exercício 31). Bobina de \(N=100\) espiras, área \(0{,}010\) m², girando a 60 Hz num campo de 0,20 T. Ache a fem.</summary><div>
+        <p>\(\Phi_B=NBA\cos\omega t\Rightarrow\mathcal E=-d\Phi_B/dt=NBA\omega\sin\omega t\). Com \(\omega=2\pi(60)=377\) rad/s: \(\mathcal E_{\max}=(100)(0{,}20)(0{,}010)(377)\approx75\) V. Ligado a \(R\), a potência média é \(\mathcal E_{\max}^2/(2R)\): energia mecânica do giro vira elétrica.</p>
+        <p class="fonte"><span>Ver</span> <a href="cap6.html">Cap. VI</a>; Sears Exemplo 29.3 (alternador), p. 311.</p></div></details>
+
+      <details class="reveal"><summary>10 · Cabo coaxial (Exercício 32). Fio interno de raio \(a\), casca de raio \(b\), corrente \(i\) indo por um e voltando pelo outro. Ache \(\vec B\), o fluxo, \(L/l\) e a energia.</summary><div>
+        <p>Ampère: \(\vec B=\dfrac{\mu_0 i}{2\pi\rho}\hat\theta\) para \(a&lt;\rho&lt;b\) (sentido pela mão direita), zero fora (\(i_{\text{int}}=0\)). Fluxo pelo retângulo de comprimento \(l\): \(\dfrac{\Phi}{l}=\dfrac{\mu_0 i}{2\pi}\ln\dfrac ba\). Indutância: \(\dfrac Ll=\dfrac{\mu_0}{2\pi}\ln\dfrac ba\). Energia: \(\dfrac Ul=\tfrac12\dfrac Ll i^2=\dfrac{\mu_0 i^2}{4\pi}\ln\dfrac ba\). Limites: \(a\to b\) dá \(L\to0\) (vira um fio só); \(a\ll b\) faz \(L\) crescer devagar (logaritmo).</p>
+        <p class="fonte"><span>Ver</span> <a href="cap7.html">Cap. VII · Indutância e energia magnética</a>.</p></div></details>
+
+      <details class="reveal"><summary>11 · Corrente de deslocamento. Capacitor de placas circulares de raio 5,0 cm carregando com \(i=2{,}0\) A. Ache \(i_d\) e \(\vec B\) a 3,0 cm e a 10 cm do eixo, entre as placas.</summary><div>
+        <p>\(i_d=\varepsilon_0\,d\Phi_E/dt=i=2{,}0\) A. Ampère–Maxwell num círculo de raio \(r\): dentro, \(B=\dfrac{\mu_0 i r}{2\pi a^2}=4{,}8\times10^{-6}\) T; fora, \(B=\dfrac{\mu_0 i}{2\pi r}=4{,}0\times10^{-6}\) T; ambos em \(\hat\theta\) (mão direita com o polegar no sentido da corrente).</p>
+        <p class="fonte"><span>Ver</span> <a href="cap8.html#m3">Cap. VIII, Módulo 3</a>.</p></div></details>
+
+      <details class="reveal"><summary>12 · Onda plana e Poynting (Exercício 37, variação). \(\vec E=(6{,}0\ \text{V/m})\cos(kx+\omega t)\,\hat\jmath\), \(f=50\) MHz, vácuo. Ache a direção de propagação, \(\vec B\), \(\vec S\) e \(I\).</summary><div>
+        <p>Sinal “+” → propaga para \(-x\), \(\hat k_{\text{prop}}=-\hat\imath\). \(\vec B=\tfrac1c\hat k_{\text{prop}}\times\vec E=\tfrac{6}{c}\cos(\cdot)(-\hat\imath\times\hat\jmath)=-(2{,}0\times10^{-8}\ \text{T})\cos(kx+\omega t)\,\hat k\). \(\lambda=6\) m, \(k=1{,}05\) m⁻¹, \(\omega=3{,}14\times10^{8}\) s⁻¹. \(\vec S=\dfrac{E_0B_0}{\mu_0}\cos^2(\cdot)(-\hat\imath)=(95{,}5\ \text{mW/m}^2)\cos^2(kx+\omega t)(-\hat\imath)\). Confere: \(\hat\jmath\times(-\hat k)=-\hat\imath\) ✔. \(I=47{,}7\) mW/m².</p>
+        <p class="fonte"><span>Ver</span> <a href="cap8.html#m7">Cap. VIII, Módulo 7</a>.</p></div></details>
+    </article>
+
+    <!-- ================= 7. Erros comuns ================= -->
+    <article class="modulo" id="erros">
+      <header class="modulo-h"><span class="modulo-num">Parte 7</span><h2>Erros comuns: checklist antes de entregar</h2></header>
+      <p>Marque mentalmente (ou aqui) cada item ao revisar a prova.</p>
+      <ul class="checklist" style="list-style:none;padding-left:0">
+        <li><label><input type="checkbox"> <strong>Sinal de Lenz:</strong> a fem induzida se opõe à <em>variação</em> do fluxo; a força nas correntes induzidas se opõe ao movimento.</label></li>
+        <li><label><input type="checkbox"> <strong>Esquecer o \(\pi\)</strong> na área do círculo (\(\pi r^2\)) e no \(2\pi\rho\) da lei de Ampère.</label></li>
+        <li><label><input type="checkbox"> <strong>O ½ da intensidade:</strong> \(I=E_0B_0/(2\mu_0)\), não \(E_0B_0/\mu_0\) (esse é o pico de \(S\)).</label></li>
+        <li><label><input type="checkbox"> <strong>\(10^{8}\) e não \(10^{-8}\):</strong> \(c=3\times10^{8}\) m/s; \(B_0=E_0/c\) é pequeno, \(E_0=cB_0\) é grande.</label></li>
+        <li><label><input type="checkbox"> <strong>Unidades pedidas:</strong> W/m² × 1000 = mW/m²; arredonde como o enunciado manda.</label></li>
+        <li><label><input type="checkbox"> <strong>Produto de versores:</strong> \(\hat k\times\hat\imath=+\hat\jmath\), \(\hat\imath\times\hat k=-\hat\jmath\), \(\hat\jmath\times\hat\imath=-\hat k\).</label></li>
+        <li><label><input type="checkbox"> <strong>Normal da superfície vs sentido da corrente:</strong> \(\hat n\) vem da mão direita no sentido de circulação (anti-horário → \(+\hat k\)); é ela que define \(\vec\mu\) e o sinal do fluxo.</label></li>
+        <li><label><input type="checkbox"> <strong>Fluxo por superfície fechada é zero:</strong> \(\oint\vec B\cdot d\vec A=0\) sempre; a lei de Faraday usa superfície <em>aberta</em> limitada pelo circuito.</label></li>
+        <li><label><input type="checkbox"> <strong>Sentido de propagação:</strong> \(\cos(kz-\omega t)\) anda para \(+z\); \(\cos(kz+\omega t)\), para \(-z\).</label></li>
+        <li><label><input type="checkbox"> <strong>Resposta vetorial:</strong> toda resposta pedida “em forma vetorial” termina com versor.</label></li>
+      </ul>
+    </article>
+
+    <!-- ================= 8. Treino ================= -->
+    <article class="modulo" id="treino">
+      <header class="modulo-h"><span class="modulo-num">Parte 8</span><h2>Cronômetro de prova e treino rápido</h2></header>
+
+      <div class="widget" id="w-crono">
+        <p class="w-title">Cronômetro de prova (90 min)</p>
+        <p class="w-caption">Sugestão de divisão: 25 min na questão de torque, 35 min na de indução (vale mais), 25 min na de ondas e 5 min de revisão com o checklist. A marca tracejada indica 60 min, a partir de quando é permitido sair. O tempo continua contando mesmo se você trocar de aba.</p>
+        <canvas class="w-canvas" height="120"></canvas>
+        <div class="w-row"><button class="w-btn" data-act="go">Iniciar</button><button class="w-btn" data-act="reset">Zerar</button><button class="w-btn" data-act="skip">Próxima fase</button></div>
+        <div class="w-readout" aria-live="polite"></div>
+      </div>
+
+      <div class="box box-ok" id="placar"><div class="box-h">Placar do treino</div><p data-placar>Responda às perguntas abaixo. O relógio do treino começa na primeira resposta.</p><p><button class="w-btn" type="button" data-act="zerar-treino">Zerar treino</button></p></div>
+
+      <div class="quiz"><p class="quiz-q">\(\hat k\times\hat\imath\) é igual a…</p>
+        <div class="quiz-opts"><button>\(-\hat\jmath\)</button><button data-ok>\(+\hat\jmath\)</button><button>\(\hat k\)</button></div>
+        <p class="quiz-fb">Ciclo \(\hat\imath\to\hat\jmath\to\hat k\to\hat\imath\): no sentido do ciclo, sinal +. \(\hat k\times\hat\imath=+\hat\jmath\). É o produto do Ex. 1 do simulado.</p></div>
+
+      <div class="quiz"><p class="quiz-q">\(\vec B=B_0\cos(kz+\omega t)\,\hat\jmath\): para onde a onda se propaga?</p>
+        <div class="quiz-opts"><button>\(+z\)</button><button data-ok>\(-z\)</button><button>\(+y\)</button></div>
+        <p class="quiz-fb">Sinal “+” entre \(kz\) e \(\omega t\) → sentido negativo de \(z\). A direção do campo (\(\hat\jmath\)) não é a de propagação.</p></div>
+
+      <div class="quiz"><p class="quiz-q">Com \(E_0=3\) V/m e \(B_0=10^{-8}\) T, a intensidade é…</p>
+        <div class="quiz-opts"><button>23,9 mW/m²</button><button data-ok>11,9 mW/m²</button><button>47,7 mW/m²</button></div>
+        <p class="quiz-fb">\(I=E_0B_0/(2\mu_0)=\tfrac12(23{,}9)\approx11{,}9\) mW/m². 23,9 é o pico de \(S\).</p></div>
+
+      <div class="quiz"><p class="quiz-q">Uma onda de 100 MHz no vácuo tem comprimento de onda…</p>
+        <div class="quiz-opts"><button>30 cm</button><button data-ok>3 m</button><button>30 m</button></div>
+        <p class="quiz-fb">\(\lambda=c/f=3\times10^8/10^8=3\) m.</p></div>
+
+      <div class="quiz"><p class="quiz-q">Uma carga se move paralela a \(\vec B\). A força magnética é…</p>
+        <div class="quiz-opts"><button>máxima</button><button data-ok>zero</button><button>perpendicular a \(\vec B\) e de módulo \(qvB\)</button></div>
+        <p class="quiz-fb">\(\vec v\times\vec B=0\) quando são paralelos. A força máxima é com \(\vec v\perp\vec B\).</p></div>
+
+      <div class="quiz"><p class="quiz-q">Uma espira com \(\vec\mu\) paralelo a \(\vec B\) (mesmo sentido) tem…</p>
+        <div class="quiz-opts"><button>torque máximo e \(U=0\)</button><button data-ok>torque zero e energia mínima \(U=-\mu B\)</button><button>torque zero e energia máxima \(U=+\mu B\)</button></div>
+        <p class="quiz-fb">\(\vec\mu\times\vec B=0\) e \(U=-\vec\mu\cdot\vec B=-\mu B\): é a posição de equilíbrio estável, como uma bússola alinhada.</p></div>
+
+      <div class="quiz"><p class="quiz-q">No Ex. 2 do simulado, qual é a velocidade terminal da barra?</p>
+        <div class="quiz-opts"><button>\(\mathcal E Bd/R\)</button><button>\(mR/(Bd)^2\)</button><button data-ok>\(\mathcal E/(Bd)\)</button></div>
+        <p class="quiz-fb">Quando \(Bdv=\mathcal E\), a corrente zera e a força some. \(mR/(Bd)^2\) é a constante de tempo; \(\mathcal EBd/R\) é a força inicial.</p></div>
+
+      <div class="quiz"><p class="quiz-q">Num fio grosso de raio \(a\), o campo em \(\rho=a/2\) comparado ao da superfície é…</p>
+        <div class="quiz-opts"><button>o dobro</button><button data-ok>metade</button><button>um quarto</button></div>
+        <p class="quiz-fb">Dentro, \(B\propto\rho\) (\(\mu_0 i\rho/2\pi a^2\)). Em \(a/2\), metade do valor da superfície.</p></div>
+
+      <div class="quiz"><p class="quiz-q">O fluxo magnético por uma superfície fechada que envolve o polo norte de um ímã é…</p>
+        <div class="quiz-opts"><button>positivo</button><button>negativo</button><button data-ok>zero</button></div>
+        <p class="quiz-fb">\(\oint\vec B\cdot d\vec A=0\) sempre: as linhas que saem do norte voltam a entrar pela própria superfície (por dentro do ímã). Não há monopolo.</p></div>
+
+      <div class="quiz"><p class="quiz-q">Um indutor de 2 mH com corrente de 3 A guarda energia de…</p>
+        <div class="quiz-opts"><button>6 mJ</button><button data-ok>9 mJ</button><button>18 mJ</button></div>
+        <p class="quiz-fb">\(U=\tfrac12LI^2=\tfrac12(2\times10^{-3})(9)=9\times10^{-3}\) J.</p></div>
+
+      <div class="quiz"><p class="quiz-q">Entre as placas de um capacitor carregando, o que gera \(\vec B\)?</p>
+        <div class="quiz-opts"><button>Elétrons que saltam entre as placas</button><button data-ok>O fluxo elétrico que varia (\(i_d=\varepsilon_0\,d\Phi_E/dt\))</button><button>Nada: entre as placas \(\vec B=0\)</button></div>
+        <p class="quiz-fb">Não passa carga entre as placas; o \(\vec E\) crescente faz o papel de corrente, e \(i_d=i\) do fio.</p></div>
+
+      <div class="quiz"><p class="quiz-q">Uma barra anda para a direita num campo entrando no papel. A força magnética sobre a corrente induzida nela aponta…</p>
+        <div class="quiz-opts"><button>para a direita</button><button data-ok>para a esquerda</button><button>para dentro do papel</button></div>
+        <p class="quiz-fb">Lenz: a força freia o movimento que causou a indução. É por isso que alguém precisa empurrar a barra (e essa potência vira calor no resistor).</p></div>
+    </article>
+
+    <nav class="chapter-nav"><a class="prev" href="cap8.html"><small>← Anterior</small>VIII · Maxwell e ondas</a><a class="next" href="index.html"><small>Próximo →</small>Início</a></nav>
+  </main>
+</div>
+
+<footer class="footer">
+  <p><strong>Física III · Magnetismo, indução e ondas</strong> · Física para IME (IFUSP) · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir dos slides e do simulado do Prof. Julio A. Larrea J. (IFUSP) e de Young &amp; Freedman, <em>Física III</em>, 14ª ed. Texto, simulações e erros são das notas; não é material oficial da disciplina.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/core.js"></script>
+<script src="assets/prova.js"></script>
+</body>
+</html>

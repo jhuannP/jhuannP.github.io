@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I · Força magnética — Física III para IME</title>
+<meta name="description" content="Força magnética sobre cargas em movimento, força de Lorentz, movimento circular em campo uniforme, fluxo magnético e a ausência de monopolos.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('fis3-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Física III <em>para IME</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a class="on" href="cap1.html" title="Força magnética">I</a><a href="cap2.html" title="Torque e dipolo magnético">II</a><a href="cap3.html" title="Lei de Biot–Savart">III</a><a href="cap4.html" title="Lei de Ampère">IV</a><a href="cap5.html" title="Meios magnéticos">V</a><a href="cap6.html" title="Indução magnética">VI</a><a href="cap7.html" title="Indutância e energia magnética">VII</a><a href="cap8.html" title="Maxwell e ondas">VIII</a><a class="prova" href="prova.html" title="Resolução da prova">Prova</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<section class="chapter-hero" data-num="I">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo I · Slides “Interação magnética (parte 1)” e início da parte 2</p>
+    <h1>Força magnética</h1>
+    <p class="lede">Um ímã empurra uma carga elétrica só se ela estiver se mexendo, e sempre de lado. Esse “empurrão de lado” explica bússolas, órbitas circulares de partículas e por que nunca se encontrou um polo norte sozinho.</p>
+    <div class="meta"><span>Sears §27.1–27.5 · p. 219–235</span><span>Exemplos 21 e 22 dos slides</span><span>4 simulações</span></div>
+  </div>
+</section>
+
+<div class="layout">
+  <nav class="toc" aria-label="Neste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol>
+      <li><a href="#m1"><span class="toc-num">1</span>Por que magnetismo?</a></li>
+      <li><a href="#m2"><span class="toc-num">2</span>A força F = q v × B</a></li>
+      <li><a href="#m3"><span class="toc-num">3</span>Força de Lorentz</a></li>
+      <li><a href="#m4"><span class="toc-num">4</span>Trabalho e potência (Ex. 21)</a></li>
+      <li><a href="#m5"><span class="toc-num">5</span>Órbita circular (Ex. 22)</a></li>
+      <li><a href="#m6"><span class="toc-num">6</span>Fluxo e linhas de campo</a></li>
+      <li><a href="#resumo"><span class="toc-num">✓</span>Resumo e fórmulas</a></li>
+    </ol>
+  </nav>
+  <main id="conteudo" class="content">
+
+    <!-- ======================= M1 ======================= -->
+    <article class="modulo" id="m1">
+      <header class="modulo-h"><span class="modulo-num">Módulo 1</span><h2>Por que entender o magnetismo?</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Uma força antiga, uma pergunta nova <span class="nivel nivel-1">básico</span></h3>
+        <p>Há milênios as pessoas usam pedras que atraem ferro (a <strong>magnetita</strong>, um mineral magnético natural) e agulhas que apontam sempre para o mesmo lado: a <strong>bússola</strong>. Ela ajudou a navegar e a explorar o mundo. O professor brinca nos slides que o magnetismo já foi usado para “dar sorte nos negócios” e até para “desenhar circunferências”, mas só a física responde à pergunta séria: <em>como o magnetismo funciona?</em></p>
+        <p>A resposta moderna tem três peças, na ordem em que aparecem nos slides:</p>
+        <ol>
+          <li><strong>Cargas em movimento</strong> (correntes) criam magnetismo. Até um ímã é, no fundo, um monte de correntes atômicas. A “unidade” mínima disso é o <strong>dipolo magnético</strong> (capítulo II).</li>
+          <li>Esse magnetismo se espalha pelo espaço como um <strong>campo magnético</strong> \(\vec B\), desenhado com linhas que saem do polo norte e entram no polo sul.</li>
+          <li>Outra carga em movimento (ou outro ímã) colocada nesse campo sente uma <strong>força magnética</strong>. É por isso que a agulha da bússola gira até se alinhar com \(\vec B\).</li>
+        </ol>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 560 250" width="560" role="img" aria-label="Linhas de campo de um ímã em barra e uma bússola alinhada">
+          <defs><marker id="c1a" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker></defs>
+          <g fill="none" stroke="var(--cyan)" stroke-width="1.6" opacity=".85">
+            <path d="M330 118 C 420 40, 140 40, 230 118" marker-end="url(#c1a)"/>
+            <path d="M330 112 C 470 -20, 90 -20, 230 112" marker-end="url(#c1a)"/>
+            <path d="M330 132 C 420 210, 140 210, 230 132" marker-end="url(#c1a)"/>
+            <path d="M330 138 C 470 270, 90 270, 230 138" marker-end="url(#c1a)"/>
+            <path d="M340 125 L 540 125" marker-end="url(#c1a)"/>
+            <path d="M20 125 L 218 125" marker-end="url(#c1a)"/>
+          </g>
+          <rect x="230" y="106" width="50" height="38" fill="#3b82f6"/><rect x="280" y="106" width="50" height="38" fill="#e5484d"/>
+          <text x="255" y="131" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="18" font-weight="600" fill="#fff">S</text>
+          <text x="305" y="131" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="18" font-weight="600" fill="#fff">N</text>
+          <g transform="translate(470 64) rotate(205)">
+            <circle r="22" fill="var(--surface)" stroke="var(--muted)" stroke-width="1.5"/>
+            <path d="M0 -4 L18 0 L0 4z" fill="#e5484d"/><path d="M0 -4 L-18 0 L0 4z" fill="var(--muted)"/>
+          </g>
+          <text x="470" y="104" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)">bússola</text>
+          <text x="280" y="236" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="12.5" fill="var(--muted)">fora do ímã: de N para S · dentro: de S para N · as linhas são fechadas</text>
+        </svg>
+        <figcaption>A ponta norte (vermelha) da agulha aponta no sentido de \(\vec B\), tangente à linha de campo. Note que, perto do ímã, a bússola aponta para o polo <em>sul</em> dele: polos opostos se atraem.</figcaption>
+      </figure>
+
+      <section class="note note-key"><div class="cue"><span>Detalhe curioso</span></div><div class="note-body">
+        <p>A Terra é um grande ímã. Como a ponta norte da bússola aponta para o norte <em>geográfico</em>, lá existe um polo <strong>sul magnético</strong> da Terra. O slide do capítulo II mostra exatamente isso.</p>
+      </div></section>
+
+      <section class="note note-lab"><div class="cue"><span>Experimento</span></div><div class="note-body">
+        <h3>Mapeie o campo de um ímã com uma bússola (ou limalha)</h3>
+        <p><strong>Material:</strong> um ímã (de geladeira forte ou de alto-falante velho), uma folha A4, lápis, uma bússola pequena (ou o app de bússola do celular, que usa um magnetômetro). Opcional: palha de aço bem esfarelada dentro de um saquinho plástico fechado.</p>
+        <ol class="steps">
+          <li>Ponha o ímã no centro da folha e contorne-o com o lápis.</li>
+          <li>Coloque a bússola num ponto perto do ímã. Marque dois pontinhos: um na ponta norte e outro na ponta sul da agulha.</li>
+          <li>Mova a bússola até a ponta sul ficar sobre o pontinho da ponta norte anterior. Marque de novo. Repita: você está “andando” ao longo de uma linha de campo.</li>
+          <li>Ligue os pontos. Recomece de outros pontos de partida. Aparece o desenho da figura acima.</li>
+        </ol>
+        <p><strong>Com limalha:</strong> espalhe a palha de aço esfarelada sobre uma folha colocada em cima do ímã (o saquinho evita que grude no ímã) e dê batidinhas na folha. Os fiapos se alinham como mini-bússolas.</p>
+        <p><strong>Segurança:</strong> mantenha ímãs fortes longe de cartões, celulares encostados, marca-passos e crianças pequenas (ímãs de neodímio engolidos são perigosos). Não aproxime ímãs de telas de tubo (TV antiga).</p>
+      </div></section>
+      <p class="fonte"><span>Sears</span> §27.1 e §27.2, p. 219–225 (ímã partido: Fig. 27.4); linhas de campo em §27.3, p. 225.</p>
+    </article>
+
+    <!-- ======================= M2 ======================= -->
+    <article class="modulo" id="m2">
+      <header class="modulo-h"><span class="modulo-num">Módulo 2</span><h2>A força sobre uma carga em movimento</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Força de lado, só para quem se move <span class="nivel nivel-1">básico</span></h3>
+        <p>O campo elétrico empurra uma carga parada. O campo magnético é diferente em três pontos:</p>
+        <ul>
+          <li>Carga <strong>parada</strong> não sente nada: a força é proporcional à velocidade \(\vec v\).</li>
+          <li>A força é sempre <strong>perpendicular</strong> a \(\vec v\) e a \(\vec B\) ao mesmo tempo, isto é, “de lado”.</li>
+          <li>Carga se movendo <strong>paralela</strong> a \(\vec B\) também não sente nada.</li>
+        </ul>
+        <p>Uma regra única resume tudo isso, o produto vetorial:</p>
+        $$\vec F_m = q\,\vec v\times\vec B,\qquad |\vec F_m| = |q|\,vB\,\sin\phi \qquad (\text{Sears Eq. 27.2, p. 222})$$
+        <p>onde \(\phi\) é o ângulo entre \(\vec v\) e \(\vec B\). Força máxima com \(\phi=90^\circ\); zero com \(\phi=0\) ou \(180^\circ\).</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Unidades</span></div><div class="note-body">
+        <h3>Tesla e gauss <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Isolando \(B=F/(qv)\): \([B]=\dfrac{\text{N}}{\text{C}\cdot\text{m/s}}=\dfrac{\text{N}}{\text{A}\cdot\text{m}}=\text{T}\) (tesla). No sistema CGS usa-se o gauss (G):</p>
+        $$1\ \text{G}=10^{-4}\ \text{T}\qquad\Longleftrightarrow\qquad 1\ \text{T}=10^{4}\ \text{G}\qquad(\text{Sears p. 223})$$
+        <aside class="box box-warn"><div class="box-h">Atenção ao slide</div><p>O slide escreve “1 T = 10<sup>−4</sup> Gauss”, que está invertido. O certo é <strong>1 T = 10<sup>4</sup> G</strong> (o tesla é a unidade grande). Referências: campo da Terra ≈ 0,5 G = 5×10<sup>−5</sup> T; ímã de geladeira ≈ 5×10<sup>−3</sup> T; ressonância magnética 1,5 a 3 T.</p></aside>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>Ferramenta</span></div><div class="note-body">
+        <h3>Regra da mão direita e a convenção ⊙ / ⊗ <span class="nivel nivel-2">intermediário</span></h3>
+        <div class="two">
+          <figure class="figure">
+            <svg viewBox="0 0 260 220" width="260" role="img" aria-label="Vetores v, B e v vezes B em perspectiva">
+              <defs>
+                <marker id="c1v" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ok)"/></marker>
+                <marker id="c1b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker>
+                <marker id="c1f" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker>
+              </defs>
+              <line x1="110" y1="140" x2="60" y2="200" stroke="var(--ok)" stroke-width="3.5" marker-end="url(#c1v)"/>
+              <line x1="110" y1="140" x2="230" y2="140" stroke="var(--cyan)" stroke-width="3.5" marker-end="url(#c1b)"/>
+              <line x1="110" y1="140" x2="110" y2="30" stroke="var(--accent)" stroke-width="3.5" marker-end="url(#c1f)"/>
+              <path d="M82 168 A40 40 0 0 0 146 152" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <circle cx="110" cy="140" r="9" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.5"/><text x="110" y="144.5" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="var(--ink)">+</text>
+              <text x="48" y="196" font-family="Newsreader,serif" font-style="italic" font-size="20" fill="var(--ok)">v</text>
+              <text x="232" y="132" font-family="Newsreader,serif" font-style="italic" font-size="20" fill="var(--cyan)">B</text>
+              <text x="120" y="38" font-family="Newsreader,serif" font-style="italic" font-size="19" fill="var(--accent)">F = q v × B</text>
+              <text x="150" y="178" font-family="IBM Plex Sans,sans-serif" font-size="11.5" fill="var(--muted)">gire v até B</text>
+            </svg>
+            <figcaption>Dedos da mão direita ao longo de \(\vec v\), curve-os em direção a \(\vec B\) (pelo menor ângulo): o polegar dá \(\vec v\times\vec B\). Para \(q&lt;0\), a força é o <strong>oposto</strong> do polegar.</figcaption>
+          </figure>
+          <figure class="figure">
+            <svg viewBox="0 0 260 220" width="260" role="img" aria-label="Símbolos ponto e xis para vetores saindo e entrando no plano">
+              <circle cx="70" cy="70" r="26" fill="none" stroke="var(--cyan)" stroke-width="3"/><circle cx="70" cy="70" r="8" fill="var(--cyan)"/>
+              <circle cx="70" cy="160" r="26" fill="none" stroke="var(--cyan)" stroke-width="3"/>
+              <path d="M52 142 L88 178 M88 142 L52 178" stroke="var(--cyan)" stroke-width="3"/>
+              <text x="112" y="64" font-family="IBM Plex Sans,sans-serif" font-size="14" fill="var(--ink)">⊙ saindo da tela</text>
+              <text x="112" y="84" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)">(a ponta da flecha)</text>
+              <text x="112" y="156" font-family="IBM Plex Sans,sans-serif" font-size="14" fill="var(--ink)">⊗ entrando na tela</text>
+              <text x="112" y="176" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)">(as penas da flecha)</text>
+            </svg>
+            <figcaption>Imagine uma flecha: vindo na sua direção você vê a ponta (⊙); indo embora você vê as penas em X (⊗). Com \(\hat\imath\) para a direita e \(\hat\jmath\) para cima, ⊙ é \(+\hat k\) e ⊗ é \(-\hat k\).</figcaption>
+          </figure>
+        </div>
+        <aside class="box box-key"><div class="box-h">Roda dos versores</div><p>\(\hat\imath\times\hat\jmath=\hat k,\ \ \hat\jmath\times\hat k=\hat\imath,\ \ \hat k\times\hat\imath=\hat\jmath\) (ordem cíclica dá +). Na ordem contrária, sinal −: \(\hat\jmath\times\hat\imath=-\hat k\). E qualquer versor vezes ele mesmo dá zero.</p></aside>
+      </div></section>
+
+      <div class="worked"><div class="worked-h"><span>Exemplo numérico</span> Elétron cruzando um campo</div>
+        <p>Um elétron (\(q=-1{,}6\times10^{-19}\) C) tem \(\vec v=2{,}0\times10^{6}\,\hat\imath\) m/s num campo \(\vec B=0{,}50\,\hat\jmath\) T. Ache \(\vec F\).</p>
+        <ol class="steps">
+          <li>Produto vetorial primeiro, sem o sinal da carga: \(\vec v\times\vec B=(2{,}0\times10^6)(0{,}50)\,(\hat\imath\times\hat\jmath)=1{,}0\times10^{6}\,\hat k\) (T·m/s).</li>
+          <li>Multiplique pela carga, <strong>com sinal</strong>: \(\vec F=(-1{,}6\times10^{-19})(1{,}0\times10^{6})\,\hat k=-1{,}6\times10^{-13}\,\hat k\) N.</li>
+          <li>Leitura: se fosse um próton, a força seria \(+\hat k\) (saindo da tela). Para o elétron ela entra na tela (⊗).</li>
+        </ol>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">Um próton se move para a direita (\(+\hat\imath\)) num campo que entra na tela (⊗, \(-\hat k\)). Para onde vai a força?</p>
+        <div class="quiz-opts"><button>Para baixo (\(-\hat\jmath\))</button><button data-ok>Para cima (\(+\hat\jmath\))</button><button>Para dentro da tela</button><button>Nenhuma: \(\vec v\perp\vec B\) anula a força</button></div>
+        <p class="quiz-fb">\(\hat\imath\times(-\hat k)=-(\hat\imath\times\hat k)=-(-\hat\jmath)=+\hat\jmath\). Como \(q&gt;0\), a força aponta para cima. Perpendicularidade dá força <em>máxima</em>, não nula.</p></div>
+
+      <details class="reveal"><summary>Estudante: por que \(\vec v\times\vec B\) e não \(\vec B\times\vec v\)?</summary><div><p>É uma convenção que vem da definição experimental (com o sentido de \(\vec B\) escolhido para apontar de N para S fora do ímã). Trocar a ordem troca o sinal: \(\vec B\times\vec v=-\vec v\times\vec B\). Na prova, escreva sempre \(q\,\vec v\times\vec B\) e não inverta.</p></div></details>
+      <p class="fonte"><span>Sears</span> §27.2, Eq. 27.1–27.2, p. 221–224 (unidades na p. 223).</p>
+    </article>
+
+    <!-- ======================= M3 ======================= -->
+    <article class="modulo" id="m3">
+      <header class="modulo-h"><span class="modulo-num">Módulo 3</span><h2>Força de Lorentz: elétrico + magnético</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Cada campo dá a sua parcela <span class="nivel nivel-1">básico</span></h3>
+        <p>Se houver campo elétrico \(\vec E\) e magnético \(\vec B\) juntos, as forças simplesmente se somam como vetores (regra do paralelogramo):</p>
+        $$\vec F=\vec F_e+\vec F_m=q\,\vec E+q\,\vec v\times\vec B=q\left(\vec E+\vec v\times\vec B\right)$$
+        <p>Esta é a <strong>força de Lorentz</strong>. A parte elétrica aponta ao longo de \(\vec E\) (ou contra, se \(q&lt;0\)); a parte magnética é perpendicular a \(\vec v\) e \(\vec B\).</p>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 600 230" width="600" role="img" aria-label="Soma das forças elétrica e magnética para carga positiva e negativa">
+          <defs>
+            <marker id="c1k" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ink)"/></marker>
+            <marker id="c1g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ok)"/></marker>
+            <marker id="c1r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--warm)"/></marker>
+          </defs>
+          <text x="150" y="22" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="14" font-weight="600" fill="var(--ink)">q &gt; 0</text>
+          <line x1="70" y1="150" x2="70" y2="60" stroke="var(--ink)" stroke-width="3" marker-end="url(#c1k)"/>
+          <line x1="70" y1="150" x2="230" y2="200" stroke="var(--ok)" stroke-width="3" marker-end="url(#c1g)"/>
+          <line x1="70" y1="150" x2="226" y2="114" stroke="var(--warm)" stroke-width="3.5" marker-end="url(#c1r)"/>
+          <path d="M70 60 L230 110 L230 200" fill="none" stroke="var(--muted)" stroke-dasharray="4 4"/>
+          <circle cx="70" cy="150" r="10" fill="var(--surface)" stroke="var(--ink)"/><text x="70" y="155" text-anchor="middle" font-size="14" font-family="IBM Plex Sans,sans-serif" fill="var(--ink)">+</text>
+          <text x="40" y="70" font-family="Newsreader,serif" font-style="italic" font-size="18" fill="var(--ink)">F<tspan font-size="12">m</tspan></text>
+          <text x="236" y="210" font-family="Newsreader,serif" font-style="italic" font-size="18" fill="var(--ok)">F<tspan font-size="12">e</tspan> = qE</text>
+          <text x="236" y="112" font-family="Newsreader,serif" font-style="italic" font-size="18" fill="var(--warm)">F</text>
+          <text x="450" y="22" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="14" font-weight="600" fill="var(--ink)">q &lt; 0 (mesmos v, E, B)</text>
+          <line x1="530" y1="90" x2="530" y2="180" stroke="var(--ink)" stroke-width="3" marker-end="url(#c1k)"/>
+          <line x1="530" y1="90" x2="370" y2="40" stroke="var(--ok)" stroke-width="3" marker-end="url(#c1g)"/>
+          <line x1="530" y1="90" x2="374" y2="126" stroke="var(--warm)" stroke-width="3.5" marker-end="url(#c1r)"/>
+          <path d="M530 180 L370 130 L370 40" fill="none" stroke="var(--muted)" stroke-dasharray="4 4"/>
+          <circle cx="530" cy="90" r="10" fill="var(--surface)" stroke="var(--ink)"/><text x="530" y="95" text-anchor="middle" font-size="16" font-family="IBM Plex Sans,sans-serif" fill="var(--ink)">−</text>
+          <text x="540" y="186" font-family="Newsreader,serif" font-style="italic" font-size="18" fill="var(--ink)">F<tspan font-size="12">m</tspan></text>
+          <text x="330" y="36" font-family="Newsreader,serif" font-style="italic" font-size="18" fill="var(--ok)">F<tspan font-size="12">e</tspan></text>
+          <text x="352" y="140" font-family="Newsreader,serif" font-style="italic" font-size="18" fill="var(--warm)">F</text>
+        </svg>
+        <figcaption>Como no slide da parte 2: trocar o sinal da carga inverte <strong>as duas</strong> parcelas, e portanto a resultante \(\vec F\) inteira.</figcaption>
+      </figure>
+
+      <section class="note"><div class="cue"><span>Aplicação</span></div><div class="note-body">
+        <h3>Seletor de velocidades <span class="nivel nivel-2">intermediário</span></h3>
+        <p>O slide “Convenção” mostra uma carga com \(\vec v\) para a direita, \(\vec E\) no plano e \(\vec B\) perpendicular ao plano. Se escolhermos \(\vec E\) e \(\vec B\) perpendiculares entre si e a \(\vec v\), as duas forças ficam na mesma reta e podem se cancelar:</p>
+        $$qE = qvB\quad\Longrightarrow\quad v=\frac{E}{B}\qquad(\text{Sears §27.5, p. 232})$$
+        <p>Só passa reto quem tem exatamente essa velocidade, <strong>qualquer que seja</strong> a carga ou a massa (com \(q&lt;0\) as duas forças trocam de sentido juntas, e o equilíbrio continua). É assim que se “filtra” um feixe antes de um espectrômetro de massa.</p>
+        <p>Com vetores (para conferir sinais): \(\vec v=v\hat\imath\), \(\vec B=-B\hat k\) (⊗), placa positiva em cima, então \(\vec E=-E\hat\jmath\). Força total \(\vec F=q(-E+vB)\,\hat\jmath\), pois \(\hat\imath\times(-\hat k)=+\hat\jmath\). Zera se \(v=E/B\); se \(v&gt;E/B\) (para \(q&gt;0\)) o magnético vence e a partícula sobe.</p>
+      </div></section>
+
+      <div class="widget" id="w-seletor">
+        <p class="w-title">Seletor de velocidades</p>
+        <p class="w-caption">Placa de cima positiva (\(\vec E\) para baixo) e \(\vec B\) entrando na tela (⊗). Ajuste \(v\), \(E\) e \(B\) até as partículas atravessarem a fenda. Ligue o “feixe com várias velocidades” para ver o filtro escolher só \(v\approx E/B\). A deflexão está exagerada para ficar visível.</p>
+        <canvas class="w-canvas" height="300"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Velocidade v <output data-o="v"></output></span><input type="range" data-k="v" min="0.5" max="5" step="0.1" value="1.5"></label>
+          <label class="w-control"><span>Campo elétrico E <output data-o="E"></output></span><input type="range" data-k="E" min="0" max="10" step="0.1" value="5"></label>
+          <label class="w-control"><span>Campo magnético B <output data-o="B"></output></span><input type="range" data-k="B" min="0.05" max="0.5" step="0.01" value="0.25"></label>
+        </div>
+        <div class="w-row"><span class="lbl">Carga:</span><button class="w-btn on" data-q="1">positiva</button><button class="w-btn" data-q="-1">negativa</button><button class="w-btn" data-act="mix">Feixe com várias velocidades</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">No seletor ajustado (\(v=E/B\)), troco prótons por elétrons com a mesma velocidade. O que acontece?</p>
+        <div class="quiz-opts"><button>Os elétrons desviam, pois a carga é negativa</button><button data-ok>Passam reto também</button><button>Passam reto só se dobrar o \(B\)</button></div>
+        <p class="quiz-fb">\(\vec F=q(\vec E+\vec v\times\vec B)\): se o parêntese é zero, a força é zero para qualquer \(q\). Teste na simulação acima trocando o sinal da carga.</p></div>
+      <p class="fonte"><span>Sears</span> §27.5 “Seletor de velocidades”, p. 232; força de Lorentz na mesma seção.</p>
+    </article>
+
+    <!-- ======================= M4 ======================= -->
+    <article class="modulo" id="m4">
+      <header class="modulo-h"><span class="modulo-num">Módulo 4</span><h2>O campo magnético não realiza trabalho</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Empurrar de lado não acelera <span class="nivel nivel-1">básico</span></h3>
+        <p>Pense numa pedra girando presa a um barbante: o barbante puxa sempre para o centro, perpendicular ao movimento, e por isso muda a <em>direção</em> da pedra sem mudar a sua <em>rapidez</em>. A força magnética faz exatamente o mesmo, porque ela é sempre perpendicular a \(\vec v\).</p>
+      </div></section>
+
+      <div class="worked"><div class="worked-h"><span>Exemplo 21 dos slides</span> Discuta o trabalho feito por um campo magnético e sua potência</div>
+        <ol class="steps">
+          <li><strong>Potência</strong> é força escalar velocidade: \(P=\vec F\cdot\vec v\). Com \(\vec F_m=q\,\vec v\times\vec B\):
+            $$P_m=q\,(\vec v\times\vec B)\cdot\vec v=0,$$
+            pois \(\vec v\times\vec B\) é perpendicular a \(\vec v\) (produto misto com dois vetores iguais é zero).</li>
+          <li><strong>Trabalho</strong> num percurso qualquer: \(W_m=\int\vec F_m\cdot d\vec r=\int \vec F_m\cdot\vec v\,dt=\int 0\,dt=0.\)</li>
+          <li>Pelo teorema trabalho–energia, \(\Delta K=W=0\): a <strong>energia cinética e o módulo da velocidade ficam constantes</strong>. O campo só curva a trajetória.</li>
+          <li>Com campo elétrico junto: \(P=\vec F\cdot\vec v=q\,\vec E\cdot\vec v\). Só a parte elétrica muda a energia da partícula.</li>
+        </ol>
+        <aside class="box box-key"><div class="box-h">Resposta para escrever</div><p>\(W_{B}=0\) e \(P_{B}=0\) para qualquer trajetória, porque \(\vec F_m\perp\vec v\) a todo instante. O campo magnético não “dissipa” nem fornece energia a uma carga livre; \(|\vec v|\) e \(K=\tfrac12mv^2\) são constantes.</p></aside>
+      </div>
+
+      <details class="reveal"><summary>Estudante: então um campo magnético gera energia potencial? (objetivo ii dos slides)</summary><div>
+        <p>Para uma <strong>carga pontual</strong>, não: como a força magnética não realiza trabalho e depende da velocidade, não existe uma função \(U(\vec r)\) para ela. Já para um <strong>dipolo magnético</strong> (uma espira com corrente, um ímã, uma agulha de bússola) existe sim uma energia de orientação, \(U=-\vec m\cdot\vec B\). Esse é o assunto do <a href="cap2.html#m4">capítulo II</a>.</p>
+      </div></details>
+      <p class="fonte"><span>Sears</span> §27.4, p. 228–229 (“uma força magnética nunca pode realizar trabalho sobre a partícula”, p. 229).</p>
+    </article>
+
+    <!-- ======================= M5 ======================= -->
+    <article class="modulo" id="m5">
+      <header class="modulo-h"><span class="modulo-num">Módulo 5</span><h2>Movimento circular e hélice</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Uma força central de tamanho fixo <span class="nivel nivel-1">básico</span></h3>
+        <p>Se \(\vec v\perp\vec B\), a força tem módulo constante \(|q|vB\) (a velocidade não muda de módulo) e é sempre perpendicular a \(\vec v\). Força de tamanho fixo, sempre de lado: isso é exatamente uma <strong>força centrípeta</strong>. A partícula descreve um círculo.</p>
+        <p>Se \(\vec v\) tiver também uma parte paralela a \(\vec B\), essa parte não sente força e continua igual: o círculo “anda” ao longo de \(\vec B\) e vira uma <strong>hélice</strong> (mola).</p>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 330 250" width="330" role="img" aria-label="Partícula em órbita circular anti-horária com campo entrando no plano">
+          <defs>
+            <marker id="c1v2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ok)"/></marker>
+            <marker id="c1f2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker>
+            <marker id="c1w" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--muted)"/></marker>
+          </defs>
+          <g stroke="var(--cyan)" stroke-width="1.4" opacity=".6">
+            <path d="M30 30l8 8m0-8l-8 8M90 30l8 8m0-8l-8 8M150 30l8 8m0-8l-8 8M210 30l8 8m0-8l-8 8M270 30l8 8m0-8l-8 8M30 210l8 8m0-8l-8 8M90 210l8 8m0-8l-8 8M150 210l8 8m0-8l-8 8M210 210l8 8m0-8l-8 8M270 210l8 8m0-8l-8 8M30 120l8 8m0-8l-8 8M290 120l8 8m0-8l-8 8"/>
+          </g>
+          <circle cx="160" cy="125" r="80" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <path d="M200 56 A80 80 0 0 0 118 57" fill="none" stroke="var(--muted)" stroke-width="1.5" marker-end="url(#c1w)"/>
+          <text x="160" y="36" text-anchor="middle" font-family="Newsreader,serif" font-style="italic" font-size="16" fill="var(--muted)">ω (anti-horário)</text>
+          <line x1="240" y1="125" x2="240" y2="55" stroke="var(--ok)" stroke-width="3" marker-end="url(#c1v2)"/>
+          <line x1="240" y1="125" x2="180" y2="125" stroke="var(--accent)" stroke-width="3" marker-end="url(#c1f2)"/>
+          <circle cx="240" cy="125" r="7" fill="var(--cyan)"/>
+          <line x1="160" y1="125" x2="232" y2="125" stroke="var(--ink)" stroke-width="1" stroke-dasharray="2 3"/>
+          <circle cx="160" cy="125" r="2.5" fill="var(--ink)"/>
+          <text x="250" y="70" font-family="Newsreader,serif" font-style="italic" font-size="18" fill="var(--ok)">v = v ĵ</text>
+          <text x="172" y="145" font-family="Newsreader,serif" font-style="italic" font-size="16" fill="var(--accent)">F = −F î</text>
+          <text x="252" y="130" font-family="Newsreader,serif" font-style="italic" font-size="16" fill="var(--ink)">q</text>
+          <text x="20" y="246" font-family="IBM Plex Sans,sans-serif" font-size="12" fill="var(--muted)">B = −B k̂ (⊗, entrando)</text>
+        </svg>
+        <figcaption>Situação do Exemplo 22: no ponto mais à direita da órbita, \(\vec v\) aponta para cima e o centro fica à esquerda.</figcaption>
+      </figure>
+
+      <div class="worked"><div class="worked-h"><span>Exemplo 22 dos slides</span> Raio, frequência e sinal da carga em \(\vec B=-B\hat k\)</div>
+        <p><strong>Enunciado.</strong> Uma partícula de carga \(q\) e massa \(m\) entra num campo \(\vec B=-B\hat k\) (entrando na folha) e faz movimento circular. Ache o raio e a frequência. Qual o sinal de \(q\) para ela orbitar no sentido indicado (anti-horário, com \(\vec v\) para cima no ponto da direita)?</p>
+        <ol class="steps">
+          <li><strong>Eixos.</strong> \(\hat\imath\) para a direita, \(\hat\jmath\) para cima, \(\hat k\) saindo da folha. No ponto mostrado: \(\vec v=v\,\hat\jmath\); o centro está à esquerda, então a força centrípeta precisa ser \(\vec F_C=-F_C\,\hat\imath\).</li>
+          <li><strong>Força magnética nesse ponto.</strong>
+            $$\vec F_m=q\,v\hat\jmath\times(-B\hat k)=-qvB\,(\hat\jmath\times\hat k)=-qvB\,\hat\imath.$$</li>
+          <li><strong>Sinal.</strong> Para \(\vec F_m\) apontar para \(-\hat\imath\) (para o centro) precisamos de \(qvB&gt;0\), isto é, <strong>\(q&gt;0\)</strong>. Uma carga negativa seria empurrada para fora e giraria no sentido horário.</li>
+          <li><strong>Raio.</strong> A força magnética é a resultante centrípeta: \(|q|vB=\dfrac{mv^2}{r}\Rightarrow\)
+            $$r=\frac{mv}{|q|B}\qquad(\text{Sears Eq. 27.11, p. 229})$$</li>
+          <li><strong>Frequência.</strong> \(\omega=v/r\):
+            $$\omega=\frac{|q|B}{m},\qquad f=\frac{\omega}{2\pi}=\frac{|q|B}{2\pi m},\qquad T=\frac{2\pi m}{|q|B}\qquad(\text{Eq. 27.12, p. 229})$$
+            O período <strong>não depende da velocidade</strong>: partículas mais rápidas fazem círculos maiores no mesmo tempo (é o princípio do cíclotron).</li>
+          <li><strong>Versão vetorial (nível prova).</strong> No movimento circular uniforme, \(\vec a=\vec\omega\times\vec v\). Então \(m\,\vec\omega\times\vec v=q\,\vec v\times\vec B=-q\,\vec B\times\vec v\), o que vale para todo \(\vec v\) do plano se
+            $$\vec\omega=-\frac{q}{m}\vec B=-\frac{q}{m}(-B\hat k)=+\frac{qB}{m}\,\hat k.$$
+            Com \(q&gt;0\), \(\vec\omega\) aponta para \(+\hat k\): rotação anti-horária vista de frente, confirmando o passo 3.</li>
+        </ol>
+        <p><strong>Números para ter noção:</strong> próton com \(v=1{,}0\times10^6\) m/s em \(B=0{,}50\) T: \(r=\dfrac{(1{,}67\times10^{-27})(1{,}0\times10^{6})}{(1{,}6\times10^{-19})(0{,}50)}\approx 2{,}1\) cm; \(\omega\approx4{,}8\times10^{7}\) rad/s; \(f\approx7{,}6\) MHz.</p>
+      </div>
+
+      <div class="widget" id="w-ciclo">
+        <p class="w-title">Partícula carregada num campo uniforme</p>
+        <p class="w-caption">À esquerda, a vista de frente (como no Exemplo 22); à direita, a mesma trajetória em perspectiva. Seta verde = \(\vec v\), laranja = \(\vec F\). Troque a partícula, o sentido de \(\vec B\) e o ângulo entre \(\vec v\) e \(\vec B\): com 90° é um círculo; com menos, uma hélice. Repare que \(\vec F\perp\vec v\) sempre e a energia cinética não muda.</p>
+        <canvas class="w-canvas" height="340"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Velocidade v <output data-o="v"></output></span><input type="range" data-k="v" min="1" max="20" step="0.5" value="10"></label>
+          <label class="w-control"><span>Campo B <output data-o="B"></output></span><input type="range" data-k="B" min="0.1" max="1" step="0.05" value="0.5"></label>
+          <label class="w-control"><span>Ângulo entre v e B <output data-o="a"></output></span><input type="range" data-k="a" min="15" max="90" step="1" value="90"></label>
+        </div>
+        <div class="w-row"><span class="lbl">Partícula:</span><button class="w-btn on" data-p="p">próton</button><button class="w-btn" data-p="e">elétron</button><button class="w-btn" data-p="a">alfa (He²⁺)</button></div>
+        <div class="w-row"><span class="lbl">Campo:</span><button class="w-btn on" data-bs="in">⊗ entrando (−k̂)</button><button class="w-btn" data-bs="out">⊙ saindo (+k̂)</button><button class="w-btn" data-act="reset">Limpar rastro</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <section class="note"><div class="cue"><span>Hélice</span></div><div class="note-body">
+        <h3>Quando \(\vec v\) não é perpendicular a \(\vec B\) <span class="nivel nivel-3">avançado</span></h3>
+        <p>Separe \(\vec v=\vec v_\parallel+\vec v_\perp\) (paralela e perpendicular a \(\vec B\)). Como \(\vec v_\parallel\times\vec B=\vec 0\), só \(\vec v_\perp\) gera força:</p>
+        $$r=\frac{m\,v_\perp}{|q|B},\qquad \omega=\frac{|q|B}{m}\ (\text{igual}),\qquad \text{passo }p=v_\parallel T=\frac{2\pi m\,v_\parallel}{|q|B}.$$
+        <p>É assim que partículas do vento solar espiralam ao longo das linhas do campo da Terra até os polos e produzem as auroras (Sears Fig. 27.18, p. 229; Exemplo 27.4, p. 231).</p>
+      </div></section>
+
+      <div class="quiz"><p class="quiz-q">Dobro a velocidade de um próton em órbita circular num \(B\) fixo. O que acontece com o raio e o período?</p>
+        <div class="quiz-opts"><button>Raio dobra, período dobra</button><button data-ok>Raio dobra, período não muda</button><button>Raio cai pela metade, período não muda</button><button>Nada muda</button></div>
+        <p class="quiz-fb">\(r=mv/|q|B\) cresce com \(v\), mas \(T=2\pi m/|q|B\) não depende de \(v\): o caminho dobra e a rapidez também.</p></div>
+      <p class="fonte"><span>Sears</span> §27.4 “Movimento de partículas carregadas em um campo magnético”, p. 228–231, Eqs. 27.11–27.12.</p>
+    </article>
+
+    <!-- ======================= M6 ======================= -->
+    <article class="modulo" id="m6">
+      <header class="modulo-h"><span class="modulo-num">Módulo 6</span><h2>Fluxo magnético, linhas de campo e a falta de monopolos</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Quanto campo atravessa uma superfície <span class="nivel nivel-1">básico</span></h3>
+        <p>Imagine o campo como chuva e uma superfície como uma janela. O <strong>fluxo</strong> mede “quanta chuva passa pela janela”: depende da intensidade da chuva (\(B\)), do tamanho da janela (\(S\)) e de quanto ela está de frente (ângulo \(\theta\) entre \(\vec B\) e a normal \(\hat n\)).</p>
+        $$\Phi_m=\int_S\vec B\cdot d\vec S=\int_S \vec B\cdot\hat n\,dS\qquad(\text{Sears Eq. 27.6, p. 226})$$
+        <p>Para \(\vec B\) uniforme e superfície plana: \(\Phi_m=BS\cos\theta\). Unidade: weber, \(1\ \text{Wb}=1\ \text{T·m}^2\). Em linguagem de figura: o fluxo é proporcional ao <strong>número de linhas de campo que atravessam</strong> a superfície.</p>
+      </div></section>
+
+      <div class="widget" id="w-fluxo">
+        <p class="w-title">Fluxo através de uma espira que gira</p>
+        <p class="w-caption">Campo uniforme para a direita. Gire a espira (ou aperte “Girar”). As linhas que atravessam a espira ficam destacadas; o gráfico mostra \(\Phi=BS\cos\theta\). Com a espira “de lado” (\(\theta=90^\circ\)), nenhuma linha passa e \(\Phi=0\).</p>
+        <canvas class="w-canvas" height="320"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Ângulo θ entre n̂ e B <output data-o="th"></output></span><input type="range" data-k="th" min="0" max="360" step="1" value="30"></label>
+          <label class="w-control"><span>Campo B <output data-o="B"></output></span><input type="range" data-k="B" min="0.1" max="2" step="0.1" value="1"></label>
+          <label class="w-control"><span>Área S <output data-o="S"></output></span><input type="range" data-k="S" min="0.2" max="1" step="0.05" value="0.6"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="spin">Girar</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <section class="note"><div class="cue"><span>Superfície fechada</span></div><div class="note-body">
+        <h3>Tudo o que entra, sai: \(\oint\vec B\cdot d\vec S=0\) <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Numa superfície <strong>fechada</strong> (uma bola, uma caixa), a normal aponta para fora. Linhas que entram contam negativo; linhas que saem, positivo. Para o campo magnético, a experiência mostra que sempre</p>
+        $$\oint_S\vec B\cdot d\vec S=0\qquad(\text{lei de Gauss do magnetismo, Sears Eq. 27.8, p. 227})$$
+        <p>Compare com a lei de Gauss elétrica, \(\oint\vec E\cdot d\vec S=q_{\text{int}}/\varepsilon_0\): o lado direito é a carga dentro. No magnetismo o lado direito é zero porque <strong>não existe “carga magnética”</strong> isolada, o tal monopolo. As linhas de \(\vec B\) não começam nem terminam: são sempre <strong>fechadas</strong> (saem do N por fora e voltam pelo S por dentro do ímã). A menor “unidade” de magnetismo é o dipolo (ver <a href="cap2.html#m5">cap. II</a>).</p>
+      </div></section>
+
+      <figure class="figure">
+        <svg viewBox="0 0 560 200" width="560" role="img" aria-label="Superfície aberta com normal e superfície fechada envolvendo um polo">
+          <defs>
+            <marker id="c1c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--cyan)"/></marker>
+            <marker id="c1n" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ok)"/></marker>
+          </defs>
+          <g stroke="var(--cyan)" stroke-width="1.5" marker-end="url(#c1c)" opacity=".85"><line x1="20" y1="60" x2="240" y2="60"/><line x1="20" y1="100" x2="240" y2="100"/><line x1="20" y1="140" x2="240" y2="140"/></g>
+          <path d="M110 40 Q140 60 125 100 Q112 140 140 165 L160 150 Q135 125 147 92 Q160 55 132 30 z" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+          <line x1="138" y1="96" x2="196" y2="80" stroke="var(--ok)" stroke-width="3" marker-end="url(#c1n)"/>
+          <text x="200" y="76" font-family="Newsreader,serif" font-style="italic" font-size="17" fill="var(--ok)">n̂ dS</text>
+          <text x="130" y="192" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="12.5" fill="var(--muted)">aberta: Φ = ∫ B·dS ≠ 0 em geral</text>
+          <ellipse cx="420" cy="100" rx="90" ry="70" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="6 4"/>
+          <rect x="350" y="88" width="50" height="24" fill="#3b82f6"/><rect x="400" y="88" width="50" height="24" fill="#e5484d"/>
+          <text x="375" y="105" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="#fff">S</text><text x="425" y="105" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="#fff">N</text>
+          <g fill="none" stroke="var(--cyan)" stroke-width="1.5" marker-end="url(#c1c)"><path d="M452 92 C 540 40, 300 40, 348 92"/><path d="M452 108 C 540 160, 300 160, 348 108"/></g>
+          <text x="420" y="192" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="12.5" fill="var(--muted)">fechada: cada linha que sai volta a entrar ⇒ ∮ B·dS = 0</text>
+        </svg>
+      </figure>
+
+      <div class="widget" id="w-ima">
+        <p class="w-title">Linhas de campo de um ímã, bússola e superfície fechada</p>
+        <p class="w-caption"><strong>Arraste a bússola</strong> pelo campo: a ponta vermelha segue \(\vec B\). Ligue a “curva fechada” e <strong>arraste-a</strong> para envolver só o polo N: o fluxo que sai é igual ao que entra, e o total dá zero. (Corte bidimensional; o ímã é modelado pelas correntes na sua superfície, como explica Ampère.)</p>
+        <canvas class="w-canvas" height="380"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Raio da curva fechada <output data-o="R"></output></span><input type="range" data-k="R" min="20" max="140" step="1" value="60"></label>
+        </div>
+        <div class="w-row"><button class="w-btn on" data-act="gauss">Curva fechada</button><button class="w-btn" data-act="flip">Inverter o ímã</button><button class="w-btn" data-act="reset">Recolocar</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="quiz"><p class="quiz-q">Uma esfera envolve apenas o polo norte de um ímã. O fluxo magnético total através dela é:</p>
+        <div class="quiz-opts"><button>Positivo, porque do N só saem linhas</button><button>Negativo</button><button data-ok>Zero</button><button>Depende do raio da esfera</button></div>
+        <p class="quiz-fb">As linhas que saem do N pela esfera são compensadas pelas que entram nela vindas de dentro do ímã (que, por dentro, vão de S para N). \(\oint\vec B\cdot d\vec S=0\) sempre.</p></div>
+
+      <details class="reveal"><summary>Estudante: e se eu cortar o ímã exatamente entre N e S?</summary><div><p>Você ganha dois ímãs menores, cada um com seu N e seu S. Não sai um polo sozinho. Isso está no slide “Existe monopolo magnético?” e no <a href="cap2.html#m5">módulo 5 do capítulo II</a>, com simulação.</p></div></details>
+      <p class="fonte"><span>Sears</span> §27.3 “Linhas de campo magnético e fluxo magnético”, p. 225–228; Eqs. 27.6 e 27.8.</p>
+    </article>
+
+    <!-- ======================= RESUMO ======================= -->
+    <article class="modulo" id="resumo">
+      <header class="modulo-h"><span class="modulo-num">Fechamento</span><h2>Resumo e fórmulas</h2></header>
+      <div class="table-wrap"><table>
+        <tr><th>Grandeza</th><th>Fórmula</th><th>Quando usar</th></tr>
+        <tr><td>Força magnética numa carga</td><td>\(\vec F_m=q\,\vec v\times\vec B\), \(|F|=|q|vB\sin\phi\)</td><td>Carga em movimento num campo \(\vec B\)</td></tr>
+        <tr><td>Força de Lorentz</td><td>\(\vec F=q(\vec E+\vec v\times\vec B)\)</td><td>Campos elétrico e magnético juntos</td></tr>
+        <tr><td>Seletor de velocidades</td><td>\(v=E/B\)</td><td>\(\vec E\perp\vec B\perp\vec v\), partícula passa reto</td></tr>
+        <tr><td>Trabalho e potência de \(\vec B\)</td><td>\(W_B=0,\ P_B=\vec F_m\cdot\vec v=0\)</td><td>Sempre (Exemplo 21); \(K\) e \(|\vec v|\) constantes</td></tr>
+        <tr><td>Raio da órbita</td><td>\(r=\dfrac{mv_\perp}{|q|B}\)</td><td>Movimento circular/hélice (Exemplo 22)</td></tr>
+        <tr><td>Frequência de cíclotron</td><td>\(\omega=\dfrac{|q|B}{m}\), \(\vec\omega=-\dfrac{q}{m}\vec B\), \(T=\dfrac{2\pi m}{|q|B}\)</td><td>Não depende de \(v\)</td></tr>
+        <tr><td>Passo da hélice</td><td>\(p=v_\parallel T\)</td><td>\(\vec v\) inclinada em relação a \(\vec B\)</td></tr>
+        <tr><td>Fluxo magnético</td><td>\(\Phi_m=\int\vec B\cdot d\vec S\); uniforme: \(BS\cos\theta\)</td><td>Superfície aberta; unidade Wb = T·m²</td></tr>
+        <tr><td>Gauss do magnetismo</td><td>\(\oint\vec B\cdot d\vec S=0\)</td><td>Superfície fechada: não há monopolos</td></tr>
+        <tr><td>Unidades</td><td>\(1\ \text{T}=10^4\ \text{G}\)</td><td>(o slide traz o expoente invertido)</td></tr>
+      </table></div>
+
+      <section class="note note-warn"><div class="cue"><span>Na prova</span></div><div class="note-body">
+        <h3>Erros comuns</h3>
+        <ul>
+          <li><strong>Esquecer o sinal da carga.</strong> Calcule \(\vec v\times\vec B\) primeiro e só depois multiplique por \(q\) com sinal. Elétron: tudo ao contrário.</li>
+          <li><strong>Inverter a ordem</strong> do produto: é \(\vec v\times\vec B\), não \(\vec B\times\vec v\).</li>
+          <li><strong>Ler ⊗ como \(+\hat k\).</strong> ⊗ entra na folha: \(-\hat k\) (com \(\hat\imath\) à direita e \(\hat\jmath\) para cima).</li>
+          <li><strong>Dizer que \(\vec B\) acelera ou freia</strong> a partícula. Ele só muda a direção; \(W_B=0\).</li>
+          <li><strong>Usar \(v\) inteira no raio</strong> da hélice: é \(v_\perp\).</li>
+          <li><strong>Resposta escalar quando pedem vetor.</strong> O professor quer \(\vec F\) com versor (ex.: \(-qvB\,\hat\imath\)).</li>
+          <li><strong>Fluxo:</strong> o sinal depende da escolha de \(\hat n\). Em superfície fechada, \(\hat n\) aponta para fora e a soma é zero.</li>
+        </ul>
+      </div></section>
+    </article>
+
+    <nav class="chapter-nav"><a class="prev" href="index.html"><small>← Anterior</small>Início</a><a class="next" href="cap2.html"><small>Próximo →</small>II · Torque e dipolo magnético</a></nav>
+  </main>
+</div>
+
+<footer class="footer">
+  <p><strong>Física III · Magnetismo, indução e ondas</strong> · Física para IME (IFUSP) · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir dos slides e do simulado do Prof. Julio A. Larrea J. (IFUSP) e de Young &amp; Freedman, <em>Física III</em>, 14ª ed. Texto, simulações e erros são das notas; não é material oficial da disciplina.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/core.js"></script>
+<script src="assets/cap1.js"></script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>III · Lei de Biot–Savart — Física III para IME</title>
+<meta name="description" content="Como uma corrente cria campo magnético: a lei de Biot–Savart, o fio infinito, a espira, o solenoide de seção quadrada e a força entre fios paralelos.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('fis3-tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Física III <em>para IME</em></span></a>
+  <nav class="chapnav" aria-label="Capítulos"><a href="cap1.html" title="Força magnética">I</a><a href="cap2.html" title="Torque e dipolo magnético">II</a><a class="on" href="cap3.html" title="Lei de Biot–Savart">III</a><a href="cap4.html" title="Lei de Ampère">IV</a><a href="cap5.html" title="Meios magnéticos">V</a><a href="cap6.html" title="Indução magnética">VI</a><a href="cap7.html" title="Indutância e energia magnética">VII</a><a href="cap8.html" title="Maxwell e ondas">VIII</a><a class="prova" href="prova.html" title="Resolução da prova">Prova</a></nav>
+  <button class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro"><span></span></button>
+</header>
+
+<section class="chapter-hero" data-num="III">
+  <div class="chapter-hero-in">
+    <p class="eyebrow">Capítulo III · Slides “Lei de Biot–Savart”</p>
+    <h1>Lei de Biot–Savart</h1>
+    <p class="lede">Nos capítulos anteriores o campo magnético “já estava lá”. Agora a pergunta se inverte: dada uma corrente, qual campo ela cria em cada ponto do espaço? A resposta é somar pedacinhos de fio, um por um.</p>
+    <div class="meta"><span>Sears §28.1–28.5 · p. 264–277</span><span>Exercícios 26 e 27 dos slides</span><span>5 simulações</span></div>
+  </div>
+</section>
+
+<div class="layout">
+  <nav class="toc" aria-label="Neste capítulo">
+    <p class="toc-h">Neste capítulo</p>
+    <ol>
+      <li><a href="#m1"><span class="toc-num">1</span>Corrente cria campo (Oersted)</a></li>
+      <li><a href="#m2"><span class="toc-num">2</span>A lei de Biot–Savart</a></li>
+      <li><a href="#m3"><span class="toc-num">3</span>Fio retilíneo (Exercício 26)</a></li>
+      <li><a href="#m4"><span class="toc-num">4</span>Espira circular</a></li>
+      <li><a href="#m5"><span class="toc-num">5</span>Solenoide quadrado (Exercício 27)</a></li>
+      <li><a href="#m6"><span class="toc-num">6</span>Força entre fios paralelos</a></li>
+      <li><a href="#m7"><span class="toc-num">7</span>Biot–Savart ou Ampère?</a></li>
+      <li><a href="#resumo"><span class="toc-num">✓</span>Resumo e fórmulas</a></li>
+    </ol>
+  </nav>
+  <main id="conteudo" class="content">
+
+    <!-- ============ M1 ============ -->
+    <article class="modulo" id="m1">
+      <header class="modulo-h"><span class="modulo-num">Módulo 1</span><h2>Corrente cria campo: a descoberta de Oersted</h2></header>
+
+      <section class="note"><div class="cue"><span>Objetivos</span></div><div class="note-body">
+        <h3>O que o professor quer deste tema</h3>
+        <ul>
+          <li>Entender a lei de Biot–Savart: o campo \(\vec B\) produzido por uma corrente que percorre um fio de <em>qualquer</em> forma.</li>
+          <li>Calcular \(\vec B\) para fios em trajetórias <strong>abertas</strong> (fio reto) e <strong>fechadas</strong> (espira, solenoide).</li>
+          <li>Entender a força magnética entre dois fios com corrente.</li>
+          <li>Comparar forças elétricas e magnéticas (quem atrai quem).</li>
+        </ul>
+      </section>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Toda corrente é um pequeno ímã <span class="nivel nivel-1">básico</span></h3>
+        <p>Em 1820, Hans Christian Oersted aproximou uma bússola de um fio ligado a uma pilha. Quando a corrente passou, a agulha girou. Foi a primeira prova de que <strong>eletricidade em movimento cria magnetismo</strong>.</p>
+        <p>Pense na corrente como água correndo num cano: em volta do cano aparece um “redemoinho” invisível. Esse redemoinho é o campo magnético. Ele não aponta para longe do fio (como o campo elétrico de uma carga); ele <strong>gira em volta</strong> do fio.</p>
+        <p>Para saber o sentido do giro use a <strong>regra da mão direita</strong>: polegar no sentido da corrente, os dedos se curvam no sentido de \(\vec B\).</p>
+      </div></section>
+
+      <div class="widget" id="w-oersted">
+        <p class="w-title lab">Bússola de Oersted</p>
+        <p class="w-caption">Visto de cima: um fio passa <em>por cima</em> da bússola, na direção norte–sul. Aperte “Fechar o circuito” (a ligação dura só 2 segundos, como deve ser na vida real). Mude a corrente e a altura do fio e veja quanto a agulha desvia. A agulha aponta para a soma do campo da Terra com o campo do fio.</p>
+        <canvas class="w-canvas" height="300"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Corrente I <output data-o="I"></output></span><input type="range" data-k="I" min="0.2" max="5" step="0.1" value="1.5"></label>
+          <label class="w-control"><span>Altura do fio h <output data-o="h"></output></span><input type="range" data-k="h" min="0.5" max="4" step="0.1" value="1"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="on">Fechar o circuito (2 s)</button><button class="w-btn" data-act="flip">Inverter a pilha</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <section class="note note-lab"><div class="cue"><span>Experimento</span></div><div class="note-body">
+        <h3>Refaça Oersted em casa</h3>
+        <p><strong>Material:</strong> uma bússola (ou o app de bússola do celular, que usa um magnetômetro), uma pilha AA ou D, ~30 cm de fio de cobre (pode ser um cabo de fone descascado nas pontas) e fita adesiva.</p>
+        <ol class="steps">
+          <li>Deixe a bússola parada e gire o fio até ele ficar <strong>paralelo à agulha</strong> (norte–sul), passando logo acima dela.</li>
+          <li>Prenda uma ponta do fio num polo da pilha com fita. Encoste a outra ponta no outro polo <strong>só por 1–2 segundos</strong>.</li>
+          <li>A agulha gira. Inverta a pilha: ela gira para o outro lado. Passe o fio <em>por baixo</em> da bússola: o sentido também se inverte.</li>
+        </ol>
+        <p><strong>Física:</strong> o fio cria \(B=\mu_0 I/(2\pi h)\). Com \(I\approx 2\ \text{A}\) (pilha em curto) e \(h\approx 1\ \text{cm}\), \(B\approx 40\ \mu\text{T}\), maior que o campo horizontal da Terra em São Paulo (~18 μT): por isso o desvio é grande.</p>
+        <aside class="box box-warn"><div class="box-h">Segurança</div><p>Isso é um <strong>curto-circuito</strong>: a pilha e o fio esquentam rápido. Contato de poucos segundos, nunca use bateria de carro, de celular (lítio) ou tomada. Se a pilha esquentar, solte e espere esfriar.</p></aside>
+      </div></section>
+      <p class="fonte"><span>Sears</span> §28.1–28.2, p. 264–268.</p>
+    </article>
+
+    <!-- ============ M2 ============ -->
+    <article class="modulo" id="m2">
+      <header class="modulo-h"><span class="modulo-num">Módulo 2</span><h2>A lei de Biot–Savart</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Picar o fio em pedacinhos <span class="nivel nivel-1">básico</span></h3>
+        <p>Um fio de forma complicada é difícil. Então picamos o fio em pedacinhos tão curtos que cada um é praticamente reto. Cada pedacinho contribui com um “campinho” \(d\vec B\) no ponto P que nos interessa. O campo total é a <strong>soma (integral) vetorial</strong> de todos os campinhos.</p>
+        <p>É a mesma estratégia do campo elétrico de uma distribuição de cargas (lei de Coulomb + soma). A diferença é a geometria: aqui entra um <strong>produto vetorial</strong>, porque o campo magnético gira em volta da corrente.</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A fórmula</span></div><div class="note-body">
+        <h3>O enunciado do slide <span class="nivel nivel-2">intermediário</span></h3>
+        $$d\vec B=\frac{\mu_0}{4\pi}\,\frac{i\,d\vec l\times\hat r}{r^2}\qquad(\text{Sears Eq. 28.6, p. 267})$$
+        <figure class="figure">
+          <svg viewBox="0 0 460 230" width="460" role="img" aria-label="Elemento de corrente i dl, vetor r até o ponto P e campo dB saindo do plano">
+            <defs><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="currentColor"/></marker></defs>
+            <path d="M40,210 C90,170 120,90 210,60 S360,40 420,20" fill="none" stroke="var(--muted)" stroke-width="5" stroke-linecap="round"/>
+            <g style="color:var(--accent)"><line x1="118" y1="118" x2="150" y2="86" stroke="var(--accent)" stroke-width="3.5" marker-end="url(#a3)"/></g>
+            <text x="100" y="92" fill="var(--accent)" font-family="IBM Plex Sans" font-size="16" font-weight="600">i dl</text>
+            <g style="color:var(--cyan)"><line x1="134" y1="102" x2="330" y2="170" stroke="var(--cyan)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a3)"/></g>
+            <text x="225" y="152" fill="var(--cyan)" font-family="IBM Plex Sans" font-size="16" font-style="italic">r</text>
+            <g style="color:var(--cyan)"><line x1="134" y1="102" x2="160" y2="111" stroke="var(--cyan)" stroke-width="3" marker-end="url(#a3)"/></g>
+            <text x="150" y="128" fill="var(--cyan)" font-family="IBM Plex Sans" font-size="14">r̂</text>
+            <circle cx="338" cy="173" r="4" fill="var(--ink)"/><text x="346" y="194" fill="var(--ink)" font-family="IBM Plex Sans" font-size="16" font-weight="600">P</text>
+            <circle cx="380" cy="150" r="11" fill="none" stroke="var(--ok)" stroke-width="2"/><circle cx="380" cy="150" r="3.5" fill="var(--ok)"/>
+            <text x="396" y="146" fill="var(--ok)" font-family="IBM Plex Sans" font-size="15">dB (saindo)</text>
+            <text x="40" y="30" fill="var(--muted)" font-family="IBM Plex Sans" font-size="13">fio com corrente i</text>
+          </svg>
+          <figcaption>O pedacinho \(i\,d\vec l\) aponta no sentido da corrente; \(\hat r\) vai <strong>do pedacinho até P</strong>. O campinho \(d\vec B\) é perpendicular aos dois (aqui, sai do papel).</figcaption>
+        </figure>
+        <div class="table-wrap"><table>
+          <tr><th>Símbolo</th><th>Significado</th><th>Unidade</th></tr>
+          <tr><td>\(\mu_0\)</td><td>permeabilidade magnética do vácuo, \(4\pi\times10^{-7}\)</td><td>T·m/A = N/A²</td></tr>
+          <tr><td>\(i\)</td><td>corrente no fio</td><td>A</td></tr>
+          <tr><td>\(d\vec l\)</td><td>pedacinho de fio, apontando no sentido da corrente</td><td>m</td></tr>
+          <tr><td>\(\vec r,\ r,\ \hat r\)</td><td>vetor <em>do pedacinho até P</em>, seu módulo e seu unitário \(\hat r=\vec r/r\)</td><td>m, m, —</td></tr>
+          <tr><td>\(d\vec B\)</td><td>contribuição daquele pedacinho para o campo em P</td><td>T</td></tr>
+        </table></div>
+        <p>Três leituras rápidas da fórmula:</p>
+        <ul>
+          <li><strong>Cai com \(1/r^2\)</strong>, como Coulomb.</li>
+          <li><strong>Depende do ângulo</strong>: \(|d\vec l\times\hat r|=dl\,\sin\theta\). Pontos na própria linha do pedacinho (\(\theta=0\)) não recebem nada dele.</li>
+          <li><strong>Direção</strong>: perpendicular a \(d\vec l\) e a \(\hat r\) (regra da mão direita do produto vetorial). Por isso o campo “gira” em volta do fio.</li>
+        </ul>
+        <p>Uma forma equivalente, muito útil nas contas, usa o vetor inteiro: \(\dfrac{d\vec l\times\hat r}{r^2}=\dfrac{d\vec l\times\vec r}{r^3}\).</p>
+      </div></section>
+
+      <section class="note note-key"><div class="cue"><span>Receita</span></div><div class="note-body">
+        <h3>Como usar Biot–Savart em 5 passos <span class="nivel nivel-3">prova</span></h3>
+        <p>O slide insiste: <em>“o importante é saber definir o elemento \(d\vec l\) de acordo com a simetria do condutor e com a distância onde se quer calcular o campo”</em>.</p>
+        <ol class="steps">
+          <li><strong>Origem e eixos pela simetria.</strong> Fio reto → eixo \(z\) ao longo do fio (coordenadas cilíndricas \(\hat\rho,\hat\varphi,\hat k\)). Espira → origem no centro, eixo \(z\) perpendicular a ela.</li>
+          <li><strong>Escreva \(d\vec l\)</strong> com a coordenada que varre o fio: \(d\vec l=dx\,\hat k\) (fio reto), \(d\vec l=a\,d\varphi\,\hat\varphi\) (espira de raio \(a\)), \(d\vec l=dx\,\hat\imath\) (lado de um quadrado)…</li>
+          <li><strong>Escreva \(\vec r=\vec r_P-\vec r_{\text{fio}}\)</strong> (posição de P menos a posição do pedacinho) e \(r=|\vec r|\).</li>
+          <li><strong>Calcule \(d\vec l\times\vec r\)</strong> componente a componente. Veja quais componentes <strong>se cancelam por simetria</strong> antes de integrar.</li>
+          <li><strong>Escolha os limites</strong> da integral (o fio inteiro) e integre. Responda <strong>com vetor</strong>: módulo e unitário.</li>
+        </ol>
+      </div></section>
+
+      <div class="widget" id="w-construtor">
+        <p class="w-title">Construtor de Biot–Savart</p>
+        <p class="w-caption">O fio (ou a espira) é picado em N pedaços. Cada pedaço é colorido pela sua contribuição \(dB_z\) no ponto P (azul = saindo da tela ⊙, rosa = entrando ⊗). <strong>Arraste o ponto P</strong>. Aumente N e veja a soma convergir para o valor exato. O feixe tracejado mostra, um de cada vez, o vetor \(\vec r\) que vai do pedaço até P.</p>
+        <canvas class="w-canvas" height="360"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Número de pedaços N <output data-o="N"></output></span><input type="range" data-k="N" min="2" max="60" step="1" value="8"></label>
+          <label class="w-control"><span>Corrente i <output data-o="I"></output></span><input type="range" data-k="I" min="1" max="10" step="0.5" value="5"></label>
+          <label class="w-control"><span>Tamanho do fio <output data-o="L"></output></span><input type="range" data-k="L" min="2" max="14" step="0.5" value="8"></label>
+        </div>
+        <div class="w-row"><span class="lbl">Forma:</span><button class="w-btn on" data-act="fio">Fio reto finito</button><button class="w-btn" data-act="espira">Espira circular</button><button class="w-btn" data-act="quadrado">Espira quadrada</button><button class="w-btn on" data-act="scan">Varredura</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <details class="reveal"><summary>Estudante: por que o campo do pedacinho é perpendicular a \(d\vec l\) e a \(\vec r\)?</summary><div>
+        <p>É o que diz o produto vetorial, e ele vem da experiência: a força magnética \(q\vec v\times\vec B\) já era perpendicular à velocidade. Uma carga em movimento cria um campo \(\vec B=\frac{\mu_0}{4\pi}\frac{q\,\vec v\times\hat r}{r^2}\) (Sears Eq. 28.2, p. 264). Um pedacinho de fio é um monte de cargas andando: troque \(q\vec v\) por \(i\,d\vec l\) e você obtém Biot–Savart.</p>
+      </div></details>
+      <p class="fonte"><span>Sears</span> §28.1–28.2, p. 264–268; Eq. 28.3 (μ0, p. 265), Eq. 28.6 (p. 267).</p>
+    </article>
+
+    <!-- ============ M3 ============ -->
+    <article class="modulo" id="m3">
+      <header class="modulo-h"><span class="modulo-num">Módulo 3</span><h2>O fio retilíneo infinito (Exercício 26)</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Círculos em volta do fio <span class="nivel nivel-1">básico</span></h3>
+        <p>As linhas de campo de um fio reto são <strong>círculos centrados no fio</strong>. O campo é mais forte perto e enfraquece como \(1/\rho\) (dobrar a distância corta o campo pela metade). Em coordenadas cilíndricas, a direção “em volta” é o unitário azimutal \(\hat\varphi\).</p>
+      </div></section>
+
+      <div class="widget" id="w-fio">
+        <p class="w-title">Campo de um fio reto: bússolas e B(ρ)</p>
+        <p class="w-caption">O fio atravessa a tela (⊙ = corrente saindo, ⊗ = entrando). As bússolas se alinham com \(\vec B\). <strong>Arraste a sonda</strong> e compare o valor com a curva \(B=\mu_0 i/(2\pi\rho)\) à direita. A linha tracejada horizontal é o campo da Terra (~20 μT).</p>
+        <canvas class="w-canvas" height="320"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Corrente i <output data-o="I"></output></span><input type="range" data-k="I" min="1" max="30" step="1" value="10"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="flip">Inverter a corrente</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <div class="worked"><div class="worked-h"><span>Exercício 26 dos slides</span> Campo no ponto P de um fio condutor (infinito) com corrente i</div>
+        <div class="two">
+          <figure class="figure">
+            <svg viewBox="0 0 300 300" width="300" role="img" aria-label="Fio vertical com elemento dl na altura x, ponto P a distância rho da origem, ângulo theta entre o fio e r">
+              <defs><marker id="a3b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="currentColor"/></marker></defs>
+              <rect x="62" y="10" width="20" height="280" rx="6" fill="var(--surface-2)" stroke="var(--muted)"/>
+              <g style="color:var(--accent)"><line x1="72" y1="90" x2="72" y2="60" stroke="var(--accent)" stroke-width="3" marker-end="url(#a3b)"/><line x1="72" y1="260" x2="72" y2="220" stroke="var(--accent)" stroke-width="2.5" marker-end="url(#a3b)"/></g>
+              <text x="90" y="66" fill="var(--accent)" font-family="IBM Plex Sans" font-size="15">dl = dx k̂</text>
+              <text x="86" y="250" fill="var(--accent)" font-family="IBM Plex Sans" font-size="15">i</text>
+              <line x1="30" y1="80" x2="50" y2="80" stroke="var(--muted)"/><line x1="30" y1="170" x2="50" y2="170" stroke="var(--muted)"/><line x1="40" y1="80" x2="40" y2="170" stroke="var(--muted)"/>
+              <text x="22" y="130" fill="var(--ink)" font-family="IBM Plex Sans" font-size="15" font-style="italic">x</text>
+              <g style="color:var(--cyan)"><line x1="72" y1="80" x2="226" y2="168" stroke="var(--cyan)" stroke-width="2" marker-end="url(#a3b)"/></g>
+              <text x="150" y="112" fill="var(--cyan)" font-family="IBM Plex Sans" font-size="16" font-style="italic">r</text>
+              <path d="M72,112 A32,32 0 0 0 100,96" fill="none" stroke="var(--ink)"/>
+              <text x="82" y="130" fill="var(--ink)" font-family="IBM Plex Sans" font-size="14">θ</text>
+              <line x1="72" y1="170" x2="230" y2="170" stroke="var(--muted)" stroke-dasharray="5 4"/>
+              <text x="58" y="176" fill="var(--ink)" font-family="IBM Plex Sans" font-size="14" text-anchor="end">0</text>
+              <text x="150" y="190" fill="var(--ink)" font-family="IBM Plex Sans" font-size="15" font-style="italic">ρ</text>
+              <circle cx="230" cy="170" r="4" fill="var(--ink)"/><text x="238" y="164" fill="var(--ink)" font-family="IBM Plex Sans" font-size="16" font-weight="600">P</text>
+              <circle cx="262" cy="214" r="10" fill="none" stroke="var(--ok)" stroke-width="2"/><line x1="255" y1="207" x2="269" y2="221" stroke="var(--ok)" stroke-width="2"/><line x1="269" y1="207" x2="255" y2="221" stroke="var(--ok)" stroke-width="2"/>
+              <text x="228" y="246" fill="var(--ok)" font-family="IBM Plex Sans" font-size="13">B φ̂ (entra)</text>
+            </svg>
+            <figcaption>Geometria do slide: o professor chama de \(x\) a coordenada <em>ao longo do fio</em> (direção \(\hat k\)). Com o fio no plano do papel e P à direita, \(\hat\varphi\) em P entra no papel.</figcaption>
+          </figure>
+          <div>
+            <p><strong>i) Origem.</strong> Como o fio é infinito, nenhum ponto dele é especial; colocamos a origem no pé da perpendicular que sai de P. Assim \(\vec r_P=\rho\,\hat\rho\).</p>
+            <p><strong>ii) Lei de Biot–Savart</strong> para o pedacinho \(i\,d\vec l\):</p>
+            $$d\vec B=\frac{\mu_0 i}{4\pi}\,\frac{d\vec l\times\hat r}{r^2}.$$
+            <p><strong>iv) \(d\vec l\) pela geometria:</strong> o pedacinho está na altura \(x\): \(d\vec l=dx\,\hat k\). O vetor do pedacinho até P é</p>
+            $$\vec r=\rho\,\hat\rho-x\,\hat k,\qquad r=\sqrt{\rho^2+x^2}.$$
+          </div>
+        </div>
+        <ol class="steps">
+          <li><strong>Produto vetorial.</strong> \(d\vec l\times\vec r=dx\,\hat k\times(\rho\,\hat\rho-x\,\hat k)=\rho\,dx\,(\hat k\times\hat\rho)=\rho\,dx\,\hat\varphi\), pois \(\hat k\times\hat\rho=\hat\varphi\) e \(\hat k\times\hat k=0\). Conclusão importante: <strong>todos os pedacinhos dão \(d\vec B\) no mesmo sentido \(\hat\varphi\)</strong>. Então basta somar módulos:
+            $$dB=\frac{\mu_0 i}{4\pi}\,\frac{\rho\,dx}{(\rho^2+x^2)^{3/2}}=\frac{\mu_0 i}{4\pi}\,\frac{\sin\theta\,dx}{r^2}.$$</li>
+          <li><strong>Trocar \(x\) por \(\theta\)</strong> (o ângulo entre o fio e \(\vec r\), como no slide): \(\tan\theta=\rho/x\Rightarrow x=\rho\cot\theta\), \(dx=-\rho\csc^2\theta\,d\theta\), \(r=\rho/\sin\theta\). Substituindo,
+            $$\frac{\sin\theta\,dx}{r^2}=\frac{\sin\theta\,(-\rho\csc^2\theta\,d\theta)}{\rho^2\csc^2\theta}=-\frac{\sin\theta\,d\theta}{\rho}.$$</li>
+          <li><strong>iii) Limites de integração</strong> (como no slide): para a metade de cima, \(x=0\Rightarrow\theta=\pi/2\) e \(x\to\infty\Rightarrow\theta\to0\). A metade de baixo contribui igual, por simetria; logo multiplicamos por 2:
+            $$B=2\cdot\frac{\mu_0 i}{4\pi\rho}\int_{\pi/2}^{0}(-\sin\theta)\,d\theta=\frac{\mu_0 i}{2\pi\rho}\int_{0}^{\pi/2}\sin\theta\,d\theta=\frac{\mu_0 i}{2\pi\rho}.$$</li>
+          <li><strong>Resposta vetorial</strong> (unitário azimutal das coordenadas cilíndricas):
+            $$\boxed{\vec B=\frac{\mu_0\, i}{2\pi\rho}\,\hat\varphi}\qquad(\text{Sears Eq. 28.9, p. 270})$$</li>
+        </ol>
+        <p><strong>Número para sentir:</strong> \(i=10\ \text{A}\), \(\rho=5\ \text{cm}\): \(B=\dfrac{(4\pi\times10^{-7})(10)}{2\pi(0{,}05)}=4{,}0\times10^{-5}\ \text{T}=40\ \mu\text{T}\), da ordem do campo da Terra. Por isso fios de casa mal mexem uma bússola a meio metro.</p>
+        <p>O slide observa que esse resultado é o mesmo da lei de Ampère (capítulo IV): lá ele sai em duas linhas porque a simetria é altíssima.</p>
+      </div>
+
+      <section class="note"><div class="cue"><span>Avançado</span></div><div class="note-body">
+        <h3>E se o fio for finito? <span class="nivel nivel-3">avançado</span></h3>
+        <p>Faça a mesma integral, mas de \(x_1\) até \(x_2\) (coordenadas das pontas, medidas a partir do pé da perpendicular por P). Como \(\int\frac{\rho\,dx}{(\rho^2+x^2)^{3/2}}=\frac{x}{\rho\sqrt{\rho^2+x^2}}\):</p>
+        $$\vec B=\frac{\mu_0 i}{4\pi\rho}\left[\frac{x_2}{\sqrt{x_2^2+\rho^2}}-\frac{x_1}{\sqrt{x_1^2+\rho^2}}\right]\hat\varphi=\frac{\mu_0 i}{4\pi\rho}\,(\cos\alpha_2+\cos\alpha_1)\,\hat\varphi,$$
+        <p>onde \(\alpha_1,\alpha_2\) são os ângulos entre a direção do fio e a reta que liga P a cada ponta (com \(x_1&lt;0&lt;x_2\); uma ponta no infinito tem \(\alpha=0\), \(\cos\alpha=1\)). Fio simétrico de comprimento \(2\ell\): \(B=\frac{\mu_0 i}{2\pi\rho}\frac{\ell}{\sqrt{\ell^2+\rho^2}}\) (Sears Eq. 28.8, p. 270). Para \(\ell\to\infty\) volta \(\mu_0 i/(2\pi\rho)\). Para metade de um fio infinito (P em frente a uma ponta) dá exatamente a <strong>metade</strong>: \(\mu_0 i/(4\pi\rho)\). Essa fórmula é a peça de Lego do quadrado (Módulo 5) e do construtor acima.</p>
+      </div></section>
+
+      <div class="quiz"><p class="quiz-q">Um fio vertical leva corrente para cima. Você está ao norte dele. O campo no seu ponto aponta para…</p>
+        <div class="quiz-opts"><button>o norte (afastando-se do fio)</button><button data-ok>o oeste</button><button>o leste</button><button>para cima, paralelo ao fio</button></div>
+        <p class="quiz-fb">\(\hat k\times\hat\rho=\hat\varphi\). Com \(\hat k\) para cima e \(\hat\rho\) para o norte, \(\hat\varphi=\text{cima}\times\text{norte}=\) oeste (confira: leste × norte = cima, então cima × norte = oeste). Campo magnético de fio nunca aponta radialmente nem ao longo do fio.</p></div>
+      <p class="fonte"><span>Sears</span> §28.3, p. 269–271; Eqs. 28.8–28.9 (p. 270).</p>
+    </article>
+
+    <!-- ============ M4 ============ -->
+    <article class="modulo" id="m4">
+      <header class="modulo-h"><span class="modulo-num">Módulo 4</span><h2>A espira circular</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Um fio enrolado concentra o campo no meio <span class="nivel nivel-1">básico</span></h3>
+        <p>Dobre o fio em um anel. Agora todos os pedacinhos “giram” seus campinhos no mesmo sentido <strong>dentro</strong> do anel: no centro todos se somam. Uma espira é o ímã mais simples que existe: o polo norte é o lado de onde você vê a corrente girando no sentido anti-horário.</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A conta</span></div><div class="note-body">
+        <h3>Campo no eixo da espira <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Espira de raio \(a\) no plano \(xy\), centro na origem, corrente anti-horária vista de cima; P no eixo em \((0,0,z)\).</p>
+        <ol class="steps">
+          <li>\(d\vec l=a\,d\varphi\,\hat\varphi\) e \(\vec r=z\,\hat k-a\,\hat\rho\), \(r=\sqrt{a^2+z^2}\) (igual para todos os pedacinhos!).</li>
+          <li>\(d\vec l\times\vec r=a\,d\varphi\,(z\,\hat\varphi\times\hat k-a\,\hat\varphi\times\hat\rho)=a\,d\varphi\,(z\,\hat\rho+a\,\hat k)\).</li>
+          <li>A parte \(z\,\hat\rho\) aponta para fora, em direções que giram com \(\varphi\): pedacinhos opostos se cancelam (\(\int_0^{2\pi}\hat\rho\,d\varphi=0\)). Sobra só a parte em \(\hat k\):
+            $$\vec B=\frac{\mu_0 i}{4\pi}\frac{a^2}{(a^2+z^2)^{3/2}}\int_0^{2\pi}d\varphi\;\hat k=\boxed{\frac{\mu_0\, i\,a^2}{2\,(a^2+z^2)^{3/2}}\,\hat k}\qquad(\text{Sears Eq. 28.15, p. 275})$$</li>
+          <li><strong>No centro</strong> (\(z=0\)): \(\vec B=\dfrac{\mu_0 i}{2a}\hat k\); com \(N\) espiras juntas, multiplique por \(N\) (Sears Eq. 28.17, p. 276).</li>
+          <li><strong>Longe</strong> (\(|z|\gg a\)): \(B\approx\dfrac{\mu_0\,i\,\pi a^2}{2\pi|z|^3}=\dfrac{\mu_0\,m}{2\pi |z|^3}\), com \(m=i\pi a^2\): é o campo de um <strong>dipolo magnético</strong> (capítulo II), que cai com \(1/z^3\).</li>
+        </ol>
+        <p><strong>Exemplo:</strong> bobina de 50 espiras, \(a=5\ \text{cm}\), \(i=2\ \text{A}\): no centro \(B=50\cdot\frac{4\pi\times10^{-7}\cdot 2}{2\cdot0{,}05}=1{,}26\times10^{-3}\ \text{T}\approx 1{,}3\ \text{mT}\).</p>
+      </div></section>
+
+      <div class="quiz"><p class="quiz-q">No eixo de uma espira, a que distância z o campo cai para 1/8 do valor no centro?</p>
+        <div class="quiz-opts"><button>z = a</button><button data-ok>z = √3 · a</button><button>z = 2a</button><button>z = 8a</button></div>
+        <p class="quiz-fb">\(B(z)/B(0)=a^3/(a^2+z^2)^{3/2}=1/8\Rightarrow a^2+z^2=4a^2\Rightarrow z=\sqrt3\,a\). (Em z = a o campo já caiu para \(1/2^{3/2}\approx 0{,}35\).)</p></div>
+      <p class="fonte"><span>Sears</span> §28.5, p. 274–277; Eqs. 28.15–28.17; Exemplo 28.6 (p. 276).</p>
+    </article>
+
+    <!-- ============ M5 ============ -->
+    <article class="modulo" id="m5">
+      <header class="modulo-h"><span class="modulo-num">Módulo 5</span><h2>Solenoide de seção quadrada (Exercício 27)</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Empilhar espiras deixa o campo uniforme <span class="nivel nivel-1">básico</span></h3>
+        <p>Um solenoide é uma pilha de espiras (o slide mostra as bobinas de <strong>válvulas solenoides</strong> hidráulicas e pneumáticas). Cada espira sozinha dá um campo que é forte perto dela e fraco longe. Empilhando muitas, as “colinas” de campo se juntam numa <strong>planície</strong>: dentro de um solenoide longo o campo é quase o mesmo em todo lugar.</p>
+      </div></section>
+
+      <div class="worked"><div class="worked-h"><span>Exercício 27 dos slides</span> Solenoide de seção quadrada (lado a), N espiras por unidade de comprimento, corrente I, comprimento L muito grande</div>
+        <p>(a) Encontre \(\vec B\) em qualquer ponto do eixo de simetria. (b) Interprete a dependência em \(z\).</p>
+        <p><strong>Estratégia:</strong> (1) campo de <em>uma</em> espira quadrada no seu eixo, por Biot–Savart, lado a lado (como nos slides); (2) somar as espiras ao longo do comprimento.</p>
+
+        <figure class="figure">
+          <svg viewBox="0 0 420 260" width="420" role="img" aria-label="Espira quadrada no plano xy com lados esquerdo e direito, vetores r1 e r2 até o ponto (0,0,z)">
+            <defs><marker id="a3c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10z" fill="currentColor"/></marker></defs>
+            <polygon points="110,170 290,170 340,120 160,120" fill="none" stroke="var(--ok)" stroke-width="3"/>
+            <g style="color:var(--muted)"><line x1="225" y1="145" x2="225" y2="20" stroke="var(--muted)" marker-end="url(#a3c)"/><line x1="225" y1="145" x2="400" y2="145" stroke="var(--muted)" marker-end="url(#a3c)"/><line x1="225" y1="145" x2="150" y2="240" stroke="var(--muted)" marker-end="url(#a3c)"/></g>
+            <text x="232" y="26" fill="var(--ink)" font-family="IBM Plex Sans" font-size="14">z (k̂)</text>
+            <text x="388" y="138" fill="var(--ink)" font-family="IBM Plex Sans" font-size="14">y (ĵ)</text>
+            <text x="134" y="252" fill="var(--ink)" font-family="IBM Plex Sans" font-size="14">x (î)</text>
+            <circle cx="225" cy="55" r="4" fill="var(--ink)"/><text x="232" y="58" fill="var(--ink)" font-family="IBM Plex Sans" font-size="13">(0,0,z)</text>
+            <g style="color:var(--cyan)"><line x1="138" y1="150" x2="223" y2="58" stroke="var(--cyan)" stroke-width="1.8" marker-end="url(#a3c)"/><line x1="312" y1="150" x2="227" y2="58" stroke="var(--cyan)" stroke-width="1.8" marker-end="url(#a3c)"/></g>
+            <g style="color:var(--accent)"><line x1="126" y1="158" x2="146" y2="138" stroke="var(--accent)" stroke-width="4" marker-end="url(#a3c)"/><line x1="322" y1="138" x2="302" y2="158" stroke="var(--accent)" stroke-width="4" marker-end="url(#a3c)"/></g>
+            <text x="40" y="150" fill="var(--accent)" font-family="IBM Plex Sans" font-size="13">dl = dx (î)</text>
+            <text x="336" y="170" fill="var(--accent)" font-family="IBM Plex Sans" font-size="13">dl = dx (−î)</text>
+            <text x="20" y="184" fill="var(--muted)" font-family="IBM Plex Sans" font-size="12">lado (i): y = −a/2</text>
+            <text x="300" y="190" fill="var(--muted)" font-family="IBM Plex Sans" font-size="12">lado (d): y = +a/2</text>
+          </svg>
+          <figcaption>Os lados paralelos a \(x\): esquerdo (i) em \(y=-a/2\) com \(d\vec l=dx\,\hat\imath\) e direito (d) em \(y=+a/2\) com \(d\vec l=dx\,(-\hat\imath)\). A corrente circula no sentido anti-horário visto de cima (de \(+z\)).</figcaption>
+        </figure>
+
+        <ol class="steps">
+          <li><strong>Lado esquerdo (i).</strong> \(\vec r_1^{(i)}=(x,-\tfrac a2,0)\), \(\vec r_2=(0,0,z)\), então \(\vec r=\vec r_2-\vec r_1^{(i)}=(-x,\tfrac a2,z)\) e
+            $$d\vec l\times\vec r=dx\,\hat\imath\times(-x\,\hat\imath+\tfrac a2\,\hat\jmath+z\,\hat k)=dx\left(\tfrac a2\,\hat k-z\,\hat\jmath\right).$$</li>
+          <li><strong>Lado direito (d).</strong> \(\vec r=(-x,-\tfrac a2,z)\) e \(d\vec l=-dx\,\hat\imath\):
+            $$d\vec l\times\vec r=-dx\,\hat\imath\times(-x\,\hat\imath-\tfrac a2\,\hat\jmath+z\,\hat k)=dx\left(\tfrac a2\,\hat k+z\,\hat\jmath\right).$$
+            As componentes \(\hat\jmath\) <strong>se cancelam</strong>; as componentes \(\hat k\) se somam. Nos dois casos \(r^2=x^2+\tfrac{a^2}{4}+z^2\equiv x^2+c^2\).</li>
+          <li><strong>Integral do par (i)+(d)</strong>, com \(\int\frac{dx}{(x^2+c^2)^{3/2}}=\frac{x}{c^2\sqrt{x^2+c^2}}\):
+            $$\vec B_{(i)+(d)}=\frac{\mu_0 I}{4\pi}\,a\int_{-a/2}^{a/2}\frac{dx}{(x^2+c^2)^{3/2}}\,\hat k=\frac{\mu_0 I}{4\pi}\,\frac{a^2}{\left(z^2+\frac{a^2}{4}\right)\sqrt{z^2+\frac{a^2}{2}}}\,\hat k.$$</li>
+          <li><strong>Lados paralelos a \(y\)</strong> (frente (f) em \(x=a/2\), \(d\vec l=dy\,\hat\jmath\); atrás (a) em \(x=-a/2\), \(d\vec l=dy\,(-\hat\jmath)\)): a mesma conta com \(x\leftrightarrow y\); as componentes \(\hat\imath\) se cancelam e o par dá <em>o mesmo</em> valor em \(\hat k\). Total da espira:
+            $$\boxed{\vec B_{\text{espira}}(z)=\frac{\mu_0 I}{2\pi}\,\frac{a^2}{\left(z^2+\frac{a^2}{4}\right)\sqrt{z^2+\frac{a^2}{2}}}\;\hat k}$$
+            Conferência: no centro, \(B(0)=\dfrac{2\sqrt2\,\mu_0 I}{\pi a}\) (resultado clássico da espira quadrada); longe, \(B\approx\dfrac{\mu_0 I a^2}{2\pi z^3}=\dfrac{\mu_0 m}{2\pi z^3}\) com \(m=Ia^2\): dipolo, como a espira circular.</li>
+          <li><strong>Empilhar.</strong> Num trecho \(dz'\) do solenoide há \(N\,dz'\) espiras (N por unidade de comprimento), cada uma em \(z'\) contribuindo com \(\vec B_{\text{espira}}(z-z')\). Com \(u=z-z'\):
+            $$B(z)=\frac{\mu_0 N I}{2\pi}\int_{z-L/2}^{z+L/2}\frac{a^2\,du}{\left(u^2+\frac{a^2}{4}\right)\sqrt{u^2+\frac{a^2}{2}}}.$$
+            A primitiva (confira derivando) é \(\dfrac{4}{a^2}\arctan\dfrac{u}{\sqrt{u^2+a^2/2}}\), logo
+            $$\vec B(z)=\frac{2\mu_0 N I}{\pi}\left[\arctan\frac{z+\frac L2}{\sqrt{(z+\frac L2)^2+\frac{a^2}{2}}}-\arctan\frac{z-\frac L2}{\sqrt{(z-\frac L2)^2+\frac{a^2}{2}}}\right]\hat k.$$</li>
+          <li><strong>Solenoide muito comprido</strong> (\(L\gg a\), ponto longe das bordas): o primeiro arctan → \(\arctan 1=\pi/4\) e o segundo → \(\arctan(-1)=-\pi/4\). Então
+            $$\boxed{\vec B=\frac{2\mu_0 NI}{\pi}\cdot\frac{\pi}{2}\,\hat k=\mu_0\,N\,I\;\hat k}$$
+            O slide escreve a resposta como \(\vec B=\dfrac{\mu_0 I N}{L}\hat k\): é a mesma coisa quando \(N\) significa o <strong>número total</strong> de espiras (então \(N/L\) espiras por metro). Na prova, deixe claro qual dos dois \(N\) você usa; o Sears chama \(n=N/L\) e escreve \(B=\mu_0 n I\) (Eq. 28.23, p. 283).</li>
+        </ol>
+        <p><strong>(b) Interpretação.</strong> Longe das bordas, \(B\) <strong>não depende de \(z\)</strong> nem do formato da seção (quadrada ou circular dão o mesmo \(\mu_0 nI\)!). Nas bocas do solenoide (\(z=\pm L/2\)) os arctan dão \(\pi/4\) e \(0\): o campo cai para <strong>metade</strong>, \(\mu_0 N I/2\). Fora, decai rápido, como o campo de um dipolo.</p>
+        <p><strong>Número:</strong> 1000 espiras/m, \(I=2\ \text{A}\): \(B=4\pi\times10^{-7}\cdot1000\cdot2=2{,}5\ \text{mT}\).</p>
+      </div>
+
+      <details class="reveal"><summary>Estudante: por que o resultado não depende de z?</summary><div>
+        <p>Resposta do slide: com o solenoide muito longo comparado à aresta da espira, o campo fica uniforme ao longo do eixo; “não existem problemas de bordas”. Em outras palavras: um ponto no meio de um solenoide infinito vê <em>exatamente o mesmo</em> solenoide se você andar 1 cm para frente. Se nada muda na vizinhança, o campo não pode mudar.</p>
+        <p>Matematicamente: para \(L\to\infty\) os limites da integral viram \(\pm\infty\) e o \(z\) some. Num solenoide real, a uniformidade vale até uns poucos \(a\) de distância das bocas; ali as linhas de campo se abrem (“bordas”) e \(B\) cai para \(\mu_0 nI/2\). Brinque com o comprimento na simulação abaixo.</p>
+      </div></details>
+
+      <div class="widget" id="w-solenoide">
+        <p class="w-title">Campo no eixo de um solenoide de comprimento L</p>
+        <p class="w-caption">Gráfico de \(B(z)\) no eixo, em unidades de \(\mu_0 n I\). Comece com L pequeno (parece uma espira só) e vá aumentando: o pico vira um platô em 1, e nas bocas o campo é sempre ≈ 1/2. Troque entre seção quadrada (lado a) e circular (raio a).</p>
+        <canvas class="w-canvas" height="340"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Comprimento L/a <output data-o="L"></output></span><input type="range" data-k="L" min="0.1" max="30" step="0.1" value="4"></label>
+          <label class="w-control"><span>Posição do ponto no eixo <output data-o="z"></output></span><input type="range" data-k="z" min="-1" max="1" step="0.01" value="0"></label>
+        </div>
+        <div class="w-row"><span class="lbl">Seção:</span><button class="w-btn on" data-act="sq">Quadrada (Ex. 27)</button><button class="w-btn" data-act="ci">Circular</button></div>
+        <div class="w-readout"></div>
+      </div>
+      <p class="fonte"><span>Sears</span> §28.5 (espira), p. 274–277; solenoide: §28.7, Eq. 28.23, p. 283.</p>
+    </article>
+
+    <!-- ============ M6 ============ -->
+    <article class="modulo" id="m6">
+      <header class="modulo-h"><span class="modulo-num">Módulo 6</span><h2>Força entre dois fios paralelos</h2></header>
+
+      <section class="note"><div class="cue"><span>A ideia</span></div><div class="note-body">
+        <h3>Correntes iguais se atraem <span class="nivel nivel-1">básico</span></h3>
+        <p>O fio 1 cria um campo; o fio 2 é uma corrente dentro desse campo, então sente a força \(I\,\vec L\times\vec B\) (capítulo I). Resultado surpreendente: <strong>correntes no mesmo sentido se atraem</strong>; em sentidos opostos, se repelem. É o contrário das cargas, onde iguais se repelem. O magnetismo “gosta” de correntes iguais.</p>
+      </div></section>
+
+      <section class="note"><div class="cue"><span>A conta</span></div><div class="note-body">
+        <h3>Força por unidade de comprimento <span class="nivel nivel-2">intermediário</span></h3>
+        <p>Fio 1 no eixo \(z\) com corrente \(I_1\hat k\); fio 2 paralelo, em \(x=d\), com corrente \(I_2\hat k\).</p>
+        <ol class="steps">
+          <li>Campo do fio 1 na posição do fio 2 (onde \(\hat\rho=\hat\imath\), logo \(\hat\varphi=\hat\jmath\)): \(\vec B_1=\dfrac{\mu_0 I_1}{2\pi d}\,\hat\jmath\).</li>
+          <li>Força num trecho \(L\) do fio 2: \(\vec F_{2}=I_2 L\,\hat k\times\vec B_1=\dfrac{\mu_0 I_1 I_2 L}{2\pi d}\,(\hat k\times\hat\jmath)=-\dfrac{\mu_0 I_1 I_2 L}{2\pi d}\,\hat\imath\).</li>
+          <li>O sinal “−\(\hat\imath\)” aponta <strong>para o fio 1</strong>: atração. Pela 3ª lei, \(\vec F_1=-\vec F_2\).
+            $$\frac{F}{L}=\frac{\mu_0\,I_1 I_2}{2\pi d}\qquad(\text{Sears Eq. 28.11, p. 273})$$</li>
+        </ol>
+        <p><strong>Número:</strong> \(I_1=I_2=1\ \text{A}\), \(d=1\ \text{m}\): \(F/L=2\times10^{-7}\ \text{N/m}\). Essa era a definição antiga do ampère. Em cabos de alta corrente (curto-circuito de 10 kA a 10 cm), \(F/L=200\ \text{N/m}\): barramentos precisam ser presos com força.</p>
+      </div></section>
+
+      <div class="widget" id="w-fios">
+        <p class="w-title">Dois fios paralelos: atração e repulsão</p>
+        <p class="w-caption">Os fios atravessam a tela. Mude o sinal das correntes (positivo = saindo ⊙). As setinhas mostram o campo resultante; as setas grossas, a força em cada fio. Repare na região <em>entre</em> os fios: com correntes iguais os campos se cancelam ali; com opostas, se reforçam.</p>
+        <canvas class="w-canvas" height="320"></canvas>
+        <div class="w-controls">
+          <label class="w-control"><span>Corrente I₁ <output data-o="I1"></output></span><input type="range" data-k="I1" min="-10" max="10" step="1" value="6"></label>
+          <label class="w-control"><span>Corrente I₂ <output data-o="I2"></output></span><input type="range" data-k="I2" min="-10" max="10" step="1" value="6"></label>
+          <label class="w-control"><span>Distância d <output data-o="d"></output></span><input type="range" data-k="d" min="2" max="12" step="0.5" value="6"></label>
+        </div>
+        <div class="w-row"><button class="w-btn" data-act="flip2">Inverter I₂</button></div>
+        <div class="w-readout"></div>
+      </div>
+
+      <section class="note note-key"><div class="cue"><span>Comparação</span></div><div class="note-body">
+        <h3>Eletrostática × magnetismo (tabela do slide)</h3>
+        <div class="table-wrap"><table>
+          <tr><th></th><th>Força atrativa</th><th>Força repulsiva</th><th>Natureza</th></tr>
+          <tr><td><strong>Eletrostática</strong></td><td>\(+q\) e \(-q\): cargas de sinais <em>opostos</em></td><td>\(q\) e \(q\): cargas de sinais <em>iguais</em></td><td>o <strong>monopolo elétrico</strong> (uma carga sozinha) é a configuração mínima</td></tr>
+          <tr><td><strong>Magnetismo</strong></td><td>\(i\) e \(i\): correntes no <em>mesmo</em> sentido</td><td>\(+i\) e \(-i\): correntes em sentidos <em>opostos</em></td><td>o <strong>dipolo magnético</strong> é a configuração mínima (não há monopolo magnético)</td></tr>
+        </table></div>
+        <p>Constante: \(\mu_0=4\pi\times10^{-7}\ \text{N/A}^2=4\pi\times10^{-7}\ \text{T·m/A}\) (as duas unidades são iguais).</p>
+      </div></section>
+
+      <div class="quiz"><p class="quiz-q">Dois fios paralelos levam 3 A e 6 A no mesmo sentido. Comparando as forças: o fio de 3 A sofre…</p>
+        <div class="quiz-opts"><button>metade da força do fio de 6 A</button><button>o dobro</button><button data-ok>a mesma força (em sentido oposto)</button></div>
+        <p class="quiz-fb">\(F/L=\mu_0 I_1I_2/(2\pi d)\) é simétrica em \(I_1\) e \(I_2\): ação e reação. O fio de 3 A está num campo duas vezes maior, mas leva metade da corrente.</p></div>
+      <p class="fonte"><span>Sears</span> §28.4, p. 272–274; Eq. 28.11.</p>
+    </article>
+
+    <!-- ============ M7 ============ -->
+    <article class="modulo" id="m7">
+      <header class="modulo-h"><span class="modulo-num">Módulo 7</span><h2>Biot–Savart ou Ampère?</h2></header>
+      <section class="note"><div class="cue"><span>Escolha</span></div><div class="note-body">
+        <h3>A forma geral e o atalho <span class="nivel nivel-2">intermediário</span></h3>
+        <p>O slide resume: Biot–Savart é a <strong>forma geral</strong> de calcular o campo de qualquer corrente. A lei de Ampère (capítulo IV) é um atalho que só funciona com <strong>alta simetria</strong>.</p>
+        <div class="table-wrap"><table>
+          <tr><th>Situação</th><th>Exemplos</th><th>Ferramenta</th></tr>
+          <tr><td>Alta simetria (dá para adivinhar a direção de \(\vec B\) e saber que \(|\vec B|\) é constante num caminho fechado)</td><td>fio infinito, fio grosso, solenoide infinito, toroide, cabo coaxial</td><td><strong>Ampère</strong> recomendável (2 linhas de conta)</td></tr>
+          <tr><td>Baixa simetria (a situação mais comum)</td><td>fio finito, espira (fora do centro/eixo), quadrado, fio dobrado, solenoide curto, ponto no eixo de qualquer espira</td><td><strong>Biot–Savart</strong>; Ampère não é recomendável (a lei vale, mas não ajuda a isolar \(B\))</td></tr>
+        </table></div>
+        <aside class="box box-warn"><div class="box-h">Armadilha clássica</div><p>A lei de Ampère <em>vale sempre</em> (para correntes estacionárias). O que falha sem simetria é a <em>utilidade</em>: \(\oint\vec B\cdot d\vec l\) é uma integral, e você só consegue tirar \(B\) de dentro dela se \(B\) for constante e tangente ao caminho. Para o campo no eixo de uma espira, por exemplo, não existe tal caminho.</p></aside>
+      </div></section>
+    </article>
+
+    <!-- ============ RESUMO ============ -->
+    <article class="modulo" id="resumo">
+      <header class="modulo-h"><span class="modulo-num">Fechamento</span><h2>Resumo e fórmulas</h2></header>
+      <div class="table-wrap"><table>
+        <tr><th>Grandeza</th><th>Fórmula</th><th>Quando usar</th></tr>
+        <tr><td>Biot–Savart</td><td>\(d\vec B=\dfrac{\mu_0}{4\pi}\dfrac{i\,d\vec l\times\hat r}{r^2}\), \(\hat r\) do pedacinho para P</td><td>qualquer fio; integrar com cuidado nos vetores</td></tr>
+        <tr><td>Constante</td><td>\(\mu_0=4\pi\times10^{-7}\ \text{T·m/A}\)</td><td>sempre</td></tr>
+        <tr><td>Fio infinito</td><td>\(\vec B=\dfrac{\mu_0 i}{2\pi\rho}\hat\varphi\)</td><td>Exercício 26; também por Ampère</td></tr>
+        <tr><td>Fio finito</td><td>\(\dfrac{\mu_0 i}{4\pi\rho}\left[\dfrac{x_2}{\sqrt{x_2^2+\rho^2}}-\dfrac{x_1}{\sqrt{x_1^2+\rho^2}}\right]\hat\varphi\)</td><td>pedaços retos (quadrados, polígonos)</td></tr>
+        <tr><td>Espira circular, eixo</td><td>\(\dfrac{\mu_0 i a^2}{2(a^2+z^2)^{3/2}}\hat k\); centro \(\dfrac{\mu_0 i}{2a}\) (×N)</td><td>bobinas; longe = dipolo</td></tr>
+        <tr><td>Espira quadrada, eixo</td><td>\(\dfrac{\mu_0 I}{2\pi}\dfrac{a^2}{(z^2+a^2/4)\sqrt{z^2+a^2/2}}\hat k\)</td><td>Exercício 27, passo 1</td></tr>
+        <tr><td>Solenoide longo</td><td>\(\vec B=\mu_0 nI\,\hat k\), \(n\) = espiras por metro (\(=N/L\)); bocas: metade</td><td>Exercício 27; independe da forma da seção</td></tr>
+        <tr><td>Fios paralelos</td><td>\(F/L=\dfrac{\mu_0 I_1I_2}{2\pi d}\); mesmo sentido atrai</td><td>força magnética entre correntes</td></tr>
+      </table></div>
+      <section class="note note-warn"><div class="cue"><span>Na prova</span></div><div class="note-body">
+        <h3>Erros comuns</h3>
+        <ul>
+          <li><strong>\(\hat r\) ao contrário.</strong> \(\vec r\) vai <em>do fio para o ponto P</em>. Inverter troca o sentido de \(\vec B\).</li>
+          <li><strong>Somar módulos de vetores que giram.</strong> Antes de integrar, verifique quais componentes se cancelam por simetria (espira: só sobra \(\hat k\); quadrado: só sobra \(\hat k\)).</li>
+          <li><strong>Esquecer o fator 2</strong> da simetria no fio infinito (integrar só de 0 a ∞).</li>
+          <li><strong>Confundir N</strong>: espiras por metro (\(\mu_0 NI\)) ou total (\(\mu_0 NI/L\)).</li>
+          <li><strong>Resposta sem vetor.</strong> O professor pede \(\vec B=\dots\hat\varphi\) ou \(\dots\hat k\), com os eixos que você escolheu desenhados.</li>
+          <li><strong>Sinal da força entre fios</strong>: correntes paralelas atraem (contrário das cargas).</li>
+        </ul>
+      </div></section>
+    </article>
+
+    <nav class="chapter-nav"><a class="prev" href="cap2.html"><small>← Anterior</small>II · Torque e dipolo magnético</a><a class="next" href="cap4.html"><small>Próximo →</small>IV · Lei de Ampère</a></nav>
+  </main>
+</div>
+
+<footer class="footer">
+  <p><strong>Física III · Magnetismo, indução e ondas</strong> · Física para IME (IFUSP) · 2026/2.</p>
+  <p>Notas de estudo de Jhuann Piedro, escritas a partir dos slides e do simulado do Prof. Julio A. Larrea J. (IFUSP) e de Young &amp; Freedman, <em>Física III</em>, 14ª ed. Texto, simulações e erros são das notas; não é material oficial da disciplina.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" defer></script>
+<script src="assets/core.js"></script>
+<script src="assets/cap3.js"></script>
+</body>
+</html>
